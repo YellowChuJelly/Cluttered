@@ -27,6 +27,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.redchujelly.cluttered.datagen.DataGeneration;
+import net.redchujelly.cluttered.setup.BlockRegistration;
+import net.redchujelly.cluttered.setup.ItemRegistration;
 import org.slf4j.Logger;
 
 @Mod(Cluttered.MODID)
@@ -39,7 +42,12 @@ public class Cluttered {
     public Cluttered() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ItemRegistration.register(modEventBus);
+        BlockRegistration.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(DataGeneration::generate);
+
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
