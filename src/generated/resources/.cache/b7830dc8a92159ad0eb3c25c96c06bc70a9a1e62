@@ -1,0 +1,21 @@
+// 1.20.1	2024-08-25T16:26:45.040294	Tags for minecraft:item mod id cluttered
+9d174f43a82b30661ff0c76b17b5233110cd6eaa data/minecraft/tags/items/buttons.json
+749ed02fd0a176dee7ce4038199a5d76d0536fd6 data/minecraft/tags/items/doors.json
+dff81fdd6a513d013128357cc8b4724035b7154c data/minecraft/tags/items/fences.json
+dc8406f540676a45a164b650bc822c1a5972e47e data/minecraft/tags/items/fence_gates.json
+8088ab1cc005792f3f5f11008e04fbbae26a45e3 data/minecraft/tags/items/flowering_willow_log.json
+87253c973c866ff79a52e4789c3757b5419c0543 data/minecraft/tags/items/logs.json
+87253c973c866ff79a52e4789c3757b5419c0543 data/minecraft/tags/items/logs_that_burn.json
+c5f5ebd430ea0a49288f36e7fd0d1ed4cdf9582e data/minecraft/tags/items/planks.json
+05e94f0ac9d2c1ebb19d30e0f39ad6eae5c61d1d data/minecraft/tags/items/poplar_log.json
+77d4e53f7b5abd68daf88b6b03b6a578921ae5cc data/minecraft/tags/items/slabs.json
+ff6ea99e46131a003ff922ab42e73137b554ce35 data/minecraft/tags/items/stairs.json
+da857bfd1929a97f17e08eab27ea87eb5e9253d5 data/minecraft/tags/items/trapdoors.json
+beb7758171ef168740da7bd45676a314c124cd19 data/minecraft/tags/items/willow_log.json
+9d174f43a82b30661ff0c76b17b5233110cd6eaa data/minecraft/tags/items/wooden_buttons.json
+749ed02fd0a176dee7ce4038199a5d76d0536fd6 data/minecraft/tags/items/wooden_doors.json
+dff81fdd6a513d013128357cc8b4724035b7154c data/minecraft/tags/items/wooden_fences.json
+b2060e1bc94c56ef1ae95e3bce830c451fdb3231 data/minecraft/tags/items/wooden_pressure_plates.json
+77d4e53f7b5abd68daf88b6b03b6a578921ae5cc data/minecraft/tags/items/wooden_slabs.json
+ff6ea99e46131a003ff922ab42e73137b554ce35 data/minecraft/tags/items/wooden_stairs.json
+da857bfd1929a97f17e08eab27ea87eb5e9253d5 data/minecraft/tags/items/wooden_trapdoors.json

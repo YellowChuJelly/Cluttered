@@ -29,6 +29,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.datagen.DataGeneration;
 import net.redchujelly.cluttered.setup.BlockRegistration;
+import net.redchujelly.cluttered.setup.CreativeTabRegistration;
 import net.redchujelly.cluttered.setup.ItemRegistration;
 import org.slf4j.Logger;
 
@@ -41,6 +42,8 @@ public class Cluttered {
 
     public Cluttered() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        CreativeTabRegistration.register(modEventBus);
 
         ItemRegistration.register(modEventBus);
         BlockRegistration.register(modEventBus);

@@ -1,0 +1,21 @@
+// 1.20.1	2024-08-24T21:48:55.0783364	Tags for minecraft:block mod id cluttered
+9d174f43a82b30661ff0c76b17b5233110cd6eaa data/minecraft/tags/blocks/buttons.json
+da857bfd1929a97f17e08eab27ea87eb5e9253d5 data/minecraft/tags/blocks/doors.json
+776842b4c990d2a93b42564e8aeae88f76fab42e data/minecraft/tags/blocks/enchantment_power_provider.json
+dff81fdd6a513d013128357cc8b4724035b7154c data/minecraft/tags/blocks/fences.json
+39cb7f0a5bfdceac29911400bca1fa6dbe1576cd data/minecraft/tags/blocks/fence_gates.json
+87253c973c866ff79a52e4789c3757b5419c0543 data/minecraft/tags/blocks/logs.json
+87253c973c866ff79a52e4789c3757b5419c0543 data/minecraft/tags/blocks/logs_that_burn.json
+2fccb43d38f2eb853cf3c53720f6aae165389223 data/minecraft/tags/blocks/mineable/axe.json
+c5f5ebd430ea0a49288f36e7fd0d1ed4cdf9582e data/minecraft/tags/blocks/planks.json
+b2060e1bc94c56ef1ae95e3bce830c451fdb3231 data/minecraft/tags/blocks/pressure_plates.json
+77d4e53f7b5abd68daf88b6b03b6a578921ae5cc data/minecraft/tags/blocks/slabs.json
+ff6ea99e46131a003ff922ab42e73137b554ce35 data/minecraft/tags/blocks/stairs.json
+99e79d44533a5d2483f9b8be2652d3d4336598f5 data/minecraft/tags/blocks/trapdoors.json
+9d174f43a82b30661ff0c76b17b5233110cd6eaa data/minecraft/tags/blocks/wooden_buttons.json
+749ed02fd0a176dee7ce4038199a5d76d0536fd6 data/minecraft/tags/blocks/wooden_doors.json
+dff81fdd6a513d013128357cc8b4724035b7154c data/minecraft/tags/blocks/wooden_fences.json
+b2060e1bc94c56ef1ae95e3bce830c451fdb3231 data/minecraft/tags/blocks/wooden_pressure_plates.json
+77d4e53f7b5abd68daf88b6b03b6a578921ae5cc data/minecraft/tags/blocks/wooden_slabs.json
+ff6ea99e46131a003ff922ab42e73137b554ce35 data/minecraft/tags/blocks/wooden_stairs.json
+99e79d44533a5d2483f9b8be2652d3d4336598f5 data/minecraft/tags/blocks/wooden_trapdoors.json

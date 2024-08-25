@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "cluttered:poplar_planks"
+    },
+    "s": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "pattern": [
+    "psp",
+    "psp"
+  ],
+  "result": {
+    "count": 3,
+    "item": "cluttered:poplar_fence"
+  },
+  "show_notification": false
+}

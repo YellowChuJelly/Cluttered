@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "cluttered:flowering_willow_planks"
+    },
+    "s": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "pattern": [
+    "sps",
+    "sps"
+  ],
+  "result": {
+    "item": "cluttered:flowering_willow_fence_gate"
+  },
+  "show_notification": false
+}
