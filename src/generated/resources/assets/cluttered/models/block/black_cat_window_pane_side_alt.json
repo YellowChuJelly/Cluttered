@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side_alt",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "edge": "cluttered:block/black_cat_window",
+    "pane": "cluttered:block/black_cat_window"
+  }
+}

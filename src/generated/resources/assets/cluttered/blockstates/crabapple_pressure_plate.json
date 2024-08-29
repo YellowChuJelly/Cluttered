@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "cluttered:block/crabapple_pressure_plate"
+    },
+    "powered=true": {
+      "model": "cluttered:block/crabapple_pressure_plate_down"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "cluttered:blue_mushroom_planks"
+    }
+  },
+  "pattern": [
+    "pp",
+    "pp",
+    "pp"
+  ],
+  "result": {
+    "item": "cluttered:blue_mushroom_door"
+  },
+  "show_notification": false
+}

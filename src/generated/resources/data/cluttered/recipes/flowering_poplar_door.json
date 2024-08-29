@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "cluttered:flowering_poplar_planks"
+    }
+  },
+  "pattern": [
+    "pp",
+    "pp",
+    "pp"
+  ],
+  "result": {
+    "item": "cluttered:flowering_poplar_door"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cluttered:blue_mushroom_planks"
+    }
+  ],
+  "result": {
+    "item": "cluttered:blue_mushroom_button"
+  }
+}

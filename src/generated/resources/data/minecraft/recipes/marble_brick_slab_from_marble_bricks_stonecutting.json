@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "cluttered:marble_bricks"
+  },
+  "result": "cluttered:marble_brick_slab"
+}

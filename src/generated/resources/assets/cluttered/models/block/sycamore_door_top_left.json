@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "cluttered:block/sycamore_door_bottom",
+    "top": "cluttered:block/sycamore_door_top"
+  }
+}

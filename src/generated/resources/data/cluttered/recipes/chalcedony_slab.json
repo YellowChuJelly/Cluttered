@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "r": {
+      "item": "cluttered:raw_chalcedony"
+    }
+  },
+  "pattern": [
+    "rrr"
+  ],
+  "result": {
+    "count": 6,
+    "item": "cluttered:chalcedony_slab"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "r": {
+      "item": "cluttered:raw_marble"
+    }
+  },
+  "pattern": [
+    "rrr"
+  ],
+  "result": {
+    "count": 6,
+    "item": "cluttered:marble_slab"
+  },
+  "show_notification": false
+}

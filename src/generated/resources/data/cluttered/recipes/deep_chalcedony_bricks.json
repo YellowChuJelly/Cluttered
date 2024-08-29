@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "cluttered:deep_chalcedony_polished"
+    }
+  },
+  "pattern": [
+    "pp",
+    "pp"
+  ],
+  "result": {
+    "count": 4,
+    "item": "cluttered:deep_chalcedony_bricks"
+  },
+  "show_notification": false
+}
