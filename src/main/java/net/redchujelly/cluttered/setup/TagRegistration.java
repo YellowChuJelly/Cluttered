@@ -21,6 +21,12 @@ public class TagRegistration {
         public static final TagKey<Item> FLOWERING_WILLOW_LOG = tag("flowering_willow_log");
         public static final TagKey<Item> POPLAR_LOG = tag("poplar_log");
         public static final TagKey<Item> FLOWERING_POPLAR_LOG = tag("flowering_poplar_log");
+        public static final TagKey<Item> CRABAPPLE_LOG = tag("crabapple_log");
+        public static final TagKey<Item> FLOWERING_CRABAPPLE_LOG = tag("flowering_crabapple_log");
+        public static final TagKey<Item> SYCAMORE_LOG = tag("sycamore_log");
+        public static final TagKey<Item> MAPLE_LOG = tag("fluorescent_maple_log");
+        public static final TagKey<Item> BLUE_MUSHROOM_LOG = tag("blue_mushroom_log");
+        public static final TagKey<Item> RED_MUSHROOM_LOG = tag("red_mushroom_log");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(Cluttered.MODID, name));

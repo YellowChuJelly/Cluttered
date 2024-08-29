@@ -29,6 +29,16 @@ public class CustomLogLikeBlock extends RotatedPillarBlock {
                 put(BlockRegistration.FLOWERING_WILLOW_WOOD.get(), BlockRegistration.STRIPPED_FLOWERING_WILLOW_WOOD.get());
                 put(BlockRegistration.POPLAR_LOG.get(), BlockRegistration.STRIPPED_POPLAR_LOG.get());
                 put(BlockRegistration.POPLAR_WOOD.get(), BlockRegistration.STRIPPED_POPLAR_WOOD.get());
+                put(BlockRegistration.FLOWERING_POPLAR_LOG.get(), BlockRegistration.STRIPPED_FLOWERING_POPLAR_LOG.get());
+                put(BlockRegistration.FLOWERING_POPLAR_WOOD.get(), BlockRegistration.STRIPPED_FLOWERING_POPLAR_WOOD.get());
+                put(BlockRegistration.CRABAPPLE_LOG.get(), BlockRegistration.STRIPPED_CRABAPPLE_LOG.get());
+                put(BlockRegistration.CRABAPPLE_WOOD.get(), BlockRegistration.STRIPPED_CRABAPPLE_WOOD.get());
+                put(BlockRegistration.FLOWERING_CRABAPPLE_LOG.get(), BlockRegistration.STRIPPED_FLOWERING_CRABAPPLE_LOG.get());
+                put(BlockRegistration.FLOWERING_CRABAPPLE_WOOD.get(), BlockRegistration.STRIPPED_FLOWERING_CRABAPPLE_WOOD.get());
+                put(BlockRegistration.SYCAMORE_LOG.get(), BlockRegistration.STRIPPED_SYCAMORE_LOG.get());
+                put(BlockRegistration.SYCAMORE_WOOD.get(), BlockRegistration.STRIPPED_SYCAMORE_WOOD.get());
+                put(BlockRegistration.MAPLE_LOG.get(), BlockRegistration.STRIPPED_MAPLE_LOG.get());
+                put(BlockRegistration.MAPLE_WOOD.get(), BlockRegistration.STRIPPED_MAPLE_WOOD.get());
             }
         };
 

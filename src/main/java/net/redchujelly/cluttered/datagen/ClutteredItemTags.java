@@ -27,6 +27,13 @@ public class ClutteredItemTags extends ItemTagsProvider {
         tagNewWoodset("willow");
         tagNewWoodset("flowering_willow");
         tagNewWoodset("poplar");
+        tagNewWoodset("flowering_poplar");
+        tagNewWoodset("crabapple");
+        tagNewWoodset("flowering_crabapple");
+        tagNewWoodset("sycamore");
+        tagNewWoodset("fluorescent_maple");
+        tagNewWoodset("blue_mushroom");
+        tagNewWoodset("red_mushroom");
 
         tag(ItemTags.DOORS)
                 .add(BlockRegistration.WILLOW_LOG_DOOR.get().asItem())
@@ -34,14 +41,21 @@ public class ClutteredItemTags extends ItemTagsProvider {
         tag(ItemTags.WOODEN_DOORS)
                 .add(BlockRegistration.WILLOW_LOG_DOOR.get().asItem())
                 .add(BlockRegistration.WILLOW_GARDEN_DOOR.get().asItem());
+        tag(ItemTags.STONE_CRAFTING_MATERIALS)
+                .add(BlockRegistration.CHALCEDONY.get().asItem())
+                .add(BlockRegistration.DEEP_CHALCEDONY.get().asItem());
     }
 
     public void tagNewWoodset(String woodType){
 
         Item log = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_log")).asItem();
         Item wood = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wood")).asItem();
-        Item strippedLog = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_log")).asItem();
-        Item strippedWood = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_wood")).asItem();
+        Item strippedLog = null;
+        Item strippedWood = null;
+        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_log"))) {
+            strippedLog = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_log")).asItem();
+            strippedWood = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_wood")).asItem();
+        }
         Item planks = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_planks")).asItem();
         Item stairs = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_stairs")).asItem();
         Item slab = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_slab")).asItem();
@@ -68,19 +82,24 @@ public class ClutteredItemTags extends ItemTagsProvider {
 
         tag(ItemTags.LOGS)
                 .add(log)
-                .add(wood)
-                .add(strippedLog)
-                .add(strippedWood);
+                .add(wood);
         tag(ItemTags.LOGS_THAT_BURN)
                 .add(log)
-                .add(wood)
-                .add(strippedLog)
-                .add(strippedWood);
+                .add(wood);
         tag(ForgeRegistries.ITEMS.tags().getTag(ItemTags.create(new ResourceLocation( woodType + "_log"))).getKey())
                 .add(log)
-                .add(wood)
-                .add(strippedLog)
-                .add(strippedWood);
+                .add(wood);
+        if(strippedLog != null) {
+            tag(ItemTags.LOGS)
+                    .add(strippedLog)
+                    .add(strippedWood);
+            tag(ItemTags.LOGS_THAT_BURN)
+                    .add(strippedLog)
+                    .add(strippedWood);
+            tag(ForgeRegistries.ITEMS.tags().getTag(ItemTags.create(new ResourceLocation( woodType + "_log"))).getKey())
+                    .add(strippedLog)
+                    .add(strippedWood);
+        }
         tag(ItemTags.PLANKS)
                 .add(planks);
         tag(ItemTags.STAIRS)

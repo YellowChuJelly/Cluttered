@@ -2,6 +2,13 @@
   "values": [
     "cluttered:willow_planks",
     "cluttered:flowering_willow_planks",
-    "cluttered:poplar_planks"
+    "cluttered:poplar_planks",
+    "cluttered:flowering_poplar_planks",
+    "cluttered:crabapple_planks",
+    "cluttered:flowering_crabapple_planks",
+    "cluttered:sycamore_planks",
+    "cluttered:fluorescent_maple_planks",
+    "cluttered:blue_mushroom_planks",
+    "cluttered:red_mushroom_planks"
   ]
 }

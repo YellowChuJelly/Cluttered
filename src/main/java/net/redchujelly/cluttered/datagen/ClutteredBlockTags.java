@@ -24,6 +24,13 @@ public class ClutteredBlockTags extends BlockTagsProvider {
         tagNewWoodset("willow");
         tagNewWoodset("flowering_willow");
         tagNewWoodset("poplar");
+        tagNewWoodset("flowering_poplar");
+        tagNewWoodset("crabapple");
+        tagNewWoodset("flowering_crabapple");
+        tagNewWoodset("sycamore");
+        tagNewWoodset("fluorescent_maple");
+        tagNewWoodset("blue_mushroom");
+        tagNewWoodset("red_mushroom");
 
         tag(BlockTags.ENCHANTMENT_POWER_PROVIDER)
                 .add(BlockRegistration.WILLOW_BOOKSHELF_BLACK_CAT.get())
@@ -34,18 +41,96 @@ public class ClutteredBlockTags extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(BlockRegistration.WILLOW_DOOR.get())
                 .add(BlockRegistration.WILLOW_LOG_DOOR.get())
-                .add(BlockRegistration.WILLOW_GARDEN_DOOR.get());
+                .add(BlockRegistration.WILLOW_GARDEN_DOOR.get())
+
+                .add(BlockRegistration.YELLOW_PLANTER.get());
         tag(BlockTags.WOODEN_DOORS)
                 .add(BlockRegistration.WILLOW_LOG_DOOR.get())
                 .add(BlockRegistration.WILLOW_GARDEN_DOOR.get());
+
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(BlockRegistration.CHALCEDONY.get())
+                .add(BlockRegistration.CHALCEDONY_STAIRS.get())
+                .add(BlockRegistration.CHALCEDONY_SLAB.get())
+                .add(BlockRegistration.POLISHED_CHALCEDONY.get())
+                .add(BlockRegistration.CHALCEDONY_BRICKS.get())
+                .add(BlockRegistration.CHALCEDONY_BRICK_STAIRS.get())
+                .add(BlockRegistration.CHALCEDONY_BRICK_SLAB.get())
+                .add(BlockRegistration.CHALCEDONY_TILES.get())
+                .add(BlockRegistration.CHALCEDONY_SMALL_TILES.get())
+                .add(BlockRegistration.CHISELED_CHALCEDONY.get())
+                .add(BlockRegistration.CHALCEDONY_BORDER.get())
+                .add(BlockRegistration.CHALCEDONY_ACANTHUS.get())
+                .add(BlockRegistration.CHALCEDONY_HELIX.get())
+                .add(BlockRegistration.STARRY_CHISELED_CHALCEDONY.get())
+                .add(BlockRegistration.CHALCEDONY_PILLAR.get())
+                .add(BlockRegistration.CHALCEDONY_PILLAR_BASE.get())
+                .add(BlockRegistration.CHALCEDONY_PILLAR_DORIC.get())
+                .add(BlockRegistration.CHALCEDONY_PILLAR_IONIC.get())
+                .add(BlockRegistration.STARRY_CHALCEDONY_PILLAR.get())
+                .add(BlockRegistration.STARRY_CHALCEDONY_PILLAR_BASE.get())
+                .add(BlockRegistration.STARRY_CHALCEDONY_PILLAR_DORIC.get())
+                .add(BlockRegistration.STARRY_CHALCEDONY_PILLAR_IONIC.get())
+
+                .add(BlockRegistration.DEEP_CHALCEDONY.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_STAIRS.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_SLAB.get())
+                .add(BlockRegistration.DEEP_POLISHED_CHALCEDONY.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_BRICKS.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_BRICK_STAIRS.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_BRICK_SLAB.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_TILES.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_SMALL_TILES.get())
+                .add(BlockRegistration.DEEP_CHISELED_CHALCEDONY.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_BORDER.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_ACANTHUS.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_HELIX.get())
+                .add(BlockRegistration.DEEP_STARRY_CHISELED_CHALCEDONY.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_PILLAR.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_PILLAR_BASE.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_PILLAR_DORIC.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_PILLAR_IONIC.get())
+                .add(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR.get())
+                .add(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_BASE.get())
+                .add(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_IONIC.get())
+                .add(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_DORIC.get())
+
+                .add(BlockRegistration.MARBLE.get())
+                .add(BlockRegistration.MARBLE_STAIRS.get())
+                .add(BlockRegistration.MARBLE_SLAB.get())
+                .add(BlockRegistration.POLISHED_MARBLE.get())
+                .add(BlockRegistration.MARBLE_BRICKS.get())
+                .add(BlockRegistration.MARBLE_BRICK_STAIRS.get())
+                .add(BlockRegistration.MARBLE_BRICK_SLAB.get())
+                .add(BlockRegistration.MARBLE_TILES.get())
+                .add(BlockRegistration.MARBLE_SMALL_TILES.get())
+                .add(BlockRegistration.CHISELED_MARBLE.get())
+                .add(BlockRegistration.MARBLE_BORDER.get())
+                .add(BlockRegistration.MARBLE_ACANTHUS.get())
+                .add(BlockRegistration.MARBLE_HELIX.get())
+                .add(BlockRegistration.STARRY_CHISELED_MARBLE.get())
+                .add(BlockRegistration.MARBLE_PILLAR.get())
+                .add(BlockRegistration.MARBLE_PILLAR_BASE.get())
+                .add(BlockRegistration.MARBLE_PILLAR_DORIC.get())
+                .add(BlockRegistration.MARBLE_PILLAR_IONIC.get());
+        tag(BlockTags.BIG_DRIPLEAF_PLACEABLE)
+                .add(BlockRegistration.YELLOW_PLANTER.get());
+        tag(BlockTags.SMALL_DRIPLEAF_PLACEABLE)
+                .add(BlockRegistration.YELLOW_PLANTER.get());
+        tag(BlockTags.DEAD_BUSH_MAY_PLACE_ON)
+                .add(BlockRegistration.YELLOW_PLANTER.get());
     }
 
     public void tagNewWoodset(String woodType){
 
         Block log = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_log"));
         Block wood = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wood"));
-        Block strippedLog = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_log"));
-        Block strippedWood = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_wood"));
+        Block strippedLog = null;
+        Block strippedWood = null;
+        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_log"))) {
+            strippedLog = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_log"));
+            strippedWood = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_wood"));
+        }
         Block planks = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_planks"));
         Block stairs = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_stairs"));
         Block slab = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_slab"));
@@ -72,14 +157,21 @@ public class ClutteredBlockTags extends BlockTagsProvider {
 
         tag(BlockTags.LOGS)
                 .add(log)
-                .add(wood)
-                .add(strippedLog)
-                .add(strippedWood);
+                .add(wood);
         tag(BlockTags.LOGS_THAT_BURN)
                 .add(log)
-                .add(wood)
-                .add(strippedLog)
-                .add(strippedWood);
+                .add(wood);
+        if(strippedLog != null){
+            tag(BlockTags.LOGS)
+                    .add(strippedLog)
+                    .add(strippedWood);
+            tag(BlockTags.LOGS_THAT_BURN)
+                    .add(strippedLog)
+                    .add(strippedWood);
+            tag(BlockTags.MINEABLE_WITH_AXE)
+                    .add(strippedLog)
+                    .add(strippedWood);
+        }
         tag(BlockTags.PLANKS)
                 .add(planks);
         tag(BlockTags.STAIRS)
@@ -109,8 +201,6 @@ public class ClutteredBlockTags extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(log)
                 .add(wood)
-                .add(strippedLog)
-                .add(strippedWood)
                 .add(planks)
                 .add(stairs)
                 .add(slab)
@@ -118,7 +208,6 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(pressurePlate)
                 .add(fence)
                 .add(fenceGate);
-
         if (door != null){
             tag(BlockTags.DOORS)
                     .add(door);
@@ -130,8 +219,9 @@ public class ClutteredBlockTags extends BlockTagsProvider {
         if (trapdoor != null){
             tag(BlockTags.TRAPDOORS)
                     .add(trapdoor);
-            tag(BlockTags.WOODEN_TRAPDOORS)
-                    .add(trapdoor);
+            //testing
+            //tag(BlockTags.WOODEN_TRAPDOORS)
+            //        .add(trapdoor);
             tag(BlockTags.MINEABLE_WITH_AXE)
                     .add(trapdoor);
         }
