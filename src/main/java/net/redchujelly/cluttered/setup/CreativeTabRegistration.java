@@ -274,7 +274,14 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.BLACK_CAT_WINDOW_PANE.get());
 
                         //PLANTER BOXES
+                        output.accept(BlockRegistration.PURPLE_PLANTER.get());
                         output.accept(BlockRegistration.YELLOW_PLANTER.get());
+                        output.accept(BlockRegistration.PINK_PLANTER.get());
+                        output.accept(BlockRegistration.GREEN_PLANTER.get());
+                        output.accept(BlockRegistration.FLUORESCENT_PLANTER.get());
+                        output.accept(BlockRegistration.BLUE_PLANTER.get());
+                        output.accept(BlockRegistration.RED_PLANTER.get());
+                        output.accept(BlockRegistration.BEIGE_PLANTER.get());
 
                     })
                     .build());

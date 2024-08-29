@@ -99,6 +99,4 @@ public class HandDrillItem extends Item {
             else return nextState;}
         return nextState;
     }
-
-
 }

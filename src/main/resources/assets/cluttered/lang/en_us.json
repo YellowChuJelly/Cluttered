@@ -244,6 +244,13 @@
   "block.cluttered.black_cat_window": "Black Cat Window",
   "block.cluttered.black_cat_window_pane": "Black Cat Window Pane",
   "block.cluttered.tarrey_town_planter_yellow": "Yellow Tarrey Town Planter",
+  "block.cluttered.tarrey_town_planter_pink": "Pink Tarrey Town Planter",
+  "block.cluttered.tarrey_town_planter_purple": "Purple Tarrey Town Planter",
+  "block.cluttered.tarrey_town_planter_green": "Green Tarrey Town Planter",
+  "block.cluttered.tarrey_town_planter_fluorescent": "Fluorescent Tarrey Town Planter",
+  "block.cluttered.tarrey_town_planter_blue": "Blue Tarrey Town Planter",
+  "block.cluttered.tarrey_town_planter_red": "Red Tarrey Town Planter",
+  "block.cluttered.tarrey_town_planter_beige": "Beige Tarrey Town Planter",
 
   "creativetab.cluttered_tab": "Cluttered"
 }

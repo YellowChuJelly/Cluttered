@@ -1,5 +1,12 @@
 {
   "values": [
-    "cluttered:tarrey_town_planter_yellow"
+    "cluttered:tarrey_town_planter_yellow",
+    "cluttered:tarrey_town_planter_pink",
+    "cluttered:tarrey_town_planter_purple",
+    "cluttered:tarrey_town_planter_beige",
+    "cluttered:tarrey_town_planter_green",
+    "cluttered:tarrey_town_planter_fluorescent",
+    "cluttered:tarrey_town_planter_red",
+    "cluttered:tarrey_town_planter_blue"
   ]
 }

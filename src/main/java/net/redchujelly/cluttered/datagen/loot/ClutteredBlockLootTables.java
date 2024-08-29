@@ -289,6 +289,13 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.BLACK_CAT_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.BLACK_CAT_WINDOW_PANE.get()));
 
         dropSelf(BlockRegistration.YELLOW_PLANTER.get());
+        dropSelf(BlockRegistration.PINK_PLANTER.get());
+        dropSelf(BlockRegistration.GREEN_PLANTER.get());
+        dropSelf(BlockRegistration.PURPLE_PLANTER.get());
+        dropSelf(BlockRegistration.BEIGE_PLANTER.get());
+        dropSelf(BlockRegistration.FLUORESCENT_PLANTER.get());
+        dropSelf(BlockRegistration.RED_PLANTER.get());
+        dropSelf(BlockRegistration.BLUE_PLANTER.get());
     }
 
     @Override

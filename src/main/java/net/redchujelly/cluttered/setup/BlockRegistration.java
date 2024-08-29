@@ -547,6 +547,20 @@ public class BlockRegistration {
     //PLANTER BOXES
     public static final RegistryObject<Block> YELLOW_PLANTER = registerBlock("tarrey_town_planter_yellow",
             () -> new PlanterBoxBlock(BlockBehaviour.Properties.copy(Blocks.FARMLAND).mapColor(DyeColor.YELLOW).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> PINK_PLANTER = registerBlock("tarrey_town_planter_pink",
+            () -> new PlanterBoxBlock(BlockBehaviour.Properties.copy(Blocks.FARMLAND).mapColor(DyeColor.PINK).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> GREEN_PLANTER = registerBlock("tarrey_town_planter_green",
+            () -> new PlanterBoxBlock(BlockBehaviour.Properties.copy(Blocks.FARMLAND).mapColor(DyeColor.GREEN).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> PURPLE_PLANTER = registerBlock("tarrey_town_planter_purple",
+            () -> new PlanterBoxBlock(BlockBehaviour.Properties.copy(Blocks.FARMLAND).mapColor(DyeColor.PURPLE).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> FLUORESCENT_PLANTER = registerBlock("tarrey_town_planter_fluorescent",
+            () -> new PlanterBoxBlock(BlockBehaviour.Properties.copy(Blocks.FARMLAND).mapColor(DyeColor.LIGHT_BLUE).sound(SoundType.WOOD).noOcclusion().lightLevel(p -> 4)));
+    public static final RegistryObject<Block> BEIGE_PLANTER = registerBlock("tarrey_town_planter_beige",
+            () -> new PlanterBoxBlock(BlockBehaviour.Properties.copy(Blocks.FARMLAND).mapColor(DyeColor.LIGHT_GRAY).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> BLUE_PLANTER = registerBlock("tarrey_town_planter_blue",
+            () -> new PlanterBoxBlock(BlockBehaviour.Properties.copy(Blocks.FARMLAND).mapColor(DyeColor.BLUE).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> RED_PLANTER = registerBlock("tarrey_town_planter_red",
+            () -> new PlanterBoxBlock(BlockBehaviour.Properties.copy(Blocks.FARMLAND).mapColor(DyeColor.RED).sound(SoundType.WOOD)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

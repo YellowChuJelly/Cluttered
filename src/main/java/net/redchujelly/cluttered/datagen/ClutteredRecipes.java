@@ -396,6 +396,103 @@ public class ClutteredRecipes extends RecipeProvider {
                 .showNotification(false)
                 .save(consumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.YELLOW_PLANTER.get())
+                .pattern("wdw")
+                .pattern("wbw")
+                .pattern("wbw")
+                .define('b', Blocks.BONE_BLOCK)
+                .define('d', Blocks.DIRT)
+                .define('w', BlockRegistration.POPLAR_PLANKS.get())
+                .unlockedBy("has_bone_block", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Blocks.BONE_BLOCK).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.PINK_PLANTER.get())
+                .pattern("wdw")
+                .pattern("wbw")
+                .pattern("wbw")
+                .define('b', Blocks.BONE_BLOCK)
+                .define('d', Blocks.DIRT)
+                .define('w', BlockRegistration.CRABAPPLE_PLANKS.get())
+                .unlockedBy("has_bone_block", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Blocks.BONE_BLOCK).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.PURPLE_PLANTER.get())
+                .pattern("wdw")
+                .pattern("wbw")
+                .pattern("wbw")
+                .define('b', Blocks.BONE_BLOCK)
+                .define('d', Blocks.DIRT)
+                .define('w', BlockRegistration.WILLOW_PLANKS.get())
+                .unlockedBy("has_bone_block", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Blocks.BONE_BLOCK).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.GREEN_PLANTER.get())
+                .pattern("wdw")
+                .pattern("wbw")
+                .pattern("wbw")
+                .define('b', Blocks.BONE_BLOCK)
+                .define('d', Blocks.DIRT)
+                .define('w', BlockRegistration.SYCAMORE_PLANKS.get())
+                .unlockedBy("has_bone_block", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Blocks.BONE_BLOCK).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.FLUORESCENT_PLANTER.get())
+                .pattern("wdw")
+                .pattern("wbw")
+                .pattern("wbw")
+                .define('b', Blocks.BONE_BLOCK)
+                .define('d', Blocks.DIRT)
+                .define('w', BlockRegistration.MAPLE_PLANKS.get())
+                .unlockedBy("has_bone_block", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Blocks.BONE_BLOCK).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.RED_PLANTER.get())
+                .pattern("wdw")
+                .pattern("wbw")
+                .pattern("wbw")
+                .define('b', Blocks.BONE_BLOCK)
+                .define('d', Blocks.DIRT)
+                .define('w', BlockRegistration.RED_MUSHROOM_PLANKS.get())
+                .unlockedBy("has_bone_block", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Blocks.BONE_BLOCK).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.BLUE_PLANTER.get())
+                .pattern("wdw")
+                .pattern("wbw")
+                .pattern("wbw")
+                .define('b', Blocks.BONE_BLOCK)
+                .define('d', Blocks.DIRT)
+                .define('w', BlockRegistration.BLUE_MUSHROOM_PLANKS.get())
+                .unlockedBy("has_bone_block", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Blocks.BONE_BLOCK).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.BEIGE_PLANTER.get())
+                .pattern("wdw")
+                .pattern("wbw")
+                .pattern("wbw")
+                .define('b', Blocks.BONE_BLOCK)
+                .define('d', Blocks.DIRT)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_bone_block", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Blocks.BONE_BLOCK).build()))
+                .showNotification(false)
+                .save(consumer);
+
+
     }
 
     private void buildStoneCutterRecipesForBase(Consumer<FinishedRecipe> consumer, Block base, List<RegistryObject<Block>> results) {

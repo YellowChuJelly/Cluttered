@@ -43,7 +43,14 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.WILLOW_LOG_DOOR.get())
                 .add(BlockRegistration.WILLOW_GARDEN_DOOR.get())
 
-                .add(BlockRegistration.YELLOW_PLANTER.get());
+                .add(BlockRegistration.YELLOW_PLANTER.get())
+                .add(BlockRegistration.PINK_PLANTER.get())
+                .add(BlockRegistration.PURPLE_PLANTER.get())
+                .add(BlockRegistration.BEIGE_PLANTER.get())
+                .add(BlockRegistration.GREEN_PLANTER.get())
+                .add(BlockRegistration.FLUORESCENT_PLANTER.get())
+                .add(BlockRegistration.RED_PLANTER.get())
+                .add(BlockRegistration.BLUE_PLANTER.get());
         tag(BlockTags.WOODEN_DOORS)
                 .add(BlockRegistration.WILLOW_LOG_DOOR.get())
                 .add(BlockRegistration.WILLOW_GARDEN_DOOR.get());
@@ -114,11 +121,41 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.MARBLE_PILLAR_DORIC.get())
                 .add(BlockRegistration.MARBLE_PILLAR_IONIC.get());
         tag(BlockTags.BIG_DRIPLEAF_PLACEABLE)
-                .add(BlockRegistration.YELLOW_PLANTER.get());
+                .add(BlockRegistration.YELLOW_PLANTER.get())
+                .add(BlockRegistration.PINK_PLANTER.get())
+                .add(BlockRegistration.PURPLE_PLANTER.get())
+                .add(BlockRegistration.BEIGE_PLANTER.get())
+                .add(BlockRegistration.GREEN_PLANTER.get())
+                .add(BlockRegistration.FLUORESCENT_PLANTER.get())
+                .add(BlockRegistration.RED_PLANTER.get())
+                .add(BlockRegistration.BLUE_PLANTER.get());
         tag(BlockTags.SMALL_DRIPLEAF_PLACEABLE)
-                .add(BlockRegistration.YELLOW_PLANTER.get());
+                .add(BlockRegistration.YELLOW_PLANTER.get())
+                .add(BlockRegistration.PINK_PLANTER.get())
+                .add(BlockRegistration.PURPLE_PLANTER.get())
+                .add(BlockRegistration.BEIGE_PLANTER.get())
+                .add(BlockRegistration.GREEN_PLANTER.get())
+                .add(BlockRegistration.FLUORESCENT_PLANTER.get())
+                .add(BlockRegistration.RED_PLANTER.get())
+                .add(BlockRegistration.BLUE_PLANTER.get());
         tag(BlockTags.DEAD_BUSH_MAY_PLACE_ON)
-                .add(BlockRegistration.YELLOW_PLANTER.get());
+                .add(BlockRegistration.YELLOW_PLANTER.get())
+                .add(BlockRegistration.PINK_PLANTER.get())
+                .add(BlockRegistration.PURPLE_PLANTER.get())
+                .add(BlockRegistration.BEIGE_PLANTER.get())
+                .add(BlockRegistration.GREEN_PLANTER.get())
+                .add(BlockRegistration.FLUORESCENT_PLANTER.get())
+                .add(BlockRegistration.RED_PLANTER.get())
+                .add(BlockRegistration.BLUE_PLANTER.get());
+        tag(BlockTags.MUSHROOM_GROW_BLOCK)
+                .add(BlockRegistration.YELLOW_PLANTER.get())
+                .add(BlockRegistration.PINK_PLANTER.get())
+                .add(BlockRegistration.PURPLE_PLANTER.get())
+                .add(BlockRegistration.BEIGE_PLANTER.get())
+                .add(BlockRegistration.GREEN_PLANTER.get())
+                .add(BlockRegistration.FLUORESCENT_PLANTER.get())
+                .add(BlockRegistration.RED_PLANTER.get())
+                .add(BlockRegistration.BLUE_PLANTER.get());
     }
 
     public void tagNewWoodset(String woodType){

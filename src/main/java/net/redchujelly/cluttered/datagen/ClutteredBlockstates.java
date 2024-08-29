@@ -443,6 +443,13 @@ public class ClutteredBlockstates extends BlockStateProvider {
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.BLACK_CAT_WINDOW_PANE.get(), modLoc("block/black_cat_window"), modLoc("block/black_cat_window"), "cutout");
 
         simpleBlockWithItem(BlockRegistration.YELLOW_PLANTER.get(), models().cubeTop("tarrey_town_planter_yellow", modLoc("block/tarrey_town_planter_yellow"), modLoc("block/tarrey_town_planter_top")));
+        simpleBlockWithItem(BlockRegistration.PINK_PLANTER.get(), models().cubeTop("tarrey_town_planter_pink", modLoc("block/tarrey_town_planter_pink"), modLoc("block/tarrey_town_planter_top")));
+        simpleBlockWithItem(BlockRegistration.PURPLE_PLANTER.get(), models().cubeTop("tarrey_town_planter_purple", modLoc("block/tarrey_town_planter_purple"), modLoc("block/tarrey_town_planter_top")));
+        simpleBlockWithItem(BlockRegistration.BEIGE_PLANTER.get(), models().cubeTop("tarrey_town_planter_beige", modLoc("block/tarrey_town_planter_beige"), modLoc("block/tarrey_town_planter_top")));
+        simpleBlockWithItem(BlockRegistration.GREEN_PLANTER.get(), models().cubeTop("tarrey_town_planter_green", modLoc("block/tarrey_town_planter_green"), modLoc("block/tarrey_town_planter_top")));
+        simpleBlockWithItem(BlockRegistration.FLUORESCENT_PLANTER.get(), models().cubeTop("tarrey_town_planter_fluorescent", modLoc("block/tarrey_town_planter_fluorescent"), modLoc("block/tarrey_town_planter_top")));
+        simpleBlockWithItem(BlockRegistration.RED_PLANTER.get(), models().cubeTop("tarrey_town_planter_red", modLoc("block/tarrey_town_planter_red"), modLoc("block/tarrey_town_planter_top")));
+        simpleBlockWithItem(BlockRegistration.BLUE_PLANTER.get(), models().cubeTop("tarrey_town_planter_blue", modLoc("block/tarrey_town_planter_blue"), modLoc("block/tarrey_town_planter_top")));
     }
 
 
