@@ -296,6 +296,13 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.FLUORESCENT_PLANTER.get());
         dropSelf(BlockRegistration.RED_PLANTER.get());
         dropSelf(BlockRegistration.BLUE_PLANTER.get());
+
+        dropSelf(BlockRegistration.STARRY_WALLPAPER.get());
+        dropSelf(BlockRegistration.STARRY_WALLPAPER_TOP.get());
+        dropSelf(BlockRegistration.STARRY_WALLPAPER_BOTTOM.get());
+        dropSelf(BlockRegistration.DARK_STARRY_WALLPAPER.get());
+        dropSelf(BlockRegistration.DARK_STARRY_WALLPAPER_TOP.get());
+        dropSelf(BlockRegistration.DARK_STARRY_WALLPAPER_BOTTOM.get());
     }
 
     @Override

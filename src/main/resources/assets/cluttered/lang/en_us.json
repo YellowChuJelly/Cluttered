@@ -252,5 +252,12 @@
   "block.cluttered.tarrey_town_planter_red": "Red Tarrey Town Planter",
   "block.cluttered.tarrey_town_planter_beige": "Beige Tarrey Town Planter",
 
+  "block.cluttered.starry_wallpaper": "Starry Wallpaper",
+  "block.cluttered.starry_wallpaper_upper_trim": "Starry Wallpaper Upper Trim",
+  "block.cluttered.starry_wallpaper_lower_trim": "Starry Wallpaper Lower Trim",
+  "block.cluttered.dark_starry_wallpaper": "Dark Starry Wallpaper",
+  "block.cluttered.dark_starry_wallpaper_upper_trim": "Dark Starry Wallpaper Upper Trim",
+  "block.cluttered.dark_starry_wallpaper_lower_trim": "Dark Starry Wallpaper Lower Trim",
+
   "creativetab.cluttered_tab": "Cluttered"
 }

@@ -283,6 +283,13 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.RED_PLANTER.get());
                         output.accept(BlockRegistration.BEIGE_PLANTER.get());
 
+                        output.accept(BlockRegistration.STARRY_WALLPAPER_BOTTOM.get());
+                        output.accept(BlockRegistration.STARRY_WALLPAPER.get());
+                        output.accept(BlockRegistration.STARRY_WALLPAPER_TOP.get());
+                        output.accept(BlockRegistration.DARK_STARRY_WALLPAPER_BOTTOM.get());
+                        output.accept(BlockRegistration.DARK_STARRY_WALLPAPER.get());
+                        output.accept(BlockRegistration.DARK_STARRY_WALLPAPER_TOP.get());
+
                     })
                     .build());
 

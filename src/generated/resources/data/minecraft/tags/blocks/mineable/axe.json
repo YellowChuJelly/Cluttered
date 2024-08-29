@@ -144,6 +144,12 @@
     "cluttered:tarrey_town_planter_green",
     "cluttered:tarrey_town_planter_fluorescent",
     "cluttered:tarrey_town_planter_red",
-    "cluttered:tarrey_town_planter_blue"
+    "cluttered:tarrey_town_planter_blue",
+    "cluttered:starry_wallpaper",
+    "cluttered:starry_wallpaper_upper_trim",
+    "cluttered:starry_wallpaper_lower_trim",
+    "cluttered:dark_starry_wallpaper",
+    "cluttered:dark_starry_wallpaper_upper_trim",
+    "cluttered:dark_starry_wallpaper_lower_trim"
   ]
 }

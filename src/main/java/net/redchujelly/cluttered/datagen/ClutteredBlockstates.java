@@ -450,6 +450,14 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.FLUORESCENT_PLANTER.get(), models().cubeTop("tarrey_town_planter_fluorescent", modLoc("block/tarrey_town_planter_fluorescent"), modLoc("block/tarrey_town_planter_top")));
         simpleBlockWithItem(BlockRegistration.RED_PLANTER.get(), models().cubeTop("tarrey_town_planter_red", modLoc("block/tarrey_town_planter_red"), modLoc("block/tarrey_town_planter_top")));
         simpleBlockWithItem(BlockRegistration.BLUE_PLANTER.get(), models().cubeTop("tarrey_town_planter_blue", modLoc("block/tarrey_town_planter_blue"), modLoc("block/tarrey_town_planter_top")));
+
+        blockWithItem(BlockRegistration.STARRY_WALLPAPER);
+        simpleBlockWithItem(BlockRegistration.STARRY_WALLPAPER_TOP.get(), models().cubeColumn("starry_wallpaper_upper_trim", modLoc("block/starry_wallpaper_upper_trim"), modLoc("block/starry_wallpaper")));
+        simpleBlockWithItem(BlockRegistration.STARRY_WALLPAPER_BOTTOM.get(), models().cubeColumn("starry_wallpaper_lower_trim", modLoc("block/starry_wallpaper_lower_trim"), modLoc("block/starry_wallpaper")));
+        blockWithItem(BlockRegistration.DARK_STARRY_WALLPAPER);
+        simpleBlockWithItem(BlockRegistration.DARK_STARRY_WALLPAPER_TOP.get(), models().cubeColumn("dark_starry_wallpaper_upper_trim", modLoc("block/dark_starry_wallpaper_upper_trim"), modLoc("block/dark_starry_wallpaper")));
+        simpleBlockWithItem(BlockRegistration.DARK_STARRY_WALLPAPER_BOTTOM.get(), models().cubeColumn("dark_starry_wallpaper_lower_trim", modLoc("block/dark_starry_wallpaper_lower_trim"), modLoc("block/dark_starry_wallpaper")));
+
     }
 
 
