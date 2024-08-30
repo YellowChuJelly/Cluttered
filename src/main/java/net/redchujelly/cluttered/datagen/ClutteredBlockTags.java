@@ -56,7 +56,17 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.STARRY_WALLPAPER_BOTTOM.get())
                 .add(BlockRegistration.DARK_STARRY_WALLPAPER.get())
                 .add(BlockRegistration.DARK_STARRY_WALLPAPER_TOP.get())
-                .add(BlockRegistration.DARK_STARRY_WALLPAPER_BOTTOM.get());
+                .add(BlockRegistration.DARK_STARRY_WALLPAPER_BOTTOM.get())
+
+                .add(BlockRegistration.RETRO_RAINBOW_WALLPAPER.get())
+                .add(BlockRegistration.APPLE_WALLPAPER.get())
+                .add(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER.get())
+                .add(BlockRegistration.CHECKERED_FRUIT_WALLPAPER.get())
+                .add(BlockRegistration.CHECKERED_PINK_WALLPAPER.get())
+                .add(BlockRegistration.CHECKERED_PINK_STRAWBERRY_WALLPAPER.get())
+                .add(BlockRegistration.CHECKERED_GREEN_WALLPAPER.get())
+                .add(BlockRegistration.CHECKERED_GREEN_STRAWBERRY_WALLPAPER.get());
+
         tag(BlockTags.WOODEN_DOORS)
                 .add(BlockRegistration.WILLOW_LOG_DOOR.get())
                 .add(BlockRegistration.WILLOW_GARDEN_DOOR.get());

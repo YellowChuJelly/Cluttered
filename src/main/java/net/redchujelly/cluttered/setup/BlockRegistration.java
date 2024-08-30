@@ -564,18 +564,36 @@ public class BlockRegistration {
 
     //WALLPAPERS
     public static final RegistryObject<Block> STARRY_WALLPAPER = registerBlock("starry_wallpaper",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL)));
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> STARRY_WALLPAPER_TOP = registerBlock("starry_wallpaper_upper_trim",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL)));
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> STARRY_WALLPAPER_BOTTOM = registerBlock("starry_wallpaper_lower_trim",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL)));
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
 
     public static final RegistryObject<Block> DARK_STARRY_WALLPAPER = registerBlock("dark_starry_wallpaper",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL)));
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> DARK_STARRY_WALLPAPER_TOP = registerBlock("dark_starry_wallpaper_upper_trim",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL)));
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> DARK_STARRY_WALLPAPER_BOTTOM = registerBlock("dark_starry_wallpaper_lower_trim",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL)));
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
+    public static final RegistryObject<Block> RETRO_RAINBOW_WALLPAPER = registerBlock("retro_rainbow_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> APPLE_WALLPAPER = registerBlock("apple_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.GREEN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> BLUE_ROSE_STRIPED_WALLPAPER = registerBlock("blue_rose_striped_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> CHECKERED_FRUIT_WALLPAPER = registerBlock("checkered_fruit_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.GREEN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> CHECKERED_GREEN_WALLPAPER = registerBlock("checkered_green_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.GREEN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> CHECKERED_GREEN_STRAWBERRY_WALLPAPER = registerBlock("checkered_green_strawberry_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.GREEN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> CHECKERED_PINK_WALLPAPER = registerBlock("checkered_pink_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> CHECKERED_PINK_STRAWBERRY_WALLPAPER = registerBlock("checkered_pink_strawberry_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

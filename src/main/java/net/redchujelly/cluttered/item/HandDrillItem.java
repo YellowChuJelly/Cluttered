@@ -2,10 +2,13 @@ package net.redchujelly.cluttered.item;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -13,8 +16,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 import net.redchujelly.cluttered.setup.BlockRegistration;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class HandDrillItem extends Item {
@@ -69,6 +74,12 @@ public class HandDrillItem extends Item {
             put(BlockRegistration.DARK_STARRY_WALLPAPER_BOTTOM.get(), BlockRegistration.DARK_STARRY_WALLPAPER_TOP.get());
             put(BlockRegistration.DARK_STARRY_WALLPAPER_TOP.get(), BlockRegistration.DARK_STARRY_WALLPAPER.get());
 
+            put(BlockRegistration.CHECKERED_GREEN_WALLPAPER.get(), BlockRegistration.CHECKERED_GREEN_STRAWBERRY_WALLPAPER.get());
+            put(BlockRegistration.CHECKERED_GREEN_STRAWBERRY_WALLPAPER.get(), BlockRegistration.CHECKERED_GREEN_WALLPAPER.get());
+
+            put(BlockRegistration.CHECKERED_PINK_WALLPAPER.get(), BlockRegistration.CHECKERED_PINK_STRAWBERRY_WALLPAPER.get());
+            put(BlockRegistration.CHECKERED_PINK_STRAWBERRY_WALLPAPER.get(), BlockRegistration.CHECKERED_PINK_WALLPAPER.get());
+
 
 
         }};
@@ -90,7 +101,7 @@ public class HandDrillItem extends Item {
                 if (facing.equals(Direction.UP) || facing.equals(Direction.DOWN)) {facing = facing.getOpposite();}
                 else {facing = facing.getClockWise();}
                 level.setBlock(pos, state.setValue(BlockStateProperties.FACING, facing), 2);
-                level.playSound(null, pos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.BLOCKS);
+                level.playSound(null, pos, SoundEvents.AXE_SCRAPE, SoundSource.BLOCKS);
             }
             return InteractionResult.SUCCESS;
         }
@@ -121,5 +132,11 @@ public class HandDrillItem extends Item {
                 else return nextState.setValue(BlockStateProperties.AXIS, Direction.Axis.X);}
             else return nextState;}
         return nextState;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+        pTooltipComponents.add(Component.translatable("cluttered.hand_drill.tooltip"));
+        super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 }

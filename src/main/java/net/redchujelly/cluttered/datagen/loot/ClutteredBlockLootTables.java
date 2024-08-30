@@ -288,6 +288,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.BLACK_CAT_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.BLACK_CAT_WINDOW.get()));
         add(BlockRegistration.BLACK_CAT_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.BLACK_CAT_WINDOW_PANE.get()));
 
+        //MISC
         dropSelf(BlockRegistration.YELLOW_PLANTER.get());
         dropSelf(BlockRegistration.PINK_PLANTER.get());
         dropSelf(BlockRegistration.GREEN_PLANTER.get());
@@ -303,6 +304,15 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.DARK_STARRY_WALLPAPER.get());
         dropSelf(BlockRegistration.DARK_STARRY_WALLPAPER_TOP.get());
         dropSelf(BlockRegistration.DARK_STARRY_WALLPAPER_BOTTOM.get());
+
+        dropSelf(BlockRegistration.RETRO_RAINBOW_WALLPAPER.get());
+        dropSelf(BlockRegistration.APPLE_WALLPAPER.get());
+        dropSelf(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER.get());
+        dropSelf(BlockRegistration.CHECKERED_FRUIT_WALLPAPER.get());
+        dropSelf(BlockRegistration.CHECKERED_PINK_WALLPAPER.get());
+        dropSelf(BlockRegistration.CHECKERED_PINK_STRAWBERRY_WALLPAPER.get());
+        dropSelf(BlockRegistration.CHECKERED_GREEN_WALLPAPER.get());
+        dropSelf(BlockRegistration.CHECKERED_GREEN_STRAWBERRY_WALLPAPER.get());
     }
 
     @Override

@@ -458,6 +458,15 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.DARK_STARRY_WALLPAPER_TOP.get(), models().cubeColumn("dark_starry_wallpaper_upper_trim", modLoc("block/dark_starry_wallpaper_upper_trim"), modLoc("block/dark_starry_wallpaper")));
         simpleBlockWithItem(BlockRegistration.DARK_STARRY_WALLPAPER_BOTTOM.get(), models().cubeColumn("dark_starry_wallpaper_lower_trim", modLoc("block/dark_starry_wallpaper_lower_trim"), modLoc("block/dark_starry_wallpaper")));
 
+        blockWithItem(BlockRegistration.RETRO_RAINBOW_WALLPAPER);
+        blockWithItem(BlockRegistration.APPLE_WALLPAPER);
+        blockWithItem(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER);
+        blockWithItem(BlockRegistration.CHECKERED_FRUIT_WALLPAPER);
+        blockWithItem(BlockRegistration.CHECKERED_GREEN_WALLPAPER);
+        blockWithItem(BlockRegistration.CHECKERED_GREEN_STRAWBERRY_WALLPAPER);
+        blockWithItem(BlockRegistration.CHECKERED_PINK_WALLPAPER);
+        blockWithItem(BlockRegistration.CHECKERED_PINK_STRAWBERRY_WALLPAPER);
+
     }
 
 

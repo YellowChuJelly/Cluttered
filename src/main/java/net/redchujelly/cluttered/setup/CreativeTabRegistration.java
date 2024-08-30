@@ -283,12 +283,22 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.RED_PLANTER.get());
                         output.accept(BlockRegistration.BEIGE_PLANTER.get());
 
+                        //WALLPAPERS
                         output.accept(BlockRegistration.STARRY_WALLPAPER_BOTTOM.get());
                         output.accept(BlockRegistration.STARRY_WALLPAPER.get());
                         output.accept(BlockRegistration.STARRY_WALLPAPER_TOP.get());
                         output.accept(BlockRegistration.DARK_STARRY_WALLPAPER_BOTTOM.get());
                         output.accept(BlockRegistration.DARK_STARRY_WALLPAPER.get());
                         output.accept(BlockRegistration.DARK_STARRY_WALLPAPER_TOP.get());
+
+                        output.accept(BlockRegistration.RETRO_RAINBOW_WALLPAPER.get());
+                        output.accept(BlockRegistration.APPLE_WALLPAPER.get());
+                        output.accept(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER.get());
+                        output.accept(BlockRegistration.CHECKERED_FRUIT_WALLPAPER.get());
+                        output.accept(BlockRegistration.CHECKERED_PINK_WALLPAPER.get());
+                        output.accept(BlockRegistration.CHECKERED_PINK_STRAWBERRY_WALLPAPER.get());
+                        output.accept(BlockRegistration.CHECKERED_GREEN_WALLPAPER.get());
+                        output.accept(BlockRegistration.CHECKERED_GREEN_STRAWBERRY_WALLPAPER.get());
 
                     })
                     .build());

@@ -14,6 +14,7 @@ public class ItemRegistration {
     public static final RegistryObject<Item> HAND_DRILL = ITEMS.register("hand_drill",
             () -> new HandDrillItem(new Item.Properties().stacksTo(1)));
 
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

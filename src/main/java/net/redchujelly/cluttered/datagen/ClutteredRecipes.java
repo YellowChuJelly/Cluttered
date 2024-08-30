@@ -37,6 +37,29 @@ public class ClutteredRecipes extends RecipeProvider {
         buildWoodsetRecipes("blue_mushroom", consumer);
         buildWoodsetRecipes("red_mushroom", consumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WILLOW_GARDEN_DOOR.get(), 3)
+                .pattern("pb")
+                .pattern("pb")
+                .pattern("pb")
+                .define('b', Blocks.IRON_BARS)
+                .define('p', BlockRegistration.WILLOW_PLANKS.get())
+                .unlockedBy("has_willow_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.WILLOW_PLANKS.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WILLOW_LOG_DOOR.get(), 3)
+                .pattern("pb")
+                .pattern("pp")
+                .pattern("pb")
+                .define('b', ForgeRegistries.ITEMS.tags().getTag(ItemTags.create(new ResourceLocation( "willow_log"))).getKey())
+                .define('p', BlockRegistration.WILLOW_PLANKS.get())
+                .unlockedBy("has_willow_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.WILLOW_PLANKS.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+
         //CHALCEDONY RECIPES
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY.get(), 8)
@@ -604,7 +627,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .save(consumer);
 
         if (door !=  null) {
-            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, door)
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, door, 3)
                     .pattern("pp")
                     .pattern("pp")
                     .pattern("pp")
@@ -616,7 +639,7 @@ public class ClutteredRecipes extends RecipeProvider {
         }
 
         if (trapdoor != null) {
-            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, trapdoor)
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, trapdoor, 2)
                     .pattern("ppp")
                     .pattern("ppp")
                     .define('p', planks)

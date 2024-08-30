@@ -1,5 +1,6 @@
 {
   "item.cluttered.hand_drill": "Hand Drill",
+  "cluttered.hand_drill.tooltip": "Can be used to add detail to certain blocks.",
 
   "block.cluttered.willow_planks": "Willow Planks",
   "block.cluttered.willow_log": "Willow Log",
@@ -173,6 +174,8 @@
   "block.cluttered.red_mushroom_window": "Red Mushroom Window",
   "block.cluttered.red_mushroom_window_pane": "Red Mushroom Window Pane",
   "block.cluttered.red_mushroom_bookshelf": "Red Mushroom Bookshelf",
+
+  "cluttered.bouncymushroom.tooltip": "It's bouncy!!!",
 
   "block.cluttered.raw_chalcedony": "Chalcedony",
   "block.cluttered.chalcedony_stairs": "Chalcedony Stairs",
