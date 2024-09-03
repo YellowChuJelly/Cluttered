@@ -1,9 +1,7 @@
 package net.redchujelly.cluttered.datagen.loot;
 
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.setup.BlockRegistration;
@@ -241,6 +239,9 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.STARRY_CHALCEDONY_PILLAR_DORIC.get());
         dropSelf(BlockRegistration.STARRY_CHALCEDONY_PILLAR_IONIC.get());
 
+        add(BlockRegistration.CHALCEDONY_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.CHALCEDONY_WINDOW.get()));
+        add(BlockRegistration.CHALCEDONY_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.CHALCEDONY_WINDOW_PANE.get()));
+
         //DEEP CHALCEDONY SET
         dropSelf(BlockRegistration.DEEP_CHALCEDONY.get());
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_STAIRS.get());
@@ -264,7 +265,10 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_BASE.get());
         dropSelf(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_DORIC.get());
         dropSelf(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_IONIC.get());
-        
+
+        add(BlockRegistration.DEEP_CHALCEDONY_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.DEEP_CHALCEDONY_WINDOW.get()));
+        add(BlockRegistration.DEEP_CHALCEDONY_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.DEEP_CHALCEDONY_WINDOW_PANE.get()));
+
         //MARBLE SET
         dropSelf(BlockRegistration.MARBLE.get());
         dropSelf(BlockRegistration.MARBLE_STAIRS.get());
@@ -304,7 +308,6 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.DARK_STARRY_WALLPAPER.get());
         dropSelf(BlockRegistration.DARK_STARRY_WALLPAPER_TOP.get());
         dropSelf(BlockRegistration.DARK_STARRY_WALLPAPER_BOTTOM.get());
-
         dropSelf(BlockRegistration.RETRO_RAINBOW_WALLPAPER.get());
         dropSelf(BlockRegistration.APPLE_WALLPAPER.get());
         dropSelf(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER.get());
@@ -313,6 +316,119 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.CHECKERED_PINK_STRAWBERRY_WALLPAPER.get());
         dropSelf(BlockRegistration.CHECKERED_GREEN_WALLPAPER.get());
         dropSelf(BlockRegistration.CHECKERED_GREEN_STRAWBERRY_WALLPAPER.get());
+        dropSelf(BlockRegistration.CHIC_WALLPAPER.get());
+        dropSelf(BlockRegistration.CHIC_WALLPAPER_UPPER_TRIM.get());
+        dropSelf(BlockRegistration.CHIC_WALLPAPER_LOWER_TRIM.get());
+        dropSelf(BlockRegistration.FLORAL_BERRY_WALLPAPER.get());
+        dropSelf(BlockRegistration.FLORAL_BORDER_WALLPAPER.get());
+        dropSelf(BlockRegistration.CONFECTIONARY_WALLPAPER.get());
+        dropSelf(BlockRegistration.GHOST_WALLPAPER.get());
+        dropSelf(BlockRegistration.GHOST_WALLPAPER_TRIM.get());
+        dropSelf(BlockRegistration.GHOST_WALLPAPER_WAINSCOTING.get());
+        dropSelf(BlockRegistration.HALLOWEEN_WAINSCOTING.get());
+        dropSelf(BlockRegistration.HALLOWEEN_WALLPAPER.get());
+        dropSelf(BlockRegistration.MARIGOLD_WALLPAPER.get());
+        dropSelf(BlockRegistration.MINT_WALLPAPER.get());
+        dropSelf(BlockRegistration.PINK_STRIPE_WALLPAPER.get());
+        dropSelf(BlockRegistration.PINK_STRIPE_WALLPAPER_LOWER_TRIM.get());
+        dropSelf(BlockRegistration.PINK_STRIPE_WALLPAPER_UPPER_TRIM.get());
+        dropSelf(BlockRegistration.RIALTO_GOLD_WALLPAPER.get());
+        dropSelf(BlockRegistration.STRIPED_FLORAL_WALLPAPER.get());
+
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_APPLE.get());
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY.get());
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY.get());
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_BONES.get());
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET.get());
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM.get());
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES.get());
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_LEMON.get());
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_ORANGE.get());
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_PEAR.get());
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_PLUM.get());
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM.get());
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES.get());
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY.get());
+        dropSelf(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR.get());
+
+        dropSelf(BlockRegistration.BLUE_WAINSCOTING.get());
+        dropSelf(BlockRegistration.BROWN_WAINSCOTING.get());
+        dropSelf(BlockRegistration.WILLOW_WAINSCOTING.get());
+        dropSelf(BlockRegistration.FLOWERING_WILLOW_WAINSCOTING.get());
+        dropSelf(BlockRegistration.POPLAR_WAINSCOTING.get());
+        dropSelf(BlockRegistration.FLOWERING_POPLAR_WAINSCOTING.get());
+        dropSelf(BlockRegistration.CRABAPPLE_WAINSCOTING.get());
+        dropSelf(BlockRegistration.FLOWERING_CRABAPPLE_WAINSCOTING.get());
+        dropSelf(BlockRegistration.SYCAMORE_WAINSCOTING.get());
+        dropSelf(BlockRegistration.MAPLE_WAINSCOTING.get());
+        dropSelf(BlockRegistration.BLUE_MUSHROOM_WAINSCOTING.get());
+        dropSelf(BlockRegistration.RED_MUSHROOM_WAINSCOTING.get());
+        dropSelf(BlockRegistration.ALABASTER_WAINSCOTING.get());
+
+        dropSelf(BlockRegistration.GINGERBREAD_BRICKS.get());
+        dropSelf(BlockRegistration.GINGERBREAD_BRICKS_TOP.get());
+        dropSelf(BlockRegistration.GINGERBREAD_BRICKS_SIDE.get());
+        dropSelf(BlockRegistration.GINGERBREAD_BRICKS_TOP_CORNER.get());
+        dropSelf(BlockRegistration.GINGERBREAD_BRICK_STAIRS.get());
+        dropSelf(BlockRegistration.GINGERBREAD_BRICK_SLAB.get());
+
+        dropSelf(BlockRegistration.ESPERANCA_TILE.get());
+        dropSelf(BlockRegistration.LILIY_HILLS_TILE.get());
+        dropSelf(BlockRegistration.HANNISH_TILE.get());
+        dropSelf(BlockRegistration.AURA_TILES.get());
+        dropSelf(BlockRegistration.BIFURCATING_TILES.get());
+        dropSelf(BlockRegistration.BLACK_AMARYLLIS_TILES.get());
+        dropSelf(BlockRegistration.ROSETTE_TILES.get());
+        dropSelf(BlockRegistration.SEISMIC_TILES.get());
+
+        dropSelf(BlockRegistration.MARBLE_TILE.get());
+        dropSelf(BlockRegistration.MARBLE_TILE_CHISELED.get());
+        dropSelf(BlockRegistration.MARBLE_TILE_BORDER.get());
+        dropSelf(BlockRegistration.MARBLE_TILE_BORDER_CIRCLE.get());
+        dropSelf(BlockRegistration.MARBLE_TILE_BORDER_DETAIL.get());
+        dropSelf(BlockRegistration.MARBLE_TILE_CORNER.get());
+        dropSelf(BlockRegistration.MARBLE_TILE_CORNER_CIRCLE.get());
+
+        dropSelf(BlockRegistration.VERDANT_TILE.get());
+        dropSelf(BlockRegistration.VERDANT_TILE_EDGE.get());
+        dropSelf(BlockRegistration.VERDANT_TILE_CORNER.get());
+
+        dropSelf(BlockRegistration.IRIDESCENT_TILES.get());
+        dropSelf(BlockRegistration.SMALL_IRIDESCENT_TILES.get());
+        dropSelf(BlockRegistration.GREEN_TILES.get());
+        dropSelf(BlockRegistration.SMALL_GREEN_TILES.get());
+        dropSelf(BlockRegistration.YELLOW_TILES.get());
+        dropSelf(BlockRegistration.SMALL_YELLOW_TILES.get());
+        dropSelf(BlockRegistration.PINK_TILES.get());
+        dropSelf(BlockRegistration.SMALL_PINK_TILES.get());
+        dropSelf(BlockRegistration.PURPLE_TILES.get());
+        dropSelf(BlockRegistration.SMALL_PURPLE_TILES.get());
+        dropSelf(BlockRegistration.KITCHEN_TILES.get());
+
+        dropSelf(BlockRegistration.CHISELED_GOLD_BLOCK.get());
+        dropSelf(BlockRegistration.WICKER_BLOCK.get());
+        dropSelf(BlockRegistration.EYE_BLOCK.get());
+        add(BlockRegistration.DYNASTY_DOOR.get(), block -> createDoorTable(BlockRegistration.DYNASTY_DOOR.get()));
+
+        add(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get(), block -> createSilkTouchOnlyTable(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get()));
+        add(BlockRegistration.ALABASTER_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.ALABASTER_WINDOW_PANE.get()));
+        add(BlockRegistration.ALABASTER_PANEL_CANTERBURY.get(), block -> createSilkTouchOnlyTable(BlockRegistration.ALABASTER_PANEL_CANTERBURY.get()));
+        add(BlockRegistration.ALABASTER_PANEL_AUGUSTINE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.ALABASTER_PANEL_AUGUSTINE.get()));
+        add(BlockRegistration.ALABASTER_PANEL_ATLANTIC.get(), block -> createSilkTouchOnlyTable(BlockRegistration.ALABASTER_PANEL_ATLANTIC.get()));
+        add(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get(), block -> createSilkTouchOnlyTable(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get()));
+        add(BlockRegistration.ALABASTER_FRENCH_DOOR.get(), block -> createDoorTable(BlockRegistration.ALABASTER_FRENCH_DOOR.get()));
+        add(BlockRegistration.ALABASTER_SCREEN_DOOR.get(), block -> createDoorTable(BlockRegistration.ALABASTER_SCREEN_DOOR.get()));
+
+        add(BlockRegistration.WOOD_WINDOW_DIVIDED.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_WINDOW_DIVIDED.get()));
+        add(BlockRegistration.WOOD_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_WINDOW_PANE.get()));
+        add(BlockRegistration.WOOD_PANEL_CANTERBURY.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_PANEL_CANTERBURY.get()));
+        add(BlockRegistration.WOOD_PANEL_AUGUSTINE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_PANEL_AUGUSTINE.get()));
+        add(BlockRegistration.WOOD_PANEL_ATLANTIC.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_PANEL_ATLANTIC.get()));
+        add(BlockRegistration.WOOD_PANEL_ALEXANDRIA.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_PANEL_ALEXANDRIA.get()));
+        add(BlockRegistration.WOOD_FRENCH_DOOR.get(), block -> createDoorTable(BlockRegistration.WOOD_FRENCH_DOOR.get()));
+        add(BlockRegistration.WOOD_SCREEN_DOOR.get(), block -> createDoorTable(BlockRegistration.WOOD_SCREEN_DOOR.get()));
+
+
     }
 
     @Override

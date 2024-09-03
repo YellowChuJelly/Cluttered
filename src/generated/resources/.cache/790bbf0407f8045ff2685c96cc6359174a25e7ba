@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-30T02:33:21.2112862	Tags for minecraft:block mod id cluttered
+// 1.20.1	2024-09-02T21:23:21.3973946	Tags for minecraft:block mod id cluttered
 372b97f449e98283ec19dc7d8e8fcfa88adea1cc data/minecraft/tags/blocks/big_dripleaf_placeable.json
 47ac2d7452d0e09fbde135e339e0de621edf66e4 data/minecraft/tags/blocks/buttons.json
 372b97f449e98283ec19dc7d8e8fcfa88adea1cc data/minecraft/tags/blocks/dead_bush_may_place_on.json
@@ -8,8 +8,9 @@ e94967ffa555d772a30a6cdf65fa36d4b2725741 data/minecraft/tags/blocks/enchantment_
 60a7f1164bc1f60281c8903003c992eb3fb06b54 data/minecraft/tags/blocks/fence_gates.json
 26cb727224943a065b4a643f9013284376172fab data/minecraft/tags/blocks/logs.json
 26cb727224943a065b4a643f9013284376172fab data/minecraft/tags/blocks/logs_that_burn.json
-8367aa32794b356937a639f9e530dc8d0ff58b57 data/minecraft/tags/blocks/mineable/axe.json
-fb5d086c4a92c156554df837b3428dbb36fea363 data/minecraft/tags/blocks/mineable/pickaxe.json
+b9e0dd548385e2d11b29c4638799c59b8d6fa96c data/minecraft/tags/blocks/mineable/axe.json
+599afae5e1bb29725301990d005c7586b82b25c2 data/minecraft/tags/blocks/mineable/hoe.json
+1b3354260404952b9c7b6d6cbd6b619c84671dd2 data/minecraft/tags/blocks/mineable/pickaxe.json
 372b97f449e98283ec19dc7d8e8fcfa88adea1cc data/minecraft/tags/blocks/mushroom_grow_block.json
 41449f6eabcde316f6c420db8b9b37ff8370d56e data/minecraft/tags/blocks/planks.json
 59d17763ff49edb8051171bd4c481198ecc8c612 data/minecraft/tags/blocks/pressure_plates.json
@@ -18,8 +19,9 @@ f484ea3e0fb4aa13ff27d7e18244cd242322c72d data/minecraft/tags/blocks/slabs.json
 717dfb529e5787043aa2cd1a0c910400d97325e9 data/minecraft/tags/blocks/stairs.json
 c10e5b5f5eb357b47f443262f0db9836fa9b43ad data/minecraft/tags/blocks/trapdoors.json
 47ac2d7452d0e09fbde135e339e0de621edf66e4 data/minecraft/tags/blocks/wooden_buttons.json
-98b9844dea81b4fb40b2920d70ed0a749f364b0c data/minecraft/tags/blocks/wooden_doors.json
+199af077f73a74b781e954534585b56fbd2edebe data/minecraft/tags/blocks/wooden_doors.json
 9c324ae1b2eeca94a04cf7a382e5c424ea2ebc07 data/minecraft/tags/blocks/wooden_fences.json
 59d17763ff49edb8051171bd4c481198ecc8c612 data/minecraft/tags/blocks/wooden_pressure_plates.json
 f484ea3e0fb4aa13ff27d7e18244cd242322c72d data/minecraft/tags/blocks/wooden_slabs.json
 717dfb529e5787043aa2cd1a0c910400d97325e9 data/minecraft/tags/blocks/wooden_stairs.json
+c10e5b5f5eb357b47f443262f0db9836fa9b43ad data/minecraft/tags/blocks/wooden_trapdoors.json

@@ -51,7 +51,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.WILLOW_PRESSURE_PLATE);
 
         simpleBlockWithItem(BlockRegistration.WILLOW_WINDOW.get(), models().cubeAll("willow_window", modLoc("block/willow_window")).renderType("cutout"));
-        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.WILLOW_WINDOW_PANE.get(), modLoc("block/willow_window"), modLoc("block/willow_window"), "cutout");
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.WILLOW_WINDOW_PANE.get(), modLoc("block/willow_window"), modLoc("block/willow_glass_pane_top"), "cutout");
 
         //FLOWERING WILLOW WOODSET
         blockWithItem((BlockRegistration.FLOWERING_WILLOW_PLANKS));
@@ -79,7 +79,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.FLOWERING_WILLOW_PRESSURE_PLATE);
 
         simpleBlockWithItem(BlockRegistration.FLOWERING_WILLOW_WINDOW.get(), models().cubeAll("flowering_willow_window", modLoc("block/flowering_willow_window")).renderType("cutout"));
-        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.FLOWERING_WILLOW_WINDOW_PANE.get(), modLoc("block/flowering_willow_window"), modLoc("block/flowering_willow_window"), "cutout");
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.FLOWERING_WILLOW_WINDOW_PANE.get(), modLoc("block/flowering_willow_window"), modLoc("block/willow_glass_pane_top"), "cutout");
 
         //POPLAR WOODSET
         blockWithItem((BlockRegistration.POPLAR_PLANKS));
@@ -107,7 +107,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.POPLAR_PRESSURE_PLATE);
 
         simpleBlockWithItem(BlockRegistration.POPLAR_WINDOW.get(), models().cubeAll("poplar_window", modLoc("block/poplar_window")).renderType("translucent"));
-        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.POPLAR_WINDOW_PANE.get(), modLoc("block/poplar_window"), modLoc("block/poplar_window"), "translucent");
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.POPLAR_WINDOW_PANE.get(), modLoc("block/poplar_window"), modLoc("block/poplar_glass_pane_top"), "translucent");
         columnBlockWithItem(BlockRegistration.POPLAR_BOOKSHELF, BlockRegistration.POPLAR_PLANKS);
 
         //FLOWERING POPLAR WOODSET
@@ -136,7 +136,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.FLOWERING_POPLAR_PRESSURE_PLATE);
 
         simpleBlockWithItem(BlockRegistration.FLOWERING_POPLAR_WINDOW.get(), models().cubeAll("flowering_poplar_window", modLoc("block/flowering_poplar_window")).renderType("translucent"));
-        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.FLOWERING_POPLAR_WINDOW_PANE.get(), modLoc("block/flowering_poplar_window"), modLoc("block/flowering_poplar_window"), "translucent");
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.FLOWERING_POPLAR_WINDOW_PANE.get(), modLoc("block/flowering_poplar_window"), modLoc("block/poplar_glass_pane_top"), "translucent");
         columnBlockWithItem(BlockRegistration.FLOWERING_POPLAR_BOOKSHELF, BlockRegistration.FLOWERING_POPLAR_PLANKS);
 
         //CRABAPPLE WOODSET
@@ -165,7 +165,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.CRABAPPLE_PRESSURE_PLATE);
 
         simpleBlockWithItem(BlockRegistration.CRABAPPLE_WINDOW.get(), models().cubeAll("crabapple_window", modLoc("block/crabapple_window")).renderType("cutout"));
-        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.CRABAPPLE_WINDOW_PANE.get(), modLoc("block/crabapple_window"), modLoc("block/crabapple_window"), "cutout");
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.CRABAPPLE_WINDOW_PANE.get(), modLoc("block/crabapple_window"), modLoc("block/crabapple_glass_pane_top"), "cutout");
         columnBlockWithItem(BlockRegistration.CRABAPPLE_BOOKSHELF, BlockRegistration.CRABAPPLE_PLANKS);
 
         //FLOWERING CRABAPPLE WOODSET
@@ -194,7 +194,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.FLOWERING_CRABAPPLE_PRESSURE_PLATE);
 
         simpleBlockWithItem(BlockRegistration.FLOWERING_CRABAPPLE_WINDOW.get(), models().cubeAll("flowering_crabapple_window", modLoc("block/flowering_crabapple_window")).renderType("cutout"));
-        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.FLOWERING_CRABAPPLE_WINDOW_PANE.get(), modLoc("block/flowering_crabapple_window"), modLoc("block/flowering_crabapple_window"), "cutout");
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.FLOWERING_CRABAPPLE_WINDOW_PANE.get(), modLoc("block/flowering_crabapple_window"), modLoc("block/crabapple_glass_pane_top"), "cutout");
         columnBlockWithItem(BlockRegistration.FLOWERING_CRABAPPLE_BOOKSHELF, BlockRegistration.FLOWERING_CRABAPPLE_PLANKS);
 
         //SYCAMORE WOODSET
@@ -223,7 +223,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.SYCAMORE_PRESSURE_PLATE);
 
         simpleBlockWithItem(BlockRegistration.SYCAMORE_WINDOW.get(), models().cubeAll("sycamore_window", modLoc("block/sycamore_window")).renderType("cutout"));
-        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.SYCAMORE_WINDOW_PANE.get(), modLoc("block/sycamore_window"), modLoc("block/sycamore_window"), "cutout");
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.SYCAMORE_WINDOW_PANE.get(), modLoc("block/sycamore_window"), modLoc("block/sycamore_glass_pane_top"), "cutout");
         columnBlockWithItem(BlockRegistration.SYCAMORE_BOOKSHELF, BlockRegistration.SYCAMORE_PLANKS);
 
         //FLUORESCENT MAPLE WOODSET
@@ -252,7 +252,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.MAPLE_PRESSURE_PLATE);
 
         simpleBlockWithItem(BlockRegistration.MAPLE_WINDOW.get(), models().cubeAll("fluorescent_maple_window", modLoc("block/fluorescent_maple_window")).renderType("cutout"));
-        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.MAPLE_WINDOW_PANE.get(), modLoc("block/fluorescent_maple_window"), modLoc("block/fluorescent_maple_window"), "cutout");
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.MAPLE_WINDOW_PANE.get(), modLoc("block/fluorescent_maple_window"), modLoc("block/maple_glass_pane_top"), "cutout");
         columnBlockWithItem(BlockRegistration.MAPLE_BOOKSHELF, BlockRegistration.MAPLE_PLANKS);
 
         //BLUE MUSHROOM WOODSET
@@ -280,7 +280,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.BLUE_MUSHROOM_PRESSURE_PLATE);
 
         simpleBlockWithItem(BlockRegistration.BLUE_MUSHROOM_WINDOW.get(), models().cubeAll("blue_mushroom_window", modLoc("block/blue_mushroom_window")).renderType("cutout"));
-        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.BLUE_MUSHROOM_WINDOW_PANE.get(), modLoc("block/blue_mushroom_window"), modLoc("block/blue_mushroom_window"), "cutout");
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.BLUE_MUSHROOM_WINDOW_PANE.get(), modLoc("block/blue_mushroom_window"), modLoc("block/blue_mushroom_glass_pane_top"), "cutout");
         columnBlockWithItem(BlockRegistration.BLUE_MUSHROOM_BOOKSHELF, BlockRegistration.BLUE_MUSHROOM_PLANKS);
         
         //RED MUSHROOM WOODSET
@@ -308,7 +308,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.RED_MUSHROOM_PRESSURE_PLATE);
 
         simpleBlockWithItem(BlockRegistration.RED_MUSHROOM_WINDOW.get(), models().cubeAll("red_mushroom_window", modLoc("block/red_mushroom_window")).renderType("cutout"));
-        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.RED_MUSHROOM_WINDOW_PANE.get(), modLoc("block/red_mushroom_window"), modLoc("block/red_mushroom_window"), "cutout");
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.RED_MUSHROOM_WINDOW_PANE.get(), modLoc("block/red_mushroom_window"), modLoc("block/red_mushroom_glass_pane_top"), "cutout");
         columnBlockWithItem(BlockRegistration.RED_MUSHROOM_BOOKSHELF, BlockRegistration.RED_MUSHROOM_PLANKS);
 
         //MISC BLOCKS
@@ -358,6 +358,10 @@ public class ClutteredBlockstates extends BlockStateProvider {
         directionalBlock(BlockRegistration.STARRY_CHALCEDONY_PILLAR_IONIC.get(), models().cubeColumn("block/chalcedony_pillar_starry_ionic", modLoc("block/chalcedony_pillar_starry_ionic"), modLoc("block/chalcedony_pillar_starry_top")));
         blockItem(BlockRegistration.STARRY_CHALCEDONY_PILLAR_IONIC);
 
+        simpleBlockWithItem(BlockRegistration.CHALCEDONY_WINDOW.get(), models().cubeAll("chalcedony_window", modLoc("block/chalcedony_window")).renderType("cutout"));
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.CHALCEDONY_WINDOW_PANE.get(), modLoc("block/chalcedony_window"), modLoc("block/chalcedony_glass_pane_top"), "cutout");
+
+
         //DEEP CHALCEDONY
         blockWithItem((BlockRegistration.DEEP_CHALCEDONY));
         slabBlock((SlabBlock) BlockRegistration.DEEP_CHALCEDONY_SLAB.get(), blockTexture(BlockRegistration.DEEP_CHALCEDONY.get()), blockTexture(BlockRegistration.DEEP_CHALCEDONY.get()));
@@ -404,6 +408,11 @@ public class ClutteredBlockstates extends BlockStateProvider {
         directionalBlock(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_IONIC.get(), models().cubeColumn("block/deep_chalcedony_pillar_starry_ionic", modLoc("block/deep_chalcedony_pillar_starry_ionic"), modLoc("block/deep_chalcedony_pillar_starry_top")));
         blockItem(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_IONIC);
 
+        simpleBlockWithItem(BlockRegistration.DEEP_CHALCEDONY_WINDOW.get(), models().cubeAll("deep_chalcedony_window", modLoc("block/deep_chalcedony_window")).renderType("cutout"));
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.DEEP_CHALCEDONY_WINDOW_PANE.get(), modLoc("block/deep_chalcedony_window"), modLoc("block/deep_chalcedony_glass_pane_top"), "cutout");
+
+
+
         //MARBLE
         blockWithItem((BlockRegistration.MARBLE));
         slabBlock((SlabBlock) BlockRegistration.MARBLE_SLAB.get(), blockTexture(BlockRegistration.MARBLE.get()), blockTexture(BlockRegistration.MARBLE.get()));
@@ -440,7 +449,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         //MISC FULL BLOCKS
         simpleBlockWithItem(BlockRegistration.BLACK_CAT_WINDOW.get(), models().cubeAll("black_cat_window", modLoc("block/black_cat_window")).renderType("cutout"));
-        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.BLACK_CAT_WINDOW_PANE.get(), modLoc("block/black_cat_window"), modLoc("block/black_cat_window"), "cutout");
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.BLACK_CAT_WINDOW_PANE.get(), modLoc("block/black_cat_window"), modLoc("block/cat_glass_pane_top"), "cutout");
 
         simpleBlockWithItem(BlockRegistration.YELLOW_PLANTER.get(), models().cubeTop("tarrey_town_planter_yellow", modLoc("block/tarrey_town_planter_yellow"), modLoc("block/tarrey_town_planter_top")));
         simpleBlockWithItem(BlockRegistration.PINK_PLANTER.get(), models().cubeTop("tarrey_town_planter_pink", modLoc("block/tarrey_town_planter_pink"), modLoc("block/tarrey_town_planter_top")));
@@ -466,6 +475,147 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockWithItem(BlockRegistration.CHECKERED_GREEN_STRAWBERRY_WALLPAPER);
         blockWithItem(BlockRegistration.CHECKERED_PINK_WALLPAPER);
         blockWithItem(BlockRegistration.CHECKERED_PINK_STRAWBERRY_WALLPAPER);
+
+        blockWithItem(BlockRegistration.CHIC_WALLPAPER);
+        simpleBlockWithItem(BlockRegistration.CHIC_WALLPAPER_UPPER_TRIM.get(), models().cubeColumn("chic_wallpaper_upper_trim", modLoc("block/chic_wallpaper_upper_trim"), modLoc("block/chic_wallpaper")));
+        simpleBlockWithItem(BlockRegistration.CHIC_WALLPAPER_LOWER_TRIM.get(), models().cubeColumn("chic_wallpaper_lower_trim", modLoc("block/chic_wallpaper_lower_trim"), modLoc("block/chic_wallpaper")));
+        blockWithItem(BlockRegistration.FLORAL_BERRY_WALLPAPER);
+        blockWithItem(BlockRegistration.FLORAL_BORDER_WALLPAPER);
+        blockWithItem(BlockRegistration.CONFECTIONARY_WALLPAPER);
+        blockWithItem(BlockRegistration.GHOST_WALLPAPER);
+        simpleBlockWithItem(BlockRegistration.GHOST_WALLPAPER_TRIM.get(), models().cubeColumn("ghost_wallpaper_trim", modLoc("block/ghost_wallpaper_trim"), modLoc("block/ghost_wallpaper")));
+        blockWithItem(BlockRegistration.GHOST_WALLPAPER_WAINSCOTING);
+
+        blockWithItem(BlockRegistration.HALLOWEEN_WALLPAPER);
+        blockWithItem(BlockRegistration.HALLOWEEN_WAINSCOTING);
+        blockWithItem(BlockRegistration.MARIGOLD_WALLPAPER);
+        blockWithItem(BlockRegistration.MINT_WALLPAPER);
+        blockWithItem(BlockRegistration.PINK_STRIPE_WALLPAPER);
+        simpleBlockWithItem(BlockRegistration.PINK_STRIPE_WALLPAPER_LOWER_TRIM.get(), models().cubeColumn("pink_striped_wallpaper_lower_trim", modLoc("block/pink_striped_wallpaper_lower_trim"), modLoc("block/pink_striped_wallpaper")));
+        simpleBlockWithItem(BlockRegistration.PINK_STRIPE_WALLPAPER_UPPER_TRIM.get(), models().cubeColumn("pink_striped_wallpaper_upper_trim", modLoc("block/pink_striped_wallpaper_upper_trim"), modLoc("block/pink_striped_wallpaper")));
+        blockWithItem(BlockRegistration.RIALTO_GOLD_WALLPAPER);
+        blockWithItem(BlockRegistration.STRIPED_FLORAL_WALLPAPER);
+
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_APPLE);
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY);
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY);
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BONES);
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET);
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM);
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES);
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_LEMON);
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_ORANGE);
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PEAR);
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PLUM);
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM);
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES);
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY);
+        blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR);
+
+        //with the intention of putting top textures in possibly
+        simpleBlockWithItem(BlockRegistration.BLUE_WAINSCOTING.get(), models().cubeColumn("blue_wainscoting", modLoc("block/blue_wainscoting"), modLoc("block/blue_wainscoting")));
+        simpleBlockWithItem(BlockRegistration.BROWN_WAINSCOTING.get(), models().cubeColumn("brown_wainscoting", modLoc("block/brown_wainscoting"), modLoc("block/brown_wainscoting")));
+        simpleBlockWithItem(BlockRegistration.WILLOW_WAINSCOTING.get(), models().cubeColumn("willow_wainscoting", modLoc("block/willow_wainscoting"), modLoc("block/willow_wainscoting")));
+        simpleBlockWithItem(BlockRegistration.FLOWERING_WILLOW_WAINSCOTING.get(), models().cubeColumn("flowering_willow_wainscoting", modLoc("block/flowering_willow_wainscoting"), modLoc("block/flowering_willow_wainscoting")));
+        simpleBlockWithItem(BlockRegistration.POPLAR_WAINSCOTING.get(), models().cubeColumn("poplar_wainscoting", modLoc("block/poplar_wainscoting"), modLoc("block/poplar_wainscoting")));
+        simpleBlockWithItem(BlockRegistration.FLOWERING_POPLAR_WAINSCOTING.get(), models().cubeColumn("flowering_poplar_wainscoting", modLoc("block/flowering_poplar_wainscoting"), modLoc("block/flowering_poplar_wainscoting")));
+        simpleBlockWithItem(BlockRegistration.CRABAPPLE_WAINSCOTING.get(), models().cubeColumn("crabapple_wainscoting", modLoc("block/crabapple_wainscoting"), modLoc("block/crabapple_wainscoting")));
+        simpleBlockWithItem(BlockRegistration.FLOWERING_CRABAPPLE_WAINSCOTING.get(), models().cubeColumn("flowering_crabapple_wainscoting", modLoc("block/flowering_crabapple_wainscoting"), modLoc("block/flowering_crabapple_wainscoting")));
+        simpleBlockWithItem(BlockRegistration.SYCAMORE_WAINSCOTING.get(), models().cubeColumn("sycamore_wainscoting", modLoc("block/sycamore_wainscoting"), modLoc("block/sycamore_wainscoting")));
+        simpleBlockWithItem(BlockRegistration.MAPLE_WAINSCOTING.get(), models().cubeColumn("fluorescent_maple_wainscoting", modLoc("block/fluorescent_maple_wainscoting"), modLoc("block/fluorescent_maple_wainscoting")));
+        simpleBlockWithItem(BlockRegistration.BLUE_MUSHROOM_WAINSCOTING.get(), models().cubeColumn("blue_mushroom_wainscoting", modLoc("block/blue_mushroom_wainscoting"), modLoc("block/blue_mushroom_wainscoting")));
+        simpleBlockWithItem(BlockRegistration.RED_MUSHROOM_WAINSCOTING.get(), models().cubeColumn("red_mushroom_wainscoting", modLoc("block/red_mushroom_wainscoting"), modLoc("block/red_mushroom_wainscoting")));
+        simpleBlockWithItem(BlockRegistration.ALABASTER_WAINSCOTING.get(), models().cubeColumn("alabaster_wainscoting", modLoc("block/alabaster_wainscoting"), modLoc("block/alabaster_wainscoting")));
+
+        blockWithItem(BlockRegistration.GINGERBREAD_BRICKS);
+        simpleBlockWithItem(BlockRegistration.GINGERBREAD_BRICKS_TOP.get(), models().cubeColumn("gingerbread_bricks_top", modLoc("block/gingerbread_bricks_top"), modLoc("block/gingerbread_bricks")));
+        horizontalBlock(BlockRegistration.GINGERBREAD_BRICKS_SIDE.get(), models().cube("gingerbread_bricks_corner",
+                modLoc("block/gingerbread_bricks"), modLoc("block/gingerbread_bricks"),
+                modLoc("block/gingerbread_bricks_side"), modLoc("block/gingerbread_bricks_side"),
+                modLoc("block/gingerbread_bricks_side_alt"),  modLoc("block/gingerbread_bricks_side_alt")).texture("particle", "block/gingerbread_bricks"));
+        blockItem(BlockRegistration.GINGERBREAD_BRICKS_SIDE);
+        horizontalBlock(BlockRegistration.GINGERBREAD_BRICKS_TOP_CORNER.get(), models().cube("gingerbread_bricks_top_corner",
+                modLoc("block/gingerbread_bricks"), modLoc("block/gingerbread_bricks"),
+                modLoc("block/gingerbread_bricks_top_corner_alt"), modLoc("block/gingerbread_bricks_top_corner_alt"),
+                modLoc("block/gingerbread_bricks_top_corner"),  modLoc("block/gingerbread_bricks_top_corner")).texture("particle", "block/gingerbread_bricks"));
+        blockItem(BlockRegistration.GINGERBREAD_BRICKS_TOP_CORNER);
+        stairsBlock((StairBlock) BlockRegistration.GINGERBREAD_BRICK_STAIRS.get(), blockTexture(BlockRegistration.GINGERBREAD_BRICKS.get()));
+        blockItem(BlockRegistration.GINGERBREAD_BRICK_STAIRS);
+        slabBlock((SlabBlock) BlockRegistration.GINGERBREAD_BRICK_SLAB.get(), blockTexture(BlockRegistration.GINGERBREAD_BRICKS.get()), blockTexture(BlockRegistration.GINGERBREAD_BRICKS.get()));
+        blockItem(BlockRegistration.GINGERBREAD_BRICK_SLAB);
+
+
+        horizontalBlock(BlockRegistration.ESPERANCA_TILE.get(), models().getBuilder("block/esperanca_tile").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/esperanca_tile"));
+        blockItem(BlockRegistration.ESPERANCA_TILE);
+        horizontalBlock(BlockRegistration.LILIY_HILLS_TILE.get(), models().getBuilder("block/lily_hills_tile").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/lily_hills_tile"));
+        blockItem(BlockRegistration.LILIY_HILLS_TILE);
+        horizontalBlock(BlockRegistration.HANNISH_TILE.get(), models().getBuilder("block/hannish_tile").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/hannish_tile"));
+        blockItem(BlockRegistration.HANNISH_TILE);
+
+        blockWithItem(BlockRegistration.MARBLE_TILE);
+        blockWithItem(BlockRegistration.MARBLE_TILE_CHISELED);
+        horizontalBlock(BlockRegistration.MARBLE_TILE_BORDER.get(), models().cubeColumn("marble_tile_border", modLoc("block/marble_tile_border"), modLoc("block/marble_tile_border")));
+        blockItem(BlockRegistration.MARBLE_TILE_BORDER);
+        horizontalBlock(BlockRegistration.MARBLE_TILE_BORDER_CIRCLE.get(), models().cubeColumn("marble_tile_border_circle", modLoc("block/marble_tile_border_circle"), modLoc("block/marble_tile_border_circle")));
+        blockItem(BlockRegistration.MARBLE_TILE_BORDER_CIRCLE);
+        horizontalBlock(BlockRegistration.MARBLE_TILE_BORDER_DETAIL.get(), models().cubeColumn("marble_tile_border_detailed", modLoc("block/marble_tile_border_detailed"), modLoc("block/marble_tile_border_detailed")));
+        blockItem(BlockRegistration.MARBLE_TILE_BORDER_DETAIL);
+        horizontalBlock(BlockRegistration.MARBLE_TILE_CORNER.get(), models().getBuilder("block/marble_tile_corner").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/marble_tile_corner"));
+        blockItem(BlockRegistration.MARBLE_TILE_CORNER);
+        horizontalBlock(BlockRegistration.MARBLE_TILE_CORNER_CIRCLE.get(), models().getBuilder("block/marble_tile_corner_circle").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/marble_tile_corner_circle"));
+        blockItem(BlockRegistration.MARBLE_TILE_CORNER_CIRCLE);
+
+        blockWithItem(BlockRegistration.VERDANT_TILE);
+        horizontalBlock(BlockRegistration.VERDANT_TILE_CORNER.get(), models().getBuilder("block/verdant_tile_corner").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/verdant_tile_corner"));
+        blockItem(BlockRegistration.VERDANT_TILE_CORNER);
+        horizontalBlock(BlockRegistration.VERDANT_TILE_EDGE.get(), models().cubeColumn("verdant_tile_edge", modLoc("block/verdant_tile"), modLoc("block/verdant_tile_edge")));
+        blockItem(BlockRegistration.VERDANT_TILE_EDGE);
+
+        horizontalBlock(BlockRegistration.AURA_TILES.get(), models().getBuilder("block/aura_tiles").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/aura_tiles"));
+        blockItem(BlockRegistration.AURA_TILES);
+        horizontalBlock(BlockRegistration.BIFURCATING_TILES.get(), models().getBuilder("block/bifurcating_tiles").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/bifurcating_tiles"));
+        blockItem(BlockRegistration.BIFURCATING_TILES);
+        horizontalBlock(BlockRegistration.BLACK_AMARYLLIS_TILES.get(), models().getBuilder("block/black_amaryllis_tiles").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/black_amaryllis_tiles"));
+        blockItem(BlockRegistration.BLACK_AMARYLLIS_TILES);
+        horizontalBlock(BlockRegistration.ROSETTE_TILES.get(), models().getBuilder("block/rosette_tiles").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/rosette_tiles"));
+        blockItem(BlockRegistration.ROSETTE_TILES);
+        horizontalBlock(BlockRegistration.SEISMIC_TILES.get(), models().getBuilder("block/seismic_tiles").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/seismic_tiles"));
+        blockItem(BlockRegistration.SEISMIC_TILES);
+
+        blockWithItem(BlockRegistration.IRIDESCENT_TILES);
+        blockWithItem(BlockRegistration.SMALL_IRIDESCENT_TILES);
+        blockWithItem(BlockRegistration.GREEN_TILES);
+        blockWithItem(BlockRegistration.SMALL_GREEN_TILES);
+        blockWithItem(BlockRegistration.YELLOW_TILES);
+        blockWithItem(BlockRegistration.SMALL_YELLOW_TILES);
+        blockWithItem(BlockRegistration.PINK_TILES);
+        blockWithItem(BlockRegistration.SMALL_PINK_TILES);
+        blockWithItem(BlockRegistration.PURPLE_TILES);
+        blockWithItem(BlockRegistration.SMALL_PURPLE_TILES);
+        blockWithItem(BlockRegistration.KITCHEN_TILES);
+
+        blockWithItem(BlockRegistration.CHISELED_GOLD_BLOCK);
+        blockWithItem(BlockRegistration.WICKER_BLOCK);
+        blockWithItem(BlockRegistration.EYE_BLOCK);
+        doorBlockWithRenderType((DoorBlock) BlockRegistration.DYNASTY_DOOR.get(), modLoc("block/dynasty_door_bottom"), modLoc("block/dynasty_door_top"), "cutout");
+
+        simpleBlockWithItem(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get(), models().cubeAll("alabaster_window_divided", modLoc("block/alabaster_window_divided")).renderType("cutout"));
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.ALABASTER_WINDOW_PANE.get(), modLoc("block/alabaster_window_divided"), modLoc("block/alabaster_glass_pane_top"), "cutout");
+        simpleBlockWithItem(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get(), models().cubeAll("alabaster_alexandria_panel", modLoc("block/alabaster_alexandria_panel")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.ALABASTER_PANEL_ATLANTIC.get(), models().cubeAll("alabaster_atlantic_panel", modLoc("block/alabaster_atlantic_panel")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.ALABASTER_PANEL_AUGUSTINE.get(), models().cubeAll("alabaster_augustine_panel", modLoc("block/alabaster_augustine_panel")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.ALABASTER_PANEL_CANTERBURY.get(), models().cubeAll("alabaster_canterbury_panel", modLoc("block/alabaster_canterbury_panel")).renderType("cutout"));
+        doorBlockWithRenderType((DoorBlock) BlockRegistration.ALABASTER_SCREEN_DOOR.get(), modLoc("block/alabaster_screen_door_bottom"), modLoc("block/alabaster_screen_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock) BlockRegistration.ALABASTER_FRENCH_DOOR.get(), modLoc("block/alabaster_french_door_bottom"), modLoc("block/alabaster_french_door_top"), "cutout");
+        simpleBlockWithItem(BlockRegistration.WOOD_WINDOW_DIVIDED.get(), models().cubeAll("wooden_window_divided", modLoc("block/wooden_window_divided")).renderType("cutout"));
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.WOOD_WINDOW_PANE.get(), modLoc("block/wooden_window_divided"), modLoc("block/wooden_glass_pane_top"), "cutout");
+        simpleBlockWithItem(BlockRegistration.WOOD_PANEL_ALEXANDRIA.get(), models().cubeAll("wooden_alexandria_panel", modLoc("block/wooden_alexandria_panel")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.WOOD_PANEL_ATLANTIC.get(), models().cubeAll("wooden_atlantic_panel", modLoc("block/wooden_atlantic_panel")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.WOOD_PANEL_AUGUSTINE.get(), models().cubeAll("wooden_augustine_panel", modLoc("block/wooden_augustine_panel")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.WOOD_PANEL_CANTERBURY.get(), models().cubeAll("wooden_canterbury_panel", modLoc("block/wooden_canterbury_panel")).renderType("cutout"));
+        doorBlockWithRenderType((DoorBlock) BlockRegistration.WOOD_SCREEN_DOOR.get(), modLoc("block/wooden_screen_door_bottom"), modLoc("block/wooden_screen_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock) BlockRegistration.WOOD_FRENCH_DOOR.get(), modLoc("block/wooden_french_door_bottom"), modLoc("block/wooden_french_door_top"), "cutout");
+
 
     }
 

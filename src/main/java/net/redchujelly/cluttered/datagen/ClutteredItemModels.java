@@ -73,7 +73,15 @@ public class ClutteredItemModels extends ItemModelProvider {
 
         basicItem(ItemRegistration.HAND_DRILL.get());
 
+        simplePaneBlockItem(BlockRegistration.CHALCEDONY_WINDOW_PANE).renderType("cutout");
+        simplePaneBlockItem(BlockRegistration.DEEP_CHALCEDONY_WINDOW_PANE).renderType("cutout");
+        simplePaneBlockItem(BlockRegistration.ALABASTER_WINDOW_PANE, "_divided").renderType("cutout");
+        simplePaneBlockItem(BlockRegistration.WOOD_WINDOW_PANE, "_divided").renderType("cutout");
+
+
         simplePaneBlockItem(BlockRegistration.BLACK_CAT_WINDOW_PANE);
+        simpleBlockItem(BlockRegistration.DYNASTY_DOOR);
+
     }
 
     //From the Kaupenjoe Forge 1.20.1 tutorial #13
@@ -96,5 +104,10 @@ public class ClutteredItemModels extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(Cluttered.MODID, "block/" + item.getId().getPath().replace("_pane", "")));
+    }
+    private ItemModelBuilder simplePaneBlockItem(RegistryObject<Block> item, String end) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(Cluttered.MODID, "block/" + item.getId().getPath().replace("_pane", "") + end));
     }
 }

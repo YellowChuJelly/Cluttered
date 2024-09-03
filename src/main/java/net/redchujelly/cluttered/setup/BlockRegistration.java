@@ -8,7 +8,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,7 +18,6 @@ import net.redchujelly.cluttered.block.custom.*;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
-import java.util.function.ToIntFunction;
 
 public class BlockRegistration {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Cluttered.MODID);
@@ -449,6 +447,10 @@ public class BlockRegistration {
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)));
     public static final RegistryObject<Block> STARRY_CHALCEDONY_PILLAR_IONIC = registerBlock("chalcedony_pillar_starry_ionic",
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> CHALCEDONY_WINDOW = registerBlock("chalcedony_window",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.LIGHT_BLUE)));
+    public static final RegistryObject<Block> CHALCEDONY_WINDOW_PANE = registerBlock("chalcedony_window_pane",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.LIGHT_BLUE)));
 
     //DEEP CHALCEDONY SET
     public static final RegistryObject<Block> DEEP_CHALCEDONY = registerBlock("deep_raw_chalcedony",
@@ -497,6 +499,10 @@ public class BlockRegistration {
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE)));
     public static final RegistryObject<Block> DEEP_STARRY_CHALCEDONY_PILLAR_IONIC = registerBlock("deep_chalcedony_pillar_starry_ionic",
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE)));
+    public static final RegistryObject<Block> DEEP_CHALCEDONY_WINDOW = registerBlock("deep_chalcedony_window",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.LIGHT_BLUE)));
+    public static final RegistryObject<Block> DEEP_CHALCEDONY_WINDOW_PANE = registerBlock("deep_chalcedony_window_pane",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.LIGHT_BLUE)));
     //MARBLE SET
     public static final RegistryObject<Block> MARBLE = registerBlock("raw_marble",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE)));
@@ -564,12 +570,11 @@ public class BlockRegistration {
 
     //WALLPAPERS
     public static final RegistryObject<Block> STARRY_WALLPAPER = registerBlock("starry_wallpaper",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM).lightLevel(p -> 4).noOcclusion()));
     public static final RegistryObject<Block> STARRY_WALLPAPER_TOP = registerBlock("starry_wallpaper_upper_trim",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM).lightLevel(p -> 4).noOcclusion()));
     public static final RegistryObject<Block> STARRY_WALLPAPER_BOTTOM = registerBlock("starry_wallpaper_lower_trim",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
-
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM).lightLevel(p -> 4).noOcclusion()));
     public static final RegistryObject<Block> DARK_STARRY_WALLPAPER = registerBlock("dark_starry_wallpaper",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> DARK_STARRY_WALLPAPER_TOP = registerBlock("dark_starry_wallpaper_upper_trim",
@@ -593,6 +598,224 @@ public class BlockRegistration {
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> CHECKERED_PINK_STRAWBERRY_WALLPAPER = registerBlock("checkered_pink_strawberry_wallpaper",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> CHIC_WALLPAPER = registerBlock("chic_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> CHIC_WALLPAPER_UPPER_TRIM = registerBlock("chic_wallpaper_upper_trim",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> CHIC_WALLPAPER_LOWER_TRIM = registerBlock("chic_wallpaper_lower_trim",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> CONFECTIONARY_WALLPAPER = registerBlock("confectionary_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> FLORAL_BERRY_WALLPAPER = registerBlock("floral_berry_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> FLORAL_BORDER_WALLPAPER = registerBlock("floral_border_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.GREEN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> GHOST_WALLPAPER = registerBlock("ghost_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> GHOST_WALLPAPER_TRIM = registerBlock("ghost_wallpaper_trim",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> GHOST_WALLPAPER_WAINSCOTING = registerBlock("ghost_wallpaper_wainscoting",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.PURPLE)));
+    public static final RegistryObject<Block> HALLOWEEN_WALLPAPER = registerBlock("halloween_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> HALLOWEEN_WAINSCOTING = registerBlock("halloween_wainscoting",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.PURPLE)));
+    public static final RegistryObject<Block> MARIGOLD_WALLPAPER = registerBlock("marigold_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> MINT_WALLPAPER = registerBlock("mint_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> PINK_STRIPE_WALLPAPER = registerBlock("pink_striped_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> PINK_STRIPE_WALLPAPER_LOWER_TRIM = registerBlock("pink_striped_wallpaper_lower_trim",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> PINK_STRIPE_WALLPAPER_UPPER_TRIM = registerBlock("pink_striped_wallpaper_upper_trim",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> RIALTO_GOLD_WALLPAPER = registerBlock("rialto_gold_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> STRIPED_FLORAL_WALLPAPER = registerBlock("striped_floral_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
+    //DIAMOND WALLPAPER
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_APPLE = registerBlock("diamond_wallpaper_apple",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLACKBERRY = registerBlock("diamond_wallpaper_blackberry",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLUEBERRY = registerBlock("diamond_wallpaper_blueberry",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BONES = registerBlock("diamond_wallpaper_bones",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BOUQUET = registerBlock("diamond_wallpaper_bouquet",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.MAGENTA_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BROWN_MUSHROOM = registerBlock("diamond_wallpaper_brown_mushroom",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_GREEN_GRAPES = registerBlock("diamond_wallpaper_green_grapes",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_LEMON = registerBlock("diamond_wallpaper_lemon",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_ORANGE = registerBlock("diamond_wallpaper_orange",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PEAR = registerBlock("diamond_wallpaper_pear",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PLUM = registerBlock("diamond_wallpaper_plum",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PURPLE_GRAPES = registerBlock("diamond_wallpaper_purple_grapes",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_STRAWBERRY = registerBlock("diamond_wallpaper_strawberry",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_RED_MUSHROOM = registerBlock("diamond_wallpaper_red_mushroom",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_ANCHOR = registerBlock("diamond_wallpaper_anchor",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
+    //WAINSCOTING
+    public static final RegistryObject<Block> BLUE_WAINSCOTING = registerFuelBlock("blue_wainscoting",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE)), 300);
+    public static final RegistryObject<Block> BROWN_WAINSCOTING = registerFuelBlock("brown_wainscoting",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE)), 300);
+    public static final RegistryObject<Block> WILLOW_WAINSCOTING = registerFuelBlock("willow_wainscoting",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.PURPLE)), 300);
+    public static final RegistryObject<Block> FLOWERING_WILLOW_WAINSCOTING = registerFuelBlock("flowering_willow_wainscoting",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.PURPLE)), 300);
+    public static final RegistryObject<Block> POPLAR_WAINSCOTING = registerFuelBlock("poplar_wainscoting",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.YELLOW)), 300);
+    public static final RegistryObject<Block> FLOWERING_POPLAR_WAINSCOTING = registerFuelBlock("flowering_poplar_wainscoting",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.YELLOW)), 300);
+    public static final RegistryObject<Block> CRABAPPLE_WAINSCOTING = registerFuelBlock("crabapple_wainscoting",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.PINK)), 300);
+    public static final RegistryObject<Block> FLOWERING_CRABAPPLE_WAINSCOTING = registerFuelBlock("flowering_crabapple_wainscoting",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.PINK)), 300);
+    public static final RegistryObject<Block> SYCAMORE_WAINSCOTING = registerFuelBlock("sycamore_wainscoting",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.GREEN)), 300);
+    public static final RegistryObject<Block> MAPLE_WAINSCOTING = registerFuelBlock("fluorescent_maple_wainscoting",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.LIGHT_BLUE).lightLevel(p -> 4).noOcclusion()), 300);
+    public static final RegistryObject<Block> BLUE_MUSHROOM_WAINSCOTING = registerFuelBlock("blue_mushroom_wainscoting",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT)), 300);
+    public static final RegistryObject<Block> RED_MUSHROOM_WAINSCOTING = registerFuelBlock("red_mushroom_wainscoting",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT)), 300);
+    public static final RegistryObject<Block> ALABASTER_WAINSCOTING = registerBlock("alabaster_wainscoting",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK)));
+
+    //BRICKS AND TILES
+    public static final RegistryObject<Block> GINGERBREAD_BRICKS = registerBlock("gingerbread_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BROWN).sound(SoundType.CHERRY_WOOD)));
+    public static final RegistryObject<Block> GINGERBREAD_BRICKS_TOP = registerBlock("gingerbread_bricks_top",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BROWN).sound(SoundType.CHERRY_WOOD)));
+    public static final RegistryObject<Block> GINGERBREAD_BRICKS_SIDE = registerBlock("gingerbread_bricks_corner",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BROWN).sound(SoundType.CHERRY_WOOD)));
+    public static final RegistryObject<Block> GINGERBREAD_BRICKS_TOP_CORNER = registerBlock("gingerbread_bricks_top_corner",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BROWN).sound(SoundType.CHERRY_WOOD)));
+    public static final RegistryObject<Block> GINGERBREAD_BRICK_STAIRS = registerBlock("gingerbread_brick_stairs",
+            () -> new StairBlock(() -> BlockRegistration.GINGERBREAD_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.QUARTZ_STAIRS).mapColor(DyeColor.BROWN).sound(SoundType.CHERRY_WOOD)));
+    public static final RegistryObject<Block> GINGERBREAD_BRICK_SLAB = registerBlock("gingerbread_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BROWN).sound(SoundType.CHERRY_WOOD)));
+
+    public static final RegistryObject<Block> ESPERANCA_TILE = registerBlock("esperanca_tile",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.LIGHT_BLUE)));
+    public static final RegistryObject<Block> LILIY_HILLS_TILE = registerBlock("lily_hills_tile",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.BROWN)));
+    public static final RegistryObject<Block> HANNISH_TILE = registerBlock("hannish_tile",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.PURPLE)));
+    public static final RegistryObject<Block> AURA_TILES = registerBlock("aura_tiles",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.ORANGE)));
+    public static final RegistryObject<Block> BIFURCATING_TILES = registerBlock("bifurcating_tiles",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> BLACK_AMARYLLIS_TILES = registerBlock("black_amaryllis_tiles",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.BLACK)));
+    public static final RegistryObject<Block> ROSETTE_TILES = registerBlock("rosette_tiles",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.ORANGE)));
+    public static final RegistryObject<Block> SEISMIC_TILES = registerBlock("seismic_tiles",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.LIGHT_GRAY)));
+
+    public static final RegistryObject<Block> VERDANT_TILE = registerBlock("verdant_tile",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.GREEN)));
+    public static final RegistryObject<Block> VERDANT_TILE_EDGE = registerBlock("verdant_tile_edge",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.GREEN)));
+    public static final RegistryObject<Block> VERDANT_TILE_CORNER = registerBlock("verdant_tile_corner",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.GREEN)));
+
+    public static final RegistryObject<Block> MARBLE_TILE = registerBlock("marble_tile",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> MARBLE_TILE_CHISELED = registerBlock("marble_tile_chiseled",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.YELLOW)));
+    public static final RegistryObject<Block> MARBLE_TILE_BORDER = registerBlock("marble_tile_border",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> MARBLE_TILE_BORDER_CIRCLE = registerBlock("marble_tile_border_circle",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> MARBLE_TILE_BORDER_DETAIL = registerBlock("marble_tile_border_detailed",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> MARBLE_TILE_CORNER = registerBlock("marble_tile_corner",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> MARBLE_TILE_CORNER_CIRCLE = registerBlock("marble_tile_corner_circle",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.WHITE)));
+
+    public static final RegistryObject<Block> IRIDESCENT_TILES = registerBlock("tiles_iridescent",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.PINK)));
+    public static final RegistryObject<Block> SMALL_IRIDESCENT_TILES = registerBlock("tiles_iridescent_small",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.PINK)));
+    public static final RegistryObject<Block> GREEN_TILES = registerBlock("tiles_green",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.GREEN)));
+    public static final RegistryObject<Block> SMALL_GREEN_TILES = registerBlock("subway_tiles_green",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.GREEN)));
+    public static final RegistryObject<Block> YELLOW_TILES = registerBlock("tiles_yellow",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.YELLOW)));
+    public static final RegistryObject<Block> SMALL_YELLOW_TILES = registerBlock("subway_tiles_yellow",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.YELLOW)));
+    public static final RegistryObject<Block> PURPLE_TILES = registerBlock("tiles_purple",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.PURPLE)));
+    public static final RegistryObject<Block> SMALL_PURPLE_TILES = registerBlock("subway_tiles_purple",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.PURPLE)));
+    public static final RegistryObject<Block> PINK_TILES = registerBlock("tiles_pink",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.PINK)));
+    public static final RegistryObject<Block> SMALL_PINK_TILES = registerBlock("subway_tiles_pink",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.PINK)));
+    public static final RegistryObject<Block> KITCHEN_TILES = registerBlock("tiles_kitchen",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.RED)));
+
+    public static final RegistryObject<Block> WICKER_BLOCK = registerFuelBlock("wicker_block",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.BAMBOO)), 150);
+    public static final RegistryObject<Block> CHISELED_GOLD_BLOCK = registerBlock("chiseled_gold_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)));
+    public static final RegistryObject<Block> EYE_BLOCK = registerBlock("eye_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.FROGSPAWN)));
+    public static final RegistryObject<Block> DYNASTY_DOOR = registerFuelBlock("dynasty_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.CYAN), BlockSetType.OAK), 300);
+
+    public static final RegistryObject<Block> ALABASTER_WINDOW_DIVIDED = registerBlock("alabaster_window_divided",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> ALABASTER_WINDOW_PANE = registerBlock("alabaster_window_pane",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> ALABASTER_PANEL_CANTERBURY = registerBlock("alabaster_canterbury_panel",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> ALABASTER_PANEL_ATLANTIC = registerBlock("alabaster_atlantic_panel",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> ALABASTER_PANEL_ALEXANDRIA = registerBlock("alabaster_alexandria_panel",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> ALABASTER_PANEL_AUGUSTINE = registerBlock("alabaster_augustine_panel",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> ALABASTER_SCREEN_DOOR = registerBlock("alabaster_screen_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_DOOR), BlockSetType.STONE));    
+    public static final RegistryObject<Block> ALABASTER_FRENCH_DOOR = registerBlock("alabaster_french_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_DOOR), BlockSetType.STONE));
+    
+    public static final RegistryObject<Block> WOOD_WINDOW_DIVIDED = registerBlock("wooden_window_divided",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.BROWN)));
+    public static final RegistryObject<Block> WOOD_WINDOW_PANE = registerBlock("wooden_window_pane",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.BROWN)));
+    public static final RegistryObject<Block> WOOD_PANEL_CANTERBURY = registerBlock("wooden_canterbury_panel",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.BROWN)));
+    public static final RegistryObject<Block> WOOD_PANEL_ATLANTIC = registerBlock("wooden_atlantic_panel",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.BROWN)));
+    public static final RegistryObject<Block> WOOD_PANEL_ALEXANDRIA = registerBlock("wooden_alexandria_panel",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.BROWN)));
+    public static final RegistryObject<Block> WOOD_PANEL_AUGUSTINE = registerBlock("wooden_augustine_panel",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.BROWN)));
+    public static final RegistryObject<Block> WOOD_SCREEN_DOOR = registerBlock("wooden_screen_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK));
+    public static final RegistryObject<Block> WOOD_FRENCH_DOOR = registerBlock("wooden_french_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK));
+
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

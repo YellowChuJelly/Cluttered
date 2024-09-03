@@ -2,7 +2,7 @@
   "parent": "minecraft:block/template_glass_pane_post",
   "render_type": "minecraft:translucent",
   "textures": {
-    "edge": "cluttered:block/poplar_window",
+    "edge": "cluttered:block/poplar_glass_pane_top",
     "pane": "cluttered:block/poplar_window"
   }
 }

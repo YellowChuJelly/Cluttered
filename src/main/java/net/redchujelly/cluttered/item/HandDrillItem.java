@@ -80,7 +80,55 @@ public class HandDrillItem extends Item {
             put(BlockRegistration.CHECKERED_PINK_WALLPAPER.get(), BlockRegistration.CHECKERED_PINK_STRAWBERRY_WALLPAPER.get());
             put(BlockRegistration.CHECKERED_PINK_STRAWBERRY_WALLPAPER.get(), BlockRegistration.CHECKERED_PINK_WALLPAPER.get());
 
+            put(BlockRegistration.CHIC_WALLPAPER.get(), BlockRegistration.CHIC_WALLPAPER_LOWER_TRIM.get());
+            put(BlockRegistration.CHIC_WALLPAPER_LOWER_TRIM.get(), BlockRegistration.CHIC_WALLPAPER_UPPER_TRIM.get());
+            put(BlockRegistration.CHIC_WALLPAPER_UPPER_TRIM.get(), BlockRegistration.CHIC_WALLPAPER.get());
 
+            put(BlockRegistration.GHOST_WALLPAPER.get(), BlockRegistration.GHOST_WALLPAPER_WAINSCOTING.get());
+            put(BlockRegistration.GHOST_WALLPAPER_WAINSCOTING.get(), BlockRegistration.GHOST_WALLPAPER_TRIM.get());
+            put(BlockRegistration.GHOST_WALLPAPER_TRIM.get(), BlockRegistration.GHOST_WALLPAPER.get());
+
+            put(BlockRegistration.HALLOWEEN_WALLPAPER.get(), BlockRegistration.HALLOWEEN_WAINSCOTING.get());
+            put(BlockRegistration.HALLOWEEN_WAINSCOTING.get(), BlockRegistration.HALLOWEEN_WALLPAPER.get());
+
+            put(BlockRegistration.PINK_STRIPE_WALLPAPER.get(), BlockRegistration.PINK_STRIPE_WALLPAPER_LOWER_TRIM.get());
+            put(BlockRegistration.PINK_STRIPE_WALLPAPER_LOWER_TRIM.get(), BlockRegistration.PINK_STRIPE_WALLPAPER_UPPER_TRIM.get());
+            put(BlockRegistration.PINK_STRIPE_WALLPAPER_UPPER_TRIM.get(), BlockRegistration.PINK_STRIPE_WALLPAPER.get());
+
+            put(BlockRegistration.MINT_WALLPAPER.get(), BlockRegistration.BROWN_WAINSCOTING.get());
+            put(BlockRegistration.BROWN_WAINSCOTING.get(), BlockRegistration.MINT_WALLPAPER.get());
+
+            put(BlockRegistration.BLUE_WAINSCOTING.get(), BlockRegistration.CONFECTIONARY_WALLPAPER.get());
+            put(BlockRegistration.CONFECTIONARY_WALLPAPER.get(), BlockRegistration.BLUE_WAINSCOTING.get());
+
+            put(BlockRegistration.GINGERBREAD_BRICKS.get(), BlockRegistration.GINGERBREAD_BRICKS_TOP.get());
+            put(BlockRegistration.GINGERBREAD_BRICKS_TOP.get(), BlockRegistration.GINGERBREAD_BRICKS_SIDE.get());
+            put(BlockRegistration.GINGERBREAD_BRICKS_SIDE.get(), BlockRegistration.GINGERBREAD_BRICKS_TOP_CORNER.get());
+            put(BlockRegistration.GINGERBREAD_BRICKS_TOP_CORNER.get(), BlockRegistration.GINGERBREAD_BRICKS.get());
+
+            put(BlockRegistration.MARBLE_TILE.get(), BlockRegistration.MARBLE_TILE_CHISELED.get());
+            put(BlockRegistration.MARBLE_TILE_CHISELED.get(), BlockRegistration.MARBLE_TILE_BORDER.get());
+            put(BlockRegistration.MARBLE_TILE_BORDER.get(), BlockRegistration.MARBLE_TILE_BORDER_CIRCLE.get());
+            put(BlockRegistration.MARBLE_TILE_BORDER_CIRCLE.get(), BlockRegistration.MARBLE_TILE_BORDER_DETAIL.get());
+            put(BlockRegistration.MARBLE_TILE_BORDER_DETAIL.get(), BlockRegistration.MARBLE_TILE_CORNER.get());
+            put(BlockRegistration.MARBLE_TILE_CORNER.get(), BlockRegistration.MARBLE_TILE_CORNER_CIRCLE.get());
+            put(BlockRegistration.MARBLE_TILE_CORNER_CIRCLE.get(), BlockRegistration.MARBLE_TILE.get());
+
+            put(BlockRegistration.VERDANT_TILE.get(), BlockRegistration.VERDANT_TILE_EDGE.get());
+            put(BlockRegistration.VERDANT_TILE_EDGE.get(), BlockRegistration.VERDANT_TILE_CORNER.get());
+            put(BlockRegistration.VERDANT_TILE_CORNER.get(), BlockRegistration.VERDANT_TILE.get());
+            
+            put(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get(), BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get());
+            put(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get(), BlockRegistration.ALABASTER_PANEL_ATLANTIC.get());
+            put(BlockRegistration.ALABASTER_PANEL_ATLANTIC.get(), BlockRegistration.ALABASTER_PANEL_AUGUSTINE.get());
+            put(BlockRegistration.ALABASTER_PANEL_AUGUSTINE.get(), BlockRegistration.ALABASTER_PANEL_CANTERBURY.get());
+            put(BlockRegistration.ALABASTER_PANEL_CANTERBURY.get(), BlockRegistration.ALABASTER_WINDOW_DIVIDED.get());   
+            
+            put(BlockRegistration.WOOD_WINDOW_DIVIDED.get(), BlockRegistration.WOOD_PANEL_ALEXANDRIA.get());
+            put(BlockRegistration.WOOD_PANEL_ALEXANDRIA.get(), BlockRegistration.WOOD_PANEL_ATLANTIC.get());
+            put(BlockRegistration.WOOD_PANEL_ATLANTIC.get(), BlockRegistration.WOOD_PANEL_AUGUSTINE.get());
+            put(BlockRegistration.WOOD_PANEL_AUGUSTINE.get(), BlockRegistration.WOOD_PANEL_CANTERBURY.get());
+            put(BlockRegistration.WOOD_PANEL_CANTERBURY.get(), BlockRegistration.WOOD_WINDOW_DIVIDED.get());
 
         }};
         if (blockCycle.containsKey(block.getBlock())) {

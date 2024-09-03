@@ -32,6 +32,8 @@ public class ClutteredBlockTags extends BlockTagsProvider {
         tagNewWoodset("blue_mushroom");
         tagNewWoodset("red_mushroom");
 
+        tag(BlockTags.MINEABLE_WITH_HOE)
+                .add(BlockRegistration.EYE_BLOCK.get());
         tag(BlockTags.ENCHANTMENT_POWER_PROVIDER)
                 .add(BlockRegistration.WILLOW_BOOKSHELF_BLACK_CAT.get())
                 .add(BlockRegistration.WILLOW_BOOKSHELF_CALICO_CAT.get())
@@ -65,11 +67,64 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.CHECKERED_PINK_WALLPAPER.get())
                 .add(BlockRegistration.CHECKERED_PINK_STRAWBERRY_WALLPAPER.get())
                 .add(BlockRegistration.CHECKERED_GREEN_WALLPAPER.get())
-                .add(BlockRegistration.CHECKERED_GREEN_STRAWBERRY_WALLPAPER.get());
+                .add(BlockRegistration.CHECKERED_GREEN_STRAWBERRY_WALLPAPER.get())
+
+                .add(BlockRegistration.CHIC_WALLPAPER.get())
+                .add(BlockRegistration.CHIC_WALLPAPER_LOWER_TRIM.get())
+                .add(BlockRegistration.CHIC_WALLPAPER_UPPER_TRIM.get())
+                .add(BlockRegistration.FLORAL_BERRY_WALLPAPER.get())
+                .add(BlockRegistration.FLORAL_BORDER_WALLPAPER.get())
+                .add(BlockRegistration.CONFECTIONARY_WALLPAPER.get())
+                .add(BlockRegistration.GHOST_WALLPAPER.get())
+                .add(BlockRegistration.GHOST_WALLPAPER_TRIM.get())
+                .add(BlockRegistration.GHOST_WALLPAPER_WAINSCOTING.get())
+
+                .add(BlockRegistration.HALLOWEEN_WALLPAPER.get())
+                .add(BlockRegistration.HALLOWEEN_WAINSCOTING.get())
+                .add(BlockRegistration.MARIGOLD_WALLPAPER.get())
+                .add(BlockRegistration.MINT_WALLPAPER.get())
+                .add(BlockRegistration.PINK_STRIPE_WALLPAPER_LOWER_TRIM.get())
+                .add(BlockRegistration.PINK_STRIPE_WALLPAPER.get())
+                .add(BlockRegistration.PINK_STRIPE_WALLPAPER_UPPER_TRIM.get())
+                .add(BlockRegistration.RIALTO_GOLD_WALLPAPER.get())
+                .add(BlockRegistration.STRIPED_FLORAL_WALLPAPER.get())
+
+                .add(BlockRegistration.DIAMOND_WALLPAPER_APPLE.get())
+                .add(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY.get())
+                .add(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY.get())
+                .add(BlockRegistration.DIAMOND_WALLPAPER_BONES.get())
+                .add(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET.get())
+                .add(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM.get())
+                .add(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES.get())
+                .add(BlockRegistration.DIAMOND_WALLPAPER_LEMON.get())
+                .add(BlockRegistration.DIAMOND_WALLPAPER_ORANGE.get())
+                .add(BlockRegistration.DIAMOND_WALLPAPER_PEAR.get())
+                .add(BlockRegistration.DIAMOND_WALLPAPER_PLUM.get())
+                .add(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM.get())
+                .add(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES.get())
+                .add(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY.get())
+                .add(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR.get())
+
+                .add(BlockRegistration.WICKER_BLOCK.get())
+                .add(BlockRegistration.DYNASTY_DOOR.get())
+                .add(BlockRegistration.WOOD_WINDOW_DIVIDED.get())
+                .add(BlockRegistration.WOOD_WINDOW_PANE.get())
+                .add(BlockRegistration.WOOD_PANEL_ATLANTIC.get())
+                .add(BlockRegistration.WOOD_PANEL_AUGUSTINE.get())
+                .add(BlockRegistration.WOOD_PANEL_ALEXANDRIA.get())
+                .add(BlockRegistration.WOOD_PANEL_CANTERBURY.get())
+                .add(BlockRegistration.WOOD_SCREEN_DOOR.get())
+                .add(BlockRegistration.WOOD_FRENCH_DOOR.get())
+
+                .add(BlockRegistration.BLUE_WAINSCOTING.get())
+                .add(BlockRegistration.BROWN_WAINSCOTING.get());
 
         tag(BlockTags.WOODEN_DOORS)
                 .add(BlockRegistration.WILLOW_LOG_DOOR.get())
-                .add(BlockRegistration.WILLOW_GARDEN_DOOR.get());
+                .add(BlockRegistration.WILLOW_GARDEN_DOOR.get())
+                .add(BlockRegistration.DYNASTY_DOOR.get())
+                .add(BlockRegistration.WOOD_FRENCH_DOOR.get())
+                .add(BlockRegistration.WOOD_SCREEN_DOOR.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(BlockRegistration.CHALCEDONY.get())
@@ -94,6 +149,8 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.STARRY_CHALCEDONY_PILLAR_BASE.get())
                 .add(BlockRegistration.STARRY_CHALCEDONY_PILLAR_DORIC.get())
                 .add(BlockRegistration.STARRY_CHALCEDONY_PILLAR_IONIC.get())
+                .add(BlockRegistration.CHALCEDONY_WINDOW.get())
+                .add(BlockRegistration.CHALCEDONY_WINDOW_PANE.get())
 
                 .add(BlockRegistration.DEEP_CHALCEDONY.get())
                 .add(BlockRegistration.DEEP_CHALCEDONY_STAIRS.get())
@@ -117,6 +174,8 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_BASE.get())
                 .add(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_IONIC.get())
                 .add(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_DORIC.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_WINDOW.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_WINDOW_PANE.get())
 
                 .add(BlockRegistration.MARBLE.get())
                 .add(BlockRegistration.MARBLE_STAIRS.get())
@@ -135,7 +194,61 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.MARBLE_PILLAR.get())
                 .add(BlockRegistration.MARBLE_PILLAR_BASE.get())
                 .add(BlockRegistration.MARBLE_PILLAR_DORIC.get())
-                .add(BlockRegistration.MARBLE_PILLAR_IONIC.get());
+                .add(BlockRegistration.MARBLE_PILLAR_IONIC.get())
+
+                .add(BlockRegistration.GINGERBREAD_BRICKS.get())
+                .add(BlockRegistration.GINGERBREAD_BRICK_STAIRS.get())
+                .add(BlockRegistration.GINGERBREAD_BRICK_SLAB.get())
+                .add(BlockRegistration.GINGERBREAD_BRICKS_SIDE.get())
+                .add(BlockRegistration.GINGERBREAD_BRICKS_TOP.get())
+                .add(BlockRegistration.GINGERBREAD_BRICKS_TOP_CORNER.get())
+
+                .add(BlockRegistration.ESPERANCA_TILE.get())
+                .add(BlockRegistration.HANNISH_TILE.get())
+                .add(BlockRegistration.LILIY_HILLS_TILE.get())
+                .add(BlockRegistration.AURA_TILES.get())
+                .add(BlockRegistration.BIFURCATING_TILES.get())
+                .add(BlockRegistration.BLACK_AMARYLLIS_TILES.get())
+                .add(BlockRegistration.ROSETTE_TILES.get())
+                .add(BlockRegistration.SEISMIC_TILES.get())
+
+                .add(BlockRegistration.VERDANT_TILE.get())
+                .add(BlockRegistration.VERDANT_TILE_EDGE.get())
+                .add(BlockRegistration.VERDANT_TILE_CORNER.get())
+
+                .add(BlockRegistration.IRIDESCENT_TILES.get())
+                .add(BlockRegistration.SMALL_IRIDESCENT_TILES.get())
+                .add(BlockRegistration.GREEN_TILES.get())
+                .add(BlockRegistration.SMALL_GREEN_TILES.get())
+                .add(BlockRegistration.YELLOW_TILES.get())
+                .add(BlockRegistration.SMALL_YELLOW_TILES.get())
+                .add(BlockRegistration.PINK_TILES.get())
+                .add(BlockRegistration.SMALL_PINK_TILES.get())
+                .add(BlockRegistration.PURPLE_TILES.get())
+                .add(BlockRegistration.SMALL_PURPLE_TILES.get())
+                .add(BlockRegistration.KITCHEN_TILES.get())
+
+                .add(BlockRegistration.MARBLE_TILE.get())
+                .add(BlockRegistration.MARBLE_TILE_CHISELED.get())
+                .add(BlockRegistration.MARBLE_TILE_BORDER.get())
+                .add(BlockRegistration.MARBLE_TILE_BORDER_DETAIL.get())
+                .add(BlockRegistration.MARBLE_TILE_BORDER_CIRCLE.get())
+                .add(BlockRegistration.MARBLE_TILE_CORNER.get())
+                .add(BlockRegistration.MARBLE_TILE_CORNER_CIRCLE.get())
+
+                .add(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get())
+                .add(BlockRegistration.ALABASTER_WINDOW_PANE.get())
+                .add(BlockRegistration.ALABASTER_PANEL_ATLANTIC.get())
+                .add(BlockRegistration.ALABASTER_PANEL_AUGUSTINE.get())
+                .add(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get())
+                .add(BlockRegistration.ALABASTER_PANEL_CANTERBURY.get())
+                .add(BlockRegistration.ALABASTER_SCREEN_DOOR.get())
+                .add(BlockRegistration.ALABASTER_FRENCH_DOOR.get())
+                .add(BlockRegistration.ALABASTER_WAINSCOTING.get())
+
+                .add(BlockRegistration.CHISELED_GOLD_BLOCK.get());
+
+
         tag(BlockTags.BIG_DRIPLEAF_PLACEABLE)
                 .add(BlockRegistration.YELLOW_PLANTER.get())
                 .add(BlockRegistration.PINK_PLANTER.get())
@@ -200,12 +313,18 @@ public class ClutteredBlockTags extends BlockTagsProvider {
             trapdoor = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_trapdoor"));
         }
         Block window = null;
+        Block pane = null;
         if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_window"))) {
             window = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_window"));
+            pane = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_window_pane"));
         }
         Block bookshelf = null;
         if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_bookshelf"))) {
             bookshelf = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_bookshelf"));
+        }
+        Block wainscoting = null;
+        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wainscoting"))) {
+            wainscoting = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wainscoting"));
         }
 
         tag(BlockTags.LOGS)
@@ -272,9 +391,8 @@ public class ClutteredBlockTags extends BlockTagsProvider {
         if (trapdoor != null){
             tag(BlockTags.TRAPDOORS)
                     .add(trapdoor);
-            //testing
-            //tag(BlockTags.WOODEN_TRAPDOORS)
-            //        .add(trapdoor);
+            tag(BlockTags.WOODEN_TRAPDOORS)
+                    .add(trapdoor);
             tag(BlockTags.MINEABLE_WITH_AXE)
                     .add(trapdoor);
         }
@@ -283,6 +401,15 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                     .add(bookshelf);
             tag(BlockTags.MINEABLE_WITH_AXE)
                     .add(bookshelf);
+        }
+        if (wainscoting != null){
+            tag(BlockTags.MINEABLE_WITH_AXE)
+                    .add(wainscoting);
+        }
+        if (window != null){
+            tag(BlockTags.MINEABLE_WITH_AXE)
+                    .add(window)
+                    .add(pane);
         }
 
     }

@@ -5,8 +5,11 @@ import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
@@ -36,6 +39,66 @@ public class ClutteredRecipes extends RecipeProvider {
         buildWoodsetRecipes("fluorescent_maple", consumer);
         buildWoodsetRecipes("blue_mushroom", consumer);
         buildWoodsetRecipes("red_mushroom", consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WILLOW_BOOKSHELF_VASE.get())
+                .pattern("pfp")
+                .pattern("bbb")
+                .pattern("ppp")
+                .define('b', Items.BOOK)
+                .define('f', Items.FLOWER_POT)
+                .define('p', BlockRegistration.WILLOW_PLANKS.get())
+                .unlockedBy("has_willow_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.WILLOW_PLANKS.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WILLOW_BOOKSHELF_COBWEB.get())
+                .pattern("pfp")
+                .pattern("bbb")
+                .pattern("ppp")
+                .define('b', Items.BOOK)
+                .define('f', Items.STRING)
+                .define('p', BlockRegistration.WILLOW_PLANKS.get())
+                .unlockedBy("has_willow_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.WILLOW_PLANKS.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WILLOW_BOOKSHELF_BOTTLES.get())
+                .pattern("pfp")
+                .pattern("bbb")
+                .pattern("ppp")
+                .define('b', Items.BOOK)
+                .define('f', Items.GLASS_BOTTLE)
+                .define('p', BlockRegistration.WILLOW_PLANKS.get())
+                .unlockedBy("has_willow_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.WILLOW_PLANKS.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WILLOW_BOOKSHELF_BLACK_CAT.get())
+                .pattern("pfp")
+                .pattern("bbb")
+                .pattern("ppp")
+                .define('b', Items.BOOK)
+                .define('f', Items.BLACK_DYE)
+                .define('p', BlockRegistration.WILLOW_PLANKS.get())
+                .unlockedBy("has_willow_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.WILLOW_PLANKS.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WILLOW_BOOKSHELF_CALICO_CAT.get())
+                .pattern("pfp")
+                .pattern("bbb")
+                .pattern("ppp")
+                .define('b', Items.BOOK)
+                .define('f', Items.WHITE_DYE)
+                .define('p', BlockRegistration.WILLOW_PLANKS.get())
+                .unlockedBy("has_willow_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.WILLOW_PLANKS.get()).build()))
+                .showNotification(false)
+                .save(consumer);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WILLOW_GARDEN_DOOR.get(), 3)
                 .pattern("pb")
@@ -127,6 +190,15 @@ public class ClutteredRecipes extends RecipeProvider {
                 .showNotification(false)
                 .save(consumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_WINDOW_PANE.get(), 16)
+                .pattern("bbb")
+                .pattern("bbb")
+                .define('b', BlockRegistration.CHALCEDONY_WINDOW.get())
+                .unlockedBy("has_chalcedony_window", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.CHALCEDONY_WINDOW.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_SLAB.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 2);
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 2);
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_SLAB.get().asItem(),BlockRegistration.POLISHED_CHALCEDONY.get().asItem(), 2);
@@ -148,6 +220,7 @@ public class ClutteredRecipes extends RecipeProvider {
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_PILLAR_IONIC);
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_TILES);
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_SMALL_TILES);
+        chalcedonyResults.add(BlockRegistration.CHALCEDONY_WINDOW);
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.CHALCEDONY.get(), chalcedonyResults);
 
         chalcedonyResults.remove(BlockRegistration.POLISHED_CHALCEDONY);
@@ -242,6 +315,15 @@ public class ClutteredRecipes extends RecipeProvider {
                 .showNotification(false)
                 .save(consumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_WINDOW_PANE.get(), 16)
+                .pattern("bbb")
+                .pattern("bbb")
+                .define('b', BlockRegistration.DEEP_CHALCEDONY_WINDOW.get())
+                .unlockedBy("has_deep_chalcedony_window", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.DEEP_CHALCEDONY_WINDOW.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_SLAB.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 2);
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 2);
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_SLAB.get().asItem(),BlockRegistration.DEEP_POLISHED_CHALCEDONY.get().asItem(), 2);
@@ -263,6 +345,7 @@ public class ClutteredRecipes extends RecipeProvider {
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_PILLAR_IONIC);
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_TILES);
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_SMALL_TILES);
+        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_WINDOW);
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.DEEP_CHALCEDONY.get(), deepChalcedonyresults);
 
         deepChalcedonyresults.remove(BlockRegistration.DEEP_POLISHED_CHALCEDONY);
@@ -378,6 +461,13 @@ public class ClutteredRecipes extends RecipeProvider {
         marbleresults.add(BlockRegistration.MARBLE_PILLAR_IONIC);
         marbleresults.add(BlockRegistration.MARBLE_TILES);
         marbleresults.add(BlockRegistration.MARBLE_SMALL_TILES);
+        marbleresults.add(BlockRegistration.MARBLE_TILE);
+        marbleresults.add(BlockRegistration.MARBLE_TILE_CHISELED);
+        marbleresults.add(BlockRegistration.MARBLE_TILE_BORDER);
+        marbleresults.add(BlockRegistration.MARBLE_TILE_BORDER_CIRCLE);
+        marbleresults.add(BlockRegistration.MARBLE_TILE_BORDER_DETAIL);
+        marbleresults.add(BlockRegistration.MARBLE_TILE_CORNER);
+        marbleresults.add(BlockRegistration.MARBLE_TILE_CORNER_CIRCLE);
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.MARBLE.get(), marbleresults);
 
         marbleresults.remove(BlockRegistration.POLISHED_MARBLE);
@@ -515,6 +605,597 @@ public class ClutteredRecipes extends RecipeProvider {
                 .showNotification(false)
                 .save(consumer);
 
+        //WALLPAPER RECIPES
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.STARRY_WALLPAPER.get(), 8)
+                .pattern("pgp")
+                .pattern("gpg")
+                .pattern("www")
+                .define('g', Items.GLOWSTONE_DUST)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DARK_STARRY_WALLPAPER.get(), 8)
+                .pattern("pgp")
+                .pattern("gig")
+                .pattern("www")
+                .define('g', Items.GLOWSTONE_DUST)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .define('i', Items.BLACK_DYE)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.RETRO_RAINBOW_WALLPAPER.get(), 8)
+                .pattern("ppp")
+                .pattern("rby")
+                .pattern("www")
+                .define('r', Items.RED_DYE)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .define('b', Items.BLUE_DYE)
+                .define('y', Items.YELLOW_DYE)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.APPLE_WALLPAPER.get(), 8)
+                .pattern("ppp")
+                .pattern("apa")
+                .pattern("www")
+                .define('a', Items.APPLE)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER.get(), 8)
+                .pattern("pbp")
+                .pattern("prp")
+                .pattern("www")
+                .define('r', Blocks.ROSE_BUSH)
+                .define('b', Items.BLUE_DYE)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHECKERED_FRUIT_WALLPAPER.get(), 8)
+                .pattern("apm")
+                .pattern("pbp")
+                .pattern("www")
+                .define('a', Items.APPLE)
+                .define('b', Items.SWEET_BERRIES)
+                .define('m', Items.MELON_SLICE)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHECKERED_PINK_WALLPAPER.get(), 8)
+                .pattern("dpd")
+                .pattern("dpd")
+                .pattern("www")
+                .define('d', Items.PINK_DYE)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHECKERED_GREEN_WALLPAPER.get(), 8)
+                .pattern("dpd")
+                .pattern("dpd")
+                .pattern("www")
+                .define('d', Items.GREEN_DYE)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHIC_WALLPAPER.get(), 8)
+                .pattern("ppp")
+                .pattern("vdv")
+                .pattern("www")
+                .define('v', Blocks.VINE)
+                .define('d', Blocks.DANDELION)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.FLORAL_BERRY_WALLPAPER.get(), 8)
+                .pattern("ppp")
+                .pattern("fpb")
+                .pattern("www")
+                .define('f', ItemTags.SMALL_FLOWERS)
+                .define('b', Items.SWEET_BERRIES)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.FLORAL_BORDER_WALLPAPER.get(), 8)
+                .pattern("ppp")
+                .pattern("ftf")
+                .pattern("www")
+                .define('f', ItemTags.SMALL_FLOWERS)
+                .define('t', ItemTags.TALL_FLOWERS)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CONFECTIONARY_WALLPAPER.get(), 8)
+                .pattern("ppp")
+                .pattern("dbk")
+                .pattern("www")
+                .define('d', Items.PINK_DYE)
+                .define('b', Items.LIGHT_BLUE_DYE)
+                .define('k', Items.WHITE_DYE)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.BLUE_WAINSCOTING.get(), 4)
+                .pattern("sbs")
+                .pattern("www")
+                .define('b', Items.LIGHT_BLUE_DYE)
+                .define('w', ItemTags.PLANKS)
+                .define('s', ItemTags.WOODEN_SLABS)
+                .unlockedBy("has_confectionary_wallpaper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.CONFECTIONARY_WALLPAPER.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.GHOST_WALLPAPER.get(), 8)
+                .pattern("ppp")
+                .pattern("bbb")
+                .pattern("www")
+                .define('b', Items.BONE)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.GHOST_WALLPAPER_WAINSCOTING.get(), 4)
+                .pattern("sbs")
+                .pattern("www")
+                .define('b', Items.BONE)
+                .define('w', ItemTags.PLANKS)
+                .define('s', ItemTags.WOODEN_SLABS)
+                .unlockedBy("has_ghost_wallpaper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.GHOST_WALLPAPER.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.HALLOWEEN_WALLPAPER.get(), 8)
+                .pattern("ppp")
+                .pattern("pjp")
+                .pattern("www")
+                .define('j', Blocks.CARVED_PUMPKIN)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.HALLOWEEN_WAINSCOTING.get(), 4)
+                .pattern("sjs")
+                .pattern("www")
+                .define('j', Blocks.CARVED_PUMPKIN)
+                .define('w', ItemTags.PLANKS)
+                .define('s', ItemTags.WOODEN_SLABS)
+                .unlockedBy("has_halloween_wallpaper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.HALLOWEEN_WALLPAPER.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARIGOLD_WALLPAPER.get(), 8)
+                .pattern("pdp")
+                .pattern("pdp")
+                .pattern("www")
+                .define('d', Blocks.DANDELION)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MINT_WALLPAPER.get(), 8)
+                .pattern("ppp")
+                .pattern("lbk")
+                .pattern("www")
+                .define('l', Items.LIME_DYE)
+                .define('b', Items.BROWN_DYE)
+                .define('k', Items.WHITE_DYE)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.BROWN_WAINSCOTING.get(), 4)
+                .pattern("sds")
+                .pattern("www")
+                .define('d', Items.BROWN_DYE)
+                .define('w', ItemTags.PLANKS)
+                .define('s', ItemTags.WOODEN_SLABS)
+                .unlockedBy("has_mint_wallpaper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.MINT_WALLPAPER.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.PINK_STRIPE_WALLPAPER.get(), 8)
+                .pattern("dpm")
+                .pattern("dpm")
+                .pattern("www")
+                .define('d', Items.PINK_DYE)
+                .define('m', Items.MAGENTA_DYE)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.RIALTO_GOLD_WALLPAPER.get(), 8)
+                .pattern("pgp")
+                .pattern("gpg")
+                .pattern("www")
+                .define('g', Items.GOLD_NUGGET)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.STRIPED_FLORAL_WALLPAPER.get(), 8)
+                .pattern("ftf")
+                .pattern("ppp")
+                .pattern("www")
+                .define('f', ItemTags.SMALL_FLOWERS)
+                .define('t', ItemTags.TALL_FLOWERS)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_APPLE.get(), 8)
+                .pattern("psp")
+                .pattern("sas")
+                .pattern("www")
+                .define('a', Items.APPLE)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY.get(), 8)
+                .pattern("psp")
+                .pattern("sbs")
+                .pattern("www")
+                .define('b', Items.BLACK_DYE)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY.get(), 8)
+                .pattern("psp")
+                .pattern("sbs")
+                .pattern("www")
+                .define('b', Items.BLUE_DYE)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_BONES.get(), 8)
+                .pattern("psp")
+                .pattern("sbs")
+                .pattern("www")
+                .define('b', Items.BONE)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_BOUQUET.get(), 8)
+                .pattern("psp")
+                .pattern("sfs")
+                .pattern("www")
+                .define('f', ItemTags.FLOWERS)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM.get(), 8)
+                .pattern("psp")
+                .pattern("sms")
+                .pattern("www")
+                .define('m', Items.BROWN_MUSHROOM)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES.get(), 8)
+                .pattern("psp")
+                .pattern("sgs")
+                .pattern("www")
+                .define('g', Items.LIME_DYE)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_LEMON.get(), 8)
+                .pattern("psp")
+                .pattern("sys")
+                .pattern("www")
+                .define('y', Items.YELLOW_DYE)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_ORANGE.get(), 8)
+                .pattern("psp")
+                .pattern("sos")
+                .pattern("www")
+                .define('o', Items.ORANGE_DYE)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_PEAR.get(), 8)
+                .pattern("psp")
+                .pattern("sgs")
+                .pattern("www")
+                .define('g', Items.GREEN_DYE)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_PLUM.get(), 8)
+                .pattern("psp")
+                .pattern("sms")
+                .pattern("www")
+                .define('m', Items.MAGENTA_DYE)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES.get(), 8)
+                .pattern("psp")
+                .pattern("sms")
+                .pattern("www")
+                .define('m', Items.PURPLE_DYE)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM.get(), 8)
+                .pattern("psp")
+                .pattern("sms")
+                .pattern("www")
+                .define('m', Items.RED_MUSHROOM)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY.get(), 8)
+                .pattern("psp")
+                .pattern("srs")
+                .pattern("www")
+                .define('r', Items.RED_DYE)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_ANCHOR.get(), 8)
+                .pattern("psp")
+                .pattern("sfs")
+                .pattern("www")
+                .define('f', ItemTags.FISHES)
+                .define('s', Items.STICK)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.GINGERBREAD_BRICKS.get(), 6)
+                .pattern("bsb")
+                .pattern("sbs")
+                .pattern("bsb")
+                .define('b', Items.BRICK)
+                .define('s', Items.SUGAR)
+                .unlockedBy("has_sugar", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.SUGAR).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WICKER_BLOCK.get(), 6)
+                .pattern("sys")
+                .pattern("sys")
+                .pattern("sys")
+                .define('y', Items.STRING)
+                .define('s', Items.STICK)
+                .unlockedBy("has_string", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.STRING).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, Blocks.GOLD_BLOCK, BlockRegistration.CHISELED_GOLD_BLOCK.get());
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHISELED_GOLD_BLOCK.get(), Blocks.GOLD_BLOCK);
+
+        ArrayList<RegistryObject<Block>> calciteResults = new ArrayList<>();
+        calciteResults.add(BlockRegistration.ALABASTER_WAINSCOTING);
+        calciteResults.add(BlockRegistration.ALABASTER_WINDOW_DIVIDED);
+        calciteResults.add(BlockRegistration.ALABASTER_PANEL_AUGUSTINE);
+        calciteResults.add(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA);
+        calciteResults.add(BlockRegistration.ALABASTER_PANEL_ATLANTIC);
+        calciteResults.add(BlockRegistration.ALABASTER_PANEL_CANTERBURY);
+        calciteResults.add(BlockRegistration.ALABASTER_FRENCH_DOOR);
+        calciteResults.add(BlockRegistration.ALABASTER_SCREEN_DOOR);
+
+        buildStoneCutterRecipesForBase(consumer, Blocks.CALCITE, calciteResults);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.ALABASTER_WINDOW_PANE.get(), 16)
+                .pattern("www")
+                .pattern("www")
+                .define('w', BlockRegistration.ALABASTER_WINDOW_DIVIDED.get())
+                .unlockedBy("has_alabaster_window_divided", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.ALABASTER_SCREEN_DOOR.get(), 3)
+                .pattern("ps")
+                .pattern("ps")
+                .pattern("pp")
+                .define('p', Items.CALCITE)
+                .define('s', Items.STRING)
+                .unlockedBy("has_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.CALCITE).build()))
+                .showNotification(false)
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.ALABASTER_FRENCH_DOOR.get(), 3)
+                .pattern("pg")
+                .pattern("pg")
+                .pattern("pg")
+                .define('p', Items.CALCITE)
+                .define('g', Items.GLASS)
+                .unlockedBy("has_calcite", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.CALCITE).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WOOD_WINDOW_PANE.get(), 16)
+                .pattern("www")
+                .pattern("www")
+                .define('w', BlockRegistration.WOOD_WINDOW_DIVIDED.get())
+                .unlockedBy("has_wood_window_divided", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.WOOD_WINDOW_DIVIDED.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WOOD_WINDOW_DIVIDED.get(), 2)
+                .pattern("sss")
+                .pattern("gsg")
+                .pattern("sss")
+                .define('g', Blocks.GLASS)
+                .define('s', Items.STICK)
+                .unlockedBy("has_glass", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Blocks.GLASS).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WOOD_SCREEN_DOOR.get(), 3)
+                .pattern("ps")
+                .pattern("ps")
+                .pattern("pp")
+                .define('p', ItemTags.PLANKS)
+                .define('s', Items.STRING)
+                .unlockedBy("has_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(ItemTags.PLANKS).build()))
+                .showNotification(false)
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WOOD_FRENCH_DOOR.get(), 3)
+                .pattern("pg")
+                .pattern("pg")
+                .pattern("pg")
+                .define('p', ItemTags.PLANKS)
+                .define('g', Items.GLASS)
+                .unlockedBy("has_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(ItemTags.PLANKS).build()))
+                .showNotification(false)
+                .save(consumer);
 
     }
 
@@ -555,6 +1236,10 @@ public class ClutteredRecipes extends RecipeProvider {
         Block bookshelf = null;
         if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_bookshelf"))) {
             bookshelf = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_bookshelf"));
+        }
+        Block wainscoting = null;
+        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wainscoting"))) {
+            wainscoting = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wainscoting"));
         }
 
 
@@ -677,6 +1362,17 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("ppp")
                     .define('p', planks)
                     .define('b', Items.BOOK)
+                    .unlockedBy("has_" + woodType + "_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(planks).build()))
+                    .showNotification(false)
+                    .save(consumer);
+        }
+        if (wainscoting != null) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, wainscoting)
+                    .pattern("bbb")
+                    .pattern("ppp")
+                    .define('p', planks)
+                    .define('b', slab)
                     .unlockedBy("has_" + woodType + "_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(planks).build()))
                     .showNotification(false)
