@@ -29,6 +29,12 @@ public class HandDrillItem extends Item {
 
     private BlockState getNextBlock(BlockState block) {
         Map<Block, Block> blockCycle = new HashMap<>(){{
+            put(BlockRegistration.WILLOW_BOOKSHELF_BLACK_CAT.get(), BlockRegistration.WILLOW_BOOKSHELF_CALICO_CAT.get());
+            put(BlockRegistration.WILLOW_BOOKSHELF_CALICO_CAT.get(), BlockRegistration.WILLOW_BOOKSHELF_BOTTLES.get());
+            put(BlockRegistration.WILLOW_BOOKSHELF_BOTTLES.get(), BlockRegistration.WILLOW_BOOKSHELF_VASE.get());
+            put(BlockRegistration.WILLOW_BOOKSHELF_VASE.get(), BlockRegistration.WILLOW_BOOKSHELF_COBWEB.get());
+            put(BlockRegistration.WILLOW_BOOKSHELF_COBWEB.get(), BlockRegistration.WILLOW_BOOKSHELF_BLACK_CAT.get());
+
             put(BlockRegistration.CHALCEDONY_PILLAR.get(), BlockRegistration.CHALCEDONY_PILLAR_BASE.get());
             put(BlockRegistration.CHALCEDONY_PILLAR_BASE.get(), BlockRegistration.CHALCEDONY_PILLAR_DORIC.get());
             put(BlockRegistration.CHALCEDONY_PILLAR_DORIC.get(), BlockRegistration.CHALCEDONY_PILLAR_IONIC.get());
@@ -53,6 +59,10 @@ public class HandDrillItem extends Item {
             put(BlockRegistration.MARBLE_PILLAR_BASE.get(), BlockRegistration.MARBLE_PILLAR_DORIC.get());
             put(BlockRegistration.MARBLE_PILLAR_DORIC.get(), BlockRegistration.MARBLE_PILLAR_IONIC.get());
             put(BlockRegistration.MARBLE_PILLAR_IONIC.get(), BlockRegistration.MARBLE_PILLAR.get());
+
+            put(BlockRegistration.COLOSSEO_PILLAR.get(), BlockRegistration.COLOSSEO_PILLAR_BASE.get());
+            put(BlockRegistration.COLOSSEO_PILLAR_BASE.get(), BlockRegistration.COLOSSEO_PILLAR_TOP.get());
+            put(BlockRegistration.COLOSSEO_PILLAR_TOP.get(), BlockRegistration.COLOSSEO_PILLAR.get());
 
             put(BlockRegistration.CHALCEDONY_BORDER.get(), BlockRegistration.CHALCEDONY_ACANTHUS.get());
             put(BlockRegistration.CHALCEDONY_ACANTHUS.get(), BlockRegistration.CHALCEDONY_HELIX.get());
@@ -94,6 +104,10 @@ public class HandDrillItem extends Item {
             put(BlockRegistration.PINK_STRIPE_WALLPAPER.get(), BlockRegistration.PINK_STRIPE_WALLPAPER_LOWER_TRIM.get());
             put(BlockRegistration.PINK_STRIPE_WALLPAPER_LOWER_TRIM.get(), BlockRegistration.PINK_STRIPE_WALLPAPER_UPPER_TRIM.get());
             put(BlockRegistration.PINK_STRIPE_WALLPAPER_UPPER_TRIM.get(), BlockRegistration.PINK_STRIPE_WALLPAPER.get());
+
+            put(BlockRegistration.RIALTO_GOLD_WALLPAPER.get(), BlockRegistration.RIALTO_GOLD_WALLPAPER_BOTTOM.get());
+            put(BlockRegistration.RIALTO_GOLD_WALLPAPER_BOTTOM.get(), BlockRegistration.RIALTO_GOLD_WALLPAPER_TOP.get());
+            put(BlockRegistration.RIALTO_GOLD_WALLPAPER_TOP.get(), BlockRegistration.RIALTO_GOLD_WALLPAPER.get());
 
             put(BlockRegistration.MINT_WALLPAPER.get(), BlockRegistration.BROWN_WAINSCOTING.get());
             put(BlockRegistration.BROWN_WAINSCOTING.get(), BlockRegistration.MINT_WALLPAPER.get());

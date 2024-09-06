@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "l": {
+      "item": "minecraft:lever"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "item": "minecraft:stonecutter"
+    }
+  },
+  "pattern": [
+    "s ",
+    "il",
+    "pi"
+  ],
+  "result": {
+    "item": "cluttered:hand_drill"
+  },
+  "show_notification": true
+}

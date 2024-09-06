@@ -87,6 +87,8 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.PINK_STRIPE_WALLPAPER.get())
                 .add(BlockRegistration.PINK_STRIPE_WALLPAPER_UPPER_TRIM.get())
                 .add(BlockRegistration.RIALTO_GOLD_WALLPAPER.get())
+                .add(BlockRegistration.RIALTO_GOLD_WALLPAPER_TOP.get())
+                .add(BlockRegistration.RIALTO_GOLD_WALLPAPER_BOTTOM.get())
                 .add(BlockRegistration.STRIPED_FLORAL_WALLPAPER.get())
 
                 .add(BlockRegistration.DIAMOND_WALLPAPER_APPLE.get())
@@ -245,6 +247,10 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.ALABASTER_SCREEN_DOOR.get())
                 .add(BlockRegistration.ALABASTER_FRENCH_DOOR.get())
                 .add(BlockRegistration.ALABASTER_WAINSCOTING.get())
+
+                .add(BlockRegistration.COLOSSEO_PILLAR_BASE.get())
+                .add(BlockRegistration.COLOSSEO_PILLAR.get())
+                .add(BlockRegistration.COLOSSEO_PILLAR_TOP.get())
 
                 .add(BlockRegistration.CHISELED_GOLD_BLOCK.get());
 

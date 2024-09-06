@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "cluttered:chalcedony_window"
+    }
+  },
+  "pattern": [
+    "bbb",
+    "bbb"
+  ],
+  "result": {
+    "count": 16,
+    "item": "cluttered:chalcedony_window_pane"
+  },
+  "show_notification": false
+}

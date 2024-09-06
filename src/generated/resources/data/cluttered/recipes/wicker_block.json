@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "y": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "sys",
+    "sys",
+    "sys"
+  ],
+  "result": {
+    "count": 6,
+    "item": "cluttered:wicker_block"
+  },
+  "show_notification": false
+}

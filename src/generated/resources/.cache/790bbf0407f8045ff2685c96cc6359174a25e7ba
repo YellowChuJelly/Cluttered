@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-02T21:23:21.3973946	Tags for minecraft:block mod id cluttered
+// 1.20.1	2024-09-03T18:08:37.5832426	Tags for minecraft:block mod id cluttered
 372b97f449e98283ec19dc7d8e8fcfa88adea1cc data/minecraft/tags/blocks/big_dripleaf_placeable.json
 47ac2d7452d0e09fbde135e339e0de621edf66e4 data/minecraft/tags/blocks/buttons.json
 372b97f449e98283ec19dc7d8e8fcfa88adea1cc data/minecraft/tags/blocks/dead_bush_may_place_on.json
@@ -8,9 +8,9 @@ e94967ffa555d772a30a6cdf65fa36d4b2725741 data/minecraft/tags/blocks/enchantment_
 60a7f1164bc1f60281c8903003c992eb3fb06b54 data/minecraft/tags/blocks/fence_gates.json
 26cb727224943a065b4a643f9013284376172fab data/minecraft/tags/blocks/logs.json
 26cb727224943a065b4a643f9013284376172fab data/minecraft/tags/blocks/logs_that_burn.json
-b9e0dd548385e2d11b29c4638799c59b8d6fa96c data/minecraft/tags/blocks/mineable/axe.json
+6cc71c32f33578a6950b5bc7682c7172cc6eeb5b data/minecraft/tags/blocks/mineable/axe.json
 599afae5e1bb29725301990d005c7586b82b25c2 data/minecraft/tags/blocks/mineable/hoe.json
-1b3354260404952b9c7b6d6cbd6b619c84671dd2 data/minecraft/tags/blocks/mineable/pickaxe.json
+22029d9a132e39f39a48a931ec82687c165b7ff6 data/minecraft/tags/blocks/mineable/pickaxe.json
 372b97f449e98283ec19dc7d8e8fcfa88adea1cc data/minecraft/tags/blocks/mushroom_grow_block.json
 41449f6eabcde316f6c420db8b9b37ff8370d56e data/minecraft/tags/blocks/planks.json
 59d17763ff49edb8051171bd4c481198ecc8c612 data/minecraft/tags/blocks/pressure_plates.json

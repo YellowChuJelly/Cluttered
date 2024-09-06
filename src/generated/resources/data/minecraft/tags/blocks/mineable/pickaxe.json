@@ -110,6 +110,9 @@
     "cluttered:alabaster_screen_door",
     "cluttered:alabaster_french_door",
     "cluttered:alabaster_wainscoting",
+    "cluttered:colosseo_pillar_base",
+    "cluttered:colosseo_pillar",
+    "cluttered:colosseo_pillar_top",
     "cluttered:chiseled_gold_block"
   ]
 }

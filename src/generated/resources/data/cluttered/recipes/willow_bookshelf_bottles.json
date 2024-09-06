@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:book"
+    },
+    "f": {
+      "item": "minecraft:glass_bottle"
+    },
+    "p": {
+      "item": "cluttered:willow_planks"
+    }
+  },
+  "pattern": [
+    "pfp",
+    "bbb",
+    "ppp"
+  ],
+  "result": {
+    "item": "cluttered:willow_bookshelf_bottles"
+  },
+  "show_notification": false
+}

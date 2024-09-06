@@ -5,11 +5,8 @@ import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
@@ -17,6 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.setup.BlockRegistration;
+import net.redchujelly.cluttered.setup.ItemRegistration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -1100,6 +1098,24 @@ public class ClutteredRecipes extends RecipeProvider {
                 .showNotification(false)
                 .save(consumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.GINGERBREAD_BRICK_STAIRS.get(), 4)
+                .pattern("s  ")
+                .pattern("ss ")
+                .pattern("sss")
+                .define('s', BlockRegistration.GINGERBREAD_BRICKS.get())
+                .unlockedBy("has_gingerbread_bricks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.GINGERBREAD_BRICKS.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.GINGERBREAD_BRICK_SLAB.get(), 6)
+                .pattern("sss")
+                .define('s', BlockRegistration.GINGERBREAD_BRICKS.get())
+                .unlockedBy("has_gingerbread_bricks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.GINGERBREAD_BRICKS.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WICKER_BLOCK.get(), 6)
                 .pattern("sys")
                 .pattern("sys")
@@ -1197,6 +1213,314 @@ public class ClutteredRecipes extends RecipeProvider {
                 .showNotification(false)
                 .save(consumer);
 
+        //TILE RECIPES
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.VERDANT_TILE.get(), 4)
+                .pattern("qqq")
+                .pattern("qgq")
+                .pattern("qqq")
+                .define('q', Items.QUARTZ)
+                .define('g', Items.GREEN_DYE)
+                .unlockedBy("has_quartz", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.QUARTZ).build()))
+                .showNotification(false)
+                .save(consumer);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.VERDANT_TILE_EDGE.get(), BlockRegistration.VERDANT_TILE.get());
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.VERDANT_TILE_CORNER.get(), BlockRegistration.VERDANT_TILE.get());
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.ESPERANCA_TILE.get(), 4)
+                .pattern("tt")
+                .pattern("tb")
+                .define('t', Items.WHITE_TERRACOTTA)
+                .define('b', Items.LIGHT_BLUE_DYE)
+                .unlockedBy("has_white_terracotta", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.WHITE_TERRACOTTA).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.LILIY_HILLS_TILE.get(), 4)
+                .pattern("tt")
+                .pattern("tb")
+                .define('t', Items.WHITE_TERRACOTTA)
+                .define('b', Items.BROWN_DYE)
+                .unlockedBy("has_white_terracotta", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.WHITE_TERRACOTTA).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.HANNISH_TILE.get(), 4)
+                .pattern("tt")
+                .pattern("tb")
+                .define('t', Items.PURPLE_TERRACOTTA)
+                .define('b', Items.YELLOW_DYE)
+                .unlockedBy("has_purple_terracotta", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PURPLE_TERRACOTTA).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.AURA_TILES.get(), 8)
+                .pattern("ttt")
+                .pattern("tbt")
+                .pattern("ttt")
+                .define('t', Items.TERRACOTTA)
+                .define('b', Items.BLAZE_POWDER)
+                .unlockedBy("has_terracotta", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.TERRACOTTA).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.BIFURCATING_TILES.get(), 8)
+                .pattern("ttt")
+                .pattern("tbt")
+                .pattern("ttt")
+                .define('t', Items.TERRACOTTA)
+                .define('b', Items.WHEAT_SEEDS)
+                .unlockedBy("has_terracotta", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.TERRACOTTA).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.BLACK_AMARYLLIS_TILES.get(), 8)
+                .pattern("ttt")
+                .pattern("tbt")
+                .pattern("ttt")
+                .define('t', Items.TERRACOTTA)
+                .define('b', ItemTags.COALS)
+                .unlockedBy("has_terracotta", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.TERRACOTTA).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.ROSETTE_TILES.get(), 8)
+                .pattern("ttt")
+                .pattern("tbt")
+                .pattern("ttt")
+                .define('t', Items.TERRACOTTA)
+                .define('b', Items.ROSE_BUSH)
+                .unlockedBy("has_terracotta", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.TERRACOTTA).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SEISMIC_TILES.get(), 8)
+                .pattern("ttt")
+                .pattern("tbt")
+                .pattern("ttt")
+                .define('t', Items.TERRACOTTA)
+                .define('b', Items.GUNPOWDER)
+                .unlockedBy("has_terracotta", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.TERRACOTTA).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.PURPLE_TILES.get(), 4)
+                .pattern("tt")
+                .pattern("tt")
+                .define('t', Items.PURPLE_CONCRETE)
+                .unlockedBy("has_purple_concrete", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PURPLE_CONCRETE).build()))
+                .showNotification(false)
+                .save(consumer);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.PURPLE_TILES.get(), Blocks.PURPLE_CONCRETE);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_PURPLE_TILES.get(), Blocks.PURPLE_CONCRETE);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_PURPLE_TILES.get(), BlockRegistration.PURPLE_TILES.get());
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.PINK_TILES.get(), 4)
+                .pattern("tt")
+                .pattern("tt")
+                .define('t', Items.PINK_CONCRETE)
+                .unlockedBy("has_pink_concrete", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PINK_CONCRETE).build()))
+                .showNotification(false)
+                .save(consumer);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.PINK_TILES.get(), Blocks.PINK_CONCRETE);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_PINK_TILES.get(), Blocks.PINK_CONCRETE);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_PINK_TILES.get(), BlockRegistration.PINK_TILES.get());
+        
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.YELLOW_TILES.get(), 4)
+                .pattern("tt")
+                .pattern("tt")
+                .define('t', Items.YELLOW_CONCRETE)
+                .unlockedBy("has_yellow_concrete", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.YELLOW_CONCRETE).build()))
+                .showNotification(false)
+                .save(consumer);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.YELLOW_TILES.get(), Blocks.YELLOW_CONCRETE);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_YELLOW_TILES.get(), Blocks.YELLOW_CONCRETE);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_YELLOW_TILES.get(), BlockRegistration.YELLOW_TILES.get());
+        
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.GREEN_TILES.get(), 4)
+                .pattern("tt")
+                .pattern("tt")
+                .define('t', Items.GREEN_CONCRETE)
+                .unlockedBy("has_green_concrete", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.GREEN_CONCRETE).build()))
+                .showNotification(false)
+                .save(consumer);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.GREEN_TILES.get(), Blocks.GREEN_CONCRETE);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_GREEN_TILES.get(), Blocks.GREEN_CONCRETE);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_GREEN_TILES.get(), BlockRegistration.GREEN_TILES.get());
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.IRIDESCENT_TILES.get(), 8)
+                .pattern("ttt")
+                .pattern("tpt")
+                .pattern("ttt")
+                .define('t', Items.TERRACOTTA)
+                .define('p', Items.PRISMARINE_SHARD)
+                .unlockedBy("has_prismarine_shard", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PRISMARINE_SHARD).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_IRIDESCENT_TILES.get(), 4)
+                .pattern("tt")
+                .pattern("tt")
+                .define('t', BlockRegistration.IRIDESCENT_TILES.get())
+                .unlockedBy("has_iridescent_tiles", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.IRIDESCENT_TILES.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.KITCHEN_TILES.get(), 8)
+                .pattern("ttt")
+                .pattern("sfa")
+                .pattern("ttt")
+                .define('t', Blocks.TERRACOTTA)
+                .define('s', ItemTags.SAPLINGS)
+                .define('a', Items.APPLE)
+                .define('f', ItemTags.SMALL_FLOWERS)
+                .unlockedBy("has_terracotta", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.TERRACOTTA).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.COLOSSEO_PILLAR.get(), 8)
+                .pattern("rr")
+                .pattern("yy")
+                .pattern("gg")
+                .define('r', Blocks.RED_TERRACOTTA)
+                .define('y', Blocks.YELLOW_TERRACOTTA)
+                .define('g', Blocks.GREEN_TERRACOTTA)
+                .unlockedBy("has_terracotta", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.TERRACOTTA).build()))
+                .showNotification(false)
+                .save(consumer);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.COLOSSEO_PILLAR_BASE.get(), BlockRegistration.COLOSSEO_PILLAR.get());
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.COLOSSEO_PILLAR_TOP.get(), BlockRegistration.COLOSSEO_PILLAR.get());
+
+        //MISC RECIPES
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.EYE_BLOCK.get(), 2)
+                .pattern("mmm")
+                .pattern("sbs")
+                .pattern("mmm")
+                .define('m', Items.BEEF)
+                .define('s', Items.SPIDER_EYE)
+                .define('b', Items.BRAIN_CORAL_BLOCK)
+                .unlockedBy("has_spider_eye", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.SPIDER_EYE).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DYNASTY_DOOR.get(), 3)
+                .pattern("wc")
+                .pattern("wc")
+                .pattern("ww")
+                .define('w', Items.WARPED_PLANKS)
+                .define('c', Items.COPPER_INGOT)
+                .unlockedBy("has_warped_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.WARPED_PLANKS).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.HONEY_JAR_BLOCK.get())
+                .pattern("gdg")
+                .pattern("ghg")
+                .pattern("gsg")
+                .define('g', Items.GLASS)
+                .define('d', Items.YELLOW_DYE)
+                .define('h', Items.HONEY_BOTTLE)
+                .define('s', Items.SUGAR)
+                .unlockedBy("has_honey_bottle", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.HONEY_BOTTLE).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.BLUEBERRY_JAR_BLOCK.get())
+                .pattern("gdg")
+                .pattern("ghg")
+                .pattern("gsg")
+                .define('g', Items.GLASS)
+                .define('d', Items.BLUE_DYE)
+                .define('h', Items.SWEET_BERRIES)
+                .define('s', Items.SUGAR)
+                .unlockedBy("has_sweet_berries", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.SWEET_BERRIES).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.CHERRY_JAR_BLOCK.get())
+                .pattern("gdg")
+                .pattern("ghg")
+                .pattern("gsg")
+                .define('g', Items.GLASS)
+                .define('d', Items.RED_DYE)
+                .define('h', Items.SWEET_BERRIES)
+                .define('s', Items.SUGAR)
+                .unlockedBy("has_sweet_berries", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.SWEET_BERRIES).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.STRAWBERRY_JAR_BLOCK.get())
+                .pattern("gdg")
+                .pattern("ghg")
+                .pattern("gsg")
+                .define('g', Items.GLASS)
+                .define('d', Items.PINK_DYE)
+                .define('h', Items.SWEET_BERRIES)
+                .define('s', Items.SUGAR)
+                .unlockedBy("has_sweet_berries", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.SWEET_BERRIES).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.APRICOT_JAR_BLOCK.get())
+                .pattern("gdg")
+                .pattern("ghg")
+                .pattern("gsg")
+                .define('g', Items.GLASS)
+                .define('d', Items.BROWN_DYE)
+                .define('h', Items.SWEET_BERRIES)
+                .define('s', Items.SUGAR)
+                .unlockedBy("has_sweet_berries", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.SWEET_BERRIES).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.ORANGE_JAR_BLOCK.get())
+                .pattern("gdg")
+                .pattern("ghg")
+                .pattern("gsg")
+                .define('g', Items.GLASS)
+                .define('d', Items.ORANGE_DYE)
+                .define('h', Items.SWEET_BERRIES)
+                .define('s', Items.SUGAR)
+                .unlockedBy("has_sweet_berries", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.SWEET_BERRIES).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemRegistration.HAND_DRILL.get())
+                .pattern("s ")
+                .pattern("il")
+                .pattern("pi")
+                .define('i', Items.IRON_INGOT)
+                .define('s', Items.STONECUTTER)
+                .define('l', Items.LEVER)
+                .define('p', ItemTags.PLANKS)
+                .unlockedBy("has_stonecutter", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.STONECUTTER).build()))
+                .showNotification(true)
+                .save(consumer);
     }
 
     private void buildStoneCutterRecipesForBase(Consumer<FinishedRecipe> consumer, Block base, List<RegistryObject<Block>> results) {
@@ -1368,7 +1692,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .save(consumer);
         }
         if (wainscoting != null) {
-            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, wainscoting)
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, wainscoting, 4)
                     .pattern("bbb")
                     .pattern("ppp")
                     .define('p', planks)
@@ -1379,5 +1703,4 @@ public class ClutteredRecipes extends RecipeProvider {
                     .save(consumer);
         }
     }
-
 }

@@ -3,12 +3,14 @@ package net.redchujelly.cluttered.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
+import net.redchujelly.cluttered.block.custom.EyeBlock;
 import net.redchujelly.cluttered.setup.BlockRegistration;
 
 public class ClutteredBlockstates extends BlockStateProvider {
@@ -448,8 +450,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.MARBLE_PILLAR_IONIC);
 
         //MISC FULL BLOCKS
-        simpleBlockWithItem(BlockRegistration.BLACK_CAT_WINDOW.get(), models().cubeAll("black_cat_window", modLoc("block/black_cat_window")).renderType("cutout"));
-        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.BLACK_CAT_WINDOW_PANE.get(), modLoc("block/black_cat_window"), modLoc("block/cat_glass_pane_top"), "cutout");
+        simpleBlockWithItem(BlockRegistration.BLACK_CAT_WINDOW.get(), models().cubeAll("black_cat_window", modLoc("block/black_cat_window")).renderType("translucent"));
+        paneBlockWithRenderType((IronBarsBlock) BlockRegistration.BLACK_CAT_WINDOW_PANE.get(), modLoc("block/black_cat_window"), modLoc("block/cat_glass_pane_top"), "translucent");
 
         simpleBlockWithItem(BlockRegistration.YELLOW_PLANTER.get(), models().cubeTop("tarrey_town_planter_yellow", modLoc("block/tarrey_town_planter_yellow"), modLoc("block/tarrey_town_planter_top")));
         simpleBlockWithItem(BlockRegistration.PINK_PLANTER.get(), models().cubeTop("tarrey_town_planter_pink", modLoc("block/tarrey_town_planter_pink"), modLoc("block/tarrey_town_planter_top")));
@@ -494,6 +496,9 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.PINK_STRIPE_WALLPAPER_LOWER_TRIM.get(), models().cubeColumn("pink_striped_wallpaper_lower_trim", modLoc("block/pink_striped_wallpaper_lower_trim"), modLoc("block/pink_striped_wallpaper")));
         simpleBlockWithItem(BlockRegistration.PINK_STRIPE_WALLPAPER_UPPER_TRIM.get(), models().cubeColumn("pink_striped_wallpaper_upper_trim", modLoc("block/pink_striped_wallpaper_upper_trim"), modLoc("block/pink_striped_wallpaper")));
         blockWithItem(BlockRegistration.RIALTO_GOLD_WALLPAPER);
+        simpleBlockWithItem(BlockRegistration.RIALTO_GOLD_WALLPAPER_TOP.get(), models().cubeColumn("rialto_wallpaper_upper_trim", modLoc("block/rialto_wallpaper_upper_trim"), modLoc("block/rialto_gold_wallpaper")));
+        simpleBlockWithItem(BlockRegistration.RIALTO_GOLD_WALLPAPER_BOTTOM.get(), models().cubeColumn("rialto_wallpaper_lower_trim", modLoc("block/rialto_wallpaper_lower_trim"), modLoc("block/rialto_gold_wallpaper")));
+
         blockWithItem(BlockRegistration.STRIPED_FLORAL_WALLPAPER);
 
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_APPLE);
@@ -596,7 +601,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         blockWithItem(BlockRegistration.CHISELED_GOLD_BLOCK);
         blockWithItem(BlockRegistration.WICKER_BLOCK);
-        blockWithItem(BlockRegistration.EYE_BLOCK);
+        //blockWithItem(BlockRegistration.EYE_BLOCK);
         doorBlockWithRenderType((DoorBlock) BlockRegistration.DYNASTY_DOOR.get(), modLoc("block/dynasty_door_bottom"), modLoc("block/dynasty_door_top"), "cutout");
 
         simpleBlockWithItem(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get(), models().cubeAll("alabaster_window_divided", modLoc("block/alabaster_window_divided")).renderType("cutout"));
@@ -616,6 +621,70 @@ public class ClutteredBlockstates extends BlockStateProvider {
         doorBlockWithRenderType((DoorBlock) BlockRegistration.WOOD_SCREEN_DOOR.get(), modLoc("block/wooden_screen_door_bottom"), modLoc("block/wooden_screen_door_top"), "cutout");
         doorBlockWithRenderType((DoorBlock) BlockRegistration.WOOD_FRENCH_DOOR.get(), modLoc("block/wooden_french_door_bottom"), modLoc("block/wooden_french_door_top"), "cutout");
 
+        directionalBlock(BlockRegistration.COLOSSEO_PILLAR.get(), models().cubeColumn("colosseo_pillar", modLoc("block/colosseo_pillar"), modLoc("block/colosseo_pillar_chiseled")));
+        blockItem(BlockRegistration.COLOSSEO_PILLAR);
+        directionalBlock(BlockRegistration.COLOSSEO_PILLAR_BASE.get(), models().cubeColumn("colosseo_pillar_base", modLoc("block/colosseo_pillar_base"), modLoc("block/colosseo_pillar_chiseled")));
+        blockItem(BlockRegistration.COLOSSEO_PILLAR_BASE);
+        directionalBlock(BlockRegistration.COLOSSEO_PILLAR_TOP.get(), models().cubeColumn("colosseo_pillar_top", modLoc("block/colosseo_pillar_top"), modLoc("block/colosseo_pillar_chiseled")));
+        blockItem(BlockRegistration.COLOSSEO_PILLAR_TOP);
+
+        horizontalBlock(BlockRegistration.HONEY_JAR_BLOCK.get(), models().cube("jam_jar_honey", modLoc("block/jam_jar_honey_bottom"),
+                modLoc("block/jam_jar_blue_top"),
+                modLoc("block/jam_jar_honey"),
+                modLoc("block/jam_jar_honey_side"),
+                modLoc("block/jam_jar_honey_side"),
+                modLoc("block/jam_jar_honey_side")).texture("particle", "block/jam_jar_honey_side"));
+        blockItem(BlockRegistration.HONEY_JAR_BLOCK);
+        horizontalBlock(BlockRegistration.ORANGE_JAR_BLOCK.get(), models().cube("jam_jar_orange", modLoc("block/jam_jar_orange_marmalade_bottom"),
+                modLoc("block/jam_jar_blue_top"),
+                modLoc("block/jam_jar_orange_marmalade"),
+                modLoc("block/jam_jar_orange_marmalade_side"),
+                modLoc("block/jam_jar_orange_marmalade_side"),
+                modLoc("block/jam_jar_orange_marmalade_side")).texture("particle", "block/jam_jar_orange_marmalade_side"));
+        blockItem(BlockRegistration.ORANGE_JAR_BLOCK);
+        horizontalBlock(BlockRegistration.CHERRY_JAR_BLOCK.get(), models().cube("jam_jar_cherry", modLoc("block/jam_jar_cherry_bottom"),
+                modLoc("block/jam_jar_red_top"),
+                modLoc("block/jam_jar_cherry"),
+                modLoc("block/jam_jar_cherry_side"),
+                modLoc("block/jam_jar_cherry_side"),
+                modLoc("block/jam_jar_cherry_side")).texture("particle", "block/jam_jar_cherry_side"));
+        blockItem(BlockRegistration.CHERRY_JAR_BLOCK);
+        horizontalBlock(BlockRegistration.STRAWBERRY_JAR_BLOCK.get(), models().cube("jam_jar_strawberry", modLoc("block/jam_jar_strawberry_bottom"),
+                modLoc("block/jam_jar_red_top"),
+                modLoc("block/jam_jar_strawberry"),
+                modLoc("block/jam_jar_strawberry_side"),
+                modLoc("block/jam_jar_strawberry_side"),
+                modLoc("block/jam_jar_strawberry_side")).texture("particle", "block/jam_jar_cherry_side"));
+        blockItem(BlockRegistration.STRAWBERRY_JAR_BLOCK);
+        horizontalBlock(BlockRegistration.BLUEBERRY_JAR_BLOCK.get(), models().cube("jam_jar_blueberry", modLoc("block/jam_jar_blueberry_bottom"),
+                modLoc("block/jam_jar_red_top"),
+                modLoc("block/jam_jar_blueberry"),
+                modLoc("block/jam_jar_blueberry_side"),
+                modLoc("block/jam_jar_blueberry_side"),
+                modLoc("block/jam_jar_blueberry_side")).texture("particle", "block/jam_jar_blueberry_side"));
+        blockItem(BlockRegistration.BLUEBERRY_JAR_BLOCK);
+        horizontalBlock(BlockRegistration.APRICOT_JAR_BLOCK.get(), models().cube("jam_jar_apricot", modLoc("block/jam_jar_apricot_bottom"),
+                modLoc("block/jam_jar_red_top"),
+                modLoc("block/jam_jar_apricot"),
+                modLoc("block/jam_jar_apricot_side"),
+                modLoc("block/jam_jar_apricot_side"),
+                modLoc("block/jam_jar_apricot_side")).texture("particle", "block/jam_jar_apricot_side"));
+        blockItem(BlockRegistration.APRICOT_JAR_BLOCK);
+
+        this.getVariantBuilder(BlockRegistration.EYE_BLOCK.get())
+                .partialState()
+                .with(EyeBlock.LOOKING_LEFT, true).with(EyeBlock.BLINKING, false)
+                .modelForState().modelFile(models().cubeAll("eye_block", modLoc("block/eye_block"))).addModel()
+                .partialState()
+                .with(EyeBlock.LOOKING_LEFT, true).with(EyeBlock.BLINKING, true)
+                .modelForState().modelFile(models().cubeAll("eye_block_blinking", modLoc("block/eye_block_blinking"))).addModel()
+                .partialState()
+                .with(EyeBlock.LOOKING_LEFT, false).with(EyeBlock.BLINKING, false)
+                .modelForState().modelFile(models().cubeAll("eye_block_right", modLoc("block/eye_block_right"))).addModel()
+                .partialState()
+                .with(EyeBlock.LOOKING_LEFT, false).with(EyeBlock.BLINKING, true)
+                .modelForState().modelFile(models().cubeAll("eye_block_right_blinking", modLoc("block/eye_block_right_blinking"))).addModel();
+        blockItem(BlockRegistration.EYE_BLOCK);
 
     }
 

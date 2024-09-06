@@ -298,11 +298,10 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.MARBLE_TILE_CORNER.get());
                         output.accept(BlockRegistration.MARBLE_TILE_CORNER_CIRCLE.get());
 
-                        //MISC FULL BLOCKS
-                        output.accept(BlockRegistration.BLACK_CAT_WINDOW.get());
-                        output.accept(BlockRegistration.BLACK_CAT_WINDOW_PANE.get());
-
-                        output.accept(BlockRegistration.BEIGE_PLANTER.get());
+                        //MISC SECTION
+                        output.accept(BlockRegistration.COLOSSEO_PILLAR_BASE.get());
+                        output.accept(BlockRegistration.COLOSSEO_PILLAR.get());
+                        output.accept(BlockRegistration.COLOSSEO_PILLAR_TOP.get());
 
                         //WALLPAPERS
                         output.accept(BlockRegistration.DIAMOND_WALLPAPER_APPLE.get());
@@ -337,6 +336,10 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.PINK_STRIPE_WALLPAPER.get());
                         output.accept(BlockRegistration.PINK_STRIPE_WALLPAPER_UPPER_TRIM.get());
 
+                        output.accept(BlockRegistration.RIALTO_GOLD_WALLPAPER_BOTTOM.get());
+                        output.accept(BlockRegistration.RIALTO_GOLD_WALLPAPER.get());
+                        output.accept(BlockRegistration.RIALTO_GOLD_WALLPAPER_TOP.get());
+
                         output.accept(BlockRegistration.GHOST_WALLPAPER_WAINSCOTING.get());
                         output.accept(BlockRegistration.GHOST_WALLPAPER.get());
                         output.accept(BlockRegistration.GHOST_WALLPAPER_TRIM.get());
@@ -356,7 +359,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.CHECKERED_GREEN_STRAWBERRY_WALLPAPER.get());
 
                         output.accept(BlockRegistration.RETRO_RAINBOW_WALLPAPER.get());
-                        output.accept(BlockRegistration.RIALTO_GOLD_WALLPAPER.get());
                         output.accept(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER.get());
                         output.accept(BlockRegistration.FLORAL_BERRY_WALLPAPER.get());
                         output.accept(BlockRegistration.STRIPED_FLORAL_WALLPAPER.get());
@@ -416,6 +418,17 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.WOOD_SCREEN_DOOR.get());
                         output.accept(BlockRegistration.WOOD_FRENCH_DOOR.get());
 
+                        output.accept(BlockRegistration.STRAWBERRY_JAR_BLOCK .get());
+                        output.accept(BlockRegistration.CHERRY_JAR_BLOCK.get());
+                        output.accept(BlockRegistration.APRICOT_JAR_BLOCK .get());
+                        output.accept(BlockRegistration.ORANGE_JAR_BLOCK.get());
+                        output.accept(BlockRegistration.HONEY_JAR_BLOCK.get());
+                        output.accept(BlockRegistration.BLUEBERRY_JAR_BLOCK .get());
+
+
+                        output.accept(BlockRegistration.BLACK_CAT_WINDOW.get());
+                        output.accept(BlockRegistration.BLACK_CAT_WINDOW_PANE.get());
+                        output.accept(BlockRegistration.BEIGE_PLANTER.get());
                         output.accept(BlockRegistration.WICKER_BLOCK.get());
                         output.accept(BlockRegistration.CHISELED_GOLD_BLOCK.get());
                         output.accept(BlockRegistration.EYE_BLOCK.get());

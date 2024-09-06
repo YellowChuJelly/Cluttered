@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cluttered:block/verdant_tile_edge",
+    "side": "cluttered:block/verdant_tile"
+  }
+}

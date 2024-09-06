@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": {
+      "item": "minecraft:green_dye"
+    },
+    "q": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "pattern": [
+    "qqq",
+    "qgq",
+    "qqq"
+  ],
+  "result": {
+    "count": 4,
+    "item": "cluttered:verdant_tile"
+  },
+  "show_notification": false
+}

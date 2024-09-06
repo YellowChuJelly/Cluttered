@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "cluttered:mimikyu",
+    "cluttered:candle",
+    "cluttered:cat_short",
+    "cluttered:crow_on_a_beach",
+    "cluttered:eggplants_lynnhays",
+    "cluttered:etienne_carolhoffnagle",
+    "cluttered:flower_pots",
+    "cluttered:lemons",
+    "cluttered:red_mushroom",
+    "cluttered:stiefmutterchen_heidedahl",
+    "cluttered:two_cats",
+
+    "cluttered:cat_tall",
+    "cluttered:day_sky",
+    "cluttered:night_sky",
+    "cluttered:frogman_washington",
+    "cluttered:van_gogh_flamenettle",
+    "cluttered:vase_of_sunflowers",
+    "cluttered:worm",
+
+    "cluttered:pinned_butterflies",
+    "cluttered:van_gogh_horse",
+
+    "cluttered:gold_sunflower",
+    "cluttered:van_gogh_wheatfield",
+
+    "cluttered:catboy"
+  ]
+}

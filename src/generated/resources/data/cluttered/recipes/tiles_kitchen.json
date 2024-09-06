@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "a": {
+      "item": "minecraft:apple"
+    },
+    "f": {
+      "tag": "minecraft:small_flowers"
+    },
+    "s": {
+      "tag": "minecraft:saplings"
+    },
+    "t": {
+      "item": "minecraft:terracotta"
+    }
+  },
+  "pattern": [
+    "ttt",
+    "sfa",
+    "ttt"
+  ],
+  "result": {
+    "count": 8,
+    "item": "cluttered:tiles_kitchen"
+  },
+  "show_notification": false
+}

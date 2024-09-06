@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "cluttered:block/verdant_tile_edge",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "cluttered:block/verdant_tile_edge"
+    },
+    "facing=south": {
+      "model": "cluttered:block/verdant_tile_edge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cluttered:block/verdant_tile_edge",
+      "y": 270
+    }
+  }
+}

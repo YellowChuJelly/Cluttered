@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "a": {
+      "item": "minecraft:apple"
+    },
+    "b": {
+      "item": "minecraft:sweet_berries"
+    },
+    "m": {
+      "item": "minecraft:melon_slice"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "w": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "apm",
+    "pbp",
+    "www"
+  ],
+  "result": {
+    "count": 8,
+    "item": "cluttered:checkered_fruit_wallpaper"
+  },
+  "show_notification": false
+}

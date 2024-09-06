@@ -79,8 +79,13 @@ public class ClutteredItemModels extends ItemModelProvider {
         simplePaneBlockItem(BlockRegistration.WOOD_WINDOW_PANE, "_divided").renderType("cutout");
 
 
-        simplePaneBlockItem(BlockRegistration.BLACK_CAT_WINDOW_PANE);
+        simplePaneBlockItem(BlockRegistration.BLACK_CAT_WINDOW_PANE).renderType("cutout");
         simpleBlockItem(BlockRegistration.DYNASTY_DOOR);
+        simpleBlockItem(BlockRegistration.ALABASTER_FRENCH_DOOR).renderType("cutout");
+        simpleBlockItem(BlockRegistration.ALABASTER_SCREEN_DOOR).renderType("cutout");
+        simpleBlockItem(BlockRegistration.WOOD_FRENCH_DOOR).renderType("cutout");
+        simpleBlockItem(BlockRegistration.WOOD_SCREEN_DOOR).renderType("cutout");
+
 
     }
 

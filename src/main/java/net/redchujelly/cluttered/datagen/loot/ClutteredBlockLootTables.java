@@ -333,6 +333,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.PINK_STRIPE_WALLPAPER_LOWER_TRIM.get());
         dropSelf(BlockRegistration.PINK_STRIPE_WALLPAPER_UPPER_TRIM.get());
         dropSelf(BlockRegistration.RIALTO_GOLD_WALLPAPER.get());
+        dropSelf(BlockRegistration.RIALTO_GOLD_WALLPAPER_TOP.get());
+        dropSelf(BlockRegistration.RIALTO_GOLD_WALLPAPER_BOTTOM.get());
         dropSelf(BlockRegistration.STRIPED_FLORAL_WALLPAPER.get());
 
         dropSelf(BlockRegistration.DIAMOND_WALLPAPER_APPLE.get());
@@ -427,6 +429,18 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.WOOD_PANEL_ALEXANDRIA.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_PANEL_ALEXANDRIA.get()));
         add(BlockRegistration.WOOD_FRENCH_DOOR.get(), block -> createDoorTable(BlockRegistration.WOOD_FRENCH_DOOR.get()));
         add(BlockRegistration.WOOD_SCREEN_DOOR.get(), block -> createDoorTable(BlockRegistration.WOOD_SCREEN_DOOR.get()));
+
+        dropSelf(BlockRegistration.COLOSSEO_PILLAR_BASE.get());
+        dropSelf(BlockRegistration.COLOSSEO_PILLAR.get());
+        dropSelf(BlockRegistration.COLOSSEO_PILLAR_TOP.get());
+
+        dropSelf(BlockRegistration.STRAWBERRY_JAR_BLOCK .get());
+        dropSelf(BlockRegistration.CHERRY_JAR_BLOCK.get());
+        dropSelf(BlockRegistration.APRICOT_JAR_BLOCK .get());
+        dropSelf(BlockRegistration.ORANGE_JAR_BLOCK.get());
+        dropSelf(BlockRegistration.HONEY_JAR_BLOCK.get());
+        dropSelf(BlockRegistration.BLUEBERRY_JAR_BLOCK .get());
+
 
 
     }

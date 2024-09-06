@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "cluttered:block/seismic_tiles",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "cluttered:block/seismic_tiles"
+    },
+    "facing=south": {
+      "model": "cluttered:block/seismic_tiles",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cluttered:block/seismic_tiles",
+      "y": 270
+    }
+  }
+}

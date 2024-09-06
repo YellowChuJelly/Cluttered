@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:wooden_window_pane"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wood_window_divided": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cluttered:wooden_window_divided"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wood_window_divided",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:wooden_window_pane"
+    ]
+  },
+  "sends_telemetry_event": false
+}

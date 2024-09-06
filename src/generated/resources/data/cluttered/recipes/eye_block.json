@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:brain_coral_block"
+    },
+    "m": {
+      "item": "minecraft:beef"
+    },
+    "s": {
+      "item": "minecraft:spider_eye"
+    }
+  },
+  "pattern": [
+    "mmm",
+    "sbs",
+    "mmm"
+  ],
+  "result": {
+    "count": 2,
+    "item": "cluttered:eye_block"
+  },
+  "show_notification": false
+}

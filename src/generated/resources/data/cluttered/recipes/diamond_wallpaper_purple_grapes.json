@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "m": {
+      "item": "minecraft:purple_dye"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "w": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "psp",
+    "sms",
+    "www"
+  ],
+  "result": {
+    "count": 8,
+    "item": "cluttered:diamond_wallpaper_purple_grapes"
+  },
+  "show_notification": false
+}

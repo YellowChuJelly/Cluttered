@@ -31,6 +31,7 @@ import net.redchujelly.cluttered.datagen.DataGeneration;
 import net.redchujelly.cluttered.setup.BlockRegistration;
 import net.redchujelly.cluttered.setup.CreativeTabRegistration;
 import net.redchujelly.cluttered.setup.ItemRegistration;
+import net.redchujelly.cluttered.setup.PaintingRegistration;
 import org.slf4j.Logger;
 
 @Mod(Cluttered.MODID)
@@ -47,6 +48,7 @@ public class Cluttered {
 
         ItemRegistration.register(modEventBus);
         BlockRegistration.register(modEventBus);
+        PaintingRegistration.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(DataGeneration::generate);

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "blinking=false,looking_left=false": {
+      "model": "cluttered:block/eye_block_right"
+    },
+    "blinking=false,looking_left=true": {
+      "model": "cluttered:block/eye_block"
+    },
+    "blinking=true,looking_left=false": {
+      "model": "cluttered:block/eye_block_right_blinking"
+    },
+    "blinking=true,looking_left=true": {
+      "model": "cluttered:block/eye_block_blinking"
+    }
+  }
+}
