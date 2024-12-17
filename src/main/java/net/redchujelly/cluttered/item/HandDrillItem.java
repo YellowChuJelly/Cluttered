@@ -157,13 +157,20 @@ public class HandDrillItem extends Item {
         BlockPos pos = pContext.getClickedPos();
         BlockState state = level.getBlockState(pos);
         BlockState nextState = getNextBlock(state);
-        if (pContext.getPlayer().isShiftKeyDown() && state.hasProperty(BlockStateProperties.FACING)){
+        if (pContext.getPlayer().isShiftKeyDown()){
             if (!level.isClientSide) {
-                Direction facing = state.getValue(BlockStateProperties.FACING);
-                if (facing.equals(Direction.UP) || facing.equals(Direction.DOWN)) {facing = facing.getOpposite();}
-                else {facing = facing.getClockWise();}
-                level.setBlock(pos, state.setValue(BlockStateProperties.FACING, facing), 2);
-                level.playSound(null, pos, SoundEvents.AXE_SCRAPE, SoundSource.BLOCKS);
+                if (state.hasProperty(BlockStateProperties.FACING)) {
+                    facingRotation(state, level, pos);
+                }
+                else if (state.hasProperty(BlockStateProperties.AXIS)) {
+                    axisRotation(state, level, pos);
+                }
+                else if (state.hasProperty(BlockStateProperties.HORIZONTAL_FACING)) {
+                    horizontalFacingRotation(state, level, pos);
+                }
+                else if (state.hasProperty(BlockStateProperties.HORIZONTAL_AXIS)) {
+                    horizontalAxisRotation(state, level, pos);
+                }
             }
             return InteractionResult.SUCCESS;
         }
@@ -176,6 +183,45 @@ public class HandDrillItem extends Item {
         }
         return InteractionResult.PASS;
     }
+
+    private static void facingRotation(BlockState state, Level level, BlockPos pos) {
+        //Rotates a "facing" block in a cycle including up and down
+        Direction facing = state.getValue(BlockStateProperties.FACING);
+        if (facing == Direction.WEST) {facing = Direction.UP;}
+        else if (facing == Direction.UP) {facing = facing.getOpposite();}
+        else if (facing == Direction.DOWN) {facing = Direction.NORTH;}
+        else {facing = facing.getClockWise();}
+        level.setBlock(pos, state.setValue(BlockStateProperties.FACING, facing), 2);
+        level.playSound(null, pos, SoundEvents.AXE_SCRAPE, SoundSource.BLOCKS);
+    }
+
+    private static void axisRotation(BlockState state, Level level, BlockPos pos){
+        //Rotates an "axis" block in a cycle including the Y axis
+        Direction.Axis axis = state.getValue(BlockStateProperties.AXIS);
+        if (axis == Direction.Axis.X) {axis = Direction.Axis.Y;}
+        else if (axis == Direction.Axis.Y){axis = Direction.Axis.Z;}
+        else axis = Direction.Axis.X;
+        level.setBlock(pos, state.setValue(BlockStateProperties.AXIS, axis), 2);
+        level.playSound(null, pos, SoundEvents.AXE_SCRAPE, SoundSource.BLOCKS);
+    }
+
+    private static void horizontalFacingRotation(BlockState state, Level level, BlockPos pos) {
+        //Rotates a "horizontal facing" block in a cycle
+        Direction facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING);
+        facing = facing.getClockWise();
+        level.setBlock(pos, state.setValue(BlockStateProperties.HORIZONTAL_FACING, facing), 2);
+        level.playSound(null, pos, SoundEvents.AXE_SCRAPE, SoundSource.BLOCKS);
+    }
+
+    private static void horizontalAxisRotation(BlockState state, Level level, BlockPos pos){
+        //Rotates a "horizontal axis" block in a cycle
+        Direction.Axis axis = state.getValue(BlockStateProperties.HORIZONTAL_AXIS);
+        if (axis == Direction.Axis.X) {axis = Direction.Axis.Z;}
+        else axis = Direction.Axis.X;
+        level.setBlock(pos, state.setValue(BlockStateProperties.HORIZONTAL_AXIS, axis), 2);
+        level.playSound(null, pos, SoundEvents.AXE_SCRAPE, SoundSource.BLOCKS);
+    }
+
     //yeah i know this sucks will fix later
     //TODO fix this mess
     private BlockState swapAxisAndFacing(BlockState state, BlockState nextState, Direction playerFacing){

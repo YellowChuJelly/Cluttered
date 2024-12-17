@@ -33,6 +33,7 @@ public class ClutteredBlockTags extends BlockTagsProvider {
         tagNewWoodset("red_mushroom");
 
         tag(BlockTags.MINEABLE_WITH_HOE)
+                .add(BlockRegistration.BLUE_MUSHROOM_CAP.get())
                 .add(BlockRegistration.EYE_BLOCK.get());
         tag(BlockTags.ENCHANTMENT_POWER_PROVIDER)
                 .add(BlockRegistration.WILLOW_BOOKSHELF_BLACK_CAT.get())
@@ -291,6 +292,12 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.FLUORESCENT_PLANTER.get())
                 .add(BlockRegistration.RED_PLANTER.get())
                 .add(BlockRegistration.BLUE_PLANTER.get());
+        tag(BlockTags.SAPLINGS)
+                .add(BlockRegistration.WILLOW_SAPLING.get())
+                .add(BlockRegistration.POPLAR_SAPLING.get());
+        tag(BlockTags.LEAVES)
+                .add(BlockRegistration.WILLOW_LEAVES.get())
+                .add(BlockRegistration.POPLAR_LEAVES.get());
     }
 
     public void tagNewWoodset(String woodType){

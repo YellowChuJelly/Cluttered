@@ -447,5 +447,6 @@
   "cluttered.bouncymushroom.tooltip": "It's bouncy!!!",
   "cluttered.eye_block.tooltip": "It's rude to stare...",
 
-  "creativetab.cluttered_tab": "Cluttered Blocks"
+  "creativetab.cluttered_tab": "Cluttered Blocks",
+  "creativetab.cluttered_furniture_tab": "Cluttered Furniture"
 }

@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-01T23:22:17.1894064	Tags for minecraft:item mod id cluttered
+// 1.20.1	2024-09-21T22:53:52.7586816	Tags for minecraft:item mod id cluttered
 b152c82bcfd73f2d1cf0309be69065620937befe data/minecraft/tags/items/blue_mushroom_log.json
 47ac2d7452d0e09fbde135e339e0de621edf66e4 data/minecraft/tags/items/buttons.json
 ed0d5730aa35a69a9bab26e68fc61b2faaf01963 data/minecraft/tags/items/crabapple_log.json
@@ -9,11 +9,13 @@ ed0d5730aa35a69a9bab26e68fc61b2faaf01963 data/minecraft/tags/items/crabapple_log
 77775e5ab9fa718fe8997e0361d26ceee90cfaa1 data/minecraft/tags/items/flowering_poplar_log.json
 8088ab1cc005792f3f5f11008e04fbbae26a45e3 data/minecraft/tags/items/flowering_willow_log.json
 563a1739b08ce4292c5503ea439ca7aba9cb7df0 data/minecraft/tags/items/fluorescent_maple_log.json
+8d06128eeb79f27dda4c20e423273259ea91874f data/minecraft/tags/items/leaves.json
 26cb727224943a065b4a643f9013284376172fab data/minecraft/tags/items/logs.json
 26cb727224943a065b4a643f9013284376172fab data/minecraft/tags/items/logs_that_burn.json
 41449f6eabcde316f6c420db8b9b37ff8370d56e data/minecraft/tags/items/planks.json
 05e94f0ac9d2c1ebb19d30e0f39ad6eae5c61d1d data/minecraft/tags/items/poplar_log.json
 8b398d87458044a77903b681265ea29aeaff4562 data/minecraft/tags/items/red_mushroom_log.json
+1bd762ce3302d869610d167f48bfaf543396be45 data/minecraft/tags/items/saplings.json
 f484ea3e0fb4aa13ff27d7e18244cd242322c72d data/minecraft/tags/items/slabs.json
 717dfb529e5787043aa2cd1a0c910400d97325e9 data/minecraft/tags/items/stairs.json
 4037c972a635b8a37848cde5cced2fdf82a36b78 data/minecraft/tags/items/stone_crafting_materials.json

@@ -25,6 +25,8 @@ public class ClutteredItemModels extends ItemModelProvider {
         simpleBlockItem(BlockRegistration.WILLOW_DOOR);
         simpleBlockItem(BlockRegistration.WILLOW_LOG_DOOR);
         simpleBlockItem(BlockRegistration.WILLOW_GARDEN_DOOR).renderType("cutout");
+        simplePaneBlockItem(BlockRegistration.WILLOW_SAPLING).renderType("cutout");
+
 
         fenceItem(BlockRegistration.FLOWERING_WILLOW_FENCE, BlockRegistration.FLOWERING_WILLOW_PLANKS);
         buttonItem(BlockRegistration.FLOWERING_WILLOW_BUTTON, BlockRegistration.FLOWERING_WILLOW_PLANKS);
@@ -35,6 +37,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         buttonItem(BlockRegistration.POPLAR_BUTTON, BlockRegistration.POPLAR_PLANKS);
         simpleBlockItem(BlockRegistration.POPLAR_DOOR).renderType("translucent");
         simplePaneBlockItem(BlockRegistration.POPLAR_WINDOW_PANE).renderType("translucent");
+        simplePaneBlockItem(BlockRegistration.POPLAR_SAPLING).renderType("cutout");
 
         fenceItem(BlockRegistration.FLOWERING_POPLAR_FENCE, BlockRegistration.FLOWERING_POPLAR_PLANKS);
         buttonItem(BlockRegistration.FLOWERING_POPLAR_BUTTON, BlockRegistration.FLOWERING_POPLAR_PLANKS);
@@ -64,8 +67,9 @@ public class ClutteredItemModels extends ItemModelProvider {
         fenceItem(BlockRegistration.BLUE_MUSHROOM_FENCE, BlockRegistration.BLUE_MUSHROOM_PLANKS);
         buttonItem(BlockRegistration.BLUE_MUSHROOM_BUTTON, BlockRegistration.BLUE_MUSHROOM_PLANKS);
         simpleBlockItem(BlockRegistration.BLUE_MUSHROOM_DOOR);
-        simplePaneBlockItem(BlockRegistration.BLUE_MUSHROOM_WINDOW_PANE);     
-        
+        simplePaneBlockItem(BlockRegistration.BLUE_MUSHROOM_WINDOW_PANE);
+        simplePaneBlockItem(BlockRegistration.BLUE_MUSHROOM_SAPLING).renderType("cutout");
+
         fenceItem(BlockRegistration.RED_MUSHROOM_FENCE, BlockRegistration.RED_MUSHROOM_PLANKS);
         buttonItem(BlockRegistration.RED_MUSHROOM_BUTTON, BlockRegistration.RED_MUSHROOM_PLANKS);
         simpleBlockItem(BlockRegistration.RED_MUSHROOM_DOOR);
@@ -86,6 +90,21 @@ public class ClutteredItemModels extends ItemModelProvider {
         simpleBlockItem(BlockRegistration.WOOD_FRENCH_DOOR).renderType("cutout");
         simpleBlockItem(BlockRegistration.WOOD_SCREEN_DOOR).renderType("cutout");
 
+
+
+        //FURNITURE
+        blockitemFromModel(BlockRegistration.BIRDHOUSE_UNPAINTED);
+        blockitemFromModel(BlockRegistration.BIRDHOUSE_RED);
+        blockitemFromModel(BlockRegistration.BIRDHOUSE_BLUE);
+        blockitemFromModel(BlockRegistration.KITCHEN_SCALE);
+        blockitemFromModel(BlockRegistration.BEE_LAMP);
+        blockitemFromModel(BlockRegistration.RECORD_PLAYER_WHITE);
+        blockitemFromModel(BlockRegistration.RECORD_PLAYER_YELLOW);
+        blockitemFromModel(BlockRegistration.RECORD_PLAYER_RED);
+        blockitemFromModel(BlockRegistration.RECORD_PLAYER_BROWN);
+        blockitemFromModel(BlockRegistration.RECORD_PLAYER_PURPLE);
+        blockitemFromModel(BlockRegistration.RECORD_PLAYER_PINK);
+        blockitemFromModel(BlockRegistration.RECORD_PLAYER_BLUE );
 
     }
 
@@ -114,5 +133,11 @@ public class ClutteredItemModels extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(Cluttered.MODID, "block/" + item.getId().getPath().replace("_pane", "") + end));
+    }
+
+    private ItemModelBuilder blockitemFromModel(RegistryObject<Block> item){
+        String model = item.getId().toString().replace("cluttered:", "");
+        return withExistingParent(ForgeRegistries.BLOCKS.getKey(item.get()).getPath(),
+                new ResourceLocation(Cluttered.MODID, "block/" + model));
     }
 }

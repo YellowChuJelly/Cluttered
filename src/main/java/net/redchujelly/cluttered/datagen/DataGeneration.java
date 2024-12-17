@@ -22,5 +22,7 @@ public class DataGeneration {
         generator.addProvider(event.includeServer(), new ClutteredItemTags(packOutput, lookupProvider, blockTags, event.getExistingFileHelper()));
         generator.addProvider(event.includeServer(), new ClutteredRecipes(packOutput));
         generator.addProvider(event.includeServer(), ClutteredLootTableProvider.create(packOutput));
+
+        generator.addProvider(event.includeServer(), new ClutteredWorldgen(packOutput, lookupProvider));
     }
 }

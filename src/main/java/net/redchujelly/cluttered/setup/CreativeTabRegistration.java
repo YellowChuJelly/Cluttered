@@ -18,9 +18,11 @@ public class CreativeTabRegistration {
                     .title(Component.translatable("creativetab.cluttered_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
 
-                        //WILLOW WOODSET
                         output.accept(ItemRegistration.HAND_DRILL.get());
 
+                        //WILLOW WOODSET
+                        output.accept(BlockRegistration.WILLOW_SAPLING.get());
+                        output.accept(BlockRegistration.WILLOW_LEAVES.get());
                         output.accept(BlockRegistration.WILLOW_LOG.get());
                         output.accept(BlockRegistration.WILLOW_WOOD.get());
                         output.accept(BlockRegistration.STRIPPED_WILLOW_LOG.get());
@@ -66,6 +68,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.FLOWERING_WILLOW_WAINSCOTING.get());
 
                         //POPLAR WOODSET
+                        output.accept(BlockRegistration.POPLAR_SAPLING.get());
+                        output.accept(BlockRegistration.POPLAR_LEAVES.get());
                         output.accept(BlockRegistration.POPLAR_LOG.get());
                         output.accept(BlockRegistration.POPLAR_WOOD.get());
                         output.accept(BlockRegistration.STRIPPED_POPLAR_LOG.get());
@@ -184,6 +188,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.FLUORESCENT_PLANTER.get());
 
                         //BLUE MUSHROOM WOODSET
+                        output.accept(BlockRegistration.BLUE_MUSHROOM_SAPLING.get());
                         output.accept(BlockRegistration.BLUE_MUSHROOM_CAP.get());
                         output.accept(BlockRegistration.BLUE_MUSHROOM_LOG.get());
                         output.accept(BlockRegistration.BLUE_MUSHROOM_WOOD.get());
@@ -433,6 +438,35 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.CHISELED_GOLD_BLOCK.get());
                         output.accept(BlockRegistration.EYE_BLOCK.get());
                         output.accept(BlockRegistration.DYNASTY_DOOR.get());
+
+                    })
+                    .build());
+    public static final RegistryObject<CreativeModeTab> CLUTTERED_FURNITURE_TAB = CREATIVE_MODE_TABS.register("cluttered_furniture_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(BlockRegistration.RECORD_PLAYER_YELLOW.get()))
+                    .title(Component.translatable("creativetab.cluttered_furniture_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(BlockRegistration.BIRDHOUSE_RED.get());
+                        output.accept(BlockRegistration.BIRDHOUSE_BLUE.get());
+                        output.accept(BlockRegistration.BIRDHOUSE_UNPAINTED.get());
+
+                        output.accept(BlockRegistration.KITCHEN_SCALE.get());
+                        output.accept(BlockRegistration.ANTIQUE_MAP.get());
+
+                        output.accept(BlockRegistration.BEE_LAMP.get());
+
+                        output.accept(BlockRegistration.RECORD_PLAYER_RED.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_YELLOW.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_BLUE.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_PURPLE.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_PINK.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_BROWN.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_WHITE.get());
+
+                        output.accept(BlockRegistration.DESK_GREEN.get());
+                        output.accept(BlockRegistration.DESK_BROWN.get());
+                        output.accept(BlockRegistration.DESK_GREEN_CLUTTERED.get());
+                        output.accept(BlockRegistration.DESK_BROWN_CLUTTERED.get());
+
 
                     })
                     .build());

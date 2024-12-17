@@ -1521,6 +1521,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         ItemPredicate.Builder.item().of(Items.STONECUTTER).build()))
                 .showNotification(true)
                 .save(consumer);
+
     }
 
     private void buildStoneCutterRecipesForBase(Consumer<FinishedRecipe> consumer, Block base, List<RegistryObject<Block>> results) {
@@ -1565,7 +1566,6 @@ public class ClutteredRecipes extends RecipeProvider {
         if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wainscoting"))) {
             wainscoting = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wainscoting"));
         }
-
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, planks, 4)

@@ -19,14 +19,14 @@ import org.jetbrains.annotations.Nullable;
 
 public class MultiblockPlacer extends Block {
 
-    public static final IntegerProperty MULTIBLOCK_PART = IntegerProperty.create("part", 1, 2);
+    public static final IntegerProperty MULTIBLOCK_PART = IntegerProperty.create("part", 1, 4);
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
     //3D Array of the shape of the multiblock.
     //The first layer is supposed to be height(y), second is width(x) and third is depth(z)
-    private static final int[][][] MULTIBLOCK_SHAPE = {
+    private final int[][][] MULTIBLOCK_SHAPE = {
             {
-                    {1,2,2,2},
+                    {1,2,3,4},
             },
     };
 
@@ -46,7 +46,7 @@ public class MultiblockPlacer extends Block {
 
     public MultiblockPlacer(Properties pProperties) {
         super(pProperties);
-        this.registerDefaultState(this.stateDefinition.any()
+        this.registerDefaultState(stateDefinition.any()
                         .setValue(MULTIBLOCK_PART, 1)
                         .setValue(FACING, Direction.NORTH));
     }
@@ -160,7 +160,7 @@ public class MultiblockPlacer extends Block {
         int OGx = pPos.getX();
         int OGy = pPos.getY();
         int OGz = pPos.getZ();
-        int[][][] multiblockShape = getMultiblockShape();
+        int[][][] multiblockShape = this.getMultiblockShape();
         for(int y = 0; y < multiblockShape.length; y++) {
             for (int x = 0; x < multiblockShape[y].length; x++) {
                 for (int z = 0; z < multiblockShape[y][x].length; z++) {
@@ -228,7 +228,7 @@ public class MultiblockPlacer extends Block {
                             if (x+y+z != 0 && multiblockShape[y][x][z] != 0) {
                                 int xOffset = getXOffset(direction, x, z);
                                 int zOffset = getZOffset(direction, x, z);
-                                pLevel.setBlock(new BlockPos(OGx + xOffset, OGy + y, OGz + zOffset),this.defaultBlockState().setValue(getMultiblockPart(), multiblockShape[y][x][z]).setValue(FACING, direction), 2);
+                                pLevel.setBlock(new BlockPos(OGx + xOffset, OGy + y, OGz + zOffset), defaultBlockState().setValue(getMultiblockPart(), multiblockShape[y][x][z]).setValue(FACING, direction), 2);
                             }
                         }
                     }

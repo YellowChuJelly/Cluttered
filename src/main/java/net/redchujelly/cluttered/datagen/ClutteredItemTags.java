@@ -47,6 +47,12 @@ public class ClutteredItemTags extends ItemTagsProvider {
                 .add(BlockRegistration.CHALCEDONY.get().asItem())
                 .add(BlockRegistration.DEEP_CHALCEDONY.get().asItem())
                 .add(BlockRegistration.MARBLE.get().asItem());
+        tag(ItemTags.SAPLINGS)
+                .add(BlockRegistration.WILLOW_SAPLING.get().asItem())
+                .add(BlockRegistration.POPLAR_SAPLING.get().asItem());
+        tag(ItemTags.LEAVES)
+                .add(BlockRegistration.WILLOW_LEAVES.get().asItem())
+                .add(BlockRegistration.POPLAR_LEAVES.get().asItem());
     }
 
     public void tagNewWoodset(String woodType){

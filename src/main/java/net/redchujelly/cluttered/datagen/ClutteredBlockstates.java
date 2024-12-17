@@ -3,14 +3,18 @@ package net.redchujelly.cluttered.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.block.custom.EyeBlock;
+import net.redchujelly.cluttered.block.multiblock.GreenDeskBlock;
+import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
 
 public class ClutteredBlockstates extends BlockStateProvider {
@@ -54,6 +58,9 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         simpleBlockWithItem(BlockRegistration.WILLOW_WINDOW.get(), models().cubeAll("willow_window", modLoc("block/willow_window")).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.WILLOW_WINDOW_PANE.get(), modLoc("block/willow_window"), modLoc("block/willow_glass_pane_top"), "cutout");
+
+        simpleBlockWithItem(BlockRegistration.WILLOW_LEAVES.get(), models().cubeAll("willow_leaves", modLoc("block/willow_leaves")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.WILLOW_SAPLING.get(), models().cross("willow_sapling", modLoc("block/willow_sapling")).renderType("cutout"));
 
         //FLOWERING WILLOW WOODSET
         blockWithItem((BlockRegistration.FLOWERING_WILLOW_PLANKS));
@@ -111,6 +118,10 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.POPLAR_WINDOW.get(), models().cubeAll("poplar_window", modLoc("block/poplar_window")).renderType("translucent"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.POPLAR_WINDOW_PANE.get(), modLoc("block/poplar_window"), modLoc("block/poplar_glass_pane_top"), "translucent");
         columnBlockWithItem(BlockRegistration.POPLAR_BOOKSHELF, BlockRegistration.POPLAR_PLANKS);
+
+        simpleBlockWithItem(BlockRegistration.POPLAR_LEAVES.get(), models().cubeAll("poplar_leaves", modLoc("block/poplar_leaves")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.POPLAR_SAPLING.get(), models().cross("poplar_sapling", modLoc("block/poplar_sapling")).renderType("cutout"));
+
 
         //FLOWERING POPLAR WOODSET
         blockWithItem((BlockRegistration.FLOWERING_POPLAR_PLANKS));
@@ -284,7 +295,10 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.BLUE_MUSHROOM_WINDOW.get(), models().cubeAll("blue_mushroom_window", modLoc("block/blue_mushroom_window")).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.BLUE_MUSHROOM_WINDOW_PANE.get(), modLoc("block/blue_mushroom_window"), modLoc("block/blue_mushroom_glass_pane_top"), "cutout");
         columnBlockWithItem(BlockRegistration.BLUE_MUSHROOM_BOOKSHELF, BlockRegistration.BLUE_MUSHROOM_PLANKS);
-        
+
+        simpleBlockWithItem(BlockRegistration.BLUE_MUSHROOM_SAPLING.get(), models().cross("blue_roundhead", modLoc("block/blue_roundhead")).renderType("cutout"));
+
+
         //RED MUSHROOM WOODSET
         blockWithItem((BlockRegistration.RED_MUSHROOM_PLANKS));
         blockWithItem((BlockRegistration.RED_MUSHROOM_CAP));
@@ -686,8 +700,51 @@ public class ClutteredBlockstates extends BlockStateProvider {
                 .modelForState().modelFile(models().cubeAll("eye_block_right_blinking", modLoc("block/eye_block_right_blinking"))).addModel();
         blockItem(BlockRegistration.EYE_BLOCK);
 
+        //FURNITURE
+
+        hFacingBlockWithCustomModel(BlockRegistration.BIRDHOUSE_UNPAINTED);
+        hFacingBlockWithCustomModel(BlockRegistration.BIRDHOUSE_RED);
+        hFacingBlockWithCustomModel(BlockRegistration.BIRDHOUSE_BLUE);
+
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SCALE);
+        flatFacingBlock(BlockRegistration.ANTIQUE_MAP);
+
+        this.getVariantBuilder(BlockRegistration.BEE_LAMP.get())
+                .forAllStatesExcept(state ->
+                        ConfiguredModel.builder()
+                                .modelFile(models().getExistingFile(modLoc("block/bee_lamp")))
+                                .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() - 180)
+                                .build(),
+                        BlockStateProperties.LIT);
+
+        hFacingBlockWithCustomModel(BlockRegistration.RECORD_PLAYER_YELLOW);
+        hFacingBlockWithCustomModel(BlockRegistration.RECORD_PLAYER_BLUE);
+        hFacingBlockWithCustomModel(BlockRegistration.RECORD_PLAYER_RED);
+        hFacingBlockWithCustomModel(BlockRegistration.RECORD_PLAYER_PURPLE);
+        hFacingBlockWithCustomModel(BlockRegistration.RECORD_PLAYER_PINK);
+        hFacingBlockWithCustomModel(BlockRegistration.RECORD_PLAYER_WHITE);
+        hFacingBlockWithCustomModel(BlockRegistration.RECORD_PLAYER_BROWN);
+
+        //for (int i = 1; i <= 4; i++) {
+        //    this.getVariantBuilder(BlockRegistration.GREEN_DESK.get()).partialState()
+        //            .with(GreenDeskBlock.MULTIBLOCK_PART, i)
+        //            .modelForState().modelFile(models().getExistingFile(modLoc("desk_green_" + i)))
+        //            .addModel();
+        //}
+        multiblockParts(BlockRegistration.DESK_GREEN);
+        multiblockParts(BlockRegistration.DESK_BROWN);
+        multiblockParts(BlockRegistration.DESK_GREEN_CLUTTERED);
+        multiblockParts(BlockRegistration.DESK_BROWN_CLUTTERED);
     }
 
+    private void multiblockParts(RegistryObject<Block> block) {
+        String name = block.getId().toString().replace("cluttered:", "");
+        getVariantBuilder(block.get())
+                .forAllStates(state ->
+                        ConfiguredModel.builder().modelFile(models().getExistingFile(modLoc(name + "_" + state.getValue(MultiblockPlacer.MULTIBLOCK_PART))))
+                                .rotationY((int) state.getValue(BlockStateProperties.FACING).toYRot())
+                                .build());
+    }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
@@ -728,4 +785,24 @@ public class ClutteredBlockstates extends BlockStateProvider {
                 ":block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath() + "_bottom"));
     }
 
+    private void hFacingBlockWithCustomModel(RegistryObject<Block> block){
+        String id = block.getId().toString().replace("cluttered:", "");
+        this.getVariantBuilder(block.get())
+                .forAllStates(state ->
+                        ConfiguredModel.builder()
+                                .modelFile(models().getExistingFile(modLoc("block/" + id)))
+                                .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() - 180)
+                                .build());
+    }
+
+    private void flatFacingBlock(RegistryObject<Block> block){
+        String id = block.getId().toString().replace("cluttered:", "");
+        this.getVariantBuilder(block.get())
+                .forAllStates(state ->
+                        ConfiguredModel.builder()
+                                .modelFile(models().getExistingFile(modLoc("block/" + id)))
+                                .rotationY((int)state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot())
+                                .rotationX(state.getValue(BlockStateProperties.ATTACH_FACE).equals(AttachFace.WALL) ? -90 : (state.getValue(BlockStateProperties.ATTACH_FACE).equals(AttachFace.CEILING) ? 180 : 0))
+                                .build());
+    }
 }
