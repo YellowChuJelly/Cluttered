@@ -93,11 +93,24 @@ public class ClutteredItemModels extends ItemModelProvider {
 
 
         //FURNITURE
+        blockitemFromModel(BlockRegistration.APPLE_CHAIR);
+
         blockitemFromModel(BlockRegistration.BIRDHOUSE_UNPAINTED);
         blockitemFromModel(BlockRegistration.BIRDHOUSE_RED);
         blockitemFromModel(BlockRegistration.BIRDHOUSE_BLUE);
+        blockitemFromModel(BlockRegistration.BRIEFCASE_BLANK);
+        blockitemFromModel(BlockRegistration.BRIEFCASE_ROVER);
+        blockitemFromModel(BlockRegistration.BOX_OF_PAINTS);
+        blockitemFromModel(BlockRegistration.BUNNY_BOOK_ENDS);
+        blockitemFromModel(BlockRegistration.BUTTON_STOOL);
         blockitemFromModel(BlockRegistration.KITCHEN_SCALE);
+        blockitemFromModel(BlockRegistration.ANTIQUE_MAP);
+        blockitemFromModel(BlockRegistration.ANTIQUE_MINI_TABLE);
+        blockitemFromModel(BlockRegistration.ANCIENT_CODEX);
+        blockitemFromModel(BlockRegistration.ANTIQUE_BOOK_STAND);
+        blockitemFromModel(BlockRegistration.ANTIQUE_LIBRARY_BOOKS);
         blockitemFromModel(BlockRegistration.BEE_LAMP);
+        blockitemFromModel(BlockRegistration.BEE_LAMP_ANGRY);
         blockitemFromModel(BlockRegistration.RECORD_PLAYER_WHITE);
         blockitemFromModel(BlockRegistration.RECORD_PLAYER_YELLOW);
         blockitemFromModel(BlockRegistration.RECORD_PLAYER_RED);
@@ -105,6 +118,24 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.RECORD_PLAYER_PURPLE);
         blockitemFromModel(BlockRegistration.RECORD_PLAYER_PINK);
         blockitemFromModel(BlockRegistration.RECORD_PLAYER_BLUE );
+        blockitemFromModel(BlockRegistration.CARDBOARD_BOX_CLOSED);
+        blockitemFromModel(BlockRegistration.CARDBOARD_BOX_OPEN);
+        blockitemFromModel(BlockRegistration.CARDBOARD_BOX_CLUTTERED);
+
+        blockitemFromModel(BlockRegistration.BIKE_YELLOW);
+        blockitemFromModel(BlockRegistration.BIKE_YELLOW_FLOWERS);
+        blockitemFromModel(BlockRegistration.BIKE_BLUE);
+        blockitemFromModel(BlockRegistration.BIKE_BLUE_FLOWERS);
+        blockitemFromModel(BlockRegistration.BIKE_PURPLE);
+        blockitemFromModel(BlockRegistration.BIKE_PURPLE_FLOWERS);
+        blockitemFromModel(BlockRegistration.BIKE_PINK);
+        blockitemFromModel(BlockRegistration.BIKE_PINK_FLOWERS);
+
+        //MULTIBLOCK FURNITURE
+        blockitemFromModel(BlockRegistration.DESK_BROWN);
+        blockitemFromModel(BlockRegistration.DESK_BROWN_CLUTTERED);
+        blockitemFromModel(BlockRegistration.DESK_GREEN);
+        blockitemFromModel(BlockRegistration.DESK_GREEN_CLUTTERED);
 
     }
 

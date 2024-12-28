@@ -1,5 +1,6 @@
 package net.redchujelly.cluttered.datagen;
 
+import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
@@ -13,6 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.block.custom.EyeBlock;
+import net.redchujelly.cluttered.block.multiblock.BicycleBlock;
 import net.redchujelly.cluttered.block.multiblock.GreenDeskBlock;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
@@ -615,7 +617,6 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         blockWithItem(BlockRegistration.CHISELED_GOLD_BLOCK);
         blockWithItem(BlockRegistration.WICKER_BLOCK);
-        //blockWithItem(BlockRegistration.EYE_BLOCK);
         doorBlockWithRenderType((DoorBlock) BlockRegistration.DYNASTY_DOOR.get(), modLoc("block/dynasty_door_bottom"), modLoc("block/dynasty_door_top"), "cutout");
 
         simpleBlockWithItem(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get(), models().cubeAll("alabaster_window_divided", modLoc("block/alabaster_window_divided")).renderType("cutout"));
@@ -702,20 +703,40 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         //FURNITURE
 
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SCALE);
+
+        hFacingBlockWithCustomModel(BlockRegistration.ANCIENT_CODEX);
+        hFacingBlockWithCustomModel(BlockRegistration.ANTIQUE_BOOK_STAND);
+        multiBlockWithOneModel(BlockRegistration.ANTIQUE_LIBRARY_BOOKS);
+        flatFacingBlock(BlockRegistration.ANTIQUE_MAP);
+        hFacingBlockWithCustomModel(BlockRegistration.ANTIQUE_MINI_TABLE);
+        hFacingBlockWithCustomModel(BlockRegistration.APPLE_CHAIR);
+
         hFacingBlockWithCustomModel(BlockRegistration.BIRDHOUSE_UNPAINTED);
         hFacingBlockWithCustomModel(BlockRegistration.BIRDHOUSE_RED);
         hFacingBlockWithCustomModel(BlockRegistration.BIRDHOUSE_BLUE);
+        hFacingBlockWithCustomModel(BlockRegistration.BRIEFCASE_BLANK);
+        hFacingBlockWithCustomModel(BlockRegistration.BRIEFCASE_ROVER);
+        hFacingBlockWithCustomModel(BlockRegistration.BUNNY_BOOK_ENDS);
+        hFacingBlockWithCustomModel(BlockRegistration.BOX_OF_PAINTS);
+        hFacingBlockWithCustomModel(BlockRegistration.BUTTON_STOOL);
 
-        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SCALE);
-        flatFacingBlock(BlockRegistration.ANTIQUE_MAP);
+        multiBlockWithOneModel(BlockRegistration.BIKE_YELLOW);
+        multiBlockWithOneModel(BlockRegistration.BIKE_YELLOW_FLOWERS);
+        multiBlockWithOneModel(BlockRegistration.BIKE_BLUE);
+        multiBlockWithOneModel(BlockRegistration.BIKE_BLUE_FLOWERS);
+        multiBlockWithOneModel(BlockRegistration.BIKE_PINK);
+        multiBlockWithOneModel(BlockRegistration.BIKE_PINK_FLOWERS);
+        multiBlockWithOneModel(BlockRegistration.BIKE_PURPLE);
+        multiBlockWithOneModel(BlockRegistration.BIKE_PURPLE_FLOWERS);
 
-        this.getVariantBuilder(BlockRegistration.BEE_LAMP.get())
-                .forAllStatesExcept(state ->
-                        ConfiguredModel.builder()
-                                .modelFile(models().getExistingFile(modLoc("block/bee_lamp")))
-                                .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() - 180)
-                                .build(),
-                        BlockStateProperties.LIT);
+        //this.getVariantBuilder(BlockRegistration.BEE_LAMP.get())
+        //        .forAllStatesExcept(state ->
+        //                ConfiguredModel.builder()
+        //                        .modelFile(models().getExistingFile(modLoc("block/bee_lamp")))
+        //                        .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() - 180)
+        //                        .build(),
+        //                BlockStateProperties.LIT);
 
         hFacingBlockWithCustomModel(BlockRegistration.RECORD_PLAYER_YELLOW);
         hFacingBlockWithCustomModel(BlockRegistration.RECORD_PLAYER_BLUE);
@@ -725,12 +746,13 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.RECORD_PLAYER_WHITE);
         hFacingBlockWithCustomModel(BlockRegistration.RECORD_PLAYER_BROWN);
 
-        //for (int i = 1; i <= 4; i++) {
-        //    this.getVariantBuilder(BlockRegistration.GREEN_DESK.get()).partialState()
-        //            .with(GreenDeskBlock.MULTIBLOCK_PART, i)
-        //            .modelForState().modelFile(models().getExistingFile(modLoc("desk_green_" + i)))
-        //            .addModel();
-        //}
+        hFacingBlockWithCustomModel(BlockRegistration.BEE_LAMP);
+        hFacingBlockWithCustomModel(BlockRegistration.BEE_LAMP_ANGRY);
+
+        hFacingBlockWithCustomModel(BlockRegistration.CARDBOARD_BOX_OPEN);
+        hFacingBlockWithCustomModel(BlockRegistration.CARDBOARD_BOX_CLOSED);
+        hFacingBlockWithCustomModel(BlockRegistration.CARDBOARD_BOX_CLUTTERED);
+
         multiblockParts(BlockRegistration.DESK_GREEN);
         multiblockParts(BlockRegistration.DESK_BROWN);
         multiblockParts(BlockRegistration.DESK_GREEN_CLUTTERED);
@@ -739,11 +761,44 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
     private void multiblockParts(RegistryObject<Block> block) {
         String name = block.getId().toString().replace("cluttered:", "");
+        var blockClass = block.getClass();
         getVariantBuilder(block.get())
                 .forAllStates(state ->
-                        ConfiguredModel.builder().modelFile(models().getExistingFile(modLoc(name + "_" + state.getValue(MultiblockPlacer.MULTIBLOCK_PART))))
+                        ConfiguredModel.builder().modelFile(models().getExistingFile(modLoc(name + "_" + state.getValue(((MultiblockPlacer) block.get()).getMultiblockPart()))))
                                 .rotationY((int) state.getValue(BlockStateProperties.FACING).toYRot())
                                 .build());
+    }
+
+    private void multiBlockWithOneModel(RegistryObject<Block> block){
+        String name = "block/" + block.getId().toString().replace("cluttered:", "");
+        this.getVariantBuilder(block.get())
+                .partialState().with(((MultiblockPlacer) block.get()).getMultiblockPart(), 1).with(BlockStateProperties.FACING, Direction.NORTH)
+                .modelForState().modelFile(models().getExistingFile(modLoc(name)))
+                .rotationY(180)
+                .addModel()
+                .partialState().with(((MultiblockPlacer) block.get()).getMultiblockPart(), 1).with(BlockStateProperties.FACING, Direction.EAST)
+                .modelForState().modelFile(models().getExistingFile(modLoc(name)))
+                .rotationY(270)
+                .addModel()
+                .partialState().with(((MultiblockPlacer) block.get()).getMultiblockPart(), 1).with(BlockStateProperties.FACING, Direction.SOUTH)
+                .modelForState().modelFile(models().getExistingFile(modLoc(name)))
+                .rotationY(0)
+                .addModel()
+                .partialState().with(((MultiblockPlacer) block.get()).getMultiblockPart(), 1).with(BlockStateProperties.FACING, Direction.WEST)
+                .modelForState().modelFile(models().getExistingFile(modLoc(name)))
+                .rotationY(90)
+                .addModel()
+                .partialState().with(((MultiblockPlacer) block.get()).getMultiblockPart(), 1).with(BlockStateProperties.FACING, Direction.UP)
+                .modelForState().modelFile(models().getExistingFile(modLoc(name)))
+                .rotationY(270)
+                .addModel()
+                .partialState().with(((MultiblockPlacer) block.get()).getMultiblockPart(), 1).with(BlockStateProperties.FACING, Direction.DOWN)
+                .modelForState().modelFile(models().getExistingFile(modLoc(name)))
+                .rotationY(270)
+                .addModel()
+                .partialState().with(((MultiblockPlacer) block.get()).getMultiblockPart(), 2)
+                .modelForState().modelFile(models().cubeAll(name.replace("block/", "") + "2", modLoc("block/blank_texture")).renderType("cutout"))
+                .addModel();
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

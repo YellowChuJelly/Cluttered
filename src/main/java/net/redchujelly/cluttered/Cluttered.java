@@ -3,6 +3,7 @@ package net.redchujelly.cluttered;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -12,6 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.redchujelly.cluttered.client.ChairEntityRenderer;
 import net.redchujelly.cluttered.datagen.DataGeneration;
 import net.redchujelly.cluttered.setup.*;
 import org.slf4j.Logger;
@@ -27,11 +29,10 @@ public class Cluttered {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         CreativeTabRegistration.register(modEventBus);
-
         ItemRegistration.register(modEventBus);
         BlockRegistration.register(modEventBus);
+        EntityTypeRegistration.register(modEventBus);
         PaintingRegistration.register(modEventBus);
-
         TrunkPlacerTypesRegistration.register(modEventBus);
         FoliagePlacerTypeRegistration.register(modEventBus);
 
@@ -69,6 +70,11 @@ public class Cluttered {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
+        }
+
+        @SubscribeEvent
+        public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event){
+            event.registerEntityRenderer(EntityTypeRegistration.CHAIR_ENTITY.get(), ChairEntityRenderer::new);
         }
     }
 }

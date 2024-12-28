@@ -19,14 +19,15 @@ import org.jetbrains.annotations.Nullable;
 
 public class MultiblockPlacer extends Block {
 
-    public static final IntegerProperty MULTIBLOCK_PART = IntegerProperty.create("part", 1, 4);
+    public static final IntegerProperty MULTIBLOCK_PART = IntegerProperty.create("part", 1, 2);
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
     //3D Array of the shape of the multiblock.
     //The first layer is supposed to be height(y), second is width(x) and third is depth(z)
+    //The array here would make 4 blocks in a line going the direction you're looking
     private final int[][][] MULTIBLOCK_SHAPE = {
             {
-                    {1,2,3,4},
+                    {1},
             },
     };
 
@@ -46,8 +47,8 @@ public class MultiblockPlacer extends Block {
 
     public MultiblockPlacer(Properties pProperties) {
         super(pProperties);
-        this.registerDefaultState(stateDefinition.any()
-                        .setValue(MULTIBLOCK_PART, 1)
+        this.registerDefaultState(this.getStateDefinition().any()
+                        .setValue(getMultiblockPart(), 1)
                         .setValue(FACING, Direction.NORTH));
     }
 
@@ -115,7 +116,7 @@ public class MultiblockPlacer extends Block {
     @Override
     public void tick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
         BlockPos state1Pos = null;
-        if (pState.getValue(MULTIBLOCK_PART) != 1) {
+        if (pState.getValue(getMultiblockPart()) != 1) {
             state1Pos = findBlockState1(pPos, pLevel);
         } else {
             state1Pos = pPos;
@@ -133,7 +134,7 @@ public class MultiblockPlacer extends Block {
     @Override
     public BlockState updateShape(BlockState pState, Direction pDirection, BlockState pNeighborState, LevelAccessor pLevel, BlockPos pCurrentPos, BlockPos pNeighborPos) {
         BlockPos state1Pos = null;
-        if (pState.getValue(MULTIBLOCK_PART) != 1) {
+        if (pState.getValue(getMultiblockPart()) != 1) {
             state1Pos = findBlockState1(pCurrentPos, pLevel);
         } else {
             state1Pos = pCurrentPos;
@@ -153,7 +154,7 @@ public class MultiblockPlacer extends Block {
         if (!pLevel.getBlockState(pPos).is(this)) {return true;}
 
         Direction facing = pState.getValue(FACING);
-        if (pState.getValue(MULTIBLOCK_PART) != 1) {
+        if (pState.getValue(getMultiblockPart()) != 1) {
             return true;
         }
 
@@ -169,8 +170,8 @@ public class MultiblockPlacer extends Block {
                     int part = 0;
                     BlockState state = pLevel.getBlockState(new BlockPos(OGx + xOffset, OGy + y, OGz + zOffset));
 
-                    if (state.hasProperty(MULTIBLOCK_PART))
-                        part = state.getValue(MULTIBLOCK_PART);
+                    if (state.hasProperty(getMultiblockPart()))
+                        part = state.getValue(getMultiblockPart());
                     if (multiblockShape[y][x][z] != 0) {
                         if (multiblockShape[y][x][z] != part) {
                             return false;
@@ -190,7 +191,7 @@ public class MultiblockPlacer extends Block {
         Direction facing = level.getBlockState(currentPos).getValue(FACING);
         int[][][] multiblockShape = getMultiblockShape();
 
-        int partNum = level.getBlockState(currentPos).getValue(MULTIBLOCK_PART);
+        int partNum = level.getBlockState(currentPos).getValue(getMultiblockPart());
 
         //Subtracts relative X, Y, Z from blockpos. This probably works.
         for(int y = 0; y < multiblockShape.length; y++) {
@@ -210,7 +211,7 @@ public class MultiblockPlacer extends Block {
         return null;
     }
 
-    //Computers love doing nested for loops, btw. its their favorite activity and they told me that. its good for them.
+    //Computers love doing nested loops, btw. its their favorite activity and they told me that. its good for them.
     @Override
     public void onPlace(BlockState pState, Level pLevel, BlockPos pPos, BlockState pOldState, boolean pIsMoving) {
         if (!pLevel.isClientSide) {

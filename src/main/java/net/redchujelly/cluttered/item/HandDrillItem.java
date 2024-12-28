@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
+import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
 import org.jetbrains.annotations.Nullable;
 
@@ -157,8 +158,11 @@ public class HandDrillItem extends Item {
         BlockPos pos = pContext.getClickedPos();
         BlockState state = level.getBlockState(pos);
         BlockState nextState = getNextBlock(state);
-        if (pContext.getPlayer().isShiftKeyDown()){
+        if (pContext.getPlayer().isCrouching()){
             if (!level.isClientSide) {
+                if (state.getBlock() instanceof MultiblockPlacer){
+                    return InteractionResult.PASS;
+                }
                 if (state.hasProperty(BlockStateProperties.FACING)) {
                     facingRotation(state, level, pos);
                 }

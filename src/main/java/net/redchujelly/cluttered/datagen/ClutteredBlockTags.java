@@ -292,6 +292,15 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.FLUORESCENT_PLANTER.get())
                 .add(BlockRegistration.RED_PLANTER.get())
                 .add(BlockRegistration.BLUE_PLANTER.get());
+        tag(BlockTags.BAMBOO_PLANTABLE_ON)
+                .add(BlockRegistration.YELLOW_PLANTER.get())
+                .add(BlockRegistration.PINK_PLANTER.get())
+                .add(BlockRegistration.PURPLE_PLANTER.get())
+                .add(BlockRegistration.BEIGE_PLANTER.get())
+                .add(BlockRegistration.GREEN_PLANTER.get())
+                .add(BlockRegistration.FLUORESCENT_PLANTER.get())
+                .add(BlockRegistration.RED_PLANTER.get())
+                .add(BlockRegistration.BLUE_PLANTER.get());
         tag(BlockTags.SAPLINGS)
                 .add(BlockRegistration.WILLOW_SAPLING.get())
                 .add(BlockRegistration.POPLAR_SAPLING.get());

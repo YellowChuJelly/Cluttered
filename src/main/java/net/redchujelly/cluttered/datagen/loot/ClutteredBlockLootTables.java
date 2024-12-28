@@ -1,9 +1,24 @@
 package net.redchujelly.cluttered.datagen.loot;
 
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraftforge.registries.RegistryObject;
+import net.redchujelly.cluttered.block.multiblock.GreenDeskBlock;
+import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
 
 import java.util.Set;
@@ -447,15 +462,34 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.BLUEBERRY_JAR_BLOCK .get());
 
         //SMALL FURNITURE
+        //CHAIRS
+        dropSelf(BlockRegistration.APPLE_CHAIR.get());
+        dropSelf(BlockRegistration.BUTTON_STOOL.get());
+
         //MISC
         dropSelf(BlockRegistration.BIRDHOUSE_UNPAINTED.get());
         dropSelf(BlockRegistration.BIRDHOUSE_RED.get());
         dropSelf(BlockRegistration.BIRDHOUSE_BLUE.get());
+
         dropSelf(BlockRegistration.KITCHEN_SCALE.get());
         dropSelf(BlockRegistration.ANTIQUE_MAP.get());
+        dropSelf(BlockRegistration.ANTIQUE_MINI_TABLE.get());
+        dropSelf(BlockRegistration.ANCIENT_CODEX.get());
+        dropSelf(BlockRegistration.ANTIQUE_BOOK_STAND.get());
+        dropSelf(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get());
+
+        dropSelf(BlockRegistration.BRIEFCASE_BLANK.get());
+        dropSelf(BlockRegistration.BRIEFCASE_ROVER.get());
+        dropSelf(BlockRegistration.BUNNY_BOOK_ENDS.get());
+        dropSelf(BlockRegistration.BOX_OF_PAINTS.get());
+
+        dropSelf(BlockRegistration.CARDBOARD_BOX_OPEN.get());
+        dropSelf(BlockRegistration.CARDBOARD_BOX_CLOSED.get());
+        dropSelf(BlockRegistration.CARDBOARD_BOX_CLUTTERED.get());
 
         //LAMPS
         dropSelf(BlockRegistration.BEE_LAMP.get());
+        dropSelf(BlockRegistration.BEE_LAMP_ANGRY.get());
 
         //RECORD PLAYERS
         dropSelf(BlockRegistration.RECORD_PLAYER_YELLOW.get());
@@ -467,12 +501,41 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.RECORD_PLAYER_BROWN.get());
 
         //MULTIBLOCK FURNITURE
-        dropSelf(BlockRegistration.DESK_GREEN.get());
-        dropSelf(BlockRegistration.DESK_BROWN.get());
-        dropSelf(BlockRegistration.DESK_GREEN_CLUTTERED.get());
-        dropSelf(BlockRegistration.DESK_BROWN_CLUTTERED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DESK_GREEN.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DESK_BROWN.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DESK_GREEN_CLUTTERED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DESK_BROWN_CLUTTERED.get());
 
+        //BIKES
+        multiBlockDropOnlyOneItem(BlockRegistration.BIKE_YELLOW.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BIKE_YELLOW_FLOWERS.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BIKE_BLUE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BIKE_BLUE_FLOWERS.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BIKE_PINK.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BIKE_PINK_FLOWERS.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BIKE_PURPLE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BIKE_PURPLE_FLOWERS.get());
 
+        multiBlockDropOnlyOneItem(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get());
+
+        //LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition
+        //        .hasBlockStateProperties(BlockRegistration.DESK_GREEN.get())
+        //        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(MultiblockPlacer.MULTIBLOCK_PART, 1));
+
+        //this.add(BlockRegistration.DESK_GREEN.get(), lootItemConditionBuilder, createCropDrops(M));
+        //this.add(BlockRegistration.DESK_GREEN.get(),
+        //        (block) -> LootTable.lootTable().withPool(this.applyExplosionCondition(block, LootPool.lootPool()
+        //                .setRolls(ConstantValue.exactly(1.0F)).add(LootItem.lootTableItem(block)
+        //                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+        //                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(GreenDeskBlock.MULTIBLOCK_PART, 1)))))));
+    }
+
+    private void multiBlockDropOnlyOneItem(Block blockForDrops){
+        this.add(blockForDrops,
+                (block) -> LootTable.lootTable().withPool(this.applyExplosionCondition(block, LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F)).add(LootItem.lootTableItem(block)
+                                .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(MultiblockPlacer.MULTIBLOCK_PART, 1)))))));
     }
 
     @Override

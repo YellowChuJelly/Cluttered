@@ -3,8 +3,8 @@
 	"texture_size": [64, 64],
 	"render_type":"minecraft:cutout",
 	"textures": {
-		"1": "cluttered:block/desk_1",
-		"particle": "cluttered:block/desk_1"
+		"1": "cluttered:block/desk_2",
+		"particle": "cluttered:block/desk_2"
 	},
 	"elements": [
 		{

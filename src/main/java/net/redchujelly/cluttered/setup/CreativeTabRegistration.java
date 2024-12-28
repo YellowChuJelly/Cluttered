@@ -445,14 +445,32 @@ public class CreativeTabRegistration {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(BlockRegistration.RECORD_PLAYER_YELLOW.get()))
                     .title(Component.translatable("creativetab.cluttered_furniture_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(BlockRegistration.APPLE_CHAIR.get());
+
                         output.accept(BlockRegistration.BIRDHOUSE_RED.get());
                         output.accept(BlockRegistration.BIRDHOUSE_BLUE.get());
                         output.accept(BlockRegistration.BIRDHOUSE_UNPAINTED.get());
 
+                        output.accept(BlockRegistration.BRIEFCASE_BLANK.get());
+                        output.accept(BlockRegistration.BRIEFCASE_ROVER.get());
+                        output.accept(BlockRegistration.BUNNY_BOOK_ENDS.get());
+                        output.accept(BlockRegistration.BOX_OF_PAINTS.get());
+                        output.accept(BlockRegistration.BUTTON_STOOL.get());
+
+                        output.accept(BlockRegistration.CARDBOARD_BOX_OPEN.get());
+                        output.accept(BlockRegistration.CARDBOARD_BOX_CLOSED.get());
+                        output.accept(BlockRegistration.CARDBOARD_BOX_CLUTTERED.get());
+
                         output.accept(BlockRegistration.KITCHEN_SCALE.get());
                         output.accept(BlockRegistration.ANTIQUE_MAP.get());
+                        output.accept(BlockRegistration.ANTIQUE_MINI_TABLE.get());
+                        output.accept(BlockRegistration.ANCIENT_CODEX.get());
+
+                        output.accept(BlockRegistration.ANTIQUE_BOOK_STAND.get());
+                        output.accept(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get());
 
                         output.accept(BlockRegistration.BEE_LAMP.get());
+                        output.accept(BlockRegistration.BEE_LAMP_ANGRY.get());
 
                         output.accept(BlockRegistration.RECORD_PLAYER_RED.get());
                         output.accept(BlockRegistration.RECORD_PLAYER_YELLOW.get());
@@ -461,6 +479,15 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.RECORD_PLAYER_PINK.get());
                         output.accept(BlockRegistration.RECORD_PLAYER_BROWN.get());
                         output.accept(BlockRegistration.RECORD_PLAYER_WHITE.get());
+
+                        output.accept(BlockRegistration.BIKE_YELLOW.get());
+                        output.accept(BlockRegistration.BIKE_YELLOW_FLOWERS.get());
+                        output.accept(BlockRegistration.BIKE_BLUE.get());
+                        output.accept(BlockRegistration.BIKE_BLUE_FLOWERS.get());
+                        output.accept(BlockRegistration.BIKE_PURPLE.get());
+                        output.accept(BlockRegistration.BIKE_PURPLE_FLOWERS.get());
+                        output.accept(BlockRegistration.BIKE_PINK.get());
+                        output.accept(BlockRegistration.BIKE_PINK_FLOWERS.get());
 
                         output.accept(BlockRegistration.DESK_GREEN.get());
                         output.accept(BlockRegistration.DESK_BROWN.get());
