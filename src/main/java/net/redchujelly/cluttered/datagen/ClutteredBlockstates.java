@@ -14,6 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.block.custom.EyeBlock;
+import net.redchujelly.cluttered.block.custom.furniture.RubiksCubeBlock;
 import net.redchujelly.cluttered.block.multiblock.BicycleBlock;
 import net.redchujelly.cluttered.block.multiblock.GreenDeskBlock;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
@@ -63,6 +64,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         simpleBlockWithItem(BlockRegistration.WILLOW_LEAVES.get(), models().cubeAll("willow_leaves", modLoc("block/willow_leaves")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.WILLOW_SAPLING.get(), models().cross("willow_sapling", modLoc("block/willow_sapling")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.POTTED_WILLOW_SAPLING.get(), models().singleTexture("potted_willow_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(BlockRegistration.WILLOW_SAPLING.get())).renderType("cutout"));
 
         //FLOWERING WILLOW WOODSET
         blockWithItem((BlockRegistration.FLOWERING_WILLOW_PLANKS));
@@ -123,6 +126,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         simpleBlockWithItem(BlockRegistration.POPLAR_LEAVES.get(), models().cubeAll("poplar_leaves", modLoc("block/poplar_leaves")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.POPLAR_SAPLING.get(), models().cross("poplar_sapling", modLoc("block/poplar_sapling")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.POTTED_POPLAR_SAPLING.get(), models().singleTexture("potted_poplar_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(BlockRegistration.POPLAR_SAPLING.get())).renderType("cutout"));
 
 
         //FLOWERING POPLAR WOODSET
@@ -299,7 +304,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         columnBlockWithItem(BlockRegistration.BLUE_MUSHROOM_BOOKSHELF, BlockRegistration.BLUE_MUSHROOM_PLANKS);
 
         simpleBlockWithItem(BlockRegistration.BLUE_MUSHROOM_SAPLING.get(), models().cross("blue_roundhead", modLoc("block/blue_roundhead")).renderType("cutout"));
-
+        simpleBlockWithItem(BlockRegistration.POTTED_BLUE_MUSHROOM_SAPLING.get(), models().singleTexture("potted_blue_roundhead", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(BlockRegistration.BLUE_MUSHROOM_SAPLING.get())).renderType("cutout"));
 
         //RED MUSHROOM WOODSET
         blockWithItem((BlockRegistration.RED_MUSHROOM_PLANKS));
@@ -708,7 +714,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.ANCIENT_CODEX);
         hFacingBlockWithCustomModel(BlockRegistration.ANTIQUE_BOOK_STAND);
         multiBlockWithOneModel(BlockRegistration.ANTIQUE_LIBRARY_BOOKS);
-        flatFacingBlock(BlockRegistration.ANTIQUE_MAP);
+        flatFacingBlock(BlockRegistration.ANTIQUE_MAP, 0);
         hFacingBlockWithCustomModel(BlockRegistration.ANTIQUE_MINI_TABLE);
         hFacingBlockWithCustomModel(BlockRegistration.APPLE_CHAIR);
 
@@ -729,7 +735,6 @@ public class ClutteredBlockstates extends BlockStateProvider {
         multiBlockWithOneModel(BlockRegistration.BIKE_PINK_FLOWERS);
         multiBlockWithOneModel(BlockRegistration.BIKE_PURPLE);
         multiBlockWithOneModel(BlockRegistration.BIKE_PURPLE_FLOWERS);
-
         //this.getVariantBuilder(BlockRegistration.BEE_LAMP.get())
         //        .forAllStatesExcept(state ->
         //                ConfiguredModel.builder()
@@ -737,7 +742,6 @@ public class ClutteredBlockstates extends BlockStateProvider {
         //                        .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() - 180)
         //                        .build(),
         //                BlockStateProperties.LIT);
-
         hFacingBlockWithCustomModel(BlockRegistration.RECORD_PLAYER_YELLOW);
         hFacingBlockWithCustomModel(BlockRegistration.RECORD_PLAYER_BLUE);
         hFacingBlockWithCustomModel(BlockRegistration.RECORD_PLAYER_RED);
@@ -752,11 +756,94 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.CARDBOARD_BOX_OPEN);
         hFacingBlockWithCustomModel(BlockRegistration.CARDBOARD_BOX_CLOSED);
         hFacingBlockWithCustomModel(BlockRegistration.CARDBOARD_BOX_CLUTTERED);
-
         multiblockParts(BlockRegistration.DESK_GREEN);
         multiblockParts(BlockRegistration.DESK_BROWN);
         multiblockParts(BlockRegistration.DESK_GREEN_CLUTTERED);
         multiblockParts(BlockRegistration.DESK_BROWN_CLUTTERED);
+
+        simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_YELLOW.get(), models().getExistingFile(modLoc("block/spool_of_thread_yellow")));
+        simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_GREEN.get(), models().getExistingFile(modLoc("block/spool_of_thread_green")));
+        simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_PURPLE.get(), models().getExistingFile(modLoc("block/spool_of_thread_purple")));
+        simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_PINK.get(), models().getExistingFile(modLoc("block/spool_of_thread_pink")));
+
+        hFacingBlockWithCustomModel(BlockRegistration.CAT_MUGS_CLUTTERED);
+        hFacingBlockWithCustomModel(BlockRegistration.CAT_PLANT_POT_BLACK);
+        hFacingBlockWithCustomModel(BlockRegistration.CAT_PLANT_POT_ORANGE);
+        hFacingBlockWithCustomModel(BlockRegistration.COFFEE_GRINDER);
+        flatFacingBlock(BlockRegistration.CAULDRON_POSTER, -90);
+
+        hFacingBlockWithCustomModel(BlockRegistration.COTTAGE_CHAIR);
+        hFacingBlockWithCustomModel(BlockRegistration.COTTAGE_CHAIR_CUSHIONED);
+        hFacingBlockWithCustomModel(BlockRegistration.COTTAGE_OTTOMAN);
+
+        multiBlockWithOneModel(BlockRegistration.GUMBALL_MACHINE_RED);
+        multiBlockWithOneModel(BlockRegistration.GUMBALL_MACHINE_BLUE);
+        multiBlockWithOneModel(BlockRegistration.GUMBALL_MACHINE_PURPLE);
+
+        simpleBlockWithItem(BlockRegistration.GLOWSHROOM_TERRARIUM_YELLOW.get(), models().getExistingFile(modLoc("block/glowshroom_terrarium_yellow")));
+        simpleBlockWithItem(BlockRegistration.GLOWSHROOM_TERRARIUM_GREEN.get(), models().getExistingFile(modLoc("block/glowshroom_terrarium_green")));
+        simpleBlockWithItem(BlockRegistration.GLOWSHROOM_TERRARIUM_BLUE.get(), models().getExistingFile(modLoc("block/glowshroom_terrarium_blue")));
+        simpleBlockWithItem(BlockRegistration.GLOWSHROOM_TERRARIUM_PURPLE.get(), models().getExistingFile(modLoc("block/glowshroom_terrarium_purple")));
+        simpleBlockWithItem(BlockRegistration.GLOWSHROOM_TERRARIUM_PINK.get(), models().getExistingFile(modLoc("block/glowshroom_terrarium_pink")));
+        simpleBlockWithItem(BlockRegistration.MUSHROOM_TERRARIUM_RED.get(), models().getExistingFile(modLoc("block/mushroom_terrarium_red")));
+        simpleBlockWithItem(BlockRegistration.MUSHROOM_TERRARIUM_BROWN.get(), models().getExistingFile(modLoc("block/mushroom_terrarium_brown")));
+
+        hFacingBlockWithCustomModel(BlockRegistration.MINI_CACTUS_SET);
+        hFacingBlockWithCustomModel(BlockRegistration.MUSHROOM_JARS);
+        hFacingBlockWithCustomModel(BlockRegistration.NEWSPAPER_PILE_SHORT);
+        hFacingBlockWithCustomModel(BlockRegistration.NEWSPAPER_PILE_TALL);
+        hFacingBlockWithCustomModel(BlockRegistration.PAPER_PILE);
+
+        hFacingBlockWithCustomModel(BlockRegistration.FENCE_SHELF);
+        hFacingBlockWithCustomModel(BlockRegistration.HANGING_PLANT_POT_FLOWERS);
+        hFacingBlockWithCustomModel(BlockRegistration.HANGING_PLANT_POT_GRASS);
+        simpleBlockWithItem(BlockRegistration.PEDESTAL_HK.get(), models().getExistingFile(modLoc("block/pedestal_hk")));
+        hFacingBlockWithCustomModel(BlockRegistration.PICNIC_BASKET);
+        hFacingBlockWithCustomModel(BlockRegistration.PICNIC_BASKET_PREPARED);
+
+        hFacingBlockWithCustomModel(BlockRegistration.ROVER_STOOL);
+
+        getVariantBuilder(BlockRegistration.RUBIKS_CUBE.get())
+                .forAllStates(state ->
+                        ConfiguredModel.builder()
+                                .modelFile(state.getValue(RubiksCubeBlock.SOLVED) ? models().getExistingFile(modLoc("rubiks_cube")) : models().getExistingFile(modLoc("rubiks_cube_scrambled")))
+                                .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() - 180)
+                                .build());
+        getVariantBuilder(BlockRegistration.RUBIKS_CUBE_PASTEL.get())
+                .forAllStates(state ->
+                        ConfiguredModel.builder()
+                                .modelFile(state.getValue(RubiksCubeBlock.SOLVED) ? models().getExistingFile(modLoc("rubiks_cube_pastel")) : models().getExistingFile(modLoc("rubiks_cube_scrambled_pastel")))
+                                .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() - 180)
+                                .build());
+
+        hFacingBlockWithCustomModel(BlockRegistration.ROW_OF_SMALL_BOOKS);
+        hFacingBlockWithCustomModel(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL);
+        hFacingBlockWithCustomModel(BlockRegistration.SCATTERED_PAPERS);
+        hFacingBlockWithCustomModel(BlockRegistration.SEWING_MACHINE_ANTIQUE);
+
+        hFacingBlockWithCustomModel(BlockRegistration.ROW_OF_SMALL_BOOKS_SHELVED);
+        hFacingBlockWithCustomModel(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL_SHELVED);
+        hFacingBlockWithCustomModel(BlockRegistration.STAINED_GLASS_LAMP);
+        hFacingBlockWithCustomModel(BlockRegistration.SMALL_BUSH);
+        hFacingBlockWithCustomModel(BlockRegistration.TEDDY_BEAR);
+
+        hFacingBlockWithCustomModel(BlockRegistration.SMALL_SHELF);
+        hFacingBlockWithCustomModel(BlockRegistration.SMALL_SHELF_PINK);
+        hFacingBlockWithCustomModel(BlockRegistration.TWO_FLOWER_POTS);
+        hFacingBlockWithCustomModel(BlockRegistration.TRADITIONAL_RADIO);
+
+
+        //ENDTABLES
+        hFacingBlockWithCustomModel(BlockRegistration.COTTAGE_SIDE_TABLE);
+        hFacingBlockWithCustomModel(BlockRegistration.ENDTABLE_AMETHYST);
+        hFacingBlockWithCustomModel(BlockRegistration.ENDTABLE_BUBBLEGUM);
+        hFacingBlockWithCustomModel(BlockRegistration.ENDTABLE_CHARCOAL);
+        hFacingBlockWithCustomModel(BlockRegistration.ENDTABLE_MEADOW);
+        hFacingBlockWithCustomModel(BlockRegistration.ENDTABLE_PERIWINKLE);
+        hFacingBlockWithCustomModel(BlockRegistration.ENDTABLE_SUNSHINE);
+        hFacingBlockWithCustomModel(BlockRegistration.ENDTABLE_WOOD);
+        hFacingBlockWithCustomModel(BlockRegistration.ENDTABLE_DECOR);
+        hFacingBlockWithCustomModel(BlockRegistration.NIGHTSTAND_GREEN);
     }
 
     private void multiblockParts(RegistryObject<Block> block) {
@@ -850,14 +937,14 @@ public class ClutteredBlockstates extends BlockStateProvider {
                                 .build());
     }
 
-    private void flatFacingBlock(RegistryObject<Block> block){
+    private void flatFacingBlock(RegistryObject<Block> block, int offsetX){
         String id = block.getId().toString().replace("cluttered:", "");
         this.getVariantBuilder(block.get())
                 .forAllStates(state ->
                         ConfiguredModel.builder()
                                 .modelFile(models().getExistingFile(modLoc("block/" + id)))
-                                .rotationY((int)state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot())
-                                .rotationX(state.getValue(BlockStateProperties.ATTACH_FACE).equals(AttachFace.WALL) ? -90 : (state.getValue(BlockStateProperties.ATTACH_FACE).equals(AttachFace.CEILING) ? 180 : 0))
+                                .rotationY((int)state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() + (state.getValue(BlockStateProperties.ATTACH_FACE).equals(AttachFace.WALL) ? 180 : 0))
+                                .rotationX(state.getValue(BlockStateProperties.ATTACH_FACE).equals(AttachFace.WALL) ? 90 + offsetX : (state.getValue(BlockStateProperties.ATTACH_FACE).equals(AttachFace.CEILING) ? 180 + offsetX : offsetX))
                                 .build());
     }
 }

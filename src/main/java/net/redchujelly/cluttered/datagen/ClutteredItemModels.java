@@ -131,6 +131,68 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.BIKE_PINK);
         blockitemFromModel(BlockRegistration.BIKE_PINK_FLOWERS);
 
+        blockitemFromModel(BlockRegistration.CAT_MUGS_CLUTTERED);
+        blockitemFromModel(BlockRegistration.CAT_PLANT_POT_BLACK);
+        blockitemFromModel(BlockRegistration.CAT_PLANT_POT_ORANGE);
+        blockitemFromModel(BlockRegistration.COFFEE_GRINDER);
+        simplePaneBlockItem(BlockRegistration.CAULDRON_POSTER);
+
+        blockitemFromModel(BlockRegistration.COTTAGE_SIDE_TABLE);
+        blockitemFromModel(BlockRegistration.ENDTABLE_AMETHYST);
+        blockitemFromModel(BlockRegistration.ENDTABLE_BUBBLEGUM);
+        blockitemFromModel(BlockRegistration.ENDTABLE_CHARCOAL);
+        blockitemFromModel(BlockRegistration.ENDTABLE_MEADOW);
+        blockitemFromModel(BlockRegistration.ENDTABLE_PERIWINKLE);
+        blockitemFromModel(BlockRegistration.ENDTABLE_SUNSHINE);
+        blockitemFromModel(BlockRegistration.ENDTABLE_WOOD);
+        blockitemFromModel(BlockRegistration.NIGHTSTAND_GREEN);
+        blockitemFromModel(BlockRegistration.ENDTABLE_DECOR);
+
+        blockitemFromModel(BlockRegistration.COTTAGE_CHAIR);
+        blockitemFromModel(BlockRegistration.COTTAGE_CHAIR_CUSHIONED);
+        blockitemFromModel(BlockRegistration.COTTAGE_OTTOMAN);
+
+        blockitemFromModel(BlockRegistration.GLOWSHROOM_TERRARIUM_YELLOW);
+        blockitemFromModel(BlockRegistration.GLOWSHROOM_TERRARIUM_GREEN);
+        blockitemFromModel(BlockRegistration.GLOWSHROOM_TERRARIUM_BLUE);
+        blockitemFromModel(BlockRegistration.GLOWSHROOM_TERRARIUM_PURPLE);
+        blockitemFromModel(BlockRegistration.GLOWSHROOM_TERRARIUM_PINK);
+        blockitemFromModel(BlockRegistration.MUSHROOM_TERRARIUM_RED);
+        blockitemFromModel(BlockRegistration.MUSHROOM_TERRARIUM_BROWN);
+
+        blockitemFromModel(BlockRegistration.GUMBALL_MACHINE_RED);
+        blockitemFromModel(BlockRegistration.GUMBALL_MACHINE_BLUE);
+        blockitemFromModel(BlockRegistration.GUMBALL_MACHINE_PURPLE);
+        blockitemFromModel(BlockRegistration.MINI_CACTUS_SET);
+        blockitemFromModel(BlockRegistration.MUSHROOM_JARS);
+        blockitemFromModel(BlockRegistration.NEWSPAPER_PILE_SHORT);
+        blockitemFromModel(BlockRegistration.NEWSPAPER_PILE_TALL);
+        blockitemFromModel(BlockRegistration.PAPER_PILE);
+
+        blockitemFromModel(BlockRegistration.FENCE_SHELF);
+        blockitemFromModel(BlockRegistration.HANGING_PLANT_POT_FLOWERS);
+        blockitemFromModel(BlockRegistration.HANGING_PLANT_POT_GRASS);
+        blockitemFromModel(BlockRegistration.PEDESTAL_HK);
+        blockitemFromModel(BlockRegistration.PICNIC_BASKET);
+        blockitemFromModel(BlockRegistration.PICNIC_BASKET_PREPARED);
+
+        blockitemFromModel(BlockRegistration.ROVER_STOOL);
+        blockitemFromModel(BlockRegistration.RUBIKS_CUBE);
+        blockitemFromModel(BlockRegistration.RUBIKS_CUBE_PASTEL);
+        blockitemFromModel(BlockRegistration.ROW_OF_SMALL_BOOKS);
+        blockitemFromModel(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL);
+        blockitemFromModel(BlockRegistration.SCATTERED_PAPERS);
+        blockitemFromModel(BlockRegistration.SEWING_MACHINE_ANTIQUE);
+        blockitemFromModel(BlockRegistration.ROW_OF_SMALL_BOOKS_SHELVED);
+        blockitemFromModel(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL_SHELVED);
+        blockitemFromModel(BlockRegistration.STAINED_GLASS_LAMP);
+        blockitemFromModel(BlockRegistration.SMALL_BUSH);
+        blockitemFromModel(BlockRegistration.TEDDY_BEAR);
+        blockitemFromModel(BlockRegistration.SMALL_SHELF);
+        blockitemFromModel(BlockRegistration.SMALL_SHELF_PINK);
+        blockitemFromModel(BlockRegistration.TWO_FLOWER_POTS);
+        blockitemFromModel(BlockRegistration.TRADITIONAL_RADIO);
+
         //MULTIBLOCK FURNITURE
         blockitemFromModel(BlockRegistration.DESK_BROWN);
         blockitemFromModel(BlockRegistration.DESK_BROWN_CLUTTERED);

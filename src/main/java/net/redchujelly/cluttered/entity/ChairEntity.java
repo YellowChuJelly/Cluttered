@@ -47,13 +47,6 @@ public class ChairEntity extends Entity {
     }
 
     @Override
-    public void tick() {
-        if(!hasExactlyOnePlayerPassenger()){
-            kill();
-        }
-    }
-
-    @Override
     public void kill() {
         BlockState chair = CHAIR_LEVEL.getBlockState(CHAIR_POS);
         if (chair.hasProperty(BlockStateProperties.OCCUPIED)) {

@@ -37,7 +37,7 @@ public class WillowTrunkPlacer extends TrunkPlacer {
         setDirtAt(pLevel, biConsumer, randomSource, pPos.below(), treeConfiguration);
 
         List<FoliagePlacer.FoliageAttachment> foliageSpots = new ArrayList<>();
-        int maxHeight = freeTreeHeight + randomSource.nextInt(heightRandA, heightRandB + 2) + randomSource.nextInt(0, 3);
+        int maxHeight = freeTreeHeight + randomSource.nextInt(heightRandA, heightRandB) + randomSource.nextInt(-3, 0);
         int xOffset = 0;
         int zOffset = 0;
 

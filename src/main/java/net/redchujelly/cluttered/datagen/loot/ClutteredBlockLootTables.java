@@ -4,20 +4,12 @@ import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
-import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
-import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraftforge.registries.RegistryObject;
-import net.redchujelly.cluttered.block.multiblock.GreenDeskBlock;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
 
@@ -54,6 +46,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.WILLOW_BOOKSHELF_BOTTLES.get());
         dropSelf(BlockRegistration.WILLOW_BOOKSHELF_VASE.get());
         dropSelf(BlockRegistration.WILLOW_SAPLING.get());
+        dropSelf(BlockRegistration.WILLOW_SAPLING.get());
+        add(BlockRegistration.POTTED_WILLOW_SAPLING.get(), createPotFlowerItemTable(BlockRegistration.WILLOW_SAPLING.get()));
 
         add(BlockRegistration.WILLOW_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.WILLOW_LEAVES.get(), BlockRegistration.WILLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         add(BlockRegistration.WILLOW_SLAB.get(), block -> createSlabItemTable(BlockRegistration.WILLOW_SLAB.get()));
@@ -95,6 +89,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.POPLAR_BUTTON.get());
         dropSelf(BlockRegistration.POPLAR_BOOKSHELF.get());
         dropSelf(BlockRegistration.POPLAR_SAPLING.get());
+        add(BlockRegistration.POTTED_POPLAR_SAPLING.get(), createPotFlowerItemTable(BlockRegistration.POPLAR_SAPLING.get()));
+
 
         add(BlockRegistration.POPLAR_SLAB.get(), block -> createSlabItemTable(BlockRegistration.POPLAR_SLAB.get()));
         add(BlockRegistration.POPLAR_DOOR.get(), block -> createDoorTable(BlockRegistration.POPLAR_DOOR.get()));
@@ -210,6 +206,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.BLUE_MUSHROOM_BUTTON.get());
         dropSelf(BlockRegistration.BLUE_MUSHROOM_BOOKSHELF.get());
         dropSelf(BlockRegistration.BLUE_MUSHROOM_SAPLING.get());
+        add(BlockRegistration.POTTED_BLUE_MUSHROOM_SAPLING.get(), createPotFlowerItemTable(BlockRegistration.BLUE_MUSHROOM_SAPLING.get()));
+
 
         add(BlockRegistration.BLUE_MUSHROOM_SLAB.get(), block -> createSlabItemTable(BlockRegistration.BLUE_MUSHROOM_SLAB.get()));
         add(BlockRegistration.BLUE_MUSHROOM_DOOR.get(), block -> createDoorTable(BlockRegistration.BLUE_MUSHROOM_DOOR.get()));
@@ -465,6 +463,9 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         //CHAIRS
         dropSelf(BlockRegistration.APPLE_CHAIR.get());
         dropSelf(BlockRegistration.BUTTON_STOOL.get());
+        dropSelf(BlockRegistration.COTTAGE_CHAIR.get());
+        dropSelf(BlockRegistration.COTTAGE_CHAIR_CUSHIONED.get());
+        dropSelf(BlockRegistration.COTTAGE_OTTOMAN.get());
 
         //MISC
         dropSelf(BlockRegistration.BIRDHOUSE_UNPAINTED.get());
@@ -487,9 +488,63 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.CARDBOARD_BOX_CLOSED.get());
         dropSelf(BlockRegistration.CARDBOARD_BOX_CLUTTERED.get());
 
+        dropSelf(BlockRegistration.THREAD_SPOOL_YELLOW.get());
+        dropSelf(BlockRegistration.THREAD_SPOOL_GREEN.get());
+        dropSelf(BlockRegistration.THREAD_SPOOL_PURPLE.get());
+        dropSelf(BlockRegistration.THREAD_SPOOL_PINK.get());
+
+        dropSelf(BlockRegistration.CAT_MUGS_CLUTTERED.get());
+        dropSelf(BlockRegistration.CAT_PLANT_POT_BLACK.get());
+        dropSelf(BlockRegistration.CAT_PLANT_POT_ORANGE.get());
+        dropSelf(BlockRegistration.COFFEE_GRINDER.get());
+        dropSelf(BlockRegistration.CAULDRON_POSTER.get());
+
+        dropSelf(BlockRegistration.FENCE_SHELF.get());
+        dropSelf(BlockRegistration.HANGING_PLANT_POT_FLOWERS.get());
+        dropSelf(BlockRegistration.HANGING_PLANT_POT_GRASS.get());
+        dropSelf(BlockRegistration.PEDESTAL_HK.get());
+        dropSelf(BlockRegistration.PICNIC_BASKET.get());
+        dropSelf(BlockRegistration.PICNIC_BASKET_PREPARED.get());
+
+        multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_RED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_BLUE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_PURPLE.get());
+
+        multiBlockDropOnlyOneItem(BlockRegistration.MINI_CACTUS_SET.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.MUSHROOM_JARS.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.NEWSPAPER_PILE_SHORT.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.NEWSPAPER_PILE_TALL.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.PAPER_PILE.get());
+
+        dropSelf(BlockRegistration.ROVER_STOOL.get());
+        dropSelf(BlockRegistration.RUBIKS_CUBE.get());
+        dropSelf(BlockRegistration.RUBIKS_CUBE_PASTEL.get());
+        dropSelf(BlockRegistration.ROW_OF_SMALL_BOOKS.get());
+        dropSelf(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL.get());
+        dropSelf(BlockRegistration.SCATTERED_PAPERS.get());
+        dropSelf(BlockRegistration.SEWING_MACHINE_ANTIQUE.get());
+        dropSelf(BlockRegistration.ROW_OF_SMALL_BOOKS_SHELVED.get());
+        dropSelf(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL_SHELVED.get());
+        dropSelf(BlockRegistration.SMALL_BUSH.get());
+        dropSelf(BlockRegistration.TEDDY_BEAR.get());
+        dropSelf(BlockRegistration.SMALL_SHELF.get());
+        dropSelf(BlockRegistration.SMALL_SHELF_PINK.get());
+        dropSelf(BlockRegistration.TWO_FLOWER_POTS.get());
+        dropSelf(BlockRegistration.TRADITIONAL_RADIO.get());
+
         //LAMPS
         dropSelf(BlockRegistration.BEE_LAMP.get());
         dropSelf(BlockRegistration.BEE_LAMP_ANGRY.get());
+        dropSelf(BlockRegistration.STAINED_GLASS_LAMP.get());
+
+        //TERRARIUMS
+        dropSelf(BlockRegistration.GLOWSHROOM_TERRARIUM_YELLOW.get());
+        dropSelf(BlockRegistration.GLOWSHROOM_TERRARIUM_GREEN.get());
+        dropSelf(BlockRegistration.GLOWSHROOM_TERRARIUM_BLUE.get());
+        dropSelf(BlockRegistration.GLOWSHROOM_TERRARIUM_PURPLE.get());
+        dropSelf(BlockRegistration.GLOWSHROOM_TERRARIUM_PINK.get());
+        dropSelf(BlockRegistration.MUSHROOM_TERRARIUM_RED.get());
+        dropSelf(BlockRegistration.MUSHROOM_TERRARIUM_BROWN.get());
 
         //RECORD PLAYERS
         dropSelf(BlockRegistration.RECORD_PLAYER_YELLOW.get());
@@ -499,6 +554,18 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.RECORD_PLAYER_PINK.get());
         dropSelf(BlockRegistration.RECORD_PLAYER_WHITE.get());
         dropSelf(BlockRegistration.RECORD_PLAYER_BROWN.get());
+
+        //ENDTABLES
+        dropSelf(BlockRegistration.COTTAGE_SIDE_TABLE.get());
+        dropSelf(BlockRegistration.ENDTABLE_AMETHYST.get());
+        dropSelf(BlockRegistration.ENDTABLE_BUBBLEGUM.get());
+        dropSelf(BlockRegistration.ENDTABLE_CHARCOAL.get());
+        dropSelf(BlockRegistration.ENDTABLE_MEADOW.get());
+        dropSelf(BlockRegistration.ENDTABLE_PERIWINKLE.get());
+        dropSelf(BlockRegistration.ENDTABLE_SUNSHINE.get());
+        dropSelf(BlockRegistration.ENDTABLE_WOOD.get());
+        dropSelf(BlockRegistration.ENDTABLE_DECOR.get());
+        dropSelf(BlockRegistration.NIGHTSTAND_GREEN.get());
 
         //MULTIBLOCK FURNITURE
         multiBlockDropOnlyOneItem(BlockRegistration.DESK_GREEN.get());

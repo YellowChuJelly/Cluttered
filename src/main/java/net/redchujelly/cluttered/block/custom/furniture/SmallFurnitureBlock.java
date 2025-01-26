@@ -24,6 +24,7 @@ public class SmallFurnitureBlock extends CustomHorizontalBlock implements Simple
 
     public SmallFurnitureBlock(Properties pProperties) {
         super(pProperties);
+        this.registerDefaultState(this.getStateDefinition().any().setValue(WATERLOGGED, false));
     }
 
     @Override

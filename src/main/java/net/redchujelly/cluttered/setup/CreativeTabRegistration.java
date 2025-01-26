@@ -13,7 +13,132 @@ public class CreativeTabRegistration {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Cluttered.MODID);
 
-    public static final RegistryObject<CreativeModeTab> CLUTTERED_TAB = CREATIVE_MODE_TABS.register("cluttered_tab",
+    //FURNITURE
+    public static final RegistryObject<CreativeModeTab> CLUTTERED_FURNITURE_TAB = CREATIVE_MODE_TABS.register("cluttered_furniture_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(BlockRegistration.RECORD_PLAYER_YELLOW.get()))
+                    .title(Component.translatable("creativetab.cluttered_furniture_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(BlockRegistration.APPLE_CHAIR.get());
+
+                        output.accept(BlockRegistration.BIRDHOUSE_RED.get());
+                        output.accept(BlockRegistration.BIRDHOUSE_BLUE.get());
+                        output.accept(BlockRegistration.BIRDHOUSE_UNPAINTED.get());
+
+                        output.accept(BlockRegistration.BRIEFCASE_BLANK.get());
+                        output.accept(BlockRegistration.BRIEFCASE_ROVER.get());
+                        output.accept(BlockRegistration.BUNNY_BOOK_ENDS.get());
+                        output.accept(BlockRegistration.BOX_OF_PAINTS.get());
+                        output.accept(BlockRegistration.BUTTON_STOOL.get());
+
+                        output.accept(BlockRegistration.CARDBOARD_BOX_OPEN.get());
+                        output.accept(BlockRegistration.CARDBOARD_BOX_CLOSED.get());
+                        output.accept(BlockRegistration.CARDBOARD_BOX_CLUTTERED.get());
+
+                        output.accept(BlockRegistration.CAT_MUGS_CLUTTERED.get());
+                        output.accept(BlockRegistration.CAT_PLANT_POT_BLACK.get());
+                        output.accept(BlockRegistration.CAT_PLANT_POT_ORANGE.get());
+                        output.accept(BlockRegistration.COFFEE_GRINDER.get());
+                        output.accept(BlockRegistration.CAULDRON_POSTER.get());
+
+                        output.accept(BlockRegistration.THREAD_SPOOL_YELLOW.get());
+                        output.accept(BlockRegistration.THREAD_SPOOL_GREEN.get());
+                        output.accept(BlockRegistration.THREAD_SPOOL_PURPLE.get());
+                        output.accept(BlockRegistration.THREAD_SPOOL_PINK.get());
+
+                        output.accept(BlockRegistration.KITCHEN_SCALE.get());
+                        output.accept(BlockRegistration.ANTIQUE_MAP.get());
+                        output.accept(BlockRegistration.ANTIQUE_MINI_TABLE.get());
+                        output.accept(BlockRegistration.ANCIENT_CODEX.get());
+
+                        output.accept(BlockRegistration.ANTIQUE_BOOK_STAND.get());
+                        output.accept(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get());
+
+                        output.accept(BlockRegistration.BEE_LAMP.get());
+                        output.accept(BlockRegistration.BEE_LAMP_ANGRY.get());
+
+                        output.accept(BlockRegistration.RECORD_PLAYER_RED.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_YELLOW.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_BLUE.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_PURPLE.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_PINK.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_BROWN.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_WHITE.get());
+
+                        output.accept(BlockRegistration.BIKE_YELLOW.get());
+                        output.accept(BlockRegistration.BIKE_YELLOW_FLOWERS.get());
+                        output.accept(BlockRegistration.BIKE_BLUE.get());
+                        output.accept(BlockRegistration.BIKE_BLUE_FLOWERS.get());
+                        output.accept(BlockRegistration.BIKE_PURPLE.get());
+                        output.accept(BlockRegistration.BIKE_PURPLE_FLOWERS.get());
+                        output.accept(BlockRegistration.BIKE_PINK.get());
+                        output.accept(BlockRegistration.BIKE_PINK_FLOWERS.get());
+
+                        output.accept(BlockRegistration.COTTAGE_SIDE_TABLE.get());
+                        output.accept(BlockRegistration.COTTAGE_CHAIR.get());
+                        output.accept(BlockRegistration.COTTAGE_CHAIR_CUSHIONED.get());
+                        output.accept(BlockRegistration.COTTAGE_OTTOMAN.get());
+
+                        output.accept(BlockRegistration.GUMBALL_MACHINE_RED.get());
+                        output.accept(BlockRegistration.GUMBALL_MACHINE_BLUE.get());
+                        output.accept(BlockRegistration.GUMBALL_MACHINE_PURPLE.get());
+
+                        output.accept(BlockRegistration.MINI_CACTUS_SET.get());
+                        output.accept(BlockRegistration.MUSHROOM_JARS.get());
+                        output.accept(BlockRegistration.NEWSPAPER_PILE_SHORT.get());
+                        output.accept(BlockRegistration.NEWSPAPER_PILE_TALL.get());
+                        output.accept(BlockRegistration.PAPER_PILE.get());
+
+                        output.accept(BlockRegistration.MUSHROOM_TERRARIUM_RED.get());
+                        output.accept(BlockRegistration.MUSHROOM_TERRARIUM_BROWN.get());
+                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_YELLOW.get());
+                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_GREEN.get());
+                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_BLUE.get());
+                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_PURPLE.get());
+                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_PINK.get());
+
+                        output.accept(BlockRegistration.FENCE_SHELF.get());
+                        output.accept(BlockRegistration.HANGING_PLANT_POT_FLOWERS.get());
+                        output.accept(BlockRegistration.HANGING_PLANT_POT_GRASS.get());
+                        output.accept(BlockRegistration.PEDESTAL_HK.get());
+                        output.accept(BlockRegistration.PICNIC_BASKET.get());
+                        output.accept(BlockRegistration.PICNIC_BASKET_PREPARED.get());
+
+                        output.accept(BlockRegistration.ENDTABLE_AMETHYST.get());
+                        output.accept(BlockRegistration.ENDTABLE_BUBBLEGUM.get());
+                        output.accept(BlockRegistration.ENDTABLE_CHARCOAL.get());
+                        output.accept(BlockRegistration.ENDTABLE_MEADOW.get());
+                        output.accept(BlockRegistration.ENDTABLE_PERIWINKLE.get());
+                        output.accept(BlockRegistration.ENDTABLE_SUNSHINE.get());
+                        output.accept(BlockRegistration.ENDTABLE_WOOD.get());
+                        output.accept(BlockRegistration.ENDTABLE_DECOR.get());
+
+                        output.accept(BlockRegistration.NIGHTSTAND_GREEN.get());
+                        output.accept(BlockRegistration.DESK_GREEN.get());
+                        output.accept(BlockRegistration.DESK_BROWN.get());
+                        output.accept(BlockRegistration.DESK_GREEN_CLUTTERED.get());
+                        output.accept(BlockRegistration.DESK_BROWN_CLUTTERED.get());
+
+                        output.accept(BlockRegistration.ROVER_STOOL.get());
+                        output.accept(BlockRegistration.RUBIKS_CUBE.get());
+                        output.accept(BlockRegistration.RUBIKS_CUBE_PASTEL.get());
+                        output.accept(BlockRegistration.ROW_OF_SMALL_BOOKS.get());
+                        output.accept(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL.get());
+                        output.accept(BlockRegistration.SCATTERED_PAPERS.get());
+                        output.accept(BlockRegistration.ROW_OF_SMALL_BOOKS_SHELVED.get());
+                        output.accept(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL_SHELVED.get());
+                        output.accept(BlockRegistration.STAINED_GLASS_LAMP.get());
+                        output.accept(BlockRegistration.SMALL_BUSH.get());
+                        output.accept(BlockRegistration.TEDDY_BEAR.get());
+                        output.accept(BlockRegistration.SMALL_SHELF.get());
+                        output.accept(BlockRegistration.SMALL_SHELF_PINK.get());
+                        output.accept(BlockRegistration.TWO_FLOWER_POTS.get());
+                        output.accept(BlockRegistration.TRADITIONAL_RADIO.get());
+
+
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> CLUTTERED_TAB = CREATIVE_MODE_TABS.register("cluttered_block_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(BlockRegistration.WILLOW_BOOKSHELF_BLACK_CAT.get()))
                     .title(Component.translatable("creativetab.cluttered_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
@@ -438,62 +563,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.CHISELED_GOLD_BLOCK.get());
                         output.accept(BlockRegistration.EYE_BLOCK.get());
                         output.accept(BlockRegistration.DYNASTY_DOOR.get());
-
-                    })
-                    .build());
-    public static final RegistryObject<CreativeModeTab> CLUTTERED_FURNITURE_TAB = CREATIVE_MODE_TABS.register("cluttered_furniture_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(BlockRegistration.RECORD_PLAYER_YELLOW.get()))
-                    .title(Component.translatable("creativetab.cluttered_furniture_tab"))
-                    .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(BlockRegistration.APPLE_CHAIR.get());
-
-                        output.accept(BlockRegistration.BIRDHOUSE_RED.get());
-                        output.accept(BlockRegistration.BIRDHOUSE_BLUE.get());
-                        output.accept(BlockRegistration.BIRDHOUSE_UNPAINTED.get());
-
-                        output.accept(BlockRegistration.BRIEFCASE_BLANK.get());
-                        output.accept(BlockRegistration.BRIEFCASE_ROVER.get());
-                        output.accept(BlockRegistration.BUNNY_BOOK_ENDS.get());
-                        output.accept(BlockRegistration.BOX_OF_PAINTS.get());
-                        output.accept(BlockRegistration.BUTTON_STOOL.get());
-
-                        output.accept(BlockRegistration.CARDBOARD_BOX_OPEN.get());
-                        output.accept(BlockRegistration.CARDBOARD_BOX_CLOSED.get());
-                        output.accept(BlockRegistration.CARDBOARD_BOX_CLUTTERED.get());
-
-                        output.accept(BlockRegistration.KITCHEN_SCALE.get());
-                        output.accept(BlockRegistration.ANTIQUE_MAP.get());
-                        output.accept(BlockRegistration.ANTIQUE_MINI_TABLE.get());
-                        output.accept(BlockRegistration.ANCIENT_CODEX.get());
-
-                        output.accept(BlockRegistration.ANTIQUE_BOOK_STAND.get());
-                        output.accept(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get());
-
-                        output.accept(BlockRegistration.BEE_LAMP.get());
-                        output.accept(BlockRegistration.BEE_LAMP_ANGRY.get());
-
-                        output.accept(BlockRegistration.RECORD_PLAYER_RED.get());
-                        output.accept(BlockRegistration.RECORD_PLAYER_YELLOW.get());
-                        output.accept(BlockRegistration.RECORD_PLAYER_BLUE.get());
-                        output.accept(BlockRegistration.RECORD_PLAYER_PURPLE.get());
-                        output.accept(BlockRegistration.RECORD_PLAYER_PINK.get());
-                        output.accept(BlockRegistration.RECORD_PLAYER_BROWN.get());
-                        output.accept(BlockRegistration.RECORD_PLAYER_WHITE.get());
-
-                        output.accept(BlockRegistration.BIKE_YELLOW.get());
-                        output.accept(BlockRegistration.BIKE_YELLOW_FLOWERS.get());
-                        output.accept(BlockRegistration.BIKE_BLUE.get());
-                        output.accept(BlockRegistration.BIKE_BLUE_FLOWERS.get());
-                        output.accept(BlockRegistration.BIKE_PURPLE.get());
-                        output.accept(BlockRegistration.BIKE_PURPLE_FLOWERS.get());
-                        output.accept(BlockRegistration.BIKE_PINK.get());
-                        output.accept(BlockRegistration.BIKE_PINK_FLOWERS.get());
-
-                        output.accept(BlockRegistration.DESK_GREEN.get());
-                        output.accept(BlockRegistration.DESK_BROWN.get());
-                        output.accept(BlockRegistration.DESK_GREEN_CLUTTERED.get());
-                        output.accept(BlockRegistration.DESK_BROWN_CLUTTERED.get());
-
 
                     })
                     .build());

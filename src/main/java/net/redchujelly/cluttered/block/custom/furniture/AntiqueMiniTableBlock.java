@@ -11,8 +11,8 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class AntiqueMiniTableBlock extends SmallFurnitureBlock {
 
-    private static final VoxelShape SHAPE = Shapes.join(Block.box(7, 0, 7, 9, 16, 9), Block.box(0, 14, 0, 16, 16, 16), BooleanOp.OR);
-    private static final VoxelShape SHAPE_FULL = Shapes.join(Block.box(2, 0, 2, 14, 6, 14), SHAPE, BooleanOp.OR);
+    private static final VoxelShape SHAPE = Shapes.join(Block.box(2, 0, 2, 14, 6, 14),
+            Shapes.join(Block.box(7, 0, 7, 9, 16, 9), Block.box(0, 14, 0, 16, 16, 16), BooleanOp.OR), BooleanOp.OR);
 
 
     public AntiqueMiniTableBlock(Properties pProperties) {
@@ -21,6 +21,6 @@ public class AntiqueMiniTableBlock extends SmallFurnitureBlock {
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return SHAPE_FULL;
+        return SHAPE;
     }
 }

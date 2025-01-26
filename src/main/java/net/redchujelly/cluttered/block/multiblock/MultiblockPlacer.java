@@ -24,7 +24,6 @@ public class MultiblockPlacer extends Block {
 
     //3D Array of the shape of the multiblock.
     //The first layer is supposed to be height(y), second is width(x) and third is depth(z)
-    //The array here would make 4 blocks in a line going the direction you're looking
     private final int[][][] MULTIBLOCK_SHAPE = {
             {
                     {1},

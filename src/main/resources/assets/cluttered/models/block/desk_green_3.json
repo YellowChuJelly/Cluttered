@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"render_type": "minecraft:cutout",
 	"texture_size": [64, 64],
+	"ambientocclusion": false,
 	"textures": {
 		"9": "cluttered:block/desk_green_3",
 		"particle": "cluttered:block/desk_green_3"

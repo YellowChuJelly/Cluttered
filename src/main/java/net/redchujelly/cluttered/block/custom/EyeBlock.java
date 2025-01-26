@@ -43,7 +43,7 @@ public class EyeBlock extends Block {
     @Override
     public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
         if (!pLevel.isClientSide) {
-            if (pLevel.getGameTime() % 20 == 0){
+            if ((pLevel.getGameTime() - 10) % 20 == 0){
                 pLevel.setBlock(pPos, pState.setValue(BLINKING, true), 2);
                 pLevel.scheduleTick(pPos, this, 20);
                 pLevel.playSound(null, pPos, SoundEvents.FROGSPAWN_BREAK, SoundSource.BLOCKS, .7f, 1.5f);

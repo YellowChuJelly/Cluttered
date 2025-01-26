@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"render_type":"minecraft:cutout",
+	"ambientocclusion": false,
 	"textures": {
 		"11": "cluttered:block/desk_brown_cluttered_3",
 		"particle": "cluttered:block/desk_brown_cluttered_3"
