@@ -9,7 +9,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class PedestalBlock extends Block {
+public class PedestalBlock extends NonRotationalFurnitureBlock {
     private static final VoxelShape SHAPE = Shapes.join(Block.box(0,0,0, 16, 3, 16),
             Shapes.join(Block.box(2, 2, 2, 14, 14, 14), Block.box(0, 13, 0, 16, 16, 16), BooleanOp.OR), BooleanOp.OR);
 

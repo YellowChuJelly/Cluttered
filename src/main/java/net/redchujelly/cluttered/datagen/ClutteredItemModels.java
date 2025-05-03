@@ -89,6 +89,8 @@ public class ClutteredItemModels extends ItemModelProvider {
         simpleBlockItem(BlockRegistration.ALABASTER_SCREEN_DOOR).renderType("cutout");
         simpleBlockItem(BlockRegistration.WOOD_FRENCH_DOOR).renderType("cutout");
         simpleBlockItem(BlockRegistration.WOOD_SCREEN_DOOR).renderType("cutout");
+        simpleBlockItem(BlockRegistration.ART_NOUVEAU_DOOR);
+        simpleBlockItem(BlockRegistration.ART_NOUVEAU_DOOR_DARK);
 
 
 
@@ -175,6 +177,8 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.PEDESTAL_HK);
         blockitemFromModel(BlockRegistration.PICNIC_BASKET);
         blockitemFromModel(BlockRegistration.PICNIC_BASKET_PREPARED);
+        blockitemFromModel(BlockRegistration.BASKET_OF_PRODUCE);
+        blockitemFromModel(BlockRegistration.BASKET_OF_FLOWERS);
 
         blockitemFromModel(BlockRegistration.ROVER_STOOL);
         blockitemFromModel(BlockRegistration.RUBIKS_CUBE);
@@ -192,12 +196,31 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.SMALL_SHELF_PINK);
         blockitemFromModel(BlockRegistration.TWO_FLOWER_POTS);
         blockitemFromModel(BlockRegistration.TRADITIONAL_RADIO);
+        blockitemFromModel(BlockRegistration.SEWING_MANNEQUIN);
+
+        blockitemFromModel(BlockRegistration.OSSON_PENDANT_BLACK);
+        blockitemFromModel(BlockRegistration.OSSON_PENDANT_BROWN);
+        blockitemFromModel(BlockRegistration.OSSON_PENDANT_ORANGE);
+        blockitemFromModel(BlockRegistration.OSSON_PENDANT_RACING_GREEN);
+        blockitemFromModel(BlockRegistration.OSSON_PENDANT_SAGE_GREEN);
+        blockitemFromModel(BlockRegistration.OSSON_PENDANT_RED);
+        blockitemFromModel(BlockRegistration.OSSON_PENDANT_YELLOW);
+        blockitemFromModel(BlockRegistration.OSSON_PENDANT_WHITE);
+
+        simplePaneBlockItem(BlockRegistration.STARS_PENDANT);
+        simplePaneBlockItem(BlockRegistration.MOON_PENDANT);
+        simplePaneBlockItem(BlockRegistration.MOON_DECORATION);
+        blockitemFromModel(BlockRegistration.POLAROIDS_A);
+        blockitemFromModel(BlockRegistration.CAGED_BULB);
+        blockitemFromModel(BlockRegistration.COLOSSEO_WALL_LANTERN);
+        blockitemFromModel(BlockRegistration.BULLETIN_BOARD_CLUTTERED);
 
         //MULTIBLOCK FURNITURE
         blockitemFromModel(BlockRegistration.DESK_BROWN);
         blockitemFromModel(BlockRegistration.DESK_BROWN_CLUTTERED);
         blockitemFromModel(BlockRegistration.DESK_GREEN);
         blockitemFromModel(BlockRegistration.DESK_GREEN_CLUTTERED);
+        blockitemFromModel(BlockRegistration.ANTIQUE_STANDING_LAMP);
 
     }
 

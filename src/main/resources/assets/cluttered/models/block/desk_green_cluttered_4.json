@@ -7,6 +7,10 @@
 		"9": "cluttered:block/desk_green_cluttered_4",
 		"particle": "cluttered:block/desk_green_cluttered_4"
 	},
+	"transform": {
+		"origin": "center",
+		"translation":[0,-0.1875,0]
+	},
 	"elements": [
 		{
 			"from": [1, 0, 0],

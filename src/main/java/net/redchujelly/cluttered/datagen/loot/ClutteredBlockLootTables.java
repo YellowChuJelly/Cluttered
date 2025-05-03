@@ -458,6 +458,11 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.ORANGE_JAR_BLOCK.get());
         dropSelf(BlockRegistration.HONEY_JAR_BLOCK.get());
         dropSelf(BlockRegistration.BLUEBERRY_JAR_BLOCK .get());
+        dropSelf(BlockRegistration.BLUEBERRY_JAR_BLOCK .get());
+        dropSelf(BlockRegistration.BLUEBERRY_JAR_BLOCK .get());
+
+        add(BlockRegistration.ART_NOUVEAU_DOOR.get(), block -> createDoorTable(BlockRegistration.ART_NOUVEAU_DOOR.get()));
+        add(BlockRegistration.ART_NOUVEAU_DOOR_DARK.get(), block -> createDoorTable(BlockRegistration.ART_NOUVEAU_DOOR_DARK.get()));
 
         //SMALL FURNITURE
         //CHAIRS
@@ -505,6 +510,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.PEDESTAL_HK.get());
         dropSelf(BlockRegistration.PICNIC_BASKET.get());
         dropSelf(BlockRegistration.PICNIC_BASKET_PREPARED.get());
+        dropSelf(BlockRegistration.BASKET_OF_FLOWERS.get());
+        dropSelf(BlockRegistration.BASKET_OF_PRODUCE.get());
 
         multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_RED.get());
         multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_BLUE.get());
@@ -531,11 +538,27 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.SMALL_SHELF_PINK.get());
         dropSelf(BlockRegistration.TWO_FLOWER_POTS.get());
         dropSelf(BlockRegistration.TRADITIONAL_RADIO.get());
+        dropSelf(BlockRegistration.SEWING_MANNEQUIN.get());
+        dropSelf(BlockRegistration.STARS_PENDANT.get());
+        dropSelf(BlockRegistration.MOON_DECORATION.get());
+        dropSelf(BlockRegistration.MOON_PENDANT.get());
+        dropSelf(BlockRegistration.POLAROIDS_A.get());
+
+        dropSelf(BlockRegistration.OSSON_PENDANT_BLACK.get());
+        dropSelf(BlockRegistration.OSSON_PENDANT_BROWN.get());
+        dropSelf(BlockRegistration.OSSON_PENDANT_ORANGE.get());
+        dropSelf(BlockRegistration.OSSON_PENDANT_RACING_GREEN.get());
+        dropSelf(BlockRegistration.OSSON_PENDANT_SAGE_GREEN.get());
+        dropSelf(BlockRegistration.OSSON_PENDANT_RED.get());
+        dropSelf(BlockRegistration.OSSON_PENDANT_YELLOW.get());
+        dropSelf(BlockRegistration.OSSON_PENDANT_WHITE.get());
 
         //LAMPS
         dropSelf(BlockRegistration.BEE_LAMP.get());
         dropSelf(BlockRegistration.BEE_LAMP_ANGRY.get());
         dropSelf(BlockRegistration.STAINED_GLASS_LAMP.get());
+        dropSelf(BlockRegistration.CAGED_BULB.get());
+        dropSelf(BlockRegistration.COLOSSEO_WALL_LANTERN.get());
 
         //TERRARIUMS
         dropSelf(BlockRegistration.GLOWSHROOM_TERRARIUM_YELLOW.get());
@@ -572,6 +595,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.DESK_BROWN.get());
         multiBlockDropOnlyOneItem(BlockRegistration.DESK_GREEN_CLUTTERED.get());
         multiBlockDropOnlyOneItem(BlockRegistration.DESK_BROWN_CLUTTERED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BULLETIN_BOARD_CLUTTERED.get());
+
 
         //BIKES
         multiBlockDropOnlyOneItem(BlockRegistration.BIKE_YELLOW.get());
@@ -584,6 +609,9 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.BIKE_PURPLE_FLOWERS.get());
 
         multiBlockDropOnlyOneItem(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get());
+
+        //LAMPS
+        dropSelf(BlockRegistration.ANTIQUE_STANDING_LAMP.get());
 
         //LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition
         //        .hasBlockStateProperties(BlockRegistration.DESK_GREEN.get())

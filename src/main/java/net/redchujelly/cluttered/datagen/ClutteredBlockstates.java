@@ -707,6 +707,9 @@ public class ClutteredBlockstates extends BlockStateProvider {
                 .modelForState().modelFile(models().cubeAll("eye_block_right_blinking", modLoc("block/eye_block_right_blinking"))).addModel();
         blockItem(BlockRegistration.EYE_BLOCK);
 
+        doorBlock((DoorBlock) BlockRegistration.ART_NOUVEAU_DOOR.get(), modLoc("block/art_nouveau_door_bottom"), modLoc("block/art_nouveau_door_top"));
+        doorBlock((DoorBlock) BlockRegistration.ART_NOUVEAU_DOOR_DARK.get(), modLoc("block/art_nouveau_door_dark_bottom"), modLoc("block/art_nouveau_door_dark_top"));
+
         //FURNITURE
 
         hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SCALE);
@@ -800,6 +803,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.PEDESTAL_HK.get(), models().getExistingFile(modLoc("block/pedestal_hk")));
         hFacingBlockWithCustomModel(BlockRegistration.PICNIC_BASKET);
         hFacingBlockWithCustomModel(BlockRegistration.PICNIC_BASKET_PREPARED);
+        hFacingBlockWithCustomModel(BlockRegistration.BASKET_OF_FLOWERS);
+        hFacingBlockWithCustomModel(BlockRegistration.BASKET_OF_PRODUCE);
 
         hFacingBlockWithCustomModel(BlockRegistration.ROVER_STOOL);
 
@@ -831,6 +836,26 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.SMALL_SHELF_PINK);
         hFacingBlockWithCustomModel(BlockRegistration.TWO_FLOWER_POTS);
         hFacingBlockWithCustomModel(BlockRegistration.TRADITIONAL_RADIO);
+        hFacingBlockWithCustomModel(BlockRegistration.SEWING_MANNEQUIN);
+
+        simpleBlockWithItem(BlockRegistration.STARS_PENDANT.get(), models().cross("stars_pendant", modLoc("block/stars_pendant")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.MOON_PENDANT.get(), models().cross("moon_pendant", modLoc("block/moon_pendant")).renderType("cutout"));
+        flatFacingBlock(BlockRegistration.MOON_DECORATION, -90);
+
+        facingBlockWithCustomModel(BlockRegistration.CAGED_BULB);
+        hFacingBlockWithCustomModel(BlockRegistration.COLOSSEO_WALL_LANTERN);
+        multiBlockWithOneModel(BlockRegistration.BULLETIN_BOARD_CLUTTERED);
+        flatFacingBlock(BlockRegistration.POLAROIDS_A, -90);
+        hFacingBlockWithCustomModel(BlockRegistration.OSSON_PENDANT_BLACK);
+        hFacingBlockWithCustomModel(BlockRegistration.OSSON_PENDANT_BROWN);
+        hFacingBlockWithCustomModel(BlockRegistration.OSSON_PENDANT_ORANGE);
+        hFacingBlockWithCustomModel(BlockRegistration.OSSON_PENDANT_RACING_GREEN);
+        hFacingBlockWithCustomModel(BlockRegistration.OSSON_PENDANT_SAGE_GREEN);
+        hFacingBlockWithCustomModel(BlockRegistration.OSSON_PENDANT_RED);
+        hFacingBlockWithCustomModel(BlockRegistration.OSSON_PENDANT_YELLOW);
+        hFacingBlockWithCustomModel(BlockRegistration.OSSON_PENDANT_WHITE);
+
+        hFacingBlockWithCustomModel(BlockRegistration.ANTIQUE_STANDING_LAMP);
 
 
         //ENDTABLES
@@ -936,6 +961,16 @@ public class ClutteredBlockstates extends BlockStateProvider {
                                 .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() - 180)
                                 .build());
     }
+    private void facingBlockWithCustomModel(RegistryObject<Block> block){
+        String id = block.getId().toString().replace("cluttered:", "");
+        this.getVariantBuilder(block.get())
+                .forAllStates(state ->
+                        ConfiguredModel.builder()
+                                .modelFile(models().getExistingFile(modLoc("block/" + id)))
+                                .rotationY((int) state.getValue(BlockStateProperties.FACING).toYRot() - 180)
+                                .rotationX(state.getValue(BlockStateProperties.FACING).equals(Direction.DOWN) ? 0 : state.getValue(BlockStateProperties.FACING).equals(Direction.UP) ? 180 : -90)
+                                .build());
+    }
 
     private void flatFacingBlock(RegistryObject<Block> block, int offsetX){
         String id = block.getId().toString().replace("cluttered:", "");
@@ -947,4 +982,15 @@ public class ClutteredBlockstates extends BlockStateProvider {
                                 .rotationX(state.getValue(BlockStateProperties.ATTACH_FACE).equals(AttachFace.WALL) ? 90 + offsetX : (state.getValue(BlockStateProperties.ATTACH_FACE).equals(AttachFace.CEILING) ? 180 + offsetX : offsetX))
                                 .build());
     }
+    //private void flatFacingBlock(RegistryObject<Block> block){
+    //    String id = block.getId().toString().replace("cluttered:", "");
+//
+    //    this.getVariantBuilder(block.get())
+    //            .forAllStates(state ->
+    //                    ConfiguredModel.builder()
+    //                            .modelFile(models().getExistingFile(modLoc("block/cauldron_poster")))
+    //                            .rotationY((int)state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() + (state.getValue(BlockStateProperties.ATTACH_FACE).equals(AttachFace.WALL) ? 180 : 0))
+    //                            .rotationX(state.getValue(BlockStateProperties.ATTACH_FACE).equals(AttachFace.WALL) ? 0 : (state.getValue(BlockStateProperties.ATTACH_FACE).equals(AttachFace.CEILING) ? 90 : -90))
+    //                            .build());
+    //}
 }
