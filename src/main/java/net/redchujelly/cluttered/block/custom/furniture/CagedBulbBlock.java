@@ -30,6 +30,7 @@ public class CagedBulbBlock extends DirectionalPillarBlock implements SimpleWate
     private static final VoxelShape SHAPE_WEST = Block.box(3, 3.5, 3.5, 16, 12.5, 12.5);
     public CagedBulbBlock(Properties pProperties) {
         super(pProperties);
+        this.registerDefaultState(this.defaultBlockState().setValue(WATERLOGGED, false));
     }
 
     @Override

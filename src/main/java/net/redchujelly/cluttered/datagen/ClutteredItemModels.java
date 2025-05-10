@@ -92,6 +92,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         simpleBlockItem(BlockRegistration.ART_NOUVEAU_DOOR);
         simpleBlockItem(BlockRegistration.ART_NOUVEAU_DOOR_DARK);
 
+        standardCubeItem(BlockRegistration.FISH_WALLPAPER, "fish_wallpaper_1");
 
 
         //FURNITURE
@@ -213,7 +214,17 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.POLAROIDS_A);
         blockitemFromModel(BlockRegistration.CAGED_BULB);
         blockitemFromModel(BlockRegistration.COLOSSEO_WALL_LANTERN);
-        blockitemFromModel(BlockRegistration.BULLETIN_BOARD_CLUTTERED);
+        blockitemFromModel(BlockRegistration.MINI_FLAG_BI);
+        blockitemFromModel(BlockRegistration.MINI_FLAG_LESBIAN);
+        blockitemFromModel(BlockRegistration.MINI_FLAG_TRANS);
+        blockitemFromModel(BlockRegistration.MINI_FLAG_NONBINARY);
+        blockitemFromModel(BlockRegistration.MINI_FLAG_PAN);
+        blockitemFromModel(BlockRegistration.MINI_FLAG_RAINBOW);
+
+        blockitemFromModel(BlockRegistration.COTTAGE_BOOKCASE);
+        blockitemFromModel(BlockRegistration.COTTAGE_STANDING_LAMP);
+        blockitemFromModel(BlockRegistration.DRYING_HERBS);
+        blockitemFromModel(BlockRegistration.HANGING_CLOTH);
 
         //MULTIBLOCK FURNITURE
         blockitemFromModel(BlockRegistration.DESK_BROWN);
@@ -221,6 +232,36 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.DESK_GREEN);
         blockitemFromModel(BlockRegistration.DESK_GREEN_CLUTTERED);
         blockitemFromModel(BlockRegistration.ANTIQUE_STANDING_LAMP);
+        blockitemFromModel(BlockRegistration.LOVELY_LOVE_SEAT);
+        blockitemFromModel(BlockRegistration.LOVELY_LOVE_SEAT_BLACK);
+        blockitemFromModel(BlockRegistration.BULLETIN_BOARD_CLUTTERED);
+
+
+        blockitemFromModel(BlockRegistration.ARMCHAIR_WHITE);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_LIGHT_GRAY);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_GRAY);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_BLACK);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_BROWN);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_RED);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_ORANGE);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_YELLOW);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_LIME);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_GREEN);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_CYAN);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_LIGHT_BLUE);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_BLUE);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_PURPLE);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_MAGENTA);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_PINK);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_FUSCHIA);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_IVORY);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_FLOWER);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_STRAWBERRY);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_HEART);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_WATERMELON);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_LEMON);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_STARRY);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_BLACK_CAT);
 
     }
 
@@ -228,6 +269,10 @@ public class ClutteredItemModels extends ItemModelProvider {
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> base) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
                 .texture("texture", new ResourceLocation(Cluttered.MODID, "block/" + ForgeRegistries.BLOCKS.getKey(base.get()).getPath()));
+    }
+
+    public void standardCubeItem (RegistryObject<Block> block, String texture) {
+        this.cubeAll(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/" + texture));
     }
 
     public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> base) {

@@ -664,6 +664,9 @@ public class BlockRegistration {
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> STRIPED_FLORAL_WALLPAPER = registerBlock("striped_floral_wallpaper",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> FISH_WALLPAPER = registerBlock("fish_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
 
     //DIAMOND WALLPAPER
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_APPLE = registerBlock("diamond_wallpaper_apple",
@@ -971,8 +974,10 @@ public class BlockRegistration {
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.ANVIL).mapColor(DyeColor.BLACK)));
     public static final RegistryObject<Block> SMALL_BUSH = registerBlock("small_bush",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+    //TODO remove this freak
     public static final RegistryObject<Block> TEDDY_BEAR = registerBlock("teddy_bear",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+
     public static final RegistryObject<Block> TRADITIONAL_RADIO = registerBlock("traditional_radio",
             () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> TWO_FLOWER_POTS = registerBlock("two_flower_pots",
@@ -984,6 +989,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> MOON_PENDANT = registerBlock("moon_pendant",
             () -> new StarPendantBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.SMALL_AMETHYST_BUD).mapColor(DyeColor.YELLOW).noCollission()));
 
+    //TODO fix these
     public static final RegistryObject<Block> OSSON_PENDANT_BLACK = registerBlock("osson_pendant_black",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_WOOL)));
     public static final RegistryObject<Block> OSSON_PENDANT_BROWN = registerBlock("osson_pendant_brown",
@@ -999,6 +1005,15 @@ public class BlockRegistration {
     public static final RegistryObject<Block> OSSON_PENDANT_YELLOW = registerBlock("osson_pendant_yellow",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL)));
     public static final RegistryObject<Block> OSSON_PENDANT_WHITE = registerBlock("osson_pendant_white",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+
+    public static final RegistryObject<Block> COTTAGE_BOOKCASE = registerBlock("cottage_bookcase",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> COTTAGE_STANDING_LAMP = registerBlock("cottage_standing_lamp",
+            () -> new SmallLampBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> DRYING_HERBS = registerBlock("drying_herbs",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> HANGING_CLOTH = registerBlock("hanging_cloth",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
 
     //SMALL TABLES
@@ -1032,6 +1047,20 @@ public class BlockRegistration {
             () -> new CagedBulbBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).mapColor(DyeColor.BLACK)));
     public static final RegistryObject<Block> POLAROIDS_A = registerBlock("polaroids_a",
             () -> new FlatDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.SPORE_BLOSSOM)));
+
+    public static final RegistryObject<Block> MINI_FLAG_BI = registerBlock("mini_flag_bi",
+            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).noCollission()));
+    public static final RegistryObject<Block> MINI_FLAG_LESBIAN = registerBlock("mini_flag_lesbian",
+            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).noCollission()));
+    public static final RegistryObject<Block> MINI_FLAG_TRANS = registerBlock("mini_flag_trans",
+            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noCollission()));
+    public static final RegistryObject<Block> MINI_FLAG_NONBINARY = registerBlock("mini_flag_nonbinary",
+            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).noCollission()));
+    public static final RegistryObject<Block> MINI_FLAG_PAN = registerBlock("mini_flag_pan",
+            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).noCollission()));
+    public static final RegistryObject<Block> MINI_FLAG_RAINBOW = registerBlock("mini_flag_rainbow",
+            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).noCollission()));
+
 
     //LAMPS
     public static final RegistryObject<Block> BEE_LAMP = registerBlock("bee_lamp",
@@ -1135,6 +1164,64 @@ public class BlockRegistration {
     //LAMPS
     public static final RegistryObject<Block> ANTIQUE_STANDING_LAMP = registerBlock("antique_standing_lamp",
             () -> new SmallLampBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.BROWN)));
+
+    //CHAIRS
+    public static final RegistryObject<Block> LOVELY_LOVE_SEAT = registerBlock("lovely_love_seat_basic",
+            () -> new LovelyLoveSeatBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> LOVELY_LOVE_SEAT_BLACK = registerBlock("lovely_love_seat_black",
+            () -> new LovelyLoveSeatBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
+
+    //ARMCHAIRS
+    public static final RegistryObject<Block> ARMCHAIR_BLACK = registerBlock("armchair_black",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_BLACK_CAT = registerBlock("armchair_black_cat",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_BLUE = registerBlock("armchair_blue",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_BROWN = registerBlock("armchair_brown",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_CYAN = registerBlock("armchair_cyan",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.CYAN_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_FLOWER = registerBlock("armchair_flower",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_FUSCHIA = registerBlock("armchair_fuschia",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.MAGENTA_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_GRAY = registerBlock("armchair_gray",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.GRAY_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_GREEN = registerBlock("armchair_green",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.GREEN_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_HEART = registerBlock("armchair_heart",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_IVORY = registerBlock("armchair_ivory",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_LEMON = registerBlock("armchair_lemon",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_LIGHT_BLUE = registerBlock("armchair_light_blue",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.LIGHT_BLUE_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_LIGHT_GRAY = registerBlock("armchair_light_gray",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.LIGHT_GRAY_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_LIME = registerBlock("armchair_lime",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_MAGENTA = registerBlock("armchair_magenta",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_ORANGE = registerBlock("armchair_orange",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_PINK = registerBlock("armchair_pink",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_PURPLE = registerBlock("armchair_purple",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_RED = registerBlock("armchair_red",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_STARRY = registerBlock("armchair_starry",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_STRAWBERRY = registerBlock("armchair_strawberry",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_WATERMELON = registerBlock("armchair_watermelon",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_WHITE = registerBlock("armchair_white",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> ARMCHAIR_YELLOW = registerBlock("armchair_yellow",
+            () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

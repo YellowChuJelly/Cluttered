@@ -710,6 +710,16 @@ public class ClutteredBlockstates extends BlockStateProvider {
         doorBlock((DoorBlock) BlockRegistration.ART_NOUVEAU_DOOR.get(), modLoc("block/art_nouveau_door_bottom"), modLoc("block/art_nouveau_door_top"));
         doorBlock((DoorBlock) BlockRegistration.ART_NOUVEAU_DOOR_DARK.get(), modLoc("block/art_nouveau_door_dark_bottom"), modLoc("block/art_nouveau_door_dark_top"));
 
+        this.getVariantBuilder(BlockRegistration.FISH_WALLPAPER.get())
+                .partialState().modelForState()
+                .modelFile(models().cubeAll("fish_wallpaper_1", modLoc("block/fish_wallpaper_1")))
+                .nextModel().modelFile(models().cubeAll("fish_wallpaper_2", modLoc("block/fish_wallpaper_2")))
+                .nextModel().modelFile(models().cubeAll("fish_wallpaper_3", modLoc("block/fish_wallpaper_3")))
+                .nextModel().modelFile(models().cubeAll("fish_wallpaper_4", modLoc("block/fish_wallpaper_4")))
+                .nextModel().modelFile(models().cubeAll("fish_wallpaper_5", modLoc("block/fish_wallpaper_5")))
+                .nextModel().modelFile(models().cubeAll("fish_wallpaper_6", modLoc("block/fish_wallpaper_6")))
+                .addModel();
+
         //FURNITURE
 
         hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SCALE);
@@ -855,8 +865,51 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.OSSON_PENDANT_YELLOW);
         hFacingBlockWithCustomModel(BlockRegistration.OSSON_PENDANT_WHITE);
 
+        hFacingBlockWithCustomModel(BlockRegistration.COTTAGE_BOOKCASE);
+        hFacingBlockWithCustomModel(BlockRegistration.COTTAGE_STANDING_LAMP);
+        hFacingBlockWithCustomModel(BlockRegistration.DRYING_HERBS);
+        hFacingBlockWithCustomModel(BlockRegistration.HANGING_CLOTH);
+
         hFacingBlockWithCustomModel(BlockRegistration.ANTIQUE_STANDING_LAMP);
 
+        //FLAGS
+        flatFacingBlock(BlockRegistration.MINI_FLAG_BI, 0);
+        flatFacingBlock(BlockRegistration.MINI_FLAG_LESBIAN, 0);
+        flatFacingBlock(BlockRegistration.MINI_FLAG_TRANS, 0);
+        flatFacingBlock(BlockRegistration.MINI_FLAG_NONBINARY, 0);
+        flatFacingBlock(BlockRegistration.MINI_FLAG_PAN, 0);
+        flatFacingBlock(BlockRegistration.MINI_FLAG_RAINBOW, 0);
+
+        //CHAIRS
+        multiblockParts(BlockRegistration.LOVELY_LOVE_SEAT);
+        multiblockParts(BlockRegistration.LOVELY_LOVE_SEAT_BLACK);
+
+        //ARMCHAIRS
+        multiblockParts(BlockRegistration.ARMCHAIR_WHITE);
+        multiblockParts(BlockRegistration.ARMCHAIR_LIGHT_GRAY);
+        multiblockParts(BlockRegistration.ARMCHAIR_GRAY);
+        multiblockParts(BlockRegistration.ARMCHAIR_BLACK);
+        multiblockParts(BlockRegistration.ARMCHAIR_BROWN);
+        multiblockParts(BlockRegistration.ARMCHAIR_RED);
+        multiblockParts(BlockRegistration.ARMCHAIR_ORANGE);
+        multiblockParts(BlockRegistration.ARMCHAIR_YELLOW);
+        multiblockParts(BlockRegistration.ARMCHAIR_LIME);
+        multiblockParts(BlockRegistration.ARMCHAIR_GREEN);
+        multiblockParts(BlockRegistration.ARMCHAIR_CYAN);
+        multiblockParts(BlockRegistration.ARMCHAIR_LIGHT_BLUE);
+        multiblockParts(BlockRegistration.ARMCHAIR_BLUE);
+        multiblockParts(BlockRegistration.ARMCHAIR_PURPLE);
+        multiblockParts(BlockRegistration.ARMCHAIR_MAGENTA);
+        multiblockParts(BlockRegistration.ARMCHAIR_PINK);
+        multiblockParts(BlockRegistration.ARMCHAIR_FUSCHIA);
+        multiblockParts(BlockRegistration.ARMCHAIR_IVORY);
+        multiblockParts(BlockRegistration.ARMCHAIR_FLOWER);
+        multiblockParts(BlockRegistration.ARMCHAIR_STRAWBERRY);
+        multiblockParts(BlockRegistration.ARMCHAIR_HEART);
+        multiblockParts(BlockRegistration.ARMCHAIR_WATERMELON);
+        multiblockParts(BlockRegistration.ARMCHAIR_LEMON);
+        multiblockParts(BlockRegistration.ARMCHAIR_STARRY);
+        multiblockParts(BlockRegistration.ARMCHAIR_BLACK_CAT);
 
         //ENDTABLES
         hFacingBlockWithCustomModel(BlockRegistration.COTTAGE_SIDE_TABLE);

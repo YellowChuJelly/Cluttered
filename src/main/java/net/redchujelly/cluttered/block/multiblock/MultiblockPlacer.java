@@ -38,7 +38,7 @@ public class MultiblockPlacer extends Block {
         return MULTIBLOCK_PART;
     }
 
-    //Weird stuff happens when its pushed by a piston.
+    //Weird stuff happens when it's pushed by a piston.
     @Override
     public @Nullable PushReaction getPistonPushReaction(BlockState state) {
         return PushReaction.BLOCK;
@@ -200,7 +200,7 @@ public class MultiblockPlacer extends Block {
                         int xOffset = -getXOffset(facing, x, z);
                         int zOffset = -getZOffset(facing, x, z);
                         BlockPos possibleState1 = new BlockPos(currentPos.getX() + xOffset, currentPos.getY() - y, currentPos.getZ() + zOffset);
-                        if (level.getBlockState(possibleState1).equals(this.defaultBlockState().setValue(FACING, facing))) {
+                        if (level.getBlockState(possibleState1).is(this.asBlock()) && level.getBlockState(possibleState1).getValue(FACING).equals(facing)) {
                             return possibleState1;
                         }
                     }
@@ -210,7 +210,7 @@ public class MultiblockPlacer extends Block {
         return null;
     }
 
-    //Computers love doing nested loops, btw. its their favorite activity and they told me that. its good for them.
+    //Computers love doing nested loops, btw. its their favorite activity; they told me that. its good for them.
     @Override
     public void onPlace(BlockState pState, Level pLevel, BlockPos pPos, BlockState pOldState, boolean pIsMoving) {
         if (!pLevel.isClientSide) {
@@ -221,7 +221,7 @@ public class MultiblockPlacer extends Block {
             int OGz = pPos.getZ();
             //Only the original block placed by the player should place the rest.
             //Is this a good system? No clue honestly. It works, though!
-            if (pState.getValue(getMultiblockPart()) == 1) {
+            if (pState.getValue(getMultiblockPart()) == 1 && !pOldState.is(this.asBlock())) {
                 for(int y = 0; y < multiblockShape.length; y++) {
                     for(int x = 0; x < multiblockShape[y].length; x++) {
                         for (int z = 0; z < multiblockShape[y][x].length; z++) {

@@ -370,6 +370,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES.get());
         dropSelf(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY.get());
         dropSelf(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR.get());
+        dropSelf(BlockRegistration.FISH_WALLPAPER.get());
 
         dropSelf(BlockRegistration.BLUE_WAINSCOTING.get());
         dropSelf(BlockRegistration.BROWN_WAINSCOTING.get());
@@ -553,6 +554,19 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.OSSON_PENDANT_YELLOW.get());
         dropSelf(BlockRegistration.OSSON_PENDANT_WHITE.get());
 
+        dropSelf(BlockRegistration.COTTAGE_BOOKCASE.get());
+        dropSelf(BlockRegistration.COTTAGE_STANDING_LAMP.get());
+        dropSelf(BlockRegistration.DRYING_HERBS.get());
+        dropSelf(BlockRegistration.HANGING_CLOTH.get());
+
+        //FLAGS
+        dropSelf(BlockRegistration.MINI_FLAG_BI.get());
+        dropSelf(BlockRegistration.MINI_FLAG_LESBIAN.get());
+        dropSelf(BlockRegistration.MINI_FLAG_TRANS.get());
+        dropSelf(BlockRegistration.MINI_FLAG_NONBINARY.get());
+        dropSelf(BlockRegistration.MINI_FLAG_PAN.get());
+        dropSelf(BlockRegistration.MINI_FLAG_RAINBOW.get());
+
         //LAMPS
         dropSelf(BlockRegistration.BEE_LAMP.get());
         dropSelf(BlockRegistration.BEE_LAMP_ANGRY.get());
@@ -596,6 +610,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.DESK_GREEN_CLUTTERED.get());
         multiBlockDropOnlyOneItem(BlockRegistration.DESK_BROWN_CLUTTERED.get());
         multiBlockDropOnlyOneItem(BlockRegistration.BULLETIN_BOARD_CLUTTERED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get());
 
 
         //BIKES
@@ -608,7 +623,36 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.BIKE_PURPLE.get());
         multiBlockDropOnlyOneItem(BlockRegistration.BIKE_PURPLE_FLOWERS.get());
 
-        multiBlockDropOnlyOneItem(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get());
+        //CHAIRS
+        multiBlockDropOnlyOneItem(BlockRegistration.LOVELY_LOVE_SEAT.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.LOVELY_LOVE_SEAT_BLACK.get());
+
+        //ARMCHAIRS
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_WHITE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_LIGHT_GRAY.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_GRAY.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_BLACK.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_BROWN.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_RED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_ORANGE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_YELLOW.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_LIME.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_GREEN.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_CYAN.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_LIGHT_BLUE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_BLUE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_PURPLE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_MAGENTA.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_PINK.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_FUSCHIA.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_IVORY.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_FLOWER.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_STRAWBERRY.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_HEART.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_WATERMELON.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_LEMON.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_STARRY.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_BLACK_CAT.get());
 
         //LAMPS
         dropSelf(BlockRegistration.ANTIQUE_STANDING_LAMP.get());

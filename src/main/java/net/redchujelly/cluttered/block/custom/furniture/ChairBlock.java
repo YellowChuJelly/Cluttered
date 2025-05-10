@@ -46,10 +46,10 @@ public class ChairBlock extends CustomHorizontalBlock implements SimpleWaterlogg
         if (!pState.getValue(OCCUPIED) && !pPlayer.isShiftKeyDown()){
             if (!pLevel.isClientSide) {
                 pLevel.setBlock(pPos, pState.setValue(OCCUPIED, true), 2);
-                Entity entity = new ChairEntity(EntityTypeRegistration.CHAIR_ENTITY.get(), pLevel, pPos);
-                entity.setPos(pPos.getX() + .5, pPos.getY() - 1 + getSeatOffset(), pPos.getZ() + .5);
-                pLevel.addFreshEntity(entity);
-                pPlayer.startRiding(entity);
+                Entity seat = new ChairEntity(EntityTypeRegistration.CHAIR_ENTITY.get(), pLevel, pPos);
+                seat.setPos(pPos.getX() + .5f, pPos.getY() - 1 + getSeatOffset(), pPos.getZ() + .5f);
+                pLevel.addFreshEntity(seat);
+                pPlayer.startRiding(seat);
             }
             return InteractionResult.SUCCESS;
         }

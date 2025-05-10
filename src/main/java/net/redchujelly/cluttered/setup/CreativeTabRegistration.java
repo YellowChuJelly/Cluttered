@@ -373,6 +373,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.MARIGOLD_WALLPAPER.get());
                         output.accept(BlockRegistration.CHECKERED_FRUIT_WALLPAPER.get());
                         output.accept(BlockRegistration.APPLE_WALLPAPER.get());
+                        output.accept(BlockRegistration.FISH_WALLPAPER.get());
 
                         output.accept(BlockRegistration.GINGERBREAD_BRICKS.get());
                         output.accept(BlockRegistration.GINGERBREAD_BRICK_STAIRS.get());
@@ -546,6 +547,18 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.OSSON_PENDANT_YELLOW.get());
                         output.accept(BlockRegistration.OSSON_PENDANT_WHITE.get());
 
+                        output.accept(BlockRegistration.COTTAGE_BOOKCASE.get());
+                        output.accept(BlockRegistration.COTTAGE_STANDING_LAMP.get());
+                        output.accept(BlockRegistration.DRYING_HERBS.get());
+                        output.accept(BlockRegistration.HANGING_CLOTH.get());
+
+                        output.accept(BlockRegistration.MINI_FLAG_BI.get());
+                        output.accept(BlockRegistration.MINI_FLAG_LESBIAN.get());
+                        output.accept(BlockRegistration.MINI_FLAG_TRANS.get());
+                        output.accept(BlockRegistration.MINI_FLAG_NONBINARY.get());
+                        output.accept(BlockRegistration.MINI_FLAG_PAN.get());
+                        output.accept(BlockRegistration.MINI_FLAG_RAINBOW.get());
+
                         output.accept(BlockRegistration.ENDTABLE_AMETHYST.get());
                         output.accept(BlockRegistration.ENDTABLE_BUBBLEGUM.get());
                         output.accept(BlockRegistration.ENDTABLE_CHARCOAL.get());
@@ -586,7 +599,34 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.COLOSSEO_WALL_LANTERN.get());
                         output.accept(BlockRegistration.ANTIQUE_STANDING_LAMP.get());
                         output.accept(BlockRegistration.BULLETIN_BOARD_CLUTTERED.get());
+                        output.accept(BlockRegistration.LOVELY_LOVE_SEAT.get());
+                        output.accept(BlockRegistration.LOVELY_LOVE_SEAT_BLACK.get());
 
+                        output.accept(BlockRegistration.ARMCHAIR_WHITE.get());
+                        output.accept(BlockRegistration.ARMCHAIR_LIGHT_GRAY.get());
+                        output.accept(BlockRegistration.ARMCHAIR_GRAY.get());
+                        output.accept(BlockRegistration.ARMCHAIR_BLACK.get());
+                        output.accept(BlockRegistration.ARMCHAIR_BROWN.get());
+                        output.accept(BlockRegistration.ARMCHAIR_RED.get());
+                        output.accept(BlockRegistration.ARMCHAIR_ORANGE.get());
+                        output.accept(BlockRegistration.ARMCHAIR_YELLOW.get());
+                        output.accept(BlockRegistration.ARMCHAIR_LIME.get());
+                        output.accept(BlockRegistration.ARMCHAIR_GREEN.get());
+                        output.accept(BlockRegistration.ARMCHAIR_CYAN.get());
+                        output.accept(BlockRegistration.ARMCHAIR_LIGHT_BLUE.get());
+                        output.accept(BlockRegistration.ARMCHAIR_BLUE.get());
+                        output.accept(BlockRegistration.ARMCHAIR_PURPLE.get());
+                        output.accept(BlockRegistration.ARMCHAIR_MAGENTA.get());
+                        output.accept(BlockRegistration.ARMCHAIR_PINK.get());
+                        output.accept(BlockRegistration.ARMCHAIR_FUSCHIA.get());
+                        output.accept(BlockRegistration.ARMCHAIR_IVORY.get());
+                        output.accept(BlockRegistration.ARMCHAIR_FLOWER.get());
+                        output.accept(BlockRegistration.ARMCHAIR_STRAWBERRY.get());
+                        output.accept(BlockRegistration.ARMCHAIR_HEART.get());
+                        output.accept(BlockRegistration.ARMCHAIR_WATERMELON.get());
+                        output.accept(BlockRegistration.ARMCHAIR_LEMON.get());
+                        output.accept(BlockRegistration.ARMCHAIR_STARRY.get());
+                        output.accept(BlockRegistration.ARMCHAIR_BLACK_CAT.get());
 
                     })
                     .build());

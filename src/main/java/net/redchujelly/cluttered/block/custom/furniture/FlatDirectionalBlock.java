@@ -4,6 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FaceAttachedHorizontalDirectionalBlock;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
@@ -40,6 +41,16 @@ public class FlatDirectionalBlock extends FaceAttachedHorizontalDirectionalBlock
             case EAST -> SHAPE_EAST;
             case WEST -> SHAPE_WEST;
         };
+    }
+
+    @Override
+    public boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
+        return canAttach(pLevel, pPos, getConnectedDirection(pState).getOpposite());
+    }
+
+    public static boolean canAttach(LevelReader pReader, BlockPos pPos, Direction pDirection) {
+        BlockPos $$3 = pPos.relative(pDirection);
+        return !pReader.getBlockState($$3).isAir();
     }
 
     @Override

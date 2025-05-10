@@ -19,8 +19,6 @@ public class FragileSmallFurnitureBlock extends SmallFurnitureBlock{
     @Override
     public boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
         BlockPos posBelow = pPos.below();
-        return canSupportRigidBlock(pLevel, posBelow) || canSupportCenter(pLevel, posBelow, Direction.UP);
+        return !pLevel.getBlockState(posBelow).isAir();
     }
-
-
 }
