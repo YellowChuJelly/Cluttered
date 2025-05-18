@@ -67,10 +67,6 @@ public class PaintingRegistration {
     public static final RegistryObject<PaintingVariant> RIDLEY_DIMENSION = PAINTING_VARIANTS.register("ridley_dimension",
             () -> new PaintingVariant(32, 32));
 
-    //MISC SIZE
-    public static final RegistryObject<PaintingVariant> CATBOY = PAINTING_VARIANTS.register("catboy",
-            () -> new PaintingVariant(48, 48));
-
 
     public static void register(IEventBus eventBus){
         PAINTING_VARIANTS.register(eventBus);

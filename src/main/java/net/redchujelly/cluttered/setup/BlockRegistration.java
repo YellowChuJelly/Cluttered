@@ -974,7 +974,6 @@ public class BlockRegistration {
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.ANVIL).mapColor(DyeColor.BLACK)));
     public static final RegistryObject<Block> SMALL_BUSH = registerBlock("small_bush",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
-    //TODO remove this freak
     public static final RegistryObject<Block> TEDDY_BEAR = registerBlock("teddy_bear",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
 
