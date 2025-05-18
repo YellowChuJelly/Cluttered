@@ -222,10 +222,10 @@ public class MultiblockPlacer extends Block {
             //Only the original block placed by the player should place the rest.
             //Is this a good system? No clue honestly. It works, though!
             if (pState.getValue(getMultiblockPart()) == 1 && !pOldState.is(this.asBlock())) {
-                for(int y = 0; y < multiblockShape.length; y++) {
-                    for(int x = 0; x < multiblockShape[y].length; x++) {
+                for (int y = 0; y < multiblockShape.length; y++) {
+                    for (int x = 0; x < multiblockShape[y].length; x++) {
                         for (int z = 0; z < multiblockShape[y][x].length; z++) {
-                            if (x+y+z != 0 && multiblockShape[y][x][z] != 0) {
+                            if (x + y + z != 0 && multiblockShape[y][x][z] != 0) {
                                 int xOffset = getXOffset(direction, x, z);
                                 int zOffset = getZOffset(direction, x, z);
                                 pLevel.setBlock(new BlockPos(OGx + xOffset, OGy + y, OGz + zOffset), defaultBlockState().setValue(getMultiblockPart(), multiblockShape[y][x][z]).setValue(FACING, direction), 2);

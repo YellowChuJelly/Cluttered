@@ -566,6 +566,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         //GARLANDS
         dropSelf(BlockRegistration.BLACK_CAT_GARLAND.get());
         dropSelf(BlockRegistration.BLOSSOM_GARLAND.get());
+        dropSelf(BlockRegistration.BUNNY_GARLAND.get());
 
 
         //FLAGS

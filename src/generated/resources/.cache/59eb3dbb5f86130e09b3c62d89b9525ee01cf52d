@@ -1,4 +1,4 @@
-// 1.20.1	2025-05-17T23:07:41.3859788	Loot Tables
+// 1.20.1	2025-05-18T00:49:22.292291	Loot Tables
 2a0b0804b4b98b3e1c1c0bba45f554b180c0a018 data/cluttered/loot_tables/blocks/alabaster_alexandria_panel.json
 7eb1f5d613e9efb25d567a13fcca6340e81e17e3 data/cluttered/loot_tables/blocks/alabaster_atlantic_panel.json
 5b4974e24326dafce553a095073f2cb56974dc60 data/cluttered/loot_tables/blocks/alabaster_augustine_panel.json
@@ -285,6 +285,7 @@ b22108dee6fdd6e4ab1cb3fe6160160c43b020c3 data/cluttered/loot_tables/blocks/fluor
 b72955006cf19028bb93324850d17827b2a957c1 data/cluttered/loot_tables/blocks/fwish_bookcase.json
 96575e4938240b899071dc4d29e4cb1a0fd2be7d data/cluttered/loot_tables/blocks/garland_black_cat.json
 b9c14c6610c57d87bd9b52a1a56bd2906bf173b0 data/cluttered/loot_tables/blocks/garland_blossom.json
+aaefefeedbf70c3bf54fa5e3d17d7c90ed283230 data/cluttered/loot_tables/blocks/garland_bunny.json
 7399174e5295e958697acb0861347601b8789c5e data/cluttered/loot_tables/blocks/ghost_wallpaper.json
 70f5d5d06395fa5642891b5b0862e54c9e44c1c8 data/cluttered/loot_tables/blocks/ghost_wallpaper_trim.json
 b0b549c566d0c97a310cde0118aa3d72031a238c data/cluttered/loot_tables/blocks/ghost_wallpaper_wainscoting.json

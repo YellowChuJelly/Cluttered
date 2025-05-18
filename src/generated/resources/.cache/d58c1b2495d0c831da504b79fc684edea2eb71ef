@@ -1,4 +1,4 @@
-// 1.20.1	2025-05-17T23:07:41.3899928	Item Models: cluttered
+// 1.20.1	2025-05-18T00:49:22.2953011	Item Models: cluttered
 01acd16002e8cdb1ffbb33a15645bd666f5001e5 assets/cluttered/models/item/alabaster_french_door.json
 976601c406efad8b747e6e91814e1b28af0e3601 assets/cluttered/models/item/alabaster_screen_door.json
 b13627cd4a490fdbbefeb99f02b749cf86abe65a assets/cluttered/models/item/alabaster_window_pane.json
@@ -124,6 +124,7 @@ eb352a248b1b4af9bf5683fe4b594d6b528ec2a3 assets/cluttered/models/item/fluorescen
 1f75c07dcf0f2824d9adf8adf8f3701dc67ab443 assets/cluttered/models/item/fwish_bookcase.json
 f7b505ee70f82ad6609576c6123e3be9cdf29979 assets/cluttered/models/item/garland_black_cat.json
 32dfa06c6cbb5b25d570eaa30911be8507f97409 assets/cluttered/models/item/garland_blossom.json
+6a289fda9ab7f49c031541d89e397d3562aa1bcd assets/cluttered/models/item/garland_bunny.json
 fd6da33c4807bf0f0b5593402307df68e74aabda assets/cluttered/models/item/glowshroom_terrarium_blue.json
 7a1a03076348077f0282c2f776dd0bca98ff8060 assets/cluttered/models/item/glowshroom_terrarium_green.json
 680cc82d976e77dbd432deb900a2eadab932938b assets/cluttered/models/item/glowshroom_terrarium_pink.json

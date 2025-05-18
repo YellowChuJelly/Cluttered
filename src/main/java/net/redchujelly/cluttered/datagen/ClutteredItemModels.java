@@ -231,6 +231,7 @@ public class ClutteredItemModels extends ItemModelProvider {
 
         garlandItem(BlockRegistration.BLACK_CAT_GARLAND);
         garlandItem(BlockRegistration.BLOSSOM_GARLAND);
+        garlandItem(BlockRegistration.BUNNY_GARLAND);
 
 
         //MULTIBLOCK FURNITURE
