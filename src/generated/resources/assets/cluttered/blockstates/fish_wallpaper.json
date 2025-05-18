@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "cluttered:block/fish_wallpaper_1"
+      },
+      {
+        "model": "cluttered:block/fish_wallpaper_2"
+      },
+      {
+        "model": "cluttered:block/fish_wallpaper_3"
+      },
+      {
+        "model": "cluttered:block/fish_wallpaper_4"
+      },
+      {
+        "model": "cluttered:block/fish_wallpaper_5"
+      },
+      {
+        "model": "cluttered:block/fish_wallpaper_6"
+      }
+    ]
+  }
+}

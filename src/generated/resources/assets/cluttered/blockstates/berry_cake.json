@@ -1,0 +1,124 @@
+{
+  "variants": {
+    "bites=0,facing=east,waterlogged=false": {
+      "model": "cluttered:block/berry_cake",
+      "y": 90
+    },
+    "bites=0,facing=east,waterlogged=true": {
+      "model": "cluttered:block/berry_cake",
+      "y": 90
+    },
+    "bites=0,facing=north,waterlogged=false": {
+      "model": "cluttered:block/berry_cake"
+    },
+    "bites=0,facing=north,waterlogged=true": {
+      "model": "cluttered:block/berry_cake"
+    },
+    "bites=0,facing=south,waterlogged=false": {
+      "model": "cluttered:block/berry_cake",
+      "y": -180
+    },
+    "bites=0,facing=south,waterlogged=true": {
+      "model": "cluttered:block/berry_cake",
+      "y": -180
+    },
+    "bites=0,facing=west,waterlogged=false": {
+      "model": "cluttered:block/berry_cake",
+      "y": -90
+    },
+    "bites=0,facing=west,waterlogged=true": {
+      "model": "cluttered:block/berry_cake",
+      "y": -90
+    },
+    "bites=1,facing=east,waterlogged=false": {
+      "model": "cluttered:block/berry_cake",
+      "y": 90
+    },
+    "bites=1,facing=east,waterlogged=true": {
+      "model": "cluttered:block/berry_cake",
+      "y": 90
+    },
+    "bites=1,facing=north,waterlogged=false": {
+      "model": "cluttered:block/berry_cake"
+    },
+    "bites=1,facing=north,waterlogged=true": {
+      "model": "cluttered:block/berry_cake"
+    },
+    "bites=1,facing=south,waterlogged=false": {
+      "model": "cluttered:block/berry_cake",
+      "y": -180
+    },
+    "bites=1,facing=south,waterlogged=true": {
+      "model": "cluttered:block/berry_cake",
+      "y": -180
+    },
+    "bites=1,facing=west,waterlogged=false": {
+      "model": "cluttered:block/berry_cake",
+      "y": -90
+    },
+    "bites=1,facing=west,waterlogged=true": {
+      "model": "cluttered:block/berry_cake",
+      "y": -90
+    },
+    "bites=2,facing=east,waterlogged=false": {
+      "model": "cluttered:block/berry_cake",
+      "y": 90
+    },
+    "bites=2,facing=east,waterlogged=true": {
+      "model": "cluttered:block/berry_cake",
+      "y": 90
+    },
+    "bites=2,facing=north,waterlogged=false": {
+      "model": "cluttered:block/berry_cake"
+    },
+    "bites=2,facing=north,waterlogged=true": {
+      "model": "cluttered:block/berry_cake"
+    },
+    "bites=2,facing=south,waterlogged=false": {
+      "model": "cluttered:block/berry_cake",
+      "y": -180
+    },
+    "bites=2,facing=south,waterlogged=true": {
+      "model": "cluttered:block/berry_cake",
+      "y": -180
+    },
+    "bites=2,facing=west,waterlogged=false": {
+      "model": "cluttered:block/berry_cake",
+      "y": -90
+    },
+    "bites=2,facing=west,waterlogged=true": {
+      "model": "cluttered:block/berry_cake",
+      "y": -90
+    },
+    "bites=3,facing=east,waterlogged=false": {
+      "model": "cluttered:block/berry_cake",
+      "y": 90
+    },
+    "bites=3,facing=east,waterlogged=true": {
+      "model": "cluttered:block/berry_cake",
+      "y": 90
+    },
+    "bites=3,facing=north,waterlogged=false": {
+      "model": "cluttered:block/berry_cake"
+    },
+    "bites=3,facing=north,waterlogged=true": {
+      "model": "cluttered:block/berry_cake"
+    },
+    "bites=3,facing=south,waterlogged=false": {
+      "model": "cluttered:block/berry_cake",
+      "y": -180
+    },
+    "bites=3,facing=south,waterlogged=true": {
+      "model": "cluttered:block/berry_cake",
+      "y": -180
+    },
+    "bites=3,facing=west,waterlogged=false": {
+      "model": "cluttered:block/berry_cake",
+      "y": -90
+    },
+    "bites=3,facing=west,waterlogged=true": {
+      "model": "cluttered:block/berry_cake",
+      "y": -90
+    }
+  }
+}

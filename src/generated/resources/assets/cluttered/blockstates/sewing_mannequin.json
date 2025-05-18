@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,waterlogged=false": {
+      "model": "cluttered:block/sewing_mannequin",
+      "y": 90
+    },
+    "facing=east,waterlogged=true": {
+      "model": "cluttered:block/sewing_mannequin",
+      "y": 90
+    },
+    "facing=north,waterlogged=false": {
+      "model": "cluttered:block/sewing_mannequin"
+    },
+    "facing=north,waterlogged=true": {
+      "model": "cluttered:block/sewing_mannequin"
+    },
+    "facing=south,waterlogged=false": {
+      "model": "cluttered:block/sewing_mannequin",
+      "y": -180
+    },
+    "facing=south,waterlogged=true": {
+      "model": "cluttered:block/sewing_mannequin",
+      "y": -180
+    },
+    "facing=west,waterlogged=false": {
+      "model": "cluttered:block/sewing_mannequin",
+      "y": -90
+    },
+    "facing=west,waterlogged=true": {
+      "model": "cluttered:block/sewing_mannequin",
+      "y": -90
+    }
+  }
+}

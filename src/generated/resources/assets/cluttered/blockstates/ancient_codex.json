@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "cluttered:block/ancient_codex",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "cluttered:block/ancient_codex"
+    },
+    "facing=south": {
+      "model": "cluttered:block/ancient_codex",
+      "y": -180
+    },
+    "facing=west": {
+      "model": "cluttered:block/ancient_codex",
+      "y": -90
+    }
+  }
+}

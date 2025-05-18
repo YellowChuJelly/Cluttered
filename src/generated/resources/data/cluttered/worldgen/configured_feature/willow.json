@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "decorators": [],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dirt"
+      }
+    },
+    "foliage_placer": {
+      "type": "cluttered:willow_foliage_placer",
+      "height": 1,
+      "length": 5,
+      "offset": 1,
+      "radius": 1
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "cluttered:willow_leaves",
+        "Properties": {
+          "distance": "7",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": false,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 2,
+      "upper_size": 4
+    },
+    "trunk_placer": {
+      "type": "cluttered:willow_trunk_placer",
+      "base_height": 6,
+      "height_rand_a": 4,
+      "height_rand_b": 6
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "cluttered:willow_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    }
+  }
+}

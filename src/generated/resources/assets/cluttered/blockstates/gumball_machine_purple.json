@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down,part=1": {
+      "model": "cluttered:block/gumball_machine_purple",
+      "y": 270
+    },
+    "facing=east,part=1": {
+      "model": "cluttered:block/gumball_machine_purple",
+      "y": 270
+    },
+    "facing=north,part=1": {
+      "model": "cluttered:block/gumball_machine_purple",
+      "y": 180
+    },
+    "facing=south,part=1": {
+      "model": "cluttered:block/gumball_machine_purple"
+    },
+    "facing=up,part=1": {
+      "model": "cluttered:block/gumball_machine_purple",
+      "y": 270
+    },
+    "facing=west,part=1": {
+      "model": "cluttered:block/gumball_machine_purple",
+      "y": 90
+    },
+    "part=2": {
+      "model": "cluttered:block/gumball_machine_purple2"
+    }
+  }
+}
