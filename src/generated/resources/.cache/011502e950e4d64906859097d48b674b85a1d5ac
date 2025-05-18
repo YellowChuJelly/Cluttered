@@ -1,4 +1,4 @@
-// 1.20.1	2025-05-18T00:49:22.2832589	Block States: cluttered
+// 1.20.1	2025-05-18T14:10:24.5001908	Block States: cluttered
 faaf6db758691a38557459e00f9d2b4396ecff2a assets/cluttered/blockstates/alabaster_alexandria_panel.json
 a42f1a3e36153c8d4b21943bf33d4cd11faec8dc assets/cluttered/blockstates/alabaster_atlantic_panel.json
 f9e64dbd14381ff2ab3beb30a418fe47268bedc6 assets/cluttered/blockstates/alabaster_augustine_panel.json
@@ -286,6 +286,9 @@ e56c63d6d8db693ecc75fbd329a4e02faff1edf1 assets/cluttered/blockstates/fluorescen
 117b10c6d24abb9954204fd451bce3fc426e31e7 assets/cluttered/blockstates/garland_black_cat.json
 6dd0ab7e0ac7a2cea9dafc79be35672b88ab017a assets/cluttered/blockstates/garland_blossom.json
 2f2a3599115cca294c5a684f81468df9af99dbcb assets/cluttered/blockstates/garland_bunny.json
+bf8f038f852f63c0c1f2a4790616f499c317e6c2 assets/cluttered/blockstates/garland_polaroid_a.json
+ba3dc44f632a49edab27290d94654c446e377fb1 assets/cluttered/blockstates/garland_polaroid_b.json
+44e1aff74143e6c7d30c0a989e3c4ed4cc6d891f assets/cluttered/blockstates/garland_sunflower.json
 cf018aaab1ecadc461ea223e58b894090a41a8f2 assets/cluttered/blockstates/ghost_wallpaper.json
 f3763bf3f01d7f9a94419ae16a1a09f74ab589b9 assets/cluttered/blockstates/ghost_wallpaper_trim.json
 4998e549723ddf08ec09fa96d41bbc12e0cc8445 assets/cluttered/blockstates/ghost_wallpaper_wainscoting.json

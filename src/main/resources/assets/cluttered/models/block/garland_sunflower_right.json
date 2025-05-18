@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [8, 8],
 	"render_type": "minecraft:cutout",
+	"texture_size": [8, 8],
 	"textures": {
 		"0": "cluttered:block/garland_sunflower",
 		"particle": "cluttered:block/garland_sunflower"
@@ -44,8 +44,8 @@
 			}
 		},
 		{
-			"from": [-15.5, 6, 15.97],
-			"to": [-8.5, 15, 15.99],
+			"from": [-15.5, 6, 15.96],
+			"to": [-8.5, 15, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, -1, 0]},
 			"faces": {
 				"north": {"uv": [0, 0, 3.5, 4.5], "texture": "#0"},
@@ -57,8 +57,8 @@
 			}
 		},
 		{
-			"from": [-7.5, 3, 15.97],
-			"to": [-0.5, 12, 15.99],
+			"from": [-7.5, 3, 15.96],
+			"to": [-0.5, 12, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, -1, 0]},
 			"faces": {
 				"north": {"uv": [0, 0, 3.5, 4.5], "texture": "#0"},

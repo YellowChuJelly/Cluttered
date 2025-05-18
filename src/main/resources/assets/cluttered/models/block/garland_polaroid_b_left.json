@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [8, 8],
 	"render_type": "minecraft:cutout",
+	"texture_size": [8, 8],
 	"textures": {
 		"0": "cluttered:block/garland_polaroid_b",
 		"particle": "cluttered:block/garland_polaroid_b"
@@ -47,8 +47,8 @@
 			}
 		},
 		{
-			"from": [1, 5, 15.97],
-			"to": [8, 14, 15.99],
+			"from": [1, 5, 15.96],
+			"to": [8, 14, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
 			"faces": {
 				"north": {"uv": [3.5, 4.5, 7, 9], "texture": "#0"},
@@ -60,8 +60,8 @@
 			}
 		},
 		{
-			"from": [9, 3, 15.97],
-			"to": [16, 12, 15.99],
+			"from": [9, 3, 15.96],
+			"to": [16, 12, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
 			"faces": {
 				"north": {"uv": [0, 4.5, 3.5, 9], "texture": "#0"},
@@ -99,8 +99,8 @@
 			}
 		},
 		{
-			"from": [3, 11.5, 15.96],
-			"to": [4, 14.5, 16],
+			"from": [3, 11.5, 15.95],
+			"to": [4, 14.5, 16.01],
 			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
 			"faces": {
 				"north": {"uv": [0.5, 10, 1, 11.5], "texture": "#0"},
@@ -112,8 +112,8 @@
 			}
 		},
 		{
-			"from": [6, 11.5, 15.96],
-			"to": [7, 14.5, 16],
+			"from": [6, 11.5, 15.95],
+			"to": [7, 14.5, 16.01],
 			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
 			"faces": {
 				"north": {"uv": [0.5, 10, 1, 11.5], "texture": "#0"},
@@ -125,8 +125,8 @@
 			}
 		},
 		{
-			"from": [11, 9.5, 15.96],
-			"to": [12, 12.5, 16],
+			"from": [11, 9.5, 15.95],
+			"to": [12, 12.5, 16.01],
 			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
 			"faces": {
 				"north": {"uv": [0.5, 10, 1, 11.5], "texture": "#0"},
@@ -138,8 +138,8 @@
 			}
 		},
 		{
-			"from": [14, 9.5, 15.96],
-			"to": [15, 12.5, 16],
+			"from": [14, 9.5, 15.95],
+			"to": [15, 12.5, 16.01],
 			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
 			"faces": {
 				"north": {"uv": [0.5, 10, 1, 11.5], "texture": "#0"},

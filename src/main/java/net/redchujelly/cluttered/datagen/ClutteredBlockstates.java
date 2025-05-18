@@ -877,6 +877,9 @@ public class ClutteredBlockstates extends BlockStateProvider {
         garlandBlock(BlockRegistration.BLACK_CAT_GARLAND);
         garlandBlock(BlockRegistration.BLOSSOM_GARLAND);
         garlandBlock(BlockRegistration.BUNNY_GARLAND);
+        garlandBlock(BlockRegistration.POLAROID_A_GARLAND);
+        garlandBlock(BlockRegistration.POLAROID_B_GARLAND);
+        garlandBlock(BlockRegistration.SUNFLOWER_GARLAND);
 
         //CAKES
         this.getVariantBuilder(BlockRegistration.HEART_CAKE.get())

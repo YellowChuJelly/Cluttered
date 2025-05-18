@@ -1133,7 +1133,13 @@ public class BlockRegistration {
     public static final RegistryObject<Block> BLOSSOM_GARLAND = registerBlock("garland_blossom",
             () -> new GarlandBlock(BlockBehaviour.Properties.copy(Blocks.SPORE_BLOSSOM).mapColor(DyeColor.BLACK)));
     public static final RegistryObject<Block> BUNNY_GARLAND = registerBlock("garland_bunny",
-            () -> new GarlandBlock(BlockBehaviour.Properties.copy(Blocks.SPORE_BLOSSOM).mapColor(DyeColor.BLACK)));
+            () -> new GarlandBlock(BlockBehaviour.Properties.copy(Blocks.SPORE_BLOSSOM).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> POLAROID_A_GARLAND = registerBlock("garland_polaroid_a",
+            () -> new GarlandBlock(BlockBehaviour.Properties.copy(Blocks.SPORE_BLOSSOM).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> POLAROID_B_GARLAND = registerBlock("garland_polaroid_b",
+            () -> new GarlandBlock(BlockBehaviour.Properties.copy(Blocks.SPORE_BLOSSOM).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> SUNFLOWER_GARLAND = registerBlock("garland_sunflower",
+            () -> new GarlandBlock(BlockBehaviour.Properties.copy(Blocks.SPORE_BLOSSOM).mapColor(DyeColor.YELLOW)));
 
     //MULTIBLOCK FURNITURE
     //MISC NO FUNCTION

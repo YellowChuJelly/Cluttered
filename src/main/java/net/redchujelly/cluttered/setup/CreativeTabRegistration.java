@@ -612,6 +612,9 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.BLACK_CAT_GARLAND.get());
                         output.accept(BlockRegistration.BLOSSOM_GARLAND.get());
                         output.accept(BlockRegistration.BUNNY_GARLAND.get());
+                        output.accept(BlockRegistration.POLAROID_A_GARLAND.get());
+                        output.accept(BlockRegistration.POLAROID_B_GARLAND.get());
+                        output.accept(BlockRegistration.SUNFLOWER_GARLAND.get());
 
                         output.accept(BlockRegistration.ARMCHAIR_WHITE.get());
                         output.accept(BlockRegistration.ARMCHAIR_LIGHT_GRAY.get());
