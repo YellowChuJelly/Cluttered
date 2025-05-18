@@ -472,6 +472,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.COTTAGE_CHAIR.get());
         dropSelf(BlockRegistration.COTTAGE_CHAIR_CUSHIONED.get());
         dropSelf(BlockRegistration.COTTAGE_OTTOMAN.get());
+        dropSelf(BlockRegistration.MADONNA_OTTOMAN.get());
 
         //MISC
         dropSelf(BlockRegistration.BIRDHOUSE_UNPAINTED.get());
@@ -559,6 +560,14 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.DRYING_HERBS.get());
         dropSelf(BlockRegistration.HANGING_CLOTH.get());
 
+        this.add(BlockRegistration.HEART_CAKE.get(), noDrop());
+        this.add(BlockRegistration.BERRY_CAKE.get(), noDrop());
+
+        //GARLANDS
+        dropSelf(BlockRegistration.BLACK_CAT_GARLAND.get());
+        dropSelf(BlockRegistration.BLOSSOM_GARLAND.get());
+
+
         //FLAGS
         dropSelf(BlockRegistration.MINI_FLAG_BI.get());
         dropSelf(BlockRegistration.MINI_FLAG_LESBIAN.get());
@@ -609,9 +618,14 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.DESK_BROWN.get());
         multiBlockDropOnlyOneItem(BlockRegistration.DESK_GREEN_CLUTTERED.get());
         multiBlockDropOnlyOneItem(BlockRegistration.DESK_BROWN_CLUTTERED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BULLETIN_BOARD.get());
         multiBlockDropOnlyOneItem(BlockRegistration.BULLETIN_BOARD_CLUTTERED.get());
         multiBlockDropOnlyOneItem(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BAMBOO_BOOKSHELF.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.FWISH_BOOKCASE.get());
 
+        multiBlockDropOnlyOneItem(BlockRegistration.TABLE_PLAIN.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.TABLE_TABLECLOTH.get());
 
         //BIKES
         multiBlockDropOnlyOneItem(BlockRegistration.BIKE_YELLOW.get());
@@ -653,6 +667,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_LEMON.get());
         multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_STARRY.get());
         multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_BLACK_CAT.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.COTTAGE_ARMCHAIR.get());
 
         //LAMPS
         dropSelf(BlockRegistration.ANTIQUE_STANDING_LAMP.get());

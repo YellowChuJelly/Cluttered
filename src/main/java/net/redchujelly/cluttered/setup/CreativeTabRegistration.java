@@ -552,12 +552,17 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.DRYING_HERBS.get());
                         output.accept(BlockRegistration.HANGING_CLOTH.get());
 
+                        output.accept(BlockRegistration.HEART_CAKE.get());
+                        output.accept(BlockRegistration.BERRY_CAKE.get());
+
                         output.accept(BlockRegistration.MINI_FLAG_BI.get());
                         output.accept(BlockRegistration.MINI_FLAG_LESBIAN.get());
                         output.accept(BlockRegistration.MINI_FLAG_TRANS.get());
                         output.accept(BlockRegistration.MINI_FLAG_NONBINARY.get());
                         output.accept(BlockRegistration.MINI_FLAG_PAN.get());
                         output.accept(BlockRegistration.MINI_FLAG_RAINBOW.get());
+                        output.accept(BlockRegistration.BAMBOO_BOOKSHELF.get());
+                        output.accept(BlockRegistration.FWISH_BOOKCASE.get());
 
                         output.accept(BlockRegistration.ENDTABLE_AMETHYST.get());
                         output.accept(BlockRegistration.ENDTABLE_BUBBLEGUM.get());
@@ -575,6 +580,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.DESK_BROWN_CLUTTERED.get());
 
                         output.accept(BlockRegistration.ROVER_STOOL.get());
+                        output.accept(BlockRegistration.MADONNA_OTTOMAN.get());
                         output.accept(BlockRegistration.RUBIKS_CUBE.get());
                         output.accept(BlockRegistration.RUBIKS_CUBE_PASTEL.get());
                         output.accept(BlockRegistration.ROW_OF_SMALL_BOOKS.get());
@@ -598,9 +604,14 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.CAGED_BULB.get());
                         output.accept(BlockRegistration.COLOSSEO_WALL_LANTERN.get());
                         output.accept(BlockRegistration.ANTIQUE_STANDING_LAMP.get());
+                        output.accept(BlockRegistration.BULLETIN_BOARD.get());
                         output.accept(BlockRegistration.BULLETIN_BOARD_CLUTTERED.get());
                         output.accept(BlockRegistration.LOVELY_LOVE_SEAT.get());
                         output.accept(BlockRegistration.LOVELY_LOVE_SEAT_BLACK.get());
+
+                        output.accept(BlockRegistration.BLACK_CAT_GARLAND.get());
+                        output.accept(BlockRegistration.BLOSSOM_GARLAND.get());
+                        output.accept(BlockRegistration.BLOSSOM_GARLAND.get());
 
                         output.accept(BlockRegistration.ARMCHAIR_WHITE.get());
                         output.accept(BlockRegistration.ARMCHAIR_LIGHT_GRAY.get());
@@ -627,6 +638,10 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.ARMCHAIR_LEMON.get());
                         output.accept(BlockRegistration.ARMCHAIR_STARRY.get());
                         output.accept(BlockRegistration.ARMCHAIR_BLACK_CAT.get());
+                        output.accept(BlockRegistration.COTTAGE_ARMCHAIR.get());
+
+                        output.accept(BlockRegistration.TABLE_PLAIN.get());
+                        output.accept(BlockRegistration.TABLE_TABLECLOTH.get());
 
                     })
                     .build());

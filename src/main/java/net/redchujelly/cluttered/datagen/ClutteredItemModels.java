@@ -154,6 +154,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.COTTAGE_CHAIR);
         blockitemFromModel(BlockRegistration.COTTAGE_CHAIR_CUSHIONED);
         blockitemFromModel(BlockRegistration.COTTAGE_OTTOMAN);
+        blockitemFromModel(BlockRegistration.MADONNA_OTTOMAN);
 
         blockitemFromModel(BlockRegistration.GLOWSHROOM_TERRARIUM_YELLOW);
         blockitemFromModel(BlockRegistration.GLOWSHROOM_TERRARIUM_GREEN);
@@ -225,6 +226,12 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.COTTAGE_STANDING_LAMP);
         blockitemFromModel(BlockRegistration.DRYING_HERBS);
         blockitemFromModel(BlockRegistration.HANGING_CLOTH);
+        blockitemFromModel(BlockRegistration.HEART_CAKE);
+        blockitemFromModel(BlockRegistration.BERRY_CAKE);
+
+        garlandItem(BlockRegistration.BLACK_CAT_GARLAND);
+        garlandItem(BlockRegistration.BLOSSOM_GARLAND);
+
 
         //MULTIBLOCK FURNITURE
         blockitemFromModel(BlockRegistration.DESK_BROWN);
@@ -234,7 +241,13 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.ANTIQUE_STANDING_LAMP);
         blockitemFromModel(BlockRegistration.LOVELY_LOVE_SEAT);
         blockitemFromModel(BlockRegistration.LOVELY_LOVE_SEAT_BLACK);
+        blockitemFromModel(BlockRegistration.BULLETIN_BOARD);
         blockitemFromModel(BlockRegistration.BULLETIN_BOARD_CLUTTERED);
+        blockitemFromModel(BlockRegistration.BAMBOO_BOOKSHELF);
+        blockitemFromModel(BlockRegistration.FWISH_BOOKCASE);
+
+        blockitemFromModel(BlockRegistration.TABLE_PLAIN);
+        blockitemFromModel(BlockRegistration.TABLE_TABLECLOTH);
 
 
         blockitemFromModel(BlockRegistration.ARMCHAIR_WHITE);
@@ -300,5 +313,11 @@ public class ClutteredItemModels extends ItemModelProvider {
         String model = item.getId().toString().replace("cluttered:", "");
         return withExistingParent(ForgeRegistries.BLOCKS.getKey(item.get()).getPath(),
                 new ResourceLocation(Cluttered.MODID, "block/" + model));
+    }
+
+    private ItemModelBuilder garlandItem(RegistryObject<Block> item){
+        String model = item.getId().toString().replace("cluttered:", "");
+        return withExistingParent(ForgeRegistries.BLOCKS.getKey(item.get()).getPath(),
+                new ResourceLocation(Cluttered.MODID, "block/" + model + "_right"));
     }
 }

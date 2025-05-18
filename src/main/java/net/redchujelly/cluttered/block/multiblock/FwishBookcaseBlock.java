@@ -1,0 +1,53 @@
+package net.redchujelly.cluttered.block.multiblock;
+
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
+
+public class FwishBookcaseBlock extends MultiblockPlacer{
+
+    private static final VoxelShape SHAPE = Block.box(0,0,0,16,16,16);
+    private static final VoxelShape SHAPE_TOP = Block.box(0,0,0, 16, 7,16);
+
+    public static final IntegerProperty MULTIBLOCK_PART = IntegerProperty.create("part", 1, 6);
+    private static final int[][][] MULTIBLOCK_SHAPE = {
+            {
+                    {1},
+                    {2}
+            },
+            {
+                    {3},
+                    {4}
+            },
+            {
+                    {5},
+                    {6}
+            },
+    };
+
+    @Override
+    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+        if (pState.getValue(MULTIBLOCK_PART) == 5 || pState.getValue(MULTIBLOCK_PART) == 6){
+            return SHAPE_TOP;
+        }
+        return SHAPE;
+    }
+
+    public FwishBookcaseBlock(Properties pProperties) {
+        super(pProperties);
+    }
+
+    @Override
+    public int[][][] getMultiblockShape() {
+        return MULTIBLOCK_SHAPE;
+    }
+
+    @Override
+    public IntegerProperty getMultiblockPart() {
+        return MULTIBLOCK_PART;
+    }
+}

@@ -29,7 +29,6 @@ public class BullitenBoardBlock extends MultiblockPlacer {
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        int part = pState.getValue(MULTIBLOCK_PART);
         Direction facing = pState.getValue(FACING);
         return switch (facing) {
             case SOUTH -> SHAPE_SOUTH;

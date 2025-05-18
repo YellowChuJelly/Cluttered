@@ -1,0 +1,148 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [8, 8],
+	"render_type": "minecraft:cutout",
+	"ambientocclusion": false,
+	"textures": {
+		"6": "cluttered:block/fwish_bookcase_5",
+		"particle": "cluttered:block/fwish_bookcase_5"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 2.02],
+			"to": [10, 4, 15.98],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -24, 0]},
+			"faces": {
+				"north": {"uv": [8, 9, 13, 11], "texture": "#6"},
+				"east": {"uv": [0, 0, 7, 2], "texture": "#6"},
+				"south": {"uv": [8, 11, 13, 13], "texture": "#6"},
+				"west": {"uv": [0, 0, 7, 2], "texture": "#6"},
+				"up": {"uv": [5, 7, 0, 0], "texture": "#6"},
+				"down": {"uv": [5, 0, 0, 7], "texture": "#6"}
+			}
+		},
+		{
+			"from": [0, 4, 2],
+			"to": [7, 7, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -24, 0]},
+			"faces": {
+				"north": {"uv": [5, 14, 8.5, 15.5], "texture": "#6"},
+				"east": {"uv": [0, 0, 7, 1.5], "texture": "#6"},
+				"south": {"uv": [8.5, 14, 12, 15.5], "texture": "#6"},
+				"west": {"uv": [0, 0, 7, 1.5], "texture": "#6"},
+				"up": {"uv": [10.5, 7, 7, 0], "texture": "#6"},
+				"down": {"uv": [3.5, 0, 0, 7], "texture": "#6"}
+			}
+		},
+		{
+			"from": [0, 4, 2.02],
+			"to": [6, 8, 15.98],
+			"rotation": {"angle": 45, "axis": "z", "origin": [0, 7, 2]},
+			"faces": {
+				"north": {"uv": [13, 9, 16, 11], "texture": "#6"},
+				"east": {"uv": [8, 7, 15, 9], "texture": "#6"},
+				"south": {"uv": [13, 11, 16, 13], "texture": "#6"},
+				"west": {"uv": [0, 0, 7, 2], "texture": "#6"},
+				"up": {"uv": [13.5, 7, 10.5, 0], "texture": "#6"},
+				"down": {"uv": [8, 7, 5, 14], "texture": "#6"}
+			}
+		},
+		{
+			"from": [4, -3, 2.01],
+			"to": [14, 0, 15.99],
+			"rotation": {"angle": -45, "axis": "z", "origin": [14, 0, 9]},
+			"faces": {
+				"north": {"uv": [0, 13, 5, 14.5], "texture": "#6"},
+				"east": {"uv": [0, 0, 7, 1.5], "texture": "#6"},
+				"south": {"uv": [0, 14.5, 5, 16], "texture": "#6"},
+				"west": {"uv": [0, 1.5, 7, 3], "texture": "#6"},
+				"up": {"uv": [5, 13, 0, 6], "texture": "#6"},
+				"down": {"uv": [5, 0, 0, 7], "texture": "#6"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [1.5, 0, -1.5],
+			"scale": [0.2, 0.2, 0.2]
+		},
+		"thirdperson_lefthand": {
+			"translation": [1.5, 0, -1.5],
+			"scale": [0.2, 0.2, 0.2]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -164, 0],
+			"translation": [8.75, 0, -8.5],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -164, 0],
+			"translation": [12.25, 0, -8.5],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [1.5, 0, 0],
+			"scale": [0.15, 0.15, 0.15]
+		},
+		"gui": {
+			"rotation": [30, -150, 0],
+			"translation": [-2.5, 0.25, 0],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"head": {
+			"translation": [4, 10.25, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -48.25],
+			"scale": [2, 2, 2]
+		}
+	},
+	"groups": [
+		{
+			"name": "fwish 5",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "group",
+					"origin": [0, 0, 0],
+					"color": 0,
+					"children": []
+				},
+				{
+					"name": "group",
+					"origin": [14, 24, 9],
+					"color": 0,
+					"children": [0, 1, 2, 3]
+				},
+				{
+					"name": "book top",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [
+						{
+							"name": "book bot",
+							"origin": [8, 8, 8],
+							"color": 0,
+							"children": []
+						}
+					]
+				},
+				{
+					"name": "fish",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": []
+				},
+				{
+					"name": "fish2",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": []
+				}
+			]
+		}
+	]
+}

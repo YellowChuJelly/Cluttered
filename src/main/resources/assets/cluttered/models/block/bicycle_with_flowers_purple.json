@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"render_type": "minecraft:cutout",
 	"ambientocclusion": false,
+	"render_type": "minecraft:cutout",
 	"textures": {
 		"2": "cluttered:block/bicycle_with_flowers_purple",
 		"particle": "cluttered:block/bicycle_with_flowers_purple"
@@ -21,8 +21,8 @@
 			}
 		},
 		{
-			"from": [12.2, 16.4, 4.32],
-			"to": [12.2, 21.2, 11.52],
+			"from": [12.21, 16.4, 4.32],
+			"to": [12.21, 21.2, 11.52],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 0.4, 1.6]},
 			"faces": {
 				"north": {"uv": [0, 0, 0, 0.75], "texture": "#2"},

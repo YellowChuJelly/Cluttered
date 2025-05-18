@@ -62,6 +62,10 @@ public class PaintingRegistration {
             () -> new PaintingVariant(32, 32));
     public static final RegistryObject<PaintingVariant> WHEATFIELD = PAINTING_VARIANTS.register("van_gogh_wheatfield",
             () -> new PaintingVariant(32, 32));
+    public static final RegistryObject<PaintingVariant> RIDLEY_FIRE = PAINTING_VARIANTS.register("ridley_fire",
+            () -> new PaintingVariant(32, 32));
+    public static final RegistryObject<PaintingVariant> RIDLEY_DIMENSION = PAINTING_VARIANTS.register("ridley_dimension",
+            () -> new PaintingVariant(32, 32));
 
     //MISC SIZE
     public static final RegistryObject<PaintingVariant> CATBOY = PAINTING_VARIANTS.register("catboy",

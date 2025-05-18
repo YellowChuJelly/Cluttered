@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"render_type": "minecraft:cutout",
+	"ambientocclusion": false,
 	"textures": {
 		"3": "cluttered:block/antique_mini_table",
 		"particle": "cluttered:block/antique_mini_table"

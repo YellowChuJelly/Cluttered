@@ -140,10 +140,10 @@ public class MultiblockPlacer extends Block {
         }
         if (state1Pos != null) {
             if (!canSurvive(pLevel.getBlockState(state1Pos), pLevel, state1Pos)) {
-                pLevel.scheduleTick(pCurrentPos, this, 2);
+                pLevel.scheduleTick(pCurrentPos, this, 0);
             }
         } else {
-            pLevel.scheduleTick(pCurrentPos, this, 1);
+            pLevel.scheduleTick(pCurrentPos, this, 0);
         }
         return super.updateShape(pState, pDirection, pNeighborState, pLevel, pCurrentPos, pNeighborPos);
     }
