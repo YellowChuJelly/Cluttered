@@ -450,6 +450,7 @@
   "cluttered.hand_drill.tooltip": "Can be used to change detail on certain blocks.\nCrouch to rotate blocks instead.\nSprite by EyeSeeDee!",
   "cluttered.bouncymushroom.tooltip": "It's bouncy!!!",
   "cluttered.eye_block.tooltip": "It's rude to stare...",
+  "cluttered.garland.tooltip": "Can be moved left and right with the hand drill.",
 
   "creativetab.cluttered_tab": "Cluttered Blocks",
   "creativetab.cluttered_furniture_tab": "Cluttered Furniture"
