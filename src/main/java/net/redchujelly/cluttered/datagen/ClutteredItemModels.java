@@ -101,6 +101,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.BIRDHOUSE_UNPAINTED);
         blockitemFromModel(BlockRegistration.BIRDHOUSE_RED);
         blockitemFromModel(BlockRegistration.BIRDHOUSE_BLUE);
+        blockitemFromModel(BlockRegistration.BIRDHOUSE_PASTEL);
         blockitemFromModel(BlockRegistration.BRIEFCASE_BLANK);
         blockitemFromModel(BlockRegistration.BRIEFCASE_ROVER);
         blockitemFromModel(BlockRegistration.BOX_OF_PAINTS);
@@ -249,6 +250,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.BULLETIN_BOARD_CLUTTERED);
         blockitemFromModel(BlockRegistration.BAMBOO_BOOKSHELF);
         blockitemFromModel(BlockRegistration.FWISH_BOOKCASE);
+        blockitemFromModel(BlockRegistration.RETRO_CAFE_SHELF);
 
         blockitemFromModel(BlockRegistration.TABLE_PLAIN);
         blockitemFromModel(BlockRegistration.TABLE_TABLECLOTH);

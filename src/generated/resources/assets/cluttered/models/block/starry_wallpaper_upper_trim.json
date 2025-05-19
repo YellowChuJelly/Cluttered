@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "cluttered:block/starry_wallpaper",
-    "side": "cluttered:block/starry_wallpaper_upper_trim"
-  }
-}

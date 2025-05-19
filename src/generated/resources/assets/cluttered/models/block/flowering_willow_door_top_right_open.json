@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_top_right_open",
-  "textures": {
-    "bottom": "cluttered:block/flowering_willow_door_bottom",
-    "top": "cluttered:block/flowering_willow_door_top"
-  }
-}

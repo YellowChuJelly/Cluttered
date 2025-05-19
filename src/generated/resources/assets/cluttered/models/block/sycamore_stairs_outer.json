@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "cluttered:block/sycamore_planks",
-    "side": "cluttered:block/sycamore_planks",
-    "top": "cluttered:block/sycamore_planks"
-  }
-}

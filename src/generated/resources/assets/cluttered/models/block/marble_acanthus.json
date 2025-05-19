@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "cluttered:block/marble_acanthus",
-    "side": "cluttered:block/marble_acanthus",
-    "top": "cluttered:block/marble_acanthus"
-  }
-}

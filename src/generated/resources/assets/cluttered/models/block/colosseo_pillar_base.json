@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "cluttered:block/colosseo_pillar_chiseled",
-    "side": "cluttered:block/colosseo_pillar_base"
-  }
-}

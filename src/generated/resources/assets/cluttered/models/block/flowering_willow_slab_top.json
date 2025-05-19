@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "cluttered:block/flowering_willow_planks",
-    "side": "cluttered:block/flowering_willow_planks",
-    "top": "cluttered:block/flowering_willow_planks"
-  }
-}

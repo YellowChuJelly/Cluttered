@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "cluttered:chalcedony_sun_block"
-  },
-  "result": "cluttered:chalcedony_pillar_starry_base"
-}

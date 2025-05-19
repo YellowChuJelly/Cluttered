@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "cluttered:marble_bricks"
-  },
-  "result": "cluttered:marble_brick_stairs"
-}

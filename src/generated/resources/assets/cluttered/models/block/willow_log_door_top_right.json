@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_top_right",
-  "textures": {
-    "bottom": "cluttered:block/willow_log_door_bottom",
-    "top": "cluttered:block/willow_log_door_top"
-  }
-}

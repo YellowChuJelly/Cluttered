@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "cluttered:block/deep_chalcedony_bricks",
-    "side": "cluttered:block/deep_chalcedony_bricks",
-    "top": "cluttered:block/deep_chalcedony_bricks"
-  }
-}

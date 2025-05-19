@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom_right",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "bottom": "cluttered:block/alabaster_screen_door_bottom",
-    "top": "cluttered:block/alabaster_screen_door_top"
-  }
-}

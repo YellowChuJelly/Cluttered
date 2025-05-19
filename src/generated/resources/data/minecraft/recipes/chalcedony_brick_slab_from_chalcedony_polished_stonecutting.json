@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "cluttered:chalcedony_polished"
-  },
-  "result": "cluttered:chalcedony_brick_slab"
-}

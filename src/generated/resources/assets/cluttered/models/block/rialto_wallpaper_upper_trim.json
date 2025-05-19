@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "cluttered:block/rialto_gold_wallpaper",
-    "side": "cluttered:block/rialto_wallpaper_upper_trim"
-  }
-}

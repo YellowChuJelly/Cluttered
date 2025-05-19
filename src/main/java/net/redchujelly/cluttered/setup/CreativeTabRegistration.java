@@ -456,6 +456,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.BIRDHOUSE_RED.get());
                         output.accept(BlockRegistration.BIRDHOUSE_BLUE.get());
                         output.accept(BlockRegistration.BIRDHOUSE_UNPAINTED.get());
+                        output.accept(BlockRegistration.BIRDHOUSE_PASTEL.get());
 
                         output.accept(BlockRegistration.BRIEFCASE_BLANK.get());
                         output.accept(BlockRegistration.BRIEFCASE_ROVER.get());
@@ -563,6 +564,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.MINI_FLAG_RAINBOW.get());
                         output.accept(BlockRegistration.BAMBOO_BOOKSHELF.get());
                         output.accept(BlockRegistration.FWISH_BOOKCASE.get());
+                        output.accept(BlockRegistration.RETRO_CAFE_SHELF.get());
 
                         output.accept(BlockRegistration.ENDTABLE_AMETHYST.get());
                         output.accept(BlockRegistration.ENDTABLE_BUBBLEGUM.get());

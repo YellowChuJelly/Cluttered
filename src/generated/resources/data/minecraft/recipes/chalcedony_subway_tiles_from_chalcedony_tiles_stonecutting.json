@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "cluttered:chalcedony_tiles"
-  },
-  "result": "cluttered:chalcedony_subway_tiles"
-}

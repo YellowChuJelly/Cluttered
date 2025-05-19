@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "cluttered:block/deep_chalcedony_border",
-    "side": "cluttered:block/deep_chalcedony_border",
-    "top": "cluttered:block/deep_chalcedony_border"
-  }
-}

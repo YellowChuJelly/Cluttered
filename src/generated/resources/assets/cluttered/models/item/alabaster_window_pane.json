@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "layer0": "cluttered:block/alabaster_window_divided"
-  }
-}

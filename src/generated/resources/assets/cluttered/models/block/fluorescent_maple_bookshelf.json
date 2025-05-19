@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "cluttered:block/fluorescent_maple_planks",
-    "side": "cluttered:block/fluorescent_maple_bookshelf"
-  }
-}

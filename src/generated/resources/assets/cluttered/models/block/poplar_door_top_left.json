@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/door_top_left",
-  "render_type": "minecraft:translucent",
-  "textures": {
-    "bottom": "cluttered:block/poplar_door_bottom",
-    "top": "cluttered:block/poplar_door_top"
-  }
-}

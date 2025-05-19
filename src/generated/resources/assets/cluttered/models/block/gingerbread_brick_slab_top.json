@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "cluttered:block/gingerbread_bricks",
-    "side": "cluttered:block/gingerbread_bricks",
-    "top": "cluttered:block/gingerbread_bricks"
-  }
-}

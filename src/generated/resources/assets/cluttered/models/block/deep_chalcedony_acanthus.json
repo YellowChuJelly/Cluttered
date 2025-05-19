@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "cluttered:block/deep_chalcedony_acanthus",
-    "side": "cluttered:block/deep_chalcedony_acanthus",
-    "top": "cluttered:block/deep_chalcedony_acanthus"
-  }
-}

@@ -881,6 +881,8 @@ public class BlockRegistration {
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.RED)));
     public static final RegistryObject<Block> BIRDHOUSE_BLUE = registerBlock("birdhouse_blue",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE)));
+    public static final RegistryObject<Block> BIRDHOUSE_PASTEL = registerBlock("birdhouse_pastel",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE)));
 
     public static final RegistryObject<Block> CARDBOARD_BOX_OPEN = registerBlock("cardboard_box_open",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).mapColor(DyeColor.BROWN)));
@@ -1174,6 +1176,9 @@ public class BlockRegistration {
             () -> new TableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> TABLE_TABLECLOTH = registerBlock("table_with_white_tablecloth",
             () -> new TableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.WHITE).noOcclusion()));
+
+    public static final RegistryObject<Block> RETRO_CAFE_SHELF = registerBlock("retro_cafe_shelf",
+            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
 
 
     //BIKES

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/door_top_left",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "bottom": "cluttered:block/alabaster_french_door_bottom",
-    "top": "cluttered:block/alabaster_french_door_top"
-  }
-}

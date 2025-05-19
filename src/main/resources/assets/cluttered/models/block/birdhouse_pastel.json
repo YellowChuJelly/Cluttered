@@ -1,10 +1,9 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [8, 8],
 	"render_type": "minecraft:cutout",
 	"textures": {
-		"3": "cluttered:block/birdhouse_blue",
-		"particle": "cluttered:block/birdhouse_blue"
+		"3": "cluttered:block/birdhouse_pastel",
+		"particle": "cluttered:block/birdhouse_pastel"
 	},
 	"elements": [
 		{

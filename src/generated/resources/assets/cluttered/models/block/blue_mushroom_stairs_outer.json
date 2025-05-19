@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "cluttered:block/blue_mushroom_planks",
-    "side": "cluttered:block/blue_mushroom_planks",
-    "top": "cluttered:block/blue_mushroom_planks"
-  }
-}

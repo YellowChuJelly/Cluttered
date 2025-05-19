@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column_horizontal",
-  "textures": {
-    "end": "cluttered:block/chalcedony_pillar_starry_top",
-    "side": "cluttered:block/chalcedony_pillar_starry"
-  }
-}

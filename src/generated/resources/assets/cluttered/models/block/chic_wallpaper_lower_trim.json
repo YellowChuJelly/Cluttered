@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "cluttered:block/chic_wallpaper",
-    "side": "cluttered:block/chic_wallpaper_lower_trim"
-  }
-}

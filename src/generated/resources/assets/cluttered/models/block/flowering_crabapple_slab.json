@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "cluttered:block/flowering_crabapple_planks",
-    "side": "cluttered:block/flowering_crabapple_planks",
-    "top": "cluttered:block/flowering_crabapple_planks"
-  }
-}

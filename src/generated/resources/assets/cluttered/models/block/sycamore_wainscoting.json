@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "cluttered:block/sycamore_wainscoting",
-    "side": "cluttered:block/sycamore_wainscoting"
-  }
-}

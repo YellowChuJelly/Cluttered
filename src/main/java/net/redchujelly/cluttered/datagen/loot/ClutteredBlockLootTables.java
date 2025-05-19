@@ -478,6 +478,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.BIRDHOUSE_UNPAINTED.get());
         dropSelf(BlockRegistration.BIRDHOUSE_RED.get());
         dropSelf(BlockRegistration.BIRDHOUSE_BLUE.get());
+        dropSelf(BlockRegistration.BIRDHOUSE_PASTEL.get());
 
         dropSelf(BlockRegistration.KITCHEN_SCALE.get());
         dropSelf(BlockRegistration.ANTIQUE_MAP.get());
@@ -627,6 +628,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get());
         multiBlockDropOnlyOneItem(BlockRegistration.BAMBOO_BOOKSHELF.get());
         multiBlockDropOnlyOneItem(BlockRegistration.FWISH_BOOKCASE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.RETRO_CAFE_SHELF.get());
 
         multiBlockDropOnlyOneItem(BlockRegistration.TABLE_PLAIN.get());
         multiBlockDropOnlyOneItem(BlockRegistration.TABLE_TABLECLOTH.get());

@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "cluttered:block/flowering_poplar_log_top",
-    "side": "cluttered:block/flowering_poplar_log"
-  }
-}

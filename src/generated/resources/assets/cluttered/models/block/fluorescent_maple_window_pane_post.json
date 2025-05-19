@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/template_glass_pane_post",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "edge": "cluttered:block/maple_glass_pane_top",
-    "pane": "cluttered:block/fluorescent_maple_window"
-  }
-}

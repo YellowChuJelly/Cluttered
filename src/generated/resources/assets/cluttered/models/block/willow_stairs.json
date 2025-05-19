@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "cluttered:block/willow_planks",
-    "side": "cluttered:block/willow_planks",
-    "top": "cluttered:block/willow_planks"
-  }
-}

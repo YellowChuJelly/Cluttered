@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "cluttered:block/floral_border_wallpaper"
-  }
-}
