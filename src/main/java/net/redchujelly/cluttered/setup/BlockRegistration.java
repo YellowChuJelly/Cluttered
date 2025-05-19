@@ -1179,6 +1179,8 @@ public class BlockRegistration {
 
     public static final RegistryObject<Block> RETRO_CAFE_SHELF = registerBlock("retro_cafe_shelf",
             () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+    public static final RegistryObject<Block> RETRO_CAFE_SHELF_WINDOW = registerBlock("retro_cafe_shelf_window",
+            () -> new RetroCafeShelfWindowBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.GLASS).mapColor(DyeColor.PURPLE).noOcclusion()));
 
 
     //BIKES

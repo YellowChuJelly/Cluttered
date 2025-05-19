@@ -872,6 +872,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         multiblockParts(BlockRegistration.BAMBOO_BOOKSHELF);
         multiblockParts(BlockRegistration.FWISH_BOOKCASE);
         multiblockParts(BlockRegistration.RETRO_CAFE_SHELF);
+        multiblockParts(BlockRegistration.RETRO_CAFE_SHELF_WINDOW);
 
         hFacingBlockWithCustomModel(BlockRegistration.ANTIQUE_STANDING_LAMP);
 
@@ -968,7 +969,15 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.ENDTABLE_WOOD);
         hFacingBlockWithCustomModel(BlockRegistration.ENDTABLE_DECOR);
         hFacingBlockWithCustomModel(BlockRegistration.NIGHTSTAND_GREEN);
+
+        //FOR FUTURE REFERENCE
+        //this.getVariantBuilder(BlockRegistration.ENDTABLE_AMETHYST.get()).forAllStates(state ->
+        //        ConfiguredModel.builder().modelFile(models().getBuilder("block/endtable_amethyst").parent(models().getExistingFile(modLoc("block/endtable_meadow"))).texture("4", "block/endtable_amethyst"))
+        //                .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).getOpposite().toYRot()).build());
+
     }
+
+
 
     private void multiblockParts(RegistryObject<Block> block) {
         String name = block.getId().toString().replace("cluttered:", "");

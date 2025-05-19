@@ -565,6 +565,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.BAMBOO_BOOKSHELF.get());
                         output.accept(BlockRegistration.FWISH_BOOKCASE.get());
                         output.accept(BlockRegistration.RETRO_CAFE_SHELF.get());
+                        output.accept(BlockRegistration.RETRO_CAFE_SHELF_WINDOW.get());
 
                         output.accept(BlockRegistration.ENDTABLE_AMETHYST.get());
                         output.accept(BlockRegistration.ENDTABLE_BUBBLEGUM.get());

@@ -30,6 +30,7 @@ public class Cluttered {
     public Cluttered() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        SoundRegistration.register(modEventBus);
         CreativeTabRegistration.register(modEventBus);
         ItemRegistration.register(modEventBus);
         BlockRegistration.register(modEventBus);

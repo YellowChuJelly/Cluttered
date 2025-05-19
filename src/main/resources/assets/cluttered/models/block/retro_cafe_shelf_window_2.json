@@ -3,8 +3,8 @@
 	"texture_size": [64, 64],
 	"render_type": "minecraft:translucent",
 	"textures": {
-		"8": "cluttered:block/retro_cafe_shelf_window_1",
-		"particle": "cluttered:block/retro_cafe_shelf_window_1"
+		"8": "cluttered:block/retro_cafe_shelf_window_2",
+		"particle": "cluttered:block/retro_cafe_shelf_window_2"
 	},
 	"elements": [
 		{

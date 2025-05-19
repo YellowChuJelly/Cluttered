@@ -629,6 +629,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.BAMBOO_BOOKSHELF.get());
         multiBlockDropOnlyOneItem(BlockRegistration.FWISH_BOOKCASE.get());
         multiBlockDropOnlyOneItem(BlockRegistration.RETRO_CAFE_SHELF.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.RETRO_CAFE_SHELF_WINDOW.get());
 
         multiBlockDropOnlyOneItem(BlockRegistration.TABLE_PLAIN.get());
         multiBlockDropOnlyOneItem(BlockRegistration.TABLE_TABLECLOTH.get());

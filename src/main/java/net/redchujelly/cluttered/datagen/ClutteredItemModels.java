@@ -251,6 +251,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.BAMBOO_BOOKSHELF);
         blockitemFromModel(BlockRegistration.FWISH_BOOKCASE);
         blockitemFromModel(BlockRegistration.RETRO_CAFE_SHELF);
+        blockitemFromModel(BlockRegistration.RETRO_CAFE_SHELF_WINDOW);
 
         blockitemFromModel(BlockRegistration.TABLE_PLAIN);
         blockitemFromModel(BlockRegistration.TABLE_TABLECLOTH);
