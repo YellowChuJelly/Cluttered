@@ -465,6 +465,76 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.ART_NOUVEAU_DOOR.get(), block -> createDoorTable(BlockRegistration.ART_NOUVEAU_DOOR.get()));
         add(BlockRegistration.ART_NOUVEAU_DOOR_DARK.get(), block -> createDoorTable(BlockRegistration.ART_NOUVEAU_DOOR_DARK.get()));
 
+        //FOR U TO ORGANIZE
+        dropSelf(BlockRegistration.BLACK_CAT_COUNTER_DRAWERS.get());
+        dropSelf(BlockRegistration.BLACK_CAT_COUNTER_LEFT_DOOR.get());
+        dropSelf(BlockRegistration.BLACK_CAT_COUNTER_RIGHT_DOOR.get());
+        dropSelf(BlockRegistration.BOOK_OPEN.get());
+        dropSelf(BlockRegistration.BRASS_KEY.get());
+        dropSelf(BlockRegistration.ENVELOPE_STACK.get());
+        dropSelf(BlockRegistration.FLOWER_DESK_LAMP.get());
+        dropSelf(BlockRegistration.FLOWER_SHELF_BLUE.get());
+        dropSelf(BlockRegistration.FLOWER_SHELF_GREEN.get());
+        dropSelf(BlockRegistration.FLOWER_SHELF_PASTEL_YELLOW.get());
+        dropSelf(BlockRegistration.FLOWER_SHELF_PINK.get());
+        dropSelf(BlockRegistration.FLOWER_SHELF_PURPLE.get());
+        dropSelf(BlockRegistration.FLOWER_SHELF_YELLOW.get());
+        dropSelf(BlockRegistration.FLOWER_SHELF_CANDLE_BLUE.get());
+        dropSelf(BlockRegistration.FLOWER_SHELF_CANDLE_GREEN.get());
+        dropSelf(BlockRegistration.FLOWER_SHELF_CANDLE_PASTEL_YELLOW.get());
+        dropSelf(BlockRegistration.FLOWER_SHELF_CANDLE_PINK.get());
+        dropSelf(BlockRegistration.FLOWER_SHELF_CANDLE_PURPLE.get());
+        dropSelf(BlockRegistration.FLOWER_SHELF_CANDLE_YELLOW.get());
+        dropSelf(BlockRegistration.FLOWER_SHELF_PLANT.get());
+        dropSelf(BlockRegistration.FLOWER_TEA_KETTLE.get());
+        dropSelf(BlockRegistration.FWISH_ARMCHAIR.get());
+        dropSelf(BlockRegistration.FWISH_OTTOMAN.get());
+        dropSelf(BlockRegistration.HEAVENLY_ORNAMENTAL_ARRAY.get());
+        dropSelf(BlockRegistration.PLANT_LADDER.get());
+        dropSelf(BlockRegistration.POLAROID_CAMERA.get());
+        dropSelf(BlockRegistration.POLAROIDS_B.get());
+        dropSelf(BlockRegistration.POLAROIDS_C.get());
+        dropSelf(BlockRegistration.PUZZLE_PIECE_TABLE_BLUE.get());
+        dropSelf(BlockRegistration.PUZZLE_PIECE_TABLE_GREEN.get());
+        dropSelf(BlockRegistration.PUZZLE_PIECE_TABLE_RED.get());
+        dropSelf(BlockRegistration.PUZZLE_PIECE_TABLE_YELLOW.get());
+        dropSelf(BlockRegistration.PUZZLE_PIECE_TABLE_PASTEL_BLUE.get());
+        dropSelf(BlockRegistration.PUZZLE_PIECE_TABLE_PASTEL_PINK.get());
+        dropSelf(BlockRegistration.PUZZLE_PIECE_TABLE_PASTEL_PURPLE.get());
+        dropSelf(BlockRegistration.PUZZLE_PIECE_TABLE_PASTEL_YELLOW.get());
+        dropSelf(BlockRegistration.SALT_PEPPER_SHAKERS.get());
+        dropSelf(BlockRegistration.SAND_SEAL_PLUSH_BLUE.get());
+        dropSelf(BlockRegistration.SAND_SEAL_PLUSH_GREEN.get());
+        dropSelf(BlockRegistration.SAND_SEAL_PLUSH_RED.get());
+        dropSelf(BlockRegistration.SKETCHBOOK_SINGLE.get());
+        dropSelf(BlockRegistration.STACK_OF_BOOKS.get());
+        dropSelf(BlockRegistration.STACK_OF_BOOKS_TALL.get());
+        dropSelf(BlockRegistration.STEAMPUNK_GLOBE.get());
+        dropSelf(BlockRegistration.SWEETHEART_BAKING_SET_BOWL.get());
+        dropSelf(BlockRegistration.SWEETHEART_BAKING_SET_INGREDIENTS.get());
+        dropSelf(BlockRegistration.SWEETHEART_COUNTER_DRAWERS.get());
+        dropSelf(BlockRegistration.SWEETHEART_COUNTER_LEFT_DOOR.get());
+        dropSelf(BlockRegistration.SWEETHEART_COUNTER_RIGHT_DOOR.get());
+        dropSelf(BlockRegistration.WINE_BOTTLE_RACK.get());
+        dropSelf(BlockRegistration.WINE_BOTTLES.get());
+        dropSelf(BlockRegistration.YELLOW_NOTEPAD.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BLACK_CAT_TABLE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.SWEETHEART_TABLE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BLACK_CAT_SINK.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.SWEETHEART_SINK.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.CARD_INDEX.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.CHINA_CABINET.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.CUPID_BENCH.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.GENERAL_STORE_CABINET.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.RETRO_FRIDGE_BLACK.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.RETRO_FRIDGE_BLUE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.RETRO_FRIDGE_PINK.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.RETRO_FRIDGE_PURPLE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.RETRO_FRIDGE_RED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.RETRO_FRIDGE_TURQUOISE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.RETRO_FRIDGE_WHITE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.RETRO_FRIDGE_YELLOW.get());
+
         //SMALL FURNITURE
         //CHAIRS
         dropSelf(BlockRegistration.APPLE_CHAIR.get());
@@ -630,6 +700,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.FWISH_BOOKCASE.get());
         multiBlockDropOnlyOneItem(BlockRegistration.RETRO_CAFE_SHELF.get());
         multiBlockDropOnlyOneItem(BlockRegistration.RETRO_CAFE_SHELF_WINDOW.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.CHINA_CABINET.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.CUPID_BENCH.get());
 
         multiBlockDropOnlyOneItem(BlockRegistration.TABLE_PLAIN.get());
         multiBlockDropOnlyOneItem(BlockRegistration.TABLE_TABLECLOTH.get());
