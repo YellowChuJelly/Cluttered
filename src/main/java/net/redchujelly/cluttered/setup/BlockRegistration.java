@@ -148,7 +148,7 @@ public class BlockRegistration {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(DyeColor.YELLOW), BlockSetType.OAK), 300);
     public static final RegistryObject<Block> POPLAR_BUTTON = registerFuelBlock("poplar_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.YELLOW),
-                    BlockSetType.OAK, 30, true), 10);
+                    BlockSetType.OAK, 30, true), 100);
     public static final RegistryObject<Block> POPLAR_PRESSURE_PLATE = registerFuelBlock("poplar_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.YELLOW),
                     BlockSetType.OAK), 300);
@@ -192,7 +192,7 @@ public class BlockRegistration {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(DyeColor.YELLOW), BlockSetType.OAK), 300);
     public static final RegistryObject<Block> FLOWERING_POPLAR_BUTTON = registerFuelBlock("flowering_poplar_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.YELLOW),
-                    BlockSetType.OAK, 30, true), 10);
+                    BlockSetType.OAK, 30, true), 100);
     public static final RegistryObject<Block> FLOWERING_POPLAR_PRESSURE_PLATE = registerFuelBlock("flowering_poplar_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.YELLOW),
                     BlockSetType.OAK), 300);
@@ -229,7 +229,7 @@ public class BlockRegistration {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(DyeColor.PINK), BlockSetType.OAK), 300);
     public static final RegistryObject<Block> CRABAPPLE_BUTTON = registerFuelBlock("crabapple_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.PINK),
-                    BlockSetType.OAK, 30, true), 10);
+                    BlockSetType.OAK, 30, true), 100);
     public static final RegistryObject<Block> CRABAPPLE_PRESSURE_PLATE = registerFuelBlock("crabapple_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.PINK),
                     BlockSetType.OAK), 300);
@@ -266,7 +266,7 @@ public class BlockRegistration {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(DyeColor.PINK), BlockSetType.OAK), 300);
     public static final RegistryObject<Block> FLOWERING_CRABAPPLE_BUTTON = registerFuelBlock("flowering_crabapple_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.PINK),
-                    BlockSetType.OAK, 30, true), 10);
+                    BlockSetType.OAK, 30, true), 100);
     public static final RegistryObject<Block> FLOWERING_CRABAPPLE_PRESSURE_PLATE = registerFuelBlock("flowering_crabapple_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.PINK),
                     BlockSetType.OAK), 300);
@@ -303,7 +303,7 @@ public class BlockRegistration {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(DyeColor.GREEN), BlockSetType.OAK), 300);
     public static final RegistryObject<Block> SYCAMORE_BUTTON = registerFuelBlock("sycamore_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.GREEN),
-                    BlockSetType.OAK, 30, true), 10);
+                    BlockSetType.OAK, 30, true), 100);
     public static final RegistryObject<Block> SYCAMORE_PRESSURE_PLATE = registerFuelBlock("sycamore_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.GREEN),
                     BlockSetType.OAK), 300);
@@ -340,7 +340,7 @@ public class BlockRegistration {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion(), BlockSetType.OAK), 300);
     public static final RegistryObject<Block> MAPLE_BUTTON = registerFuelBlock("fluorescent_maple_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion(),
-                    BlockSetType.OAK, 30, true), 10);
+                    BlockSetType.OAK, 30, true), 100);
     public static final RegistryObject<Block> MAPLE_PRESSURE_PLATE = registerFuelBlock("fluorescent_maple_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion(),
                     BlockSetType.OAK), 300);
@@ -377,7 +377,7 @@ public class BlockRegistration {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT), BlockSetType.OAK), 300);
     public static final RegistryObject<Block> BLUE_MUSHROOM_BUTTON = registerFuelBlock("blue_mushroom_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT),
-                    BlockSetType.OAK, 30, true), 10);
+                    BlockSetType.OAK, 30, true), 100);
     public static final RegistryObject<Block> BLUE_MUSHROOM_PRESSURE_PLATE = registerFuelBlock("blue_mushroom_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT),
                     BlockSetType.OAK), 300);
@@ -415,7 +415,7 @@ public class BlockRegistration {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT), BlockSetType.OAK), 300);
     public static final RegistryObject<Block> RED_MUSHROOM_BUTTON = registerFuelBlock("red_mushroom_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT),
-                    BlockSetType.OAK, 30, true), 10);
+                    BlockSetType.OAK, 30, true), 100);
     public static final RegistryObject<Block> RED_MUSHROOM_PRESSURE_PLATE = registerFuelBlock("red_mushroom_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT),
                     BlockSetType.OAK), 300);
@@ -979,7 +979,10 @@ public class BlockRegistration {
     public static final RegistryObject<Block> TEDDY_BEAR = registerBlock("teddy_bear",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
 
-    //TO DO idr if i ahve another to do somewhere else sorry
+    public static final RegistryObject<Block> POLAROID_CAMERA = registerBlock("polaroid_camera",
+            () -> new PolaroidCameraBlock(BlockBehaviour.Properties.copy(Blocks.GRAY_WOOL).sound(SoundType.SCAFFOLDING)));
+
+    //TODO idr if i ahve another to do somewhere else sorry
     public static final RegistryObject<Block> BOOK_OPEN = registerBlock("book_open",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
     public static final RegistryObject<Block> BRASS_KEY = registerBlock("brass_key",
@@ -1017,8 +1020,6 @@ public class BlockRegistration {
     public static final RegistryObject<Block> FLOWER_TEA_KETTLE = registerBlock("flower_tea_kettle",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
     public static final RegistryObject<Block> HEAVENLY_ORNAMENTAL_ARRAY = registerBlock("heavenly_ornamental_array",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
-    public static final RegistryObject<Block> POLAROID_CAMERA = registerBlock("polaroid_camera",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
     public static final RegistryObject<Block> SALT_PEPPER_SHAKERS = registerBlock("salt_pepper_shakers",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
@@ -1074,23 +1075,6 @@ public class BlockRegistration {
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE).noOcclusion()));
     public static final RegistryObject<Block> STEAMPUNK_GLOBE = registerBlock("steampunk_globe",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE).noOcclusion()));
-    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_BLUE = registerBlock("puzzle_piece_table_blue",
-            () -> new EndTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.GREEN).noOcclusion()));
-    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_PASTEL_BLUE = registerBlock("puzzle_piece_table_pastel_blue",
-            () -> new EndTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.GREEN).noOcclusion()));
-    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_PASTEL_PINK = registerBlock("puzzle_piece_table_pastel_pink",
-            () -> new EndTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.GREEN).noOcclusion()));
-    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_PASTEL_PURPLE = registerBlock("puzzle_piece_table_pastel_purple",
-            () -> new EndTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.GREEN).noOcclusion()));
-    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_PASTEL_YELLOW = registerBlock("puzzle_piece_table_pastel_yellow",
-            () -> new EndTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.GREEN).noOcclusion()));
-    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_RED = registerBlock("puzzle_piece_table_red",
-            () -> new EndTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.GREEN).noOcclusion()));
-    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_YELLOW = registerBlock("puzzle_piece_table_yellow",
-            () -> new EndTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.GREEN).noOcclusion()));
-    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_GREEN = registerBlock("puzzle_piece_table_green",
-            () -> new EndTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.GREEN).noOcclusion()));
-
 
     public static final RegistryObject<Block> TRADITIONAL_RADIO = registerBlock("traditional_radio",
             () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
@@ -1149,6 +1133,24 @@ public class BlockRegistration {
             () -> new EndTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> NIGHTSTAND_GREEN = registerBlock("nightstand_green",
             () -> new EndTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.GREEN).noOcclusion()));
+
+    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_BLUE = registerBlock("puzzle_piece_table_blue",
+            () -> new PuzzlePieceTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE).noOcclusion()));
+    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_PASTEL_BLUE = registerBlock("puzzle_piece_table_pastel_blue",
+            () -> new PuzzlePieceTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.LIGHT_BLUE).noOcclusion()));
+    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_PASTEL_PINK = registerBlock("puzzle_piece_table_pastel_pink",
+            () -> new PuzzlePieceTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.PINK).noOcclusion()));
+    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_PASTEL_PURPLE = registerBlock("puzzle_piece_table_pastel_purple",
+            () -> new PuzzlePieceTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.PURPLE).noOcclusion()));
+    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_PASTEL_YELLOW = registerBlock("puzzle_piece_table_pastel_yellow",
+            () -> new PuzzlePieceTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.YELLOW).noOcclusion()));
+    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_RED = registerBlock("puzzle_piece_table_red",
+            () -> new PuzzlePieceTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.RED).noOcclusion()));
+    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_YELLOW = registerBlock("puzzle_piece_table_yellow",
+            () -> new PuzzlePieceTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.YELLOW).noOcclusion()));
+    public static final RegistryObject<Block> PUZZLE_PIECE_TABLE_GREEN = registerBlock("puzzle_piece_table_green",
+            () -> new PuzzlePieceTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.GREEN).noOcclusion()));
+
 
     //ROTATIONAL FACE BLOCKS
     public static final RegistryObject<Block> ANTIQUE_MAP = registerBlock("antique_map",
@@ -1289,7 +1291,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> BULLETIN_BOARD_CLUTTERED = registerBlock("bulletin_board_cluttered",
             () -> new BullitenBoardBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
 
-    //TO DO
+    //TODO
     public static final RegistryObject<Block> CUPID_BENCH = registerBlock("cupid_bench",
             () -> new LovelyLoveSeatBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
     public static final RegistryObject<Block> BLACK_CAT_COUNTER_DRAWERS= registerBlock("black_cat_counter_drawers",

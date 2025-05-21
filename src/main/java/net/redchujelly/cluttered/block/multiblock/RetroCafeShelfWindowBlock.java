@@ -51,12 +51,6 @@ public class RetroCafeShelfWindowBlock extends MultiblockPlacer{
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        pLevel.playSound(null, pPos, SoundRegistration.POLAROID_FLASH.get(), SoundSource.BLOCKS);
-        return super.use(pState, pLevel, pPos, pPlayer, pHand, pHit);
-    }
-
-    @Override
     public IntegerProperty getMultiblockPart() {
         return MULTIBLOCK_PART;
     }

@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [8, 8],
 	"render_type": "minecraft:cutout",
+	"texture_size": [8, 8],
 	"textures": {
 		"0": "cluttered:block/polaroids_a",
 		"particle": "cluttered:block/polaroids_a"
@@ -22,17 +22,17 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"translation": [0, 0.25, -4.75],
-			"scale": [0.55, 0.55, 0.55]
+			"translation": [0.25, -1.5, -2],
+			"scale": [0.25, 0.25, 0.25]
 		},
 		"thirdperson_lefthand": {
-			"translation": [0, 0.25, -4.75],
-			"scale": [0.55, 0.55, 0.55]
+			"translation": [0.25, -1.5, -2],
+			"scale": [0.25, 0.25, 0.25]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, -180, 0],
 			"translation": [2.25, 2.5, 2.5],
-			"scale": [0.4, 0.4, 0.4]
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"firstperson_lefthand": {
 			"rotation": [0, -180, 0],
@@ -40,8 +40,8 @@
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"ground": {
-			"translation": [-0.25, -2.5, -1.5],
-			"scale": [0.2, 0.2, 0.2]
+			"translation": [0.75, 0.5, -1],
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
 			"rotation": [0, -180, 0],
