@@ -1045,8 +1045,7 @@ public class BlockRegistration {
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
     public static final RegistryObject<Block> YELLOW_NOTEPAD = registerBlock("yellow_notepad",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
-    public static final RegistryObject<Block> CARD_INDEX = registerBlock("card_index",
-            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
+
     public static final RegistryObject<Block> CHINA_CABINET = registerBlock("china_cabinet",
             () -> new GumballMachineBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
     public static final RegistryObject<Block> GENERAL_STORE_CABINET = registerBlock("general_store_cabinet",
@@ -1261,6 +1260,20 @@ public class BlockRegistration {
     public static final RegistryObject<Block> SUNFLOWER_GARLAND = registerBlock("garland_sunflower",
             () -> new GarlandBlock(BlockBehaviour.Properties.copy(Blocks.SPORE_BLOSSOM).mapColor(DyeColor.YELLOW)));
 
+    //KITCHEN SET SMALL
+    public static final RegistryObject<Block> BLACK_CAT_COUNTER_DRAWERS= registerBlock("black_cat_counter_drawers",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> BLACK_CAT_COUNTER_LEFT_DOOR= registerBlock("black_cat_counter_left_door",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> BLACK_CAT_COUNTER_RIGHT_DOOR= registerBlock("black_cat_counter_right_door",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> SWEETHEART_COUNTER_DRAWERS= registerBlock("sweetheart_counter_drawers",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> SWEETHEART_COUNTER_LEFT_DOOR= registerBlock("sweetheart_counter_left_door",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
+    public static final RegistryObject<Block> SWEETHEART_COUNTER_RIGHT_DOOR= registerBlock("sweetheart_counter_right_door",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
+
     //MULTIBLOCK FURNITURE
     //MISC NO FUNCTION
     public static final RegistryObject<Block> DESK_GREEN = registerBlock("desk_green",
@@ -1275,11 +1288,6 @@ public class BlockRegistration {
     public static final RegistryObject<Block> ANTIQUE_LIBRARY_BOOKS = registerBlock("antique_library_books",
             () -> new AntiqueLibraryBooksBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.SPORE_BLOSSOM).mapColor(DyeColor.RED).noOcclusion()));
 
-    public static final RegistryObject<Block> BAMBOO_BOOKSHELF = registerBlock("bamboo_bookshelf",
-            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
-    public static final RegistryObject<Block> FWISH_BOOKCASE = registerBlock("fwish_bookcase",
-            () -> new FwishBookcaseBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.BLUE).noOcclusion()));
-
     public static final RegistryObject<Block> GUMBALL_MACHINE_RED = registerBlock("gumball_machine_red",
             () -> new GumballMachineBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(DyeColor.RED).noOcclusion()));
     public static final RegistryObject<Block> GUMBALL_MACHINE_BLUE = registerBlock("gumball_machine_blue",
@@ -1291,21 +1299,18 @@ public class BlockRegistration {
     public static final RegistryObject<Block> BULLETIN_BOARD_CLUTTERED = registerBlock("bulletin_board_cluttered",
             () -> new BullitenBoardBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
 
+    //CABINETS AND SHELVES
+    public static final RegistryObject<Block> CARD_INDEX = registerBlock("card_index",
+            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
+    public static final RegistryObject<Block> BAMBOO_BOOKSHELF = registerBlock("bamboo_bookshelf",
+            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
+    public static final RegistryObject<Block> FWISH_BOOKCASE = registerBlock("fwish_bookcase",
+            () -> new FwishBookcaseBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.BLUE).noOcclusion()));
+
     //TODO
     public static final RegistryObject<Block> CUPID_BENCH = registerBlock("cupid_bench",
             () -> new LovelyLoveSeatBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
-    public static final RegistryObject<Block> BLACK_CAT_COUNTER_DRAWERS= registerBlock("black_cat_counter_drawers",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
-    public static final RegistryObject<Block> BLACK_CAT_COUNTER_LEFT_DOOR= registerBlock("black_cat_counter_left_door",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
-    public static final RegistryObject<Block> BLACK_CAT_COUNTER_RIGHT_DOOR= registerBlock("black_cat_counter_right_door",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
-    public static final RegistryObject<Block> SWEETHEART_COUNTER_DRAWERS= registerBlock("sweetheart_counter_drawers",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
-    public static final RegistryObject<Block> SWEETHEART_COUNTER_LEFT_DOOR= registerBlock("sweetheart_counter_left_door",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
-    public static final RegistryObject<Block> SWEETHEART_COUNTER_RIGHT_DOOR= registerBlock("sweetheart_counter_right_door",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
+
     public static final RegistryObject<Block> BLACK_CAT_SINK = registerBlock("black_cat_sink",
             () -> new TableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> BLACK_CAT_TABLE = registerBlock("black_cat_table",
