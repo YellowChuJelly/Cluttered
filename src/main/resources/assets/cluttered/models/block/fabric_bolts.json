@@ -1,0 +1,95 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"4": "cluttered:block/fabric_bolts",
+		"particle": "cluttered:block/fabric_bolts"
+	},
+	"elements": [
+		{
+			"from": [2, 0, 11],
+			"to": [16, 4, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [17, 0, 11]},
+			"faces": {
+				"north": {"uv": [0, 4, 14, 8], "texture": "#4"},
+				"east": {"uv": [0, 12, 4, 16], "texture": "#4"},
+				"south": {"uv": [14, 4, 0, 8], "texture": "#4"},
+				"west": {"uv": [0, 12, 4, 16], "texture": "#4"},
+				"up": {"uv": [0, 8, 14, 4], "texture": "#4"},
+				"down": {"uv": [14, 4, 0, 8], "texture": "#4"}
+			}
+		},
+		{
+			"from": [1, 0, 6],
+			"to": [15, 4, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15, 0, 2]},
+			"faces": {
+				"north": {"uv": [0, 0, 14, 4], "texture": "#4"},
+				"east": {"uv": [10, 12, 14, 16], "texture": "#4"},
+				"south": {"uv": [0, 0, 14, 4], "texture": "#4"},
+				"west": {"uv": [10, 12, 14, 16], "texture": "#4"},
+				"up": {"uv": [0, 0, 14, 4], "texture": "#4"},
+				"down": {"uv": [14, 0, 0, 4], "texture": "#4"}
+			}
+		},
+		{
+			"from": [2, 4, 9],
+			"to": [16, 8, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 1, 7]},
+			"faces": {
+				"north": {"uv": [0, 8, 14, 12], "texture": "#4"},
+				"east": {"uv": [5, 12, 9, 16], "texture": "#4"},
+				"south": {"uv": [14, 8, 0, 12], "texture": "#4"},
+				"west": {"uv": [5, 12, 9, 16], "texture": "#4"},
+				"up": {"uv": [0, 8, 14, 12], "texture": "#4"},
+				"down": {"uv": [14, 8, 0, 12], "texture": "#4"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 45, 0],
+			"translation": [0, 3, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 45, 0],
+			"translation": [0, 3, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -172, 0],
+			"translation": [2, 4.5, 1.25],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -172, 0],
+			"translation": [2, 4.5, 1.25],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [1.75, 2.25, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"head": {
+			"translation": [0, 14.5, 0]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -16],
+			"scale": [2, 2, 2]
+		}
+	},
+	"groups": [
+		{
+			"name": "fabric pile",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

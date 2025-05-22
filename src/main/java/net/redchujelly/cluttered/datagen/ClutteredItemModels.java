@@ -305,6 +305,16 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.RETRO_FRIDGE_TURQUOISE);
         blockitemFromModel(BlockRegistration.RETRO_FRIDGE_WHITE);
         blockitemFromModel(BlockRegistration.RETRO_FRIDGE_YELLOW);
+        blockitemFromModel(BlockRegistration.FABRIC_BOLTS);
+        blockitemFromModel(BlockRegistration.SCISSORS_AND_THREAD);
+        blockitemFromModel(BlockRegistration.SLICED_BREAD);
+        blockitemFromModel(BlockRegistration.ROSE_END_TABLE);
+        blockitemFromModel(BlockRegistration.ROSE_END_TABLE_BLACK);
+        blockitemFromModel(BlockRegistration.VIAL_STAND);
+        blockitemFromModel(BlockRegistration.PINEAPPLE);
+        blockitemFromModel(BlockRegistration.MUSHROOM_FLAT);
+        blockitemFromModel(BlockRegistration.HONEYCOMB_LAMP);
+        blockitemFromModel(BlockRegistration.UNLIVING_CHAIR);
 
         //MULTIBLOCK FURNITURE
         blockitemFromModel(BlockRegistration.DESK_BROWN);

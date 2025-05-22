@@ -534,6 +534,16 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.RETRO_FRIDGE_TURQUOISE.get());
         multiBlockDropOnlyOneItem(BlockRegistration.RETRO_FRIDGE_WHITE.get());
         multiBlockDropOnlyOneItem(BlockRegistration.RETRO_FRIDGE_YELLOW.get());
+        dropSelf(BlockRegistration.ROSE_END_TABLE.get());
+        dropSelf(BlockRegistration.ROSE_END_TABLE_BLACK.get());
+        dropSelf(BlockRegistration.FABRIC_BOLTS.get());
+        dropSelf(BlockRegistration.SCISSORS_AND_THREAD.get());
+        dropSelf(BlockRegistration.SLICED_BREAD.get());
+        dropSelf(BlockRegistration.VIAL_STAND.get());
+        dropSelf(BlockRegistration.PINEAPPLE.get());
+        dropSelf(BlockRegistration.MUSHROOM_FLAT.get());
+        dropSelf(BlockRegistration.HONEYCOMB_LAMP.get());
+        dropSelf(BlockRegistration.UNLIVING_CHAIR.get());
 
         //SMALL FURNITURE
         //CHAIRS

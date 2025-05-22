@@ -943,6 +943,14 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.WINE_BOTTLE_RACK);
         hFacingBlockWithCustomModel(BlockRegistration.WINE_BOTTLES);
         hFacingBlockWithCustomModel(BlockRegistration.YELLOW_NOTEPAD);
+        hFacingBlockWithCustomModel(BlockRegistration.FABRIC_BOLTS);
+        hFacingBlockWithCustomModel(BlockRegistration.SCISSORS_AND_THREAD);
+        hFacingBlockWithCustomModel(BlockRegistration.SLICED_BREAD);
+        hFacingBlockWithCustomModel(BlockRegistration.VIAL_STAND);
+        hFacingBlockWithCustomModel(BlockRegistration.PINEAPPLE);
+        hFacingBlockWithCustomModel(BlockRegistration.MUSHROOM_FLAT);
+        hFacingBlockWithCustomModel(BlockRegistration.HONEYCOMB_LAMP);
+        hFacingBlockWithCustomModel(BlockRegistration.UNLIVING_CHAIR);
 
         hFacingBlockWithCustomModel(BlockRegistration.ANTIQUE_STANDING_LAMP);
 
@@ -1039,6 +1047,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.ENDTABLE_WOOD);
         hFacingBlockWithCustomModel(BlockRegistration.ENDTABLE_DECOR);
         hFacingBlockWithCustomModel(BlockRegistration.NIGHTSTAND_GREEN);
+        hFacingBlockWithCustomModel(BlockRegistration.ROSE_END_TABLE);
+        hFacingBlockWithCustomModel(BlockRegistration.ROSE_END_TABLE_BLACK);
 
         //FOR FUTURE REFERENCE
         //this.getVariantBuilder(BlockRegistration.ENDTABLE_AMETHYST.get()).forAllStates(state ->

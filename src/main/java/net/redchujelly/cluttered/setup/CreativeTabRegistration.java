@@ -719,6 +719,16 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.WINE_BOTTLE_RACK.get());
                         output.accept(BlockRegistration.WINE_BOTTLES.get());
                         output.accept(BlockRegistration.YELLOW_NOTEPAD.get());
+                        output.accept(BlockRegistration.FABRIC_BOLTS.get());
+                        output.accept(BlockRegistration.SCISSORS_AND_THREAD.get());
+                        output.accept(BlockRegistration.SLICED_BREAD.get());
+                        output.accept(BlockRegistration.ROSE_END_TABLE.get());
+                        output.accept(BlockRegistration.ROSE_END_TABLE_BLACK.get());
+                        output.accept(BlockRegistration.VIAL_STAND.get());
+                        output.accept(BlockRegistration.PINEAPPLE.get());
+                        output.accept(BlockRegistration.MUSHROOM_FLAT.get());
+                        output.accept(BlockRegistration.HONEYCOMB_LAMP.get());
+                        output.accept(BlockRegistration.UNLIVING_CHAIR.get());
 
                     })
                     .build());
