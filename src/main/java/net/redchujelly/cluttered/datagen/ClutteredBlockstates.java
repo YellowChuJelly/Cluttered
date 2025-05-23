@@ -493,9 +493,28 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.DARK_STARRY_WALLPAPER_TOP.get(), models().cubeColumn("dark_starry_wallpaper_upper_trim", modLoc("block/dark_starry_wallpaper_upper_trim"), modLoc("block/dark_starry_wallpaper")));
         simpleBlockWithItem(BlockRegistration.DARK_STARRY_WALLPAPER_BOTTOM.get(), models().cubeColumn("dark_starry_wallpaper_lower_trim", modLoc("block/dark_starry_wallpaper_lower_trim"), modLoc("block/dark_starry_wallpaper")));
 
+        blockWithItem(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER);
+        simpleBlockWithItem(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER_TOP.get(), models().cubeColumn("blue_rose_striped_wallpaper_top", modLoc("block/blue_rose_striped_wallpaper_top"), modLoc("block/blue_rose_striped_wallpaper")));
+        simpleBlockWithItem(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER_BOTTOM.get(), models().cubeColumn("blue_rose_striped_wallpaper_bottom", modLoc("block/blue_rose_striped_wallpaper_bottom"), modLoc("block/blue_rose_striped_wallpaper")));
+
+        blockWithItem(BlockRegistration.CONFECTIONARY_WALLPAPER);
+        simpleBlockWithItem(BlockRegistration.CONFECTIONARY_WALLPAPER_TOP.get(), models().cubeColumn("confectionary_wallpaper_top", modLoc("block/confectionary_wallpaper_top"), modLoc("block/confectionary_wallpaper")));
+        simpleBlockWithItem(BlockRegistration.CONFECTIONARY_WALLPAPER_BOTTOM.get(), models().cubeColumn("confectionary_wallpaper_bottom", modLoc("block/confectionary_wallpaper_bottom"), modLoc("block/confectionary_wallpaper")));
+
+        blockWithItem(BlockRegistration.MINT_WALLPAPER);
+        simpleBlockWithItem(BlockRegistration.MINT_WALLPAPER_TOP.get(), models().cubeColumn("mint_wallpaper_top", modLoc("block/mint_wallpaper_top"), modLoc("block/mint_wallpaper")));
+        simpleBlockWithItem(BlockRegistration.MINT_WALLPAPER_BOTTOM.get(), models().cubeColumn("mint_wallpaper_bottom", modLoc("block/mint_wallpaper_bottom"), modLoc("block/mint_wallpaper")));
+
+        blockWithItem(BlockRegistration.STRIPED_FLORAL_WALLPAPER);
+        simpleBlockWithItem(BlockRegistration.STRIPED_FLORAL_WALLPAPER_TOP.get(), models().cubeColumn("striped_floral_wallpaper_top", modLoc("block/striped_floral_wallpaper_top"), modLoc("block/striped_floral_wallpaper")));
+        simpleBlockWithItem(BlockRegistration.STRIPED_FLORAL_WALLPAPER_BOTTOM.get(), models().cubeColumn("striped_floral_wallpaper_bottom", modLoc("block/striped_floral_wallpaper_bottom"), modLoc("block/striped_floral_wallpaper")));
+
+        blockWithItem(BlockRegistration.FLORAL_BERRY_WALLPAPER);
+        simpleBlockWithItem(BlockRegistration.FLORAL_BERRY_WALLPAPER_TOP.get(), models().cubeColumn("floral_berry_wallpaper_top", modLoc("block/floral_berry_wallpaper_top"), modLoc("block/floral_berry_wallpaper")));
+        simpleBlockWithItem(BlockRegistration.FLORAL_BERRY_WALLPAPER_BOTTOM.get(), models().cubeColumn("floral_berry_wallpaper_bottom", modLoc("block/floral_berry_wallpaper_bottom"), modLoc("block/floral_berry_wallpaper")));
+
         blockWithItem(BlockRegistration.RETRO_RAINBOW_WALLPAPER);
         blockWithItem(BlockRegistration.APPLE_WALLPAPER);
-        blockWithItem(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER);
         blockWithItem(BlockRegistration.CHECKERED_FRUIT_WALLPAPER);
         blockWithItem(BlockRegistration.CHECKERED_GREEN_WALLPAPER);
         blockWithItem(BlockRegistration.CHECKERED_GREEN_STRAWBERRY_WALLPAPER);
@@ -505,17 +524,20 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockWithItem(BlockRegistration.CHIC_WALLPAPER);
         simpleBlockWithItem(BlockRegistration.CHIC_WALLPAPER_UPPER_TRIM.get(), models().cubeColumn("chic_wallpaper_upper_trim", modLoc("block/chic_wallpaper_upper_trim"), modLoc("block/chic_wallpaper")));
         simpleBlockWithItem(BlockRegistration.CHIC_WALLPAPER_LOWER_TRIM.get(), models().cubeColumn("chic_wallpaper_lower_trim", modLoc("block/chic_wallpaper_lower_trim"), modLoc("block/chic_wallpaper")));
-        blockWithItem(BlockRegistration.FLORAL_BERRY_WALLPAPER);
         blockWithItem(BlockRegistration.FLORAL_BORDER_WALLPAPER);
-        blockWithItem(BlockRegistration.CONFECTIONARY_WALLPAPER);
         blockWithItem(BlockRegistration.GHOST_WALLPAPER);
         simpleBlockWithItem(BlockRegistration.GHOST_WALLPAPER_TRIM.get(), models().cubeColumn("ghost_wallpaper_trim", modLoc("block/ghost_wallpaper_trim"), modLoc("block/ghost_wallpaper")));
+        simpleBlockWithItem(BlockRegistration.GHOST_WALLPAPER_BOTTOM.get(), models().cubeColumn("ghost_wallpaper_bottom", modLoc("block/ghost_wallpaper_bottom"), modLoc("block/ghost_wallpaper")));
+        simpleBlockWithItem(BlockRegistration.GHOST_WALLPAPER_TOP.get(), models().cubeColumn("ghost_wallpaper_top", modLoc("block/ghost_wallpaper_top"), modLoc("block/ghost_wallpaper")));
         blockWithItem(BlockRegistration.GHOST_WALLPAPER_WAINSCOTING);
 
         blockWithItem(BlockRegistration.HALLOWEEN_WALLPAPER);
+        blockWithItem(BlockRegistration.HALLOWEEN_WALLPAPER_TOP);
+        blockWithItem(BlockRegistration.HALLOWEEN_WALLPAPER_BOTTOM);
         blockWithItem(BlockRegistration.HALLOWEEN_WAINSCOTING);
         blockWithItem(BlockRegistration.MARIGOLD_WALLPAPER);
-        blockWithItem(BlockRegistration.MINT_WALLPAPER);
+        simpleBlockWithItem(BlockRegistration.MARIGOLD_WALLPAPER_BOTTOM.get(), models().cubeColumn("marigold_wallpaper_bottom", modLoc("block/marigold_wallpaper_bottom"), modLoc("block/marigold_wallpaper")));
+        simpleBlockWithItem(BlockRegistration.MARIGOLD_WALLPAPER_TOP.get(), models().cubeColumn("marigold_wallpaper_top", modLoc("block/marigold_wallpaper_top"), modLoc("block/marigold_wallpaper")));
         blockWithItem(BlockRegistration.PINK_STRIPE_WALLPAPER);
         simpleBlockWithItem(BlockRegistration.PINK_STRIPE_WALLPAPER_LOWER_TRIM.get(), models().cubeColumn("pink_striped_wallpaper_lower_trim", modLoc("block/pink_striped_wallpaper_lower_trim"), modLoc("block/pink_striped_wallpaper")));
         simpleBlockWithItem(BlockRegistration.PINK_STRIPE_WALLPAPER_UPPER_TRIM.get(), models().cubeColumn("pink_striped_wallpaper_upper_trim", modLoc("block/pink_striped_wallpaper_upper_trim"), modLoc("block/pink_striped_wallpaper")));
@@ -523,23 +545,121 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.RIALTO_GOLD_WALLPAPER_TOP.get(), models().cubeColumn("rialto_wallpaper_upper_trim", modLoc("block/rialto_wallpaper_upper_trim"), modLoc("block/rialto_gold_wallpaper")));
         simpleBlockWithItem(BlockRegistration.RIALTO_GOLD_WALLPAPER_BOTTOM.get(), models().cubeColumn("rialto_wallpaper_lower_trim", modLoc("block/rialto_wallpaper_lower_trim"), modLoc("block/rialto_gold_wallpaper")));
 
-        blockWithItem(BlockRegistration.STRIPED_FLORAL_WALLPAPER);
-
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_APPLE);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_APPLE_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_apple_bottom_brown", modLoc("block/diamond_wallpaper_apple_bottom_brown"), modLoc("block/diamond_wallpaper_apple")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_APPLE_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_apple_top_brown", modLoc("block/diamond_wallpaper_apple_top_brown"), modLoc("block/diamond_wallpaper_apple")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_APPLE_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_apple_bottom_white", modLoc("block/diamond_wallpaper_apple_bottom_white"), modLoc("block/diamond_wallpaper_apple")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_APPLE_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_apple_top_white", modLoc("block/diamond_wallpaper_apple_top_white"), modLoc("block/diamond_wallpaper_apple")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_APPLE_BOTTOM_COLOR.get(), models().cubeColumn("diamond_wallpaper_apple_bottom_color", modLoc("block/diamond_wallpaper_apple_bottom_color"), modLoc("block/diamond_wallpaper_apple")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_APPLE_TOP_COLOR.get(), models().cubeColumn("diamond_wallpaper_apple_top_color", modLoc("block/diamond_wallpaper_apple_top_color"), modLoc("block/diamond_wallpaper_apple")));
+
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_blackberry_bottom_brown", modLoc("block/diamond_wallpaper_blackberry_bottom_brown"), modLoc("block/diamond_wallpaper_blackberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_blackberry_top_brown", modLoc("block/diamond_wallpaper_blackberry_top_brown"), modLoc("block/diamond_wallpaper_blackberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_blackberry_bottom_white", modLoc("block/diamond_wallpaper_blackberry_bottom_white"), modLoc("block/diamond_wallpaper_blackberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_blackberry_top_white", modLoc("block/diamond_wallpaper_blackberry_top_white"), modLoc("block/diamond_wallpaper_blackberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_BOTTOM_COLOR.get(), models().cubeColumn("diamond_wallpaper_blackberry_bottom_color", modLoc("block/diamond_wallpaper_blackberry_bottom_color"), modLoc("block/diamond_wallpaper_blackberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_TOP_COLOR.get(), models().cubeColumn("diamond_wallpaper_blackberry_top_color", modLoc("block/diamond_wallpaper_blackberry_top_color"), modLoc("block/diamond_wallpaper_blackberry")));
+
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_blueberry_bottom_brown", modLoc("block/diamond_wallpaper_blueberry_bottom_brown"), modLoc("block/diamond_wallpaper_blueberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_blueberry_top_brown", modLoc("block/diamond_wallpaper_blueberry_top_brown"), modLoc("block/diamond_wallpaper_blueberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_blueberry_bottom_white", modLoc("block/diamond_wallpaper_blueberry_bottom_white"), modLoc("block/diamond_wallpaper_blueberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_blueberry_top_white", modLoc("block/diamond_wallpaper_blueberry_top_white"), modLoc("block/diamond_wallpaper_blueberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_BOTTOM_COLOR.get(), models().cubeColumn("diamond_wallpaper_blueberry_bottom_color", modLoc("block/diamond_wallpaper_blueberry_bottom_color"), modLoc("block/diamond_wallpaper_blueberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_TOP_COLOR.get(), models().cubeColumn("diamond_wallpaper_blueberry_top_color", modLoc("block/diamond_wallpaper_blueberry_top_color"), modLoc("block/diamond_wallpaper_blueberry")));
+
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BONES);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BONES_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_bones_bottom_brown", modLoc("block/diamond_wallpaper_bones_bottom_brown"), modLoc("block/diamond_wallpaper_bones")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BONES_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_bones_top_brown", modLoc("block/diamond_wallpaper_bones_top_brown"), modLoc("block/diamond_wallpaper_bones")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BONES_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_bones_bottom_white", modLoc("block/diamond_wallpaper_bones_bottom_white"), modLoc("block/diamond_wallpaper_bones")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BONES_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_bones_top_white", modLoc("block/diamond_wallpaper_bones_top_white"), modLoc("block/diamond_wallpaper_bones")));
+
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_bouquet_bottom_brown", modLoc("block/diamond_wallpaper_bouquet_bottom_brown"), modLoc("block/diamond_wallpaper_bouquet")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_bouquet_top_brown", modLoc("block/diamond_wallpaper_bouquet_top_brown"), modLoc("block/diamond_wallpaper_bouquet")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_bouquet_bottom_white", modLoc("block/diamond_wallpaper_bouquet_bottom_white"), modLoc("block/diamond_wallpaper_bouquet")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_bouquet_top_white", modLoc("block/diamond_wallpaper_bouquet_top_white"), modLoc("block/diamond_wallpaper_bouquet")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_BOTTOM_COLOR.get(), models().cubeColumn("diamond_wallpaper_bouquet_bottom_color", modLoc("block/diamond_wallpaper_bouquet_bottom_color"), modLoc("block/diamond_wallpaper_bouquet")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_TOP_COLOR.get(), models().cubeColumn("diamond_wallpaper_bouquet_top_color", modLoc("block/diamond_wallpaper_bouquet_top_color"), modLoc("block/diamond_wallpaper_bouquet")));
+
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_brown_mushroom_bottom_brown", modLoc("block/diamond_wallpaper_brown_mushroom_bottom_brown"), modLoc("block/diamond_wallpaper_brown_mushroom")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_brown_mushroom_top_brown", modLoc("block/diamond_wallpaper_brown_mushroom_top_brown"), modLoc("block/diamond_wallpaper_brown_mushroom")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_brown_mushroom_bottom_white", modLoc("block/diamond_wallpaper_brown_mushroom_bottom_white"), modLoc("block/diamond_wallpaper_brown_mushroom")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_brown_mushroom_top_white", modLoc("block/diamond_wallpaper_brown_mushroom_top_white"), modLoc("block/diamond_wallpaper_brown_mushroom")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_BOTTOM_COLOR.get(), models().cubeColumn("diamond_wallpaper_brown_mushroom_bottom_color", modLoc("block/diamond_wallpaper_brown_mushroom_bottom_color"), modLoc("block/diamond_wallpaper_brown_mushroom")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_TOP_COLOR.get(), models().cubeColumn("diamond_wallpaper_brown_mushroom_top_color", modLoc("block/diamond_wallpaper_brown_mushroom_top_color"), modLoc("block/diamond_wallpaper_brown_mushroom")));
+
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_green_grapes_bottom_brown", modLoc("block/diamond_wallpaper_green_grapes_bottom_brown"), modLoc("block/diamond_wallpaper_green_grapes")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_green_grapes_top_brown", modLoc("block/diamond_wallpaper_green_grapes_top_brown"), modLoc("block/diamond_wallpaper_green_grapes")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_green_grapes_bottom_white", modLoc("block/diamond_wallpaper_green_grapes_bottom_white"), modLoc("block/diamond_wallpaper_green_grapes")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_green_grapes_top_white", modLoc("block/diamond_wallpaper_green_grapes_top_white"), modLoc("block/diamond_wallpaper_green_grapes")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_BOTTOM_COLOR.get(), models().cubeColumn("diamond_wallpaper_green_grapes_bottom_color", modLoc("block/diamond_wallpaper_green_grapes_bottom_color"), modLoc("block/diamond_wallpaper_green_grapes")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_TOP_COLOR.get(), models().cubeColumn("diamond_wallpaper_green_grapes_top_color", modLoc("block/diamond_wallpaper_green_grapes_top_color"), modLoc("block/diamond_wallpaper_green_grapes")));
+
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_LEMON);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_LEMON_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_lemon_bottom_brown", modLoc("block/diamond_wallpaper_lemon_bottom_brown"), modLoc("block/diamond_wallpaper_lemon")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_LEMON_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_lemon_top_brown", modLoc("block/diamond_wallpaper_lemon_top_brown"), modLoc("block/diamond_wallpaper_lemon")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_LEMON_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_lemon_bottom_white", modLoc("block/diamond_wallpaper_lemon_bottom_white"), modLoc("block/diamond_wallpaper_lemon")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_LEMON_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_lemon_top_white", modLoc("block/diamond_wallpaper_lemon_top_white"), modLoc("block/diamond_wallpaper_lemon")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_LEMON_BOTTOM_COLOR.get(), models().cubeColumn("diamond_wallpaper_lemon_bottom_color", modLoc("block/diamond_wallpaper_lemon_bottom_color"), modLoc("block/diamond_wallpaper_lemon")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_LEMON_TOP_COLOR.get(), models().cubeColumn("diamond_wallpaper_lemon_top_color", modLoc("block/diamond_wallpaper_lemon_top_color"), modLoc("block/diamond_wallpaper_lemon")));
+
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_ORANGE);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_ORANGE_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_orange_bottom_brown", modLoc("block/diamond_wallpaper_orange_bottom_brown"), modLoc("block/diamond_wallpaper_orange")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_ORANGE_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_orange_top_brown", modLoc("block/diamond_wallpaper_orange_top_brown"), modLoc("block/diamond_wallpaper_orange")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_ORANGE_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_orange_bottom_white", modLoc("block/diamond_wallpaper_orange_bottom_white"), modLoc("block/diamond_wallpaper_orange")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_ORANGE_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_orange_top_white", modLoc("block/diamond_wallpaper_orange_top_white"), modLoc("block/diamond_wallpaper_orange")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_ORANGE_BOTTOM_COLOR.get(), models().cubeColumn("diamond_wallpaper_orange_bottom_color", modLoc("block/diamond_wallpaper_orange_bottom_color"), modLoc("block/diamond_wallpaper_orange")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_ORANGE_TOP_COLOR.get(), models().cubeColumn("diamond_wallpaper_orange_top_color", modLoc("block/diamond_wallpaper_orange_top_color"), modLoc("block/diamond_wallpaper_orange")));
+
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PEAR);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PEAR_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_pear_bottom_brown", modLoc("block/diamond_wallpaper_pear_bottom_brown"), modLoc("block/diamond_wallpaper_pear")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PEAR_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_pear_top_brown", modLoc("block/diamond_wallpaper_pear_top_brown"), modLoc("block/diamond_wallpaper_pear")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PEAR_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_pear_bottom_white", modLoc("block/diamond_wallpaper_pear_bottom_white"), modLoc("block/diamond_wallpaper_pear")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PEAR_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_pear_top_white", modLoc("block/diamond_wallpaper_pear_top_white"), modLoc("block/diamond_wallpaper_pear")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PEAR_BOTTOM_COLOR.get(), models().cubeColumn("diamond_wallpaper_pear_bottom_color", modLoc("block/diamond_wallpaper_pear_bottom_color"), modLoc("block/diamond_wallpaper_pear")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PEAR_TOP_COLOR.get(), models().cubeColumn("diamond_wallpaper_pear_top_color", modLoc("block/diamond_wallpaper_pear_top_color"), modLoc("block/diamond_wallpaper_pear")));
+
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PLUM);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PLUM_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_plum_bottom_brown", modLoc("block/diamond_wallpaper_plum_bottom_brown"), modLoc("block/diamond_wallpaper_plum")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PLUM_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_plum_top_brown", modLoc("block/diamond_wallpaper_plum_top_brown"), modLoc("block/diamond_wallpaper_plum")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PLUM_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_plum_bottom_white", modLoc("block/diamond_wallpaper_plum_bottom_white"), modLoc("block/diamond_wallpaper_plum")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PLUM_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_plum_top_white", modLoc("block/diamond_wallpaper_plum_top_white"), modLoc("block/diamond_wallpaper_plum")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PLUM_BOTTOM_COLOR.get(), models().cubeColumn("diamond_wallpaper_plum_bottom_color", modLoc("block/diamond_wallpaper_plum_bottom_color"), modLoc("block/diamond_wallpaper_plum")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PLUM_TOP_COLOR.get(), models().cubeColumn("diamond_wallpaper_plum_top_color", modLoc("block/diamond_wallpaper_plum_top_color"), modLoc("block/diamond_wallpaper_plum")));
+
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_red_mushroom_bottom_brown", modLoc("block/diamond_wallpaper_red_mushroom_bottom_brown"), modLoc("block/diamond_wallpaper_red_mushroom")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_red_mushroom_top_brown", modLoc("block/diamond_wallpaper_red_mushroom_top_brown"), modLoc("block/diamond_wallpaper_red_mushroom")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_red_mushroom_bottom_white", modLoc("block/diamond_wallpaper_red_mushroom_bottom_white"), modLoc("block/diamond_wallpaper_red_mushroom")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_red_mushroom_top_white", modLoc("block/diamond_wallpaper_red_mushroom_top_white"), modLoc("block/diamond_wallpaper_red_mushroom")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_BOTTOM_COLOR.get(), models().cubeColumn("diamond_wallpaper_red_mushroom_bottom_color", modLoc("block/diamond_wallpaper_red_mushroom_bottom_color"), modLoc("block/diamond_wallpaper_red_mushroom")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_TOP_COLOR.get(), models().cubeColumn("diamond_wallpaper_red_mushroom_top_color", modLoc("block/diamond_wallpaper_red_mushroom_top_color"), modLoc("block/diamond_wallpaper_red_mushroom")));
+
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_purple_grapes_bottom_brown", modLoc("block/diamond_wallpaper_purple_grapes_bottom_brown"), modLoc("block/diamond_wallpaper_purple_grapes")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_purple_grapes_top_brown", modLoc("block/diamond_wallpaper_purple_grapes_top_brown"), modLoc("block/diamond_wallpaper_purple_grapes")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_purple_grapes_bottom_white", modLoc("block/diamond_wallpaper_purple_grapes_bottom_white"), modLoc("block/diamond_wallpaper_purple_grapes")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_purple_grapes_top_white", modLoc("block/diamond_wallpaper_purple_grapes_top_white"), modLoc("block/diamond_wallpaper_purple_grapes")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_BOTTOM_COLOR.get(), models().cubeColumn("diamond_wallpaper_purple_grapes_bottom_color", modLoc("block/diamond_wallpaper_purple_grapes_bottom_color"), modLoc("block/diamond_wallpaper_purple_grapes")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_TOP_COLOR.get(), models().cubeColumn("diamond_wallpaper_purple_grapes_top_color", modLoc("block/diamond_wallpaper_purple_grapes_top_color"), modLoc("block/diamond_wallpaper_purple_grapes")));
+
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_strawberry_bottom_brown", modLoc("block/diamond_wallpaper_strawberry_bottom_brown"), modLoc("block/diamond_wallpaper_strawberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_strawberry_top_brown", modLoc("block/diamond_wallpaper_strawberry_top_brown"), modLoc("block/diamond_wallpaper_strawberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_strawberry_bottom_white", modLoc("block/diamond_wallpaper_strawberry_bottom_white"), modLoc("block/diamond_wallpaper_strawberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_strawberry_top_white", modLoc("block/diamond_wallpaper_strawberry_top_white"), modLoc("block/diamond_wallpaper_strawberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_BOTTOM_COLOR.get(), models().cubeColumn("diamond_wallpaper_strawberry_bottom_color", modLoc("block/diamond_wallpaper_strawberry_bottom_color"), modLoc("block/diamond_wallpaper_strawberry")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_TOP_COLOR.get(), models().cubeColumn("diamond_wallpaper_strawberry_top_color", modLoc("block/diamond_wallpaper_strawberry_top_color"), modLoc("block/diamond_wallpaper_strawberry")));
+
         blockWithItem(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR);
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_BOTTOM_BROWN.get(), models().cubeColumn("diamond_wallpaper_anchor_bottom_brown", modLoc("block/diamond_wallpaper_anchor_bottom_brown"), modLoc("block/diamond_wallpaper_anchor")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_TOP_BROWN.get(), models().cubeColumn("diamond_wallpaper_anchor_top_brown", modLoc("block/diamond_wallpaper_anchor_top_brown"), modLoc("block/diamond_wallpaper_anchor")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_BOTTOM_WHITE.get(), models().cubeColumn("diamond_wallpaper_anchor_bottom_white", modLoc("block/diamond_wallpaper_anchor_bottom_white"), modLoc("block/diamond_wallpaper_anchor")));
+        simpleBlockWithItem(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_TOP_WHITE.get(), models().cubeColumn("diamond_wallpaper_anchor_top_white", modLoc("block/diamond_wallpaper_anchor_top_white"), modLoc("block/diamond_wallpaper_anchor")));
 
         //with the intention of putting top textures in possibly
         simpleBlockWithItem(BlockRegistration.BLUE_WAINSCOTING.get(), models().cubeColumn("blue_wainscoting", modLoc("block/blue_wainscoting"), modLoc("block/blue_wainscoting")));

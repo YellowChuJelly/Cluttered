@@ -640,9 +640,17 @@ public class BlockRegistration {
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> GHOST_WALLPAPER_TRIM = registerBlock("ghost_wallpaper_trim",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> GHOST_WALLPAPER_BOTTOM = registerBlock("ghost_wallpaper_bottom",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> GHOST_WALLPAPER_TOP = registerBlock("ghost_wallpaper_top",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> GHOST_WALLPAPER_WAINSCOTING = registerBlock("ghost_wallpaper_wainscoting",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.PURPLE)));
     public static final RegistryObject<Block> HALLOWEEN_WALLPAPER = registerBlock("halloween_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> HALLOWEEN_WALLPAPER_BOTTOM = registerBlock("halloween_wallpaper_bottom",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> HALLOWEEN_WALLPAPER_TOP = registerBlock("halloween_wallpaper_top",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> HALLOWEEN_WAINSCOTING = registerBlock("halloween_wainscoting",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.PURPLE)));
@@ -653,7 +661,11 @@ public class BlockRegistration {
     public static final RegistryObject<Block> RIALTO_GOLD_WALLPAPER_BOTTOM = registerBlock("rialto_wallpaper_lower_trim",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> MARIGOLD_WALLPAPER = registerBlock("marigold_wallpaper",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> MARIGOLD_WALLPAPER_BOTTOM = registerBlock("marigold_wallpaper_bottom",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> MARIGOLD_WALLPAPER_TOP = registerBlock("marigold_wallpaper_top",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> MINT_WALLPAPER = registerBlock("mint_wallpaper",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> PINK_STRIPE_WALLPAPER = registerBlock("pink_striped_wallpaper",
@@ -662,8 +674,6 @@ public class BlockRegistration {
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> PINK_STRIPE_WALLPAPER_UPPER_TRIM = registerBlock("pink_striped_wallpaper_upper_trim",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
-    public static final RegistryObject<Block> STRIPED_FLORAL_WALLPAPER = registerBlock("striped_floral_wallpaper",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> FISH_WALLPAPER = registerBlock("fish_wallpaper",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
 
@@ -671,34 +681,245 @@ public class BlockRegistration {
     //DIAMOND WALLPAPER
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_APPLE = registerBlock("diamond_wallpaper_apple",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_APPLE_BOTTOM_BROWN = registerBlock("diamond_wallpaper_apple_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_APPLE_TOP_BROWN = registerBlock("diamond_wallpaper_apple_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_APPLE_BOTTOM_WHITE = registerBlock("diamond_wallpaper_apple_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_APPLE_TOP_WHITE = registerBlock("diamond_wallpaper_apple_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_APPLE_BOTTOM_COLOR = registerBlock("diamond_wallpaper_apple_bottom_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_APPLE_TOP_COLOR = registerBlock("diamond_wallpaper_apple_top_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLACKBERRY = registerBlock("diamond_wallpaper_blackberry",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLACKBERRY_BOTTOM_BROWN = registerBlock("diamond_wallpaper_blackberry_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLACKBERRY_TOP_BROWN = registerBlock("diamond_wallpaper_blackberry_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLACKBERRY_BOTTOM_WHITE = registerBlock("diamond_wallpaper_blackberry_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLACKBERRY_TOP_WHITE = registerBlock("diamond_wallpaper_blackberry_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLACKBERRY_BOTTOM_COLOR = registerBlock("diamond_wallpaper_blackberry_bottom_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLACKBERRY_TOP_COLOR = registerBlock("diamond_wallpaper_blackberry_top_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLUEBERRY = registerBlock("diamond_wallpaper_blueberry",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLUEBERRY_BOTTOM_BROWN = registerBlock("diamond_wallpaper_blueberry_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLUEBERRY_TOP_BROWN = registerBlock("diamond_wallpaper_blueberry_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLUEBERRY_BOTTOM_WHITE = registerBlock("diamond_wallpaper_blueberry_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLUEBERRY_TOP_WHITE = registerBlock("diamond_wallpaper_blueberry_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLUEBERRY_BOTTOM_COLOR = registerBlock("diamond_wallpaper_blueberry_bottom_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BLUEBERRY_TOP_COLOR = registerBlock("diamond_wallpaper_blueberry_top_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_BONES = registerBlock("diamond_wallpaper_bones",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BONES_BOTTOM_BROWN = registerBlock("diamond_wallpaper_bones_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BONES_TOP_BROWN = registerBlock("diamond_wallpaper_bones_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BONES_BOTTOM_WHITE = registerBlock("diamond_wallpaper_bones_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BONES_TOP_WHITE = registerBlock("diamond_wallpaper_bones_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_BOUQUET = registerBlock("diamond_wallpaper_bouquet",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.MAGENTA_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BOUQUET_BOTTOM_BROWN = registerBlock("diamond_wallpaper_bouquet_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.MAGENTA_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BOUQUET_TOP_BROWN = registerBlock("diamond_wallpaper_bouquet_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.MAGENTA_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BOUQUET_BOTTOM_WHITE = registerBlock("diamond_wallpaper_bouquet_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.MAGENTA_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BOUQUET_TOP_WHITE = registerBlock("diamond_wallpaper_bouquet_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.MAGENTA_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BOUQUET_BOTTOM_COLOR = registerBlock("diamond_wallpaper_bouquet_bottom_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.MAGENTA_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BOUQUET_TOP_COLOR = registerBlock("diamond_wallpaper_bouquet_top_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.MAGENTA_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_BROWN_MUSHROOM = registerBlock("diamond_wallpaper_brown_mushroom",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BROWN_MUSHROOM_BOTTOM_BROWN = registerBlock("diamond_wallpaper_brown_mushroom_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BROWN_MUSHROOM_TOP_BROWN = registerBlock("diamond_wallpaper_brown_mushroom_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BROWN_MUSHROOM_BOTTOM_WHITE = registerBlock("diamond_wallpaper_brown_mushroom_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BROWN_MUSHROOM_TOP_WHITE = registerBlock("diamond_wallpaper_brown_mushroom_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BROWN_MUSHROOM_BOTTOM_COLOR = registerBlock("diamond_wallpaper_brown_mushroom_bottom_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_BROWN_MUSHROOM_TOP_COLOR = registerBlock("diamond_wallpaper_brown_mushroom_top_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
+
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_GREEN_GRAPES = registerBlock("diamond_wallpaper_green_grapes",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_GREEN_GRAPES_BOTTOM_BROWN = registerBlock("diamond_wallpaper_green_grapes_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_GREEN_GRAPES_TOP_BROWN = registerBlock("diamond_wallpaper_green_grapes_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_GREEN_GRAPES_BOTTOM_WHITE = registerBlock("diamond_wallpaper_green_grapes_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_GREEN_GRAPES_TOP_WHITE = registerBlock("diamond_wallpaper_green_grapes_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_GREEN_GRAPES_BOTTOM_COLOR = registerBlock("diamond_wallpaper_green_grapes_bottom_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_GREEN_GRAPES_TOP_COLOR = registerBlock("diamond_wallpaper_green_grapes_top_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_LEMON = registerBlock("diamond_wallpaper_lemon",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_LEMON_BOTTOM_BROWN = registerBlock("diamond_wallpaper_lemon_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_LEMON_TOP_BROWN = registerBlock("diamond_wallpaper_lemon_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_LEMON_BOTTOM_WHITE = registerBlock("diamond_wallpaper_lemon_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_LEMON_TOP_WHITE = registerBlock("diamond_wallpaper_lemon_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_LEMON_BOTTOM_COLOR = registerBlock("diamond_wallpaper_lemon_bottom_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_LEMON_TOP_COLOR = registerBlock("diamond_wallpaper_lemon_top_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_ORANGE = registerBlock("diamond_wallpaper_orange",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_ORANGE_BOTTOM_BROWN = registerBlock("diamond_wallpaper_orange_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_ORANGE_TOP_BROWN = registerBlock("diamond_wallpaper_orange_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_ORANGE_BOTTOM_WHITE = registerBlock("diamond_wallpaper_orange_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_ORANGE_TOP_WHITE = registerBlock("diamond_wallpaper_orange_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_ORANGE_BOTTOM_COLOR = registerBlock("diamond_wallpaper_orange_bottom_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_ORANGE_TOP_COLOR = registerBlock("diamond_wallpaper_orange_top_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_PEAR = registerBlock("diamond_wallpaper_pear",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PEAR_BOTTOM_BROWN = registerBlock("diamond_wallpaper_pear_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PEAR_TOP_BROWN = registerBlock("diamond_wallpaper_pear_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PEAR_BOTTOM_WHITE = registerBlock("diamond_wallpaper_pear_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PEAR_TOP_WHITE = registerBlock("diamond_wallpaper_pear_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PEAR_BOTTOM_COLOR = registerBlock("diamond_wallpaper_pear_bottom_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PEAR_TOP_COLOR = registerBlock("diamond_wallpaper_pear_top_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_PLUM = registerBlock("diamond_wallpaper_plum",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PLUM_BOTTOM_BROWN = registerBlock("diamond_wallpaper_plum_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PLUM_TOP_BROWN = registerBlock("diamond_wallpaper_plum_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PLUM_BOTTOM_WHITE = registerBlock("diamond_wallpaper_plum_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PLUM_TOP_WHITE = registerBlock("diamond_wallpaper_plum_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PLUM_BOTTOM_COLOR = registerBlock("diamond_wallpaper_plum_bottom_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PLUM_TOP_COLOR = registerBlock("diamond_wallpaper_plum_top_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_PURPLE_GRAPES = registerBlock("diamond_wallpaper_purple_grapes",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PURPLE_GRAPES_BOTTOM_BROWN = registerBlock("diamond_wallpaper_purple_grapes_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PURPLE_GRAPES_TOP_BROWN = registerBlock("diamond_wallpaper_purple_grapes_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PURPLE_GRAPES_BOTTOM_WHITE = registerBlock("diamond_wallpaper_purple_grapes_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PURPLE_GRAPES_TOP_WHITE = registerBlock("diamond_wallpaper_purple_grapes_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PURPLE_GRAPES_BOTTOM_COLOR = registerBlock("diamond_wallpaper_purple_grapes_bottom_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_PURPLE_GRAPES_TOP_COLOR = registerBlock("diamond_wallpaper_purple_grapes_top_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_STRAWBERRY = registerBlock("diamond_wallpaper_strawberry",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_STRAWBERRY_BOTTOM_BROWN = registerBlock("diamond_wallpaper_strawberry_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_STRAWBERRY_TOP_BROWN = registerBlock("diamond_wallpaper_strawberry_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_STRAWBERRY_BOTTOM_WHITE = registerBlock("diamond_wallpaper_strawberry_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_STRAWBERRY_TOP_WHITE = registerBlock("diamond_wallpaper_strawberry_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_STRAWBERRY_BOTTOM_COLOR = registerBlock("diamond_wallpaper_strawberry_bottom_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_STRAWBERRY_TOP_COLOR = registerBlock("diamond_wallpaper_strawberry_top_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_RED_MUSHROOM = registerBlock("diamond_wallpaper_red_mushroom",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_RED_MUSHROOM_BOTTOM_BROWN = registerBlock("diamond_wallpaper_red_mushroom_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_RED_MUSHROOM_TOP_BROWN = registerBlock("diamond_wallpaper_red_mushroom_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_RED_MUSHROOM_BOTTOM_WHITE = registerBlock("diamond_wallpaper_red_mushroom_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_RED_MUSHROOM_TOP_WHITE = registerBlock("diamond_wallpaper_red_mushroom_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_RED_MUSHROOM_BOTTOM_COLOR = registerBlock("diamond_wallpaper_red_mushroom_bottom_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_RED_MUSHROOM_TOP_COLOR = registerBlock("diamond_wallpaper_red_mushroom_top_color",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
     public static final RegistryObject<Block> DIAMOND_WALLPAPER_ANCHOR = registerBlock("diamond_wallpaper_anchor",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_ANCHOR_BOTTOM_BROWN = registerBlock("diamond_wallpaper_anchor_bottom_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_ANCHOR_TOP_BROWN = registerBlock("diamond_wallpaper_anchor_top_brown",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_ANCHOR_BOTTOM_WHITE = registerBlock("diamond_wallpaper_anchor_bottom_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> DIAMOND_WALLPAPER_ANCHOR_TOP_WHITE = registerBlock("diamond_wallpaper_anchor_top_white",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+
+    //TODO ? WALLPAPER TRIMS
+    public static final RegistryObject<Block> BLUE_ROSE_STRIPED_WALLPAPER_BOTTOM = registerBlock("blue_rose_striped_wallpaper_bottom",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> BLUE_ROSE_STRIPED_WALLPAPER_TOP = registerBlock("blue_rose_striped_wallpaper_top",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> CONFECTIONARY_WALLPAPER_BOTTOM = registerBlock("confectionary_wallpaper_bottom",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> CONFECTIONARY_WALLPAPER_TOP = registerBlock("confectionary_wallpaper_top",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> MINT_WALLPAPER_BOTTOM = registerBlock("mint_wallpaper_bottom",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.GREEN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> MINT_WALLPAPER_TOP = registerBlock("mint_wallpaper_top",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.GREEN_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> STRIPED_FLORAL_WALLPAPER = registerBlock("striped_floral_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> STRIPED_FLORAL_WALLPAPER_BOTTOM = registerBlock("striped_floral_wallpaper_bottom",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> STRIPED_FLORAL_WALLPAPER_TOP = registerBlock("striped_floral_wallpaper_top",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> FLORAL_BERRY_WALLPAPER_BOTTOM = registerBlock("floral_berry_wallpaper_bottom",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> FLORAL_BERRY_WALLPAPER_TOP = registerBlock("floral_berry_wallpaper_top",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
 
     //WAINSCOTING
     public static final RegistryObject<Block> BLUE_WAINSCOTING = registerFuelBlock("blue_wainscoting",

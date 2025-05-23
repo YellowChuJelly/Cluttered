@@ -93,26 +93,166 @@ public class HandDrillItem extends Item {
         put(BlockRegistration.CHIC_WALLPAPER_LOWER_TRIM.get(), BlockRegistration.CHIC_WALLPAPER_UPPER_TRIM.get());
         put(BlockRegistration.CHIC_WALLPAPER_UPPER_TRIM.get(), BlockRegistration.CHIC_WALLPAPER.get());
 
-        put(BlockRegistration.GHOST_WALLPAPER.get(), BlockRegistration.GHOST_WALLPAPER_WAINSCOTING.get());
-        put(BlockRegistration.GHOST_WALLPAPER_WAINSCOTING.get(), BlockRegistration.GHOST_WALLPAPER_TRIM.get());
-        put(BlockRegistration.GHOST_WALLPAPER_TRIM.get(), BlockRegistration.GHOST_WALLPAPER.get());
+        put(BlockRegistration.GHOST_WALLPAPER.get(), BlockRegistration.GHOST_WALLPAPER_TRIM.get());
+        put(BlockRegistration.GHOST_WALLPAPER_TRIM.get(), BlockRegistration.GHOST_WALLPAPER_WAINSCOTING.get());
+        put(BlockRegistration.GHOST_WALLPAPER_WAINSCOTING.get(), BlockRegistration.GHOST_WALLPAPER_BOTTOM.get());
+        put(BlockRegistration.GHOST_WALLPAPER_BOTTOM.get(), BlockRegistration.GHOST_WALLPAPER_TOP.get());
+        put(BlockRegistration.GHOST_WALLPAPER_TOP.get(), BlockRegistration.GHOST_WALLPAPER.get());
 
-        put(BlockRegistration.HALLOWEEN_WALLPAPER.get(), BlockRegistration.HALLOWEEN_WAINSCOTING.get());
+        put(BlockRegistration.HALLOWEEN_WALLPAPER.get(), BlockRegistration.HALLOWEEN_WALLPAPER_BOTTOM.get());
+        put(BlockRegistration.HALLOWEEN_WALLPAPER_BOTTOM.get(), BlockRegistration.HALLOWEEN_WALLPAPER_TOP.get());
+        put(BlockRegistration.HALLOWEEN_WALLPAPER_TOP.get(), BlockRegistration.HALLOWEEN_WAINSCOTING.get());
         put(BlockRegistration.HALLOWEEN_WAINSCOTING.get(), BlockRegistration.HALLOWEEN_WALLPAPER.get());
 
         put(BlockRegistration.PINK_STRIPE_WALLPAPER.get(), BlockRegistration.PINK_STRIPE_WALLPAPER_LOWER_TRIM.get());
         put(BlockRegistration.PINK_STRIPE_WALLPAPER_LOWER_TRIM.get(), BlockRegistration.PINK_STRIPE_WALLPAPER_UPPER_TRIM.get());
         put(BlockRegistration.PINK_STRIPE_WALLPAPER_UPPER_TRIM.get(), BlockRegistration.PINK_STRIPE_WALLPAPER.get());
 
+        put(BlockRegistration.MARIGOLD_WALLPAPER.get(), BlockRegistration.MARIGOLD_WALLPAPER_BOTTOM.get());
+        put(BlockRegistration.MARIGOLD_WALLPAPER_BOTTOM.get(), BlockRegistration.MARIGOLD_WALLPAPER_TOP.get());
+        put(BlockRegistration.MARIGOLD_WALLPAPER_TOP.get(), BlockRegistration.MARIGOLD_WALLPAPER.get());
+
         put(BlockRegistration.RIALTO_GOLD_WALLPAPER.get(), BlockRegistration.RIALTO_GOLD_WALLPAPER_BOTTOM.get());
         put(BlockRegistration.RIALTO_GOLD_WALLPAPER_BOTTOM.get(), BlockRegistration.RIALTO_GOLD_WALLPAPER_TOP.get());
         put(BlockRegistration.RIALTO_GOLD_WALLPAPER_TOP.get(), BlockRegistration.RIALTO_GOLD_WALLPAPER.get());
 
-        put(BlockRegistration.MINT_WALLPAPER.get(), BlockRegistration.BROWN_WAINSCOTING.get());
+        put(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER.get(), BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER_BOTTOM.get());
+        put(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER_BOTTOM.get(), BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER_TOP.get());
+        put(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER_TOP.get(), BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER.get());
+
+        put(BlockRegistration.CONFECTIONARY_WALLPAPER.get(), BlockRegistration.CONFECTIONARY_WALLPAPER_BOTTOM.get());
+        put(BlockRegistration.CONFECTIONARY_WALLPAPER_BOTTOM.get(), BlockRegistration.CONFECTIONARY_WALLPAPER_TOP.get());
+        put(BlockRegistration.CONFECTIONARY_WALLPAPER_TOP.get(), BlockRegistration.BLUE_WAINSCOTING.get());
+        put(BlockRegistration.BLUE_WAINSCOTING.get(), BlockRegistration.CONFECTIONARY_WALLPAPER.get());
+
+        put(BlockRegistration.MINT_WALLPAPER.get(), BlockRegistration.MINT_WALLPAPER_BOTTOM.get());
+        put(BlockRegistration.MINT_WALLPAPER_BOTTOM.get(), BlockRegistration.MINT_WALLPAPER_TOP.get());
+        put(BlockRegistration.MINT_WALLPAPER_TOP.get(), BlockRegistration.BROWN_WAINSCOTING.get());
         put(BlockRegistration.BROWN_WAINSCOTING.get(), BlockRegistration.MINT_WALLPAPER.get());
 
-        put(BlockRegistration.BLUE_WAINSCOTING.get(), BlockRegistration.CONFECTIONARY_WALLPAPER.get());
-        put(BlockRegistration.CONFECTIONARY_WALLPAPER.get(), BlockRegistration.BLUE_WAINSCOTING.get());
+        put(BlockRegistration.STRIPED_FLORAL_WALLPAPER.get(), BlockRegistration.STRIPED_FLORAL_WALLPAPER_BOTTOM.get());
+        put(BlockRegistration.STRIPED_FLORAL_WALLPAPER_BOTTOM.get(), BlockRegistration.STRIPED_FLORAL_WALLPAPER_TOP.get());
+        put(BlockRegistration.STRIPED_FLORAL_WALLPAPER_TOP.get(), BlockRegistration.STRIPED_FLORAL_WALLPAPER.get());
+
+        put(BlockRegistration.FLORAL_BERRY_WALLPAPER.get(), BlockRegistration.FLORAL_BERRY_WALLPAPER_BOTTOM.get());
+        put(BlockRegistration.FLORAL_BERRY_WALLPAPER_BOTTOM.get(), BlockRegistration.FLORAL_BERRY_WALLPAPER_TOP.get());
+        put(BlockRegistration.FLORAL_BERRY_WALLPAPER_TOP.get(), BlockRegistration.FLORAL_BERRY_WALLPAPER.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_APPLE.get(), BlockRegistration.DIAMOND_WALLPAPER_APPLE_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_APPLE_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_APPLE_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_APPLE_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_APPLE_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_APPLE_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_APPLE_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_APPLE_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_APPLE_BOTTOM_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_APPLE_BOTTOM_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_APPLE_TOP_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_APPLE_TOP_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_APPLE.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY.get(), BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_BOTTOM_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_BOTTOM_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_TOP_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY_TOP_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_BLACKBERRY.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY.get(), BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_BOTTOM_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_BOTTOM_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_TOP_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY_TOP_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_BLUEBERRY.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_BONES.get(), BlockRegistration.DIAMOND_WALLPAPER_BONES_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BONES_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_BONES_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BONES_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_BONES_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BONES_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_BONES_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BONES_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_BONES.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET.get(), BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_BOTTOM_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_BOTTOM_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_TOP_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BOUQUET_TOP_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_BOUQUET.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM.get(), BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_BOTTOM_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_BOTTOM_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_TOP_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM_TOP_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_BROWN_MUSHROOM.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES.get(), BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_BOTTOM_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_BOTTOM_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_TOP_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES_TOP_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_GREEN_GRAPES.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_LEMON.get(), BlockRegistration.DIAMOND_WALLPAPER_LEMON_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_LEMON_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_LEMON_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_LEMON_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_LEMON_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_LEMON_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_LEMON_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_LEMON_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_LEMON_BOTTOM_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_LEMON_BOTTOM_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_LEMON_TOP_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_LEMON_TOP_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_LEMON.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_ORANGE.get(), BlockRegistration.DIAMOND_WALLPAPER_ORANGE_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_ORANGE_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_ORANGE_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_ORANGE_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_ORANGE_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_ORANGE_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_ORANGE_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_ORANGE_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_ORANGE_BOTTOM_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_ORANGE_BOTTOM_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_ORANGE_TOP_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_ORANGE_TOP_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_ORANGE.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_PEAR.get(), BlockRegistration.DIAMOND_WALLPAPER_PEAR_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PEAR_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_PEAR_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PEAR_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_PEAR_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PEAR_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_PEAR_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PEAR_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_PEAR_BOTTOM_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PEAR_BOTTOM_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_PEAR_TOP_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PEAR_TOP_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_PEAR.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_PLUM.get(), BlockRegistration.DIAMOND_WALLPAPER_PLUM_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PLUM_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_PLUM_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PLUM_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_PLUM_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PLUM_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_PLUM_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PLUM_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_PLUM_BOTTOM_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PLUM_BOTTOM_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_PLUM_TOP_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PLUM_TOP_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_PLUM.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES.get(), BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_BOTTOM_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_BOTTOM_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_TOP_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES_TOP_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_PURPLE_GRAPES.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM.get(), BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_BOTTOM_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_BOTTOM_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_TOP_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM_TOP_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_RED_MUSHROOM.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY.get(), BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_BOTTOM_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_BOTTOM_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_TOP_COLOR.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY_TOP_COLOR.get(), BlockRegistration.DIAMOND_WALLPAPER_STRAWBERRY.get());
+
+        put(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR.get(), BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_BOTTOM_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_BOTTOM_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_TOP_BROWN.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_TOP_BROWN.get(), BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_BOTTOM_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_BOTTOM_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_TOP_WHITE.get());
+        put(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_TOP_WHITE.get(), BlockRegistration.DIAMOND_WALLPAPER_ANCHOR.get());
 
         put(BlockRegistration.GINGERBREAD_BRICKS.get(), BlockRegistration.GINGERBREAD_BRICKS_TOP.get());
         put(BlockRegistration.GINGERBREAD_BRICKS_TOP.get(), BlockRegistration.GINGERBREAD_BRICKS_SIDE.get());

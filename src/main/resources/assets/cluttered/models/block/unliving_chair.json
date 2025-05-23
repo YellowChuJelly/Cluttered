@@ -3,7 +3,8 @@
 	"texture_size": [64, 64],
 	"render_type":"minecraft:cutout",
 	"textures": {
-		"1": "cluttered:block/unliving_chair"
+		"1": "cluttered:block/unliving_chair",
+		"particle": "cluttered:block/unliving_chair"
 	},
 	"elements": [
 		{
