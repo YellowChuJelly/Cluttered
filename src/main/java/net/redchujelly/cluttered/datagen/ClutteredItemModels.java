@@ -222,6 +222,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.MINI_FLAG_NONBINARY);
         blockitemFromModel(BlockRegistration.MINI_FLAG_PAN);
         blockitemFromModel(BlockRegistration.MINI_FLAG_RAINBOW);
+        blockitemFromModel(BlockRegistration.MINI_FLAG_ACE);
 
         blockitemFromModel(BlockRegistration.COTTAGE_BOOKCASE);
         blockitemFromModel(BlockRegistration.COTTAGE_STANDING_LAMP);
@@ -316,6 +317,14 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.HONEYCOMB_LAMP);
         blockitemFromModel(BlockRegistration.UNLIVING_CHAIR);
 
+        blockitemFromModel(BlockRegistration.ANIMATED_FLAG_ASEXUAL);
+        blockitemFromModel(BlockRegistration.ANIMATED_FLAG_BISEXUAL);
+        blockitemFromModel(BlockRegistration.ANIMATED_FLAG_PANSEXUAL);
+        blockitemFromModel(BlockRegistration.ANIMATED_FLAG_LESBIAN);
+        blockitemFromModel(BlockRegistration.ANIMATED_FLAG_TRANSGENDER);
+        blockitemFromModel(BlockRegistration.ANIMATED_FLAG_NONBINARY);
+        blockitemFromModel(BlockRegistration.ANIMATED_FLAG_RAINBOW);
+
         //MULTIBLOCK FURNITURE
         blockitemFromModel(BlockRegistration.DESK_BROWN);
         blockitemFromModel(BlockRegistration.DESK_BROWN_CLUTTERED);
@@ -353,7 +362,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.ARMCHAIR_PURPLE);
         blockitemFromModel(BlockRegistration.ARMCHAIR_MAGENTA);
         blockitemFromModel(BlockRegistration.ARMCHAIR_PINK);
-        blockitemFromModel(BlockRegistration.ARMCHAIR_FUSCHIA);
+        blockitemFromModel(BlockRegistration.ARMCHAIR_FUCHSIA);
         blockitemFromModel(BlockRegistration.ARMCHAIR_IVORY);
         blockitemFromModel(BlockRegistration.ARMCHAIR_FLOWER);
         blockitemFromModel(BlockRegistration.ARMCHAIR_STRAWBERRY);

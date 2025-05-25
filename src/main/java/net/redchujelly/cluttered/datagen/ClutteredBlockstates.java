@@ -17,6 +17,7 @@ import net.redchujelly.cluttered.block.custom.EyeBlock;
 import net.redchujelly.cluttered.block.custom.HeartCakeBlock;
 import net.redchujelly.cluttered.block.custom.furniture.CustomJukeboxBlock;
 import net.redchujelly.cluttered.block.custom.furniture.GarlandBlock;
+import net.redchujelly.cluttered.block.custom.furniture.MediumFurnitureBlock;
 import net.redchujelly.cluttered.block.custom.furniture.RubiksCubeBlock;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
@@ -1119,6 +1120,16 @@ public class ClutteredBlockstates extends BlockStateProvider {
         flatFacingBlock(BlockRegistration.MINI_FLAG_NONBINARY, 0);
         flatFacingBlock(BlockRegistration.MINI_FLAG_PAN, 0);
         flatFacingBlock(BlockRegistration.MINI_FLAG_RAINBOW, 0);
+        flatFacingBlock(BlockRegistration.MINI_FLAG_ACE, 0);
+
+        //TODO
+        flatFacingBlock(BlockRegistration.ANIMATED_FLAG_ASEXUAL, 0);
+        flatFacingBlock(BlockRegistration.ANIMATED_FLAG_BISEXUAL, 0);
+        flatFacingBlock(BlockRegistration.ANIMATED_FLAG_PANSEXUAL, 0);
+        flatFacingBlock(BlockRegistration.ANIMATED_FLAG_RAINBOW, 0);
+        flatFacingBlock(BlockRegistration.ANIMATED_FLAG_TRANSGENDER, 0);
+        flatFacingBlock(BlockRegistration.ANIMATED_FLAG_NONBINARY, 0);
+        flatFacingBlock(BlockRegistration.ANIMATED_FLAG_LESBIAN, 0);
 
         //CHAIRS
         multiblockParts(BlockRegistration.LOVELY_LOVE_SEAT);
@@ -1141,7 +1152,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         multiblockParts(BlockRegistration.ARMCHAIR_PURPLE);
         multiblockParts(BlockRegistration.ARMCHAIR_MAGENTA);
         multiblockParts(BlockRegistration.ARMCHAIR_PINK);
-        multiblockParts(BlockRegistration.ARMCHAIR_FUSCHIA);
+        multiblockParts(BlockRegistration.ARMCHAIR_FUCHSIA);
         multiblockParts(BlockRegistration.ARMCHAIR_IVORY);
         multiblockParts(BlockRegistration.ARMCHAIR_FLOWER);
         multiblockParts(BlockRegistration.ARMCHAIR_STRAWBERRY);

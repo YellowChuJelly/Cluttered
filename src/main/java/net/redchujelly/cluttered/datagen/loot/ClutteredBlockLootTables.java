@@ -777,6 +777,15 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.MINI_FLAG_NONBINARY.get());
         dropSelf(BlockRegistration.MINI_FLAG_PAN.get());
         dropSelf(BlockRegistration.MINI_FLAG_RAINBOW.get());
+        dropSelf(BlockRegistration.MINI_FLAG_ACE.get());
+
+        dropSelf(BlockRegistration.ANIMATED_FLAG_ASEXUAL.get());
+        dropSelf(BlockRegistration.ANIMATED_FLAG_BISEXUAL.get());
+        dropSelf(BlockRegistration.ANIMATED_FLAG_PANSEXUAL.get());
+        dropSelf(BlockRegistration.ANIMATED_FLAG_LESBIAN.get());
+        dropSelf(BlockRegistration.ANIMATED_FLAG_TRANSGENDER.get());
+        dropSelf(BlockRegistration.ANIMATED_FLAG_NONBINARY.get());
+        dropSelf(BlockRegistration.ANIMATED_FLAG_RAINBOW.get());
 
         //LAMPS
         dropSelf(BlockRegistration.BEE_LAMP.get());
@@ -864,7 +873,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_PURPLE.get());
         multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_MAGENTA.get());
         multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_PINK.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_FUSCHIA.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_FUCHSIA.get());
         multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_IVORY.get());
         multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_FLOWER.get());
         multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_STRAWBERRY.get());

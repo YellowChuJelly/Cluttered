@@ -1420,6 +1420,24 @@ public class BlockRegistration {
             () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).noCollission()));
     public static final RegistryObject<Block> MINI_FLAG_RAINBOW = registerBlock("mini_flag_rainbow",
             () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).noCollission()));
+    public static final RegistryObject<Block> MINI_FLAG_ACE = registerBlock("mini_flag_ace",
+            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).noCollission()));
+
+    //TODO
+    public static final RegistryObject<Block> ANIMATED_FLAG_ASEXUAL = registerBlock("animated_flag_asexual",
+            () -> new FlatDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).noCollission()));
+    public static final RegistryObject<Block> ANIMATED_FLAG_BISEXUAL = registerBlock("animated_flag_bisexual",
+            () -> new FlatDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).noCollission()));
+    public static final RegistryObject<Block> ANIMATED_FLAG_PANSEXUAL = registerBlock("animated_flag_pansexual",
+            () -> new FlatDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).noCollission()));
+    public static final RegistryObject<Block> ANIMATED_FLAG_LESBIAN = registerBlock("animated_flag_lesbian",
+            () -> new FlatDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).noCollission()));
+    public static final RegistryObject<Block> ANIMATED_FLAG_TRANSGENDER = registerBlock("animated_flag_transgender",
+            () -> new FlatDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).noCollission()));
+    public static final RegistryObject<Block> ANIMATED_FLAG_NONBINARY = registerBlock("animated_flag_nonbinary",
+            () -> new FlatDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).noCollission()));
+    public static final RegistryObject<Block> ANIMATED_FLAG_RAINBOW = registerBlock("animated_flag_rainbow",
+            () -> new FlatDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).noCollission()));
 
 
     //LAMPS
@@ -1613,7 +1631,7 @@ public class BlockRegistration {
             () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.CYAN_WOOL).noOcclusion()));
     public static final RegistryObject<Block> ARMCHAIR_FLOWER = registerBlock("armchair_flower",
             () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noOcclusion()));
-    public static final RegistryObject<Block> ARMCHAIR_FUSCHIA = registerBlock("armchair_fuschia",
+    public static final RegistryObject<Block> ARMCHAIR_FUCHSIA = registerBlock("armchair_fuchsia",
             () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.MAGENTA_WOOL).noOcclusion()));
     public static final RegistryObject<Block> ARMCHAIR_GRAY = registerBlock("armchair_gray",
             () -> new ArmchairBlock(BlockBehaviour.Properties.copy(Blocks.GRAY_WOOL).noOcclusion()));
