@@ -11,6 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.BedBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -300,7 +301,7 @@ public class HandDrillItem extends Item {
         BlockState nextState = getNextBlock(state);
         if (pContext.getPlayer().isCrouching()){
             if (!level.isClientSide) {
-                if (state.getBlock() instanceof MultiblockPlacer){
+                if (state.getBlock() instanceof MultiblockPlacer || state.getBlock() instanceof BedBlock){
                     return InteractionResult.PASS;
                 }
                 if (state.hasProperty(BlockStateProperties.FACING)) {
