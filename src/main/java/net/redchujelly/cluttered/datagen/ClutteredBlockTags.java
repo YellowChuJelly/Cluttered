@@ -307,6 +307,13 @@ public class ClutteredBlockTags extends BlockTagsProvider {
         tag(BlockTags.LEAVES)
                 .add(BlockRegistration.WILLOW_LEAVES.get())
                 .add(BlockRegistration.POPLAR_LEAVES.get());
+        tag(BlockTags.FENCES)
+                .add(BlockRegistration.MARBLE_BALUSTRADE.get())
+                .add(BlockRegistration.MARBLE_PICKET_FENCE.get())
+                .add(BlockRegistration.CHALCEDONY_BALUSTRADE.get())
+                .add(BlockRegistration.CHALCEDONY_PICKET_FENCE.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_BALUSTRADE.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE.get());
     }
 
     public void tagNewWoodset(String woodType){

@@ -1,7 +1,9 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"3": "balustrade_side_chalcedony"
+		"2": "chalcedony_balustrade",
+		"particle": "chalcedony_balustrade"
 	},
 	"elements": [
 		{
@@ -9,12 +11,12 @@
 			"to": [8, 11, 7],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
-				"north": {"uv": [0, 0, 0, 11], "texture": "#3"},
-				"east": {"uv": [0, 0, 7, 11], "texture": "#3"},
-				"south": {"uv": [0, 0, 0, 11], "texture": "#3"},
-				"west": {"uv": [7, 0, 14, 11], "texture": "#3"},
-				"up": {"uv": [0, 7, 0, 0], "texture": "#3"},
-				"down": {"uv": [0, 0, 0, 7], "texture": "#3"}
+				"north": {"uv": [0, 0, 0, 5.5], "texture": "#2"},
+				"east": {"uv": [0, 0, 3.5, 5.5], "texture": "#2"},
+				"south": {"uv": [0, 0, 0, 5.5], "texture": "#2"},
+				"west": {"uv": [4, 0, 7.5, 5.5], "texture": "#2"},
+				"up": {"uv": [0, 3.5, 0, 0], "texture": "#2"},
+				"down": {"uv": [0, 0, 0, 3.5], "texture": "#2"}
 			}
 		}
 	],

@@ -256,6 +256,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.STARRY_CHALCEDONY_PILLAR_BASE.get());
         dropSelf(BlockRegistration.STARRY_CHALCEDONY_PILLAR_DORIC.get());
         dropSelf(BlockRegistration.STARRY_CHALCEDONY_PILLAR_IONIC.get());
+        dropSelf(BlockRegistration.CHALCEDONY_BALUSTRADE.get());
+        dropSelf(BlockRegistration.CHALCEDONY_PICKET_FENCE.get());
 
         add(BlockRegistration.CHALCEDONY_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.CHALCEDONY_WINDOW.get()));
         add(BlockRegistration.CHALCEDONY_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.CHALCEDONY_WINDOW_PANE.get()));
@@ -283,6 +285,9 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_BASE.get());
         dropSelf(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_DORIC.get());
         dropSelf(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_IONIC.get());
+        dropSelf(BlockRegistration.DEEP_CHALCEDONY_BALUSTRADE.get());
+        dropSelf(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE.get());
+
 
         add(BlockRegistration.DEEP_CHALCEDONY_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.DEEP_CHALCEDONY_WINDOW.get()));
         add(BlockRegistration.DEEP_CHALCEDONY_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.DEEP_CHALCEDONY_WINDOW_PANE.get()));
@@ -306,6 +311,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.MARBLE_PILLAR_BASE.get());
         dropSelf(BlockRegistration.MARBLE_PILLAR_DORIC.get());
         dropSelf(BlockRegistration.MARBLE_PILLAR_IONIC.get());
+        dropSelf(BlockRegistration.MARBLE_BALUSTRADE.get());
+        dropSelf(BlockRegistration.MARBLE_PICKET_FENCE.get());
 
         add(BlockRegistration.BLACK_CAT_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.BLACK_CAT_WINDOW.get()));
         add(BlockRegistration.BLACK_CAT_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.BLACK_CAT_WINDOW_PANE.get()));

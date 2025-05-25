@@ -92,6 +92,13 @@ public class ClutteredItemModels extends ItemModelProvider {
         simpleBlockItem(BlockRegistration.ART_NOUVEAU_DOOR);
         simpleBlockItem(BlockRegistration.ART_NOUVEAU_DOOR_DARK);
 
+        balustradeItem(BlockRegistration.MARBLE_BALUSTRADE);
+        balustradeItem(BlockRegistration.CHALCEDONY_BALUSTRADE);
+        balustradeItem(BlockRegistration.DEEP_CHALCEDONY_BALUSTRADE);
+        picketFenceItem(BlockRegistration.MARBLE_PICKET_FENCE);
+        picketFenceItem(BlockRegistration.CHALCEDONY_PICKET_FENCE);
+        picketFenceItem(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE);
+
         standardCubeItem(BlockRegistration.FISH_WALLPAPER, "fish_wallpaper_1");
 
 
@@ -378,6 +385,18 @@ public class ClutteredItemModels extends ItemModelProvider {
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> base) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
                 .texture("texture", new ResourceLocation(Cluttered.MODID, "block/" + ForgeRegistries.BLOCKS.getKey(base.get()).getPath()));
+    }
+    public void balustradeItem(RegistryObject<Block> block) {
+        String id = block.getId().toString().replace("cluttered:", "");
+
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/balustrade"))
+                .texture("2", modLoc("block/" + id));
+    }
+    public void picketFenceItem(RegistryObject<Block> block) {
+        String id = block.getId().toString().replace("cluttered:", "");
+
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/picket_fence"))
+                .texture("2", modLoc("block/" + id));
     }
 
     public void standardCubeItem (RegistryObject<Block> block, String texture) {

@@ -1094,6 +1094,21 @@ public class BlockRegistration {
     public static final RegistryObject<Block> ART_NOUVEAU_DOOR_DARK = registerFuelBlock("art_nouveau_door_dark",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.BROWN), BlockSetType.OAK), 300);
 
+
+    //TODO MOVE THESE TO STONE SETS
+    public static final RegistryObject<Block> MARBLE_BALUSTRADE = registerBlock("marble_balustrade",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> MARBLE_PICKET_FENCE = registerBlock("marble_picket_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> CHALCEDONY_BALUSTRADE = registerBlock("chalcedony_balustrade",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).mapColor(DyeColor.BLUE)));
+    public static final RegistryObject<Block> CHALCEDONY_PICKET_FENCE = registerBlock("chalcedony_picket_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).mapColor(DyeColor.BLUE)));
+    public static final RegistryObject<Block> DEEP_CHALCEDONY_BALUSTRADE = registerBlock("deep_chalcedony_balustrade",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).mapColor(DyeColor.BLUE)));
+    public static final RegistryObject<Block> DEEP_CHALCEDONY_PICKET_FENCE = registerBlock("deep_chalcedony_picket_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).mapColor(DyeColor.BLUE)));
+
     //SMALL FURNITURE
     //MISC
     public static final RegistryObject<Block> BIRDHOUSE_UNPAINTED = registerBlock("birdhouse_unpainted",
