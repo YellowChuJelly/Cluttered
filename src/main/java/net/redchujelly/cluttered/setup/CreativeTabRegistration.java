@@ -246,6 +246,13 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.CHALCEDONY_PILLAR_IONIC.get());
                         output.accept(BlockRegistration.CHALCEDONY_BALUSTRADE.get());
                         output.accept(BlockRegistration.CHALCEDONY_PICKET_FENCE.get());
+
+                        output.accept(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get());
+                        output.accept(BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get());
+                        output.accept(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL.get());
+                        output.accept(BlockRegistration.CHALCEDONY_BRACKET_STAR.get());
+                        output.accept(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL.get());
+
                         output.accept(BlockRegistration.CHALCEDONY_TILES.get());
                         output.accept(BlockRegistration.CHALCEDONY_SMALL_TILES.get());
                         output.accept(BlockRegistration.STARRY_CHISELED_CHALCEDONY.get());
@@ -273,6 +280,13 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_PILLAR_IONIC.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_BALUSTRADE.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE.get());
+
+                        output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN.get());
+                        output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL.get());
+                        output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL.get());
+                        output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR.get());
+                        output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL.get());
+
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_TILES.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_SMALL_TILES.get());
                         output.accept(BlockRegistration.DEEP_STARRY_CHISELED_CHALCEDONY.get());
@@ -300,6 +314,13 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.MARBLE_PILLAR_IONIC.get());
                         output.accept(BlockRegistration.MARBLE_BALUSTRADE.get());
                         output.accept(BlockRegistration.MARBLE_PICKET_FENCE.get());
+
+                        output.accept(BlockRegistration.MARBLE_BRACKET_VICTORIAN.get());
+                        output.accept(BlockRegistration.MARBLE_BRACKET_SCROLL.get());
+                        output.accept(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL.get());
+                        output.accept(BlockRegistration.MARBLE_BRACKET_STAR.get());
+                        output.accept(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL.get());
+
                         output.accept(BlockRegistration.MARBLE_TILES.get());
                         output.accept(BlockRegistration.MARBLE_SMALL_TILES.get());
                         output.accept(BlockRegistration.STARRY_CHISELED_MARBLE.get());

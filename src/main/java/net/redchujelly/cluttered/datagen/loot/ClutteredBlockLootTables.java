@@ -259,6 +259,12 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.CHALCEDONY_BALUSTRADE.get());
         dropSelf(BlockRegistration.CHALCEDONY_PICKET_FENCE.get());
 
+        dropSelf(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get());
+        dropSelf(BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get());
+        dropSelf(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL.get());
+        dropSelf(BlockRegistration.CHALCEDONY_BRACKET_STAR.get());
+        dropSelf(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL.get());
+
         add(BlockRegistration.CHALCEDONY_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.CHALCEDONY_WINDOW.get()));
         add(BlockRegistration.CHALCEDONY_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.CHALCEDONY_WINDOW_PANE.get()));
 
@@ -288,6 +294,12 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_BALUSTRADE.get());
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE.get());
 
+        dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN.get());
+        dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL.get());
+        dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL.get());
+        dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR.get());
+        dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL.get());
+
 
         add(BlockRegistration.DEEP_CHALCEDONY_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.DEEP_CHALCEDONY_WINDOW.get()));
         add(BlockRegistration.DEEP_CHALCEDONY_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.DEEP_CHALCEDONY_WINDOW_PANE.get()));
@@ -313,6 +325,12 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.MARBLE_PILLAR_IONIC.get());
         dropSelf(BlockRegistration.MARBLE_BALUSTRADE.get());
         dropSelf(BlockRegistration.MARBLE_PICKET_FENCE.get());
+
+        dropSelf(BlockRegistration.MARBLE_BRACKET_VICTORIAN.get());
+        dropSelf(BlockRegistration.MARBLE_BRACKET_SCROLL.get());
+        dropSelf(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL.get());
+        dropSelf(BlockRegistration.MARBLE_BRACKET_STAR.get());
+        dropSelf(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL.get());
 
         add(BlockRegistration.BLACK_CAT_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.BLACK_CAT_WINDOW.get()));
         add(BlockRegistration.BLACK_CAT_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.BLACK_CAT_WINDOW_PANE.get()));

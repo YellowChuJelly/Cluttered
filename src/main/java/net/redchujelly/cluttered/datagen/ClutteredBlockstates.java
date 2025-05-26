@@ -17,10 +17,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.block.custom.EyeBlock;
 import net.redchujelly.cluttered.block.custom.HeartCakeBlock;
-import net.redchujelly.cluttered.block.custom.furniture.CustomJukeboxBlock;
-import net.redchujelly.cluttered.block.custom.furniture.GarlandBlock;
-import net.redchujelly.cluttered.block.custom.furniture.MediumFurnitureBlock;
-import net.redchujelly.cluttered.block.custom.furniture.RubiksCubeBlock;
+import net.redchujelly.cluttered.block.custom.furniture.*;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
 import net.redchujelly.cluttered.util.GarlandOffset;
@@ -484,20 +481,24 @@ public class ClutteredBlockstates extends BlockStateProvider {
         balustradeBlock(BlockRegistration.CHALCEDONY_BALUSTRADE);
         picketFenceBlock(BlockRegistration.MARBLE_PICKET_FENCE);
         picketFenceBlock(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE);
-        picketFenceBlock(BlockRegistration.CHALCEDONY_PICKET_FENCE);
 
-        //BlockModelBuilder post = models().getBuilder("block/marble_balustrade_post").parent(models().getExistingFile(modLoc("block/balustrade_post"))).texture("2", modLoc("block/marble_balustrade"));
-        //BlockModelBuilder side = models().getBuilder("block/marble_balustrade_side").parent(models().getExistingFile(modLoc("block/balustrade_side"))).texture("2", modLoc("block/marble_balustrade"));
-        //this.getMultipartBuilder(BlockRegistration.MARBLE_BALUSTRADE.get())
-        //        .part().modelFile(post).addModel().end()
-        //        .part().modelFile(side).rotationY((int) Direction.NORTH.getOpposite().toYRot()).addModel()
-        //                .condition(FenceBlock.NORTH, true).end()
-        //        .part().modelFile(side).rotationY((int) Direction.EAST.getOpposite().toYRot()).addModel()
-        //                .condition(FenceBlock.EAST, true).end()
-        //        .part().modelFile(side).rotationY((int) Direction.SOUTH.getOpposite().toYRot()).addModel()
-        //                .condition(FenceBlock.SOUTH, true).end()
-        //        .part().modelFile(side).rotationY((int) Direction.WEST.getOpposite().toYRot()).addModel()
-        //                .condition(FenceBlock.WEST, true).end();
+        bracketBlock(BlockRegistration.MARBLE_BRACKET_VICTORIAN);
+        bracketBlock(BlockRegistration.MARBLE_BRACKET_SCROLL);
+        bracketBlock(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL);
+        bracketBlock(BlockRegistration.MARBLE_BRACKET_STAR);
+        bracketBlock(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL);
+
+        bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN);
+        bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_SCROLL);
+        bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL);
+        bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_STAR);
+        bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL);
+
+        bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN);
+        bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL);
+        bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL);
+        bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR);
+        bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL);
 
         //MISC FULL BLOCKS
         simpleBlockWithItem(BlockRegistration.BLACK_CAT_WINDOW.get(), models().cubeAll("black_cat_window", modLoc("block/black_cat_window")).renderType("translucent"));
@@ -1362,7 +1363,35 @@ public class ClutteredBlockstates extends BlockStateProvider {
         BlockModelBuilder post = models().getBuilder("block/" + id + "_post").parent(models().getExistingFile(modLoc("block/balustrade_post"))).texture("2", modLoc("block/" + id)).texture("particle", modLoc("block/" + id));
         BlockModelBuilder side = models().getBuilder("block/" + id + "_side").parent(models().getExistingFile(modLoc("block/balustrade_side"))).texture("2", modLoc("block/" + id)).texture("particle", modLoc("block/" + id));
         this.getMultipartBuilder(block.get())
-                .part().modelFile(post).addModel().end()
+                .part().modelFile(post).addModel().useOr().nestedGroup()
+                    .condition(FenceBlock.NORTH, true)
+                    .condition(FenceBlock.SOUTH, false)
+                .end()
+                .nestedGroup()
+                    .condition(FenceBlock.SOUTH, true)
+                    .condition(FenceBlock.NORTH, false)
+                .end()
+                .nestedGroup()
+                    .condition(FenceBlock.EAST, true)
+                    .condition(FenceBlock.WEST, false)
+                .end()
+                .nestedGroup()
+                    .condition(FenceBlock.WEST, true)
+                    .condition(FenceBlock.EAST, false)
+                .end()
+                .nestedGroup()
+                    .condition(FenceBlock.WEST, true)
+                    .condition(FenceBlock.EAST, true)
+                    .condition(FenceBlock.NORTH, true)
+                    .condition(FenceBlock.SOUTH, true)
+                .end()
+                .nestedGroup()
+                    .condition(FenceBlock.WEST, false)
+                    .condition(FenceBlock.EAST, false)
+                    .condition(FenceBlock.NORTH, false)
+                    .condition(FenceBlock.SOUTH, false)
+                .end()
+                .end()
                 .part().modelFile(side).rotationY((int) Direction.NORTH.getOpposite().toYRot()).addModel()
                 .condition(FenceBlock.NORTH, true).end()
                 .part().modelFile(side).rotationY((int) Direction.EAST.getOpposite().toYRot()).addModel()
@@ -1372,6 +1401,19 @@ public class ClutteredBlockstates extends BlockStateProvider {
                 .part().modelFile(side).rotationY((int) Direction.WEST.getOpposite().toYRot()).addModel()
                 .condition(FenceBlock.WEST, true).end();
     }
+
+    private void bracketBlock(RegistryObject<Block> block){
+        String id = block.getId().toString().replace("cluttered:", "");
+
+        this.getVariantBuilder(block.get())
+                .forAllStates(state -> ConfiguredModel.builder().modelFile(
+                        //OK the formatting looks weird and is bad but its just a ternary operator
+                                state.getValue(BracketBlock.OFFSET) ?
+                                        models().getBuilder("block/" + id + "_offset").parent(models().getExistingFile(modLoc("block/bracket_offset"))).texture("missing", "block/" + id).texture("particle", "block/" + id) :
+                                        models().getBuilder("block/" + id + "_base").parent(models().getExistingFile(modLoc("block/bracket_base"))).texture("missing", "block/" + id).texture("particle", "block/" + id))
+                        .rotationY((int)state.getValue(BlockStateProperties.HORIZONTAL_FACING).getOpposite().toYRot()).build());
+    }
+
     private void picketFenceBlock(RegistryObject<Block> block){
         String id = block.getId().toString().replace("cluttered:", "");
 

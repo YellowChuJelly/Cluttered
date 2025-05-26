@@ -473,10 +473,22 @@ public class BlockRegistration {
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)));
     public static final RegistryObject<Block> STARRY_CHALCEDONY_PILLAR_IONIC = registerBlock("chalcedony_pillar_starry_ionic",
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)));
+
+    public static final RegistryObject<Block> CHALCEDONY_BRACKET_VICTORIAN = registerBlock("chalcedony_victorian_bracket",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
+    public static final RegistryObject<Block> CHALCEDONY_BRACKET_BOW_SCROLL = registerBlock("chalcedony_victorian_bracket_bow_scroll",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
+    public static final RegistryObject<Block> CHALCEDONY_BRACKET_SCROLL = registerBlock("chalcedony_victorian_bracket_scroll",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
+    public static final RegistryObject<Block> CHALCEDONY_BRACKET_STAR = registerBlock("chalcedony_victorian_bracket_star",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
+    public static final RegistryObject<Block> CHALCEDONY_BRACKET_STAR_SCROLL = registerBlock("chalcedony_victorian_bracket_star_scroll",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
+
     public static final RegistryObject<Block> CHALCEDONY_WINDOW = registerBlock("chalcedony_window",
-            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.LIGHT_BLUE)));
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.WHITE)));
     public static final RegistryObject<Block> CHALCEDONY_WINDOW_PANE = registerBlock("chalcedony_window_pane",
-            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.LIGHT_BLUE)));
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.WHITE)));
 
     //DEEP CHALCEDONY SET
     public static final RegistryObject<Block> DEEP_CHALCEDONY = registerBlock("deep_raw_chalcedony",
@@ -525,6 +537,18 @@ public class BlockRegistration {
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE)));
     public static final RegistryObject<Block> DEEP_STARRY_CHALCEDONY_PILLAR_IONIC = registerBlock("deep_chalcedony_pillar_starry_ionic",
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE)));
+    public static final RegistryObject<Block> DEEP_CHALCEDONY_BRACKET_VICTORIAN = registerBlock("deep_chalcedony_victorian_bracket",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE).noOcclusion()));
+    public static final RegistryObject<Block> DEEP_CHALCEDONY_BRACKET_BOW_SCROLL = registerBlock("deep_chalcedony_victorian_bracket_bow_scroll",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE).noOcclusion()));
+    public static final RegistryObject<Block> DEEP_CHALCEDONY_BRACKET_SCROLL = registerBlock("deep_chalcedony_victorian_bracket_scroll",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE).noOcclusion()));
+    public static final RegistryObject<Block> DEEP_CHALCEDONY_BRACKET_STAR = registerBlock("deep_chalcedony_victorian_bracket_star",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE).noOcclusion()));
+    public static final RegistryObject<Block> DEEP_CHALCEDONY_BRACKET_STAR_SCROLL = registerBlock("deep_chalcedony_victorian_bracket_star_scroll",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE).noOcclusion()));
+
+
     public static final RegistryObject<Block> DEEP_CHALCEDONY_WINDOW = registerBlock("deep_chalcedony_window",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.LIGHT_BLUE)));
     public static final RegistryObject<Block> DEEP_CHALCEDONY_WINDOW_PANE = registerBlock("deep_chalcedony_window_pane",
@@ -568,6 +592,18 @@ public class BlockRegistration {
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)));
     public static final RegistryObject<Block> MARBLE_PILLAR_IONIC = registerBlock("marble_pillar_ionic",
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)));
+
+    //TODO maybe change to the other type
+    public static final RegistryObject<Block> MARBLE_BRACKET_VICTORIAN = registerBlock("marble_victorian_bracket",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
+    public static final RegistryObject<Block> MARBLE_BRACKET_BOW_SCROLL = registerBlock("marble_victorian_bracket_bow_scroll",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
+    public static final RegistryObject<Block> MARBLE_BRACKET_SCROLL = registerBlock("marble_victorian_bracket_scroll",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
+    public static final RegistryObject<Block> MARBLE_BRACKET_STAR = registerBlock("marble_victorian_bracket_star",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
+    public static final RegistryObject<Block> MARBLE_BRACKET_STAR_SCROLL = registerBlock("marble_victorian_bracket_star_scroll",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
 
     //MISC FULL BLOCKS
     //CAT WINDOWS

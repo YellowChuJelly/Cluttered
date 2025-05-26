@@ -99,6 +99,24 @@ public class ClutteredItemModels extends ItemModelProvider {
         picketFenceItem(BlockRegistration.CHALCEDONY_PICKET_FENCE);
         picketFenceItem(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE);
 
+        bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL);
+        bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL);
+        bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR);
+        bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN);
+        bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL);
+
+        bracketItem(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL);
+        bracketItem(BlockRegistration.CHALCEDONY_BRACKET_SCROLL);
+        bracketItem(BlockRegistration.CHALCEDONY_BRACKET_STAR);
+        bracketItem(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN);
+        bracketItem(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL);
+
+        bracketItem(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL);
+        bracketItem(BlockRegistration.MARBLE_BRACKET_SCROLL);
+        bracketItem(BlockRegistration.MARBLE_BRACKET_STAR);
+        bracketItem(BlockRegistration.MARBLE_BRACKET_VICTORIAN);
+        bracketItem(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL);
+
         standardCubeItem(BlockRegistration.FISH_WALLPAPER, "fish_wallpaper_1");
 
 
@@ -391,6 +409,12 @@ public class ClutteredItemModels extends ItemModelProvider {
 
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/balustrade"))
                 .texture("2", modLoc("block/" + id));
+    }
+    public void bracketItem(RegistryObject<Block> block) {
+        String id = block.getId().toString().replace("cluttered:", "");
+
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/bracket_base"))
+                .texture("missing", modLoc("block/" + id));
     }
     public void picketFenceItem(RegistryObject<Block> block) {
         String id = block.getId().toString().replace("cluttered:", "");
