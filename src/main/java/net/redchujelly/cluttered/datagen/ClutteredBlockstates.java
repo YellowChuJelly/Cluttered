@@ -874,6 +874,31 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         //FURNITURE
 
+        //KITCHEN SETS
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET_MINI);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET_GLASS);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET_OPEN);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET_OUTER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET_INNER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_BROWN_COUNTER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_INNER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_LEFT);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_RIGHT);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_SINK);
+
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_MINI);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_GLASS);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_OPEN);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_OUTER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_INNER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_INNER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_LEFT);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_RIGHT);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_SINK);
+
         hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SCALE);
 
         hFacingBlockWithCustomModel(BlockRegistration.ANCIENT_CODEX);

@@ -690,6 +690,31 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.HONEYCOMB_LAMP.get());
         dropSelf(BlockRegistration.UNLIVING_CHAIR.get());
 
+        //KITCHEN SETS
+        dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET_GLASS.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET_MINI.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET_OUTER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET_INNER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET_OPEN.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_BROWN_COUNTER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_INNER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_LEFT.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_RIGHT.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_SINK.get());
+
+        dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_GLASS.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_MINI.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_OUTER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_INNER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_OPEN.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_INNER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_LEFT.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_RIGHT.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_SINK.get());
+
         //SMALL FURNITURE
         //CHAIRS
         dropSelf(BlockRegistration.APPLE_CHAIR.get());

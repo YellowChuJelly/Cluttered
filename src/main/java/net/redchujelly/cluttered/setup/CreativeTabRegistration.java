@@ -814,6 +814,30 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.TABLE_PLAIN.get());
                         output.accept(BlockRegistration.TABLE_TABLECLOTH.get());
 
+                        output.accept(BlockRegistration.KITCHEN_SET_BROWN_COUNTER.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_INNER_CORNER.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_RIGHT.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_LEFT.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_SINK.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_BROWN_CABINET.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_BROWN_CABINET_MINI.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_BROWN_CABINET_GLASS.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_BROWN_CABINET_GLASS.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_BROWN_CABINET_INNER_CORNER.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_BROWN_CABINET_OUTER_CORNER.get());
+
+                        output.accept(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_INNER_CORNER.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_RIGHT.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_LEFT.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_SINK.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_MINI.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_GLASS.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_GLASS.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_INNER_CORNER.get());
+                        output.accept(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_OUTER_CORNER.get());
+
                         output.accept(BlockRegistration.BLACK_CAT_COUNTER_DRAWERS.get());
                         output.accept(BlockRegistration.BLACK_CAT_COUNTER_LEFT_DOOR.get());
                         output.accept(BlockRegistration.BLACK_CAT_COUNTER_RIGHT_DOOR.get());

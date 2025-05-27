@@ -3,7 +3,8 @@
 	"texture_size": [32, 32],
 	"render_type": "minecraft:cutout",
 	"textures": {
-		"1": "cluttered:block/honeycomb_lamp"
+		"1": "cluttered:block/honeycomb_lamp",
+		"particle": "cluttered:block/honeycomb_lamp"
 	},
 	"elements": [
 		{

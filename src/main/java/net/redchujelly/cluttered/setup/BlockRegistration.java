@@ -1339,6 +1339,54 @@ public class BlockRegistration {
     public static final RegistryObject<Block> HONEYCOMB_LAMP = registerBlock("honeycomb_lamp",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
 
+    //kitchen sets
+    public static final RegistryObject<Block> KITCHEN_SET_BROWN_CABINET = registerBlock("kitchen_set_brown_cabinet",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_BROWN_CABINET_MINI = registerBlock("kitchen_set_brown_cabinet_mini",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_BROWN_CABINET_GLASS = registerBlock("kitchen_set_brown_cabinet_glass",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_BROWN_CABINET_INNER_CORNER = registerBlock("kitchen_set_brown_cabinet_inner_corner",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_BROWN_CABINET_OUTER_CORNER = registerBlock("kitchen_set_brown_cabinet_outer_corner",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_BROWN_CABINET_OPEN = registerBlock("kitchen_set_brown_cabinet_open",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_BROWN_COUNTER = registerBlock("kitchen_set_brown_counter",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_BROWN_COUNTER_INNER_CORNER = registerBlock("kitchen_set_brown_counter_inner_corner",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_LEFT = registerBlock("kitchen_set_brown_counter_outer_corner_left",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_RIGHT = registerBlock("kitchen_set_brown_counter_outer_corner_right",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_BROWN_COUNTER_SINK = registerBlock("kitchen_set_brown_counter_sink",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+
+    public static final RegistryObject<Block> KITCHEN_SET_LIGHT_GREEN_CABINET = registerBlock("kitchen_set_light_green_cabinet",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_LIGHT_GREEN_CABINET_MINI = registerBlock("kitchen_set_light_green_cabinet_mini",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_LIGHT_GREEN_CABINET_GLASS = registerBlock("kitchen_set_light_green_cabinet_glass",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_LIGHT_GREEN_CABINET_OPEN = registerBlock("kitchen_set_light_green_cabinet_open",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_LIGHT_GREEN_CABINET_INNER_CORNER = registerBlock("kitchen_set_light_green_cabinet_inner_corner",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_LIGHT_GREEN_CABINET_OUTER_CORNER = registerBlock("kitchen_set_light_green_cabinet_outer_corner",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_LIGHT_GREEN_COUNTER = registerBlock("kitchen_set_light_green_counter",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_LIGHT_GREEN_COUNTER_INNER_CORNER = registerBlock("kitchen_set_light_green_counter_inner_corner",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_LEFT = registerBlock("kitchen_set_light_green_counter_outer_corner_left",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_RIGHT = registerBlock("kitchen_set_light_green_counter_outer_corner_right",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> KITCHEN_SET_LIGHT_GREEN_COUNTER_SINK = registerBlock("kitchen_set_light_green_counter_sink",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+
+
     public static final RegistryObject<Block> CHINA_CABINET = registerBlock("china_cabinet",
             () -> new GumballMachineBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
     public static final RegistryObject<Block> GENERAL_STORE_CABINET = registerBlock("general_store_cabinet",

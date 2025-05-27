@@ -154,6 +154,32 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.CARDBOARD_BOX_OPEN);
         blockitemFromModel(BlockRegistration.CARDBOARD_BOX_CLUTTERED);
 
+        //KITCHEN SETS
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET_MINI);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET_GLASS);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET_OPEN);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET_INNER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET_OUTER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_BROWN_COUNTER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_INNER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_RIGHT);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_LEFT);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_SINK);
+
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_MINI);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_GLASS);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_OPEN);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_INNER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_OUTER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_INNER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_RIGHT);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_LEFT);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_SINK);
+
+
         blockitemFromModel(BlockRegistration.BIKE_YELLOW);
         blockitemFromModel(BlockRegistration.BIKE_YELLOW_FLOWERS);
         blockitemFromModel(BlockRegistration.BIKE_BLUE);
