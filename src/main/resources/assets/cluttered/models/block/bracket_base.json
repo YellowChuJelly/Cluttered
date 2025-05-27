@@ -1,11 +1,16 @@
 {
 	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
 	"render_type": "minecraft:cutout",
+	"textures": {
+		"particle": "cluttered:block/deep_chalcedony_victorian_bracket_bow_scroll"
+	},
 	"elements": [
 		{
 			"from": [8, 0, 0],
 			"to": [8, 15.98, 15.98],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"color": 2,
 			"faces": {
 				"north": {"uv": [0, 0, 0, 16], "texture": "#missing"},
 				"east": {"uv": [0, 0, 16, 16], "texture": "#missing"},
@@ -19,6 +24,7 @@
 			"from": [7.5, 15.98, 0],
 			"to": [8.5, 15.98, 15.98],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"color": 0,
 			"faces": {
 				"north": {"uv": [0, 0, 1, 0], "texture": "#missing"},
 				"east": {"uv": [0, 0, 16, 0], "texture": "#missing"},
@@ -32,6 +38,7 @@
 			"from": [7.5, 0, 15.98],
 			"to": [8.5, 15.98, 15.98],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"color": 9,
 			"faces": {
 				"north": {"uv": [0, 0, 1, 16], "texture": "#missing"},
 				"east": {"uv": [0, 0, 0, 16], "texture": "#missing"},
@@ -42,6 +49,11 @@
 			}
 		}
 	],
+	"display": {
+		"gui": {
+			"rotation": [0, 90, 0]
+		}
+	},
 	"groups": [
 		{
 			"name": "group",

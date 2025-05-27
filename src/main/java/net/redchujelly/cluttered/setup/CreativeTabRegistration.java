@@ -249,6 +249,7 @@ public class CreativeTabRegistration {
 
                         output.accept(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get());
                         output.accept(BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get());
+                        output.accept(BlockRegistration.CHALCEDONY_BRACKET_BOW.get());
                         output.accept(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL.get());
                         output.accept(BlockRegistration.CHALCEDONY_BRACKET_STAR.get());
                         output.accept(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL.get());
@@ -283,6 +284,7 @@ public class CreativeTabRegistration {
 
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL.get());
+                        output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL.get());
@@ -317,6 +319,7 @@ public class CreativeTabRegistration {
 
                         output.accept(BlockRegistration.MARBLE_BRACKET_VICTORIAN.get());
                         output.accept(BlockRegistration.MARBLE_BRACKET_SCROLL.get());
+                        output.accept(BlockRegistration.MARBLE_BRACKET_BOW.get());
                         output.accept(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL.get());
                         output.accept(BlockRegistration.MARBLE_BRACKET_STAR.get());
                         output.accept(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL.get());

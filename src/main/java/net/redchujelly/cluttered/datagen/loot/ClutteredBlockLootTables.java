@@ -262,6 +262,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get());
         dropSelf(BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get());
         dropSelf(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL.get());
+        dropSelf(BlockRegistration.CHALCEDONY_BRACKET_BOW.get());
         dropSelf(BlockRegistration.CHALCEDONY_BRACKET_STAR.get());
         dropSelf(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL.get());
 
@@ -297,6 +298,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN.get());
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL.get());
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL.get());
+        dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW.get());
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR.get());
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL.get());
 
@@ -329,6 +331,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.MARBLE_BRACKET_VICTORIAN.get());
         dropSelf(BlockRegistration.MARBLE_BRACKET_SCROLL.get());
         dropSelf(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL.get());
+        dropSelf(BlockRegistration.MARBLE_BRACKET_BOW.get());
         dropSelf(BlockRegistration.MARBLE_BRACKET_STAR.get());
         dropSelf(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL.get());
 

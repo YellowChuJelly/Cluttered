@@ -100,18 +100,21 @@ public class ClutteredItemModels extends ItemModelProvider {
         picketFenceItem(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE);
 
         bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL);
+        bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW);
         bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL);
         bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR);
         bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN);
         bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL);
 
         bracketItem(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL);
+        bracketItem(BlockRegistration.CHALCEDONY_BRACKET_BOW);
         bracketItem(BlockRegistration.CHALCEDONY_BRACKET_SCROLL);
         bracketItem(BlockRegistration.CHALCEDONY_BRACKET_STAR);
         bracketItem(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN);
         bracketItem(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL);
 
         bracketItem(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL);
+        bracketItem(BlockRegistration.MARBLE_BRACKET_BOW);
         bracketItem(BlockRegistration.MARBLE_BRACKET_SCROLL);
         bracketItem(BlockRegistration.MARBLE_BRACKET_STAR);
         bracketItem(BlockRegistration.MARBLE_BRACKET_VICTORIAN);

@@ -476,6 +476,8 @@ public class BlockRegistration {
 
     public static final RegistryObject<Block> CHALCEDONY_BRACKET_VICTORIAN = registerBlock("chalcedony_victorian_bracket",
             () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
+    public static final RegistryObject<Block> CHALCEDONY_BRACKET_BOW = registerBlock("chalcedony_victorian_bracket_bow",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
     public static final RegistryObject<Block> CHALCEDONY_BRACKET_BOW_SCROLL = registerBlock("chalcedony_victorian_bracket_bow_scroll",
             () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
     public static final RegistryObject<Block> CHALCEDONY_BRACKET_SCROLL = registerBlock("chalcedony_victorian_bracket_scroll",
@@ -537,7 +539,10 @@ public class BlockRegistration {
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE)));
     public static final RegistryObject<Block> DEEP_STARRY_CHALCEDONY_PILLAR_IONIC = registerBlock("deep_chalcedony_pillar_starry_ionic",
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE)));
+
     public static final RegistryObject<Block> DEEP_CHALCEDONY_BRACKET_VICTORIAN = registerBlock("deep_chalcedony_victorian_bracket",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE).noOcclusion()));
+    public static final RegistryObject<Block> DEEP_CHALCEDONY_BRACKET_BOW = registerBlock("deep_chalcedony_victorian_bracket_bow",
             () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE).noOcclusion()));
     public static final RegistryObject<Block> DEEP_CHALCEDONY_BRACKET_BOW_SCROLL = registerBlock("deep_chalcedony_victorian_bracket_bow_scroll",
             () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE).noOcclusion()));
@@ -595,6 +600,8 @@ public class BlockRegistration {
 
     //TODO maybe change to the other type
     public static final RegistryObject<Block> MARBLE_BRACKET_VICTORIAN = registerBlock("marble_victorian_bracket",
+            () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
+    public static final RegistryObject<Block> MARBLE_BRACKET_BOW = registerBlock("marble_victorian_bracket_bow",
             () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
     public static final RegistryObject<Block> MARBLE_BRACKET_BOW_SCROLL = registerBlock("marble_victorian_bracket_bow_scroll",
             () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));

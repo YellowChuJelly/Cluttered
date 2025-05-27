@@ -485,18 +485,21 @@ public class ClutteredBlockstates extends BlockStateProvider {
         bracketBlock(BlockRegistration.MARBLE_BRACKET_VICTORIAN);
         bracketBlock(BlockRegistration.MARBLE_BRACKET_SCROLL);
         bracketBlock(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL);
+        bracketBlock(BlockRegistration.MARBLE_BRACKET_BOW);
         bracketBlock(BlockRegistration.MARBLE_BRACKET_STAR);
         bracketBlock(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL);
 
         bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN);
         bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_SCROLL);
         bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL);
+        bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_BOW);
         bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_STAR);
         bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL);
 
         bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN);
         bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL);
         bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL);
+        bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW);
         bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR);
         bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL);
 
@@ -1408,10 +1411,13 @@ public class ClutteredBlockstates extends BlockStateProvider {
         this.getVariantBuilder(block.get())
                 .forAllStates(state -> ConfiguredModel.builder().modelFile(
                         //OK the formatting looks weird and is bad but its just a ternary operator
+                        //for which model to use (offset or not) and then another couple of ternary operators
+                        //to decide if its flipped or not
+                        //I love ternary operators i think <3
                                 state.getValue(BracketBlock.OFFSET) ?
                                         models().getBuilder("block/" + id + "_offset").parent(models().getExistingFile(modLoc("block/bracket_offset"))).texture("missing", "block/" + id).texture("particle", "block/" + id) :
                                         models().getBuilder("block/" + id + "_base").parent(models().getExistingFile(modLoc("block/bracket_base"))).texture("missing", "block/" + id).texture("particle", "block/" + id))
-                        .rotationY((int)state.getValue(BlockStateProperties.HORIZONTAL_FACING).getOpposite().toYRot()).build());
+                        .rotationY(state.getValue(BracketBlock.IS_UP) ? (int)state.getValue(BlockStateProperties.HORIZONTAL_FACING).getOpposite().toYRot() : (int)state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot()).rotationX(state.getValue(BracketBlock.IS_UP) ? 0 : 180).build());
     }
 
     private void picketFenceBlock(RegistryObject<Block> block){

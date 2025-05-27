@@ -25,12 +25,17 @@ import net.redchujelly.cluttered.setup.ItemRegistration;
 
 public class BracketBlock extends SmallFurnitureBlock {
 
-    private static final VoxelShape SHAPE_NORTH = Shapes.join(Block.box(7.5, 10, 0, 8.5, 16, 16), Block.box(7.5, 0, 10, 8.5, 10, 16), BooleanOp.OR);
-    private static final VoxelShape SHAPE_EAST =  Shapes.join(Block.box(0, 10, 7.5, 16, 16, 8.5), Block.box(0, 0, 7.5, 6, 10, 8.5), BooleanOp.OR);
-    private static final VoxelShape SHAPE_SOUTH = Shapes.join( Block.box(7.5, 10, 0, 8.5, 16, 16), Block.box(7.5, 0, 0, 8.5, 10, 6), BooleanOp.OR);
-    private static final VoxelShape SHAPE_WEST = Shapes.join(Block.box(0, 10, 7.5, 16, 16, 8.5), Block.box(10, 0, 7.5, 16, 10, 8.5), BooleanOp.OR);
+    private static final VoxelShape SHAPE_NORTH_UP = Shapes.join(Block.box(7, 10, 0, 9, 16, 16), Block.box(7, 0, 10, 9, 16, 16), BooleanOp.OR);
+    private static final VoxelShape SHAPE_NORTH_DOWN = Shapes.join(Block.box(7, 0, 0, 9, 6, 16), Block.box(7, 0, 10, 9, 16, 16), BooleanOp.OR);
+    private static final VoxelShape SHAPE_EAST_UP =  Shapes.join(Block.box(0, 10, 7, 16, 16, 9), Block.box(0, 0, 7, 6, 16, 9), BooleanOp.OR);
+    private static final VoxelShape SHAPE_EAST_DOWN =  Shapes.join(Block.box(0, 0, 7, 16, 6, 9), Block.box(0, 0, 7, 6, 16, 9), BooleanOp.OR);
+    private static final VoxelShape SHAPE_SOUTH_UP = Shapes.join( Block.box(7, 10, 0, 9, 16, 16), Block.box(7, 0, 0, 9, 16, 6), BooleanOp.OR);
+    private static final VoxelShape SHAPE_SOUTH_DOWN = Shapes.join( Block.box(7, 0, 0, 9, 6, 16), Block.box(7, 0, 0, 9, 16, 6), BooleanOp.OR);
+    private static final VoxelShape SHAPE_WEST_UP = Shapes.join(Block.box(0, 10, 7, 16, 16, 9), Block.box(10, 0, 7, 16, 16, 9), BooleanOp.OR);
+    private static final VoxelShape SHAPE_WEST_DOWN = Shapes.join(Block.box(0, 0, 7, 16, 6, 9), Block.box(10, 0, 7, 16, 16, 9), BooleanOp.OR);
 
     public static final BooleanProperty OFFSET = BooleanProperty.create("offset");
+    public static final BooleanProperty IS_UP = BooleanProperty.create("is_up");
 
     public BracketBlock(Properties pProperties) {
         super(pProperties);
@@ -40,12 +45,15 @@ public class BracketBlock extends SmallFurnitureBlock {
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
         Direction clickedFace = pContext.getClickedFace();
+        boolean shouldBeUP = pContext.getClickLocation().y - pContext.getClickedPos().getY() > 0.5;
         if(clickedFace.equals(Direction.DOWN) || clickedFace.equals(Direction.UP)){
-            clickedFace = pContext.getHorizontalDirection();
+            clickedFace = pContext.getHorizontalDirection().getOpposite();
+            shouldBeUP = clickedFace.equals(Direction.UP);
         }
         BlockState behindState = pContext.getLevel().getBlockState(pContext.getClickedPos().relative(clickedFace.getOpposite()));
         return this.defaultBlockState().setValue(FACING, clickedFace)
-                .setValue(OFFSET, behindState.is(BlockTags.FENCES) || behindState.is(BlockTags.WOODEN_FENCES));
+                .setValue(OFFSET, behindState.is(BlockTags.FENCES) || behindState.is(BlockTags.WOODEN_FENCES))
+                .setValue(IS_UP, shouldBeUP);
     }
 
     @Override
@@ -75,17 +83,18 @@ public class BracketBlock extends SmallFurnitureBlock {
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         super.createBlockStateDefinition(pBuilder);
-        pBuilder.add(OFFSET);
+        pBuilder.add(OFFSET).add(IS_UP);
     }
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         Direction facing = pState.getValue(FACING);
+        boolean is_up = pState.getValue(IS_UP);
         return switch (facing) {
-            case SOUTH -> SHAPE_SOUTH;
-            case EAST -> SHAPE_EAST;
-            case WEST -> SHAPE_WEST;
-            default -> SHAPE_NORTH;
+            case SOUTH -> is_up ? SHAPE_SOUTH_UP : SHAPE_SOUTH_DOWN;
+            case EAST -> is_up ? SHAPE_EAST_UP : SHAPE_EAST_DOWN;
+            case WEST -> is_up ? SHAPE_WEST_UP : SHAPE_WEST_DOWN;
+            default -> is_up ? SHAPE_NORTH_UP : SHAPE_NORTH_DOWN;
         };
     }
 }
