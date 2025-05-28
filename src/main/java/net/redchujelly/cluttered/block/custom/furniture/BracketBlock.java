@@ -47,14 +47,16 @@ public class BracketBlock extends SmallFurnitureBlock {
         Direction clickedFace = pContext.getClickedFace();
         boolean shouldBeUP = pContext.getClickLocation().y - pContext.getClickedPos().getY() > 0.5;
         if(clickedFace.equals(Direction.DOWN) || clickedFace.equals(Direction.UP)){
+            shouldBeUP = clickedFace.equals(Direction.DOWN);
             clickedFace = pContext.getHorizontalDirection().getOpposite();
-            shouldBeUP = clickedFace.equals(Direction.UP);
         }
         BlockState behindState = pContext.getLevel().getBlockState(pContext.getClickedPos().relative(clickedFace.getOpposite()));
         return this.defaultBlockState().setValue(FACING, clickedFace)
                 .setValue(OFFSET, behindState.is(BlockTags.FENCES) || behindState.is(BlockTags.WOODEN_FENCES))
                 .setValue(IS_UP, shouldBeUP);
     }
+
+
 
     @Override
     public BlockState updateShape(BlockState pState, Direction pDirection, BlockState pNeighborState, LevelAccessor pLevel, BlockPos pPos, BlockPos pNeighborPos) {
