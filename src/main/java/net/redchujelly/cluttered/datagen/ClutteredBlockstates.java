@@ -899,6 +899,54 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_RIGHT);
         hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_SINK);
 
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PINK_CABINET);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PINK_CABINET_MINI);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PINK_CABINET_GLASS);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PINK_CABINET_OPEN);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PINK_CABINET_OUTER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PINK_CABINET_INNER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PINK_COUNTER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PINK_COUNTER_INNER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PINK_COUNTER_OUTER_CORNER_LEFT);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PINK_COUNTER_OUTER_CORNER_RIGHT);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PINK_COUNTER_SINK);
+
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PURPLE_CABINET);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_MINI);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_GLASS);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_OPEN);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_OUTER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_INNER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_INNER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_OUTER_CORNER_LEFT);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_OUTER_CORNER_RIGHT);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_SINK);
+
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_WHITE_CABINET);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_WHITE_CABINET_MINI);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_WHITE_CABINET_GLASS);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_WHITE_CABINET_OPEN);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_WHITE_CABINET_OUTER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_WHITE_CABINET_INNER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_WHITE_COUNTER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_INNER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_OUTER_CORNER_LEFT);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_OUTER_CORNER_RIGHT);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_SINK);
+
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_YELLOW_CABINET);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_MINI);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_GLASS);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_OPEN);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_OUTER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_INNER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_INNER_CORNER);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_LEFT);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_RIGHT);
+        hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_SINK);
+
         hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SCALE);
 
         hFacingBlockWithCustomModel(BlockRegistration.ANCIENT_CODEX);

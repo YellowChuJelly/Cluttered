@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "cluttered:block/kitchen_set_light_green_counter_outer_corner",
+		"1": "cluttered:block/kitchen_set_light_green_counter_outer_corner",
 		"particle": "cluttered:block/kitchen_set_light_green_counter_outer_corner"
 	},
 	"elements": [

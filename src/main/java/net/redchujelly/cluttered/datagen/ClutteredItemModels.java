@@ -179,6 +179,54 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_LEFT);
         blockitemFromModel(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_SINK);
 
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PINK_CABINET);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PINK_CABINET_MINI);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PINK_CABINET_GLASS);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PINK_CABINET_OPEN);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PINK_CABINET_INNER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PINK_CABINET_OUTER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PINK_COUNTER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PINK_COUNTER_INNER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PINK_COUNTER_OUTER_CORNER_RIGHT);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PINK_COUNTER_OUTER_CORNER_LEFT);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PINK_COUNTER_SINK);
+
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PURPLE_CABINET);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_MINI);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_GLASS);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_OPEN);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_INNER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_OUTER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_INNER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_OUTER_CORNER_RIGHT);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_OUTER_CORNER_LEFT);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_SINK);
+
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_WHITE_CABINET);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_WHITE_CABINET_MINI);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_WHITE_CABINET_GLASS);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_WHITE_CABINET_OPEN);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_WHITE_CABINET_INNER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_WHITE_CABINET_OUTER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_WHITE_COUNTER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_INNER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_OUTER_CORNER_RIGHT);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_OUTER_CORNER_LEFT);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_SINK);
+
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_YELLOW_CABINET);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_MINI);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_GLASS);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_OPEN);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_INNER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_OUTER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_INNER_CORNER);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_RIGHT);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_LEFT);
+        blockitemFromModel(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_SINK);
+
 
         blockitemFromModel(BlockRegistration.BIKE_YELLOW);
         blockitemFromModel(BlockRegistration.BIKE_YELLOW_FLOWERS);

@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [8, 8],
 	"textures": {
-		"1": "kitchen_set_brown_cabinet_outer_corner",
-		"particle": "kitchen_set_brown_cabinet_outer_corner"
+		"1": "cluttered:block/kitchen_set_yellow_cabinet_outer_corner",
+		"particle": "cluttered:block/kitchen_set_yellow_cabinet_outer_corner"
 	},
 	"elements": [
 		{

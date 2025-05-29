@@ -694,6 +694,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET.get());
         dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET_GLASS.get());
         dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET_MINI.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET_OPEN.get());
         dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET_OUTER_CORNER.get());
         dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET_INNER_CORNER.get());
         dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET_OPEN.get());
@@ -706,14 +707,62 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET.get());
         dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_GLASS.get());
         dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_MINI.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_OPEN.get());
         dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_OUTER_CORNER.get());
         dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_INNER_CORNER.get());
-        dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_OPEN.get());
         dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER.get());
         dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_INNER_CORNER.get());
         dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_LEFT.get());
         dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_RIGHT.get());
         dropSelf(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_SINK.get());
+
+        dropSelf(BlockRegistration.KITCHEN_SET_PINK_CABINET.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PINK_CABINET_GLASS.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PINK_CABINET_MINI.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PINK_CABINET_OPEN.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PINK_CABINET_OUTER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PINK_CABINET_INNER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PINK_COUNTER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PINK_COUNTER_INNER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PINK_COUNTER_OUTER_CORNER_LEFT.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PINK_COUNTER_OUTER_CORNER_RIGHT.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PINK_COUNTER_SINK.get());
+
+        dropSelf(BlockRegistration.KITCHEN_SET_PURPLE_CABINET.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_GLASS.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_MINI.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_OPEN.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_OUTER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PURPLE_CABINET_INNER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_INNER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_OUTER_CORNER_LEFT.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_OUTER_CORNER_RIGHT.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_SINK.get());
+
+        dropSelf(BlockRegistration.KITCHEN_SET_WHITE_CABINET.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_WHITE_CABINET_GLASS.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_WHITE_CABINET_MINI.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_WHITE_CABINET_OPEN.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_WHITE_CABINET_OUTER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_WHITE_CABINET_INNER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_WHITE_COUNTER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_INNER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_OUTER_CORNER_LEFT.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_OUTER_CORNER_RIGHT.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_SINK.get());
+
+        dropSelf(BlockRegistration.KITCHEN_SET_YELLOW_CABINET.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_GLASS.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_MINI.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_OPEN.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_OUTER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_YELLOW_CABINET_INNER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_INNER_CORNER.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_LEFT.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_RIGHT.get());
+        dropSelf(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_SINK.get());
 
         //SMALL FURNITURE
         //CHAIRS

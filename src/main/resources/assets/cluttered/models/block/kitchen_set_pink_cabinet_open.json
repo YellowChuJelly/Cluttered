@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [8, 8],
 	"textures": {
-		"9": "kitchen_set_brown_cabinet_open"
+		"9": "cluttered:block/kitchen_set_pink_cabinet_open",
+		"particle": "cluttered:block/kitchen_set_pink_cabinet_open"
 	},
 	"elements": [
 		{

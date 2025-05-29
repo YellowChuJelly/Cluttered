@@ -1,7 +1,9 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"3": "kitchen_set_brown_counter_sink"
+		"3": "cluttered:block/kitchen_set_purple_counter_sink",
+		"particle": "cluttered:block/kitchen_set_purple_counter_sink"
 	},
 	"elements": [
 		{

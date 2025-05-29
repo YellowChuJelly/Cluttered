@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"textures": {
 		"3": "cluttered:block/kitchen_set_light_green_counter_sink",
 		"particle": "cluttered:block/kitchen_set_light_green_counter_sink"

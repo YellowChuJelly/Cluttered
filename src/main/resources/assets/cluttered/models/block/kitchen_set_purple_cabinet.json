@@ -1,7 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"4": "kitchen_set_brown_cabinet"
+		"4": "cluttered:block/kitchen_set_purple_cabinet",
+		"particle": "cluttered:block/kitchen_set_purple_cabinet"
 	},
 	"elements": [
 		{
