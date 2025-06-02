@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
 	"textures": {
 		"8": "cluttered:block/kitchen_set_white_cabinet_inner_corner",
 		"particle": "cluttered:block/kitchen_set_white_cabinet_inner_corner"

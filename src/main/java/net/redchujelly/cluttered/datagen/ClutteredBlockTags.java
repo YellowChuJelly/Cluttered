@@ -40,7 +40,25 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.WILLOW_BOOKSHELF_CALICO_CAT.get())
                 .add(BlockRegistration.WILLOW_BOOKSHELF_COBWEB.get())
                 .add(BlockRegistration.WILLOW_BOOKSHELF_BOTTLES.get())
-                .add(BlockRegistration.WILLOW_BOOKSHELF_VASE.get());
+                .add(BlockRegistration.WILLOW_BOOKSHELF_VASE.get())
+
+                .add(BlockRegistration.ANTIQUE_BOOK_STAND.get())
+                .add(BlockRegistration.ANCIENT_CODEX.get())
+                .add(BlockRegistration.BUNNY_BOOK_ENDS.get())
+                .add(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get())
+                .add(BlockRegistration.COTTAGE_BOOKCASE.get())
+                .add(BlockRegistration.BAMBOO_BOOKSHELF.get())
+                .add(BlockRegistration.FWISH_BOOKCASE.get())
+                .add(BlockRegistration.RETRO_CAFE_SHELF.get())
+                .add(BlockRegistration.BOOK_OPEN.get())
+                .add(BlockRegistration.ROW_OF_SMALL_BOOKS.get())
+                .add(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL.get())
+                .add(BlockRegistration.ROW_OF_SMALL_BOOKS_SHELVED.get())
+                .add(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL_SHELVED.get())
+                .add(BlockRegistration.BOOK_OPEN.get())
+                .add(BlockRegistration.STACK_OF_BOOKS.get())
+                .add(BlockRegistration.STACK_OF_BOOKS_TALL.get());
+
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(BlockRegistration.WILLOW_DOOR.get())
                 .add(BlockRegistration.WILLOW_LOG_DOOR.get())
@@ -286,6 +304,7 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.CHISELED_GOLD_BLOCK.get());
 
         tag(BlockTags.WALLS)
+                //Brackets are in here because it lets them connect to glass panes and it looks really nice
                 .add(BlockRegistration.MARBLE_BRACKET_BOW.get())
                 .add(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL.get())
                 .add(BlockRegistration.MARBLE_BRACKET_VICTORIAN.get())

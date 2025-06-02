@@ -452,6 +452,8 @@
   "cluttered.eye_block.tooltip": "It's rude to stare...",
   "cluttered.garland.tooltip": "Can be moved left and right with the hand drill.",
 
+  "cluttered.storage": "Storage",
+
   "creativetab.cluttered_tab": "Cluttered Blocks",
   "creativetab.cluttered_furniture_tab": "Cluttered Furniture"
 }

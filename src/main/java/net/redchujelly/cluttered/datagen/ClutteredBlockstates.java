@@ -480,6 +480,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         balustradeBlock(BlockRegistration.DEEP_CHALCEDONY_BALUSTRADE);
         balustradeBlock(BlockRegistration.CHALCEDONY_BALUSTRADE);
         picketFenceBlock(BlockRegistration.MARBLE_PICKET_FENCE);
+        picketFenceBlock(BlockRegistration.CHALCEDONY_PICKET_FENCE);
         picketFenceBlock(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE);
 
         bracketBlock(BlockRegistration.MARBLE_BRACKET_VICTORIAN);

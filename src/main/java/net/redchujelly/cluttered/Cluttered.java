@@ -33,6 +33,8 @@ public class Cluttered {
         SoundRegistration.register(modEventBus);
         CreativeTabRegistration.register(modEventBus);
         ItemRegistration.register(modEventBus);
+        TileEntityRegistration.register(modEventBus);
+
         BlockRegistration.register(modEventBus);
         EntityTypeRegistration.register(modEventBus);
         PaintingRegistration.register(modEventBus);
