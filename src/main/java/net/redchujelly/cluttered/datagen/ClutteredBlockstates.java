@@ -995,6 +995,14 @@ public class ClutteredBlockstates extends BlockStateProvider {
         multiblockParts(BlockRegistration.DESK_GREEN_CLUTTERED);
         multiblockParts(BlockRegistration.DESK_BROWN_CLUTTERED);
 
+        multiblockParts(BlockRegistration.POTION_SHELF);
+        multiblockParts(BlockRegistration.DORADO_CABINET);
+        multiblockParts(BlockRegistration.DORADO_CABINET_CLUTTERED);
+        multiblockParts(BlockRegistration.HAVANA_CABINET);
+        multiblockParts(BlockRegistration.HAVANA_CABINET_CLUTTERED);
+        multiblockParts(BlockRegistration.MUREX_CABINET);
+        multiblockParts(BlockRegistration.MUREX_CABINET_CLUTTERED);
+
         simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_YELLOW.get(), models().getExistingFile(modLoc("block/spool_of_thread_yellow")));
         simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_GREEN.get(), models().getExistingFile(modLoc("block/spool_of_thread_green")));
         simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_PURPLE.get(), models().getExistingFile(modLoc("block/spool_of_thread_purple")));

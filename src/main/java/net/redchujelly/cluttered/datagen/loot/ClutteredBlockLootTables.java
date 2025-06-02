@@ -819,6 +819,14 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_BLUE.get());
         multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_PURPLE.get());
 
+        multiBlockDropOnlyOneItem(BlockRegistration.POTION_SHELF.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DORADO_CABINET.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DORADO_CABINET_CLUTTERED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.HAVANA_CABINET.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.HAVANA_CABINET_CLUTTERED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.MUREX_CABINET.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.MUREX_CABINET_CLUTTERED.get());
+
         multiBlockDropOnlyOneItem(BlockRegistration.MINI_CACTUS_SET.get());
         multiBlockDropOnlyOneItem(BlockRegistration.MUSHROOM_JARS.get());
         multiBlockDropOnlyOneItem(BlockRegistration.NEWSPAPER_PILE_SHORT.get());

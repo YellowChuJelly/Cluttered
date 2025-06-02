@@ -419,6 +419,14 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.HONEYCOMB_LAMP);
         blockitemFromModel(BlockRegistration.UNLIVING_CHAIR);
 
+        blockitemFromModel(BlockRegistration.POTION_SHELF);
+        blockitemFromModel(BlockRegistration.DORADO_CABINET);
+        blockitemFromModel(BlockRegistration.DORADO_CABINET_CLUTTERED);
+        blockitemFromModel(BlockRegistration.HAVANA_CABINET);
+        blockitemFromModel(BlockRegistration.HAVANA_CABINET_CLUTTERED);
+        blockitemFromModel(BlockRegistration.MUREX_CABINET);
+        blockitemFromModel(BlockRegistration.MUREX_CABINET_CLUTTERED);
+
         blockitemFromModel(BlockRegistration.ANIMATED_FLAG_ASEXUAL);
         blockitemFromModel(BlockRegistration.ANIMATED_FLAG_BISEXUAL);
         blockitemFromModel(BlockRegistration.ANIMATED_FLAG_PANSEXUAL);

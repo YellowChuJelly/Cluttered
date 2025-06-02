@@ -729,6 +729,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.FWISH_BOOKCASE.get());
                         output.accept(BlockRegistration.RETRO_CAFE_SHELF.get());
                         output.accept(BlockRegistration.RETRO_CAFE_SHELF_WINDOW.get());
+                        output.accept(BlockRegistration.POTION_SHELF.get());
                         output.accept(BlockRegistration.CHINA_CABINET.get());
                         output.accept(BlockRegistration.CUPID_BENCH.get());
 
@@ -813,6 +814,13 @@ public class CreativeTabRegistration {
 
                         output.accept(BlockRegistration.TABLE_PLAIN.get());
                         output.accept(BlockRegistration.TABLE_TABLECLOTH.get());
+
+                        output.accept(BlockRegistration.DORADO_CABINET.get());
+                        output.accept(BlockRegistration.DORADO_CABINET_CLUTTERED.get());
+                        output.accept(BlockRegistration.HAVANA_CABINET.get());
+                        output.accept(BlockRegistration.HAVANA_CABINET_CLUTTERED.get());
+                        output.accept(BlockRegistration.MUREX_CABINET.get());
+                        output.accept(BlockRegistration.MUREX_CABINET_CLUTTERED.get());
 
                         output.accept(BlockRegistration.KITCHEN_SET_BROWN_COUNTER.get());
                         output.accept(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_INNER_CORNER.get());

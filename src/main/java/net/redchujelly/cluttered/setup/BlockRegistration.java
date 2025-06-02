@@ -1788,6 +1788,21 @@ public class BlockRegistration {
     public static final RegistryObject<Block> RETRO_CAFE_SHELF_WINDOW = registerBlock("retro_cafe_shelf_window",
             () -> new RetroCafeShelfWindowBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.GLASS).mapColor(DyeColor.PURPLE).noOcclusion()));
 
+    public static final RegistryObject<Block> POTION_SHELF = registerBlock("potion_shelf",
+            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+    public static final RegistryObject<Block> DORADO_CABINET = registerBlock("dorado_cabinet",
+            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+    public static final RegistryObject<Block> DORADO_CABINET_CLUTTERED = registerBlock("dorado_cabinet_cluttered",
+            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+    public static final RegistryObject<Block> HAVANA_CABINET = registerBlock("havana_cabinet",
+            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+    public static final RegistryObject<Block> HAVANA_CABINET_CLUTTERED = registerBlock("havana_cabinet_cluttered",
+            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+    public static final RegistryObject<Block> MUREX_CABINET = registerBlock("murex_cabinet",
+            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+    public static final RegistryObject<Block> MUREX_CABINET_CLUTTERED = registerBlock("murex_cabinet_cluttered",
+            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+
 
     //BIKES
     public static final RegistryObject<Block> BIKE_YELLOW = registerBlock("bicycle_yellow",
