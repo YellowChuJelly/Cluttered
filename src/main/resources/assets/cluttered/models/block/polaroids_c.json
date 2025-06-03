@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"render_type": "minecraft:cutout",
+	"texture_size": [8, 8],
 	"textures": {
 		"0": "cluttered:block/polaroids_c",
 		"particle": "cluttered:block/polaroids_c"
@@ -10,12 +11,12 @@
 			"from": [0, 0, 15.95],
 			"to": [16, 16, 16],
 			"faces": {
-				"north": {"uv": [0, 0, 4, 4], "texture": "#0"},
-				"east": {"uv": [4, 0, 4.25, 4], "texture": "#0"},
-				"south": {"uv": [0, 4, 4, 8], "texture": "#0"},
-				"west": {"uv": [4, 4, 4.25, 8], "texture": "#0"},
-				"up": {"uv": [8.25, 0.25, 4.25, 0], "texture": "#0"},
-				"down": {"uv": [8.25, 0.25, 4.25, 0.5], "texture": "#0"}
+				"north": {"uv": [0, 0, 8, 8], "texture": "#0"},
+				"east": {"uv": [8, 0, 8.5, 8], "texture": "#0"},
+				"south": {"uv": [0, 8, 8, 16], "texture": "#0"},
+				"west": {"uv": [8, 8, 8.5, 16], "texture": "#0"},
+				"up": {"uv": [16.5, 0.5, 8.5, 0], "texture": "#0"},
+				"down": {"uv": [16.5, 0.5, 8.5, 1], "texture": "#0"}
 			}
 		}
 	],
