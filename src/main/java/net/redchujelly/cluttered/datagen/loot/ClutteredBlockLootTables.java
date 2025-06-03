@@ -854,6 +854,30 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.MOON_PENDANT.get());
         dropSelf(BlockRegistration.POLAROIDS_A.get());
 
+        dropSelf(BlockRegistration.CONFECTIONERY_TABLE_BLUE.get());
+        dropSelf(BlockRegistration.CONFECTIONERY_TABLE_PINK.get());
+        dropSelf(BlockRegistration.THREE_JAM_JARS_APRICOT.get());
+        dropSelf(BlockRegistration.THREE_JAM_JARS_ASSORTED_A.get());
+        dropSelf(BlockRegistration.THREE_JAM_JARS_ASSORTED_B.get());
+        dropSelf(BlockRegistration.THREE_JAM_JARS_BLUEBERRY.get());
+        dropSelf(BlockRegistration.THREE_JAM_JARS_CHERRY.get());
+        dropSelf(BlockRegistration.THREE_JAM_JARS_STRAWBERRY.get());
+        dropSelf(BlockRegistration.THREE_JAM_JARS_ORANGE_MARMALADE.get());
+        dropSelf(BlockRegistration.THREE_JAM_JARS_HONEY.get());
+        dropSelf(BlockRegistration.JAM_JAR_PYRAMID_APRICOT.get());
+        dropSelf(BlockRegistration.JAM_JAR_PYRAMID_ASSORTED_A.get());
+        dropSelf(BlockRegistration.JAM_JAR_PYRAMID_ASSORTED_B.get());
+        dropSelf(BlockRegistration.JAM_JAR_PYRAMID_BLUEBERRY.get());
+        dropSelf(BlockRegistration.JAM_JAR_PYRAMID_CHERRY.get());
+        dropSelf(BlockRegistration.JAM_JAR_PYRAMID_STRAWBERRY.get());
+        dropSelf(BlockRegistration.JAM_JAR_PYRAMID_ORANGE_MARMALADE.get());
+        dropSelf(BlockRegistration.JAM_JAR_PYRAMID_HONEY.get());
+
+        dropSelf(BlockRegistration.SAFE_NOVAKID.get());
+        dropSelf(BlockRegistration.VIOLET_SCREEN.get());
+        dropSelf(BlockRegistration.CONFECTIONERY_TABLE_BLUE.get());
+        dropSelf(BlockRegistration.CONFECTIONERY_TABLE_PINK.get());
+
         dropSelf(BlockRegistration.OSSON_PENDANT_BLACK.get());
         dropSelf(BlockRegistration.OSSON_PENDANT_BROWN.get());
         dropSelf(BlockRegistration.OSSON_PENDANT_ORANGE.get());

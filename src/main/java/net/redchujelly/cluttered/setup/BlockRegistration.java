@@ -1549,6 +1549,45 @@ public class BlockRegistration {
     public static final RegistryObject<Block> HANGING_CLOTH = registerBlock("hanging_cloth",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
 
+    public static final RegistryObject<Block> THREE_JAM_JARS_STRAWBERRY = registerBlock("three_jam_jars_strawberry",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> THREE_JAM_JARS_ORANGE_MARMALADE = registerBlock("three_jam_jars_orange_marmalade",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> THREE_JAM_JARS_HONEY = registerBlock("three_jam_jars_honey",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> THREE_JAM_JARS_CHERRY = registerBlock("three_jam_jars_cherry",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> THREE_JAM_JARS_BLUEBERRY = registerBlock("three_jam_jars_blueberry",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> THREE_JAM_JARS_APRICOT = registerBlock("three_jam_jars_apricot",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> THREE_JAM_JARS_ASSORTED_A = registerBlock("three_jam_jars_assorted_a",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> THREE_JAM_JARS_ASSORTED_B = registerBlock("three_jam_jars_assorted_b",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+
+    public static final RegistryObject<Block> JAM_JAR_PYRAMID_STRAWBERRY = registerBlock("jam_jar_pyramid_strawberry",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> JAM_JAR_PYRAMID_ORANGE_MARMALADE = registerBlock("jam_jar_pyramid_orange_marmalade",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> JAM_JAR_PYRAMID_HONEY = registerBlock("jam_jar_pyramid_honey",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> JAM_JAR_PYRAMID_CHERRY = registerBlock("jam_jar_pyramid_cherry",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> JAM_JAR_PYRAMID_BLUEBERRY = registerBlock("jam_jar_pyramid_blueberry",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> JAM_JAR_PYRAMID_APRICOT = registerBlock("jam_jar_pyramid_apricot",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> JAM_JAR_PYRAMID_ASSORTED_A = registerBlock("jam_jar_pyramid_assorted_a",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> JAM_JAR_PYRAMID_ASSORTED_B = registerBlock("jam_jar_pyramid_assorted_b",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+
+    public static final RegistryObject<Block> SAFE_NOVAKID = registerBlock("safe_novakid",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> VIOLET_SCREEN = registerBlock("violet_screen",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+
     //SMALL TABLES
     public static final RegistryObject<Block> COTTAGE_SIDE_TABLE = registerBlock("cottage_side_table",
             () -> new EndTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
@@ -1782,6 +1821,11 @@ public class BlockRegistration {
             () -> new TableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> TABLE_TABLECLOTH = registerBlock("table_with_white_tablecloth",
             () -> new TableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.WHITE).noOcclusion()));
+
+    public static final RegistryObject<Block> CONFECTIONERY_TABLE_PINK = registerBlock("confectionery_table_pink",
+            () -> new TableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
+    public static final RegistryObject<Block> CONFECTIONERY_TABLE_BLUE = registerBlock("confectionery_table_blue",
+            () -> new TableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
 
     public static final RegistryObject<Block> RETRO_CAFE_SHELF = registerBlock("retro_cafe_shelf",
             () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));

@@ -1003,6 +1003,30 @@ public class ClutteredBlockstates extends BlockStateProvider {
         multiblockParts(BlockRegistration.MUREX_CABINET);
         multiblockParts(BlockRegistration.MUREX_CABINET_CLUTTERED);
 
+        multiblockParts(BlockRegistration.CONFECTIONERY_TABLE_BLUE);
+        multiblockParts(BlockRegistration.CONFECTIONERY_TABLE_PINK);
+
+        hFacingBlockWithCustomModel(BlockRegistration.THREE_JAM_JARS_APRICOT);
+        hFacingBlockWithCustomModel(BlockRegistration.THREE_JAM_JARS_ASSORTED_A);
+        hFacingBlockWithCustomModel(BlockRegistration.THREE_JAM_JARS_ASSORTED_B);
+        hFacingBlockWithCustomModel(BlockRegistration.THREE_JAM_JARS_CHERRY);
+        hFacingBlockWithCustomModel(BlockRegistration.THREE_JAM_JARS_STRAWBERRY);
+        hFacingBlockWithCustomModel(BlockRegistration.THREE_JAM_JARS_BLUEBERRY);
+        hFacingBlockWithCustomModel(BlockRegistration.THREE_JAM_JARS_HONEY);
+        hFacingBlockWithCustomModel(BlockRegistration.THREE_JAM_JARS_ORANGE_MARMALADE);
+
+        hFacingBlockWithCustomModel(BlockRegistration.JAM_JAR_PYRAMID_APRICOT);
+        hFacingBlockWithCustomModel(BlockRegistration.JAM_JAR_PYRAMID_ASSORTED_A);
+        hFacingBlockWithCustomModel(BlockRegistration.JAM_JAR_PYRAMID_ASSORTED_B);
+        hFacingBlockWithCustomModel(BlockRegistration.JAM_JAR_PYRAMID_CHERRY);
+        hFacingBlockWithCustomModel(BlockRegistration.JAM_JAR_PYRAMID_STRAWBERRY);
+        hFacingBlockWithCustomModel(BlockRegistration.JAM_JAR_PYRAMID_BLUEBERRY);
+        hFacingBlockWithCustomModel(BlockRegistration.JAM_JAR_PYRAMID_HONEY);
+        hFacingBlockWithCustomModel(BlockRegistration.JAM_JAR_PYRAMID_ORANGE_MARMALADE);
+
+        hFacingBlockWithCustomModel(BlockRegistration.SAFE_NOVAKID);
+        hFacingBlockWithCustomModel(BlockRegistration.VIOLET_SCREEN);
+
         simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_YELLOW.get(), models().getExistingFile(modLoc("block/spool_of_thread_yellow")));
         simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_GREEN.get(), models().getExistingFile(modLoc("block/spool_of_thread_green")));
         simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_PURPLE.get(), models().getExistingFile(modLoc("block/spool_of_thread_purple")));
