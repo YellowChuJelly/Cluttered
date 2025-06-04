@@ -20,7 +20,7 @@ public class TileEntityRegistration {
     the block entity can be tied to? But I tried it without adding some and they worked fine so I dunno.
     I'm gonna keep adding them though. */
 
-    static RegistryObject<?>[] cabinetBlocks = new RegistryObject[]{
+    static RegistryObject<?>[] twoRows = new RegistryObject[]{
             BlockRegistration.KITCHEN_SET_BROWN_CABINET,
             BlockRegistration.KITCHEN_SET_BROWN_CABINET_INNER_CORNER,
             BlockRegistration.KITCHEN_SET_BROWN_CABINET_OPEN,
@@ -46,16 +46,31 @@ public class TileEntityRegistration {
             BlockRegistration.KITCHEN_SET_YELLOW_CABINET_OPEN,
             BlockRegistration.KITCHEN_SET_YELLOW_CABINET_GLASS,
     };
-    static RegistryObject<?>[] halfCabinetBlocks = new RegistryObject[]{
+    static RegistryObject<?>[] oneRow = new RegistryObject[]{
             BlockRegistration.KITCHEN_SET_BROWN_CABINET_MINI,
             BlockRegistration.KITCHEN_SET_PINK_CABINET_MINI,
             BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_MINI,
             BlockRegistration.KITCHEN_SET_PURPLE_CABINET_MINI,
             BlockRegistration.KITCHEN_SET_WHITE_CABINET_MINI,
             BlockRegistration.KITCHEN_SET_YELLOW_CABINET_MINI,
+
+            BlockRegistration.ENDTABLE_AMETHYST,
+            BlockRegistration.ENDTABLE_BUBBLEGUM,
+            BlockRegistration.ENDTABLE_CHARCOAL,
+            BlockRegistration.ENDTABLE_MEADOW,
+            BlockRegistration.ENDTABLE_PERIWINKLE,
+            BlockRegistration.ENDTABLE_WOOD,
+            BlockRegistration.COTTAGE_SIDE_TABLE,
+            BlockRegistration.NIGHTSTAND_GREEN,
+
+
     };
 
-    static RegistryObject<?>[] counterBlocks = new RegistryObject[]{
+    static RegistryObject<?>[] fourRows = new RegistryObject[]{
+            BlockRegistration.SAFE_NOVAKID
+    };
+
+    static RegistryObject<?>[] threeRows = new RegistryObject[]{
             BlockRegistration.KITCHEN_SET_BROWN_COUNTER,
             BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_LEFT,
             BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_RIGHT,
@@ -78,12 +93,15 @@ public class TileEntityRegistration {
             BlockRegistration.BRIEFCASE_BLANK,
             BlockRegistration.BRIEFCASE_ROVER,
     };
-    public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> KITCHEN_SET_CABINET_BE = registerWithStorage(
-            () -> TileEntityRegistration.KITCHEN_SET_CABINET_BE, 2,  (RegistryObject<Block>[]) cabinetBlocks, "kitchen_set_cabinet_be");
+
     public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> KITCHEN_SET_HALF_CABINET_BE = registerWithStorage(
-            () -> TileEntityRegistration.KITCHEN_SET_HALF_CABINET_BE, 1,  (RegistryObject<Block>[]) halfCabinetBlocks, "kitchen_set_half_cabinet_be");
+            () -> TileEntityRegistration.KITCHEN_SET_HALF_CABINET_BE, 1,  (RegistryObject<Block>[]) oneRow, "kitchen_set_half_cabinet_be");
+    public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> KITCHEN_SET_CABINET_BE = registerWithStorage(
+            () -> TileEntityRegistration.KITCHEN_SET_CABINET_BE, 2,  (RegistryObject<Block>[]) twoRows, "kitchen_set_cabinet_be");
     public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> KITCHEN_SET_COUNTER_BE = registerWithStorage(
-            () -> TileEntityRegistration.KITCHEN_SET_COUNTER_BE, 3,  (RegistryObject<Block>[]) counterBlocks, "kitchen_set_counter_be");
+            () -> TileEntityRegistration.KITCHEN_SET_COUNTER_BE, 3,  (RegistryObject<Block>[]) threeRows, "kitchen_set_counter_be");
+    public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> FOUR_ROWS_BE = registerWithStorage(
+            () -> TileEntityRegistration.FOUR_ROWS_BE, 4,  (RegistryObject<Block>[]) fourRows, "four_rows_be");
 
 
 

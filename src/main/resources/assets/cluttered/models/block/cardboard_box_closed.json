@@ -1,16 +1,16 @@
 {
 	"credit": "Made with Blockbench",
-	"render_type": "minecraft:cutout",
 	"ambientocclusion": false,
+	"render_type": "minecraft:cutout",
 	"textures": {
 		"1": "cluttered:block/cardboard_box",
 		"particle": "cluttered:block/cardboard_box"
 	},
 	"elements": [
 		{
-			"from": [4, 0.01, 3],
-			"to": [12, 7.01, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.51, 8.5]},
+			"from": [4, 0.01, 2.5],
+			"to": [12, 7.01, 13.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.51, 8]},
 			"faces": {
 				"north": {"uv": [4, 4, 8, 7.5], "texture": "#1"},
 				"east": {"uv": [4, 0, 9.5, 3.5], "texture": "#1"},

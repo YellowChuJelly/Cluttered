@@ -874,7 +874,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.JAM_JAR_PYRAMID_HONEY.get());
 
         dropSelf(BlockRegistration.SAFE_NOVAKID.get());
-        dropSelf(BlockRegistration.VIOLET_SCREEN.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.VIOLET_SCREEN.get());
         dropSelf(BlockRegistration.CONFECTIONERY_TABLE_BLUE.get());
         dropSelf(BlockRegistration.CONFECTIONERY_TABLE_PINK.get());
 

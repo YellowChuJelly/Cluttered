@@ -892,6 +892,18 @@ public class ClutteredRecipes extends RecipeProvider {
                 .showNotification(false)
                 .save(consumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.FISH_WALLPAPER.get(), 8)
+                .pattern("pfp")
+                .pattern("pfp")
+                .pattern("www")
+                .define('f', Items.COD)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DIAMOND_WALLPAPER_APPLE.get(), 8)
                 .pattern("psp")
                 .pattern("sas")

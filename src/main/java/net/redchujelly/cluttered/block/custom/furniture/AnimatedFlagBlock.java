@@ -1,25 +1,23 @@
 package net.redchujelly.cluttered.block.custom.furniture;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class EndTableBlock extends SmallFurnitureBlock {
+public class AnimatedFlagBlock extends FlatDirectionalBlock{
+    private static final VoxelShape SHAPE_NS = Block.box(7,0,0,9,16,16);
+    private static final VoxelShape SHAPE_EW = Block.box(0,0,7,16,16,9);
 
-    private static final VoxelShape SHAPE = Shapes.join(Block.box(1, 0, 1, 15, 14, 15), Block.box(0,14,0, 16, 16, 16), BooleanOp.OR);
-
-
-    public EndTableBlock(Properties pProperties) {
+    public AnimatedFlagBlock(Properties pProperties) {
         super(pProperties);
     }
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return SHAPE;
+        return pState.getValue(FACING).equals(Direction.NORTH) || pState.getValue(FACING).equals(Direction.SOUTH) ? SHAPE_NS : SHAPE_EW;
     }
 }

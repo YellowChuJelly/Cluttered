@@ -740,13 +740,13 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.MARBLE_TILE_BORDER_CIRCLE);
         horizontalBlock(BlockRegistration.MARBLE_TILE_BORDER_DETAIL.get(), models().cubeColumn("marble_tile_border_detailed", modLoc("block/marble_tile_border_detailed"), modLoc("block/marble_tile_border_detailed")));
         blockItem(BlockRegistration.MARBLE_TILE_BORDER_DETAIL);
-        horizontalBlock(BlockRegistration.MARBLE_TILE_CORNER.get(), models().getBuilder("block/marble_tile_corner").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/marble_tile_corner"));
+        horizontalBlock(BlockRegistration.MARBLE_TILE_CORNER.get(), models().getBuilder("block/marble_tile_corner").parent(models().getExistingFile(mcLoc("observer"))).texture("top", "block/marble_tile_corner").texture("bottom", "block/marble_tile_border").texture("side", "block/marble_tile_border").texture("front", "block/marble_tile_border").texture("particle", "block/marble_tile_border"));
         blockItem(BlockRegistration.MARBLE_TILE_CORNER);
-        horizontalBlock(BlockRegistration.MARBLE_TILE_CORNER_CIRCLE.get(), models().getBuilder("block/marble_tile_corner_circle").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/marble_tile_corner_circle"));
+        horizontalBlock(BlockRegistration.MARBLE_TILE_CORNER_CIRCLE.get(), models().getBuilder("block/marble_tile_corner_circle").parent(models().getExistingFile(mcLoc("observer"))).texture("top", "block/marble_tile_corner_circle").texture("bottom", "block/marble_tile_border").texture("side", "block/marble_tile_border").texture("front", "block/marble_tile_border").texture("particle", "block/marble_tile_border"));
         blockItem(BlockRegistration.MARBLE_TILE_CORNER_CIRCLE);
 
         blockWithItem(BlockRegistration.VERDANT_TILE);
-        horizontalBlock(BlockRegistration.VERDANT_TILE_CORNER.get(), models().getBuilder("block/verdant_tile_corner").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/verdant_tile_corner"));
+        horizontalBlock(BlockRegistration.VERDANT_TILE_CORNER.get(), models().getBuilder("block/verdant_tile_corner").parent(models().getExistingFile(mcLoc("observer"))).texture("top", "block/verdant_tile_corner").texture("bottom", "block/verdant_tile").texture("side", "block/verdant_tile").texture("front", "block/verdant_tile").texture("particle", "block/verdant_tile"));
         blockItem(BlockRegistration.VERDANT_TILE_CORNER);
         horizontalBlock(BlockRegistration.VERDANT_TILE_EDGE.get(), models().cubeColumn("verdant_tile_edge", modLoc("block/verdant_tile"), modLoc("block/verdant_tile_edge")));
         blockItem(BlockRegistration.VERDANT_TILE_EDGE);
@@ -1025,7 +1025,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.JAM_JAR_PYRAMID_ORANGE_MARMALADE);
 
         hFacingBlockWithCustomModel(BlockRegistration.SAFE_NOVAKID);
-        hFacingBlockWithCustomModel(BlockRegistration.VIOLET_SCREEN);
+        multiblockParts(BlockRegistration.VIOLET_SCREEN);
 
         simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_YELLOW.get(), models().getExistingFile(modLoc("block/spool_of_thread_yellow")));
         simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_GREEN.get(), models().getExistingFile(modLoc("block/spool_of_thread_green")));

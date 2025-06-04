@@ -8,13 +8,14 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class FenceShelfBlock extends SmallFurnitureBlock{
-    private static final VoxelShape SHAPE_NORTH = Block.box(1, 0, 7, 14, 11, 16);
-    private static final VoxelShape SHAPE_SOUTH = Block.box(1, 0, 0, 15, 11, 9);
-    private static final VoxelShape SHAPE_EAST = Block.box(0, 0, 1, 9, 11, 15);
-    private static final VoxelShape SHAPE_WEST = Block.box(7, 0, 1, 16, 11, 15);
+public class PicnicBasketBlock extends SmallFurnitureBlock{
+    private static final VoxelShape SHAPE_NORTH = Block.box(3,0,5,13,6,13);
+    private static final VoxelShape SHAPE_SOUTH = Block.box(3,0,3,13,6,11);
+    private static final VoxelShape SHAPE_EAST = Block.box(3,0,3,11,6,13);
+    private static final VoxelShape SHAPE_WEST = Block.box(5,0,3,13,6,13);
 
-    public FenceShelfBlock(Properties pProperties) {
+
+    public PicnicBasketBlock(Properties pProperties) {
         super(pProperties);
     }
 

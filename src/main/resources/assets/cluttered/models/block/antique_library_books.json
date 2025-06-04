@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"render_type": "minecraft:cutout",
+	"ambientocclusion": false,
 	"textures": {
 		"1": "cluttered:block/antique_library_books",
 		"particle": "cluttered:block/antique_library_books"
