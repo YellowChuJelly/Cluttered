@@ -265,6 +265,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.CHALCEDONY_BRACKET_BOW.get());
         dropSelf(BlockRegistration.CHALCEDONY_BRACKET_STAR.get());
         dropSelf(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL.get());
+        dropSelf(BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF.get());
 
         add(BlockRegistration.CHALCEDONY_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.CHALCEDONY_WINDOW.get()));
         add(BlockRegistration.CHALCEDONY_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.CHALCEDONY_WINDOW_PANE.get()));
@@ -301,6 +302,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW.get());
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR.get());
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL.get());
+        dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL_SHELF.get());
 
 
         add(BlockRegistration.DEEP_CHALCEDONY_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.DEEP_CHALCEDONY_WINDOW.get()));
@@ -334,6 +336,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.MARBLE_BRACKET_BOW.get());
         dropSelf(BlockRegistration.MARBLE_BRACKET_STAR.get());
         dropSelf(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL.get());
+        dropSelf(BlockRegistration.MARBLE_BRACKET_SCROLL_SHELF.get());
+
 
         add(BlockRegistration.BLACK_CAT_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.BLACK_CAT_WINDOW.get()));
         add(BlockRegistration.BLACK_CAT_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.BLACK_CAT_WINDOW_PANE.get()));
@@ -594,6 +598,15 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.WOOD_FRENCH_DOOR.get(), block -> createDoorTable(BlockRegistration.WOOD_FRENCH_DOOR.get()));
         add(BlockRegistration.WOOD_SCREEN_DOOR.get(), block -> createDoorTable(BlockRegistration.WOOD_SCREEN_DOOR.get()));
 
+        dropSelf(BlockRegistration.WOODEN_BRACKET_VICTORIAN.get());
+        dropSelf(BlockRegistration.WOODEN_BRACKET_SCROLL.get());
+        dropSelf(BlockRegistration.WOODEN_BRACKET_BOW_SCROLL.get());
+        dropSelf(BlockRegistration.WOODEN_BRACKET_BOW.get());
+        dropSelf(BlockRegistration.WOODEN_BRACKET_STAR.get());
+        dropSelf(BlockRegistration.WOODEN_BRACKET_STAR_SCROLL.get());
+        dropSelf(BlockRegistration.WOODEN_BRACKET_SCROLL_SHELF.get());
+        dropSelf(BlockRegistration.WOODEN_PICKET_FENCE.get());
+
         dropSelf(BlockRegistration.COLOSSEO_PILLAR_BASE.get());
         dropSelf(BlockRegistration.COLOSSEO_PILLAR.get());
         dropSelf(BlockRegistration.COLOSSEO_PILLAR_TOP.get());
@@ -814,6 +827,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.PICNIC_BASKET_PREPARED.get());
         dropSelf(BlockRegistration.BASKET_OF_FLOWERS.get());
         dropSelf(BlockRegistration.BASKET_OF_PRODUCE.get());
+        dropSelf(BlockRegistration.HOPPIN_PARK_LANTERN.get());
 
         multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_RED.get());
         multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_BLUE.get());

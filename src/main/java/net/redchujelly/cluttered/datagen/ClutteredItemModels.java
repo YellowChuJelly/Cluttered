@@ -98,6 +98,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         picketFenceItem(BlockRegistration.MARBLE_PICKET_FENCE);
         picketFenceItem(BlockRegistration.CHALCEDONY_PICKET_FENCE);
         picketFenceItem(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE);
+        picketFenceItem(BlockRegistration.WOODEN_PICKET_FENCE);
 
         bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL);
         bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW);
@@ -105,6 +106,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR);
         bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN);
         bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL);
+        bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL_SHELF);
 
         bracketItem(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL);
         bracketItem(BlockRegistration.CHALCEDONY_BRACKET_BOW);
@@ -112,6 +114,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         bracketItem(BlockRegistration.CHALCEDONY_BRACKET_STAR);
         bracketItem(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN);
         bracketItem(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL);
+        bracketItem(BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF);
 
         bracketItem(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL);
         bracketItem(BlockRegistration.MARBLE_BRACKET_BOW);
@@ -119,6 +122,15 @@ public class ClutteredItemModels extends ItemModelProvider {
         bracketItem(BlockRegistration.MARBLE_BRACKET_STAR);
         bracketItem(BlockRegistration.MARBLE_BRACKET_VICTORIAN);
         bracketItem(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL);
+        bracketItem(BlockRegistration.MARBLE_BRACKET_SCROLL_SHELF);
+
+        bracketItem(BlockRegistration.WOODEN_BRACKET_BOW_SCROLL);
+        bracketItem(BlockRegistration.WOODEN_BRACKET_BOW);
+        bracketItem(BlockRegistration.WOODEN_BRACKET_SCROLL);
+        bracketItem(BlockRegistration.WOODEN_BRACKET_STAR);
+        bracketItem(BlockRegistration.WOODEN_BRACKET_VICTORIAN);
+        bracketItem(BlockRegistration.WOODEN_BRACKET_STAR_SCROLL);
+        bracketItem(BlockRegistration.WOODEN_BRACKET_SCROLL_SHELF);
 
         standardCubeItem(BlockRegistration.FISH_WALLPAPER, "fish_wallpaper_1");
 
@@ -439,6 +451,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.JAM_JAR_PYRAMID_ORANGE_MARMALADE);
         blockitemFromModel(BlockRegistration.SAFE_NOVAKID);
         blockitemFromModel(BlockRegistration.VIOLET_SCREEN);
+        blockitemFromModel(BlockRegistration.HOPPIN_PARK_LANTERN);
 
         blockitemFromModel(BlockRegistration.POTION_SHELF);
         blockitemFromModel(BlockRegistration.DORADO_CABINET);

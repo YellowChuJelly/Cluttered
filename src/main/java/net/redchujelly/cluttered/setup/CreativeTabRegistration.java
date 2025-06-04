@@ -253,6 +253,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL.get());
                         output.accept(BlockRegistration.CHALCEDONY_BRACKET_STAR.get());
                         output.accept(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL.get());
+                        output.accept(BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF.get());
 
                         output.accept(BlockRegistration.CHALCEDONY_TILES.get());
                         output.accept(BlockRegistration.CHALCEDONY_SMALL_TILES.get());
@@ -288,6 +289,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL.get());
+                        output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL_SHELF.get());
 
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_TILES.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_SMALL_TILES.get());
@@ -323,6 +325,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL.get());
                         output.accept(BlockRegistration.MARBLE_BRACKET_STAR.get());
                         output.accept(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL.get());
+                        output.accept(BlockRegistration.MARBLE_BRACKET_SCROLL_SHELF.get());
 
                         output.accept(BlockRegistration.MARBLE_TILES.get());
                         output.accept(BlockRegistration.MARBLE_SMALL_TILES.get());
@@ -578,6 +581,16 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.WOOD_PANEL_CANTERBURY.get());
                         output.accept(BlockRegistration.WOOD_SCREEN_DOOR.get());
                         output.accept(BlockRegistration.WOOD_FRENCH_DOOR.get());
+
+                        output.accept(BlockRegistration.WOODEN_PICKET_FENCE.get());
+
+                        output.accept(BlockRegistration.WOODEN_BRACKET_VICTORIAN.get());
+                        output.accept(BlockRegistration.WOODEN_BRACKET_SCROLL.get());
+                        output.accept(BlockRegistration.WOODEN_BRACKET_BOW.get());
+                        output.accept(BlockRegistration.WOODEN_BRACKET_BOW_SCROLL.get());
+                        output.accept(BlockRegistration.WOODEN_BRACKET_STAR.get());
+                        output.accept(BlockRegistration.WOODEN_BRACKET_STAR_SCROLL.get());
+                        output.accept(BlockRegistration.WOODEN_BRACKET_SCROLL_SHELF.get());
 
                         output.accept(BlockRegistration.STRAWBERRY_JAR_BLOCK .get());
                         output.accept(BlockRegistration.CHERRY_JAR_BLOCK.get());
@@ -993,6 +1006,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.HONEYCOMB_LAMP.get());
                         output.accept(BlockRegistration.UNLIVING_CHAIR.get());
                         output.accept(BlockRegistration.SAFE_NOVAKID.get());
+                        output.accept(BlockRegistration.HOPPIN_PARK_LANTERN.get());
                         output.accept(BlockRegistration.VIOLET_SCREEN.get());
 
                     })

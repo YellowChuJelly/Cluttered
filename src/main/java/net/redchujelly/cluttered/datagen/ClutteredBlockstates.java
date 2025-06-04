@@ -482,6 +482,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         picketFenceBlock(BlockRegistration.MARBLE_PICKET_FENCE);
         picketFenceBlock(BlockRegistration.CHALCEDONY_PICKET_FENCE);
         picketFenceBlock(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE);
+        picketFenceBlock(BlockRegistration.WOODEN_PICKET_FENCE);
 
         bracketBlock(BlockRegistration.MARBLE_BRACKET_VICTORIAN);
         bracketBlock(BlockRegistration.MARBLE_BRACKET_SCROLL);
@@ -489,6 +490,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         bracketBlock(BlockRegistration.MARBLE_BRACKET_BOW);
         bracketBlock(BlockRegistration.MARBLE_BRACKET_STAR);
         bracketBlock(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL);
+        bracketBlock(BlockRegistration.MARBLE_BRACKET_SCROLL_SHELF);
 
         bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN);
         bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_SCROLL);
@@ -496,6 +498,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_BOW);
         bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_STAR);
         bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL);
+        bracketBlock(BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF);
 
         bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN);
         bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL);
@@ -503,6 +506,15 @@ public class ClutteredBlockstates extends BlockStateProvider {
         bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW);
         bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR);
         bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL);
+        bracketBlock(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL_SHELF);
+
+        bracketBlock(BlockRegistration.WOODEN_BRACKET_VICTORIAN);
+        bracketBlock(BlockRegistration.WOODEN_BRACKET_SCROLL);
+        bracketBlock(BlockRegistration.WOODEN_BRACKET_BOW_SCROLL);
+        bracketBlock(BlockRegistration.WOODEN_BRACKET_BOW);
+        bracketBlock(BlockRegistration.WOODEN_BRACKET_STAR);
+        bracketBlock(BlockRegistration.WOODEN_BRACKET_STAR_SCROLL);
+        bracketBlock(BlockRegistration.WOODEN_BRACKET_SCROLL_SHELF);
 
         //MISC FULL BLOCKS
         simpleBlockWithItem(BlockRegistration.BLACK_CAT_WINDOW.get(), models().cubeAll("black_cat_window", modLoc("block/black_cat_window")).renderType("translucent"));
@@ -1025,6 +1037,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.JAM_JAR_PYRAMID_ORANGE_MARMALADE);
 
         hFacingBlockWithCustomModel(BlockRegistration.SAFE_NOVAKID);
+        hFacingBlockWithCustomModel(BlockRegistration.HOPPIN_PARK_LANTERN);
         multiblockParts(BlockRegistration.VIOLET_SCREEN);
 
         simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_YELLOW.get(), models().getExistingFile(modLoc("block/spool_of_thread_yellow")));
