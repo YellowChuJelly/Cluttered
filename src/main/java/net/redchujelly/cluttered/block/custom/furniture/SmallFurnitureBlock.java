@@ -21,7 +21,7 @@ import net.redchujelly.cluttered.block.custom.CustomHorizontalBlock;
 public class SmallFurnitureBlock extends CustomHorizontalBlock implements SimpleWaterloggedBlock {
 
     private static final VoxelShape SHAPE = Block.box(4,0,4,12,8,12);
-    private static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+    protected static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     public SmallFurnitureBlock(Properties pProperties) {
         super(pProperties);
