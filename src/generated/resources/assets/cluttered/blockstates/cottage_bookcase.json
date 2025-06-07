@@ -1,34 +1,50 @@
 {
   "variants": {
-    "facing=east,waterlogged=false": {
-      "model": "cluttered:block/cottage_bookcase",
+    "facing=down,part=1": {
+      "model": "cluttered:block/cottage_bookcase_1",
+      "y": 270
+    },
+    "facing=down,part=2": {
+      "model": "cluttered:block/cottage_bookcase_2",
+      "y": 270
+    },
+    "facing=east,part=1": {
+      "model": "cluttered:block/cottage_bookcase_1",
+      "y": 270
+    },
+    "facing=east,part=2": {
+      "model": "cluttered:block/cottage_bookcase_2",
+      "y": 270
+    },
+    "facing=north,part=1": {
+      "model": "cluttered:block/cottage_bookcase_1",
+      "y": 180
+    },
+    "facing=north,part=2": {
+      "model": "cluttered:block/cottage_bookcase_2",
+      "y": 180
+    },
+    "facing=south,part=1": {
+      "model": "cluttered:block/cottage_bookcase_1"
+    },
+    "facing=south,part=2": {
+      "model": "cluttered:block/cottage_bookcase_2"
+    },
+    "facing=up,part=1": {
+      "model": "cluttered:block/cottage_bookcase_1",
+      "y": 270
+    },
+    "facing=up,part=2": {
+      "model": "cluttered:block/cottage_bookcase_2",
+      "y": 270
+    },
+    "facing=west,part=1": {
+      "model": "cluttered:block/cottage_bookcase_1",
       "y": 90
     },
-    "facing=east,waterlogged=true": {
-      "model": "cluttered:block/cottage_bookcase",
+    "facing=west,part=2": {
+      "model": "cluttered:block/cottage_bookcase_2",
       "y": 90
-    },
-    "facing=north,waterlogged=false": {
-      "model": "cluttered:block/cottage_bookcase"
-    },
-    "facing=north,waterlogged=true": {
-      "model": "cluttered:block/cottage_bookcase"
-    },
-    "facing=south,waterlogged=false": {
-      "model": "cluttered:block/cottage_bookcase",
-      "y": -180
-    },
-    "facing=south,waterlogged=true": {
-      "model": "cluttered:block/cottage_bookcase",
-      "y": -180
-    },
-    "facing=west,waterlogged=false": {
-      "model": "cluttered:block/cottage_bookcase",
-      "y": -90
-    },
-    "facing=west,waterlogged=true": {
-      "model": "cluttered:block/cottage_bookcase",
-      "y": -90
     }
   }
 }

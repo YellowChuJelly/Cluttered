@@ -1135,7 +1135,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.OSSON_PENDANT_YELLOW);
         hFacingBlockWithCustomModel(BlockRegistration.OSSON_PENDANT_WHITE);
 
-        hFacingBlockWithCustomModel(BlockRegistration.COTTAGE_BOOKCASE);
+        multiblockParts(BlockRegistration.COTTAGE_BOOKCASE);
         hFacingBlockWithCustomModel(BlockRegistration.COTTAGE_STANDING_LAMP);
         hFacingBlockWithCustomModel(BlockRegistration.DRYING_HERBS);
         hFacingBlockWithCustomModel(BlockRegistration.HANGING_CLOTH);

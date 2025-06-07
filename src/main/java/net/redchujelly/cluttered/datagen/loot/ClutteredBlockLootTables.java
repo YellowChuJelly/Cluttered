@@ -841,11 +841,11 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.MUREX_CABINET.get());
         multiBlockDropOnlyOneItem(BlockRegistration.MUREX_CABINET_CLUTTERED.get());
 
-        multiBlockDropOnlyOneItem(BlockRegistration.MINI_CACTUS_SET.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.MUSHROOM_JARS.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.NEWSPAPER_PILE_SHORT.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.NEWSPAPER_PILE_TALL.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.PAPER_PILE.get());
+        dropSelf(BlockRegistration.MINI_CACTUS_SET.get());
+        dropSelf(BlockRegistration.MUSHROOM_JARS.get());
+        dropSelf(BlockRegistration.NEWSPAPER_PILE_SHORT.get());
+        dropSelf(BlockRegistration.NEWSPAPER_PILE_TALL.get());
+        dropSelf(BlockRegistration.PAPER_PILE.get());
 
         dropSelf(BlockRegistration.ROVER_STOOL.get());
         dropSelf(BlockRegistration.RUBIKS_CUBE.get());
@@ -889,8 +889,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
 
         dropSelf(BlockRegistration.SAFE_NOVAKID.get());
         multiBlockDropOnlyOneItem(BlockRegistration.VIOLET_SCREEN.get());
-        dropSelf(BlockRegistration.CONFECTIONERY_TABLE_BLUE.get());
-        dropSelf(BlockRegistration.CONFECTIONERY_TABLE_PINK.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.CONFECTIONERY_TABLE_BLUE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.CONFECTIONERY_TABLE_PINK.get());
 
         dropSelf(BlockRegistration.OSSON_PENDANT_BLACK.get());
         dropSelf(BlockRegistration.OSSON_PENDANT_BROWN.get());
@@ -901,7 +901,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.OSSON_PENDANT_YELLOW.get());
         dropSelf(BlockRegistration.OSSON_PENDANT_WHITE.get());
 
-        dropSelf(BlockRegistration.COTTAGE_BOOKCASE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.COTTAGE_BOOKCASE.get());
         dropSelf(BlockRegistration.COTTAGE_STANDING_LAMP.get());
         dropSelf(BlockRegistration.DRYING_HERBS.get());
         dropSelf(BlockRegistration.HANGING_CLOTH.get());

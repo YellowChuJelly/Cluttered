@@ -5,28 +5,22 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class TableBlock extends MultiblockPlacer{
-
-    private static final VoxelShape TOP = Block.box(0,13,0,16,16,16);
+public class ConfectioneryTableBlock extends TableBlock{
+    private static final VoxelShape TOP = Block.box(0,14,0,16,16,16);
     private static final VoxelShape SHAPE_NORTH = Shapes.join(Block.box(1,0,1,4,14,4), Block.box(1,0,12,4,14,15), BooleanOp.OR);
     private static final VoxelShape SHAPE_SOUTH = Shapes.join(Block.box(12,0,1,15,14,4), Block.box(12,0,12,15,14,15), BooleanOp.OR);
     private static final VoxelShape SHAPE_EAST = Shapes.join(Block.box(12,0,1,15,14,4), Block.box(1,0,1,4,14,4), BooleanOp.OR);
     private static final VoxelShape SHAPE_WEST = Shapes.join(Block.box(1,0,12,4,14,15), Block.box(12,0,12,15,14,15), BooleanOp.OR);
 
 
-    public static final IntegerProperty MULTIBLOCK_PART = IntegerProperty.create("part", 1, 2);
-    private static final int[][][] MULTIBLOCK_SHAPE = {
-            {
-                    {1},
-                    {2}
-            },
-    };
+    public ConfectioneryTableBlock(Properties pProperties) {
+        super(pProperties);
+    }
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
@@ -40,21 +34,5 @@ public class TableBlock extends MultiblockPlacer{
             default -> legs = part == 1 ? SHAPE_NORTH : SHAPE_SOUTH;
         }
         return Shapes.join(legs, TOP, BooleanOp.OR);
-    }
-
-
-
-    public TableBlock(Properties pProperties) {
-        super(pProperties);
-    }
-
-    @Override
-    public IntegerProperty getMultiblockPart() {
-        return super.getMultiblockPart();
-    }
-
-    @Override
-    public int[][][] getMultiblockShape() {
-        return MULTIBLOCK_SHAPE;
     }
 }

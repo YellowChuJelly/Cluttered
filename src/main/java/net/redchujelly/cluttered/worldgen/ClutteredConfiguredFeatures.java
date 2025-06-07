@@ -46,7 +46,7 @@ public class ClutteredConfiguredFeatures {
                 new TwoLayersFeatureSize(4, 3, 5)).build()
         );
 
-        register(context, BLUE_MUHSROOM_KEY, Feature.HUGE_RED_MUSHROOM, new HugeMushroomFeatureConfiguration(
+        register(context, BLUE_MUHSROOM_KEY, Feature.HUGE_BROWN_MUSHROOM, new HugeMushroomFeatureConfiguration(
                 BlockStateProvider.simple(BlockRegistration.BLUE_MUSHROOM_CAP.get()),
                 BlockStateProvider.simple(BlockRegistration.BLUE_MUSHROOM_LOG.get()), 3)
         );
