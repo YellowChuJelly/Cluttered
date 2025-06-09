@@ -1038,7 +1038,22 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         hFacingBlockWithCustomModel(BlockRegistration.SAFE_NOVAKID);
         hFacingBlockWithCustomModel(BlockRegistration.HOPPIN_PARK_LANTERN);
+        hFacingBlockWithCustomModel(BlockRegistration.HOPPIN_PARK_LANTERN_CEILING);
+        hFacingBlockWithCustomModel(BlockRegistration.HOPPIN_PARK_LANTERN_WALL);
+        hFacingBlockWithCustomModel(BlockRegistration.SEA_GEM_LANTERN);
+        hFacingBlockWithCustomModel(BlockRegistration.SEA_GEM_LANTERN_CEILING);
         multiblockParts(BlockRegistration.VIOLET_SCREEN);
+        hFacingBlockWithCustomModel(BlockRegistration.HANGING_SHELVES_PLANTS);
+        hFacingBlockWithCustomModel(BlockRegistration.HANGING_SHELVES_POTTERY);
+
+        hFacingBlockWithCustomModel(BlockRegistration.RETRO_TOASTER_BLACK);
+        hFacingBlockWithCustomModel(BlockRegistration.RETRO_TOASTER_BLUE);
+        hFacingBlockWithCustomModel(BlockRegistration.RETRO_TOASTER_PINK);
+        hFacingBlockWithCustomModel(BlockRegistration.RETRO_TOASTER_PURPLE);
+        hFacingBlockWithCustomModel(BlockRegistration.RETRO_TOASTER_TURQUOISE);
+        hFacingBlockWithCustomModel(BlockRegistration.RETRO_TOASTER_RED);
+        hFacingBlockWithCustomModel(BlockRegistration.RETRO_TOASTER_WHITE);
+        hFacingBlockWithCustomModel(BlockRegistration.RETRO_TOASTER_YELLOW);
 
         simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_YELLOW.get(), models().getExistingFile(modLoc("block/spool_of_thread_yellow")));
         simpleBlockWithItem(BlockRegistration.THREAD_SPOOL_GREEN.get(), models().getExistingFile(modLoc("block/spool_of_thread_green")));

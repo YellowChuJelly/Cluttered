@@ -1581,7 +1581,36 @@ public class BlockRegistration {
     public static final RegistryObject<Block> HANGING_CLOTH = registerBlock("hanging_cloth",
             () -> new HangingClothBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
 
+    //TODO
     public static final RegistryObject<Block> HOPPIN_PARK_LANTERN = registerBlock("hoppin_park_lantern",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> HOPPIN_PARK_LANTERN_CEILING = registerBlock("hoppin_park_lantern_ceiling",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> HOPPIN_PARK_LANTERN_WALL = registerBlock("hoppin_park_lantern_wall",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> SEA_GEM_LANTERN = registerBlock("sea_gem_lantern",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> SEA_GEM_LANTERN_CEILING = registerBlock("sea_gem_lantern_ceiling",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> HANGING_SHELVES_PLANTS = registerBlock("hanging_shelves_plants",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> HANGING_SHELVES_POTTERY = registerBlock("hanging_shelves_pottery",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> RETRO_TOASTER_BLACK = registerBlock("retro_toaster_black",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> RETRO_TOASTER_BLUE = registerBlock("retro_toaster_blue",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> RETRO_TOASTER_PINK = registerBlock("retro_toaster_pink",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> RETRO_TOASTER_PURPLE = registerBlock("retro_toaster_purple",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> RETRO_TOASTER_RED = registerBlock("retro_toaster_red",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> RETRO_TOASTER_TURQUOISE = registerBlock("retro_toaster_turquoise",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> RETRO_TOASTER_WHITE = registerBlock("retro_toaster_white",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> RETRO_TOASTER_YELLOW = registerBlock("retro_toaster_yellow",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
 
     public static final RegistryObject<Block> THREE_JAM_JARS_STRAWBERRY = registerBlock("three_jam_jars_strawberry",

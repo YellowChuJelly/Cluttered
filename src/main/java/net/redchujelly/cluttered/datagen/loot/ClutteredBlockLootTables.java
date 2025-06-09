@@ -828,6 +828,21 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.BASKET_OF_FLOWERS.get());
         dropSelf(BlockRegistration.BASKET_OF_PRODUCE.get());
         dropSelf(BlockRegistration.HOPPIN_PARK_LANTERN.get());
+        dropSelf(BlockRegistration.SEA_GEM_LANTERN.get());
+        dropSelf(BlockRegistration.HOPPIN_PARK_LANTERN_CEILING.get());
+        dropSelf(BlockRegistration.HOPPIN_PARK_LANTERN_WALL.get());
+        dropSelf(BlockRegistration.SEA_GEM_LANTERN_CEILING.get());
+        dropSelf(BlockRegistration.HANGING_SHELVES_POTTERY.get());
+        dropSelf(BlockRegistration.HANGING_SHELVES_PLANTS.get());
+
+        dropSelf(BlockRegistration.RETRO_TOASTER_BLACK.get());
+        dropSelf(BlockRegistration.RETRO_TOASTER_BLUE.get());
+        dropSelf(BlockRegistration.RETRO_TOASTER_RED.get());
+        dropSelf(BlockRegistration.RETRO_TOASTER_PINK.get());
+        dropSelf(BlockRegistration.RETRO_TOASTER_PURPLE.get());
+        dropSelf(BlockRegistration.RETRO_TOASTER_TURQUOISE.get());
+        dropSelf(BlockRegistration.RETRO_TOASTER_WHITE.get());
+        dropSelf(BlockRegistration.RETRO_TOASTER_YELLOW.get());
 
         multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_RED.get());
         multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_BLUE.get());

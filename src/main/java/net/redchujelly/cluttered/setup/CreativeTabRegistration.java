@@ -984,6 +984,14 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.RETRO_FRIDGE_TURQUOISE.get());
                         output.accept(BlockRegistration.RETRO_FRIDGE_WHITE.get());
                         output.accept(BlockRegistration.RETRO_FRIDGE_YELLOW.get());
+                        output.accept(BlockRegistration.RETRO_TOASTER_BLACK.get());
+                        output.accept(BlockRegistration.RETRO_TOASTER_BLUE.get());
+                        output.accept(BlockRegistration.RETRO_TOASTER_PINK.get());
+                        output.accept(BlockRegistration.RETRO_TOASTER_PURPLE.get());
+                        output.accept(BlockRegistration.RETRO_TOASTER_RED.get());
+                        output.accept(BlockRegistration.RETRO_TOASTER_TURQUOISE.get());
+                        output.accept(BlockRegistration.RETRO_TOASTER_WHITE.get());
+                        output.accept(BlockRegistration.RETRO_TOASTER_YELLOW.get());
                         output.accept(BlockRegistration.SALT_PEPPER_SHAKERS.get());
                         output.accept(BlockRegistration.SAND_SEAL_PLUSH_BLUE.get());
                         output.accept(BlockRegistration.SAND_SEAL_PLUSH_GREEN.get());
@@ -1007,7 +1015,13 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.UNLIVING_CHAIR.get());
                         output.accept(BlockRegistration.SAFE_NOVAKID.get());
                         output.accept(BlockRegistration.HOPPIN_PARK_LANTERN.get());
+                        output.accept(BlockRegistration.HOPPIN_PARK_LANTERN_CEILING.get());
+                        output.accept(BlockRegistration.HOPPIN_PARK_LANTERN_WALL.get());
+                        output.accept(BlockRegistration.SEA_GEM_LANTERN.get());
+                        output.accept(BlockRegistration.SEA_GEM_LANTERN_CEILING.get());
                         output.accept(BlockRegistration.VIOLET_SCREEN.get());
+                        output.accept(BlockRegistration.HANGING_SHELVES_POTTERY.get());
+                        output.accept(BlockRegistration.HANGING_SHELVES_PLANTS.get());
 
                     })
                     .build());

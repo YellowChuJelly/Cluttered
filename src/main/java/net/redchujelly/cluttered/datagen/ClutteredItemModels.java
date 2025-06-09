@@ -452,6 +452,21 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.SAFE_NOVAKID);
         blockitemFromModel(BlockRegistration.VIOLET_SCREEN);
         blockitemFromModel(BlockRegistration.HOPPIN_PARK_LANTERN);
+        blockitemFromModel(BlockRegistration.HOPPIN_PARK_LANTERN_CEILING);
+        blockitemFromModel(BlockRegistration.HOPPIN_PARK_LANTERN_WALL);
+        blockitemFromModel(BlockRegistration.SEA_GEM_LANTERN);
+        blockitemFromModel(BlockRegistration.SEA_GEM_LANTERN_CEILING);
+        blockitemFromModel(BlockRegistration.HANGING_SHELVES_PLANTS);
+        blockitemFromModel(BlockRegistration.HANGING_SHELVES_POTTERY);
+
+        blockitemFromModel(BlockRegistration.RETRO_TOASTER_BLACK);
+        blockitemFromModel(BlockRegistration.RETRO_TOASTER_BLUE);
+        blockitemFromModel(BlockRegistration.RETRO_TOASTER_PINK);
+        blockitemFromModel(BlockRegistration.RETRO_TOASTER_PURPLE);
+        blockitemFromModel(BlockRegistration.RETRO_TOASTER_TURQUOISE);
+        blockitemFromModel(BlockRegistration.RETRO_TOASTER_RED);
+        blockitemFromModel(BlockRegistration.RETRO_TOASTER_WHITE);
+        blockitemFromModel(BlockRegistration.RETRO_TOASTER_YELLOW);
 
         blockitemFromModel(BlockRegistration.POTION_SHELF);
         blockitemFromModel(BlockRegistration.DORADO_CABINET);
