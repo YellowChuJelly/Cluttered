@@ -138,7 +138,17 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.WOOD_FRENCH_DOOR.get())
 
                 .add(BlockRegistration.BLUE_WAINSCOTING.get())
-                .add(BlockRegistration.BROWN_WAINSCOTING.get());
+                .add(BlockRegistration.BROWN_WAINSCOTING.get())
+
+                .add(BlockRegistration.WOODEN_PICKET_FENCE.get())
+                .add(BlockRegistration.WOODEN_BRACKET_BOW.get())
+                .add(BlockRegistration.WOODEN_BRACKET_SCROLL.get())
+                .add(BlockRegistration.WOODEN_BRACKET_BOW_SCROLL.get())
+                .add(BlockRegistration.WOODEN_BRACKET_STAR.get())
+                .add(BlockRegistration.WOODEN_BRACKET_STAR_SCROLL.get())
+                .add(BlockRegistration.WOODEN_BRACKET_SCROLL_SHELF.get())
+                .add(BlockRegistration.WOODEN_BRACKET_VICTORIAN.get());
+
 
         tag(BlockTags.WOODEN_DOORS)
                 .add(BlockRegistration.WILLOW_LOG_DOOR.get())
@@ -249,16 +259,6 @@ public class ClutteredBlockTags extends BlockTagsProvider {
 
                 .add(BlockRegistration.MARBLE_BALUSTRADE.get())
                 .add(BlockRegistration.MARBLE_PICKET_FENCE.get())
-
-                .add(BlockRegistration.WOODEN_PICKET_FENCE.get())
-
-                .add(BlockRegistration.WOODEN_BRACKET_BOW.get())
-                .add(BlockRegistration.WOODEN_BRACKET_SCROLL.get())
-                .add(BlockRegistration.WOODEN_BRACKET_BOW_SCROLL.get())
-                .add(BlockRegistration.WOODEN_BRACKET_STAR.get())
-                .add(BlockRegistration.WOODEN_BRACKET_STAR_SCROLL.get())
-                .add(BlockRegistration.WOODEN_BRACKET_SCROLL_SHELF.get())
-                .add(BlockRegistration.WOODEN_BRACKET_VICTORIAN.get())
 
                 .add(BlockRegistration.GINGERBREAD_BRICKS.get())
                 .add(BlockRegistration.GINGERBREAD_BRICK_STAIRS.get())
