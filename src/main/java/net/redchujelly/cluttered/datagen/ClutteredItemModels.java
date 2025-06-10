@@ -329,6 +329,8 @@ public class ClutteredItemModels extends ItemModelProvider {
         simplePaneBlockItem(BlockRegistration.MOON_DECORATION);
         blockitemFromModel(BlockRegistration.POLAROIDS_A);
         blockitemFromModel(BlockRegistration.CAGED_BULB);
+        blockitemFromModel(BlockRegistration.VICTORIAN_STREETLIGHT_CROWN_MARBLE);
+        blockitemFromModel(BlockRegistration.VICTORIAN_STREETLIGHT_2);
         blockitemFromModel(BlockRegistration.COLOSSEO_WALL_LANTERN);
         blockitemFromModel(BlockRegistration.MINI_FLAG_BI);
         blockitemFromModel(BlockRegistration.MINI_FLAG_LESBIAN);
@@ -458,6 +460,8 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.SEA_GEM_LANTERN_CEILING);
         blockitemFromModel(BlockRegistration.HANGING_SHELVES_PLANTS);
         blockitemFromModel(BlockRegistration.HANGING_SHELVES_POTTERY);
+        blockitemFromModel(BlockRegistration.POK_TA_POK_HOOP);
+        blockitemFromModel(BlockRegistration.POK_TA_POK_HOOP_SNAKES);
 
         blockitemFromModel(BlockRegistration.RETRO_TOASTER_BLACK);
         blockitemFromModel(BlockRegistration.RETRO_TOASTER_BLUE);

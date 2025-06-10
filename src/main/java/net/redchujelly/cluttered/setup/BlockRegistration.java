@@ -1612,6 +1612,10 @@ public class BlockRegistration {
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryObject<Block> RETRO_TOASTER_YELLOW = registerBlock("retro_toaster_yellow",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> POK_TA_POK_HOOP = registerBlock("pok_ta_pok_hoop",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> POK_TA_POK_HOOP_SNAKES = registerBlock("pok_ta_pok_hoop_snakes",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
 
     public static final RegistryObject<Block> THREE_JAM_JARS_STRAWBERRY = registerBlock("three_jam_jars_strawberry",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
@@ -1701,6 +1705,10 @@ public class BlockRegistration {
     public static final RegistryObject<Block> MOON_DECORATION = registerBlock("moon_decoration",
             () -> new FlatDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).lightLevel(p -> 10).sound(SoundType.SMALL_AMETHYST_BUD).mapColor(DyeColor.YELLOW).noOcclusion().noCollission()));
     public static final RegistryObject<Block> CAGED_BULB = registerBlock("caged_bulb",
+            () -> new CagedBulbBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).mapColor(DyeColor.BLACK)));
+    public static final RegistryObject<Block> VICTORIAN_STREETLIGHT_CROWN_MARBLE = registerBlock("victorian_streetlight_crown_marble",
+            () -> new CagedBulbBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).mapColor(DyeColor.BLACK)));
+    public static final RegistryObject<Block> VICTORIAN_STREETLIGHT_2 = registerBlock("victorian_streetlight_2",
             () -> new CagedBulbBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).mapColor(DyeColor.BLACK)));
     public static final RegistryObject<Block> POLAROIDS_A = registerBlock("polaroids_a",
             () -> new FlatDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.SPORE_BLOSSOM)));

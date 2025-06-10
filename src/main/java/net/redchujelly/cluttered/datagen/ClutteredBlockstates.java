@@ -1045,6 +1045,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         multiblockParts(BlockRegistration.VIOLET_SCREEN);
         hFacingBlockWithCustomModel(BlockRegistration.HANGING_SHELVES_PLANTS);
         hFacingBlockWithCustomModel(BlockRegistration.HANGING_SHELVES_POTTERY);
+        hFacingBlockWithCustomModel(BlockRegistration.POK_TA_POK_HOOP);
+        hFacingBlockWithCustomModel(BlockRegistration.POK_TA_POK_HOOP_SNAKES);
 
         hFacingBlockWithCustomModel(BlockRegistration.RETRO_TOASTER_BLACK);
         hFacingBlockWithCustomModel(BlockRegistration.RETRO_TOASTER_BLUE);
@@ -1135,6 +1137,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         flatFacingBlock(BlockRegistration.MOON_DECORATION, -90);
 
         facingBlockWithCustomModel(BlockRegistration.CAGED_BULB);
+        facingBlockWithCustomModel(BlockRegistration.VICTORIAN_STREETLIGHT_CROWN_MARBLE);
+        facingBlockWithCustomModel(BlockRegistration.VICTORIAN_STREETLIGHT_2);
         hFacingBlockWithCustomModel(BlockRegistration.COLOSSEO_WALL_LANTERN);
         multiblockParts(BlockRegistration.BULLETIN_BOARD);
         multiblockParts(BlockRegistration.BULLETIN_BOARD_CLUTTERED);

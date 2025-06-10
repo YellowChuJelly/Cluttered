@@ -318,6 +318,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.MARBLE_PILLAR_IONIC.get());
                         output.accept(BlockRegistration.MARBLE_BALUSTRADE.get());
                         output.accept(BlockRegistration.MARBLE_PICKET_FENCE.get());
+                        output.accept(BlockRegistration.VICTORIAN_STREETLIGHT_CROWN_MARBLE.get());
+                        output.accept(BlockRegistration.VICTORIAN_STREETLIGHT_2.get());
 
                         output.accept(BlockRegistration.MARBLE_BRACKET_VICTORIAN.get());
                         output.accept(BlockRegistration.MARBLE_BRACKET_SCROLL.get());
@@ -1022,6 +1024,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.VIOLET_SCREEN.get());
                         output.accept(BlockRegistration.HANGING_SHELVES_POTTERY.get());
                         output.accept(BlockRegistration.HANGING_SHELVES_PLANTS.get());
+                        output.accept(BlockRegistration.POK_TA_POK_HOOP.get());
+                        output.accept(BlockRegistration.POK_TA_POK_HOOP_SNAKES.get());
 
                     })
                     .build());

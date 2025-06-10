@@ -834,6 +834,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.SEA_GEM_LANTERN_CEILING.get());
         dropSelf(BlockRegistration.HANGING_SHELVES_POTTERY.get());
         dropSelf(BlockRegistration.HANGING_SHELVES_PLANTS.get());
+        dropSelf(BlockRegistration.POK_TA_POK_HOOP.get());
+        dropSelf(BlockRegistration.POK_TA_POK_HOOP_SNAKES.get());
 
         dropSelf(BlockRegistration.RETRO_TOASTER_BLACK.get());
         dropSelf(BlockRegistration.RETRO_TOASTER_BLUE.get());
@@ -955,6 +957,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.BEE_LAMP_ANGRY.get());
         dropSelf(BlockRegistration.STAINED_GLASS_LAMP.get());
         dropSelf(BlockRegistration.CAGED_BULB.get());
+        dropSelf(BlockRegistration.VICTORIAN_STREETLIGHT_CROWN_MARBLE.get());
+        dropSelf(BlockRegistration.VICTORIAN_STREETLIGHT_2.get());
         dropSelf(BlockRegistration.COLOSSEO_WALL_LANTERN.get());
 
         //TERRARIUMS
