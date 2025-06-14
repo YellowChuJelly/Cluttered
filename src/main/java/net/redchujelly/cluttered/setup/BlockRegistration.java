@@ -1292,7 +1292,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> ENVELOPE_STACK = registerBlock("envelope_stack",
             () -> new FlatClutterBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM).strength(0.2f)));
     public static final RegistryObject<Block> FLOWER_DESK_LAMP = registerBlock("flower_desk_lamp",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+            () -> new FlowerDeskLampBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).strength(0.4f).sound(SoundType.CHERRY_LEAVES)));
     public static final RegistryObject<Block> FLOWER_SHELF_BLUE = registerBlock("flower_shelf_blue",
             () -> new FlowerShelfBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(0.4f)));
     public static final RegistryObject<Block> FLOWER_SHELF_GREEN = registerBlock("flower_shelf_green",
@@ -1348,7 +1348,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> YELLOW_NOTEPAD = registerBlock("yellow_notepad",
             () -> new FlatClutterBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM).strength(0.2f)));
     public static final RegistryObject<Block> FABRIC_BOLTS = registerBlock("fabric_bolts",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).strength(0.4f)));
+            () -> new FabricBoltsBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).strength(0.4f)));
     public static final RegistryObject<Block> SCISSORS_AND_THREAD = registerBlock("scissors_and_thread",
             () -> new FlatClutterBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).noCollission().strength(0.2f)));
     public static final RegistryObject<Block> SLICED_BREAD = registerBlock("sliced_bread",
@@ -1357,11 +1357,11 @@ public class BlockRegistration {
             () -> new VialStandBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(0.4f)));
     public static final RegistryObject<Block> PINEAPPLE = registerBlock("pineapple",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> HONEYCOMB_LAMP = registerBlock("honeycomb_lamp",
+            () -> new HoneycombLampBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.HONEY_BLOCK)));
     //TODO remove maybe?
     public static final RegistryObject<Block> MUSHROOM_FLAT = registerBlock("mushroom_flat",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
-    public static final RegistryObject<Block> HONEYCOMB_LAMP = registerBlock("honeycomb_lamp",
-            () -> new HoneycombLampBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.HONEY_BLOCK)));
 
     //SMALL STORAGE
     //MISC
@@ -1556,21 +1556,21 @@ public class BlockRegistration {
 
     //TODO fix these
     public static final RegistryObject<Block> OSSON_PENDANT_BLACK = registerBlock("osson_pendant_black",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_WOOL)));
+            () -> new PendantLampBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
     public static final RegistryObject<Block> OSSON_PENDANT_BROWN = registerBlock("osson_pendant_brown",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+            () -> new PendantLampBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
     public static final RegistryObject<Block> OSSON_PENDANT_ORANGE = registerBlock("osson_pendant_orange",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL)));
+            () -> new PendantLampBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
     public static final RegistryObject<Block> OSSON_PENDANT_RACING_GREEN = registerBlock("osson_pendant_racing_green",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.GREEN_WOOL)));
+            () -> new PendantLampBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
     public static final RegistryObject<Block> OSSON_PENDANT_SAGE_GREEN = registerBlock("osson_pendant_sage_green",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL)));
+            () -> new PendantLampBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
     public static final RegistryObject<Block> OSSON_PENDANT_RED = registerBlock("osson_pendant_red",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL)));
+            () -> new PendantLampBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
     public static final RegistryObject<Block> OSSON_PENDANT_YELLOW = registerBlock("osson_pendant_yellow",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL)));
+            () -> new PendantLampBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
     public static final RegistryObject<Block> OSSON_PENDANT_WHITE = registerBlock("osson_pendant_white",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+            () -> new PendantLampBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
 
     public static final RegistryObject<Block> COTTAGE_BOOKCASE = registerBlock("cottage_bookcase",
             () -> new CottageBookcaseBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));

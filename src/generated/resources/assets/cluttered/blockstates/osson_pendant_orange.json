@@ -1,32 +1,62 @@
 {
   "variants": {
-    "facing=east,waterlogged=false": {
+    "facing=east,lit=false,waterlogged=false": {
       "model": "cluttered:block/osson_pendant_orange",
       "y": 90
     },
-    "facing=east,waterlogged=true": {
+    "facing=east,lit=false,waterlogged=true": {
       "model": "cluttered:block/osson_pendant_orange",
       "y": 90
     },
-    "facing=north,waterlogged=false": {
+    "facing=east,lit=true,waterlogged=false": {
+      "model": "cluttered:block/osson_pendant_orange",
+      "y": 90
+    },
+    "facing=east,lit=true,waterlogged=true": {
+      "model": "cluttered:block/osson_pendant_orange",
+      "y": 90
+    },
+    "facing=north,lit=false,waterlogged=false": {
       "model": "cluttered:block/osson_pendant_orange"
     },
-    "facing=north,waterlogged=true": {
+    "facing=north,lit=false,waterlogged=true": {
       "model": "cluttered:block/osson_pendant_orange"
     },
-    "facing=south,waterlogged=false": {
+    "facing=north,lit=true,waterlogged=false": {
+      "model": "cluttered:block/osson_pendant_orange"
+    },
+    "facing=north,lit=true,waterlogged=true": {
+      "model": "cluttered:block/osson_pendant_orange"
+    },
+    "facing=south,lit=false,waterlogged=false": {
       "model": "cluttered:block/osson_pendant_orange",
       "y": -180
     },
-    "facing=south,waterlogged=true": {
+    "facing=south,lit=false,waterlogged=true": {
       "model": "cluttered:block/osson_pendant_orange",
       "y": -180
     },
-    "facing=west,waterlogged=false": {
+    "facing=south,lit=true,waterlogged=false": {
+      "model": "cluttered:block/osson_pendant_orange",
+      "y": -180
+    },
+    "facing=south,lit=true,waterlogged=true": {
+      "model": "cluttered:block/osson_pendant_orange",
+      "y": -180
+    },
+    "facing=west,lit=false,waterlogged=false": {
       "model": "cluttered:block/osson_pendant_orange",
       "y": -90
     },
-    "facing=west,waterlogged=true": {
+    "facing=west,lit=false,waterlogged=true": {
+      "model": "cluttered:block/osson_pendant_orange",
+      "y": -90
+    },
+    "facing=west,lit=true,waterlogged=false": {
+      "model": "cluttered:block/osson_pendant_orange",
+      "y": -90
+    },
+    "facing=west,lit=true,waterlogged=true": {
       "model": "cluttered:block/osson_pendant_orange",
       "y": -90
     }
