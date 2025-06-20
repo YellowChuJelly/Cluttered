@@ -75,6 +75,9 @@ public class ClutteredItemModels extends ItemModelProvider {
         simpleBlockItem(BlockRegistration.RED_MUSHROOM_DOOR);
         simplePaneBlockItem(BlockRegistration.RED_MUSHROOM_WINDOW_PANE);
 
+
+        standardCubeItem(BlockRegistration.EYE_BLOCK, "eye_block_left_0");
+
         basicItem(ItemRegistration.HAND_DRILL.get());
 
         simplePaneBlockItem(BlockRegistration.CHALCEDONY_WINDOW_PANE).renderType("cutout");

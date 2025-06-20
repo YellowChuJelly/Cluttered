@@ -1286,7 +1286,7 @@ public class BlockRegistration {
 
     //TODO idr if i ahve another to do somewhere else sorry
     public static final RegistryObject<Block> BOOK_OPEN = registerBlock("book_open",
-            () -> new ShortMediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+            () -> new ShortMediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM).strength(0.2f)));
     public static final RegistryObject<Block> BRASS_KEY = registerBlock("brass_key",
             () -> new SmallFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.STONE).strength(0.5f)));
     public static final RegistryObject<Block> ENVELOPE_STACK = registerBlock("envelope_stack",
