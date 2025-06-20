@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
 	"render_type": "minecraft:cutout",
+	"texture_size": [32, 32],
 	"textures": {
 		"0": "cluttered:block/retro_toaster_yellow",
 		"particle": "cluttered:block/retro_toaster_yellow"
