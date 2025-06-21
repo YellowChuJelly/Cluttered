@@ -246,6 +246,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.CHALCEDONY_PILLAR_IONIC.get());
                         output.accept(BlockRegistration.CHALCEDONY_BALUSTRADE.get());
                         output.accept(BlockRegistration.CHALCEDONY_PICKET_FENCE.get());
+                        output.accept(BlockRegistration.CHALCEDONY_PICKET_FENCE_GATE.get());
 
                         output.accept(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get());
                         output.accept(BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get());
@@ -282,6 +283,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_PILLAR_IONIC.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_BALUSTRADE.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE.get());
+                        output.accept(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE_GATE.get());
 
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL.get());
@@ -318,6 +320,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.MARBLE_PILLAR_IONIC.get());
                         output.accept(BlockRegistration.MARBLE_BALUSTRADE.get());
                         output.accept(BlockRegistration.MARBLE_PICKET_FENCE.get());
+                        output.accept(BlockRegistration.MARBLE_PICKET_FENCE_GATE.get());
+
                         output.accept(BlockRegistration.VICTORIAN_STREETLIGHT_CROWN_MARBLE.get());
                         output.accept(BlockRegistration.VICTORIAN_STREETLIGHT_2.get());
 
@@ -585,6 +589,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.WOOD_FRENCH_DOOR.get());
 
                         output.accept(BlockRegistration.WOODEN_PICKET_FENCE.get());
+                        output.accept(BlockRegistration.WOODEN_PICKET_FENCE_GATE.get());
 
                         output.accept(BlockRegistration.WOODEN_BRACKET_VICTORIAN.get());
                         output.accept(BlockRegistration.WOODEN_BRACKET_SCROLL.get());

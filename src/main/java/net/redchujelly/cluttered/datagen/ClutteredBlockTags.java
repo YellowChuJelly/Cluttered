@@ -316,39 +316,39 @@ public class ClutteredBlockTags extends BlockTagsProvider {
 
                 .add(BlockRegistration.CHISELED_GOLD_BLOCK.get());
 
-        tag(BlockTags.WALLS)
+        //tag(BlockTags.WALLS)
                 //Brackets are in here because it lets them connect to glass panes and it looks really nice
-                .add(BlockRegistration.MARBLE_BRACKET_BOW.get())
-                .add(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL.get())
-                .add(BlockRegistration.MARBLE_BRACKET_VICTORIAN.get())
-                .add(BlockRegistration.MARBLE_BRACKET_STAR.get())
-                .add(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL.get())
-                .add(BlockRegistration.MARBLE_BRACKET_SCROLL_SHELF.get())
-                .add(BlockRegistration.MARBLE_BRACKET_SCROLL.get())
-
-                .add(BlockRegistration.CHALCEDONY_BRACKET_BOW.get())
-                .add(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL.get())
-                .add(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get())
-                .add(BlockRegistration.CHALCEDONY_BRACKET_STAR.get())
-                .add(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL.get())
-                .add(BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF.get())
-                .add(BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get())
-
-                .add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW.get())
-                .add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL.get())
-                .add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN.get())
-                .add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR.get())
-                .add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL.get())
-                .add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL_SHELF.get())
-                .add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL.get())
-
-                .add(BlockRegistration.WOODEN_BRACKET_BOW.get())
-                .add(BlockRegistration.WOODEN_BRACKET_BOW_SCROLL.get())
-                .add(BlockRegistration.WOODEN_BRACKET_VICTORIAN.get())
-                .add(BlockRegistration.WOODEN_BRACKET_STAR.get())
-                .add(BlockRegistration.WOODEN_BRACKET_STAR_SCROLL.get())
-                .add(BlockRegistration.WOODEN_BRACKET_SCROLL_SHELF.get())
-                .add(BlockRegistration.WOODEN_BRACKET_SCROLL.get());
+                //.add(BlockRegistration.MARBLE_BRACKET_BOW.get())
+                //.add(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL.get())
+                //.add(BlockRegistration.MARBLE_BRACKET_VICTORIAN.get())
+                //.add(BlockRegistration.MARBLE_BRACKET_STAR.get())
+                //.add(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL.get())
+                //.add(BlockRegistration.MARBLE_BRACKET_SCROLL_SHELF.get())
+                //.add(BlockRegistration.MARBLE_BRACKET_SCROLL.get())
+//
+                //.add(BlockRegistration.CHALCEDONY_BRACKET_BOW.get())
+                //.add(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL.get())
+                //.add(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get())
+                //.add(BlockRegistration.CHALCEDONY_BRACKET_STAR.get())
+                //.add(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL.get())
+                //.add(BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF.get())
+                //.add(BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get())
+//
+                //.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW.get())
+                //.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL.get())
+                //.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN.get())
+                //.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR.get())
+                //.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL.get())
+                //.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL_SHELF.get())
+                //.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL.get())
+//
+                //.add(BlockRegistration.WOODEN_BRACKET_BOW.get())
+                //.add(BlockRegistration.WOODEN_BRACKET_BOW_SCROLL.get())
+                //.add(BlockRegistration.WOODEN_BRACKET_VICTORIAN.get())
+                //.add(BlockRegistration.WOODEN_BRACKET_STAR.get())
+                //.add(BlockRegistration.WOODEN_BRACKET_STAR_SCROLL.get())
+                //.add(BlockRegistration.WOODEN_BRACKET_SCROLL_SHELF.get())
+                //.add(BlockRegistration.WOODEN_BRACKET_SCROLL.get());
 
         tag(BlockTags.BIG_DRIPLEAF_PLACEABLE)
                 .add(BlockRegistration.YELLOW_PLANTER.get())

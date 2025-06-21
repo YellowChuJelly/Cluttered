@@ -1,4 +1,4 @@
-package net.redchujelly.cluttered.block.custom.furniture;
+package net.redchujelly.cluttered.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -21,6 +21,7 @@ import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.redchujelly.cluttered.block.custom.furniture.SmallFurnitureBlock;
 import net.redchujelly.cluttered.setup.ItemRegistration;
 
 public class BracketBlock extends SmallFurnitureBlock {
@@ -33,6 +34,13 @@ public class BracketBlock extends SmallFurnitureBlock {
     private static final VoxelShape SHAPE_SOUTH_DOWN = Shapes.join( Block.box(7, 0, 0, 9, 6, 16), Block.box(7, 0, 0, 9, 16, 6), BooleanOp.OR);
     private static final VoxelShape SHAPE_WEST_UP = Shapes.join(Block.box(0, 10, 7, 16, 16, 9), Block.box(10, 0, 7, 16, 16, 9), BooleanOp.OR);
     private static final VoxelShape SHAPE_WEST_DOWN = Shapes.join(Block.box(0, 0, 7, 16, 6, 9), Block.box(10, 0, 7, 16, 16, 9), BooleanOp.OR);
+
+    private static final VoxelShape SUPPORT_SHAPE_UP = Block.box(0,14,0,16,16,16);
+    private static final VoxelShape SUPPORT_SHAPE_DOWN = Block.box(0,0,0,16,2,16);
+    private static final VoxelShape SUPPORT_SHAPE_SOUTH = Block.box(0,0,0,16,16,2);
+    private static final VoxelShape SUPPORT_SHAPE_NORTH = Block.box(0,0,14,16,16,16);
+    private static final VoxelShape SUPPORT_SHAPE_WEST = Block.box(14,0,0,16,16,16);
+    private static final VoxelShape SUPPORT_SHAPE_EAST = Block.box(0,0,0,2,16,16);
 
     public static final BooleanProperty OFFSET = BooleanProperty.create("offset");
     public static final BooleanProperty IS_UP = BooleanProperty.create("is_up");
@@ -58,17 +66,17 @@ public class BracketBlock extends SmallFurnitureBlock {
 
 
 
-    @Override
-    public BlockState updateShape(BlockState pState, Direction pDirection, BlockState pNeighborState, LevelAccessor pLevel, BlockPos pPos, BlockPos pNeighborPos) {
-        Direction facingOpp = pState.getValue(FACING).getOpposite();
-        BlockPos behindPos = pPos.relative(facingOpp);
+    //@Override
+    //public BlockState updateShape(BlockState pState, Direction pDirection, BlockState pNeighborState, LevelAccessor pLevel, BlockPos pPos, BlockPos pNeighborPos) {
+    //    Direction facingOpp = pState.getValue(FACING).getOpposite();
+    //    BlockPos behindPos = pPos.relative(facingOpp);
 
-        if(pNeighborPos.equals(behindPos) && (pNeighborState.is(BlockTags.FENCES) || pNeighborState.is(BlockTags.WOODEN_FENCES))){
-            pLevel.setBlock(pPos, pState.setValue(OFFSET, true), 2);
-        }
+    //    if(pNeighborPos.equals(behindPos) && (pNeighborState.is(BlockTags.FENCES) || pNeighborState.is(BlockTags.WOODEN_FENCES))){
+    //        pLevel.setBlock(pPos, pState.setValue(OFFSET, true), 2);
+    //    }
 
-        return super.updateShape(pState, pDirection, pNeighborState, pLevel, pPos, pNeighborPos);
-    }
+    //    return super.updateShape(pState, pDirection, pNeighborState, pLevel, pPos, pNeighborPos);
+    //}
 
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
@@ -80,6 +88,30 @@ public class BracketBlock extends SmallFurnitureBlock {
             return InteractionResult.SUCCESS;
         }
         return InteractionResult.PASS;
+    }
+
+    @Override
+    public VoxelShape getBlockSupportShape(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
+        Direction facing = pState.getValue(FACING);
+        boolean is_up = pState.getValue(IS_UP);
+        if (pState.getValue(OFFSET)){
+            return switch (facing) {
+                case SOUTH -> is_up ? SHAPE_SOUTH_UP : SHAPE_SOUTH_DOWN;
+                case EAST -> is_up ? SHAPE_EAST_UP : SHAPE_EAST_DOWN;
+                case WEST -> is_up ? SHAPE_WEST_UP : SHAPE_WEST_DOWN;
+                default -> is_up ? SHAPE_NORTH_UP : SHAPE_NORTH_DOWN;
+            };
+        }
+        else {
+            VoxelShape shapeH = switch (facing){
+                case SOUTH -> SUPPORT_SHAPE_SOUTH;
+                case EAST -> SUPPORT_SHAPE_EAST;
+                case WEST -> SUPPORT_SHAPE_WEST;
+                default -> SUPPORT_SHAPE_NORTH;
+            };
+            VoxelShape shapeV = is_up ? SUPPORT_SHAPE_UP : SUPPORT_SHAPE_DOWN;
+            return Shapes.or(shapeH, shapeV);
+        }
     }
 
     @Override

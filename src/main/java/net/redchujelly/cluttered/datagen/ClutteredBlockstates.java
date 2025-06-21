@@ -1,6 +1,5 @@
 package net.redchujelly.cluttered.datagen;
 
-import com.google.gson.JsonElement;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -15,14 +14,14 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
+import net.redchujelly.cluttered.block.custom.BracketBlock;
 import net.redchujelly.cluttered.block.custom.EyeBlock;
 import net.redchujelly.cluttered.block.custom.HeartCakeBlock;
+import net.redchujelly.cluttered.block.custom.PicketFenceGateBlock;
 import net.redchujelly.cluttered.block.custom.furniture.*;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
-import net.redchujelly.cluttered.util.GarlandOffset;
-
-import javax.json.Json;
+import net.redchujelly.cluttered.util.PicketFenceGateOpen;
 
 public class ClutteredBlockstates extends BlockStateProvider {
     public ClutteredBlockstates(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -1383,6 +1382,11 @@ public class ClutteredBlockstates extends BlockStateProvider {
         //        ConfiguredModel.builder().modelFile(models().getBuilder("block/endtable_amethyst").parent(models().getExistingFile(modLoc("block/endtable_meadow"))).texture("4", "block/endtable_amethyst"))
         //                .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).getOpposite().toYRot()).build());
 
+        picketFencegateBlock(BlockRegistration.CHALCEDONY_PICKET_FENCE_GATE);
+        picketFencegateBlock(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE_GATE);
+        picketFencegateBlock(BlockRegistration.MARBLE_PICKET_FENCE_GATE);
+        picketFencegateBlock(BlockRegistration.WOODEN_PICKET_FENCE_GATE);
+
     }
 
 
@@ -1603,6 +1607,28 @@ public class ClutteredBlockstates extends BlockStateProvider {
                 .condition(FenceBlock.SOUTH, true).end()
                 .part().modelFile(side).rotationY((int) Direction.WEST.getOpposite().toYRot()).addModel()
                 .condition(FenceBlock.WEST, true).end();
+    }
+
+    private void picketFencegateBlock(RegistryObject<Block> block){
+        String id = block.getId().toString().replace("cluttered:", "");
+
+        this.getVariantBuilder(block.get())
+                .forAllStates(state ->
+                        ConfiguredModel.builder().modelFile(
+                                        //ternary operator with a nested ternary operator
+                                        state.getValue(PicketFenceGateBlock.OPEN_STATE).equals(PicketFenceGateOpen.CLOSED) ?
+                                                //ternary operator result 1
+                                                models().getBuilder("block/" + id + "_closed").parent(models().getExistingFile(modLoc("block/picket_fence_gate_closed"))).texture("1", "block/" + id).texture("particle", "block/" + id) :
+                                                //ternary operator result 2 (nested ternary)
+                                                state.getValue(PicketFenceGateBlock.OPEN_STATE).equals(PicketFenceGateOpen.FORWARD) ?
+                                                        //nested ternary operator result 1
+                                                        models().getBuilder("block/" + id + "_forward").parent(models().getExistingFile(modLoc("block/picket_fence_gate_open_forwards"))).texture("1", "block/" + id).texture("particle", "block/" + id) :
+                                                        //nested ternary operator result 2
+                                                        models().getBuilder("block/" + id + "_backward").parent(models().getExistingFile(modLoc("block/picket_fence_gate_open_backwards"))).texture("1", "block/" + id).texture("particle", "block/" + id)
+                                )
+                                .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).getOpposite().toYRot())
+                                .build()
+                );
     }
 
     //private void flatFacingBlock(RegistryObject<Block> block){

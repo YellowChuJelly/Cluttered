@@ -99,9 +99,13 @@ public class ClutteredItemModels extends ItemModelProvider {
         balustradeItem(BlockRegistration.CHALCEDONY_BALUSTRADE);
         balustradeItem(BlockRegistration.DEEP_CHALCEDONY_BALUSTRADE);
         picketFenceItem(BlockRegistration.MARBLE_PICKET_FENCE);
+        picketFenceGateItem(BlockRegistration.MARBLE_PICKET_FENCE_GATE);
         picketFenceItem(BlockRegistration.CHALCEDONY_PICKET_FENCE);
+        picketFenceGateItem(BlockRegistration.CHALCEDONY_PICKET_FENCE_GATE);
         picketFenceItem(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE);
+        picketFenceGateItem(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE_GATE);
         picketFenceItem(BlockRegistration.WOODEN_PICKET_FENCE);
+        picketFenceGateItem(BlockRegistration.WOODEN_PICKET_FENCE_GATE);
 
         bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL);
         bracketItem(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW);
@@ -563,6 +567,14 @@ public class ClutteredItemModels extends ItemModelProvider {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/picket_fence"))
                 .texture("2", modLoc("block/" + id));
     }
+
+    public void picketFenceGateItem(RegistryObject<Block> block) {
+        String id = block.getId().toString().replace("cluttered:", "");
+
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/picket_fence_gate_closed"))
+                .texture("1", modLoc("block/" + id));
+    }
+
 
     public void standardCubeItem (RegistryObject<Block> block, String texture) {
         this.cubeAll(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/" + texture));
