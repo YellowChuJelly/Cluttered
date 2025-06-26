@@ -883,7 +883,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.SMALL_SHELF_PINK.get());
         dropSelf(BlockRegistration.TWO_FLOWER_POTS.get());
         dropSelf(BlockRegistration.TRADITIONAL_RADIO.get());
-        dropSelf(BlockRegistration.SEWING_MANNEQUIN.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.SEWING_MANNEQUIN.get());
         dropSelf(BlockRegistration.STARS_PENDANT.get());
         dropSelf(BlockRegistration.MOON_DECORATION.get());
         dropSelf(BlockRegistration.MOON_PENDANT.get());

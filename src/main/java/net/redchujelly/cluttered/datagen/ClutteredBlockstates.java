@@ -1159,7 +1159,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.SMALL_SHELF_PINK);
         hFacingBlockWithCustomModel(BlockRegistration.TWO_FLOWER_POTS);
         hFacingBlockWithCustomModel(BlockRegistration.TRADITIONAL_RADIO);
-        hFacingBlockWithCustomModel(BlockRegistration.SEWING_MANNEQUIN);
+        multiblockParts(BlockRegistration.SEWING_MANNEQUIN);
 
         simpleBlockWithItem(BlockRegistration.STARS_PENDANT.get(), models().cross("stars_pendant", modLoc("block/stars_pendant")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.MOON_PENDANT.get(), models().cross("moon_pendant", modLoc("block/moon_pendant")).renderType("cutout"));

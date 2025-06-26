@@ -57,6 +57,7 @@ public class ShelfCandleBlock extends SmallFurnitureBlock{
             if (item.getItem() instanceof FlintAndSteelItem) {
                 if (!pLevel.isClientSide) {
                     pLevel.setBlock(pPos, pState.setValue(LIT, true), 2);
+                    pLevel.playSound(null, pPos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS);
                     if (item.isDamageableItem()) {
                         item.hurtAndBreak(1, pPlayer, (player) -> player.broadcastBreakEvent(pHand));
                     }
@@ -66,6 +67,7 @@ public class ShelfCandleBlock extends SmallFurnitureBlock{
         } else if (item.isEmpty()) {
             if (!pLevel.isClientSide){
                 pLevel.setBlock(pPos, pState.setValue(LIT, false), 2);
+                pLevel.playSound(null, pPos, SoundEvents.CANDLE_EXTINGUISH, SoundSource.BLOCKS);
             }
             return InteractionResult.SUCCESS;
         }

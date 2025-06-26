@@ -182,7 +182,7 @@ public class MultiblockPlacer extends Block {
         return true;
     }
 
-    private BlockPos findBlockState1(BlockPos currentPos, LevelAccessor level) {
+    protected BlockPos findBlockState1(BlockPos currentPos, LevelAccessor level) {
 
         if (!level.getBlockState(currentPos).hasProperty(FACING)) {
             return null;
