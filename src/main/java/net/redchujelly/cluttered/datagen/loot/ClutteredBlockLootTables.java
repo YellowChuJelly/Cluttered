@@ -707,6 +707,28 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.HONEYCOMB_LAMP.get());
         dropSelf(BlockRegistration.UNLIVING_CHAIR.get());
 
+        //DARKWOOD
+        multiBlockDropOnlyOneItem(BlockRegistration.DARKWOOD_BED_GEOMETRIC.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DARKWOOD_BED_QUILTED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DARKWOOD_BED_SOUTHERN_FLAIR.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DARKWOOD_CHAIR_GEOMETRIC.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DARKWOOD_CHAIR_QUILTED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DARKWOOD_CHAIR_SOUTHERN_FLAIR.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DARKWOOD_SOFA_GEOMETRIC.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DARKWOOD_SOFA_QUILTED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DARKWOOD_SOFA_SOUTHERN_FLAIR.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_GEOMETRIC.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_QUILTED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_SOUTHERN_FLAIR.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DARKWOOD_CABINET.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DARKWOOD_TABLE.get());
+        dropSelf(BlockRegistration.DARKWOOD_ENDTABLE.get());
+        dropSelf(BlockRegistration.DARKWOOD_STOOL.get());
+        dropSelf(BlockRegistration.DARKWOOD_CLOCK.get());
+
+        dropSelf(BlockRegistration.WATERING_CAN.get());
+        dropSelf(BlockRegistration.WATERING_CAN_COPPER.get());
+
         //KITCHEN SETS
         dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET.get());
         dropSelf(BlockRegistration.KITCHEN_SET_BROWN_CABINET_GLASS.get());

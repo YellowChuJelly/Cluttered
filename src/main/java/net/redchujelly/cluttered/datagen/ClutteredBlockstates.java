@@ -1129,6 +1129,28 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.BASKET_OF_FLOWERS);
         hFacingBlockWithCustomModel(BlockRegistration.BASKET_OF_PRODUCE);
 
+        //DARKWOOD
+        multiblockParts(BlockRegistration.DARKWOOD_BED_GEOMETRIC);
+        multiblockParts(BlockRegistration.DARKWOOD_BED_QUILTED);
+        multiblockParts(BlockRegistration.DARKWOOD_BED_SOUTHERN_FLAIR);
+        multiblockParts(BlockRegistration.DARKWOOD_CABINET);
+        multiblockParts(BlockRegistration.DARKWOOD_CHAIR_GEOMETRIC);
+        multiblockParts(BlockRegistration.DARKWOOD_CHAIR_QUILTED);
+        multiblockParts(BlockRegistration.DARKWOOD_CHAIR_SOUTHERN_FLAIR);
+        multiblockParts(BlockRegistration.DARKWOOD_SOFA_GEOMETRIC);
+        multiblockParts(BlockRegistration.DARKWOOD_SOFA_QUILTED);
+        multiblockParts(BlockRegistration.DARKWOOD_SOFA_SOUTHERN_FLAIR);
+        multiblockParts(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_GEOMETRIC);
+        multiblockParts(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_QUILTED);
+        multiblockParts(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_SOUTHERN_FLAIR);
+        multiblockParts(BlockRegistration.DARKWOOD_TABLE);
+        hFacingBlockWithCustomModel(BlockRegistration.DARKWOOD_CLOCK);
+        hFacingBlockWithCustomModel(BlockRegistration.DARKWOOD_STOOL);
+        hFacingBlockWithCustomModel(BlockRegistration.DARKWOOD_ENDTABLE);
+
+        hFacingBlockWithCustomModel(BlockRegistration.WATERING_CAN);
+        hFacingBlockWithCustomModel(BlockRegistration.WATERING_CAN_COPPER);
+
         hFacingBlockWithCustomModel(BlockRegistration.ROVER_STOOL);
 
         getVariantBuilder(BlockRegistration.RUBIKS_CUBE.get())

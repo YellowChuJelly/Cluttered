@@ -786,6 +786,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.TRADITIONAL_RADIO.get());
                         output.accept(BlockRegistration.SEWING_MANNEQUIN.get());
                         output.accept(BlockRegistration.SEWING_MACHINE_ANTIQUE.get());
+                        output.accept(BlockRegistration.WATERING_CAN.get());
+                        output.accept(BlockRegistration.WATERING_CAN_COPPER.get());
 
                         output.accept(BlockRegistration.STARS_PENDANT.get());
                         output.accept(BlockRegistration.MOON_PENDANT.get());
@@ -831,6 +833,24 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.ARMCHAIR_STARRY.get());
                         output.accept(BlockRegistration.ARMCHAIR_BLACK_CAT.get());
                         output.accept(BlockRegistration.COTTAGE_ARMCHAIR.get());
+
+                        output.accept(BlockRegistration.DARKWOOD_CHAIR_GEOMETRIC.get());
+                        output.accept(BlockRegistration.DARKWOOD_CHAIR_QUILTED.get());
+                        output.accept(BlockRegistration.DARKWOOD_CHAIR_SOUTHERN_FLAIR.get());
+                        output.accept(BlockRegistration.DARKWOOD_SOFA_GEOMETRIC.get());
+                        output.accept(BlockRegistration.DARKWOOD_SOFA_QUILTED.get());
+                        output.accept(BlockRegistration.DARKWOOD_SOFA_SOUTHERN_FLAIR.get());
+                        output.accept(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_GEOMETRIC.get());
+                        output.accept(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_QUILTED.get());
+                        output.accept(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_SOUTHERN_FLAIR.get());
+                        output.accept(BlockRegistration.DARKWOOD_ENDTABLE.get());
+                        output.accept(BlockRegistration.DARKWOOD_TABLE.get());
+                        output.accept(BlockRegistration.DARKWOOD_STOOL.get());
+                        output.accept(BlockRegistration.DARKWOOD_CABINET.get());
+                        output.accept(BlockRegistration.DARKWOOD_CLOCK.get());
+                        output.accept(BlockRegistration.DARKWOOD_BED_GEOMETRIC.get());
+                        output.accept(BlockRegistration.DARKWOOD_BED_QUILTED.get());
+                        output.accept(BlockRegistration.DARKWOOD_BED_SOUTHERN_FLAIR.get());
 
                         output.accept(BlockRegistration.TABLE_PLAIN.get());
                         output.accept(BlockRegistration.TABLE_TABLECLOTH.get());

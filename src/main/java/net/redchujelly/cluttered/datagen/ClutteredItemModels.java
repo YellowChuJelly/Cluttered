@@ -470,6 +470,27 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.POK_TA_POK_HOOP);
         blockitemFromModel(BlockRegistration.POK_TA_POK_HOOP_SNAKES);
 
+        blockitemFromModel(BlockRegistration.DARKWOOD_BED_GEOMETRIC);
+        blockitemFromModel(BlockRegistration.DARKWOOD_BED_QUILTED);
+        blockitemFromModel(BlockRegistration.DARKWOOD_BED_SOUTHERN_FLAIR);
+        blockitemFromModel(BlockRegistration.DARKWOOD_CHAIR_GEOMETRIC);
+        blockitemFromModel(BlockRegistration.DARKWOOD_CHAIR_QUILTED);
+        blockitemFromModel(BlockRegistration.DARKWOOD_CHAIR_SOUTHERN_FLAIR);
+        blockitemFromModel(BlockRegistration.DARKWOOD_SOFA_GEOMETRIC);
+        blockitemFromModel(BlockRegistration.DARKWOOD_SOFA_QUILTED);
+        blockitemFromModel(BlockRegistration.DARKWOOD_SOFA_SOUTHERN_FLAIR);
+        blockitemFromModel(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_GEOMETRIC);
+        blockitemFromModel(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_QUILTED);
+        blockitemFromModel(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_SOUTHERN_FLAIR);
+        blockitemFromModel(BlockRegistration.DARKWOOD_CABINET);
+        blockitemFromModel(BlockRegistration.DARKWOOD_TABLE);
+        blockitemFromModel(BlockRegistration.DARKWOOD_STOOL);
+        blockitemFromModel(BlockRegistration.DARKWOOD_CLOCK);
+        blockitemFromModel(BlockRegistration.DARKWOOD_ENDTABLE);
+
+        blockitemFromModel(BlockRegistration.WATERING_CAN);
+        blockitemFromModel(BlockRegistration.WATERING_CAN_COPPER);
+
         blockitemFromModel(BlockRegistration.RETRO_TOASTER_BLACK);
         blockitemFromModel(BlockRegistration.RETRO_TOASTER_BLUE);
         blockitemFromModel(BlockRegistration.RETRO_TOASTER_PINK);
