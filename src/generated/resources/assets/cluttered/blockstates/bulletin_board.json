@@ -1,13 +1,5 @@
 {
   "variants": {
-    "facing=down,part=1": {
-      "model": "cluttered:block/bulletin_board_1",
-      "y": 270
-    },
-    "facing=down,part=2": {
-      "model": "cluttered:block/bulletin_board_2",
-      "y": 270
-    },
     "facing=east,part=1": {
       "model": "cluttered:block/bulletin_board_1",
       "y": 270
@@ -29,14 +21,6 @@
     },
     "facing=south,part=2": {
       "model": "cluttered:block/bulletin_board_2"
-    },
-    "facing=up,part=1": {
-      "model": "cluttered:block/bulletin_board_1",
-      "y": 270
-    },
-    "facing=up,part=2": {
-      "model": "cluttered:block/bulletin_board_2",
-      "y": 270
     },
     "facing=west,part=1": {
       "model": "cluttered:block/bulletin_board_1",

@@ -1,34 +1,22 @@
 {
   "variants": {
-    "facing=east,waterlogged=false": {
+    "facing=east,part=1": {
+      "model": "cluttered:block/drying_herbs",
+      "y": 270
+    },
+    "facing=north,part=1": {
+      "model": "cluttered:block/drying_herbs",
+      "y": 180
+    },
+    "facing=south,part=1": {
+      "model": "cluttered:block/drying_herbs"
+    },
+    "facing=west,part=1": {
       "model": "cluttered:block/drying_herbs",
       "y": 90
     },
-    "facing=east,waterlogged=true": {
-      "model": "cluttered:block/drying_herbs",
-      "y": 90
-    },
-    "facing=north,waterlogged=false": {
-      "model": "cluttered:block/drying_herbs"
-    },
-    "facing=north,waterlogged=true": {
-      "model": "cluttered:block/drying_herbs"
-    },
-    "facing=south,waterlogged=false": {
-      "model": "cluttered:block/drying_herbs",
-      "y": -180
-    },
-    "facing=south,waterlogged=true": {
-      "model": "cluttered:block/drying_herbs",
-      "y": -180
-    },
-    "facing=west,waterlogged=false": {
-      "model": "cluttered:block/drying_herbs",
-      "y": -90
-    },
-    "facing=west,waterlogged=true": {
-      "model": "cluttered:block/drying_herbs",
-      "y": -90
+    "part=2": {
+      "model": "cluttered:block/drying_herbs2"
     }
   }
 }

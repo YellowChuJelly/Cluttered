@@ -11,6 +11,7 @@ public class LargeTableBlock extends MultiblockPlacer{
                     {2,4}
             },
     };
+
     public LargeTableBlock(Properties pProperties) {
         super(pProperties);
     }

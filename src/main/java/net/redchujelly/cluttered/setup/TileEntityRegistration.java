@@ -8,6 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.block.entity.CustomStorageBlockEntity;
+import net.redchujelly.cluttered.block.entity.FridgeBlockEntity;
 
 import java.util.Arrays;
 import java.util.function.Supplier;
@@ -94,6 +95,18 @@ public class TileEntityRegistration {
             BlockRegistration.BRIEFCASE_ROVER,
     };
 
+    static RegistryObject<?>[] fridges = new RegistryObject[]{
+            BlockRegistration.RETRO_FRIDGE_BLACK,
+            BlockRegistration.RETRO_FRIDGE_BLUE,
+            BlockRegistration.RETRO_FRIDGE_PINK,
+            BlockRegistration.RETRO_FRIDGE_RED,
+            BlockRegistration.RETRO_FRIDGE_PURPLE,
+            BlockRegistration.RETRO_FRIDGE_YELLOW,
+            BlockRegistration.RETRO_FRIDGE_TURQUOISE,
+            BlockRegistration.RETRO_FRIDGE_WHITE,
+    };
+
+
     public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> KITCHEN_SET_HALF_CABINET_BE = registerWithStorage(
             () -> TileEntityRegistration.KITCHEN_SET_HALF_CABINET_BE, 1,  (RegistryObject<Block>[]) oneRow, "kitchen_set_half_cabinet_be");
     public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> KITCHEN_SET_CABINET_BE = registerWithStorage(
@@ -102,6 +115,9 @@ public class TileEntityRegistration {
             () -> TileEntityRegistration.KITCHEN_SET_COUNTER_BE, 3,  (RegistryObject<Block>[]) threeRows, "kitchen_set_counter_be");
     public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> FOUR_ROWS_BE = registerWithStorage(
             () -> TileEntityRegistration.FOUR_ROWS_BE, 4,  (RegistryObject<Block>[]) fourRows, "four_rows_be");
+
+    public static final RegistryObject<BlockEntityType<FridgeBlockEntity>> RETRO_FRIDGE_BE = registerFridgeWithStorage(
+            () -> TileEntityRegistration.RETRO_FRIDGE_BE, 6,  (RegistryObject<Block>[]) fridges, "retro_fridge_be");
 
 
 
@@ -116,6 +132,13 @@ public class TileEntityRegistration {
 
         return BLOCK_ENTITIES.register(name, () -> BlockEntityType.Builder.of((blockPos, blockState) ->
                 new CustomStorageBlockEntity(type.get().get(), blockPos, blockState, rows), Arrays.stream(block).iterator().next().get())
+                .build(null));
+    }
+
+    private static RegistryObject<BlockEntityType<FridgeBlockEntity>> registerFridgeWithStorage(Supplier<Supplier<BlockEntityType<FridgeBlockEntity>>> type, int rows, RegistryObject<Block>[] block, String name){
+
+        return BLOCK_ENTITIES.register(name, () -> BlockEntityType.Builder.of((blockPos, blockState) ->
+                new FridgeBlockEntity(type.get().get(), blockPos, blockState, rows), Arrays.stream(block).iterator().next().get())
                 .build(null));
     }
 

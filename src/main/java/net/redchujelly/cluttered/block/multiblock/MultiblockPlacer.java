@@ -20,7 +20,7 @@ import org.jetbrains.annotations.Nullable;
 public class MultiblockPlacer extends Block {
 
     public static final IntegerProperty MULTIBLOCK_PART = IntegerProperty.create("part", 1, 2);
-    public static final DirectionProperty FACING = BlockStateProperties.FACING;
+    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
     //3D Array of the shape of the multiblock.
     //The first layer is supposed to be height(y), second is width(x) and third is depth(z)
@@ -34,6 +34,7 @@ public class MultiblockPlacer extends Block {
     public int[][][] getMultiblockShape(){
         return MULTIBLOCK_SHAPE;
     }
+
     public IntegerProperty getMultiblockPart(){
         return MULTIBLOCK_PART;
     }
@@ -150,6 +151,7 @@ public class MultiblockPlacer extends Block {
 
     @Override
     public boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
+        //this lets you place the block
         if (!pLevel.getBlockState(pPos).is(this)) {return true;}
 
         Direction facing = pState.getValue(FACING);

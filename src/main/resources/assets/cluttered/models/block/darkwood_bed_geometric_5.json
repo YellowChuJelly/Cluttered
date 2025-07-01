@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"render_type": "minecraft:cutout",
 	"textures": {
@@ -93,9 +94,9 @@
 			}
 		},
 		{
-			"from": [0.99, 5.29405, 5.50562],
-			"to": [10.99, 10.29405, 12.50562],
-			"rotation": {"angle": -22.5, "axis": "x", "origin": [0, 8, 6]},
+			"from": [0.99, 4.54405, 5.50562],
+			"to": [10.99, 9.54405, 12.50562],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [0, 7.25, 6]},
 			"faces": {
 				"north": {"uv": [7.375, 10, 8.625, 9.375], "texture": "#3"},
 				"east": {"uv": [8.75, 11, 9.375, 10.125], "rotation": 90, "texture": "#3"},
@@ -145,7 +146,7 @@
 			"scale": [0.15, 0.15, 0.15]
 		},
 		"gui": {
-			"rotation": [30, 225, 0],
+			"rotation": [30, -135, 0],
 			"translation": [-0.12, -0.75, 0],
 			"scale": [0.29, 0.29, 0.29]
 		},

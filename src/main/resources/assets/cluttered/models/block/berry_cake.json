@@ -1,15 +1,17 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
 	"render_type": "minecraft:cutout",
+	"texture_size": [32, 32],
 	"textures": {
 		"1": "cluttered:block/berry_cake",
 		"particle": "cluttered:block/berry_cake"
 	},
 	"elements": [
 		{
-			"from": [2.5, 0.02, 3],
-			"to": [13.5, 0.02, 14],
+			"from": [2.5, 0.02, 2.5],
+			"to": [13.5, 0.02, 13.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, -0.5]},
 			"faces": {
 				"north": {"uv": [0, 0, 5.5, 0], "texture": "#1"},
 				"east": {"uv": [0, 0, 5.5, 0], "texture": "#1"},
@@ -20,8 +22,9 @@
 			}
 		},
 		{
-			"from": [4.5, 0.03, 5],
-			"to": [11.5, 5.03, 12],
+			"from": [4.5, 0.03, 4.5],
+			"to": [11.5, 5.03, 11.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, -0.5]},
 			"faces": {
 				"north": {"uv": [6, 4.5, 9.5, 7], "texture": "#1"},
 				"east": {"uv": [6, 4.5, 9.5, 7], "texture": "#1"},
@@ -32,8 +35,9 @@
 			}
 		},
 		{
-			"from": [6.5, 5.03, 8],
-			"to": [7.5, 6.03, 9],
+			"from": [6.5, 5.03, 7.5],
+			"to": [7.5, 6.03, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, -0.5]},
 			"faces": {
 				"north": {"uv": [2, 9, 2.5, 9.5], "texture": "#1"},
 				"east": {"uv": [2.5, 9, 3, 9.5], "texture": "#1"},
@@ -44,8 +48,9 @@
 			}
 		},
 		{
-			"from": [7.5, 5.03, 6],
-			"to": [8.5, 6.03, 7],
+			"from": [7.5, 5.03, 5.5],
+			"to": [8.5, 6.03, 6.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, -0.5]},
 			"faces": {
 				"north": {"uv": [0, 9, 0.5, 9.5], "texture": "#1"},
 				"east": {"uv": [0.5, 9, 1, 9.5], "texture": "#1"},
@@ -56,8 +61,9 @@
 			}
 		},
 		{
-			"from": [7.5, 5.03, 7],
-			"to": [9.5, 7.03, 9],
+			"from": [7.5, 5.03, 6.5],
+			"to": [9.5, 7.03, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, -0.5]},
 			"faces": {
 				"north": {"uv": [5.5, 9, 6.5, 10], "texture": "#1"},
 				"east": {"uv": [6.5, 9, 7.5, 10], "texture": "#1"},
@@ -68,9 +74,9 @@
 			}
 		},
 		{
-			"from": [6, 5.03, 9.5],
-			"to": [12, 10.03, 9.5],
-			"rotation": {"angle": 22.5, "axis": "y", "origin": [9, 5, 10.5]},
+			"from": [6, 5.03, 9],
+			"to": [12, 10.03, 9],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [9, 5, 10]},
 			"faces": {
 				"north": {"uv": [0, 6, 3, 8.5], "texture": "#1"},
 				"east": {"uv": [0, 0, 0, 2.5], "texture": "#1"},
@@ -105,7 +111,7 @@
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
-			"rotation": [30, 225, 0],
+			"rotation": [30, -135, 0],
 			"translation": [0.5, 4.25, 0]
 		},
 		"head": {

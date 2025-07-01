@@ -1588,7 +1588,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> COTTAGE_STANDING_LAMP = registerBlock("cottage_standing_lamp",
             () -> new SmallLampBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryObject<Block> DRYING_HERBS = registerBlock("drying_herbs",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+            () -> new DryingHerbsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryObject<Block> HANGING_CLOTH = registerBlock("hanging_cloth",
             () -> new HangingClothBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
 
@@ -1763,6 +1763,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> ANIMATED_FLAG_RAINBOW = registerBlock("animated_flag_rainbow",
             () -> new AnimatedFlagBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).noCollission().sound(SoundType.LANTERN).strength(0.5f)));
 
+
     //DARKWOOD SET
     public static final RegistryObject<Block> DARKWOOD_CABINET = registerBlock("darkwood_cabinet",
             () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
@@ -1798,7 +1799,6 @@ public class BlockRegistration {
             () -> new DarkwoodBedBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> DARKWOOD_BED_SOUTHERN_FLAIR = registerBlock("darkwood_bed_southern_flair",
             () -> new DarkwoodBedBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
-
 
     //LAMPS
     public static final RegistryObject<Block> BEE_LAMP = registerBlock("bee_lamp",

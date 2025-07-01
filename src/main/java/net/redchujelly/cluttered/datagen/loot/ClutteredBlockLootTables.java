@@ -946,7 +946,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
 
         multiBlockDropOnlyOneItem(BlockRegistration.COTTAGE_BOOKCASE.get());
         dropSelf(BlockRegistration.COTTAGE_STANDING_LAMP.get());
-        dropSelf(BlockRegistration.DRYING_HERBS.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DRYING_HERBS.get());
         dropSelf(BlockRegistration.HANGING_CLOTH.get());
 
         this.add(BlockRegistration.HEART_CAKE.get(), noDrop());
