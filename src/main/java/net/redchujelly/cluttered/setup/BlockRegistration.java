@@ -1199,7 +1199,7 @@ public class BlockRegistration {
             () -> new BirdhouseBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.PINK).noOcclusion()));
 
     public static final RegistryObject<Block> CARDBOARD_BOX_OPEN = registerBlock("cardboard_box_open",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).mapColor(DyeColor.BROWN)));
+            () -> new CardboardBoxBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).mapColor(DyeColor.BROWN)));
     public static final RegistryObject<Block> CARDBOARD_BOX_CLOSED = registerBlock("cardboard_box_closed",
             () -> new SmallFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).mapColor(DyeColor.BROWN)));
     public static final RegistryObject<Block> CARDBOARD_BOX_CLUTTERED = registerBlock("cardboard_box_cluttered",
@@ -1528,21 +1528,21 @@ public class BlockRegistration {
     public static final RegistryObject<Block> GENERAL_STORE_CABINET = registerBlock("general_store_cabinet",
             () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
     public static final RegistryObject<Block> RETRO_FRIDGE_BLACK = registerBlock("retro_fridge_black",
-            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
+            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(DyeColor.BLACK).noOcclusion()));
     public static final RegistryObject<Block> RETRO_FRIDGE_BLUE = registerBlock("retro_fridge_blue",
-            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
+            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(DyeColor.BLUE).noOcclusion()));
     public static final RegistryObject<Block> RETRO_FRIDGE_PINK = registerBlock("retro_fridge_pink",
-            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
+            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(DyeColor.PINK).noOcclusion()));
     public static final RegistryObject<Block> RETRO_FRIDGE_PURPLE = registerBlock("retro_fridge_purple",
-            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
+            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(DyeColor.PURPLE).noOcclusion()));
     public static final RegistryObject<Block> RETRO_FRIDGE_RED = registerBlock("retro_fridge_red",
-            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
+            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(DyeColor.RED).noOcclusion()));
     public static final RegistryObject<Block> RETRO_FRIDGE_TURQUOISE = registerBlock("retro_fridge_turquoise",
-            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
+            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(DyeColor.CYAN).noOcclusion()));
     public static final RegistryObject<Block> RETRO_FRIDGE_WHITE = registerBlock("retro_fridge_white",
-            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
+            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
     public static final RegistryObject<Block> RETRO_FRIDGE_YELLOW = registerBlock("retro_fridge_yellow",
-            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
+            () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(DyeColor.YELLOW).noOcclusion()));
     public static final RegistryObject<Block> FWISH_ARMCHAIR = registerBlock("fwish_armchair",
             () -> new FwishArmchairBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE).noOcclusion()));
     public static final RegistryObject<Block> FWISH_OTTOMAN = registerBlock("fwish_ottoman",

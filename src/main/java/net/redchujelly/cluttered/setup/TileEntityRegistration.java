@@ -7,6 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
+import net.redchujelly.cluttered.block.entity.CardboardBoxBlockEntity;
 import net.redchujelly.cluttered.block.entity.CustomStorageBlockEntity;
 import net.redchujelly.cluttered.block.entity.FridgeBlockEntity;
 
@@ -106,6 +107,14 @@ public class TileEntityRegistration {
             BlockRegistration.RETRO_FRIDGE_WHITE,
     };
 
+    static RegistryObject<?>[] cardboardBox = new RegistryObject[]{
+            BlockRegistration.CARDBOARD_BOX_OPEN,
+            BlockRegistration.CARDBOARD_BOX_CLOSED,
+            BlockRegistration.CARDBOARD_BOX_CLUTTERED,
+    };
+
+
+
 
     public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> KITCHEN_SET_HALF_CABINET_BE = registerWithStorage(
             () -> TileEntityRegistration.KITCHEN_SET_HALF_CABINET_BE, 1,  (RegistryObject<Block>[]) oneRow, "kitchen_set_half_cabinet_be");
@@ -116,8 +125,11 @@ public class TileEntityRegistration {
     public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> FOUR_ROWS_BE = registerWithStorage(
             () -> TileEntityRegistration.FOUR_ROWS_BE, 4,  (RegistryObject<Block>[]) fourRows, "four_rows_be");
 
-    public static final RegistryObject<BlockEntityType<FridgeBlockEntity>> RETRO_FRIDGE_BE = registerFridgeWithStorage(
+    public static final RegistryObject<BlockEntityType<FridgeBlockEntity>> RETRO_FRIDGE_BE = registerFridge(
             () -> TileEntityRegistration.RETRO_FRIDGE_BE, 6,  (RegistryObject<Block>[]) fridges, "retro_fridge_be");
+
+    public static final RegistryObject<BlockEntityType<CardboardBoxBlockEntity>> CARDBOARD_BOX_BE = registerCardboardBox(
+            () -> TileEntityRegistration.CARDBOARD_BOX_BE, 2,  (RegistryObject<Block>[]) cardboardBox, "cardboard_box_be");
 
 
 
@@ -135,10 +147,17 @@ public class TileEntityRegistration {
                 .build(null));
     }
 
-    private static RegistryObject<BlockEntityType<FridgeBlockEntity>> registerFridgeWithStorage(Supplier<Supplier<BlockEntityType<FridgeBlockEntity>>> type, int rows, RegistryObject<Block>[] block, String name){
+    private static RegistryObject<BlockEntityType<FridgeBlockEntity>> registerFridge(Supplier<Supplier<BlockEntityType<FridgeBlockEntity>>> type, int rows, RegistryObject<Block>[] block, String name){
 
         return BLOCK_ENTITIES.register(name, () -> BlockEntityType.Builder.of((blockPos, blockState) ->
                 new FridgeBlockEntity(type.get().get(), blockPos, blockState, rows), Arrays.stream(block).iterator().next().get())
+                .build(null));
+    }
+
+    private static RegistryObject<BlockEntityType<CardboardBoxBlockEntity>> registerCardboardBox(Supplier<Supplier<BlockEntityType<CardboardBoxBlockEntity>>> type, int rows, RegistryObject<Block>[] block, String name){
+
+        return BLOCK_ENTITIES.register(name, () -> BlockEntityType.Builder.of((blockPos, blockState) ->
+                new CardboardBoxBlockEntity(type.get().get(), blockPos, blockState, rows), Arrays.stream(block).iterator().next().get())
                 .build(null));
     }
 

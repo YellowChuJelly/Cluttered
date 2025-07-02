@@ -25,7 +25,7 @@ public class CustomStorageBlockEntity extends RandomizableContainerBlockEntity {
     }
 
     @Override
-    protected NonNullList<ItemStack> getItems() {
+    public NonNullList<ItemStack> getItems() {
         return this.items;
     }
 

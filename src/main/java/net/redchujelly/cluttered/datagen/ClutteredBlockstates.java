@@ -19,8 +19,10 @@ import net.redchujelly.cluttered.block.custom.EyeBlock;
 import net.redchujelly.cluttered.block.custom.HeartCakeBlock;
 import net.redchujelly.cluttered.block.custom.PicketFenceGateBlock;
 import net.redchujelly.cluttered.block.custom.furniture.*;
+import net.redchujelly.cluttered.block.custom.furniture.storage.CardboardBoxBlock;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
+import net.redchujelly.cluttered.util.CardboardBoxStates;
 import net.redchujelly.cluttered.util.PicketFenceGateOpen;
 
 public class ClutteredBlockstates extends BlockStateProvider {
@@ -1028,7 +1030,6 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.BEE_LAMP);
         hFacingBlockWithCustomModel(BlockRegistration.BEE_LAMP_ANGRY);
 
-        hFacingBlockWithCustomModel(BlockRegistration.CARDBOARD_BOX_OPEN);
         hFacingBlockWithCustomModel(BlockRegistration.CARDBOARD_BOX_CLOSED);
         hFacingBlockWithCustomModel(BlockRegistration.CARDBOARD_BOX_CLUTTERED);
         multiblockParts(BlockRegistration.DESK_GREEN);
@@ -1224,14 +1225,14 @@ public class ClutteredBlockstates extends BlockStateProvider {
         multiblockParts(BlockRegistration.CHINA_CABINET);
         multiblockParts(BlockRegistration.CUPID_BENCH);
         multiblockParts(BlockRegistration.GENERAL_STORE_CABINET);
-        //multiblockParts(BlockRegistration.RETRO_FRIDGE_BLACK);
-        multiblockParts(BlockRegistration.RETRO_FRIDGE_BLUE);
-        multiblockParts(BlockRegistration.RETRO_FRIDGE_PINK);
-        multiblockParts(BlockRegistration.RETRO_FRIDGE_PURPLE);
-        multiblockParts(BlockRegistration.RETRO_FRIDGE_RED);
-        multiblockParts(BlockRegistration.RETRO_FRIDGE_TURQUOISE);
-        multiblockParts(BlockRegistration.RETRO_FRIDGE_WHITE);
-        multiblockParts(BlockRegistration.RETRO_FRIDGE_YELLOW);
+        retroFridge(BlockRegistration.RETRO_FRIDGE_BLACK);
+        retroFridge(BlockRegistration.RETRO_FRIDGE_BLUE);
+        retroFridge(BlockRegistration.RETRO_FRIDGE_PINK);
+        retroFridge(BlockRegistration.RETRO_FRIDGE_PURPLE);
+        retroFridge(BlockRegistration.RETRO_FRIDGE_RED);
+        retroFridge(BlockRegistration.RETRO_FRIDGE_TURQUOISE);
+        retroFridge(BlockRegistration.RETRO_FRIDGE_WHITE);
+        retroFridge(BlockRegistration.RETRO_FRIDGE_YELLOW);
         hFacingBlockWithCustomModel(BlockRegistration.BLACK_CAT_COUNTER_DRAWERS);
         hFacingBlockWithCustomModel(BlockRegistration.BLACK_CAT_COUNTER_LEFT_DOOR);
         hFacingBlockWithCustomModel(BlockRegistration.BLACK_CAT_COUNTER_RIGHT_DOOR);
@@ -1398,31 +1399,40 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.NIGHTSTAND_GREEN);
         hFacingBlockWithCustomModel(BlockRegistration.ROSE_END_TABLE);
         hFacingBlockWithCustomModel(BlockRegistration.ROSE_END_TABLE_BLACK);
-
-        //FOR FUTURE REFERENCE
-        //this.getVariantBuilder(BlockRegistration.ENDTABLE_AMETHYST.get()).forAllStates(state ->
-        //        ConfiguredModel.builder().modelFile(models().getBuilder("block/endtable_amethyst").parent(models().getExistingFile(modLoc("block/endtable_meadow"))).texture("4", "block/endtable_amethyst"))
-        //                .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).getOpposite().toYRot()).build());
-
+        
         picketFencegateBlock(BlockRegistration.CHALCEDONY_PICKET_FENCE_GATE);
         picketFencegateBlock(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE_GATE);
         picketFencegateBlock(BlockRegistration.MARBLE_PICKET_FENCE_GATE);
         picketFencegateBlock(BlockRegistration.WOODEN_PICKET_FENCE_GATE);
 
 
-        this.getVariantBuilder(BlockRegistration.RETRO_FRIDGE_BLACK.get())
+        this.getVariantBuilder(BlockRegistration.CARDBOARD_BOX_OPEN.get())
+                .forAllStates(state -> ConfiguredModel.builder().modelFile(
+                                state.getValue(CardboardBoxBlock.OPEN_STATE).equals(CardboardBoxStates.CLOSED) ?
+                                        models().getExistingFile(modLoc("block/cardboard_box_closed")) :
+                                state.getValue(CardboardBoxBlock.OPEN_STATE).equals(CardboardBoxStates.EMPTY) ?
+                                        models().getExistingFile(modLoc("block/cardboard_box_open")) :
+                                        models().getExistingFile(modLoc("block/cardboard_box_cluttered")))
+                        .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot())
+                        .build());
+    }
+
+    private void retroFridge(RegistryObject<Block> block) {
+        String name = block.getId().toString().replace("cluttered:", "");
+
+        this.getVariantBuilder(block.get())
                 .forAllStates(state -> ConfiguredModel.builder().modelFile(
                                 state.getValue(BlockStateProperties.OPEN) ?
-                                        models().getExistingFile(modLoc("block/retro_fridge_black_open_" + state.getValue(MultiblockPlacer.MULTIBLOCK_PART))):
-                                        models().getExistingFile(modLoc("block/retro_fridge_black_"  + state.getValue(MultiblockPlacer.MULTIBLOCK_PART))))
+                                        models().getExistingFile(modLoc("block/" + name  + "_open_" + state.getValue(MultiblockPlacer.MULTIBLOCK_PART))):
+                                        models().getExistingFile(modLoc("block/" + name + "_"  + state.getValue(MultiblockPlacer.MULTIBLOCK_PART))))
                         .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot())
                         .build());
     }
 
 
-
     private void multiblockParts(RegistryObject<Block> block) {
         String name = block.getId().toString().replace("cluttered:", "");
+
         getVariantBuilder(block.get())
                 .forAllStates(state ->
                         ConfiguredModel.builder().modelFile(models().getExistingFile(modLoc(name + "_" + state.getValue(((MultiblockPlacer) block.get()).getMultiblockPart()))))

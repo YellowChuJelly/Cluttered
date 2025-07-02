@@ -2,17 +2,14 @@ package net.redchujelly.cluttered.block.multiblock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.entity.BarrelBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -23,15 +20,14 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.redchujelly.cluttered.block.entity.CustomStorageBlockEntity;
-import net.redchujelly.cluttered.block.entity.FridgeBlockEntity;
 import net.redchujelly.cluttered.setup.TileEntityRegistration;
 import org.jetbrains.annotations.Nullable;
 
 public class FridgeBlock extends MultiblockStorage{
     private static final VoxelShape SHAPE_NORTH = Block.box(0,0,0,16,16,14);
     private static final VoxelShape SHAPE_SOUTH = Block.box(0,0,2,16,16,16);
-    private static final VoxelShape SHAPE_EAST = Block.box(0,0,0,14,16,16);
-    private static final VoxelShape SHAPE_WEST = Block.box(2,0,0,16,16,16);
+    private static final VoxelShape SHAPE_EAST = Block.box(2,0,0,16,16,16);
+    private static final VoxelShape SHAPE_WEST = Block.box(0,0,0,14,16,16);
 
     public static final BooleanProperty OPEN = BlockStateProperties.OPEN;
 
@@ -84,9 +80,10 @@ public class FridgeBlock extends MultiblockStorage{
             BlockEntity blockEntity = pLevel.getBlockEntity(pos1);
             if (blockEntity instanceof CustomStorageBlockEntity){
                 pPlayer.openMenu((CustomStorageBlockEntity) blockEntity);
+                return InteractionResult.CONSUME;
+
             }
-        }
-        else {
+        } else {
             setOpenAndClosed(pLevel, pPos, pState, !pState.getValue(OPEN));
             pLevel.playSound(null, pPos, pState.getValue(OPEN) ? SoundEvents.IRON_DOOR_CLOSE : SoundEvents.IRON_DOOR_OPEN, SoundSource.BLOCKS);
         }
