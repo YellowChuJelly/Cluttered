@@ -93,7 +93,7 @@ public class MultiblockPlacer extends Block {
         return this.defaultBlockState().setValue(FACING, direction);
     }
 
-    private int getXOffset(Direction facing, int x, int z) {
+    protected int getXOffset(Direction facing, int x, int z) {
         int xOffset = 0;
 
         if (facing.equals(Direction.NORTH)) {xOffset = x;}
@@ -103,7 +103,7 @@ public class MultiblockPlacer extends Block {
         return xOffset;
     }
 
-    private int getZOffset(Direction facing, int x, int z) {
+    protected int getZOffset(Direction facing, int x, int z) {
         int zOffset = 0;
 
         if (facing.equals(Direction.NORTH)) {zOffset = -z;}

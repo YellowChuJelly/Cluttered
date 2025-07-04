@@ -2,6 +2,7 @@ package net.redchujelly.cluttered.block.entity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.player.Player;
@@ -22,12 +23,12 @@ public class CardboardBoxBlockEntity extends CustomStorageBlockEntity{
         this.openersCounter = new ContainerOpenersCounter() {
             @Override
             protected void onOpen(Level level, BlockPos blockPos, BlockState blockState) {
-                level.playSound(null, pPos, SoundEvents.BAMBOO_HIT, SoundSource.BLOCKS);
+                level.playSound(null, pPos, SoundEvents.SPORE_BLOSSOM_HIT, SoundSource.BLOCKS);
             }
 
             @Override
             protected void onClose(Level level, BlockPos blockPos, BlockState blockState) {
-                level.playSound(null, pPos, SoundEvents.BAMBOO_HIT, SoundSource.BLOCKS);
+                level.playSound(null, pPos, SoundEvents.SPORE_BLOSSOM_HIT, SoundSource.BLOCKS);
                 CardboardBoxBlock.updateOpenState(pPos, level);
             }
 
@@ -42,6 +43,11 @@ public class CardboardBoxBlockEntity extends CustomStorageBlockEntity{
             }
         };
 
+    }
+
+    @Override
+    protected Component getDefaultName() {
+        return Component.translatable("cluttered.box");
     }
 
     public void startOpen(Player pPlayer) {

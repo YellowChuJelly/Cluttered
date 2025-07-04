@@ -1,4 +1,5 @@
-package net.redchujelly.cluttered.block.custom.furniture;
+package net.redchujelly.cluttered.block.multiblock;
+
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -14,22 +15,36 @@ import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class KitchenSinkBlock extends SmallFurnitureBlock{
-    private static final VoxelShape SHAPE_NORTH = Shapes.join(Block.box(0,0,1, 16,14,16), Block.box(0,14,0,16,16,16), BooleanOp.OR);
-    private static final VoxelShape SHAPE_SOUTH = Shapes.join(Block.box(0,0,0, 16,14,15), Block.box(0,14,0,16,16,16), BooleanOp.OR);
-    private static final VoxelShape SHAPE_EAST = Shapes.join(Block.box(0,0,0, 15,14,16), Block.box(0,14,0,16,16,16), BooleanOp.OR);
-    private static final VoxelShape SHAPE_WEST = Shapes.join(Block.box(1,0,0, 16,14,16), Block.box(0,14,0,16,16,16), BooleanOp.OR);
+public class DoubleSinkBlock extends MultiblockPlacer implements SimpleWaterloggedBlock {
+    private static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-    public KitchenSinkBlock(Properties pProperties) {
+    private static final VoxelShape SHAPE = Block.box(0,0,0,16,16,16);
+
+    public static final IntegerProperty MULTIBLOCK_PART = IntegerProperty.create("part", 1, 2);
+    private static final int[][][] MULTIBLOCK_SHAPE = {
+            {
+                    {1},
+                    {2}
+            },
+    };
+
+    public DoubleSinkBlock(Properties pProperties) {
         super(pProperties);
+        this.registerDefaultState(this.defaultBlockState().setValue(WATERLOGGED, false));
     }
 
     @Override
@@ -47,7 +62,7 @@ public class KitchenSinkBlock extends SmallFurnitureBlock{
                     filledItem = new ItemStack(Items.WATER_BUCKET);
                     sound = SoundEvents.BUCKET_FILL;
                 }
-
+                
                 if (itemStack.getCount() == 1){
                     pPlayer.setItemInHand(pHand, filledItem);
                 } else if (pPlayer.addItem(filledItem)) {
@@ -63,15 +78,38 @@ public class KitchenSinkBlock extends SmallFurnitureBlock{
         return InteractionResult.PASS;
     }
 
+    @Override
+    public FluidState getFluidState(BlockState pState) {
+        return pState.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(pState);
+    }
+
+    @Override
+    public BlockState updateShape(BlockState pState, Direction pDirection, BlockState pNeighborState, LevelAccessor pLevel, BlockPos pPos, BlockPos pNeighborPos) {
+        if(pState.getValue(WATERLOGGED)){
+            pLevel.scheduleTick(pPos, Fluids.WATER, Fluids.WATER.getTickDelay(pLevel));
+        }
+        return super.updateShape(pState, pDirection, pNeighborState, pLevel, pPos, pNeighborPos);
+    }
+
+    @Override
+    public int[][][] getMultiblockShape() {
+        return MULTIBLOCK_SHAPE;
+    }
+
+    @Override
+    public IntegerProperty getMultiblockPart() {
+        return MULTIBLOCK_PART;
+    }
+
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        Direction facing = pState.getValue(FACING);
-        return switch (facing) {
-            case SOUTH -> SHAPE_SOUTH;
-            case EAST -> SHAPE_EAST;
-            case WEST -> SHAPE_WEST;
-            default -> SHAPE_NORTH;
-        };
+        return SHAPE;
+    }
+
+    @Override
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+        super.createBlockStateDefinition(pBuilder);
+        pBuilder.add(WATERLOGGED);
     }
 }

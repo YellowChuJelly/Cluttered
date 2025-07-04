@@ -637,9 +637,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.BOX_OF_PAINTS.get());
                         output.accept(BlockRegistration.BUTTON_STOOL.get());
 
-                        output.accept(BlockRegistration.CARDBOARD_BOX_OPEN.get());
-                        output.accept(BlockRegistration.CARDBOARD_BOX_CLOSED.get());
-                        output.accept(BlockRegistration.CARDBOARD_BOX_CLUTTERED.get());
+                        output.accept(BlockRegistration.CARDBOARD_BOX.get());
 
                         output.accept(BlockRegistration.CAT_MUGS_CLUTTERED.get());
                         output.accept(BlockRegistration.CAT_PLANT_POT_BLACK.get());

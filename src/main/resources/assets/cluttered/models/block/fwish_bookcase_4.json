@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"render_type": "minecraft:cutout",
+	"ambientocclusion": false,
 	"textures": {
 		"8": "cluttered:block/fwish_bookcase",
 		"particle": "cluttered:block/fwish_bookcase"

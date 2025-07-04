@@ -22,7 +22,8 @@ import net.redchujelly.cluttered.block.custom.furniture.*;
 import net.redchujelly.cluttered.block.custom.furniture.storage.CardboardBoxBlock;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
-import net.redchujelly.cluttered.util.CardboardBoxStates;
+import net.redchujelly.cluttered.util.CardboardBoxState;
+import net.redchujelly.cluttered.util.LanternPlaceState;
 import net.redchujelly.cluttered.util.PicketFenceGateOpen;
 
 public class ClutteredBlockstates extends BlockStateProvider {
@@ -1030,8 +1031,6 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.BEE_LAMP);
         hFacingBlockWithCustomModel(BlockRegistration.BEE_LAMP_ANGRY);
 
-        hFacingBlockWithCustomModel(BlockRegistration.CARDBOARD_BOX_CLOSED);
-        hFacingBlockWithCustomModel(BlockRegistration.CARDBOARD_BOX_CLUTTERED);
         multiblockParts(BlockRegistration.DESK_GREEN);
         multiblockParts(BlockRegistration.DESK_BROWN);
         multiblockParts(BlockRegistration.DESK_GREEN_CLUTTERED);
@@ -1067,7 +1066,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.JAM_JAR_PYRAMID_ORANGE_MARMALADE);
 
         hFacingBlockWithCustomModel(BlockRegistration.SAFE_NOVAKID);
-        hFacingBlockWithCustomModel(BlockRegistration.HOPPIN_PARK_LANTERN);
+        lanternBlock(BlockRegistration.HOPPIN_PARK_LANTERN);
         hFacingBlockWithCustomModel(BlockRegistration.HOPPIN_PARK_LANTERN_CEILING);
         hFacingBlockWithCustomModel(BlockRegistration.HOPPIN_PARK_LANTERN_WALL);
         hFacingBlockWithCustomModel(BlockRegistration.SEA_GEM_LANTERN);
@@ -1406,11 +1405,11 @@ public class ClutteredBlockstates extends BlockStateProvider {
         picketFencegateBlock(BlockRegistration.WOODEN_PICKET_FENCE_GATE);
 
 
-        this.getVariantBuilder(BlockRegistration.CARDBOARD_BOX_OPEN.get())
+        this.getVariantBuilder(BlockRegistration.CARDBOARD_BOX.get())
                 .forAllStates(state -> ConfiguredModel.builder().modelFile(
-                                state.getValue(CardboardBoxBlock.OPEN_STATE).equals(CardboardBoxStates.CLOSED) ?
+                                state.getValue(CardboardBoxBlock.OPEN_STATE).equals(CardboardBoxState.CLOSED) ?
                                         models().getExistingFile(modLoc("block/cardboard_box_closed")) :
-                                state.getValue(CardboardBoxBlock.OPEN_STATE).equals(CardboardBoxStates.EMPTY) ?
+                                state.getValue(CardboardBoxBlock.OPEN_STATE).equals(CardboardBoxState.EMPTY) ?
                                         models().getExistingFile(modLoc("block/cardboard_box_open")) :
                                         models().getExistingFile(modLoc("block/cardboard_box_cluttered")))
                         .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot())
@@ -1563,7 +1562,20 @@ public class ClutteredBlockstates extends BlockStateProvider {
                         .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot()).build());
     }
 
-    //TODO make particle work
+    private void lanternBlock(RegistryObject<Block> block){
+        String id = block.getId().toString().replace("cluttered:", "");
+
+        this.getVariantBuilder(block.get())
+                .forAllStates(state -> ConfiguredModel.builder().modelFile(
+                                state.getValue(HoppinParkLantern.PLACE_STATE).equals(LanternPlaceState.FLOOR) ?
+                                        models().getExistingFile(modLoc("block/" + id)) :
+                                        state.getValue(HoppinParkLantern.PLACE_STATE).equals(LanternPlaceState.WALL) ?
+                                                models().getExistingFile(modLoc("block/" + id + "_wall")) :
+                                                models().getExistingFile(modLoc("block/" + id + "_ceiling")))
+                        .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot())
+                        .build());
+    }
+
     private void balustradeBlock(RegistryObject<Block> block){
         String id = block.getId().toString().replace("cluttered:", "");
 

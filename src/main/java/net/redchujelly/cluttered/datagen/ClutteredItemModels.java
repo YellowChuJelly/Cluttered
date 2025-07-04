@@ -169,9 +169,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.RECORD_PLAYER_PURPLE);
         blockitemFromModel(BlockRegistration.RECORD_PLAYER_PINK);
         blockitemFromModel(BlockRegistration.RECORD_PLAYER_BLUE );
-        blockitemFromModel(BlockRegistration.CARDBOARD_BOX_CLOSED);
-        blockitemFromModel(BlockRegistration.CARDBOARD_BOX_OPEN);
-        blockitemFromModel(BlockRegistration.CARDBOARD_BOX_CLUTTERED);
+        blockitemFromModel(BlockRegistration.CARDBOARD_BOX);
 
         //KITCHEN SETS
         blockitemFromModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET);

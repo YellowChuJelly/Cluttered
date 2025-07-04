@@ -2,7 +2,7 @@ package net.redchujelly.cluttered.util;
 
 import net.minecraft.util.StringRepresentable;
 
-public enum CardboardBoxStates implements StringRepresentable {
+public enum CardboardBoxState implements StringRepresentable {
     CLOSED("closed"),
     EMPTY("empty"),
     FULL("full");
@@ -19,6 +19,6 @@ public enum CardboardBoxStates implements StringRepresentable {
         return this.getSerializedName();
     }
 
-    private CardboardBoxStates(String pName){this.name = pName;}
+    private CardboardBoxState(String pName){this.name = pName;}
 }
 

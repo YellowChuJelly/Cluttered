@@ -1,6 +1,7 @@
 package net.redchujelly.cluttered.block.entity;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.player.Player;
@@ -39,6 +40,11 @@ public class FridgeBlockEntity extends CustomStorageBlockEntity{
                 return false;
             }
         };
+    }
+
+    @Override
+    protected Component getDefaultName() {
+        return Component.translatable("cluttered.fridge");
     }
 
     public void startOpen(Player pPlayer) {

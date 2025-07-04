@@ -830,9 +830,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.BUNNY_BOOK_ENDS.get());
         dropSelf(BlockRegistration.BOX_OF_PAINTS.get());
 
-        dropSelf(BlockRegistration.CARDBOARD_BOX_OPEN.get());
-        dropSelf(BlockRegistration.CARDBOARD_BOX_CLOSED.get());
-        dropSelf(BlockRegistration.CARDBOARD_BOX_CLUTTERED.get());
+        dropSelf(BlockRegistration.CARDBOARD_BOX.get());
 
         dropSelf(BlockRegistration.THREAD_SPOOL_YELLOW.get());
         dropSelf(BlockRegistration.THREAD_SPOOL_GREEN.get());
