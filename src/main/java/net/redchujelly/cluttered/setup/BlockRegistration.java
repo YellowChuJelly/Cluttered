@@ -1591,10 +1591,6 @@ public class BlockRegistration {
     //TODO
     public static final RegistryObject<Block> HOPPIN_PARK_LANTERN = registerBlock("hoppin_park_lantern",
             () -> new HoppinParkLantern(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
-    public static final RegistryObject<Block> HOPPIN_PARK_LANTERN_CEILING = registerBlock("hoppin_park_lantern_ceiling",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> HOPPIN_PARK_LANTERN_WALL = registerBlock("hoppin_park_lantern_wall",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryObject<Block> SEA_GEM_LANTERN = registerBlock("sea_gem_lantern",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryObject<Block> SEA_GEM_LANTERN_CEILING = registerBlock("sea_gem_lantern_ceiling",

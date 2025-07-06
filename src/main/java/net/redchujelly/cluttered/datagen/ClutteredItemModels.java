@@ -459,8 +459,6 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.SAFE_NOVAKID);
         blockitemFromModel(BlockRegistration.VIOLET_SCREEN);
         blockitemFromModel(BlockRegistration.HOPPIN_PARK_LANTERN);
-        blockitemFromModel(BlockRegistration.HOPPIN_PARK_LANTERN_CEILING);
-        blockitemFromModel(BlockRegistration.HOPPIN_PARK_LANTERN_WALL);
         blockitemFromModel(BlockRegistration.SEA_GEM_LANTERN);
         blockitemFromModel(BlockRegistration.SEA_GEM_LANTERN_CEILING);
         blockitemFromModel(BlockRegistration.HANGING_SHELVES_PLANTS);

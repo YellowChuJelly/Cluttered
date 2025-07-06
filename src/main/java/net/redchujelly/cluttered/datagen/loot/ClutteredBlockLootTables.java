@@ -853,8 +853,6 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.BASKET_OF_PRODUCE.get());
         dropSelf(BlockRegistration.HOPPIN_PARK_LANTERN.get());
         dropSelf(BlockRegistration.SEA_GEM_LANTERN.get());
-        dropSelf(BlockRegistration.HOPPIN_PARK_LANTERN_CEILING.get());
-        dropSelf(BlockRegistration.HOPPIN_PARK_LANTERN_WALL.get());
         dropSelf(BlockRegistration.SEA_GEM_LANTERN_CEILING.get());
         dropSelf(BlockRegistration.HANGING_SHELVES_POTTERY.get());
         dropSelf(BlockRegistration.HANGING_SHELVES_PLANTS.get());

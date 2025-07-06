@@ -1040,8 +1040,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.UNLIVING_CHAIR.get());
                         output.accept(BlockRegistration.SAFE_NOVAKID.get());
                         output.accept(BlockRegistration.HOPPIN_PARK_LANTERN.get());
-                        output.accept(BlockRegistration.HOPPIN_PARK_LANTERN_CEILING.get());
-                        output.accept(BlockRegistration.HOPPIN_PARK_LANTERN_WALL.get());
                         output.accept(BlockRegistration.SEA_GEM_LANTERN.get());
                         output.accept(BlockRegistration.SEA_GEM_LANTERN_CEILING.get());
                         output.accept(BlockRegistration.VIOLET_SCREEN.get());

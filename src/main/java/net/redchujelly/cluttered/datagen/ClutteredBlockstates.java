@@ -1067,8 +1067,6 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         hFacingBlockWithCustomModel(BlockRegistration.SAFE_NOVAKID);
         lanternBlock(BlockRegistration.HOPPIN_PARK_LANTERN);
-        hFacingBlockWithCustomModel(BlockRegistration.HOPPIN_PARK_LANTERN_CEILING);
-        hFacingBlockWithCustomModel(BlockRegistration.HOPPIN_PARK_LANTERN_WALL);
         hFacingBlockWithCustomModel(BlockRegistration.SEA_GEM_LANTERN);
         hFacingBlockWithCustomModel(BlockRegistration.SEA_GEM_LANTERN_CEILING);
         multiblockParts(BlockRegistration.VIOLET_SCREEN);
