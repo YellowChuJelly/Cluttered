@@ -169,9 +169,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.RECORD_PLAYER_PURPLE);
         blockitemFromModel(BlockRegistration.RECORD_PLAYER_PINK);
         blockitemFromModel(BlockRegistration.RECORD_PLAYER_BLUE );
-        blockitemFromModel(BlockRegistration.CARDBOARD_BOX_CLOSED);
-        blockitemFromModel(BlockRegistration.CARDBOARD_BOX_OPEN);
-        blockitemFromModel(BlockRegistration.CARDBOARD_BOX_CLUTTERED);
+        blockitemFromModel(BlockRegistration.CARDBOARD_BOX);
 
         //KITCHEN SETS
         blockitemFromModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET);
@@ -461,8 +459,6 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.SAFE_NOVAKID);
         blockitemFromModel(BlockRegistration.VIOLET_SCREEN);
         blockitemFromModel(BlockRegistration.HOPPIN_PARK_LANTERN);
-        blockitemFromModel(BlockRegistration.HOPPIN_PARK_LANTERN_CEILING);
-        blockitemFromModel(BlockRegistration.HOPPIN_PARK_LANTERN_WALL);
         blockitemFromModel(BlockRegistration.SEA_GEM_LANTERN);
         blockitemFromModel(BlockRegistration.SEA_GEM_LANTERN_CEILING);
         blockitemFromModel(BlockRegistration.HANGING_SHELVES_PLANTS);

@@ -1,5 +1,7 @@
 package net.redchujelly.cluttered.setup;
 
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -7,6 +9,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
+import net.redchujelly.cluttered.block.entity.CardboardBoxBlockEntity;
 import net.redchujelly.cluttered.block.entity.CustomStorageBlockEntity;
 import net.redchujelly.cluttered.block.entity.FridgeBlockEntity;
 
@@ -67,7 +70,7 @@ public class TileEntityRegistration {
 
     };
 
-    static RegistryObject<?>[] fourRows = new RegistryObject[]{
+    static RegistryObject<?>[] safe = new RegistryObject[]{
             BlockRegistration.SAFE_NOVAKID
     };
 
@@ -91,6 +94,13 @@ public class TileEntityRegistration {
             BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_LEFT,
             BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_RIGHT,
 
+            BlockRegistration.BLACK_CAT_COUNTER_DRAWERS,
+            BlockRegistration.BLACK_CAT_COUNTER_RIGHT_DOOR,
+            BlockRegistration.BLACK_CAT_COUNTER_LEFT_DOOR,
+            BlockRegistration.SWEETHEART_COUNTER_DRAWERS,
+            BlockRegistration.SWEETHEART_COUNTER_RIGHT_DOOR,
+            BlockRegistration.SWEETHEART_COUNTER_LEFT_DOOR,
+
             BlockRegistration.BRIEFCASE_BLANK,
             BlockRegistration.BRIEFCASE_ROVER,
     };
@@ -106,6 +116,12 @@ public class TileEntityRegistration {
             BlockRegistration.RETRO_FRIDGE_WHITE,
     };
 
+    static RegistryObject<?>[] cardboardBox = new RegistryObject[]{
+            BlockRegistration.CARDBOARD_BOX,
+    };
+
+
+
 
     public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> KITCHEN_SET_HALF_CABINET_BE = registerWithStorage(
             () -> TileEntityRegistration.KITCHEN_SET_HALF_CABINET_BE, 1,  (RegistryObject<Block>[]) oneRow, "kitchen_set_half_cabinet_be");
@@ -113,11 +129,14 @@ public class TileEntityRegistration {
             () -> TileEntityRegistration.KITCHEN_SET_CABINET_BE, 2,  (RegistryObject<Block>[]) twoRows, "kitchen_set_cabinet_be");
     public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> KITCHEN_SET_COUNTER_BE = registerWithStorage(
             () -> TileEntityRegistration.KITCHEN_SET_COUNTER_BE, 3,  (RegistryObject<Block>[]) threeRows, "kitchen_set_counter_be");
-    public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> FOUR_ROWS_BE = registerWithStorage(
-            () -> TileEntityRegistration.FOUR_ROWS_BE, 4,  (RegistryObject<Block>[]) fourRows, "four_rows_be");
+    public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> SAFE_BE = registerWithStorageAndSounds(
+            () -> TileEntityRegistration.SAFE_BE, 4,  (RegistryObject<Block>[]) safe, "safe_be", SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE);
 
-    public static final RegistryObject<BlockEntityType<FridgeBlockEntity>> RETRO_FRIDGE_BE = registerFridgeWithStorage(
+    public static final RegistryObject<BlockEntityType<FridgeBlockEntity>> RETRO_FRIDGE_BE = registerFridge(
             () -> TileEntityRegistration.RETRO_FRIDGE_BE, 6,  (RegistryObject<Block>[]) fridges, "retro_fridge_be");
+
+    public static final RegistryObject<BlockEntityType<CardboardBoxBlockEntity>> CARDBOARD_BOX_BE = registerCardboardBox(
+            () -> TileEntityRegistration.CARDBOARD_BOX_BE, 2,  (RegistryObject<Block>[]) cardboardBox, "cardboard_box_be");
 
 
 
@@ -135,10 +154,24 @@ public class TileEntityRegistration {
                 .build(null));
     }
 
-    private static RegistryObject<BlockEntityType<FridgeBlockEntity>> registerFridgeWithStorage(Supplier<Supplier<BlockEntityType<FridgeBlockEntity>>> type, int rows, RegistryObject<Block>[] block, String name){
+    private static RegistryObject<BlockEntityType<CustomStorageBlockEntity>> registerWithStorageAndSounds(Supplier<Supplier<BlockEntityType<CustomStorageBlockEntity>>> type, int rows, RegistryObject<Block>[] block, String name, SoundEvent openSound, SoundEvent closeSound){
+
+        return BLOCK_ENTITIES.register(name, () -> BlockEntityType.Builder.of((blockPos, blockState) ->
+                new CustomStorageBlockEntity(type.get().get(), blockPos, blockState, rows, openSound, closeSound), Arrays.stream(block).iterator().next().get())
+                .build(null));
+    }
+
+    private static RegistryObject<BlockEntityType<FridgeBlockEntity>> registerFridge(Supplier<Supplier<BlockEntityType<FridgeBlockEntity>>> type, int rows, RegistryObject<Block>[] block, String name){
 
         return BLOCK_ENTITIES.register(name, () -> BlockEntityType.Builder.of((blockPos, blockState) ->
                 new FridgeBlockEntity(type.get().get(), blockPos, blockState, rows), Arrays.stream(block).iterator().next().get())
+                .build(null));
+    }
+
+    private static RegistryObject<BlockEntityType<CardboardBoxBlockEntity>> registerCardboardBox(Supplier<Supplier<BlockEntityType<CardboardBoxBlockEntity>>> type, int rows, RegistryObject<Block>[] block, String name){
+
+        return BLOCK_ENTITIES.register(name, () -> BlockEntityType.Builder.of((blockPos, blockState) ->
+                new CardboardBoxBlockEntity(type.get().get(), blockPos, blockState, rows), Arrays.stream(block).iterator().next().get())
                 .build(null));
     }
 

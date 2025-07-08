@@ -1,33 +1,35 @@
 package net.redchujelly.cluttered.block.entity;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.NonNullList;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.entity.ContainerOpenersCounter;
 import net.minecraft.world.level.block.state.BlockState;
-import net.redchujelly.cluttered.block.multiblock.FridgeBlock;
+import net.redchujelly.cluttered.block.custom.furniture.storage.CardboardBoxBlock;
 
-public class FridgeBlockEntity extends CustomStorageBlockEntity{
+
+public class CardboardBoxBlockEntity extends CustomStorageBlockEntity{
     private final ContainerOpenersCounter openersCounter;
 
-    public FridgeBlockEntity(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState, int rows) {
+    public CardboardBoxBlockEntity(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState, int rows) {
         super(pType, pPos, pBlockState, rows);
         this.openersCounter = new ContainerOpenersCounter() {
             @Override
             protected void onOpen(Level level, BlockPos blockPos, BlockState blockState) {
-                level.playSound(null, pPos, SoundEvents.IRON_DOOR_OPEN, SoundSource.BLOCKS);
-                FridgeBlock.setOpenAndClosed(level, pPos, pBlockState, true);
+                level.playSound(null, pPos, SoundEvents.SPORE_BLOSSOM_HIT, SoundSource.BLOCKS);
             }
 
             @Override
             protected void onClose(Level level, BlockPos blockPos, BlockState blockState) {
-                level.playSound(null, pPos, SoundEvents.IRON_DOOR_CLOSE, SoundSource.BLOCKS);
-                FridgeBlock.setOpenAndClosed(level, pPos, pBlockState, false);
-
+                level.playSound(null, pPos, SoundEvents.SPORE_BLOSSOM_HIT, SoundSource.BLOCKS);
+                CardboardBoxBlock.updateOpenState(pPos, level);
             }
 
             @Override
@@ -40,11 +42,12 @@ public class FridgeBlockEntity extends CustomStorageBlockEntity{
                 return false;
             }
         };
+
     }
 
     @Override
     protected Component getDefaultName() {
-        return Component.translatable("cluttered.fridge");
+        return Component.translatable("cluttered.box");
     }
 
     public void startOpen(Player pPlayer) {
@@ -54,11 +57,23 @@ public class FridgeBlockEntity extends CustomStorageBlockEntity{
 
     }
 
+
     public void stopOpen(Player pPlayer) {
         if (!this.remove && !pPlayer.isSpectator()) {
             this.openersCounter.decrementOpeners(pPlayer, this.getLevel(), this.getBlockPos(), this.getBlockState());
         }
 
     }
+
+    public boolean containsItems(){
+        NonNullList<ItemStack> items = this.getItems();
+        for (ItemStack item : items){
+            if (!item.getItem().equals(Items.AIR)){
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }

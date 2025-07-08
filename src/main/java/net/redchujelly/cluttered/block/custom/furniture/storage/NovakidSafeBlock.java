@@ -26,6 +26,6 @@ public class NovakidSafeBlock extends StorageBlock{
 
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return TileEntityRegistration.FOUR_ROWS_BE.get().create(blockPos, blockState);
+        return TileEntityRegistration.SAFE_BE.get().create(blockPos, blockState);
     }
 }

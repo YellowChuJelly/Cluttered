@@ -830,9 +830,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.BUNNY_BOOK_ENDS.get());
         dropSelf(BlockRegistration.BOX_OF_PAINTS.get());
 
-        dropSelf(BlockRegistration.CARDBOARD_BOX_OPEN.get());
-        dropSelf(BlockRegistration.CARDBOARD_BOX_CLOSED.get());
-        dropSelf(BlockRegistration.CARDBOARD_BOX_CLUTTERED.get());
+        dropSelf(BlockRegistration.CARDBOARD_BOX.get());
 
         dropSelf(BlockRegistration.THREAD_SPOOL_YELLOW.get());
         dropSelf(BlockRegistration.THREAD_SPOOL_GREEN.get());
@@ -855,8 +853,6 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.BASKET_OF_PRODUCE.get());
         dropSelf(BlockRegistration.HOPPIN_PARK_LANTERN.get());
         dropSelf(BlockRegistration.SEA_GEM_LANTERN.get());
-        dropSelf(BlockRegistration.HOPPIN_PARK_LANTERN_CEILING.get());
-        dropSelf(BlockRegistration.HOPPIN_PARK_LANTERN_WALL.get());
         dropSelf(BlockRegistration.SEA_GEM_LANTERN_CEILING.get());
         dropSelf(BlockRegistration.HANGING_SHELVES_POTTERY.get());
         dropSelf(BlockRegistration.HANGING_SHELVES_PLANTS.get());
