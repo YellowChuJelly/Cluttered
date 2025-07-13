@@ -103,6 +103,8 @@ public class TileEntityRegistration {
 
             BlockRegistration.BRIEFCASE_BLANK,
             BlockRegistration.BRIEFCASE_ROVER,
+
+            BlockRegistration.COTTAGE_BOOKCASE
     };
 
     static RegistryObject<?>[] fridges = new RegistryObject[]{
