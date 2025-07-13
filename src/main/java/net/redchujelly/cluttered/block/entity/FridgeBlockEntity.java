@@ -9,7 +9,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.entity.ContainerOpenersCounter;
 import net.minecraft.world.level.block.state.BlockState;
-import net.redchujelly.cluttered.block.multiblock.FridgeBlock;
+import net.redchujelly.cluttered.block.multiblock.storage.FridgeBlock;
 
 public class FridgeBlockEntity extends CustomStorageBlockEntity{
     private final ContainerOpenersCounter openersCounter;

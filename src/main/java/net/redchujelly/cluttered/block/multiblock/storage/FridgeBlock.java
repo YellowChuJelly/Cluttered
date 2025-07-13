@@ -1,4 +1,4 @@
-package net.redchujelly.cluttered.block.multiblock;
+package net.redchujelly.cluttered.block.multiblock.storage;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

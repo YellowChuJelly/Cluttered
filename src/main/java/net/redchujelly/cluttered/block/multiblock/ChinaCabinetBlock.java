@@ -11,7 +11,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class ChinaCabinetBlock extends MultiblockPlacer{
+public class ChinaCabinetBlock extends MultiblockPlacer {
     private static final VoxelShape SHAPE_1_N = Shapes.join(Block.box(1,0,0,15,2,15), Block.box(2,2,0,14,16,14), BooleanOp.OR);
     private static final VoxelShape SHAPE_1_S = Shapes.join(Block.box(1,0,1,15,2,15), Block.box(2,2,2,14,16,16), BooleanOp.OR);
     private static final VoxelShape SHAPE_1_E = Shapes.join(Block.box(1,0,1,16,2,15), Block.box(2,2,2,16,16,14), BooleanOp.OR);

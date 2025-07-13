@@ -1,4 +1,4 @@
-package net.redchujelly.cluttered.block.multiblock;
+package net.redchujelly.cluttered.block.multiblock.storage;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.Container;
@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.redchujelly.cluttered.block.entity.CustomStorageBlockEntity;
+import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.TileEntityRegistration;
 import org.jetbrains.annotations.Nullable;
 
