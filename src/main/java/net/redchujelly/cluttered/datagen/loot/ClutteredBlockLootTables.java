@@ -821,7 +821,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.KITCHEN_SCALE.get());
         dropSelf(BlockRegistration.ANTIQUE_MAP.get());
         dropSelf(BlockRegistration.ANTIQUE_MINI_TABLE.get());
-        dropSelf(BlockRegistration.ANCIENT_CODEX.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ANCIENT_CODEX.get());
         dropSelf(BlockRegistration.ANTIQUE_BOOK_STAND.get());
         dropSelf(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get());
 
@@ -941,7 +941,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.OSSON_PENDANT_WHITE.get());
 
         multiBlockDropOnlyOneItem(BlockRegistration.COTTAGE_BOOKCASE.get());
-        dropSelf(BlockRegistration.COTTAGE_STANDING_LAMP.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.COTTAGE_STANDING_LAMP.get());
         multiBlockDropOnlyOneItem(BlockRegistration.DRYING_HERBS.get());
         dropSelf(BlockRegistration.HANGING_CLOTH.get());
 
@@ -1074,18 +1074,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.COTTAGE_ARMCHAIR.get());
 
         //LAMPS
-        dropSelf(BlockRegistration.ANTIQUE_STANDING_LAMP.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ANTIQUE_STANDING_LAMP.get());
 
-        //LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition
-        //        .hasBlockStateProperties(BlockRegistration.DESK_GREEN.get())
-        //        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(MultiblockPlacer.MULTIBLOCK_PART, 1));
-
-        //this.add(BlockRegistration.DESK_GREEN.get(), lootItemConditionBuilder, createCropDrops(M));
-        //this.add(BlockRegistration.DESK_GREEN.get(),
-        //        (block) -> LootTable.lootTable().withPool(this.applyExplosionCondition(block, LootPool.lootPool()
-        //                .setRolls(ConstantValue.exactly(1.0F)).add(LootItem.lootTableItem(block)
-        //                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-        //                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(GreenDeskBlock.MULTIBLOCK_PART, 1)))))));
     }
 
     private void multiBlockDropOnlyOneItem(Block blockForDrops){

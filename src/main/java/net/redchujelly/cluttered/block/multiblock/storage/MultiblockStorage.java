@@ -64,6 +64,6 @@ public class MultiblockStorage extends MultiblockPlacer implements EntityBlock {
         if (blockState.getValue(MULTIBLOCK_PART) != 1){
             return null;
         }
-        return TileEntityRegistration.KITCHEN_SET_CABINET_BE.get().create(blockPos, blockState);
+        return TileEntityRegistration.TWO_ROWS_BE.get().create(blockPos, blockState);
     }
 }

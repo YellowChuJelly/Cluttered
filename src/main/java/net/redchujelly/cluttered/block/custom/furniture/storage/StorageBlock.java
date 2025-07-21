@@ -63,6 +63,6 @@ public class StorageBlock extends SmallFurnitureBlock implements EntityBlock {
 
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return TileEntityRegistration.KITCHEN_SET_CABINET_BE.get().create(blockPos, blockState);
+        return TileEntityRegistration.TWO_ROWS_BE.get().create(blockPos, blockState);
     }
 }

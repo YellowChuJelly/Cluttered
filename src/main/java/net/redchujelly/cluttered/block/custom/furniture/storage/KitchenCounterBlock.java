@@ -37,6 +37,6 @@ public class KitchenCounterBlock extends StorageBlock {
 
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return TileEntityRegistration.KITCHEN_SET_COUNTER_BE.get().create(blockPos, blockState);
+        return TileEntityRegistration.THREE_ROWS_BE.get().create(blockPos, blockState);
     }
 }

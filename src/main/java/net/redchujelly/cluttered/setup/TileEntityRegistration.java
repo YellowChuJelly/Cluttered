@@ -24,6 +24,24 @@ public class TileEntityRegistration {
     the block entity can be tied to? But I tried it without adding some and they worked fine so I dunno.
     I'm gonna keep adding them though. */
 
+    static RegistryObject<?>[] oneRow = new RegistryObject[]{
+            BlockRegistration.KITCHEN_SET_BROWN_CABINET_MINI,
+            BlockRegistration.KITCHEN_SET_PINK_CABINET_MINI,
+            BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_MINI,
+            BlockRegistration.KITCHEN_SET_PURPLE_CABINET_MINI,
+            BlockRegistration.KITCHEN_SET_WHITE_CABINET_MINI,
+            BlockRegistration.KITCHEN_SET_YELLOW_CABINET_MINI,
+
+            BlockRegistration.ENDTABLE_AMETHYST,
+            BlockRegistration.ENDTABLE_BUBBLEGUM,
+            BlockRegistration.ENDTABLE_CHARCOAL,
+            BlockRegistration.ENDTABLE_MEADOW,
+            BlockRegistration.ENDTABLE_PERIWINKLE,
+            BlockRegistration.ENDTABLE_WOOD,
+            BlockRegistration.COTTAGE_SIDE_TABLE,
+            BlockRegistration.NIGHTSTAND_GREEN,
+    };
+
     static RegistryObject<?>[] twoRows = new RegistryObject[]{
             BlockRegistration.KITCHEN_SET_BROWN_CABINET,
             BlockRegistration.KITCHEN_SET_BROWN_CABINET_INNER_CORNER,
@@ -49,29 +67,12 @@ public class TileEntityRegistration {
             BlockRegistration.KITCHEN_SET_YELLOW_CABINET_INNER_CORNER,
             BlockRegistration.KITCHEN_SET_YELLOW_CABINET_OPEN,
             BlockRegistration.KITCHEN_SET_YELLOW_CABINET_GLASS,
-    };
-    static RegistryObject<?>[] oneRow = new RegistryObject[]{
-            BlockRegistration.KITCHEN_SET_BROWN_CABINET_MINI,
-            BlockRegistration.KITCHEN_SET_PINK_CABINET_MINI,
-            BlockRegistration.KITCHEN_SET_LIGHT_GREEN_CABINET_MINI,
-            BlockRegistration.KITCHEN_SET_PURPLE_CABINET_MINI,
-            BlockRegistration.KITCHEN_SET_WHITE_CABINET_MINI,
-            BlockRegistration.KITCHEN_SET_YELLOW_CABINET_MINI,
 
-            BlockRegistration.ENDTABLE_AMETHYST,
-            BlockRegistration.ENDTABLE_BUBBLEGUM,
-            BlockRegistration.ENDTABLE_CHARCOAL,
-            BlockRegistration.ENDTABLE_MEADOW,
-            BlockRegistration.ENDTABLE_PERIWINKLE,
-            BlockRegistration.ENDTABLE_WOOD,
-            BlockRegistration.COTTAGE_SIDE_TABLE,
-            BlockRegistration.NIGHTSTAND_GREEN,
-
-
-    };
-
-    static RegistryObject<?>[] safe = new RegistryObject[]{
-            BlockRegistration.SAFE_NOVAKID
+            BlockRegistration.COTTAGE_BOOKCASE,
+            BlockRegistration.DESK_GREEN,
+            BlockRegistration.DESK_GREEN_CLUTTERED,
+            BlockRegistration.DESK_BROWN,
+            BlockRegistration.DESK_BROWN_CLUTTERED,
     };
 
     static RegistryObject<?>[] threeRows = new RegistryObject[]{
@@ -103,8 +104,11 @@ public class TileEntityRegistration {
 
             BlockRegistration.BRIEFCASE_BLANK,
             BlockRegistration.BRIEFCASE_ROVER,
+    };
 
-            BlockRegistration.COTTAGE_BOOKCASE
+    static RegistryObject<?>[] sixRows = new RegistryObject[]{
+            BlockRegistration.CARD_INDEX,
+            BlockRegistration.GENERAL_STORE_CABINET,
     };
 
     static RegistryObject<?>[] fridges = new RegistryObject[]{
@@ -122,21 +126,30 @@ public class TileEntityRegistration {
             BlockRegistration.CARDBOARD_BOX,
     };
 
+    static RegistryObject<?>[] safe = new RegistryObject[]{
+            BlockRegistration.SAFE_NOVAKID,
+    };
 
 
 
-    public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> KITCHEN_SET_HALF_CABINET_BE = registerWithStorage(
-            () -> TileEntityRegistration.KITCHEN_SET_HALF_CABINET_BE, 1,  (RegistryObject<Block>[]) oneRow, "kitchen_set_half_cabinet_be");
-    public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> KITCHEN_SET_CABINET_BE = registerWithStorage(
-            () -> TileEntityRegistration.KITCHEN_SET_CABINET_BE, 2,  (RegistryObject<Block>[]) twoRows, "kitchen_set_cabinet_be");
-    public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> KITCHEN_SET_COUNTER_BE = registerWithStorage(
-            () -> TileEntityRegistration.KITCHEN_SET_COUNTER_BE, 3,  (RegistryObject<Block>[]) threeRows, "kitchen_set_counter_be");
+
+
+    public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> ONE_ROW_BE = registerWithStorage(
+            () -> TileEntityRegistration.ONE_ROW_BE, 1,  (RegistryObject<Block>[]) oneRow, "one_row_be");
+    public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> TWO_ROWS_BE = registerWithStorage(
+            () -> TileEntityRegistration.TWO_ROWS_BE, 2,  (RegistryObject<Block>[]) twoRows, "two_rows_be");
+    public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> THREE_ROWS_BE = registerWithStorage(
+            () -> TileEntityRegistration.THREE_ROWS_BE, 3,  (RegistryObject<Block>[]) threeRows, "three_rows_be");
+
+    public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> SIX_ROWS_BE = registerWithStorage(
+            () -> TileEntityRegistration.SIX_ROWS_BE, 6,  (RegistryObject<Block>[]) sixRows, "six_rows_be");
+
+
+
     public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> SAFE_BE = registerWithStorageAndSounds(
             () -> TileEntityRegistration.SAFE_BE, 4,  (RegistryObject<Block>[]) safe, "safe_be", SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE);
-
     public static final RegistryObject<BlockEntityType<FridgeBlockEntity>> RETRO_FRIDGE_BE = registerFridge(
             () -> TileEntityRegistration.RETRO_FRIDGE_BE, 6,  (RegistryObject<Block>[]) fridges, "retro_fridge_be");
-
     public static final RegistryObject<BlockEntityType<CardboardBoxBlockEntity>> CARDBOARD_BOX_BE = registerCardboardBox(
             () -> TileEntityRegistration.CARDBOARD_BOX_BE, 2,  (RegistryObject<Block>[]) cardboardBox, "cardboard_box_be");
 

@@ -16,7 +16,6 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.redchujelly.cluttered.block.entity.CustomStorageBlockEntity;
-import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.TileEntityRegistration;
 import org.jetbrains.annotations.Nullable;
 
@@ -26,8 +25,8 @@ public class CottageBookcaseBlock extends MultiblockStorage {
     private static final VoxelShape SHAPE_E_1 = Block.box(2,2,0,16,16,16);
     private static final VoxelShape SHAPE_W_1 = Block.box(0,2,0,14,16,16);
 
-    private static final VoxelShape SHAPE_N_2 = Shapes.or(Block.box(0,0,2,16,8,16), Block.box(0,8,6,16,16,16));
-    private static final VoxelShape SHAPE_S_2 = Shapes.or(Block.box(0,0,0,16,8,14), Block.box(0,8,0,16,16,10));
+    private static final VoxelShape SHAPE_N_2 = Shapes.or(Block.box(0,0,0,16,8,14), Block.box(0,8,0,16,16,10));
+    private static final VoxelShape SHAPE_S_2 = Shapes.or(Block.box(0,0,2,16,8,16), Block.box(0,8,6,16,16,16));
     private static final VoxelShape SHAPE_E_2 = Shapes.or(Block.box(2,0,0,16,8,16), Block.box(6,8,0,16,16,16));
     private static final VoxelShape SHAPE_W_2 = Shapes.or(Block.box(0,0,0,14,8,16), Block.box(0,8,0,10,16,16));
 
@@ -44,10 +43,10 @@ public class CottageBookcaseBlock extends MultiblockStorage {
 
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        if (pLevel.isClientSide){
-            return InteractionResult.SUCCESS;
-        } else if (pState.getValue(MULTIBLOCK_PART) != 1) {
+        if (pState.getValue(MULTIBLOCK_PART) != 1){
             return InteractionResult.FAIL;
+        } else if (pLevel.isClientSide) {
+            return InteractionResult.SUCCESS;
         } else {
             BlockPos pos1 = findBlockState1(pPos, pLevel);
             BlockEntity blockEntity = pLevel.getBlockEntity(pos1);
@@ -75,7 +74,7 @@ public class CottageBookcaseBlock extends MultiblockStorage {
         if (blockState.getValue(MULTIBLOCK_PART) != 1){
             return null;
         }
-        return TileEntityRegistration.KITCHEN_SET_COUNTER_BE.get().create(blockPos, blockState);
+        return TileEntityRegistration.THREE_ROWS_BE.get().create(blockPos, blockState);
     }
 
 

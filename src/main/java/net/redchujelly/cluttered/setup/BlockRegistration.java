@@ -19,8 +19,7 @@ import net.redchujelly.cluttered.block.custom.furniture.*;
 import net.redchujelly.cluttered.block.custom.furniture.storage.*;
 import net.redchujelly.cluttered.block.multiblock.*;
 import net.redchujelly.cluttered.block.multiblock.ChinaCabinetBlock;
-import net.redchujelly.cluttered.block.multiblock.storage.CottageBookcaseBlock;
-import net.redchujelly.cluttered.block.multiblock.storage.FridgeBlock;
+import net.redchujelly.cluttered.block.multiblock.storage.*;
 import net.redchujelly.cluttered.worldgen.ClutteredConfiguredFeatures;
 import net.redchujelly.cluttered.worldgen.tree.PoplarTreeGrower;
 import net.redchujelly.cluttered.worldgen.tree.WillowTreeGrower;
@@ -1209,7 +1208,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> ANTIQUE_MINI_TABLE = registerBlock("antique_mini_table",
             () -> new AntiqueMiniTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> ANCIENT_CODEX = registerBlock("ancient_codex",
-            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
+            () -> new AncientCodexBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> ANTIQUE_BOOK_STAND = registerBlock("antique_book_stand",
             () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
 
@@ -1525,7 +1524,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> CHINA_CABINET = registerBlock("china_cabinet",
             () -> new ChinaCabinetBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
     public static final RegistryObject<Block> GENERAL_STORE_CABINET = registerBlock("general_store_cabinet",
-            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
+            () -> new CardIndexBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
     public static final RegistryObject<Block> RETRO_FRIDGE_BLACK = registerBlock("retro_fridge_black",
             () -> new FridgeBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(DyeColor.BLACK).noOcclusion()));
     public static final RegistryObject<Block> RETRO_FRIDGE_BLUE = registerBlock("retro_fridge_blue",
@@ -1547,7 +1546,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> FWISH_OTTOMAN = registerBlock("fwish_ottoman",
             () -> new FwishOttomanBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE).noOcclusion()));
     public static final RegistryObject<Block> PLANT_LADDER = registerBlock("plant_ladder",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE).noOcclusion()));
+            () -> new PlantLadderBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE).noOcclusion()));
     public static final RegistryObject<Block> STEAMPUNK_GLOBE = registerBlock("steampunk_globe",
             () -> new SteampunkGlobeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE).noOcclusion()));
     public static final RegistryObject<Block> UNLIVING_CHAIR = registerBlock("unliving_chair",
@@ -1585,7 +1584,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> COTTAGE_BOOKCASE = registerBlock("cottage_bookcase",
             () -> new CottageBookcaseBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryObject<Block> COTTAGE_STANDING_LAMP = registerBlock("cottage_standing_lamp",
-            () -> new SmallLampBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+            () -> new CottageLampBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(0.5f)));
     public static final RegistryObject<Block> DRYING_HERBS = registerBlock("drying_herbs",
             () -> new DryingHerbsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryObject<Block> HANGING_CLOTH = registerBlock("hanging_cloth",
@@ -1783,7 +1782,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> DARKWOOD_DECORATIVE_SHELVES_SOUTHERN_FLAIR = registerBlock("darkwood_decorative_shelves_southern_flair",
             () -> new TableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> DARKWOOD_ENDTABLE = registerBlock("darkwood_endtable",
-            () -> new EndTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.GREEN).noOcclusion()));
+            () -> new DarkwoodEndtableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.GREEN).noOcclusion()));
     public static final RegistryObject<Block> DARKWOOD_STOOL = registerBlock("darkwood_stool",
             () -> new DarkwoodStoolBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> DARKWOOD_TABLE = registerBlock("darkwood_table",
@@ -1915,7 +1914,7 @@ public class BlockRegistration {
 
     //CABINETS AND SHELVES
     public static final RegistryObject<Block> CARD_INDEX = registerBlock("card_index",
-            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
+            () -> new CardIndexBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
     public static final RegistryObject<Block> BAMBOO_BOOKSHELF = registerBlock("bamboo_bookshelf",
             () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.GREEN).noOcclusion()));
     public static final RegistryObject<Block> FWISH_BOOKCASE = registerBlock("fwish_bookcase",
@@ -1952,17 +1951,17 @@ public class BlockRegistration {
     public static final RegistryObject<Block> POTION_SHELF = registerBlock("potion_shelf",
             () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> DORADO_CABINET = registerBlock("dorado_cabinet",
-            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+            () -> new DoradoCabinetBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> DORADO_CABINET_CLUTTERED = registerBlock("dorado_cabinet_cluttered",
-            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+            () -> new DoradoCabinetBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> HAVANA_CABINET = registerBlock("havana_cabinet",
-            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+            () -> new DoradoCabinetBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> HAVANA_CABINET_CLUTTERED = registerBlock("havana_cabinet_cluttered",
-            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+            () -> new DoradoCabinetBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> MUREX_CABINET = registerBlock("murex_cabinet",
-            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+            () -> new DoradoCabinetBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> MUREX_CABINET_CLUTTERED = registerBlock("murex_cabinet_cluttered",
-            () -> new TwoByTwoFullSizeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+            () -> new DoradoCabinetBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
 
 
     //BIKES
@@ -1985,7 +1984,7 @@ public class BlockRegistration {
 
     //LAMPS
     public static final RegistryObject<Block> ANTIQUE_STANDING_LAMP = registerBlock("antique_standing_lamp",
-            () -> new SmallLampBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.BROWN)));
+            () -> new AntiqueLampBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.BROWN)));
 
     //CHAIRS
     public static final RegistryObject<Block> LOVELY_LOVE_SEAT = registerBlock("lovely_love_seat_basic",

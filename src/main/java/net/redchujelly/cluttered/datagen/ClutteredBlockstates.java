@@ -994,7 +994,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SCALE);
 
-        hFacingBlockWithCustomModel(BlockRegistration.ANCIENT_CODEX);
+        multiblockParts(BlockRegistration.ANCIENT_CODEX);
         hFacingBlockWithCustomModel(BlockRegistration.ANTIQUE_BOOK_STAND);
         multiBlockWithOneModel(BlockRegistration.ANTIQUE_LIBRARY_BOOKS);
         flatFacingBlock(BlockRegistration.ANTIQUE_MAP, 0);
@@ -1204,7 +1204,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.OSSON_PENDANT_WHITE);
 
         multiblockParts(BlockRegistration.COTTAGE_BOOKCASE);
-        hFacingBlockWithCustomModel(BlockRegistration.COTTAGE_STANDING_LAMP);
+        multiblockParts(BlockRegistration.COTTAGE_STANDING_LAMP);
         multiBlockWithOneModel(BlockRegistration.DRYING_HERBS);
         hFacingBlockWithCustomModel(BlockRegistration.HANGING_CLOTH);
 
@@ -1289,7 +1289,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.HONEYCOMB_LAMP);
         hFacingBlockWithCustomModel(BlockRegistration.UNLIVING_CHAIR);
 
-        hFacingBlockWithCustomModel(BlockRegistration.ANTIQUE_STANDING_LAMP);
+        multiblockParts(BlockRegistration.ANTIQUE_STANDING_LAMP);
 
         //GARLANDS
         garlandBlock(BlockRegistration.BLACK_CAT_GARLAND);

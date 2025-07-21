@@ -1,17 +1,19 @@
-package net.redchujelly.cluttered.block.multiblock;
+package net.redchujelly.cluttered.block.multiblock.storage;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.redchujelly.cluttered.setup.TileEntityRegistration;
+import org.jetbrains.annotations.Nullable;
 
-public class GreenDeskBlock extends MultiblockPlacer{
+public class GreenDeskBlock extends MultiblockStorage {
     private  static final VoxelShape SHAPE_N_1 = Shapes.or(Block.box(1,6,0,16,11,15), Block.box(0,0,0,3,11,3), Block.box(0,0,12,3,11,15), Block.box(0,11,0,16,13,16), Block.box(0,13,0,16,16,7));
     private  static final VoxelShape SHAPE_S_1 = Shapes.or(Block.box(0,6,1,15,11,16), Block.box(13,0,13,16,11,16), Block.box(13,0,1,16,11,4), Block.box(0,11,0,16,13,16), Block.box(0,13,9,16,16,16));
     private  static final VoxelShape SHAPE_E_1 = Shapes.or(Block.box(1,6,1,16,11,16), Block.box(13,0,0,16,11,3), Block.box(1,0,0,4,11,3), Block.box(0,11,0,16,13,16), Block.box(9,13,0,16,16,16));
@@ -99,6 +101,15 @@ public class GreenDeskBlock extends MultiblockPlacer{
                 }
             }
         }
+    }
+
+
+    @Override
+    public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
+        if (blockState.getValue(MULTIBLOCK_PART) != 1){
+            return null;
+        }
+        return TileEntityRegistration.TWO_ROWS_BE.get().create(blockPos, blockState);
     }
 
     @Override

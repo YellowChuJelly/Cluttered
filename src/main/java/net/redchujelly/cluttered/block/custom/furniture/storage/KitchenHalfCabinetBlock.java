@@ -37,6 +37,6 @@ public class KitchenHalfCabinetBlock extends KitchenCabinetBlock{
 
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return TileEntityRegistration.KITCHEN_SET_HALF_CABINET_BE.get().create(blockPos, blockState);
+        return TileEntityRegistration.ONE_ROW_BE.get().create(blockPos, blockState);
     }
 }
