@@ -1,4 +1,4 @@
-package net.redchujelly.cluttered.block.custom.furniture;
+package net.redchujelly.cluttered.block.multiblock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -8,7 +8,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 
 public class VioletScreenBlock extends MultiblockPlacer {
     private static final VoxelShape SHAPE_14_N = Block.box(2,0,3,16,16,10);

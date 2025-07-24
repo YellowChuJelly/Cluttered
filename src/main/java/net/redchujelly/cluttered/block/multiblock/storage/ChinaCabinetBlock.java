@@ -1,17 +1,21 @@
-package net.redchujelly.cluttered.block.multiblock;
+package net.redchujelly.cluttered.block.multiblock.storage;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
+import net.redchujelly.cluttered.setup.TileEntityRegistration;
+import org.jetbrains.annotations.Nullable;
 
-public class ChinaCabinetBlock extends MultiblockPlacer {
+public class ChinaCabinetBlock extends MultiblockStorage {
     private static final VoxelShape SHAPE_1_N = Shapes.join(Block.box(1,0,0,15,2,15), Block.box(2,2,0,14,16,14), BooleanOp.OR);
     private static final VoxelShape SHAPE_1_S = Shapes.join(Block.box(1,0,1,15,2,15), Block.box(2,2,2,14,16,16), BooleanOp.OR);
     private static final VoxelShape SHAPE_1_E = Shapes.join(Block.box(1,0,1,16,2,15), Block.box(2,2,2,16,16,14), BooleanOp.OR);
@@ -56,6 +60,14 @@ public class ChinaCabinetBlock extends MultiblockPlacer {
             case WEST -> part == 1 ? SHAPE_1_W : SHAPE_2_W;
             default -> part == 1 ? SHAPE_1_N : SHAPE_2_N;
         };
+    }
+
+    @Override
+    public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
+        if (blockState.getValue(MULTIBLOCK_PART) != 1){
+            return null;
+        }
+        return TileEntityRegistration.THREE_ROWS_BE.get().create(blockPos, blockState);
     }
 
 }

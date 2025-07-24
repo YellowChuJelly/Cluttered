@@ -104,11 +104,14 @@ public class TileEntityRegistration {
 
             BlockRegistration.BRIEFCASE_BLANK,
             BlockRegistration.BRIEFCASE_ROVER,
+
+            BlockRegistration.CHINA_CABINET,
     };
 
     static RegistryObject<?>[] sixRows = new RegistryObject[]{
             BlockRegistration.CARD_INDEX,
             BlockRegistration.GENERAL_STORE_CABINET,
+            BlockRegistration.DARKWOOD_CABINET,
     };
 
     static RegistryObject<?>[] fridges = new RegistryObject[]{

@@ -2,12 +2,15 @@ package net.redchujelly.cluttered.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -23,6 +26,9 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.redchujelly.cluttered.block.custom.furniture.SmallFurnitureBlock;
 import net.redchujelly.cluttered.setup.ItemRegistration;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class BracketBlock extends SmallFurnitureBlock {
 
@@ -64,19 +70,11 @@ public class BracketBlock extends SmallFurnitureBlock {
                 .setValue(IS_UP, shouldBeUP);
     }
 
-
-
-    //@Override
-    //public BlockState updateShape(BlockState pState, Direction pDirection, BlockState pNeighborState, LevelAccessor pLevel, BlockPos pPos, BlockPos pNeighborPos) {
-    //    Direction facingOpp = pState.getValue(FACING).getOpposite();
-    //    BlockPos behindPos = pPos.relative(facingOpp);
-
-    //    if(pNeighborPos.equals(behindPos) && (pNeighborState.is(BlockTags.FENCES) || pNeighborState.is(BlockTags.WOODEN_FENCES))){
-    //        pLevel.setBlock(pPos, pState.setValue(OFFSET, true), 2);
-    //    }
-
-    //    return super.updateShape(pState, pDirection, pNeighborState, pLevel, pPos, pNeighborPos);
-    //}
+    @Override
+    public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+        pTooltip.add(Component.translatable("cluttered.bracket.tooltip"));
+        super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
+    }
 
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {

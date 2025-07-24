@@ -995,7 +995,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SCALE);
 
         multiblockParts(BlockRegistration.ANCIENT_CODEX);
-        hFacingBlockWithCustomModel(BlockRegistration.ANTIQUE_BOOK_STAND);
+        multiblockParts(BlockRegistration.ANTIQUE_BOOK_STAND);
         multiBlockWithOneModel(BlockRegistration.ANTIQUE_LIBRARY_BOOKS);
         flatFacingBlock(BlockRegistration.ANTIQUE_MAP, 0);
         hFacingBlockWithCustomModel(BlockRegistration.ANTIQUE_MINI_TABLE);

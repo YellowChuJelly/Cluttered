@@ -822,7 +822,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.ANTIQUE_MAP.get());
         dropSelf(BlockRegistration.ANTIQUE_MINI_TABLE.get());
         multiBlockDropOnlyOneItem(BlockRegistration.ANCIENT_CODEX.get());
-        dropSelf(BlockRegistration.ANTIQUE_BOOK_STAND.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.ANTIQUE_BOOK_STAND.get());
         dropSelf(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get());
 
         dropSelf(BlockRegistration.BRIEFCASE_BLANK.get());

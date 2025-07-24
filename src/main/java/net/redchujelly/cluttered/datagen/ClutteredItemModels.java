@@ -272,6 +272,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.ENDTABLE_DECOR);
 
         blockitemFromModel(BlockRegistration.COTTAGE_CHAIR);
+        blockitemFromModel(BlockRegistration.COTTAGE_ARMCHAIR);
         blockitemFromModel(BlockRegistration.COTTAGE_CHAIR_CUSHIONED);
         blockitemFromModel(BlockRegistration.COTTAGE_OTTOMAN);
         blockitemFromModel(BlockRegistration.MADONNA_OTTOMAN);

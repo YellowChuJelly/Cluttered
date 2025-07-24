@@ -1,19 +1,34 @@
 {
   "variants": {
-    "facing=east": {
-      "model": "cluttered:block/antique_book_stand",
+    "facing=east,part=1": {
+      "model": "cluttered:block/antique_book_stand_1",
+      "y": 270
+    },
+    "facing=east,part=2": {
+      "model": "cluttered:block/antique_book_stand_2",
+      "y": 270
+    },
+    "facing=north,part=1": {
+      "model": "cluttered:block/antique_book_stand_1",
+      "y": 180
+    },
+    "facing=north,part=2": {
+      "model": "cluttered:block/antique_book_stand_2",
+      "y": 180
+    },
+    "facing=south,part=1": {
+      "model": "cluttered:block/antique_book_stand_1"
+    },
+    "facing=south,part=2": {
+      "model": "cluttered:block/antique_book_stand_2"
+    },
+    "facing=west,part=1": {
+      "model": "cluttered:block/antique_book_stand_1",
       "y": 90
     },
-    "facing=north": {
-      "model": "cluttered:block/antique_book_stand"
-    },
-    "facing=south": {
-      "model": "cluttered:block/antique_book_stand",
-      "y": -180
-    },
-    "facing=west": {
-      "model": "cluttered:block/antique_book_stand",
-      "y": -90
+    "facing=west,part=2": {
+      "model": "cluttered:block/antique_book_stand_2",
+      "y": 90
     }
   }
 }

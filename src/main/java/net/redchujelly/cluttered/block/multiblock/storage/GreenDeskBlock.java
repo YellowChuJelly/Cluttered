@@ -103,7 +103,6 @@ public class GreenDeskBlock extends MultiblockStorage {
         }
     }
 
-
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
         if (blockState.getValue(MULTIBLOCK_PART) != 1){
