@@ -441,22 +441,7 @@ public class ClutteredItemModels extends ItemModelProvider {
 
         blockitemFromModel(BlockRegistration.CONFECTIONERY_TABLE_BLUE);
         blockitemFromModel(BlockRegistration.CONFECTIONERY_TABLE_PINK);
-        blockitemFromModel(BlockRegistration.THREE_JAM_JARS_ASSORTED_A);
-        blockitemFromModel(BlockRegistration.THREE_JAM_JARS_ASSORTED_B);
-        blockitemFromModel(BlockRegistration.THREE_JAM_JARS_APRICOT);
-        blockitemFromModel(BlockRegistration.THREE_JAM_JARS_BLUEBERRY);
-        blockitemFromModel(BlockRegistration.THREE_JAM_JARS_CHERRY);
-        blockitemFromModel(BlockRegistration.THREE_JAM_JARS_HONEY);
-        blockitemFromModel(BlockRegistration.THREE_JAM_JARS_STRAWBERRY);
-        blockitemFromModel(BlockRegistration.THREE_JAM_JARS_ORANGE_MARMALADE);
-        blockitemFromModel(BlockRegistration.JAM_JAR_PYRAMID_ASSORTED_A);
-        blockitemFromModel(BlockRegistration.JAM_JAR_PYRAMID_ASSORTED_B);
-        blockitemFromModel(BlockRegistration.JAM_JAR_PYRAMID_APRICOT);
-        blockitemFromModel(BlockRegistration.JAM_JAR_PYRAMID_BLUEBERRY);
-        blockitemFromModel(BlockRegistration.JAM_JAR_PYRAMID_CHERRY);
-        blockitemFromModel(BlockRegistration.JAM_JAR_PYRAMID_HONEY);
-        blockitemFromModel(BlockRegistration.JAM_JAR_PYRAMID_STRAWBERRY);
-        blockitemFromModel(BlockRegistration.JAM_JAR_PYRAMID_ORANGE_MARMALADE);
+
         blockitemFromModel(BlockRegistration.SAFE_NOVAKID);
         blockitemFromModel(BlockRegistration.VIOLET_SCREEN);
         blockitemFromModel(BlockRegistration.HOPPIN_PARK_LANTERN);
@@ -512,6 +497,9 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.ANIMATED_FLAG_TRANSGENDER);
         blockitemFromModel(BlockRegistration.ANIMATED_FLAG_NONBINARY);
         blockitemFromModel(BlockRegistration.ANIMATED_FLAG_RAINBOW);
+
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(BlockRegistration.JAM_JARS.get()).getPath(),
+                new ResourceLocation(Cluttered.MODID, "block/jam_jar_pyramid_assorted_a"));
 
         //MULTIBLOCK FURNITURE
         blockitemFromModel(BlockRegistration.DESK_BROWN);

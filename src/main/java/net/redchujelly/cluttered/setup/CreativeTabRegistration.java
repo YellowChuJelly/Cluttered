@@ -947,22 +947,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.CONFECTIONERY_TABLE_BLUE.get());
                         output.accept(BlockRegistration.CONFECTIONERY_TABLE_PINK.get());
 
-                        output.accept(BlockRegistration.THREE_JAM_JARS_APRICOT.get());
-                        output.accept(BlockRegistration.THREE_JAM_JARS_BLUEBERRY.get());
-                        output.accept(BlockRegistration.THREE_JAM_JARS_CHERRY.get());
-                        output.accept(BlockRegistration.THREE_JAM_JARS_STRAWBERRY.get());
-                        output.accept(BlockRegistration.THREE_JAM_JARS_HONEY.get());
-                        output.accept(BlockRegistration.THREE_JAM_JARS_ORANGE_MARMALADE.get());
-                        output.accept(BlockRegistration.THREE_JAM_JARS_ASSORTED_A.get());
-                        output.accept(BlockRegistration.THREE_JAM_JARS_ASSORTED_B.get());
-                        output.accept(BlockRegistration.JAM_JAR_PYRAMID_APRICOT.get());
-                        output.accept(BlockRegistration.JAM_JAR_PYRAMID_BLUEBERRY.get());
-                        output.accept(BlockRegistration.JAM_JAR_PYRAMID_CHERRY.get());
-                        output.accept(BlockRegistration.JAM_JAR_PYRAMID_STRAWBERRY.get());
-                        output.accept(BlockRegistration.JAM_JAR_PYRAMID_HONEY.get());
-                        output.accept(BlockRegistration.JAM_JAR_PYRAMID_ORANGE_MARMALADE.get());
-                        output.accept(BlockRegistration.JAM_JAR_PYRAMID_ASSORTED_A.get());
-                        output.accept(BlockRegistration.JAM_JAR_PYRAMID_ASSORTED_B.get());
+                        output.accept(BlockRegistration.JAM_JARS.get());
 
                         output.accept(BlockRegistration.BOOK_OPEN.get());
                         output.accept(BlockRegistration.BRASS_KEY.get());

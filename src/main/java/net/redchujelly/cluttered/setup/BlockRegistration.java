@@ -1622,39 +1622,9 @@ public class BlockRegistration {
     public static final RegistryObject<Block> POK_TA_POK_HOOP_SNAKES = registerBlock("pok_ta_pok_hoop_snakes",
             () -> new ToasterBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
-    public static final RegistryObject<Block> THREE_JAM_JARS_STRAWBERRY = registerBlock("three_jam_jars_strawberry",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> THREE_JAM_JARS_ORANGE_MARMALADE = registerBlock("three_jam_jars_orange_marmalade",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> THREE_JAM_JARS_HONEY = registerBlock("three_jam_jars_honey",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> THREE_JAM_JARS_CHERRY = registerBlock("three_jam_jars_cherry",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> THREE_JAM_JARS_BLUEBERRY = registerBlock("three_jam_jars_blueberry",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> THREE_JAM_JARS_APRICOT = registerBlock("three_jam_jars_apricot",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> THREE_JAM_JARS_ASSORTED_A = registerBlock("three_jam_jars_assorted_a",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> THREE_JAM_JARS_ASSORTED_B = registerBlock("three_jam_jars_assorted_b",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> JAM_JARS = registerBlock("jam_jars",
+            () -> new JamJarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
 
-    public static final RegistryObject<Block> JAM_JAR_PYRAMID_STRAWBERRY = registerBlock("jam_jar_pyramid_strawberry",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> JAM_JAR_PYRAMID_ORANGE_MARMALADE = registerBlock("jam_jar_pyramid_orange_marmalade",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> JAM_JAR_PYRAMID_HONEY = registerBlock("jam_jar_pyramid_honey",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> JAM_JAR_PYRAMID_CHERRY = registerBlock("jam_jar_pyramid_cherry",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> JAM_JAR_PYRAMID_BLUEBERRY = registerBlock("jam_jar_pyramid_blueberry",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> JAM_JAR_PYRAMID_APRICOT = registerBlock("jam_jar_pyramid_apricot",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> JAM_JAR_PYRAMID_ASSORTED_A = registerBlock("jam_jar_pyramid_assorted_a",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> JAM_JAR_PYRAMID_ASSORTED_B = registerBlock("jam_jar_pyramid_assorted_b",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryObject<Block> WATERING_CAN = registerBlock("watering_can",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryObject<Block> WATERING_CAN_COPPER = registerBlock("watering_can_copper",
