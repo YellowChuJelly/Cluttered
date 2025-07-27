@@ -38,12 +38,20 @@ public class ClutteredItemTags extends ItemTagsProvider {
         tag(ItemTags.DOORS)
                 .add(BlockRegistration.WILLOW_LOG_DOOR.get().asItem())
                 .add(BlockRegistration.WILLOW_GARDEN_DOOR.get().asItem())
-                .add(BlockRegistration.DYNASTY_DOOR.get().asItem());
+                .add(BlockRegistration.DYNASTY_DOOR.get().asItem())
+                .add(BlockRegistration.ART_NOUVEAU_DOOR_DARK.get().asItem())
+                .add(BlockRegistration.ART_NOUVEAU_DOOR.get().asItem());
         tag(ItemTags.WOODEN_DOORS)
                 .add(BlockRegistration.WILLOW_LOG_DOOR.get().asItem())
                 .add(BlockRegistration.WILLOW_GARDEN_DOOR.get().asItem())
-                .add(BlockRegistration.DYNASTY_DOOR.get().asItem());
+                .add(BlockRegistration.DYNASTY_DOOR.get().asItem())
+                .add(BlockRegistration.ART_NOUVEAU_DOOR_DARK.get().asItem())
+                .add(BlockRegistration.ART_NOUVEAU_DOOR.get().asItem());
         tag(ItemTags.STONE_CRAFTING_MATERIALS)
+                .add(BlockRegistration.CHALCEDONY.get().asItem())
+                .add(BlockRegistration.DEEP_CHALCEDONY.get().asItem())
+                .add(BlockRegistration.MARBLE.get().asItem());
+        tag(ItemTags.STONE_TOOL_MATERIALS)
                 .add(BlockRegistration.CHALCEDONY.get().asItem())
                 .add(BlockRegistration.DEEP_CHALCEDONY.get().asItem())
                 .add(BlockRegistration.MARBLE.get().asItem());

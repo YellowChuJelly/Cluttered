@@ -34,7 +34,9 @@ public class ClutteredBlockTags extends BlockTagsProvider {
 
         tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(BlockRegistration.BLUE_MUSHROOM_CAP.get())
+                .add(BlockRegistration.RED_MUSHROOM_CAP.get())
                 .add(BlockRegistration.EYE_BLOCK.get());
+
         tag(BlockTags.ENCHANTMENT_POWER_PROVIDER)
                 .add(BlockRegistration.WILLOW_BOOKSHELF_BLACK_CAT.get())
                 .add(BlockRegistration.WILLOW_BOOKSHELF_CALICO_CAT.get())
@@ -147,15 +149,50 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.WOODEN_BRACKET_STAR.get())
                 .add(BlockRegistration.WOODEN_BRACKET_STAR_SCROLL.get())
                 .add(BlockRegistration.WOODEN_BRACKET_SCROLL_SHELF.get())
-                .add(BlockRegistration.WOODEN_BRACKET_VICTORIAN.get());
+                .add(BlockRegistration.WOODEN_BRACKET_VICTORIAN.get())
+                .add(BlockRegistration.ART_NOUVEAU_DOOR_DARK.get())
+                .add(BlockRegistration.ART_NOUVEAU_DOOR.get())
 
+                .add(BlockRegistration.APPLE_CHAIR.get())
+                .add(BlockRegistration.BIRDHOUSE_UNPAINTED.get())
+                .add(BlockRegistration.BIRDHOUSE_BLUE.get())
+                .add(BlockRegistration.BIRDHOUSE_PASTEL.get())
+                .add(BlockRegistration.BIRDHOUSE_RED.get())
+                .add(BlockRegistration.BRIEFCASE_BLANK.get())
+                .add(BlockRegistration.BRIEFCASE_ROVER.get())
+                .add(BlockRegistration.BUNNY_BOOK_ENDS.get())
+                .add(BlockRegistration.BOX_OF_PAINTS.get())
+                .add(BlockRegistration.BUTTON_STOOL.get())
+                .add(BlockRegistration.CARDBOARD_BOX.get())
+                .add(BlockRegistration.COFFEE_GRINDER.get())
+                .add(BlockRegistration.ANTIQUE_MINI_TABLE.get())
+                .add(BlockRegistration.ANTIQUE_MINI_TABLE.get())
+                .add(BlockRegistration.ANCIENT_CODEX.get())
+                .add(BlockRegistration.ANTIQUE_BOOK_STAND.get())
+                .add(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get())
+                .add(BlockRegistration.BEE_LAMP.get())
+                .add(BlockRegistration.BEE_LAMP_ANGRY.get())
+                .add(BlockRegistration.RECORD_PLAYER_BLUE.get())
+                .add(BlockRegistration.RECORD_PLAYER_BROWN.get())
+                .add(BlockRegistration.RECORD_PLAYER_YELLOW.get())
+                .add(BlockRegistration.RECORD_PLAYER_RED.get())
+                .add(BlockRegistration.RECORD_PLAYER_PURPLE.get())
+                .add(BlockRegistration.RECORD_PLAYER_PINK.get())
+                .add(BlockRegistration.RECORD_PLAYER_WHITE.get())
+                .add(BlockRegistration.COTTAGE_SIDE_TABLE.get())
+                .add(BlockRegistration.COTTAGE_CHAIR.get())
+                .add(BlockRegistration.COTTAGE_CHAIR_CUSHIONED.get())
+                .add(BlockRegistration.COTTAGE_OTTOMAN.get())
+                ;
 
         tag(BlockTags.WOODEN_DOORS)
                 .add(BlockRegistration.WILLOW_LOG_DOOR.get())
                 .add(BlockRegistration.WILLOW_GARDEN_DOOR.get())
                 .add(BlockRegistration.DYNASTY_DOOR.get())
                 .add(BlockRegistration.WOOD_FRENCH_DOOR.get())
-                .add(BlockRegistration.WOOD_SCREEN_DOOR.get());
+                .add(BlockRegistration.WOOD_SCREEN_DOOR.get())
+                .add(BlockRegistration.ART_NOUVEAU_DOOR_DARK.get())
+                .add(BlockRegistration.ART_NOUVEAU_DOOR.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(BlockRegistration.CHALCEDONY.get())
@@ -313,8 +350,31 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.COLOSSEO_PILLAR_BASE.get())
                 .add(BlockRegistration.COLOSSEO_PILLAR.get())
                 .add(BlockRegistration.COLOSSEO_PILLAR_TOP.get())
+                .add(BlockRegistration.CHISELED_GOLD_BLOCK.get())
 
-                .add(BlockRegistration.CHISELED_GOLD_BLOCK.get());
+                .add(BlockRegistration.CAT_MUGS_CLUTTERED.get())
+                .add(BlockRegistration.CAT_PLANT_POT_BLACK.get())
+                .add(BlockRegistration.CAT_PLANT_POT_ORANGE.get())
+                .add(BlockRegistration.KITCHEN_SCALE.get())
+                .add(BlockRegistration.BIKE_YELLOW.get())
+                .add(BlockRegistration.BIKE_YELLOW_FLOWERS.get())
+                .add(BlockRegistration.BIKE_BLUE.get())
+                .add(BlockRegistration.BIKE_BLUE_FLOWERS.get())
+                .add(BlockRegistration.BIKE_PURPLE.get())
+                .add(BlockRegistration.BIKE_PURPLE_FLOWERS.get())
+                .add(BlockRegistration.BIKE_PINK.get())
+                .add(BlockRegistration.BIKE_PINK_FLOWERS.get())
+                .add(BlockRegistration.GUMBALL_MACHINE_PURPLE.get())
+                .add(BlockRegistration.GUMBALL_MACHINE_RED.get())
+                .add(BlockRegistration.GUMBALL_MACHINE_BLUE.get())
+                .add(BlockRegistration.MUSHROOM_JARS.get())
+        ;
+
+        tag(BlockTags.WOOL)
+                .add(BlockRegistration.THREAD_SPOOL_GREEN.get())
+                .add(BlockRegistration.THREAD_SPOOL_YELLOW.get())
+                .add(BlockRegistration.THREAD_SPOOL_PINK.get())
+                .add(BlockRegistration.THREAD_SPOOL_PURPLE.get());
 
         //tag(BlockTags.WALLS)
                 //Brackets are in here because it lets them connect to glass panes and it looks really nice

@@ -1228,7 +1228,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> THREAD_SPOOL_PINK = registerBlock("spool_of_thread_pink",
             () -> new ThreadSpoolBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL)));
     public static final RegistryObject<Block> CAT_MUGS_CLUTTERED = registerBlock("cat_mugs_cluttered",
-            () -> new ShortMediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.DECORATED_POT).strength(0.2f)));
+            () -> new ShortMediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.DECORATED_POT).strength(0.3f)));
     public static final RegistryObject<Block> CAT_PLANT_POT_BLACK = registerBlock("cat_plant_pot_black",
             () -> new CatPlantPotBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_WOOL).sound(SoundType.DECORATED_POT)));
     public static final RegistryObject<Block> CAT_PLANT_POT_ORANGE = registerBlock("cat_plant_pot_orange",
@@ -1361,7 +1361,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> SCISSORS_AND_THREAD = registerBlock("scissors_and_thread",
             () -> new FlatClutterBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).noCollission().strength(0.2f)));
     public static final RegistryObject<Block> SLICED_BREAD = registerBlock("sliced_bread",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+            () -> new SlicedBreadBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
     public static final RegistryObject<Block> VIAL_STAND = registerBlock("vial_stand",
             () -> new VialStandBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(0.4f)));
     public static final RegistryObject<Block> PINEAPPLE = registerBlock("pineapple",
@@ -1618,9 +1618,9 @@ public class BlockRegistration {
     public static final RegistryObject<Block> RETRO_TOASTER_YELLOW = registerBlock("retro_toaster_yellow",
             () -> new ToasterBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> POK_TA_POK_HOOP = registerBlock("pok_ta_pok_hoop",
-            () -> new ToasterBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+            () -> new PokTaPokHoopBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> POK_TA_POK_HOOP_SNAKES = registerBlock("pok_ta_pok_hoop_snakes",
-            () -> new ToasterBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+            () -> new PokTaPokHoopSnakesBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     public static final RegistryObject<Block> JAM_JARS = registerBlock("jam_jars",
             () -> new JamJarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));

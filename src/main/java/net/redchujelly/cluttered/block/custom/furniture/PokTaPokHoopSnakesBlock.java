@@ -5,21 +5,18 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class AppleChairBlock extends ChairBlock{
-    private static final VoxelShape SHAPE_BASE = Shapes.join(Block.box(3, 0, 3, 13, 7, 13), Block.box(2, 7, 2, 14, 11, 14), BooleanOp.OR);
-    private static final VoxelShape SHAPE_NORTH = Shapes.or(SHAPE_BASE, Block.box(2,11,10,14,19,14));
-    private static final VoxelShape SHAPE_SOUTH = Shapes.or(SHAPE_BASE, Block.box(2,11,2,14,19,6));
-    private static final VoxelShape SHAPE_EAST = Shapes.or(SHAPE_BASE, Block.box(2,11,2,6,19,14));
-    private static final VoxelShape SHAPE_WEST = Shapes.or(SHAPE_BASE, Block.box(10,11,2,14,19,14));
+public class PokTaPokHoopSnakesBlock extends PokTaPokHoopBlock{
 
-    private static final float SEAT_OFFSET = 0.6875f;
+    private static final VoxelShape SHAPE_NORTH = Shapes.or(Block.box(4,0,-3, 12, 7, 16), Block.box(4,12,-3, 12, 19, 16), Block.box(4,0,-3,12,19,4), Block.box(4,0,9,12,19,16));
+    private static final VoxelShape SHAPE_SOUTH = Shapes.or(Block.box(4,0,0, 12, 7, 19), Block.box(4,12,0, 12, 19, 19), Block.box(4,0,0,12,19,7), Block.box(4,0,12,12,19,19));
+    private static final VoxelShape SHAPE_EAST = Shapes.or(Block.box(0,0,4  , 19, 7, 12), Block.box(0,12,4  , 19, 19, 12), Block.box(0,0,4,7,19,12), Block.box(12,0,4,19,19,12));
+    private static final VoxelShape SHAPE_WEST = Shapes.or(Block.box(-3,0,4  , 16, 7, 12), Block.box(-3,12,4  , 16, 19, 12), Block.box(9,0,4,16,19,12), Block.box(-3,0,4,4,19,12));
 
-    public AppleChairBlock(Properties pProperties) {
+    public PokTaPokHoopSnakesBlock(Properties pProperties) {
         super(pProperties);
     }
 
@@ -32,10 +29,5 @@ public class AppleChairBlock extends ChairBlock{
             case WEST -> SHAPE_WEST;
             default -> SHAPE_NORTH;
         };
-    }
-
-    @Override
-    public float getSeatOffset(){
-        return SEAT_OFFSET;
     }
 }

@@ -1020,7 +1020,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.ROSE_END_TABLE_BLACK.get());
                         output.accept(BlockRegistration.VIAL_STAND.get());
                         output.accept(BlockRegistration.PINEAPPLE.get());
-                        output.accept(BlockRegistration.MUSHROOM_FLAT.get());
                         output.accept(BlockRegistration.HONEYCOMB_LAMP.get());
                         output.accept(BlockRegistration.UNLIVING_CHAIR.get());
                         output.accept(BlockRegistration.SAFE_NOVAKID.get());
