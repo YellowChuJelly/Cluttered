@@ -28,6 +28,8 @@ public class TagRegistration {
         public static final TagKey<Item> BLUE_MUSHROOM_LOG = tag("blue_mushroom_log");
         public static final TagKey<Item> RED_MUSHROOM_LOG = tag("red_mushroom_log");
 
+        public static final TagKey<Item> POLAROID_PICTURE = tag("polaroid_picture");
+
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(Cluttered.MODID, name));
         }

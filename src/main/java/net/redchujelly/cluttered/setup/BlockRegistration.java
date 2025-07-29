@@ -1697,19 +1697,19 @@ public class BlockRegistration {
             () -> new FlatDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.SPORE_BLOSSOM)));
 
     public static final RegistryObject<Block> MINI_FLAG_BI = registerBlock("mini_flag_bi",
-            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).noCollission()));
+            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).strength(0f).noCollission()));
     public static final RegistryObject<Block> MINI_FLAG_LESBIAN = registerBlock("mini_flag_lesbian",
-            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).noCollission()));
+            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL).strength(0f).noCollission()));
     public static final RegistryObject<Block> MINI_FLAG_TRANS = registerBlock("mini_flag_trans",
-            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).noCollission()));
+            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).strength(0f).noCollission()));
     public static final RegistryObject<Block> MINI_FLAG_NONBINARY = registerBlock("mini_flag_nonbinary",
-            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).noCollission()));
+            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL).strength(0f).noCollission()));
     public static final RegistryObject<Block> MINI_FLAG_PAN = registerBlock("mini_flag_pan",
-            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).noCollission()));
+            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).strength(0f).noCollission()));
     public static final RegistryObject<Block> MINI_FLAG_RAINBOW = registerBlock("mini_flag_rainbow",
-            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).noCollission()));
+            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).strength(0f).noCollission()));
     public static final RegistryObject<Block> MINI_FLAG_ACE = registerBlock("mini_flag_ace",
-            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).noCollission()));
+            () -> new MiniFlagBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL).strength(0f).noCollission()));
 
     //TODO
     public static final RegistryObject<Block> ANIMATED_FLAG_ASEXUAL = registerBlock("animated_flag_asexual",

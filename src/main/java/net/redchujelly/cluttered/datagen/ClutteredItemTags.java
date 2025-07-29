@@ -61,6 +61,10 @@ public class ClutteredItemTags extends ItemTagsProvider {
         tag(ItemTags.LEAVES)
                 .add(BlockRegistration.WILLOW_LEAVES.get().asItem())
                 .add(BlockRegistration.POPLAR_LEAVES.get().asItem());
+        tag(TagRegistration.Items.POLAROID_PICTURE)
+                .add(BlockRegistration.POLAROIDS_A.get().asItem())
+                .add(BlockRegistration.POLAROIDS_B.get().asItem())
+                .add(BlockRegistration.POLAROIDS_C.get().asItem());
     }
 
     public void tagNewWoodset(String woodType){
