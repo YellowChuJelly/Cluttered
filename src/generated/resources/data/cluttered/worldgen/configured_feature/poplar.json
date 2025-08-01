@@ -26,13 +26,18 @@
               "waterlogged": "false"
             }
           },
-          "weight": 1
+          "weight": 3
         },
         {
           "data": {
-            "Name": "cluttered:flowering_poplar_window"
+            "Name": "cluttered:flowering_poplar_leaves",
+            "Properties": {
+              "distance": "7",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
           },
-          "weight": 1
+          "weight": 2
         }
       ]
     },
@@ -40,9 +45,9 @@
     "ignore_vines": false,
     "minimum_size": {
       "type": "minecraft:two_layers_feature_size",
-      "limit": 4,
-      "lower_size": 3,
-      "upper_size": 5
+      "limit": 3,
+      "lower_size": 0,
+      "upper_size": 2
     },
     "trunk_placer": {
       "type": "minecraft:straight_trunk_placer",

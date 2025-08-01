@@ -164,6 +164,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.FLOWERING_POPLAR_WINDOW.get(), models().cubeAll("flowering_poplar_window", modLoc("block/flowering_poplar_window")).renderType("translucent"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.FLOWERING_POPLAR_WINDOW_PANE.get(), modLoc("block/flowering_poplar_window"), modLoc("block/poplar_glass_pane_top"), "translucent");
         columnBlockWithItem(BlockRegistration.FLOWERING_POPLAR_BOOKSHELF, BlockRegistration.FLOWERING_POPLAR_PLANKS);
+        simpleBlockWithItem(BlockRegistration.FLOWERING_POPLAR_LEAVES.get(), models().cubeAll("flowering_poplar_leaves", modLoc("block/flowering_poplar_leaves")).renderType("cutout"));
 
         //CRABAPPLE WOODSET
         blockWithItem((BlockRegistration.CRABAPPLE_PLANKS));
@@ -193,6 +194,10 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.CRABAPPLE_WINDOW.get(), models().cubeAll("crabapple_window", modLoc("block/crabapple_window")).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.CRABAPPLE_WINDOW_PANE.get(), modLoc("block/crabapple_window"), modLoc("block/crabapple_glass_pane_top"), "cutout");
         columnBlockWithItem(BlockRegistration.CRABAPPLE_BOOKSHELF, BlockRegistration.CRABAPPLE_PLANKS);
+        simpleBlockWithItem(BlockRegistration.CRABAPPLE_LEAVES.get(), models().cubeAll("crabapple_leaves", modLoc("block/crabapple_leaves")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.CRABAPPLE_SAPLING.get(), models().cross("crabapple_sapling", modLoc("block/crabapple_sapling")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.POTTED_CRABAPPLE_SAPLING.get(), models().singleTexture("potted_crabapple_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(BlockRegistration.CRABAPPLE_SAPLING.get())).renderType("cutout"));
 
         //FLOWERING CRABAPPLE WOODSET
         blockWithItem((BlockRegistration.FLOWERING_CRABAPPLE_PLANKS));
@@ -251,6 +256,10 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.SYCAMORE_WINDOW.get(), models().cubeAll("sycamore_window", modLoc("block/sycamore_window")).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.SYCAMORE_WINDOW_PANE.get(), modLoc("block/sycamore_window"), modLoc("block/sycamore_glass_pane_top"), "cutout");
         columnBlockWithItem(BlockRegistration.SYCAMORE_BOOKSHELF, BlockRegistration.SYCAMORE_PLANKS);
+        simpleBlockWithItem(BlockRegistration.SYCAMORE_LEAVES.get(), models().cubeAll("sycamore_leaves", modLoc("block/sycamore_leaves")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.SYCAMORE_SAPLING.get(), models().cross("sycamore_sapling", modLoc("block/sycamore_sapling")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.POTTED_SYCAMORE_SAPLING.get(), models().singleTexture("potted_sycamore_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(BlockRegistration.SYCAMORE_SAPLING.get())).renderType("cutout"));
 
         //FLUORESCENT MAPLE WOODSET
         blockWithItem((BlockRegistration.MAPLE_PLANKS));
@@ -280,6 +289,11 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.MAPLE_WINDOW.get(), models().cubeAll("fluorescent_maple_window", modLoc("block/fluorescent_maple_window")).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.MAPLE_WINDOW_PANE.get(), modLoc("block/fluorescent_maple_window"), modLoc("block/maple_glass_pane_top"), "cutout");
         columnBlockWithItem(BlockRegistration.MAPLE_BOOKSHELF, BlockRegistration.MAPLE_PLANKS);
+        simpleBlockWithItem(BlockRegistration.MAPLE_LEAVES.get(), models().cubeAll("fluorescent_maple_leaves", modLoc("block/fluorescent_maple_leaves")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.MAPLE_LEAVES_FLOWERING.get(), models().cubeAll("flowering_fluorescent_maple_leaves", modLoc("block/flowering_fluorescent_maple_leaves")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.MAPLE_SAPLING.get(), models().cross("fluorescent_maple_sapling", modLoc("block/fluorescent_maple_sapling")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.POTTED_MAPLE_SAPLING.get(), models().singleTexture("potted_fluorescent_maple_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(BlockRegistration.MAPLE_SAPLING.get())).renderType("cutout"));
 
         //BLUE MUSHROOM WOODSET
         blockWithItem((BlockRegistration.BLUE_MUSHROOM_PLANKS));
@@ -340,6 +354,12 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.RED_MUSHROOM_WINDOW.get(), models().cubeAll("red_mushroom_window", modLoc("block/red_mushroom_window")).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.RED_MUSHROOM_WINDOW_PANE.get(), modLoc("block/red_mushroom_window"), modLoc("block/red_mushroom_glass_pane_top"), "cutout");
         columnBlockWithItem(BlockRegistration.RED_MUSHROOM_BOOKSHELF, BlockRegistration.RED_MUSHROOM_PLANKS);
+
+
+
+        simpleBlockWithItem(BlockRegistration.RED_MUSHROOM_SAPLING.get(), models().cross("fly_agaric", modLoc("block/fly_agaric")).renderType("cutout"));
+        simpleBlockWithItem(BlockRegistration.POTTED_RED_MUSHROOM_SAPLING.get(), models().singleTexture("potted_fly_agaric", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(BlockRegistration.RED_MUSHROOM_SAPLING.get())).renderType("cutout"));
 
         //MISC BLOCKS
         //CHALCEDONY

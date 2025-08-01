@@ -92,6 +92,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.YELLOW_PLANTER.get());
 
                         //FLOWERING POPLAR WOODSET
+                        output.accept(BlockRegistration.FLOWERING_POPLAR_LEAVES.get());
                         output.accept(BlockRegistration.FLOWERING_POPLAR_LOG.get());
                         output.accept(BlockRegistration.FLOWERING_POPLAR_WOOD.get());
                         output.accept(BlockRegistration.STRIPPED_FLOWERING_POPLAR_LOG.get());
@@ -111,6 +112,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.FLOWERING_POPLAR_WAINSCOTING.get());
 
                         //CRABAPPLE WOODSET
+                        output.accept(BlockRegistration.CRABAPPLE_SAPLING.get());
+                        output.accept(BlockRegistration.CRABAPPLE_LEAVES.get());
                         output.accept(BlockRegistration.CRABAPPLE_LOG.get());
                         output.accept(BlockRegistration.CRABAPPLE_WOOD.get());
                         output.accept(BlockRegistration.STRIPPED_CRABAPPLE_LOG.get());
@@ -150,6 +153,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.FLOWERING_CRABAPPLE_WAINSCOTING.get());
 
                         //SYCAMORE WOODSET
+                        output.accept(BlockRegistration.SYCAMORE_SAPLING.get());
+                        output.accept(BlockRegistration.SYCAMORE_LEAVES.get());
                         output.accept(BlockRegistration.SYCAMORE_LOG.get());
                         output.accept(BlockRegistration.SYCAMORE_WOOD.get());
                         output.accept(BlockRegistration.STRIPPED_SYCAMORE_LOG.get());
@@ -170,6 +175,9 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.GREEN_PLANTER.get());
 
                         //FLUORESCENT MAPLE WOODSET
+                        output.accept(BlockRegistration.MAPLE_SAPLING.get());
+                        output.accept(BlockRegistration.MAPLE_LEAVES.get());
+                        output.accept(BlockRegistration.MAPLE_LEAVES_FLOWERING.get());
                         output.accept(BlockRegistration.MAPLE_LOG.get());
                         output.accept(BlockRegistration.MAPLE_WOOD.get());
                         output.accept(BlockRegistration.STRIPPED_MAPLE_LOG.get());

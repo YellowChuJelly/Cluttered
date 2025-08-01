@@ -48,6 +48,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         buttonItem(BlockRegistration.CRABAPPLE_BUTTON, BlockRegistration.CRABAPPLE_PLANKS);
         simpleBlockItem(BlockRegistration.CRABAPPLE_DOOR).renderType("cutout");
         simplePaneBlockItem(BlockRegistration.CRABAPPLE_WINDOW_PANE).renderType("cutout");
+        simplePaneBlockItem(BlockRegistration.CRABAPPLE_SAPLING).renderType("cutout");
 
         fenceItem(BlockRegistration.FLOWERING_CRABAPPLE_FENCE, BlockRegistration.FLOWERING_CRABAPPLE_PLANKS);
         buttonItem(BlockRegistration.FLOWERING_CRABAPPLE_BUTTON, BlockRegistration.FLOWERING_CRABAPPLE_PLANKS);
@@ -58,11 +59,13 @@ public class ClutteredItemModels extends ItemModelProvider {
         buttonItem(BlockRegistration.SYCAMORE_BUTTON, BlockRegistration.SYCAMORE_PLANKS);
         simpleBlockItem(BlockRegistration.SYCAMORE_DOOR);
         simplePaneBlockItem(BlockRegistration.SYCAMORE_WINDOW_PANE).renderType("cutout");
+        simplePaneBlockItem(BlockRegistration.SYCAMORE_SAPLING).renderType("cutout");
 
         fenceItem(BlockRegistration.MAPLE_FENCE, BlockRegistration.MAPLE_PLANKS);
         buttonItem(BlockRegistration.MAPLE_BUTTON, BlockRegistration.MAPLE_PLANKS);
         simpleBlockItem(BlockRegistration.MAPLE_DOOR).renderType("cutout");
         simplePaneBlockItem(BlockRegistration.MAPLE_WINDOW_PANE).renderType("cutout");
+        simplePaneBlockItem(BlockRegistration.MAPLE_SAPLING).renderType("cutout");
 
         fenceItem(BlockRegistration.BLUE_MUSHROOM_FENCE, BlockRegistration.BLUE_MUSHROOM_PLANKS);
         buttonItem(BlockRegistration.BLUE_MUSHROOM_BUTTON, BlockRegistration.BLUE_MUSHROOM_PLANKS);
@@ -74,6 +77,8 @@ public class ClutteredItemModels extends ItemModelProvider {
         buttonItem(BlockRegistration.RED_MUSHROOM_BUTTON, BlockRegistration.RED_MUSHROOM_PLANKS);
         simpleBlockItem(BlockRegistration.RED_MUSHROOM_DOOR);
         simplePaneBlockItem(BlockRegistration.RED_MUSHROOM_WINDOW_PANE);
+        simplePaneBlockItem(BlockRegistration.RED_MUSHROOM_SAPLING).renderType("cutout");
+
 
 
         standardCubeItem(BlockRegistration.EYE_BLOCK, "eye_block_left_0");

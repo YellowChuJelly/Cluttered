@@ -1,5 +1,8 @@
-// 1.20.1	2025-07-31T11:57:29.8903506	Registries
-fabf3486eb88bf218cf5ab62c05b3e83bc657428 data/cluttered/worldgen/configured_feature/blue_mushroom.json
-4d9ffb167cb577755eec9ee402bdce8918aee6de data/cluttered/worldgen/configured_feature/poplar.json
-854576e16fb372ef682976819091dabb88524dbd data/cluttered/worldgen/configured_feature/red_mushroom.json
-635b3b1e61f2dc908b6ea23bad9ca386ca66c621 data/cluttered/worldgen/configured_feature/willow.json
+// 1.20.1	2025-08-01T15:36:35.4078037	Registries
+3d7719c8058c671bf475a932edd13129bf3dda60 data/cluttered/worldgen/configured_feature/blue_mushroom.json
+9cc3e81b80167362c1be295fafbc46d9e63b3d01 data/cluttered/worldgen/configured_feature/crabapple.json
+c3840816e84d348eb6cf3e628cbb3a393004de4e data/cluttered/worldgen/configured_feature/fluorescent_maple.json
+d34eb24bcb0889d543e2d1234a94d03af19d8671 data/cluttered/worldgen/configured_feature/poplar.json
+f7224df0448dc9bb3a08c725a79e747002dbe255 data/cluttered/worldgen/configured_feature/red_mushroom.json
+fd2f8d2347ccabfb07af77a29975f6b67521ad93 data/cluttered/worldgen/configured_feature/sycamore.json
+d7f8ce41e9ade2ebcbbd6c240d68cd37327c39bb data/cluttered/worldgen/configured_feature/willow.json

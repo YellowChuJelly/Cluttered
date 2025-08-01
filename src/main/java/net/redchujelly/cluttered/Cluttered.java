@@ -58,14 +58,27 @@ public class Cluttered {
         ComposterBlock.COMPOSTABLES.put(BlockRegistration.WILLOW_LEAVES.get().asItem(), 0.3F);
         ComposterBlock.COMPOSTABLES.put(BlockRegistration.WILLOW_SAPLING.get().asItem(), 0.3F);
         ComposterBlock.COMPOSTABLES.put(BlockRegistration.POPLAR_LEAVES.get().asItem(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(BlockRegistration.FLOWERING_POPLAR_LEAVES.get().asItem(), 0.3F);
         ComposterBlock.COMPOSTABLES.put(BlockRegistration.POPLAR_SAPLING.get().asItem(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(BlockRegistration.CRABAPPLE_LEAVES.get().asItem(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(BlockRegistration.CRABAPPLE_SAPLING.get().asItem(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(BlockRegistration.SYCAMORE_LEAVES.get().asItem(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(BlockRegistration.SYCAMORE_SAPLING.get().asItem(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(BlockRegistration.MAPLE_LEAVES_FLOWERING.get().asItem(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(BlockRegistration.MAPLE_LEAVES.get().asItem(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(BlockRegistration.MAPLE_SAPLING.get().asItem(), 0.3F);
         ComposterBlock.COMPOSTABLES.put(BlockRegistration.BLUE_MUSHROOM_SAPLING.get().asItem(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(BlockRegistration.RED_MUSHROOM_SAPLING.get().asItem(), 0.65F);
 
         event.enqueueWork(() ->
         {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockRegistration.WILLOW_SAPLING.getId(), BlockRegistration.POTTED_WILLOW_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockRegistration.POPLAR_SAPLING.getId(), BlockRegistration.POTTED_POPLAR_SAPLING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockRegistration.CRABAPPLE_SAPLING.getId(), BlockRegistration.POTTED_CRABAPPLE_SAPLING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockRegistration.SYCAMORE_SAPLING.getId(), BlockRegistration.POTTED_SYCAMORE_SAPLING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockRegistration.MAPLE_SAPLING.getId(), BlockRegistration.POTTED_MAPLE_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockRegistration.BLUE_MUSHROOM_SAPLING.getId(), BlockRegistration.POTTED_BLUE_MUSHROOM_SAPLING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockRegistration.RED_MUSHROOM_SAPLING.getId(), BlockRegistration.POTTED_RED_MUSHROOM_SAPLING);
         });
     }
 

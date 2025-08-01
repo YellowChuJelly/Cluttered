@@ -116,6 +116,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.FLOWERING_POPLAR_DOOR.get(), block -> createDoorTable(BlockRegistration.FLOWERING_POPLAR_DOOR.get()));
         add(BlockRegistration.FLOWERING_POPLAR_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.FLOWERING_POPLAR_WINDOW.get()));
         add(BlockRegistration.FLOWERING_POPLAR_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.FLOWERING_POPLAR_WINDOW_PANE.get()));
+        add(BlockRegistration.FLOWERING_POPLAR_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.FLOWERING_POPLAR_LEAVES.get(), BlockRegistration.POPLAR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         //CRABAPPLE WOODSET
         dropSelf(BlockRegistration.CRABAPPLE_LOG.get());
@@ -135,6 +136,9 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.CRABAPPLE_DOOR.get(), block -> createDoorTable(BlockRegistration.CRABAPPLE_DOOR.get()));
         add(BlockRegistration.CRABAPPLE_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.CRABAPPLE_WINDOW.get()));
         add(BlockRegistration.CRABAPPLE_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.CRABAPPLE_WINDOW_PANE.get()));
+        add(BlockRegistration.CRABAPPLE_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.CRABAPPLE_LEAVES.get(), BlockRegistration.CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        dropSelf(BlockRegistration.CRABAPPLE_SAPLING.get());
+        add(BlockRegistration.POTTED_CRABAPPLE_SAPLING.get(), createPotFlowerItemTable(BlockRegistration.CRABAPPLE_SAPLING.get()));
 
         //FLOWERING CRABAPPLE WOODSET
         dropSelf(BlockRegistration.FLOWERING_CRABAPPLE_LOG.get());
@@ -173,7 +177,9 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.SYCAMORE_DOOR.get(), block -> createDoorTable(BlockRegistration.SYCAMORE_DOOR.get()));
         add(BlockRegistration.SYCAMORE_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.SYCAMORE_WINDOW.get()));
         add(BlockRegistration.SYCAMORE_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.SYCAMORE_WINDOW_PANE.get()));
-
+        add(BlockRegistration.SYCAMORE_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.SYCAMORE_LEAVES.get(), BlockRegistration.CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        dropSelf(BlockRegistration.SYCAMORE_SAPLING.get());
+        add(BlockRegistration.POTTED_SYCAMORE_SAPLING.get(), createPotFlowerItemTable(BlockRegistration.SYCAMORE_SAPLING.get()));
         //FLUORESCENT MAPLE WOODSET
         dropSelf(BlockRegistration.MAPLE_LOG.get());
         dropSelf(BlockRegistration.MAPLE_WOOD.get());
@@ -192,6 +198,10 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.MAPLE_DOOR.get(), block -> createDoorTable(BlockRegistration.MAPLE_DOOR.get()));
         add(BlockRegistration.MAPLE_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.MAPLE_WINDOW.get()));
         add(BlockRegistration.MAPLE_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.MAPLE_WINDOW_PANE.get()));
+        add(BlockRegistration.MAPLE_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.MAPLE_LEAVES.get(), BlockRegistration.CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        add(BlockRegistration.MAPLE_LEAVES_FLOWERING.get(), block -> createLeavesDrops(BlockRegistration.MAPLE_LEAVES_FLOWERING.get(), BlockRegistration.CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        dropSelf(BlockRegistration.MAPLE_SAPLING.get());
+        add(BlockRegistration.POTTED_MAPLE_SAPLING.get(), createPotFlowerItemTable(BlockRegistration.MAPLE_SAPLING.get()));
 
         //BLUE MUSHROOM WOODSET
         dropSelf(BlockRegistration.BLUE_MUSHROOM_LOG.get());
@@ -227,6 +237,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.RED_MUSHROOM_BUTTON.get());
         dropSelf(BlockRegistration.RED_MUSHROOM_BOOKSHELF.get());
         dropSelf(BlockRegistration.RED_MUSHROOM_SAPLING.get());
+        add(BlockRegistration.POTTED_RED_MUSHROOM_SAPLING.get(), createPotFlowerItemTable(BlockRegistration.RED_MUSHROOM_SAPLING.get()));
+
 
         add(BlockRegistration.RED_MUSHROOM_SLAB.get(), block -> createSlabItemTable(BlockRegistration.RED_MUSHROOM_SLAB.get()));
         add(BlockRegistration.RED_MUSHROOM_DOOR.get(), block -> createDoorTable(BlockRegistration.RED_MUSHROOM_DOOR.get()));

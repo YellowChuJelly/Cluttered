@@ -4,6 +4,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
@@ -65,6 +66,8 @@ public class ClutteredItemTags extends ItemTagsProvider {
                 .add(BlockRegistration.POLAROIDS_A.get().asItem())
                 .add(BlockRegistration.POLAROIDS_B.get().asItem())
                 .add(BlockRegistration.POLAROIDS_C.get().asItem());
+        tag(ItemTags.LEAVES)
+                .add(BlockRegistration.MAPLE_LEAVES_FLOWERING.get().asItem());
     }
 
     public void tagNewWoodset(String woodType){
@@ -99,6 +102,10 @@ public class ClutteredItemTags extends ItemTagsProvider {
         Item bookshelf = null;
         if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_bookshelf"))) {
             bookshelf = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_bookshelf")).asItem();
+        }
+        Item leaves = null;
+        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_leaves"))) {
+            leaves = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_leaves")).asItem();
         }
 
         tag(ItemTags.LOGS)
@@ -155,6 +162,10 @@ public class ClutteredItemTags extends ItemTagsProvider {
                     .add(door);
             tag(ItemTags.WOODEN_TRAPDOORS)
                     .add(door);
+        }
+        if (leaves != null) {
+            tag(ItemTags.LEAVES)
+                    .add(leaves);
         }
     }
 }

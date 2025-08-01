@@ -209,7 +209,6 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.RETRO_CAFE_SHELF_WINDOW.get())
                 .add(BlockRegistration.POTION_SHELF.get())
                 .add(BlockRegistration.CHINA_CABINET.get())
-                .add(BlockRegistration.CUPID_BENCH.get())
                 .add(BlockRegistration.ENDTABLE_AMETHYST.get())
                 .add(BlockRegistration.ENDTABLE_BUBBLEGUM.get())
                 .add(BlockRegistration.ENDTABLE_CHARCOAL.get())
@@ -580,6 +579,7 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.COLOSSEO_PILLAR.get())
                 .add(BlockRegistration.COLOSSEO_PILLAR_TOP.get())
                 .add(BlockRegistration.CHISELED_GOLD_BLOCK.get())
+                .add(BlockRegistration.CUPID_BENCH.get())
 
                 .add(BlockRegistration.CAT_MUGS_CLUTTERED.get())
                 .add(BlockRegistration.CAT_PLANT_POT_BLACK.get())
@@ -732,6 +732,10 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.DEEP_CHALCEDONY_BALUSTRADE.get())
                 .add(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE.get())
                 .add(BlockRegistration.WOODEN_PICKET_FENCE.get());
+        tag(BlockTags.LEAVES)
+                .add(BlockRegistration.MAPLE_LEAVES_FLOWERING.get());
+        tag(BlockTags.MINEABLE_WITH_HOE)
+                .add(BlockRegistration.MAPLE_LEAVES_FLOWERING.get());
     }
 
     public void tagNewWoodset(String woodType){
@@ -772,6 +776,14 @@ public class ClutteredBlockTags extends BlockTagsProvider {
         Block wainscoting = null;
         if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wainscoting"))) {
             wainscoting = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wainscoting"));
+        }
+        Block leaves = null;
+        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_leaves"))) {
+            leaves = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_leaves"));
+        }
+        Block sapling = null;
+        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_sapling"))) {
+            sapling = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_sapling"));
         }
 
         tag(BlockTags.LOGS)
@@ -857,6 +869,16 @@ public class ClutteredBlockTags extends BlockTagsProvider {
             tag(BlockTags.MINEABLE_WITH_AXE)
                     .add(window)
                     .add(pane);
+        }
+        if (leaves != null){
+            tag(BlockTags.LEAVES)
+                    .add(leaves);
+            tag(BlockTags.MINEABLE_WITH_HOE)
+                    .add(leaves);
+        }
+        if (sapling != null){
+            tag(BlockTags.SAPLINGS)
+                    .add(sapling);
         }
 
     }

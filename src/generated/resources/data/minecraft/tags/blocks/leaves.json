@@ -1,6 +1,13 @@
 {
   "values": [
     "cluttered:willow_leaves",
-    "cluttered:poplar_leaves"
+    "cluttered:poplar_leaves",
+    "cluttered:flowering_poplar_leaves",
+    "cluttered:crabapple_leaves",
+    "cluttered:sycamore_leaves",
+    "cluttered:fluorescent_maple_leaves",
+    "cluttered:willow_leaves",
+    "cluttered:poplar_leaves",
+    "cluttered:flowering_fluorescent_maple_leaves"
   ]
 }

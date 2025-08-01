@@ -220,14 +220,19 @@ public class ClutteredRecipes extends RecipeProvider {
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_TILES);
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_SMALL_TILES);
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_WINDOW);
-        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN);
-        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRACKET_BOW);
-        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL);
-        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRACKET_SCROLL);
-        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF);
-        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRACKET_STAR);
-        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL);
+
+        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BALUSTRADE);
+        chalcedonyResults.add(BlockRegistration.CHALCEDONY_PICKET_FENCE);
+        chalcedonyResults.add(BlockRegistration.CHALCEDONY_PICKET_FENCE_GATE);
+
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.CHALCEDONY.get(), chalcedonyResults);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_BOW.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_STAR.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
 
         chalcedonyResults.remove(BlockRegistration.POLISHED_CHALCEDONY);
 
@@ -352,13 +357,11 @@ public class ClutteredRecipes extends RecipeProvider {
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_TILES);
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_SMALL_TILES);
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_WINDOW);
-        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN);
-        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW);
-        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL);
-        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL);
-        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL_SHELF);
-        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR);
-        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL);
+
+        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BALUSTRADE);
+        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE);
+        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE_GATE);
+
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.DEEP_CHALCEDONY.get(), deepChalcedonyresults);
 
         deepChalcedonyresults.remove(BlockRegistration.DEEP_POLISHED_CHALCEDONY);
@@ -366,6 +369,14 @@ public class ClutteredRecipes extends RecipeProvider {
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.DEEP_POLISHED_CHALCEDONY.get(), deepChalcedonyresults);
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRICK_STAIRS.get().asItem(),BlockRegistration.DEEP_CHALCEDONY_BRICKS.get().asItem());
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_SMALL_TILES.get().asItem(),BlockRegistration.DEEP_CHALCEDONY_TILES.get().asItem());
+
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL_SHELF.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_STARRY_CHISELED_CHALCEDONY.get(), 8)
                 .pattern("bbb")
@@ -481,13 +492,10 @@ public class ClutteredRecipes extends RecipeProvider {
         marbleresults.add(BlockRegistration.MARBLE_TILE_BORDER_DETAIL);
         marbleresults.add(BlockRegistration.MARBLE_TILE_CORNER);
         marbleresults.add(BlockRegistration.MARBLE_TILE_CORNER_CIRCLE);
-        marbleresults.add(BlockRegistration.MARBLE_BRACKET_VICTORIAN);
-        marbleresults.add(BlockRegistration.MARBLE_BRACKET_BOW);
-        marbleresults.add(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL);
-        marbleresults.add(BlockRegistration.MARBLE_BRACKET_SCROLL);
-        marbleresults.add(BlockRegistration.MARBLE_BRACKET_SCROLL_SHELF);
-        marbleresults.add(BlockRegistration.MARBLE_BRACKET_STAR);
-        marbleresults.add(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL);
+
+        marbleresults.add(BlockRegistration.MARBLE_BALUSTRADE);
+        marbleresults.add(BlockRegistration.MARBLE_PICKET_FENCE);
+        marbleresults.add(BlockRegistration.MARBLE_PICKET_FENCE_GATE);
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.MARBLE.get(), marbleresults);
 
         marbleresults.remove(BlockRegistration.POLISHED_MARBLE);
@@ -495,6 +503,14 @@ public class ClutteredRecipes extends RecipeProvider {
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.POLISHED_MARBLE.get(), marbleresults);
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRICK_STAIRS.get().asItem(),BlockRegistration.MARBLE_BRICKS.get().asItem());
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_SMALL_TILES.get().asItem(),BlockRegistration.MARBLE_TILES.get().asItem());
+
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_VICTORIAN.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_BOW.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_BOW_SCROLL.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_SCROLL.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_SCROLL_SHELF.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_STAR.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
+        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_STAR_SCROLL.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.STARRY_CHISELED_MARBLE.get(), 8)
                 .pattern("bbb")
@@ -1223,6 +1239,23 @@ public class ClutteredRecipes extends RecipeProvider {
                 .define('t', ItemTags.WOODEN_STAIRS)
                 .unlockedBy("has_wooden_stairs", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(ItemTags.WOODEN_STAIRS).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WOODEN_PICKET_FENCE.get(), 3)
+                .pattern("ttt")
+                .define('t', ItemTags.WOODEN_FENCES)
+                .unlockedBy("has_wooden_fence", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(ItemTags.WOODEN_FENCES).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WOODEN_PICKET_FENCE_GATE.get())
+                .pattern("tgt")
+                .define('t', ItemTags.WOODEN_FENCES)
+                .define('g', ItemTags.FENCE_GATES)
+                .unlockedBy("has_fence_gate", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(ItemTags.FENCE_GATES).build()))
                 .showNotification(false)
                 .save(consumer);
 
@@ -2787,14 +2820,13 @@ public class ClutteredRecipes extends RecipeProvider {
                         .save(consumer);
 
                 ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.CUPID_BENCH.get())
-                        .pattern("fwf")
+                        .pattern("fff")
                         .pattern("ppp")
                         .pattern("f f")
-                        .define('p', ItemTags.WOODEN_SLABS)
-                        .define('w', Items.WHITE_DYE)
-                        .define('f', ItemTags.WOODEN_FENCES)
-                        .unlockedBy("has_wooden_fence", InventoryChangeTrigger.TriggerInstance.hasItems(
-                                ItemPredicate.Builder.item().of(ItemTags.WOODEN_FENCES).build()))
+                        .define('p', BlockRegistration.MARBLE_SLAB.get())
+                        .define('f', BlockRegistration.MARBLE_PICKET_FENCE.get())
+                        .unlockedBy("has_marble_slab", InventoryChangeTrigger.TriggerInstance.hasItems(
+                                ItemPredicate.Builder.item().of(BlockRegistration.MARBLE_SLAB.get()).build()))
                         .showNotification(true)
                         .save(consumer);
 

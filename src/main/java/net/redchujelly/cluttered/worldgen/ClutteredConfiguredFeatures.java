@@ -12,10 +12,12 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.setup.BlockRegistration;
@@ -30,6 +32,9 @@ public class ClutteredConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> POPLAR_KEY = registerKey("poplar");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_MUSHROOM_KEY = registerKey("blue_mushroom");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_MUSHROOM_KEY = registerKey("red_mushroom");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CRABAPPLE_KEY = registerKey("crabapple");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SYCAMORE_KEY = registerKey("sycamore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MAPLE_KEY = registerKey("fluorescent_maple");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context){
         register(context, WILLOW_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -43,7 +48,7 @@ public class ClutteredConfiguredFeatures {
                         .add(BlockRegistration.FLOWERING_WILLOW_WINDOW.get().defaultBlockState(), 2).build()),
                 new WillowFoliagePlacer(ConstantInt.of(1), ConstantInt.of(1), 1, 5),
 
-                new TwoLayersFeatureSize(1, 2, 4)).build()
+                new TwoLayersFeatureSize(5, 2, 4)).build()
         );
 
         register(context, POPLAR_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -54,11 +59,11 @@ public class ClutteredConfiguredFeatures {
 
 
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
-                        .add(BlockRegistration.POPLAR_LEAVES.get().defaultBlockState(), 1)
-                        .add(BlockRegistration.FLOWERING_POPLAR_WINDOW.get().defaultBlockState(), 1).build()),
+                        .add(BlockRegistration.POPLAR_LEAVES.get().defaultBlockState(), 3)
+                        .add(BlockRegistration.FLOWERING_POPLAR_LEAVES.get().defaultBlockState(), 2).build()),
                 new PoplarFoliagePlacer(ConstantInt.of(4), ConstantInt.of(5), 8),
 
-                new TwoLayersFeatureSize(4, 3, 5)).build()
+                new TwoLayersFeatureSize(3, 0, 2)).build()
         );
 
         register(context, BLUE_MUSHROOM_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -68,7 +73,7 @@ public class ClutteredConfiguredFeatures {
                 WeightedStateProvider.simple(BlockRegistration.BLUE_MUSHROOM_CAP.get()),
                 new BlueMushroomFoliagePlacer(ConstantInt.of(3), ConstantInt.of(4), 3),
 
-                new TwoLayersFeatureSize(4, 3, 5)).build()
+                new TwoLayersFeatureSize(5, 0, 4)).build()
         );
 
         register(context, RED_MUSHROOM_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -78,7 +83,42 @@ public class ClutteredConfiguredFeatures {
                 BlockStateProvider.simple(BlockRegistration.RED_MUSHROOM_CAP.get()),
                 new RedMushroomFoliagePlacer(ConstantInt.of(3), ConstantInt.of(4), 5),
 
-                new TwoLayersFeatureSize(4, 3, 5)).build()
+                new TwoLayersFeatureSize(4, 1, 3)).build()
+        );
+
+        register(context, CRABAPPLE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
+                        .add(BlockRegistration.CRABAPPLE_LOG.get().defaultBlockState(), 1)
+                        .add(BlockRegistration.FLOWERING_CRABAPPLE_LOG.get().defaultBlockState(), 1).build()),
+                new StraightTrunkPlacer(6, 0, 2),
+
+                BlockStateProvider.simple(BlockRegistration.CRABAPPLE_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(4), 5),
+
+                new TwoLayersFeatureSize(4, 0, 3)).build()
+        );
+
+        register(context, SYCAMORE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(BlockRegistration.SYCAMORE_LOG.get()),
+                new StraightTrunkPlacer(6, 0, 2),
+
+                BlockStateProvider.simple(BlockRegistration.SYCAMORE_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(4), 5),
+
+                new TwoLayersFeatureSize(4, 0, 3)).build()
+        );
+
+        register(context, MAPLE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(BlockRegistration.MAPLE_LOG.get()),
+                new StraightTrunkPlacer(6, 1, 3),
+
+
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
+                        .add(BlockRegistration.MAPLE_LEAVES.get().defaultBlockState(), 25)
+                        .add(BlockRegistration.MAPLE_LEAVES_FLOWERING.get().defaultBlockState(), 1).build()),
+                new PoplarFoliagePlacer(ConstantInt.of(4), ConstantInt.of(5), 8),
+
+                new TwoLayersFeatureSize(4, 0, 3)).build()
         );
     }
 
