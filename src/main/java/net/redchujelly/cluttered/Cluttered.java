@@ -8,6 +8,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -17,6 +18,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.redchujelly.cluttered.client.ChairEntityRenderer;
 import net.redchujelly.cluttered.datagen.DataGeneration;
+import net.redchujelly.cluttered.datagen.loot.LootTableTest;
 import net.redchujelly.cluttered.setup.*;
 import org.slf4j.Logger;
 
@@ -38,8 +40,11 @@ public class Cluttered {
         BlockRegistration.register(modEventBus);
         EntityTypeRegistration.register(modEventBus);
         PaintingRegistration.register(modEventBus);
-        TrunkPlacerTypesRegistration.register(modEventBus);
+        TrunkPlacerTypeRegistration.register(modEventBus);
         FoliagePlacerTypeRegistration.register(modEventBus);
+        TreeDecoratorTypeRegistration.register(modEventBus);
+
+        ClutteredLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(DataGeneration::generate);
@@ -67,6 +72,12 @@ public class Cluttered {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
+    }
+
+    @SubscribeEvent
+    public void lootLoad(LootTableLoadEvent event){
+        if (event.getName().toString().equals("minecraft:chests/simple_dungeon")){
+        }
     }
 
 

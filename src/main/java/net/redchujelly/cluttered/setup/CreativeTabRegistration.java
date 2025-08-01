@@ -210,6 +210,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.BLUE_PLANTER.get());
 
                         //RED MUSHROOM WOODSET
+                        output.accept(BlockRegistration.RED_MUSHROOM_SAPLING.get());
                         output.accept(BlockRegistration.RED_MUSHROOM_CAP.get());
                         output.accept(BlockRegistration.RED_MUSHROOM_LOG.get());
                         output.accept(BlockRegistration.RED_MUSHROOM_WOOD.get());

@@ -6,18 +6,11 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.alchemy.PotionUtils;
-import net.minecraft.world.item.alchemy.Potions;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.setup.BlockRegistration;
@@ -227,6 +220,13 @@ public class ClutteredRecipes extends RecipeProvider {
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_TILES);
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_SMALL_TILES);
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_WINDOW);
+        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN);
+        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRACKET_BOW);
+        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL);
+        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRACKET_SCROLL);
+        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF);
+        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRACKET_STAR);
+        chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL);
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.CHALCEDONY.get(), chalcedonyResults);
 
         chalcedonyResults.remove(BlockRegistration.POLISHED_CHALCEDONY);
@@ -352,6 +352,13 @@ public class ClutteredRecipes extends RecipeProvider {
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_TILES);
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_SMALL_TILES);
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_WINDOW);
+        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN);
+        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW);
+        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL);
+        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL);
+        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL_SHELF);
+        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR);
+        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL);
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.DEEP_CHALCEDONY.get(), deepChalcedonyresults);
 
         deepChalcedonyresults.remove(BlockRegistration.DEEP_POLISHED_CHALCEDONY);
@@ -474,6 +481,13 @@ public class ClutteredRecipes extends RecipeProvider {
         marbleresults.add(BlockRegistration.MARBLE_TILE_BORDER_DETAIL);
         marbleresults.add(BlockRegistration.MARBLE_TILE_CORNER);
         marbleresults.add(BlockRegistration.MARBLE_TILE_CORNER_CIRCLE);
+        marbleresults.add(BlockRegistration.MARBLE_BRACKET_VICTORIAN);
+        marbleresults.add(BlockRegistration.MARBLE_BRACKET_BOW);
+        marbleresults.add(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL);
+        marbleresults.add(BlockRegistration.MARBLE_BRACKET_SCROLL);
+        marbleresults.add(BlockRegistration.MARBLE_BRACKET_SCROLL_SHELF);
+        marbleresults.add(BlockRegistration.MARBLE_BRACKET_STAR);
+        marbleresults.add(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL);
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.MARBLE.get(), marbleresults);
 
         marbleresults.remove(BlockRegistration.POLISHED_MARBLE);
@@ -1136,7 +1150,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .showNotification(false)
                 .save(consumer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WICKER_BLOCK.get(), 6)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WICKER_BLOCK.get(), 8)
                 .pattern("sys")
                 .pattern("sys")
                 .pattern("sys")
@@ -1198,6 +1212,17 @@ public class ClutteredRecipes extends RecipeProvider {
                 .define('w', BlockRegistration.WOOD_WINDOW_DIVIDED.get())
                 .unlockedBy("has_wood_window_divided", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(BlockRegistration.WOOD_WINDOW_DIVIDED.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WOODEN_BRACKET_VICTORIAN.get(), 4)
+                .pattern("sss")
+                .pattern(" ts")
+                .pattern("  s")
+                .define('s', Items.STICK)
+                .define('t', ItemTags.WOODEN_STAIRS)
+                .unlockedBy("has_wooden_stairs", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(ItemTags.WOODEN_STAIRS).build()))
                 .showNotification(false)
                 .save(consumer);
 
@@ -1720,7 +1745,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .showNotification(true)
                         .save(consumer);
 
-                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.CAULDRON_POSTER.get(), 8)
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.CAULDRON_POSTER.get(), 4)
                         .pattern("ppp")
                         .pattern("pcp")
                         .pattern("ppp")
@@ -2117,7 +2142,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .showNotification(true)
                         .save(consumer);
 
-                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.NEWSPAPER_PILE_SHORT.get())
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.NEWSPAPER_PILE_SHORT.get(), 2)
                         .pattern("p")
                         .pattern("i")
                         .pattern("p")
@@ -2137,7 +2162,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .showNotification(true)
                         .save(consumer);
 
-                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.PAPER_PILE.get())
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.PAPER_PILE.get(), 2)
                         .pattern("pp")
                         .pattern("pp")
                         .pattern("pp")
@@ -2290,7 +2315,8 @@ public class ClutteredRecipes extends RecipeProvider {
                         .save(consumer);
 
                 ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.PICNIC_BASKET.get())
-                        .pattern("bwb")
+                        .pattern("b b")
+                        .pattern("iwi")
                         .pattern("iii")
                         .define('b', Items.BLUE_CARPET)
                         .define('w', Items.WHITE_CARPET)
@@ -2465,6 +2491,34 @@ public class ClutteredRecipes extends RecipeProvider {
                         .define('r', Items.RED_CARPET)
                         .unlockedBy("has_pink_carpet", InventoryChangeTrigger.TriggerInstance.hasItems(
                                 ItemPredicate.Builder.item().of(Items.PINK_CARPET).build()))
+                        .showNotification(true)
+                        .save(consumer);
+
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.HEART_CAKE.get())
+                        .pattern("bcb")
+                        .pattern("ses")
+                        .pattern("wcw")
+                        .define('s', Items.SUGAR)
+                        .define('b', Items.MILK_BUCKET)
+                        .define('e', Items.EGG)
+                        .define('w', Items.WHEAT)
+                        .define('c', Items.BEETROOT)
+                        .unlockedBy("has_beetroot", InventoryChangeTrigger.TriggerInstance.hasItems(
+                                ItemPredicate.Builder.item().of(Items.BEETROOT).build()))
+                        .showNotification(true)
+                        .save(consumer);
+
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.BERRY_CAKE.get())
+                        .pattern("bcb")
+                        .pattern("ses")
+                        .pattern("wcw")
+                        .define('s', Items.SUGAR)
+                        .define('b', Items.MILK_BUCKET)
+                        .define('e', Items.EGG)
+                        .define('w', Items.WHEAT)
+                        .define('c', Items.SWEET_BERRIES)
+                        .unlockedBy("has_sweet_berries", InventoryChangeTrigger.TriggerInstance.hasItems(
+                                ItemPredicate.Builder.item().of(Items.SWEET_BERRIES).build()))
                         .showNotification(true)
                         .save(consumer);
 
@@ -2807,12 +2861,13 @@ public class ClutteredRecipes extends RecipeProvider {
                         .save(consumer);
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.NIGHTSTAND_GREEN.get())
-                    .pattern("ccc")
+                    .pattern("cfc")
                     .pattern("ppp")
                     .pattern("s s")
                     .define('p', BlockRegistration.SYCAMORE_PLANKS.get())
                     .define('c', Items.PINK_CARPET)
                     .define('s', Items.STICK)
+                    .define('f', Items.SUNFLOWER)
                     .unlockedBy("has_sycamore_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(BlockRegistration.SYCAMORE_PLANKS.get()).build()))
                     .showNotification(true)
@@ -2932,7 +2987,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .showNotification(true)
                     .save(consumer);
 
-            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.SCATTERED_PAPERS.get())
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.SCATTERED_PAPERS.get(), 2)
                     .pattern("ppp")
                     .pattern("ppp")
                     .define('p', Items.PAPER)
@@ -3073,7 +3128,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .showNotification(true)
                     .save(consumer);
 
-            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.STARS_PENDANT.get())
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.STARS_PENDANT.get(), 4)
                     .pattern("s")
                     .pattern("g")
                     .pattern("s")
@@ -3131,7 +3186,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("rgy")
                     .pattern(" l ")
                     .pattern(" f ")
-                    .define('f', Items.SPRUCE_FENCE)
+                    .define('f', ItemTags.WOODEN_FENCES)
                     .define('r', Items.RED_STAINED_GLASS_PANE)
                     .define('g', Items.GREEN_STAINED_GLASS_PANE)
                     .define('y', Items.YELLOW_STAINED_GLASS_PANE)
@@ -4958,6 +5013,19 @@ public class ClutteredRecipes extends RecipeProvider {
                     .showNotification(true)
                     .save(consumer);
 
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.FLOWER_DESK_LAMP.get())
+                    .pattern("vsl")
+                    .pattern("v  ")
+                    .pattern("mm ")
+                    .define('v', Items.VINE)
+                    .define('l', Items.REDSTONE_LAMP)
+                    .define('m', Items.MOSS_CARPET)
+                    .define('s', Items.SPORE_BLOSSOM)
+                    .unlockedBy("has_redstone_lamp", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.REDSTONE_LAMP).build()))
+                    .showNotification(true)
+                    .save(consumer);
+
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.FLOWER_SHELF_BLUE.get(), 3)
                     .pattern("dpd")
                     .pattern("p p")
@@ -5495,7 +5563,6 @@ public class ClutteredRecipes extends RecipeProvider {
                     .save(consumer);
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.SAND_SEAL_PLUSH_BLUE.get())
-                    .pattern(" w ")
                     .pattern("bwb")
                     .pattern("wsw")
                     .define('b', ItemTags.BUTTONS)
@@ -5507,7 +5574,6 @@ public class ClutteredRecipes extends RecipeProvider {
                     .save(consumer);
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.SAND_SEAL_PLUSH_GREEN.get())
-                    .pattern(" w ")
                     .pattern("bwb")
                     .pattern("wsw")
                     .define('b', ItemTags.BUTTONS)
@@ -5519,7 +5585,6 @@ public class ClutteredRecipes extends RecipeProvider {
                     .save(consumer);
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.SAND_SEAL_PLUSH_RED.get())
-                    .pattern(" w ")
                     .pattern("bwb")
                     .pattern("wsw")
                     .define('b', ItemTags.BUTTONS)
@@ -5626,7 +5691,7 @@ public class ClutteredRecipes extends RecipeProvider {
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.SLICED_BREAD.get())
                     .pattern("b")
                     .pattern("p")
-                    .define('p', Items.LIGHT_WEIGHTED_PRESSURE_PLATE)
+                    .define('p', Items.HEAVY_WEIGHTED_PRESSURE_PLATE)
                     .define('b', Items.BREAD)
                     .unlockedBy("has_bread", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.BREAD).build()))

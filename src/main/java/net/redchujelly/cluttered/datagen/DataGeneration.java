@@ -4,6 +4,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.data.event.GatherDataEvent;
+import net.redchujelly.cluttered.datagen.loot.ClutteredGlobalLootModifiers;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -24,5 +25,6 @@ public class DataGeneration {
         generator.addProvider(event.includeServer(), ClutteredLootTableProvider.create(packOutput));
 
         generator.addProvider(event.includeServer(), new ClutteredWorldgen(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new ClutteredGlobalLootModifiers(packOutput));
     }
 }

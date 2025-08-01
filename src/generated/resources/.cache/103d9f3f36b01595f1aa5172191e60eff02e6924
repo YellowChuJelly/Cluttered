@@ -1,4 +1,5 @@
-// 1.20.1	2025-06-04T19:04:56.5452909	Registries
-56e7fbec759d0b1006a238b2523e2805a230b899 data/cluttered/worldgen/configured_feature/blue_mushroom.json
-dca4b2bc771b1935d6d7a13a470356eb7cfee542 data/cluttered/worldgen/configured_feature/poplar.json
-3934d103d8d7d573dd10ca380fe4fb6b6beac75f data/cluttered/worldgen/configured_feature/willow.json
+// 1.20.1	2025-07-31T11:57:29.8903506	Registries
+fabf3486eb88bf218cf5ab62c05b3e83bc657428 data/cluttered/worldgen/configured_feature/blue_mushroom.json
+4d9ffb167cb577755eec9ee402bdce8918aee6de data/cluttered/worldgen/configured_feature/poplar.json
+854576e16fb372ef682976819091dabb88524dbd data/cluttered/worldgen/configured_feature/red_mushroom.json
+635b3b1e61f2dc908b6ea23bad9ca386ca66c621 data/cluttered/worldgen/configured_feature/willow.json

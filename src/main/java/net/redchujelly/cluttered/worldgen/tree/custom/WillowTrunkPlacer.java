@@ -12,7 +12,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.TreeConfigurati
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType;
-import net.redchujelly.cluttered.setup.TrunkPlacerTypesRegistration;
+import net.redchujelly.cluttered.setup.TrunkPlacerTypeRegistration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +29,7 @@ public class WillowTrunkPlacer extends TrunkPlacer {
 
     @Override
     protected TrunkPlacerType<?> type() {
-        return TrunkPlacerTypesRegistration.WILLOW_TRUNK_PLACER.get();
+        return TrunkPlacerTypeRegistration.WILLOW_TRUNK_PLACER.get();
     }
 
     @Override
@@ -37,7 +37,7 @@ public class WillowTrunkPlacer extends TrunkPlacer {
         setDirtAt(pLevel, biConsumer, randomSource, pPos.below(), treeConfiguration);
 
         List<FoliagePlacer.FoliageAttachment> foliageSpots = new ArrayList<>();
-        int maxHeight = freeTreeHeight + randomSource.nextInt(heightRandA, heightRandB) + randomSource.nextInt(-3, 0);
+        int maxHeight = freeTreeHeight + randomSource.nextInt(heightRandA, heightRandB) + randomSource.nextInt(-4, 0);
         int xOffset = 0;
         int zOffset = 0;
 

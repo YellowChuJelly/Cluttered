@@ -4,51 +4,81 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.HugeMushroomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
+import net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator;
+import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.setup.BlockRegistration;
-import net.redchujelly.cluttered.worldgen.tree.custom.PoplarFoliagePlacer;
-import net.redchujelly.cluttered.worldgen.tree.custom.WillowFoliagePlacer;
-import net.redchujelly.cluttered.worldgen.tree.custom.WillowTrunkPlacer;
+import net.redchujelly.cluttered.setup.TreeDecoratorTypeRegistration;
+import net.redchujelly.cluttered.worldgen.tree.custom.*;
+
+import java.util.List;
 
 public class ClutteredConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> WILLOW_KEY = registerKey("willow");
     public static final ResourceKey<ConfiguredFeature<?, ?>> POPLAR_KEY = registerKey("poplar");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_MUHSROOM_KEY = registerKey("blue_mushroom");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_MUSHROOM_KEY = registerKey("blue_mushroom");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RED_MUSHROOM_KEY = registerKey("red_mushroom");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context){
         register(context, WILLOW_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(BlockRegistration.WILLOW_LOG.get()),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
+                        .add(BlockRegistration.WILLOW_LOG.get().defaultBlockState(), 1)
+                        .add(BlockRegistration.FLOWERING_WILLOW_LOG.get().defaultBlockState(), 1).build()),
                 new WillowTrunkPlacer(6, 4, 6),
 
-                BlockStateProvider.simple(BlockRegistration.WILLOW_LEAVES.get()),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
+                        .add(BlockRegistration.WILLOW_LEAVES.get().defaultBlockState(), 3)
+                        .add(BlockRegistration.FLOWERING_WILLOW_WINDOW.get().defaultBlockState(), 2).build()),
                 new WillowFoliagePlacer(ConstantInt.of(1), ConstantInt.of(1), 1, 5),
 
                 new TwoLayersFeatureSize(1, 2, 4)).build()
         );
 
         register(context, POPLAR_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(BlockRegistration.POPLAR_LOG.get()),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
+                        .add(BlockRegistration.POPLAR_LOG.get().defaultBlockState(), 1)
+                        .add(BlockRegistration.FLOWERING_POPLAR_LOG.get().defaultBlockState(), 1).build()),
                 new StraightTrunkPlacer(6, 1, 3),
 
-                BlockStateProvider.simple(BlockRegistration.POPLAR_LEAVES.get()),
+
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
+                        .add(BlockRegistration.POPLAR_LEAVES.get().defaultBlockState(), 1)
+                        .add(BlockRegistration.FLOWERING_POPLAR_WINDOW.get().defaultBlockState(), 1).build()),
                 new PoplarFoliagePlacer(ConstantInt.of(4), ConstantInt.of(5), 8),
 
                 new TwoLayersFeatureSize(4, 3, 5)).build()
         );
 
-        register(context, BLUE_MUHSROOM_KEY, Feature.HUGE_BROWN_MUSHROOM, new HugeMushroomFeatureConfiguration(
-                BlockStateProvider.simple(BlockRegistration.BLUE_MUSHROOM_CAP.get()),
-                BlockStateProvider.simple(BlockRegistration.BLUE_MUSHROOM_LOG.get()), 3)
+        register(context, BLUE_MUSHROOM_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(BlockRegistration.BLUE_MUSHROOM_LOG.get()),
+                new StraightTrunkPlacer(5, 1, 3),
+
+                WeightedStateProvider.simple(BlockRegistration.BLUE_MUSHROOM_CAP.get()),
+                new BlueMushroomFoliagePlacer(ConstantInt.of(3), ConstantInt.of(4), 3),
+
+                new TwoLayersFeatureSize(4, 3, 5)).build()
+        );
+
+        register(context, RED_MUSHROOM_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(BlockRegistration.RED_MUSHROOM_LOG.get()),
+                new RedMushroomTrunkPlacer(6, 0, 2),
+
+                BlockStateProvider.simple(BlockRegistration.RED_MUSHROOM_CAP.get()),
+                new RedMushroomFoliagePlacer(ConstantInt.of(3), ConstantInt.of(4), 5),
+
+                new TwoLayersFeatureSize(4, 3, 5)).build()
         );
     }
 

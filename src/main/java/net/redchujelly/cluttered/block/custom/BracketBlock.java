@@ -76,17 +76,17 @@ public class BracketBlock extends SmallFurnitureBlock {
         super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
     }
 
-    @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        if (pPlayer.getItemInHand(pHand).is(ItemRegistration.HAND_DRILL.get()) && !pPlayer.isCrouching()){
-            if (!pLevel.isClientSide){
-                pLevel.setBlock(pPos, pState.setValue(OFFSET, !pState.getValue(OFFSET)), 2);
-                pLevel.playSound(null, pPos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.BLOCKS);
-            }
-            return InteractionResult.SUCCESS;
-        }
-        return InteractionResult.PASS;
-    }
+    //@Override
+    //public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    //    if (pPlayer.getItemInHand(pHand).is(ItemRegistration.HAND_DRILL.get()) && pPlayer.isCrouching()){
+    //        if (!pLevel.isClientSide){
+    //            pLevel.setBlock(pPos, pState.setValue(OFFSET, !pState.getValue(OFFSET)), 2);
+    //            pLevel.playSound(null, pPos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.BLOCKS);
+    //        }
+    //        return InteractionResult.SUCCESS;
+    //    }
+    //    return InteractionResult.PASS;
+    //}
 
     @Override
     public VoxelShape getBlockSupportShape(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
@@ -129,5 +129,6 @@ public class BracketBlock extends SmallFurnitureBlock {
             default -> is_up ? SHAPE_NORTH_UP : SHAPE_NORTH_DOWN;
         };
     }
+
 }
 

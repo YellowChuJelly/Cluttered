@@ -21,7 +21,9 @@ import net.redchujelly.cluttered.block.multiblock.*;
 import net.redchujelly.cluttered.block.multiblock.storage.ChinaCabinetBlock;
 import net.redchujelly.cluttered.block.multiblock.storage.*;
 import net.redchujelly.cluttered.worldgen.ClutteredConfiguredFeatures;
+import net.redchujelly.cluttered.worldgen.tree.BlueMushroomTreeGrower;
 import net.redchujelly.cluttered.worldgen.tree.PoplarTreeGrower;
+import net.redchujelly.cluttered.worldgen.tree.RedMushroomTreeGrower;
 import net.redchujelly.cluttered.worldgen.tree.WillowTreeGrower;
 import org.jetbrains.annotations.Nullable;
 
@@ -364,7 +366,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> BLUE_MUSHROOM_CAP = registerBlock("blue_mushroom_cap",
             () -> new BouncyMushroomBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM_BLOCK).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT)));
     public static final RegistryObject<Block> BLUE_MUSHROOM_SAPLING = registerBlock("blue_roundhead",
-            () -> new FungusBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM).mapColor(DyeColor.BLUE), ClutteredConfiguredFeatures.BLUE_MUHSROOM_KEY, Blocks.MYCELIUM));
+            () -> new MushroomSaplingBlock(new BlueMushroomTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING).mapColor(DyeColor.BLUE)));
     public static final RegistryObject<Block> BLUE_MUSHROOM_SLAB = registerFuelBlock("blue_mushroom_slab",
             () -> new CustomWoodSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT)), 150);
     public static final RegistryObject<Block> BLUE_MUSHROOM_STAIRS = registerFuelBlock("blue_mushroom_stairs",
@@ -403,6 +405,8 @@ public class BlockRegistration {
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT)), 300);
     public static final RegistryObject<Block> RED_MUSHROOM_CAP = registerFuelBlock("red_mushroom_cap",
             () -> new BouncyMushroomBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT)), 300);
+    public static final RegistryObject<Block> RED_MUSHROOM_SAPLING = registerBlock("fly_agaric",
+            () -> new MushroomSaplingBlock(new RedMushroomTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING).mapColor(DyeColor.RED)));
     public static final RegistryObject<Block> RED_MUSHROOM_SLAB = registerFuelBlock("red_mushroom_slab",
             () -> new CustomWoodSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT)), 150);
     public static final RegistryObject<Block> RED_MUSHROOM_STAIRS = registerFuelBlock("red_mushroom_stairs",
@@ -1626,9 +1630,9 @@ public class BlockRegistration {
             () -> new JamJarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
 
     public static final RegistryObject<Block> WATERING_CAN = registerBlock("watering_can",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1.0f)));
     public static final RegistryObject<Block> WATERING_CAN_COPPER = registerBlock("watering_can_copper",
-            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).strength(1.0f)));
 
     public static final RegistryObject<Block> VIOLET_SCREEN = registerBlock("violet_screen",
             () -> new VioletScreenBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.WOOD)));

@@ -27,6 +27,14 @@ public class ClutteredEvents {
                 new ItemStack(Items.EMERALD, 5),
                 new ItemStack(BlockRegistration.POPLAR_SAPLING.get(), 1), 8, 4, 0.2f
         ));
+        genericTrades.add((pTrader, pRandom) -> new MerchantOffer(
+                new ItemStack(Items.EMERALD, 5),
+                new ItemStack(BlockRegistration.BLUE_MUSHROOM_SAPLING.get(), 1), 8, 4, 0.2f
+        ));
+        genericTrades.add((pTrader, pRandom) -> new MerchantOffer(
+                new ItemStack(Items.EMERALD, 5),
+                new ItemStack(BlockRegistration.RED_MUSHROOM_SAPLING.get(), 1), 8, 4, 0.2f
+        ));
 
     }
 }

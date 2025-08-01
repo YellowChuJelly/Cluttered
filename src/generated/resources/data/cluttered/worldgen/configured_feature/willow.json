@@ -16,15 +16,26 @@
       "radius": 1
     },
     "foliage_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "cluttered:willow_leaves",
-        "Properties": {
-          "distance": "7",
-          "persistent": "false",
-          "waterlogged": "false"
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "cluttered:willow_leaves",
+            "Properties": {
+              "distance": "7",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
+          },
+          "weight": 3
+        },
+        {
+          "data": {
+            "Name": "cluttered:flowering_willow_window"
+          },
+          "weight": 2
         }
-      }
+      ]
     },
     "force_dirt": false,
     "ignore_vines": false,
@@ -41,13 +52,27 @@
       "height_rand_b": 6
     },
     "trunk_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "cluttered:willow_log",
-        "Properties": {
-          "axis": "y"
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "cluttered:willow_log",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "weight": 1
+        },
+        {
+          "data": {
+            "Name": "cluttered:flowering_willow_log",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "weight": 1
         }
-      }
+      ]
     }
   }
 }

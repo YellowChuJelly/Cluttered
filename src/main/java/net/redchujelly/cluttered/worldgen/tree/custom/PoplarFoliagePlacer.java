@@ -6,9 +6,12 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.world.level.LevelSimulatedReader;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacerType;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.redchujelly.cluttered.setup.BlockRegistration;
 import net.redchujelly.cluttered.setup.FoliagePlacerTypeRegistration;
 
 public class PoplarFoliagePlacer extends FoliagePlacer {
@@ -61,4 +64,5 @@ public class PoplarFoliagePlacer extends FoliagePlacer {
     protected boolean shouldSkipLocation(RandomSource pRandom, int pLocalX, int pLocalY, int pLocalZ, int pRange, boolean b) {
         return pLocalX == pRange && pLocalZ == pRange && (pRandom.nextInt(0,2) == 0 || pLocalY == 0);
     }
+
 }

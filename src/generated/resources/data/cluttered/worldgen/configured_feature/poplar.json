@@ -15,15 +15,26 @@
       "radius": 4
     },
     "foliage_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "cluttered:poplar_leaves",
-        "Properties": {
-          "distance": "7",
-          "persistent": "false",
-          "waterlogged": "false"
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "cluttered:poplar_leaves",
+            "Properties": {
+              "distance": "7",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
+          },
+          "weight": 1
+        },
+        {
+          "data": {
+            "Name": "cluttered:flowering_poplar_window"
+          },
+          "weight": 1
         }
-      }
+      ]
     },
     "force_dirt": false,
     "ignore_vines": false,
@@ -40,13 +51,27 @@
       "height_rand_b": 3
     },
     "trunk_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "cluttered:poplar_log",
-        "Properties": {
-          "axis": "y"
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "cluttered:poplar_log",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "weight": 1
+        },
+        {
+          "data": {
+            "Name": "cluttered:flowering_poplar_log",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "weight": 1
         }
-      }
+      ]
     }
   }
 }

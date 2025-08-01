@@ -226,6 +226,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.RED_MUSHROOM_PRESSURE_PLATE.get());
         dropSelf(BlockRegistration.RED_MUSHROOM_BUTTON.get());
         dropSelf(BlockRegistration.RED_MUSHROOM_BOOKSHELF.get());
+        dropSelf(BlockRegistration.RED_MUSHROOM_SAPLING.get());
 
         add(BlockRegistration.RED_MUSHROOM_SLAB.get(), block -> createSlabItemTable(BlockRegistration.RED_MUSHROOM_SLAB.get()));
         add(BlockRegistration.RED_MUSHROOM_DOOR.get(), block -> createDoorTable(BlockRegistration.RED_MUSHROOM_DOOR.get()));
@@ -1058,7 +1059,6 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.ARMCHAIR_BLACK_CAT.get());
         multiBlockDropOnlyOneItem(BlockRegistration.COTTAGE_ARMCHAIR.get());
 
-        //LAMPS
         multiBlockDropOnlyOneItem(BlockRegistration.ANTIQUE_STANDING_LAMP.get());
 
     }

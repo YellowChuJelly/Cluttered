@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
+import net.redchujelly.cluttered.block.custom.BracketBlock;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
 import org.jetbrains.annotations.Nullable;
@@ -283,6 +284,38 @@ public class HandDrillItem extends Item {
         put(BlockRegistration.WOOD_PANEL_ATLANTIC.get(), BlockRegistration.WOOD_PANEL_AUGUSTINE.get());
         put(BlockRegistration.WOOD_PANEL_AUGUSTINE.get(), BlockRegistration.WOOD_PANEL_CANTERBURY.get());
         put(BlockRegistration.WOOD_PANEL_CANTERBURY.get(), BlockRegistration.WOOD_WINDOW_DIVIDED.get());
+        
+        put(BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF.get(), BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get());
+        put(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get(), BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get());
+        put(BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get(), BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL.get());
+        put(BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL.get(), BlockRegistration.CHALCEDONY_BRACKET_BOW.get());
+        put(BlockRegistration.CHALCEDONY_BRACKET_BOW.get(), BlockRegistration.CHALCEDONY_BRACKET_STAR.get());
+        put(BlockRegistration.CHALCEDONY_BRACKET_STAR.get(), BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL.get());
+        put(BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL.get(), BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF.get());
+        
+        put(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL_SHELF.get(), BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN.get());
+        put(BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN.get(), BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL.get());
+        put(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL.get(), BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL.get());
+        put(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL.get(), BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW.get());
+        put(BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW.get(), BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR.get());
+        put(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR.get(), BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL.get());
+        put(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL.get(), BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL_SHELF.get());
+        
+        put(BlockRegistration.MARBLE_BRACKET_SCROLL_SHELF.get(), BlockRegistration.MARBLE_BRACKET_VICTORIAN.get());
+        put(BlockRegistration.MARBLE_BRACKET_VICTORIAN.get(), BlockRegistration.MARBLE_BRACKET_SCROLL.get());
+        put(BlockRegistration.MARBLE_BRACKET_SCROLL.get(), BlockRegistration.MARBLE_BRACKET_BOW_SCROLL.get());
+        put(BlockRegistration.MARBLE_BRACKET_BOW_SCROLL.get(), BlockRegistration.MARBLE_BRACKET_BOW.get());
+        put(BlockRegistration.MARBLE_BRACKET_BOW.get(), BlockRegistration.MARBLE_BRACKET_STAR.get());
+        put(BlockRegistration.MARBLE_BRACKET_STAR.get(), BlockRegistration.MARBLE_BRACKET_STAR_SCROLL.get());
+        put(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL.get(), BlockRegistration.MARBLE_BRACKET_SCROLL_SHELF.get());
+        
+        put(BlockRegistration.WOODEN_BRACKET_SCROLL_SHELF.get(), BlockRegistration.WOODEN_BRACKET_VICTORIAN.get());
+        put(BlockRegistration.WOODEN_BRACKET_VICTORIAN.get(), BlockRegistration.WOODEN_BRACKET_SCROLL.get());
+        put(BlockRegistration.WOODEN_BRACKET_SCROLL.get(), BlockRegistration.WOODEN_BRACKET_BOW_SCROLL.get());
+        put(BlockRegistration.WOODEN_BRACKET_BOW_SCROLL.get(), BlockRegistration.WOODEN_BRACKET_BOW.get());
+        put(BlockRegistration.WOODEN_BRACKET_BOW.get(), BlockRegistration.WOODEN_BRACKET_STAR.get());
+        put(BlockRegistration.WOODEN_BRACKET_STAR.get(), BlockRegistration.WOODEN_BRACKET_STAR_SCROLL.get());
+        put(BlockRegistration.WOODEN_BRACKET_STAR_SCROLL.get(), BlockRegistration.WOODEN_BRACKET_SCROLL_SHELF.get());
 
     }};
 
@@ -302,7 +335,12 @@ public class HandDrillItem extends Item {
         if (pContext.getPlayer().isCrouching()){
             if (!level.isClientSide) {
                 if (state.getBlock() instanceof MultiblockPlacer || state.getBlock() instanceof BedBlock){
-                    return InteractionResult.PASS;
+                    return InteractionResult.CONSUME;
+                }
+                else if (state.getBlock() instanceof BracketBlock){
+                    level.setBlock(pos, state.setValue(BracketBlock.OFFSET, !state.getValue(BracketBlock.OFFSET)), 2);
+                    level.playSound(null, pos, SoundEvents.AXE_SCRAPE, SoundSource.BLOCKS);
+                    return InteractionResult.SUCCESS;
                 }
                 if (state.hasProperty(BlockStateProperties.FACING)) {
                     facingRotation(state, level, pos);
@@ -321,7 +359,12 @@ public class HandDrillItem extends Item {
         }
         else if (nextState != null) {
             if(!level.isClientSide){
-                level.setBlock(pos, swapAxisAndFacing(state, nextState, pContext.getHorizontalDirection()), 3);
+                if (state.getBlock() instanceof BracketBlock){
+                    level.setBlock(pos, nextState.setValue(BracketBlock.IS_UP, state.getValue(BracketBlock.IS_UP)).setValue(BracketBlock.OFFSET, state.getValue(BracketBlock.OFFSET)).setValue(BracketBlock.FACING, state.getValue(BracketBlock.FACING)), 3);
+                }
+                else {
+                    level.setBlock(pos, swapAxisAndFacing(state, nextState, pContext.getHorizontalDirection()), 3);
+                }
                 level.playSound(null, pos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.BLOCKS);
             }
             return InteractionResult.SUCCESS;
@@ -367,8 +410,6 @@ public class HandDrillItem extends Item {
         level.playSound(null, pos, SoundEvents.AXE_SCRAPE, SoundSource.BLOCKS);
     }
 
-    //yeah i know this sucks will fix later
-    //TODO fix this mess
     private BlockState swapAxisAndFacing(BlockState state, BlockState nextState, Direction playerFacing){
         if (state.hasProperty(BlockStateProperties.AXIS)) {
             Direction.Axis axis = state.getValue(BlockStateProperties.AXIS);
