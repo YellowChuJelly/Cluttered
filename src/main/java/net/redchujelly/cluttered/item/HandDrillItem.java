@@ -273,6 +273,9 @@ public class HandDrillItem extends Item {
         put(BlockRegistration.VERDANT_TILE_EDGE.get(), BlockRegistration.VERDANT_TILE_CORNER.get());
         put(BlockRegistration.VERDANT_TILE_CORNER.get(), BlockRegistration.VERDANT_TILE.get());
 
+        put(BlockRegistration.VARYING_BRICKS.get(), BlockRegistration.VARYING_BRICKS_BORDER.get());
+        put(BlockRegistration.VARYING_BRICKS_BORDER.get(), BlockRegistration.VARYING_BRICKS.get());
+
         put(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get(), BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get());
         put(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get(), BlockRegistration.ALABASTER_PANEL_ATLANTIC.get());
         put(BlockRegistration.ALABASTER_PANEL_ATLANTIC.get(), BlockRegistration.ALABASTER_PANEL_AUGUSTINE.get());

@@ -6,8 +6,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
-import net.redchujelly.cluttered.worldgen.tree.custom.RedMushroomTrunkPlacer;
-import net.redchujelly.cluttered.worldgen.tree.custom.WillowTrunkPlacer;
+import net.redchujelly.cluttered.worldgen.tree.custom.*;
 
 public class TrunkPlacerTypeRegistration {
     public static final DeferredRegister<TrunkPlacerType<?>> TRUNK_PLACERS =
@@ -17,6 +16,12 @@ public class TrunkPlacerTypeRegistration {
             TRUNK_PLACERS.register("willow_trunk_placer", () -> new TrunkPlacerType<>(WillowTrunkPlacer.CODEC));
     public static final RegistryObject<TrunkPlacerType<RedMushroomTrunkPlacer>> RED_MUSHROOM_TRUNK_PLACER =
             TRUNK_PLACERS.register("red_mushroom_trunk_placer", () -> new TrunkPlacerType<>(RedMushroomTrunkPlacer.CODEC));
+    public static final RegistryObject<TrunkPlacerType<CrabappleTrunkPlacer>> CRABAPPLE_TRUNK_PLACER =
+            TRUNK_PLACERS.register("crabapple_trunk_placer", () -> new TrunkPlacerType<>(CrabappleTrunkPlacer.CODEC));
+    public static final RegistryObject<TrunkPlacerType<SycamoreTrunkPlacer>> SYCAMORE_TRUNK_PLACER =
+            TRUNK_PLACERS.register("sycamore_trunk_placer", () -> new TrunkPlacerType<>(SycamoreTrunkPlacer.CODEC));
+    public static final RegistryObject<TrunkPlacerType<MapleTrunkPlacer>> MAPLE_TRUNK_PLACER =
+            TRUNK_PLACERS.register("maple_trunk_placer", () -> new TrunkPlacerType<>(MapleTrunkPlacer.CODEC));
 
     public static void register(IEventBus eventBus){
         TRUNK_PLACERS.register(eventBus);

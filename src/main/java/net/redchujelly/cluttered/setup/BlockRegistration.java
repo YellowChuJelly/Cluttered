@@ -65,8 +65,8 @@ public class BlockRegistration {
             BlockSetType.OAK), 300);
     public static final RegistryObject<Block> WILLOW_LEAVES = registerBlock("willow_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(DyeColor.PURPLE)));
-    //public static final RegistryObject<Block> WILLOW_VINES = registerBlock("willow_vines",
-    //        () -> new WillowVineBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(DyeColor.PURPLE)));
+    public static final RegistryObject<Block> WILLOW_VINES = registerBlock("willow_vines",
+            () -> new WillowVinesBlock(BlockBehaviour.Properties.copy(Blocks.VINE).mapColor(DyeColor.PURPLE)));
     public static final RegistryObject<Block> WILLOW_SAPLING = registerFuelBlock("willow_sapling",
             () -> new SaplingBlock(new WillowTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING).mapColor(DyeColor.PURPLE)), 100);
     public static final RegistryObject<Block> POTTED_WILLOW_SAPLING = BLOCKS.register("potted_willow_sapling",
@@ -118,6 +118,8 @@ public class BlockRegistration {
     public static final RegistryObject<Block> FLOWERING_WILLOW_PRESSURE_PLATE = registerFuelBlock("flowering_willow_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.PURPLE),
                     BlockSetType.OAK), 300);
+    public static final RegistryObject<Block> FLOWERING_WILLOW_LEAVES = registerBlock("flowering_willow_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(DyeColor.PURPLE)));
     public static final RegistryObject<Block> FLOWERING_WILLOW_WINDOW = registerBlock("flowering_willow_window",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.PURPLE).noOcclusion()));
     public static final RegistryObject<Block> FLOWERING_WILLOW_WINDOW_PANE = registerBlock("flowering_willow_window_pane",
@@ -280,6 +282,8 @@ public class BlockRegistration {
     public static final RegistryObject<Block> FLOWERING_CRABAPPLE_PRESSURE_PLATE = registerFuelBlock("flowering_crabapple_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.PINK),
                     BlockSetType.OAK), 300);
+    public static final RegistryObject<Block> FLOWERING_CRABAPPLE_LEAVES = registerBlock("flowering_crabapple_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(DyeColor.PINK)));
     public static final RegistryObject<Block> FLOWERING_CRABAPPLE_BOOKSHELF = registerFuelBlock("flowering_crabapple_bookshelf",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.PINK)), 300);
     public static final RegistryObject<Block> FLOWERING_CRABAPPLE_WINDOW = registerBlock("flowering_crabapple_window",
@@ -1125,6 +1129,10 @@ public class BlockRegistration {
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.BAMBOO).strength(0.5f)), 100);
     public static final RegistryObject<Block> CHISELED_GOLD_BLOCK = registerBlock("chiseled_gold_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)));
+    public static final RegistryObject<Block> VARYING_BRICKS = registerBlock("antique_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> VARYING_BRICKS_BORDER = registerBlock("antique_bricks_border",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> EYE_BLOCK = registerBlock("eye_block",
             () -> new EyeBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.FROGSPAWN)));
     public static final RegistryObject<Block> DYNASTY_DOOR = registerFuelBlock("dynasty_door",

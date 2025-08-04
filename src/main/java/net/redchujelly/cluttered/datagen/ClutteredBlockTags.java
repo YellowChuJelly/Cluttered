@@ -579,8 +579,9 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.COLOSSEO_PILLAR.get())
                 .add(BlockRegistration.COLOSSEO_PILLAR_TOP.get())
                 .add(BlockRegistration.CHISELED_GOLD_BLOCK.get())
-                .add(BlockRegistration.CUPID_BENCH.get())
+                .add(BlockRegistration.VARYING_BRICKS.get())
 
+                .add(BlockRegistration.CUPID_BENCH.get())
                 .add(BlockRegistration.CAT_MUGS_CLUTTERED.get())
                 .add(BlockRegistration.CAT_PLANT_POT_BLACK.get())
                 .add(BlockRegistration.CAT_PLANT_POT_ORANGE.get())
@@ -661,7 +662,8 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.POK_TA_POK_HOOP.get())
                 .add(BlockRegistration.POK_TA_POK_HOOP_SNAKES.get())
         ;
-
+        tag(BlockTags.CLIMBABLE)
+                .add(BlockRegistration.WILLOW_VINES.get());
         tag(BlockTags.WOOL)
                 .add(BlockRegistration.THREAD_SPOOL_GREEN.get())
                 .add(BlockRegistration.THREAD_SPOOL_YELLOW.get())

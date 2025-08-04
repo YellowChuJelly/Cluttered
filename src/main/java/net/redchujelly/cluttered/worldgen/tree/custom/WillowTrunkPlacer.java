@@ -12,6 +12,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.TreeConfigurati
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType;
+import net.redchujelly.cluttered.setup.BlockRegistration;
 import net.redchujelly.cluttered.setup.TrunkPlacerTypeRegistration;
 
 import java.util.ArrayList;
@@ -37,15 +38,16 @@ public class WillowTrunkPlacer extends TrunkPlacer {
         setDirtAt(pLevel, biConsumer, randomSource, pPos.below(), treeConfiguration);
 
         List<FoliagePlacer.FoliageAttachment> foliageSpots = new ArrayList<>();
-        int maxHeight = freeTreeHeight + randomSource.nextInt(heightRandA, heightRandB) + randomSource.nextInt(-4, 0);
+        int maxHeight = baseHeight + randomSource.nextInt(heightRandA, heightRandB + 1);
+
         int xOffset = 0;
         int zOffset = 0;
 
         //TRUNK
         //8 of these bad boys in the list. first 4 are NESW bottom log heights. second 4 are NESW top log heights. for the sides of the tree.
-        List<Integer> sideHeights = List.of(randomSource.nextInt(0, 5), randomSource.nextInt(0, 5),randomSource.nextInt(0, 5),
-                randomSource.nextInt(0, 5),randomSource.nextInt(0, 5),randomSource.nextInt(0, 5),randomSource.nextInt(0, 5),
-                randomSource.nextInt(0, 5));
+        List<Integer> sideHeights = List.of(randomSource.nextInt(0, 4), randomSource.nextInt(0, 4),randomSource.nextInt(0, 4),
+                randomSource.nextInt(0, 4),randomSource.nextInt(0, 4),randomSource.nextInt(0, 4),randomSource.nextInt(0, 4),
+                randomSource.nextInt(0, 4));
 
         BlockPos nextPos = pPos;
 
@@ -83,8 +85,8 @@ public class WillowTrunkPlacer extends TrunkPlacer {
 
             for (int j = 1; j <= branchNumber; j++) {
                 nextPos = pastPos;
-                int branchMaxBlocks = randomSource.nextInt(12, 20);
-                int branchAngle = (360 / branchNumber) * j + randomSource.nextInt(-15, 15);
+                int branchMaxBlocks = (int) (maxHeight *  ((float) randomSource.nextInt(60,90)/100)) + randomSource.nextInt(-2,5);
+                int branchAngle = (int) ((float) 360 / branchNumber) * j + randomSource.nextInt(-15, 16);
                 if (branchAngle < 0) {
                     branchAngle += 360;
                 } else if (branchAngle >= 360) {

@@ -12,16 +12,11 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
-import net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator;
-import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.setup.BlockRegistration;
-import net.redchujelly.cluttered.setup.TreeDecoratorTypeRegistration;
 import net.redchujelly.cluttered.worldgen.tree.custom.*;
 
 import java.util.List;
@@ -41,14 +36,15 @@ public class ClutteredConfiguredFeatures {
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
                         .add(BlockRegistration.WILLOW_LOG.get().defaultBlockState(), 1)
                         .add(BlockRegistration.FLOWERING_WILLOW_LOG.get().defaultBlockState(), 1).build()),
-                new WillowTrunkPlacer(6, 4, 6),
+                new WillowTrunkPlacer(6, 2, 6),
 
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
                         .add(BlockRegistration.WILLOW_LEAVES.get().defaultBlockState(), 3)
-                        .add(BlockRegistration.FLOWERING_WILLOW_WINDOW.get().defaultBlockState(), 2).build()),
+                        .add(BlockRegistration.FLOWERING_WILLOW_LEAVES.get().defaultBlockState(), 2).build()),
                 new WillowFoliagePlacer(ConstantInt.of(1), ConstantInt.of(1), 1, 5),
 
-                new TwoLayersFeatureSize(5, 2, 4)).build()
+                new TwoLayersFeatureSize(5, 2, 4)).decorators(List.of(new WillowTreeDecorator(0.6f)))
+                .build()
         );
 
         register(context, POPLAR_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -90,33 +86,36 @@ public class ClutteredConfiguredFeatures {
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
                         .add(BlockRegistration.CRABAPPLE_LOG.get().defaultBlockState(), 1)
                         .add(BlockRegistration.FLOWERING_CRABAPPLE_LOG.get().defaultBlockState(), 1).build()),
-                new StraightTrunkPlacer(6, 0, 2),
+                new CrabappleTrunkPlacer(4, 0, 2),
 
-                BlockStateProvider.simple(BlockRegistration.CRABAPPLE_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(4), 5),
+
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
+                        .add(BlockRegistration.CRABAPPLE_LEAVES.get().defaultBlockState(), 2)
+                        .add(BlockRegistration.FLOWERING_CRABAPPLE_LEAVES.get().defaultBlockState(), 5).build()),
+                new CrabappleFoliagePlacer(ConstantInt.of(3), ConstantInt.of(3), 3),
 
                 new TwoLayersFeatureSize(4, 0, 3)).build()
         );
 
         register(context, SYCAMORE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(BlockRegistration.SYCAMORE_LOG.get()),
-                new StraightTrunkPlacer(6, 0, 2),
+                new SycamoreTrunkPlacer(6, 0, 4),
 
                 BlockStateProvider.simple(BlockRegistration.SYCAMORE_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(4), 5),
+                new SycamoreFoliagePlacer(ConstantInt.of(3), ConstantInt.of(4), 6),
 
                 new TwoLayersFeatureSize(4, 0, 3)).build()
         );
 
         register(context, MAPLE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(BlockRegistration.MAPLE_LOG.get()),
-                new StraightTrunkPlacer(6, 1, 3),
+                new MapleTrunkPlacer(6, 1, 3),
 
 
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
                         .add(BlockRegistration.MAPLE_LEAVES.get().defaultBlockState(), 25)
-                        .add(BlockRegistration.MAPLE_LEAVES_FLOWERING.get().defaultBlockState(), 1).build()),
-                new PoplarFoliagePlacer(ConstantInt.of(4), ConstantInt.of(5), 8),
+                        .add(BlockRegistration.MAPLE_LEAVES_FLOWERING.get().defaultBlockState(), 5).build()),
+                new MapleFoliagePlacer(ConstantInt.of(4), ConstantInt.of(5)),
 
                 new TwoLayersFeatureSize(4, 0, 3)).build()
         );

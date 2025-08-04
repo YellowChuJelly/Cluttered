@@ -25,6 +25,7 @@ public class CreativeTabRegistration {
                         //WILLOW WOODSET
                         output.accept(BlockRegistration.WILLOW_SAPLING.get());
                         output.accept(BlockRegistration.WILLOW_LEAVES.get());
+                        output.accept(BlockRegistration.WILLOW_VINES.get());
                         output.accept(BlockRegistration.WILLOW_LOG.get());
                         output.accept(BlockRegistration.WILLOW_WOOD.get());
                         output.accept(BlockRegistration.STRIPPED_WILLOW_LOG.get());
@@ -52,6 +53,7 @@ public class CreativeTabRegistration {
 
 
                         //FLOWERING WILLOW WOODSET
+                        output.accept(BlockRegistration.FLOWERING_WILLOW_LEAVES.get());
                         output.accept(BlockRegistration.FLOWERING_WILLOW_LOG.get());
                         output.accept(BlockRegistration.FLOWERING_WILLOW_WOOD.get());
                         output.accept(BlockRegistration.STRIPPED_FLOWERING_WILLOW_LOG.get());
@@ -134,6 +136,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.PINK_PLANTER.get());
 
                         //FLOWERING CRABAPPLE WOODSET
+                        output.accept(BlockRegistration.FLOWERING_CRABAPPLE_LEAVES.get());
                         output.accept(BlockRegistration.FLOWERING_CRABAPPLE_LOG.get());
                         output.accept(BlockRegistration.FLOWERING_CRABAPPLE_WOOD.get());
                         output.accept(BlockRegistration.STRIPPED_FLOWERING_CRABAPPLE_LOG.get());
@@ -621,6 +624,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.BEIGE_PLANTER.get());
                         output.accept(BlockRegistration.WICKER_BLOCK.get());
                         output.accept(BlockRegistration.CHISELED_GOLD_BLOCK.get());
+                        output.accept(BlockRegistration.VARYING_BRICKS.get());
+                        output.accept(BlockRegistration.VARYING_BRICKS_BORDER.get());
                         output.accept(BlockRegistration.EYE_BLOCK.get());
                         output.accept(BlockRegistration.DYNASTY_DOOR.get());
                         output.accept(BlockRegistration.ART_NOUVEAU_DOOR.get());

@@ -6,10 +6,12 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.world.level.LevelSimulatedReader;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.predicate.BlockStatePredicate;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacerType;
+import net.redchujelly.cluttered.block.custom.WillowVinesBlock;
 import net.redchujelly.cluttered.setup.BlockRegistration;
 import net.redchujelly.cluttered.setup.FoliagePlacerTypeRegistration;
 
@@ -47,11 +49,11 @@ public class WillowFoliagePlacer extends FoliagePlacer {
 
         for (BlockPos pos : posList){
             if(longStrand){
-                strandLength = this.length + randomSource.nextInt(1, 5);
+                strandLength = this.length + randomSource.nextInt(-2, 1);
                 longStrand = false;
             }
             else {
-                strandLength = this.length + randomSource.nextInt(-5, -2);
+                strandLength = this.length + randomSource.nextInt(-8, -4);
                 longStrand = true;
             }
 

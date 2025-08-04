@@ -14,10 +14,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
-import net.redchujelly.cluttered.block.custom.BracketBlock;
-import net.redchujelly.cluttered.block.custom.EyeBlock;
-import net.redchujelly.cluttered.block.custom.HeartCakeBlock;
-import net.redchujelly.cluttered.block.custom.PicketFenceGateBlock;
+import net.redchujelly.cluttered.block.custom.*;
 import net.redchujelly.cluttered.block.custom.furniture.*;
 import net.redchujelly.cluttered.block.custom.furniture.storage.CardboardBoxBlock;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
@@ -71,7 +68,15 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.WILLOW_LEAVES.get(), models().cubeAll("willow_leaves", modLoc("block/willow_leaves")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.WILLOW_SAPLING.get(), models().cross("willow_sapling", modLoc("block/willow_sapling")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.POTTED_WILLOW_SAPLING.get(), models().singleTexture("potted_willow_sapling", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(BlockRegistration.WILLOW_SAPLING.get())).renderType("cutout"));
+                blockTexture(BlockRegistration.WILLOW_SAPLING.get())).renderType("cutout").ao(false));
+
+        this.getVariantBuilder(BlockRegistration.WILLOW_VINES.get())
+                .forAllStates(state -> ConfiguredModel.builder().modelFile(models().getBuilder("willow_vines_state_" + state.getValue(WillowVinesBlock.GRADIENT) + "_bottom_" + state.getValue(WillowVinesBlock.BOTTOM))
+                        .parent(models().cross("willow_vines_" + state.getValue(WillowVinesBlock.GRADIENT) + "_bottom_" + state.getValue(WillowVinesBlock.BOTTOM), modLoc(state.getValue(WillowVinesBlock.BOTTOM) ?
+                                        "block/willow_vines_end_" + state.getValue(WillowVinesBlock.GRADIENT) :
+                                "block/willow_vines_" + state.getValue(WillowVinesBlock.GRADIENT)
+                                )).renderType("cutout"))).build());
+
 
         //FLOWERING WILLOW WOODSET
         blockWithItem((BlockRegistration.FLOWERING_WILLOW_PLANKS));
@@ -98,6 +103,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         pressurePlateBlock((PressurePlateBlock) BlockRegistration.FLOWERING_WILLOW_PRESSURE_PLATE.get(), blockTexture(BlockRegistration.FLOWERING_WILLOW_PLANKS.get()));
         blockItem(BlockRegistration.FLOWERING_WILLOW_PRESSURE_PLATE);
 
+        simpleBlockWithItem(BlockRegistration.FLOWERING_WILLOW_LEAVES.get(), models().cubeAll("flowering_willow_leaves", modLoc("block/flowering_willow_leaves")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.FLOWERING_WILLOW_WINDOW.get(), models().cubeAll("flowering_willow_window", modLoc("block/flowering_willow_window")).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.FLOWERING_WILLOW_WINDOW_PANE.get(), modLoc("block/flowering_willow_window"), modLoc("block/willow_glass_pane_top"), "cutout");
 
@@ -133,7 +139,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.POPLAR_LEAVES.get(), models().cubeAll("poplar_leaves", modLoc("block/poplar_leaves")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.POPLAR_SAPLING.get(), models().cross("poplar_sapling", modLoc("block/poplar_sapling")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.POTTED_POPLAR_SAPLING.get(), models().singleTexture("potted_poplar_sapling", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(BlockRegistration.POPLAR_SAPLING.get())).renderType("cutout"));
+                blockTexture(BlockRegistration.POPLAR_SAPLING.get())).renderType("cutout").ao(false));
 
 
         //FLOWERING POPLAR WOODSET
@@ -197,7 +203,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.CRABAPPLE_LEAVES.get(), models().cubeAll("crabapple_leaves", modLoc("block/crabapple_leaves")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.CRABAPPLE_SAPLING.get(), models().cross("crabapple_sapling", modLoc("block/crabapple_sapling")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.POTTED_CRABAPPLE_SAPLING.get(), models().singleTexture("potted_crabapple_sapling", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(BlockRegistration.CRABAPPLE_SAPLING.get())).renderType("cutout"));
+                blockTexture(BlockRegistration.CRABAPPLE_SAPLING.get())).renderType("cutout").ao(false));
 
         //FLOWERING CRABAPPLE WOODSET
         blockWithItem((BlockRegistration.FLOWERING_CRABAPPLE_PLANKS));
@@ -227,7 +233,13 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.FLOWERING_CRABAPPLE_WINDOW.get(), models().cubeAll("flowering_crabapple_window", modLoc("block/flowering_crabapple_window")).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.FLOWERING_CRABAPPLE_WINDOW_PANE.get(), modLoc("block/flowering_crabapple_window"), modLoc("block/crabapple_glass_pane_top"), "cutout");
         columnBlockWithItem(BlockRegistration.FLOWERING_CRABAPPLE_BOOKSHELF, BlockRegistration.FLOWERING_CRABAPPLE_PLANKS);
+        //simpleBlockWithItem(BlockRegistration.FLOWERING_CRABAPPLE_LEAVES.get(), models().cubeAll("flowering_crabapple_leaves", modLoc("block/flowering_crabapple_leaves")).renderType("cutout"));
 
+        this.getVariantBuilder(BlockRegistration.FLOWERING_CRABAPPLE_LEAVES.get())
+                .partialState().modelForState()
+                .modelFile(models().cubeAll("flowering_crabapple_leaves_1", modLoc("block/flowering_crabapple_leaves_1")).renderType("cutout"))
+                .nextModel().modelFile(models().cubeAll("flowering_crabapple_leaves_2", modLoc("block/flowering_crabapple_leaves_2")).renderType("cutout"))
+                .addModel();
         //SYCAMORE WOODSET
         blockWithItem((BlockRegistration.SYCAMORE_PLANKS));
 
@@ -259,7 +271,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.SYCAMORE_LEAVES.get(), models().cubeAll("sycamore_leaves", modLoc("block/sycamore_leaves")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.SYCAMORE_SAPLING.get(), models().cross("sycamore_sapling", modLoc("block/sycamore_sapling")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.POTTED_SYCAMORE_SAPLING.get(), models().singleTexture("potted_sycamore_sapling", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(BlockRegistration.SYCAMORE_SAPLING.get())).renderType("cutout"));
+                blockTexture(BlockRegistration.SYCAMORE_SAPLING.get())).renderType("cutout").ao(false));
 
         //FLUORESCENT MAPLE WOODSET
         blockWithItem((BlockRegistration.MAPLE_PLANKS));
@@ -293,7 +305,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.MAPLE_LEAVES_FLOWERING.get(), models().cubeAll("flowering_fluorescent_maple_leaves", modLoc("block/flowering_fluorescent_maple_leaves")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.MAPLE_SAPLING.get(), models().cross("fluorescent_maple_sapling", modLoc("block/fluorescent_maple_sapling")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.POTTED_MAPLE_SAPLING.get(), models().singleTexture("potted_fluorescent_maple_sapling", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(BlockRegistration.MAPLE_SAPLING.get())).renderType("cutout"));
+                blockTexture(BlockRegistration.MAPLE_SAPLING.get())).renderType("cutout").ao(false));
 
         //BLUE MUSHROOM WOODSET
         blockWithItem((BlockRegistration.BLUE_MUSHROOM_PLANKS));
@@ -325,7 +337,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         simpleBlockWithItem(BlockRegistration.BLUE_MUSHROOM_SAPLING.get(), models().cross("blue_roundhead", modLoc("block/blue_roundhead")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.POTTED_BLUE_MUSHROOM_SAPLING.get(), models().singleTexture("potted_blue_roundhead", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(BlockRegistration.BLUE_MUSHROOM_SAPLING.get())).renderType("cutout"));
+                blockTexture(BlockRegistration.BLUE_MUSHROOM_SAPLING.get())).renderType("cutout").ao(false));
 
         //RED MUSHROOM WOODSET
         blockWithItem((BlockRegistration.RED_MUSHROOM_PLANKS));
@@ -359,7 +371,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         simpleBlockWithItem(BlockRegistration.RED_MUSHROOM_SAPLING.get(), models().cross("fly_agaric", modLoc("block/fly_agaric")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.POTTED_RED_MUSHROOM_SAPLING.get(), models().singleTexture("potted_fly_agaric", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(BlockRegistration.RED_MUSHROOM_SAPLING.get())).renderType("cutout"));
+                blockTexture(BlockRegistration.RED_MUSHROOM_SAPLING.get())).renderType("cutout").ao(false));
 
         //MISC BLOCKS
         //CHALCEDONY
@@ -935,6 +947,20 @@ public class ClutteredBlockstates extends BlockStateProvider {
                 .nextModel().modelFile(models().cubeAll("fish_wallpaper_4", modLoc("block/fish_wallpaper_4")))
                 .nextModel().modelFile(models().cubeAll("fish_wallpaper_5", modLoc("block/fish_wallpaper_5")))
                 .nextModel().modelFile(models().cubeAll("fish_wallpaper_6", modLoc("block/fish_wallpaper_6")))
+                .addModel();
+        this.getVariantBuilder(BlockRegistration.VARYING_BRICKS.get())
+                .partialState().modelForState()
+                .modelFile(models().cubeAll("bricks_varying_1", modLoc("block/bricks_varying_1")))
+                .nextModel().modelFile(models().cubeAll("bricks_varying_2", modLoc("block/bricks_varying_2")))
+                .nextModel().modelFile(models().cubeAll("bricks_varying_3", modLoc("block/bricks_varying_3")))
+                .nextModel().modelFile(models().cubeAll("bricks_varying_4", modLoc("block/bricks_varying_4")))
+                .addModel();
+        this.getVariantBuilder(BlockRegistration.VARYING_BRICKS_BORDER.get())
+                .partialState().modelForState()
+                .modelFile(models().cubeColumn("bricks_varying_bordered_1", modLoc("block/bricks_varying_bordered_1"),modLoc("block/bricks_varying_1")))
+                .nextModel().modelFile(models().cubeColumn("bricks_varying_bordered_2", modLoc("block/bricks_varying_bordered_2"),modLoc("block/bricks_varying_2")))
+                .nextModel().modelFile(models().cubeColumn("bricks_varying_bordered_3", modLoc("block/bricks_varying_bordered_3"),modLoc("block/bricks_varying_3")))
+                .nextModel().modelFile(models().cubeColumn("bricks_varying_bordered_4", modLoc("block/bricks_varying_bordered_4"),modLoc("block/bricks_varying_4")))
                 .addModel();
 
         //FURNITURE

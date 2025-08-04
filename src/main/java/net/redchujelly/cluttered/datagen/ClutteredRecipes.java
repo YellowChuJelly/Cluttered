@@ -7,6 +7,7 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
@@ -1573,6 +1574,11 @@ public class ClutteredRecipes extends RecipeProvider {
                         ItemPredicate.Builder.item().of(Items.SWEET_BERRIES).build()))
                 .showNotification(false)
                 .save(consumer);
+
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.BRICKS), RecipeCategory.BUILDING_BLOCKS, BlockRegistration.VARYING_BRICKS.get(),0.1f, 200)
+                .unlockedBy("has_bricks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.BRICKS).build()
+                )).save(consumer);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.ORANGE_JAR_BLOCK.get())
                 .pattern("gdg")

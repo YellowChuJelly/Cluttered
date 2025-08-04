@@ -26,6 +26,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         simpleBlockItem(BlockRegistration.WILLOW_LOG_DOOR);
         simpleBlockItem(BlockRegistration.WILLOW_GARDEN_DOOR).renderType("cutout");
         simplePaneBlockItem(BlockRegistration.WILLOW_SAPLING).renderType("cutout");
+        simplePaneBlockItem(BlockRegistration.WILLOW_VINES, "_1").renderType("cutout");
 
 
         fenceItem(BlockRegistration.FLOWERING_WILLOW_FENCE, BlockRegistration.FLOWERING_WILLOW_PLANKS);
@@ -54,6 +55,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         buttonItem(BlockRegistration.FLOWERING_CRABAPPLE_BUTTON, BlockRegistration.FLOWERING_CRABAPPLE_PLANKS);
         simpleBlockItem(BlockRegistration.FLOWERING_CRABAPPLE_DOOR).renderType("cutout");
         simplePaneBlockItem(BlockRegistration.FLOWERING_CRABAPPLE_WINDOW_PANE).renderType("cutout");
+        standardCubeItem(BlockRegistration.FLOWERING_CRABAPPLE_LEAVES, "flowering_crabapple_leaves_2");
 
         fenceItem(BlockRegistration.SYCAMORE_FENCE, BlockRegistration.SYCAMORE_PLANKS);
         buttonItem(BlockRegistration.SYCAMORE_BUTTON, BlockRegistration.SYCAMORE_PLANKS);
@@ -78,7 +80,6 @@ public class ClutteredItemModels extends ItemModelProvider {
         simpleBlockItem(BlockRegistration.RED_MUSHROOM_DOOR);
         simplePaneBlockItem(BlockRegistration.RED_MUSHROOM_WINDOW_PANE);
         simplePaneBlockItem(BlockRegistration.RED_MUSHROOM_SAPLING).renderType("cutout");
-
 
 
         standardCubeItem(BlockRegistration.EYE_BLOCK, "eye_block_left_0");
@@ -145,6 +146,8 @@ public class ClutteredItemModels extends ItemModelProvider {
         bracketItem(BlockRegistration.WOODEN_BRACKET_SCROLL_SHELF);
 
         standardCubeItem(BlockRegistration.FISH_WALLPAPER, "fish_wallpaper_1");
+        standardCubeItem(BlockRegistration.VARYING_BRICKS, "bricks_varying_1");
+        standardCubeItem(BlockRegistration.VARYING_BRICKS_BORDER, "bricks_varying_bordered_1");
 
 
         //FURNITURE

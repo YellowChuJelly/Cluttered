@@ -47,6 +47,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.WILLOW_BOOKSHELF_VASE.get());
         dropSelf(BlockRegistration.WILLOW_SAPLING.get());
         dropSelf(BlockRegistration.WILLOW_SAPLING.get());
+        dropSelf(BlockRegistration.WILLOW_VINES.get());
+        add(BlockRegistration.WILLOW_VINES.get(), block -> createShearsOnlyDrop(BlockRegistration.WILLOW_VINES.get()));
         add(BlockRegistration.POTTED_WILLOW_SAPLING.get(), createPotFlowerItemTable(BlockRegistration.WILLOW_SAPLING.get()));
 
         add(BlockRegistration.WILLOW_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.WILLOW_LEAVES.get(), BlockRegistration.WILLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
@@ -74,6 +76,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.FLOWERING_WILLOW_DOOR.get(), block -> createDoorTable(BlockRegistration.FLOWERING_WILLOW_DOOR.get()));
         add(BlockRegistration.FLOWERING_WILLOW_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.FLOWERING_WILLOW_WINDOW.get()));
         add(BlockRegistration.FLOWERING_WILLOW_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.FLOWERING_WILLOW_WINDOW_PANE.get()));
+        add(BlockRegistration.FLOWERING_WILLOW_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.FLOWERING_WILLOW_LEAVES.get(), BlockRegistration.WILLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         //POPLAR WOODSET
         dropSelf(BlockRegistration.POPLAR_LOG.get());
@@ -158,6 +161,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.FLOWERING_CRABAPPLE_DOOR.get(), block -> createDoorTable(BlockRegistration.FLOWERING_CRABAPPLE_DOOR.get()));
         add(BlockRegistration.FLOWERING_CRABAPPLE_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.FLOWERING_CRABAPPLE_WINDOW.get()));
         add(BlockRegistration.FLOWERING_CRABAPPLE_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.FLOWERING_CRABAPPLE_WINDOW_PANE.get()));
+        add(BlockRegistration.FLOWERING_CRABAPPLE_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.FLOWERING_CRABAPPLE_LEAVES.get(), BlockRegistration.CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         //SYCAMORE WOODSET
         dropSelf(BlockRegistration.SYCAMORE_LOG.get());
@@ -177,7 +181,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.SYCAMORE_DOOR.get(), block -> createDoorTable(BlockRegistration.SYCAMORE_DOOR.get()));
         add(BlockRegistration.SYCAMORE_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.SYCAMORE_WINDOW.get()));
         add(BlockRegistration.SYCAMORE_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.SYCAMORE_WINDOW_PANE.get()));
-        add(BlockRegistration.SYCAMORE_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.SYCAMORE_LEAVES.get(), BlockRegistration.CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        add(BlockRegistration.SYCAMORE_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.SYCAMORE_LEAVES.get(), BlockRegistration.SYCAMORE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         dropSelf(BlockRegistration.SYCAMORE_SAPLING.get());
         add(BlockRegistration.POTTED_SYCAMORE_SAPLING.get(), createPotFlowerItemTable(BlockRegistration.SYCAMORE_SAPLING.get()));
         //FLUORESCENT MAPLE WOODSET
@@ -198,8 +202,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.MAPLE_DOOR.get(), block -> createDoorTable(BlockRegistration.MAPLE_DOOR.get()));
         add(BlockRegistration.MAPLE_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.MAPLE_WINDOW.get()));
         add(BlockRegistration.MAPLE_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.MAPLE_WINDOW_PANE.get()));
-        add(BlockRegistration.MAPLE_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.MAPLE_LEAVES.get(), BlockRegistration.CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        add(BlockRegistration.MAPLE_LEAVES_FLOWERING.get(), block -> createLeavesDrops(BlockRegistration.MAPLE_LEAVES_FLOWERING.get(), BlockRegistration.CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        add(BlockRegistration.MAPLE_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.MAPLE_LEAVES.get(), BlockRegistration.MAPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        add(BlockRegistration.MAPLE_LEAVES_FLOWERING.get(), block -> createLeavesDrops(BlockRegistration.MAPLE_LEAVES_FLOWERING.get(), BlockRegistration.MAPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         dropSelf(BlockRegistration.MAPLE_SAPLING.get());
         add(BlockRegistration.POTTED_MAPLE_SAPLING.get(), createPotFlowerItemTable(BlockRegistration.MAPLE_SAPLING.get()));
 
@@ -592,6 +596,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.KITCHEN_TILES.get());
 
         dropSelf(BlockRegistration.CHISELED_GOLD_BLOCK.get());
+        dropSelf(BlockRegistration.VARYING_BRICKS.get());
+        dropSelf(BlockRegistration.VARYING_BRICKS_BORDER.get());
         dropSelf(BlockRegistration.WICKER_BLOCK.get());
         dropSelf(BlockRegistration.EYE_BLOCK.get());
         add(BlockRegistration.DYNASTY_DOOR.get(), block -> createDoorTable(BlockRegistration.DYNASTY_DOOR.get()));

@@ -3,6 +3,7 @@
 
   "block.cluttered.willow_sapling": "Willow Sapling",
   "block.cluttered.willow_leaves": "Willow Leaves",
+  "block.cluttered.willow_vines": "Willow Vines",
   "block.cluttered.willow_planks": "Willow Planks",
   "block.cluttered.willow_log": "Willow Log",
   "block.cluttered.willow_wood": "Willow Wood",
@@ -26,6 +27,7 @@
   "block.cluttered.willow_window": "Willow Window",
   "block.cluttered.willow_window_pane": "Willow Window Pane",
 
+  "block.cluttered.flowering_willow_leaves": "Flowering Willow Leaves",
   "block.cluttered.flowering_willow_planks": "Flowering Willow Planks",
   "block.cluttered.flowering_willow_log": "Flowering Willow Log",
   "block.cluttered.flowering_willow_wood": "Flowering Willow Wood",
@@ -98,6 +100,7 @@
   "block.cluttered.crabapple_window_pane": "Crabapple Window Pane",
   "block.cluttered.crabapple_bookshelf": "Crabapple Bookshelf",
 
+  "block.cluttered.flowering_crabapple_leaves": "Flowering Crabapple Leaves",
   "block.cluttered.flowering_crabapple_planks": "Flowering Crabapple Planks",
   "block.cluttered.flowering_crabapple_log": "Flowering Crabapple Log",
   "block.cluttered.flowering_crabapple_wood": "Flowering Crabapple Wood",
@@ -356,7 +359,7 @@
   "block.cluttered.ghost_wallpaper_trim": "Ghost Wallpaper Trim",
   "block.cluttered.ghost_wallpaper_top": "Ghost Wallpaper Upper Trim",
   "block.cluttered.ghost_wallpaper_bottom": "Ghost Wallpaper Lower Trim",
-  "block.cluttered.ghost_wallpaper_wainscoting": "Creepy Wainscoting",
+  "block.cluttered.ghost_wallpaper_wainscoting": "Minacious Mauve Wainscoting",
 
   "block.cluttered.fish_wallpaper": "Fish Wallpaper",
   "block.cluttered.halloween_wallpaper": "Halloween Wallpaper",
@@ -563,6 +566,8 @@
   "block.cluttered.tiles_kitchen": "Kitchen Tiles",
   "block.cluttered.wicker_block": "Wicker Block",
   "block.cluttered.chiseled_gold_block": "Chiseled Gold Block",
+  "block.cluttered.antique_bricks": "Reclaimed Bricks",
+  "block.cluttered.antique_bricks_border": "Bordered Reclaimed Bricks",
   "block.cluttered.dynasty_door": "Dynasty Door",
   "block.cluttered.eye_block": "Eyes",
 
