@@ -1,11 +1,11 @@
-package net.redchujelly.cluttered.util;
+package net.redchujelly.cluttered.block.custom.furniture;
 
 import net.minecraft.util.StringRepresentable;
 
-public enum LanternPlaceState implements StringRepresentable {
-    FLOOR("floor"),
-    WALL("wall"),
-    CEILING("ceiling");
+public enum PicketFenceGateOpen implements StringRepresentable {
+    CLOSED("closed"),
+    FORWARD("forward"),
+    BACKWARD("backward");
 
     private final String name;
 
@@ -19,5 +19,5 @@ public enum LanternPlaceState implements StringRepresentable {
         return this.getSerializedName();
     }
 
-    private LanternPlaceState(String pName){this.name = pName;}
+    private PicketFenceGateOpen(String pName){this.name = pName;}
 }

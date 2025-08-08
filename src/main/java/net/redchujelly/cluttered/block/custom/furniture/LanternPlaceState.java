@@ -1,11 +1,11 @@
-package net.redchujelly.cluttered.util;
+package net.redchujelly.cluttered.block.custom.furniture;
 
 import net.minecraft.util.StringRepresentable;
 
-public enum CardboardBoxState implements StringRepresentable {
-    CLOSED("closed"),
-    EMPTY("empty"),
-    FULL("full");
+public enum LanternPlaceState implements StringRepresentable {
+    FLOOR("floor"),
+    WALL("wall"),
+    CEILING("ceiling");
 
     private final String name;
 
@@ -19,6 +19,5 @@ public enum CardboardBoxState implements StringRepresentable {
         return this.getSerializedName();
     }
 
-    private CardboardBoxState(String pName){this.name = pName;}
+    private LanternPlaceState(String pName){this.name = pName;}
 }
-

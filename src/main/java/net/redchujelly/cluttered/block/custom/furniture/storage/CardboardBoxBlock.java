@@ -20,7 +20,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.redchujelly.cluttered.block.entity.CardboardBoxBlockEntity;
 import net.redchujelly.cluttered.block.entity.CustomStorageBlockEntity;
 import net.redchujelly.cluttered.setup.TileEntityRegistration;
-import net.redchujelly.cluttered.util.CardboardBoxState;
+import net.redchujelly.cluttered.block.custom.furniture.CardboardBoxState;
 import org.jetbrains.annotations.Nullable;
 
 public class CardboardBoxBlock extends StorageBlock{

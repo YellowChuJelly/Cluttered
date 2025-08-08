@@ -1,11 +1,11 @@
-package net.redchujelly.cluttered.util;
+package net.redchujelly.cluttered.block.custom.furniture;
 
 import net.minecraft.util.StringRepresentable;
 
-public enum PicketFenceGateOpen implements StringRepresentable {
-    CLOSED("closed"),
-    FORWARD("forward"),
-    BACKWARD("backward");
+public enum GarlandOffset implements StringRepresentable {
+    NONE("center"),
+    LEFT("left"),
+    RIGHT("right");
 
     private final String name;
 
@@ -19,5 +19,5 @@ public enum PicketFenceGateOpen implements StringRepresentable {
         return this.getSerializedName();
     }
 
-    private PicketFenceGateOpen(String pName){this.name = pName;}
+    private GarlandOffset(String pName){this.name = pName;}
 }

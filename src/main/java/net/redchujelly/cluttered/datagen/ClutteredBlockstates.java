@@ -19,9 +19,9 @@ import net.redchujelly.cluttered.block.custom.furniture.*;
 import net.redchujelly.cluttered.block.custom.furniture.storage.CardboardBoxBlock;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
-import net.redchujelly.cluttered.util.CardboardBoxState;
-import net.redchujelly.cluttered.util.LanternPlaceState;
-import net.redchujelly.cluttered.util.PicketFenceGateOpen;
+import net.redchujelly.cluttered.block.custom.furniture.CardboardBoxState;
+import net.redchujelly.cluttered.block.custom.furniture.LanternPlaceState;
+import net.redchujelly.cluttered.block.custom.furniture.PicketFenceGateOpen;
 
 public class ClutteredBlockstates extends BlockStateProvider {
     public ClutteredBlockstates(PackOutput output, ExistingFileHelper exFileHelper) {

@@ -1802,9 +1802,9 @@ public class BlockRegistration {
 
     //LAMPS
     public static final RegistryObject<Block> BEE_LAMP = registerBlock("bee_lamp",
-            () -> new BeeLampBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.GLASS).mapColor(DyeColor.YELLOW)));
+            () -> new BeeLampBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.GLASS).mapColor(DyeColor.YELLOW), false));
     public static final RegistryObject<Block> BEE_LAMP_ANGRY = registerBlock("bee_lamp_angry",
-            () -> new BeeLampBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.GLASS).mapColor(DyeColor.YELLOW)));
+            () -> new BeeLampBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.GLASS).mapColor(DyeColor.YELLOW), true));
     public static final RegistryObject<Block> STAINED_GLASS_LAMP = registerBlock("stained_glass_lamp",
             () -> new StainedGlassLampBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.GLASS).mapColor(DyeColor.YELLOW)));
     public static final RegistryObject<Block> COLOSSEO_WALL_LANTERN = registerBlock("colosseo_wall_lantern",

@@ -1,11 +1,11 @@
-package net.redchujelly.cluttered.util;
+package net.redchujelly.cluttered.block.custom.furniture;
 
 import net.minecraft.util.StringRepresentable;
 
-public enum GarlandOffset implements StringRepresentable {
-    NONE("center"),
-    LEFT("left"),
-    RIGHT("right");
+public enum CardboardBoxState implements StringRepresentable {
+    CLOSED("closed"),
+    EMPTY("empty"),
+    FULL("full");
 
     private final String name;
 
@@ -19,5 +19,6 @@ public enum GarlandOffset implements StringRepresentable {
         return this.getSerializedName();
     }
 
-    private GarlandOffset(String pName){this.name = pName;}
+    private CardboardBoxState(String pName){this.name = pName;}
 }
+

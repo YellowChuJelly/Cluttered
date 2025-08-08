@@ -21,7 +21,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.redchujelly.cluttered.util.PicketFenceGateOpen;
+import net.redchujelly.cluttered.block.custom.furniture.PicketFenceGateOpen;
 
 public class PicketFenceGateBlock extends CustomHorizontalBlock {
     private static final VoxelShape SHAPE_NS = Block.box(0,0,6,16,16,10);

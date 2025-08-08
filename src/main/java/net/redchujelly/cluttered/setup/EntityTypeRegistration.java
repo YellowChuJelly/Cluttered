@@ -17,9 +17,7 @@ public class EntityTypeRegistration {
     public static final RegistryObject<EntityType<Entity>> CHAIR_ENTITY =  ENTITY_TYPES.register("chair_entity",
             () -> EntityType.Builder.of(ChairEntity::new, MobCategory.MISC)
                     .sized(1.0f, 1.0f)
-                    .build(new ResourceLocation(Cluttered.MODID, "chair-entity").toString())
-    );
-
+                    .build(new ResourceLocation(Cluttered.MODID, "chair-entity").toString()));
     public static void register (IEventBus eventBus){
         ENTITY_TYPES.register(eventBus);
     }

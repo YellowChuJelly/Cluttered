@@ -1,6 +1,8 @@
 package net.redchujelly.cluttered;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -8,7 +10,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -16,11 +17,15 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.MissingMappingsEvent;
 import net.redchujelly.cluttered.client.ChairEntityRenderer;
 import net.redchujelly.cluttered.datagen.DataGeneration;
-import net.redchujelly.cluttered.datagen.loot.LootTableTest;
 import net.redchujelly.cluttered.setup.*;
+import net.redchujelly.cluttered.util.ClutteredFurnitureUpdater;
 import org.slf4j.Logger;
+
+import java.util.List;
 
 @Mod(Cluttered.MODID)
 public class Cluttered {
@@ -49,9 +54,9 @@ public class Cluttered {
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(DataGeneration::generate);
 
-
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -88,15 +93,46 @@ public class Cluttered {
     }
 
     @SubscribeEvent
-    public void lootLoad(LootTableLoadEvent event){
-        if (event.getName().toString().equals("minecraft:chests/simple_dungeon")){
-        }
-    }
-
-
-    @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
 
+    }
+
+    //Replaces blocks and items from the outdated version of the mod
+    @SubscribeEvent
+    public void missingMappingsHandler(MissingMappingsEvent event){
+        List<MissingMappingsEvent.Mapping<Block>> missingBlocks = event.getAllMappings(ForgeRegistries.Keys.BLOCKS);
+        List<MissingMappingsEvent.Mapping<Item>> missingItems = event.getAllMappings(ForgeRegistries.Keys.ITEMS);
+        for (MissingMappingsEvent.Mapping<Block> missing : missingBlocks){
+            String missingId = missing.getKey().toString();
+            if (missingId.startsWith("luphieclutteredmod:")){
+                String name = missingId.replace("luphieclutteredmod:", "");
+                Block replacement = ClutteredFurnitureUpdater.getUpdatedName(name);
+
+                if (replacement == null){
+                    missing.ignore();
+                }
+                else {
+                    missing.remap(replacement);
+                    String newId = replacement.getDescriptionId().replace("block.cluttered.", "cluttered:");
+                    LOGGER.debug("remapped {} to {}", missingId, newId);
+                }
+            }
+        }
+        for (MissingMappingsEvent.Mapping<Item> missing : missingItems){
+            String missingId = missing.getKey().toString();
+            if (missingId.startsWith("luphieclutteredmod:")){
+                String name = missingId.replace("luphieclutteredmod:", "");
+                Block replacement = ClutteredFurnitureUpdater.getUpdatedName(name);
+
+                if (replacement == null){
+                    missing.ignore();
+                }
+                else {
+                    String newId = replacement.getDescriptionId().replace("block.cluttered.", "cluttered:");
+                    LOGGER.debug("remapped {} to {}", missingId, newId);
+                }
+            }
+        }
     }
 
 
