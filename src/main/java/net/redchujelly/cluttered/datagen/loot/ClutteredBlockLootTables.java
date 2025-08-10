@@ -611,6 +611,16 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.ALABASTER_FRENCH_DOOR.get(), block -> createDoorTable(BlockRegistration.ALABASTER_FRENCH_DOOR.get()));
         add(BlockRegistration.ALABASTER_SCREEN_DOOR.get(), block -> createDoorTable(BlockRegistration.ALABASTER_SCREEN_DOOR.get()));
 
+        add(BlockRegistration.GREENHOUSE_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.GREENHOUSE_WINDOW.get()));
+        add(BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT.get(), block -> createSilkTouchOnlyTable(BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT.get()));
+        add(BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT.get(), block -> createSilkTouchOnlyTable(BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT.get()));
+        add(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_LEFT.get(), block -> createSilkTouchOnlyTable(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_LEFT.get()));
+        add(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_RIGHT.get(), block -> createSilkTouchOnlyTable(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_RIGHT.get()));
+        add(BlockRegistration.GREENHOUSE_WINDOW_CIRCLE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.GREENHOUSE_WINDOW_CIRCLE.get()));
+        add(BlockRegistration.GREENHOUSE_WINDOW_POINT.get(), block -> createSilkTouchOnlyTable(BlockRegistration.GREENHOUSE_WINDOW_POINT.get()));
+        add(BlockRegistration.GREENHOUSE_WINDOW_ROUNDED.get(), block -> createSilkTouchOnlyTable(BlockRegistration.GREENHOUSE_WINDOW_ROUNDED.get()));
+
+
         add(BlockRegistration.WOOD_WINDOW_DIVIDED.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_WINDOW_DIVIDED.get()));
         add(BlockRegistration.WOOD_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_WINDOW_PANE.get()));
         add(BlockRegistration.WOOD_PANEL_CANTERBURY.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_PANEL_CANTERBURY.get()));
@@ -959,6 +969,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.POLAROID_A_GARLAND.get());
         dropSelf(BlockRegistration.POLAROID_B_GARLAND.get());
         dropSelf(BlockRegistration.SUNFLOWER_GARLAND.get());
+        dropSelf(BlockRegistration.STARRY_GARLAND.get());
 
 
         //FLAGS

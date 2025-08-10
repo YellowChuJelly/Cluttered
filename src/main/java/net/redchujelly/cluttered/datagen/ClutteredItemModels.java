@@ -367,6 +367,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         garlandItem(BlockRegistration.POLAROID_A_GARLAND);
         garlandItem(BlockRegistration.POLAROID_B_GARLAND);
         garlandItem(BlockRegistration.SUNFLOWER_GARLAND);
+        garlandItem(BlockRegistration.STARRY_GARLAND);
 
         blockitemFromModel(BlockRegistration.BLACK_CAT_COUNTER_DRAWERS);
         blockitemFromModel(BlockRegistration.BLACK_CAT_COUNTER_LEFT_DOOR);

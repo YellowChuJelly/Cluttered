@@ -1,8 +1,9 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"0": "garland_starry",
-		"particle": "garland_starry"
+		"0": "cluttered:block/garland_starry",
+		"particle": "cluttered:block/garland_starry"
 	},
 	"elements": [
 		{

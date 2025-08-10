@@ -276,18 +276,15 @@ public class HandDrillItem extends Item {
         put(BlockRegistration.VARYING_BRICKS.get(), BlockRegistration.VARYING_BRICKS_BORDER.get());
         put(BlockRegistration.VARYING_BRICKS_BORDER.get(), BlockRegistration.VARYING_BRICKS.get());
 
-        put(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get(), BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get());
-        put(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get(), BlockRegistration.ALABASTER_PANEL_ATLANTIC.get());
-        put(BlockRegistration.ALABASTER_PANEL_ATLANTIC.get(), BlockRegistration.ALABASTER_PANEL_AUGUSTINE.get());
-        put(BlockRegistration.ALABASTER_PANEL_AUGUSTINE.get(), BlockRegistration.ALABASTER_PANEL_CANTERBURY.get());
-        put(BlockRegistration.ALABASTER_PANEL_CANTERBURY.get(), BlockRegistration.ALABASTER_WINDOW_DIVIDED.get());
+        put(BlockRegistration.GREENHOUSE_WINDOW.get(), BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT.get());
+        put(BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT.get(), BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT.get());
+        put(BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT.get(), BlockRegistration.GREENHOUSE_WINDOW_POINT.get());
+        put(BlockRegistration.GREENHOUSE_WINDOW_POINT.get(), BlockRegistration.GREENHOUSE_WINDOW_RADIAL_LEFT.get());
+        put(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_LEFT.get(), BlockRegistration.GREENHOUSE_WINDOW_RADIAL_RIGHT.get());
+        put(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_RIGHT.get(), BlockRegistration.GREENHOUSE_WINDOW_ROUNDED.get());
+        put(BlockRegistration.GREENHOUSE_WINDOW_ROUNDED.get(), BlockRegistration.GREENHOUSE_WINDOW_CIRCLE.get());
+        put(BlockRegistration.GREENHOUSE_WINDOW_CIRCLE.get(), BlockRegistration.GREENHOUSE_WINDOW.get());
 
-        put(BlockRegistration.WOOD_WINDOW_DIVIDED.get(), BlockRegistration.WOOD_PANEL_ALEXANDRIA.get());
-        put(BlockRegistration.WOOD_PANEL_ALEXANDRIA.get(), BlockRegistration.WOOD_PANEL_ATLANTIC.get());
-        put(BlockRegistration.WOOD_PANEL_ATLANTIC.get(), BlockRegistration.WOOD_PANEL_AUGUSTINE.get());
-        put(BlockRegistration.WOOD_PANEL_AUGUSTINE.get(), BlockRegistration.WOOD_PANEL_CANTERBURY.get());
-        put(BlockRegistration.WOOD_PANEL_CANTERBURY.get(), BlockRegistration.WOOD_WINDOW_DIVIDED.get());
-        
         put(BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF.get(), BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get());
         put(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get(), BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get());
         put(BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get(), BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL.get());

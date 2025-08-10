@@ -3339,6 +3339,17 @@ public class ClutteredRecipes extends RecipeProvider {
                     .showNotification(true)
                     .save(consumer);
 
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.STARRY_GARLAND.get(), 4)
+                    .pattern("sss")
+                    .pattern("w w")
+                    .pattern(" w ")
+                    .define('s', Items.STRING)
+                    .define('w', BlockRegistration.STARS_PENDANT.get())
+                    .unlockedBy("has_string", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.STRING).build()))
+                    .showNotification(true)
+                    .save(consumer);
+
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.ARMCHAIR_WHITE.get())
                     .pattern("www")
                     .pattern("gwg")

@@ -824,6 +824,22 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockWithItem(BlockRegistration.WICKER_BLOCK);
         doorBlockWithRenderType((DoorBlock) BlockRegistration.DYNASTY_DOOR.get(), modLoc("block/dynasty_door_bottom"), modLoc("block/dynasty_door_top"), "cutout");
 
+
+        simpleBlockWithItem(BlockRegistration.GREENHOUSE_WINDOW.get(), models().cubeAll("greenhouse_window", modLoc("block/greenhouse_window_panes")).renderType("cutout"));
+        horizontalBlock(BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT.get(), models().cube("block/greenhouse_window_arch_left", modLoc("block/greenhouse_window_arch_left"), modLoc("block/greenhouse_window_arch_left"), modLoc("block/greenhouse_window_arch_left"), modLoc("block/greenhouse_window_arch_right"), modLoc("block/greenhouse_window_arch_left"), modLoc("block/greenhouse_window_arch_right")).texture("particle", modLoc("block/greenhouse_window_arch_right")).renderType("cutout"));
+        blockItem(BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT);
+        horizontalBlock(BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT.get(), models().cube("block/greenhouse_window_arch_right", modLoc("block/greenhouse_window_arch_right"), modLoc("block/greenhouse_window_arch_right"), modLoc("block/greenhouse_window_arch_right"), modLoc("block/greenhouse_window_arch_left"), modLoc("block/greenhouse_window_arch_right"), modLoc("block/greenhouse_window_arch_left")).texture("particle", modLoc("block/greenhouse_window_arch_right")).renderType("cutout"));
+        blockItem(BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT);
+        horizontalBlock(BlockRegistration.GREENHOUSE_WINDOW_POINT.get(), models().cubeAll("greenhouse_window_pointed", modLoc("block/greenhouse_window_overlapping_pointed_arches")).renderType("cutout"));
+        blockItem(BlockRegistration.GREENHOUSE_WINDOW_POINT);
+        simpleBlockWithItem(BlockRegistration.GREENHOUSE_WINDOW_CIRCLE.get(), models().cubeAll("greenhouse_window_circle", modLoc("block/greenhouse_window_circle")).renderType("cutout"));
+        horizontalBlock(BlockRegistration.GREENHOUSE_WINDOW_ROUNDED.get(), models().cubeAll("greenhouse_window_rounded", modLoc("block/greenhouse_window_rounded_top")).renderType("cutout"));
+        blockItem(BlockRegistration.GREENHOUSE_WINDOW_ROUNDED);
+        horizontalBlock(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_LEFT.get(), models().cube("block/greenhouse_window_radial_left", modLoc("block/greenhouse_window_radial_left"), modLoc("block/greenhouse_window_radial_left"), modLoc("block/greenhouse_window_radial_left"), modLoc("block/greenhouse_window_radial_right"), modLoc("block/greenhouse_window_radial_left"), modLoc("block/greenhouse_window_radial_right")).texture("particle", modLoc("block/greenhouse_window_arch_right")).renderType("cutout"));
+        blockItem(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_LEFT);
+        horizontalBlock(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_RIGHT.get(), models().cube("block/greenhouse_window_radial_right", modLoc("block/greenhouse_window_radial_right"), modLoc("block/greenhouse_window_radial_right"), modLoc("block/greenhouse_window_radial_right"), modLoc("block/greenhouse_window_radial_left"), modLoc("block/greenhouse_window_radial_right"), modLoc("block/greenhouse_window_radial_left")).texture("particle", modLoc("block/greenhouse_window_arch_right")).renderType("cutout"));
+        blockItem(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_RIGHT);
+
         simpleBlockWithItem(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get(), models().cubeAll("alabaster_window_divided", modLoc("block/alabaster_window_divided")).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.ALABASTER_WINDOW_PANE.get(), modLoc("block/alabaster_window_divided"), modLoc("block/alabaster_glass_pane_top"), "cutout");
         simpleBlockWithItem(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get(), models().cubeAll("alabaster_alexandria_panel", modLoc("block/alabaster_alexandria_panel")).renderType("cutout"));
@@ -1504,6 +1520,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         garlandBlock(BlockRegistration.POLAROID_A_GARLAND);
         garlandBlock(BlockRegistration.POLAROID_B_GARLAND);
         garlandBlock(BlockRegistration.SUNFLOWER_GARLAND);
+        garlandBlock(BlockRegistration.STARRY_GARLAND);
 
         //CAKES
         this.getVariantBuilder(BlockRegistration.HEART_CAKE.get())

@@ -601,6 +601,15 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.SMALL_IRIDESCENT_TILES.get());
                         output.accept(BlockRegistration.KITCHEN_TILES.get());
                         
+                        output.accept(BlockRegistration.GREENHOUSE_WINDOW.get());
+                        output.accept(BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT.get());
+                        output.accept(BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT.get());
+                        output.accept(BlockRegistration.GREENHOUSE_WINDOW_POINT.get());
+                        output.accept(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_LEFT.get());
+                        output.accept(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_RIGHT.get());
+                        output.accept(BlockRegistration.GREENHOUSE_WINDOW_ROUNDED.get());
+                        output.accept(BlockRegistration.GREENHOUSE_WINDOW_CIRCLE.get());
+
                         output.accept(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get());
                         output.accept(BlockRegistration.ALABASTER_WINDOW_PANE.get());
                         output.accept(BlockRegistration.ALABASTER_PANEL_ATLANTIC.get());
@@ -838,6 +847,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.POLAROID_A_GARLAND.get());
                         output.accept(BlockRegistration.POLAROID_B_GARLAND.get());
                         output.accept(BlockRegistration.SUNFLOWER_GARLAND.get());
+                        output.accept(BlockRegistration.STARRY_GARLAND.get());
 
                         output.accept(BlockRegistration.ARMCHAIR_WHITE.get());
                         output.accept(BlockRegistration.ARMCHAIR_LIGHT_GRAY.get());
