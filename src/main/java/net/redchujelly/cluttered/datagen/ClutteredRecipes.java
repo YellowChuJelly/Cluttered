@@ -212,6 +212,8 @@ public class ClutteredRecipes extends RecipeProvider {
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_BORDER);
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_ACANTHUS);
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_HELIX);
+        chalcedonyResults.add(BlockRegistration.CHALCEDONY_MEANDER);
+        chalcedonyResults.add(BlockRegistration.CHALCEDONY_TEXTILES);
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRICKS);
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_BRICK_STAIRS);
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_PILLAR_BASE);
@@ -349,6 +351,8 @@ public class ClutteredRecipes extends RecipeProvider {
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BORDER);
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_ACANTHUS);
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_HELIX);
+        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_MEANDER);
+        deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_TEXTILES);
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRICKS);
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_BRICK_STAIRS);
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_PILLAR_BASE);
@@ -478,6 +482,8 @@ public class ClutteredRecipes extends RecipeProvider {
         marbleresults.add(BlockRegistration.MARBLE_BORDER);
         marbleresults.add(BlockRegistration.MARBLE_ACANTHUS);
         marbleresults.add(BlockRegistration.MARBLE_HELIX);
+        marbleresults.add(BlockRegistration.MARBLE_MEANDER);
+        marbleresults.add(BlockRegistration.MARBLE_TEXTILES);
         marbleresults.add(BlockRegistration.MARBLE_BRICKS);
         marbleresults.add(BlockRegistration.MARBLE_BRICK_STAIRS);
         marbleresults.add(BlockRegistration.MARBLE_PILLAR_BASE);
@@ -526,6 +532,8 @@ public class ClutteredRecipes extends RecipeProvider {
 
 
         //MISC FULL BLOCKS
+        buildStoneCutterRecipesForBase(consumer, Blocks.STONE, List.of(BlockRegistration.STONE_TEXTILES));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.BLACK_CAT_WINDOW_PANE.get(), 16)
                 .pattern("bbb")
                 .pattern("bbb")
@@ -726,6 +734,18 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("dpd")
                 .pattern("www")
                 .define('d', Items.PINK_DYE)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.TARTAN_YELLOW_WALLPAPER.get(), 8)
+                .pattern("dpd")
+                .pattern("dpd")
+                .pattern("www")
+                .define('d', Items.YELLOW_DYE)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -936,6 +956,18 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("pfp")
                 .pattern("www")
                 .define('f', Items.COD)
+                .define('p', Items.PAPER)
+                .define('w', ItemTags.PLANKS)
+                .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.TROPICAL_FISH_WALLPAPER.get(), 8)
+                .pattern("pfp")
+                .pattern("pfp")
+                .pattern("www")
+                .define('f', Items.TROPICAL_FISH)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(

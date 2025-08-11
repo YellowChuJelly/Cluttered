@@ -264,6 +264,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.CHALCEDONY_BORDER.get());
         dropSelf(BlockRegistration.CHALCEDONY_ACANTHUS.get());
         dropSelf(BlockRegistration.CHALCEDONY_HELIX.get());
+        dropSelf(BlockRegistration.CHALCEDONY_MEANDER.get());
         dropSelf(BlockRegistration.STARRY_CHISELED_CHALCEDONY.get());
         dropSelf(BlockRegistration.CHALCEDONY_PILLAR.get());
         dropSelf(BlockRegistration.CHALCEDONY_PILLAR_BASE.get());
@@ -276,6 +277,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.CHALCEDONY_BALUSTRADE.get());
         dropSelf(BlockRegistration.CHALCEDONY_PICKET_FENCE.get());
         dropSelf(BlockRegistration.CHALCEDONY_PICKET_FENCE_GATE.get());
+        dropSelf(BlockRegistration.CHALCEDONY_TEXTILES.get());
 
         dropSelf(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get());
         dropSelf(BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get());
@@ -302,6 +304,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_BORDER.get());
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_ACANTHUS.get());
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_HELIX.get());
+        dropSelf(BlockRegistration.DEEP_CHALCEDONY_MEANDER.get());
         dropSelf(BlockRegistration.DEEP_STARRY_CHISELED_CHALCEDONY.get());
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_PILLAR.get());
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_PILLAR_BASE.get());
@@ -322,6 +325,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR.get());
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL.get());
         dropSelf(BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL_SHELF.get());
+        dropSelf(BlockRegistration.DEEP_CHALCEDONY_TEXTILES.get());
+
 
 
         add(BlockRegistration.DEEP_CHALCEDONY_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.DEEP_CHALCEDONY_WINDOW.get()));
@@ -341,6 +346,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.MARBLE_BORDER.get());
         dropSelf(BlockRegistration.MARBLE_ACANTHUS.get());
         dropSelf(BlockRegistration.MARBLE_HELIX.get());
+        dropSelf(BlockRegistration.MARBLE_MEANDER.get());
         dropSelf(BlockRegistration.STARRY_CHISELED_MARBLE.get());
         dropSelf(BlockRegistration.MARBLE_PILLAR.get());
         dropSelf(BlockRegistration.MARBLE_PILLAR_BASE.get());
@@ -357,6 +363,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.MARBLE_BRACKET_STAR.get());
         dropSelf(BlockRegistration.MARBLE_BRACKET_STAR_SCROLL.get());
         dropSelf(BlockRegistration.MARBLE_BRACKET_SCROLL_SHELF.get());
+        dropSelf(BlockRegistration.MARBLE_TEXTILES.get());
+
 
 
         add(BlockRegistration.BLACK_CAT_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.BLACK_CAT_WINDOW.get()));
@@ -523,7 +531,9 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_BOTTOM_WHITE.get());
         dropSelf(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_TOP_WHITE.get());
 
+        dropSelf(BlockRegistration.TARTAN_YELLOW_WALLPAPER.get());
         dropSelf(BlockRegistration.FISH_WALLPAPER.get());
+        dropSelf(BlockRegistration.TROPICAL_FISH_WALLPAPER.get());
         dropSelf(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER_BOTTOM.get());
         dropSelf(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER_TOP.get());
         dropSelf(BlockRegistration.CONFECTIONARY_WALLPAPER_BOTTOM.get());
@@ -594,6 +604,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.PURPLE_TILES.get());
         dropSelf(BlockRegistration.SMALL_PURPLE_TILES.get());
         dropSelf(BlockRegistration.KITCHEN_TILES.get());
+        dropSelf(BlockRegistration.STONE_TEXTILES.get());
 
         dropSelf(BlockRegistration.CHISELED_GOLD_BLOCK.get());
         dropSelf(BlockRegistration.VARYING_BRICKS.get());

@@ -69,12 +69,14 @@ public class ClutteredItemModels extends ItemModelProvider {
         simplePaneBlockItem(BlockRegistration.MAPLE_WINDOW_PANE).renderType("cutout");
         simplePaneBlockItem(BlockRegistration.MAPLE_SAPLING).renderType("cutout");
 
+        standardCubeItem(BlockRegistration.BLUE_MUSHROOM_CAP, "blue_mushroom_cap_4");
         fenceItem(BlockRegistration.BLUE_MUSHROOM_FENCE, BlockRegistration.BLUE_MUSHROOM_PLANKS);
         buttonItem(BlockRegistration.BLUE_MUSHROOM_BUTTON, BlockRegistration.BLUE_MUSHROOM_PLANKS);
         simpleBlockItem(BlockRegistration.BLUE_MUSHROOM_DOOR);
         simplePaneBlockItem(BlockRegistration.BLUE_MUSHROOM_WINDOW_PANE);
         simplePaneBlockItem(BlockRegistration.BLUE_MUSHROOM_SAPLING).renderType("cutout");
 
+        standardCubeItem(BlockRegistration.RED_MUSHROOM_CAP, "red_mushroom_cap_4");
         fenceItem(BlockRegistration.RED_MUSHROOM_FENCE, BlockRegistration.RED_MUSHROOM_PLANKS);
         buttonItem(BlockRegistration.RED_MUSHROOM_BUTTON, BlockRegistration.RED_MUSHROOM_PLANKS);
         simpleBlockItem(BlockRegistration.RED_MUSHROOM_DOOR);

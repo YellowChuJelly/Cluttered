@@ -67,15 +67,21 @@ public class HandDrillItem extends Item {
 
         put(BlockRegistration.CHALCEDONY_BORDER.get(), BlockRegistration.CHALCEDONY_ACANTHUS.get());
         put(BlockRegistration.CHALCEDONY_ACANTHUS.get(), BlockRegistration.CHALCEDONY_HELIX.get());
-        put(BlockRegistration.CHALCEDONY_HELIX.get(), BlockRegistration.CHALCEDONY_BORDER.get());
+        put(BlockRegistration.CHALCEDONY_HELIX.get(), BlockRegistration.CHALCEDONY_MEANDER.get());
+        put(BlockRegistration.CHALCEDONY_MEANDER.get(), BlockRegistration.CHALCEDONY_TEXTILES.get());
+        put(BlockRegistration.CHALCEDONY_TEXTILES.get(), BlockRegistration.CHALCEDONY_BORDER.get());
 
         put(BlockRegistration.DEEP_CHALCEDONY_BORDER.get(), BlockRegistration.DEEP_CHALCEDONY_ACANTHUS.get());
         put(BlockRegistration.DEEP_CHALCEDONY_ACANTHUS.get(), BlockRegistration.DEEP_CHALCEDONY_HELIX.get());
-        put(BlockRegistration.DEEP_CHALCEDONY_HELIX.get(), BlockRegistration.DEEP_CHALCEDONY_BORDER.get());
+        put(BlockRegistration.DEEP_CHALCEDONY_HELIX.get(), BlockRegistration.DEEP_CHALCEDONY_MEANDER.get());
+        put(BlockRegistration.DEEP_CHALCEDONY_MEANDER.get(), BlockRegistration.DEEP_CHALCEDONY_TEXTILES.get());
+        put(BlockRegistration.DEEP_CHALCEDONY_TEXTILES.get(), BlockRegistration.DEEP_CHALCEDONY_BORDER.get());
 
         put(BlockRegistration.MARBLE_BORDER.get(), BlockRegistration.MARBLE_ACANTHUS.get());
         put(BlockRegistration.MARBLE_ACANTHUS.get(), BlockRegistration.MARBLE_HELIX.get());
-        put(BlockRegistration.MARBLE_HELIX.get(), BlockRegistration.MARBLE_BORDER.get());
+        put(BlockRegistration.MARBLE_HELIX.get(), BlockRegistration.MARBLE_MEANDER.get());
+        put(BlockRegistration.MARBLE_MEANDER.get(), BlockRegistration.MARBLE_TEXTILES.get());
+        put(BlockRegistration.MARBLE_TEXTILES.get(), BlockRegistration.MARBLE_BORDER.get());
 
         put(BlockRegistration.STARRY_WALLPAPER.get(), BlockRegistration.STARRY_WALLPAPER_BOTTOM.get());
         put(BlockRegistration.STARRY_WALLPAPER_BOTTOM.get(), BlockRegistration.STARRY_WALLPAPER_TOP.get());

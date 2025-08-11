@@ -490,6 +490,8 @@ public class BlockRegistration {
             () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE)));
     public static final RegistryObject<Block> CHALCEDONY_HELIX = registerBlock("chalcedony_helix",
             () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> CHALCEDONY_MEANDER = registerBlock("chalcedony_meander",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE)));
     public static final RegistryObject<Block> STARRY_CHISELED_CHALCEDONY = registerBlock("chalcedony_sun_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE)));
     public static final RegistryObject<Block> CHALCEDONY_PILLAR = registerBlock("chalcedony_pillar",
@@ -508,6 +510,8 @@ public class BlockRegistration {
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)));
     public static final RegistryObject<Block> STARRY_CHALCEDONY_PILLAR_IONIC = registerBlock("chalcedony_pillar_starry_ionic",
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> CHALCEDONY_TEXTILES = registerBlock("textile_block_chalcedony",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE)));
 
     public static final RegistryObject<Block> CHALCEDONY_BRACKET_VICTORIAN = registerBlock("chalcedony_victorian_bracket",
             () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
@@ -558,6 +562,8 @@ public class BlockRegistration {
             () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.LIGHT_BLUE)));
     public static final RegistryObject<Block> DEEP_CHALCEDONY_HELIX = registerBlock("deep_chalcedony_helix",
             () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.LIGHT_BLUE)));
+    public static final RegistryObject<Block> DEEP_CHALCEDONY_MEANDER = registerBlock("deep_chalcedony_meander",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.LIGHT_BLUE)));
     public static final RegistryObject<Block> DEEP_STARRY_CHISELED_CHALCEDONY = registerBlock("deep_chalcedony_sun_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.LIGHT_BLUE)));
     public static final RegistryObject<Block> DEEP_CHALCEDONY_PILLAR = registerBlock("deep_chalcedony_pillar",
@@ -576,6 +582,8 @@ public class BlockRegistration {
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE)));
     public static final RegistryObject<Block> DEEP_STARRY_CHALCEDONY_PILLAR_IONIC = registerBlock("deep_chalcedony_pillar_starry_ionic",
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE)));
+    public static final RegistryObject<Block> DEEP_CHALCEDONY_TEXTILES = registerBlock("textile_block_deep_chalcedony",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.LIGHT_BLUE)));
 
     public static final RegistryObject<Block> DEEP_CHALCEDONY_BRACKET_VICTORIAN = registerBlock("deep_chalcedony_victorian_bracket",
             () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE).noOcclusion()));
@@ -626,6 +634,8 @@ public class BlockRegistration {
             () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE)));
     public static final RegistryObject<Block> MARBLE_HELIX = registerBlock("marble_helix",
             () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> MARBLE_MEANDER = registerBlock("marble_meander",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE)));
     public static final RegistryObject<Block> STARRY_CHISELED_MARBLE = registerBlock("marble_sun_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE)));
     public static final RegistryObject<Block> MARBLE_PILLAR = registerBlock("marble_pillar",
@@ -636,8 +646,9 @@ public class BlockRegistration {
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)));
     public static final RegistryObject<Block> MARBLE_PILLAR_IONIC = registerBlock("marble_pillar_ionic",
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)));
+    public static final RegistryObject<Block> MARBLE_TEXTILES = registerBlock("textile_block_marble",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE)));
 
-    //TODO maybe change to the other type
     public static final RegistryObject<Block> MARBLE_BRACKET_VICTORIAN = registerBlock("marble_victorian_bracket",
             () -> new BracketBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE).noOcclusion()));
     public static final RegistryObject<Block> MARBLE_BRACKET_BOW = registerBlock("marble_victorian_bracket_bow",
@@ -775,6 +786,10 @@ public class BlockRegistration {
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistryObject<Block> FISH_WALLPAPER = registerBlock("fish_wallpaper",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> TROPICAL_FISH_WALLPAPER = registerBlock("fish_wallpaper_tropical",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.LIGHT_BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
+    public static final RegistryObject<Block> TARTAN_YELLOW_WALLPAPER = registerBlock("tartan_yellow_wallpaper",
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL).sound(SoundType.SPORE_BLOSSOM)));
 
 
     //DIAMOND WALLPAPER
@@ -1124,6 +1139,8 @@ public class BlockRegistration {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.PINK)));
     public static final RegistryObject<Block> KITCHEN_TILES = registerBlock("tiles_kitchen",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).mapColor(DyeColor.RED)));
+    public static final RegistryObject<Block> STONE_TEXTILES = registerBlock("textile_block_stone",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
 
     public static final RegistryObject<Block> WICKER_BLOCK = registerFuelBlock("wicker_block",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.BAMBOO).strength(0.5f)), 100);
@@ -1899,7 +1916,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> SUNFLOWER_GARLAND = registerBlock("garland_sunflower",
             () -> new GarlandBlock(BlockBehaviour.Properties.copy(Blocks.SPORE_BLOSSOM).mapColor(DyeColor.YELLOW)));
     public static final RegistryObject<Block> STARRY_GARLAND = registerBlock("garland_starry",
-            () -> new GarlandBlock(BlockBehaviour.Properties.copy(Blocks.SPORE_BLOSSOM).mapColor(DyeColor.YELLOW).lightLevel(p -> 4)));
+            () -> new GarlandBlock(BlockBehaviour.Properties.copy(Blocks.SPORE_BLOSSOM).mapColor(DyeColor.YELLOW).lightLevel(p -> 5)));
 
     //KITCHEN SET SMALL
     public static final RegistryObject<Block> BLACK_CAT_COUNTER_DRAWERS= registerBlock("black_cat_counter_drawers",

@@ -309,8 +309,13 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         //BLUE MUSHROOM WOODSET
         blockWithItem((BlockRegistration.BLUE_MUSHROOM_PLANKS));
-        blockWithItem((BlockRegistration.BLUE_MUSHROOM_CAP));
-
+        this.getVariantBuilder(BlockRegistration.BLUE_MUSHROOM_CAP.get())
+                .partialState().modelForState()
+                .modelFile(models().cubeAll("blue_mushroom_cap_1", modLoc("block/blue_mushroom_cap_2")))
+                .nextModel().modelFile(models().cubeAll("blue_mushroom_cap_2", modLoc("block/blue_mushroom_cap_2")))
+                .nextModel().modelFile(models().cubeAll("blue_mushroom_cap_3", modLoc("block/blue_mushroom_cap_3")))
+                .nextModel().modelFile(models().cubeAll("blue_mushroom_cap_4", modLoc("block/blue_mushroom_cap_4")))
+                .addModel();
         logBlockMaker(BlockRegistration.BLUE_MUSHROOM_LOG, false);
         logBlockMaker(BlockRegistration.BLUE_MUSHROOM_WOOD, true);
 
@@ -341,8 +346,14 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         //RED MUSHROOM WOODSET
         blockWithItem((BlockRegistration.RED_MUSHROOM_PLANKS));
-        blockWithItem((BlockRegistration.RED_MUSHROOM_CAP));
-
+        this.getVariantBuilder(BlockRegistration.RED_MUSHROOM_CAP.get())
+                .partialState().modelForState()
+                .modelFile(models().cubeAll("red_mushroom_cap_1", modLoc("block/red_mushroom_cap_2")))
+                .nextModel().modelFile(models().cubeAll("red_mushroom_cap_2", modLoc("block/red_mushroom_cap_2")))
+                .nextModel().modelFile(models().cubeAll("red_mushroom_cap_3", modLoc("block/red_mushroom_cap_3")))
+                .nextModel().modelFile(models().cubeAll("red_mushroom_cap_4", modLoc("block/red_mushroom_cap_4")))
+                .addModel();
+        
         logBlockMaker(BlockRegistration.RED_MUSHROOM_LOG, false);
         logBlockMaker(BlockRegistration.RED_MUSHROOM_WOOD, true);
 
@@ -393,6 +404,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.CHALCEDONY_ACANTHUS);
         horizontalBlock(BlockRegistration.CHALCEDONY_HELIX.get(), modLoc("block/chalcedony_helix"), modLoc("block/chalcedony_helix"), modLoc("block/chalcedony_helix"));
         blockItem(BlockRegistration.CHALCEDONY_HELIX);
+        horizontalBlock(BlockRegistration.CHALCEDONY_MEANDER.get(), modLoc("block/meander_chalcedony"), modLoc("block/meander_chalcedony"), modLoc("block/meander_chalcedony"));
+        blockItem(BlockRegistration.CHALCEDONY_MEANDER);
         blockWithItem((BlockRegistration.CHALCEDONY_TILES));
         blockWithItem((BlockRegistration.CHALCEDONY_SMALL_TILES));
         blockWithItem((BlockRegistration.STARRY_CHISELED_CHALCEDONY));
@@ -423,6 +436,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.CHALCEDONY_WINDOW.get(), models().cubeAll("chalcedony_window", modLoc("block/chalcedony_window")).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.CHALCEDONY_WINDOW_PANE.get(), modLoc("block/chalcedony_window"), modLoc("block/chalcedony_glass_pane_top"), "cutout");
 
+        horizontalBlock(BlockRegistration.CHALCEDONY_TEXTILES.get(), modLoc("block/textile_block_chalcedony"), modLoc("block/textile_block_chalcedony"), modLoc("block/textile_block_chalcedony"));
+        blockItem(BlockRegistration.CHALCEDONY_TEXTILES);
 
         //DEEP CHALCEDONY
         blockWithItem((BlockRegistration.DEEP_CHALCEDONY));
@@ -443,6 +458,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.DEEP_CHALCEDONY_ACANTHUS);
         horizontalBlock(BlockRegistration.DEEP_CHALCEDONY_HELIX.get(), modLoc("block/deep_chalcedony_helix"), modLoc("block/deep_chalcedony_helix"), modLoc("block/deep_chalcedony_helix"));
         blockItem(BlockRegistration.DEEP_CHALCEDONY_HELIX);
+        horizontalBlock(BlockRegistration.DEEP_CHALCEDONY_MEANDER.get(), modLoc("block/meander_deep_chalcedony"), modLoc("block/meander_deep_chalcedony"), modLoc("block/meander_deep_chalcedony"));
+        blockItem(BlockRegistration.DEEP_CHALCEDONY_MEANDER);
         blockWithItem((BlockRegistration.DEEP_CHALCEDONY_TILES));
         blockWithItem((BlockRegistration.DEEP_CHALCEDONY_SMALL_TILES));
         blockWithItem((BlockRegistration.DEEP_STARRY_CHISELED_CHALCEDONY));
@@ -473,7 +490,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.DEEP_CHALCEDONY_WINDOW.get(), models().cubeAll("deep_chalcedony_window", modLoc("block/deep_chalcedony_window")).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.DEEP_CHALCEDONY_WINDOW_PANE.get(), modLoc("block/deep_chalcedony_window"), modLoc("block/deep_chalcedony_glass_pane_top"), "cutout");
 
-
+        horizontalBlock(BlockRegistration.DEEP_CHALCEDONY_TEXTILES.get(), modLoc("block/textile_block_deep_chalcedony"), modLoc("block/textile_block_deep_chalcedony"), modLoc("block/textile_block_deep_chalcedony"));
+        blockItem(BlockRegistration.DEEP_CHALCEDONY_TEXTILES);
 
         //MARBLE
         blockWithItem((BlockRegistration.MARBLE));
@@ -494,6 +512,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.MARBLE_ACANTHUS);
         horizontalBlock(BlockRegistration.MARBLE_HELIX.get(), modLoc("block/marble_helix"), modLoc("block/marble_helix"), modLoc("block/marble_helix"));
         blockItem(BlockRegistration.MARBLE_HELIX);
+        horizontalBlock(BlockRegistration.MARBLE_MEANDER.get(), modLoc("block/meander_marble"), modLoc("block/meander_marble"), modLoc("block/meander_marble"));
+        blockItem(BlockRegistration.MARBLE_MEANDER);
         blockWithItem((BlockRegistration.MARBLE_TILES));
         blockWithItem((BlockRegistration.MARBLE_SMALL_TILES));
         blockWithItem((BlockRegistration.STARRY_CHISELED_MARBLE));
@@ -509,6 +529,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         directionalBlock(BlockRegistration.MARBLE_PILLAR_IONIC.get(), models().cubeColumn("block/marble_pillar_ionic", modLoc("block/marble_pillar_ionic"), modLoc("block/marble_pillar_top")));
         blockItem(BlockRegistration.MARBLE_PILLAR_IONIC);
 
+        horizontalBlock(BlockRegistration.MARBLE_TEXTILES.get(), modLoc("block/textile_block_marble"), modLoc("block/textile_block_marble"), modLoc("block/textile_block_marble"));
+        blockItem(BlockRegistration.MARBLE_TEXTILES);
 
         balustradeBlock(BlockRegistration.MARBLE_BALUSTRADE);
         balustradeBlock(BlockRegistration.DEEP_CHALCEDONY_BALUSTRADE);
@@ -753,6 +775,9 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.RED_MUSHROOM_WAINSCOTING.get(), models().cubeColumn("red_mushroom_wainscoting", modLoc("block/red_mushroom_wainscoting"), modLoc("block/red_mushroom_wainscoting")));
         simpleBlockWithItem(BlockRegistration.ALABASTER_WAINSCOTING.get(), models().cubeColumn("alabaster_wainscoting", modLoc("block/alabaster_wainscoting"), modLoc("block/alabaster_wainscoting")));
 
+        horizontalBlock(BlockRegistration.STONE_TEXTILES.get(), modLoc("block/textile_block_stone"), modLoc("block/textile_block_stone"), modLoc("block/textile_block_stone"));
+        blockItem(BlockRegistration.STONE_TEXTILES);
+
         blockWithItem(BlockRegistration.GINGERBREAD_BRICKS);
         simpleBlockWithItem(BlockRegistration.GINGERBREAD_BRICKS_TOP.get(), models().cubeColumn("gingerbread_bricks_top", modLoc("block/gingerbread_bricks_top"), modLoc("block/gingerbread_bricks")));
         horizontalBlock(BlockRegistration.GINGERBREAD_BRICKS_SIDE.get(), models().cube("gingerbread_bricks_corner",
@@ -955,6 +980,9 @@ public class ClutteredBlockstates extends BlockStateProvider {
         doorBlock((DoorBlock) BlockRegistration.ART_NOUVEAU_DOOR.get(), modLoc("block/art_nouveau_door_bottom"), modLoc("block/art_nouveau_door_top"));
         doorBlock((DoorBlock) BlockRegistration.ART_NOUVEAU_DOOR_DARK.get(), modLoc("block/art_nouveau_door_dark_bottom"), modLoc("block/art_nouveau_door_dark_top"));
 
+        blockWithItem(BlockRegistration.TARTAN_YELLOW_WALLPAPER);
+
+        blockWithItem(BlockRegistration.TROPICAL_FISH_WALLPAPER);
         this.getVariantBuilder(BlockRegistration.FISH_WALLPAPER.get())
                 .partialState().modelForState()
                 .modelFile(models().cubeAll("fish_wallpaper_1", modLoc("block/fish_wallpaper_1")))

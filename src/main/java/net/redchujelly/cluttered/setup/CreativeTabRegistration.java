@@ -272,6 +272,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.CHALCEDONY_BORDER.get());
                         output.accept(BlockRegistration.CHALCEDONY_ACANTHUS.get());
                         output.accept(BlockRegistration.CHALCEDONY_HELIX.get());
+                        output.accept(BlockRegistration.CHALCEDONY_MEANDER.get());
+                        output.accept(BlockRegistration.CHALCEDONY_TEXTILES.get());
                         output.accept(BlockRegistration.CHALCEDONY_PILLAR_BASE.get());
                         output.accept(BlockRegistration.CHALCEDONY_PILLAR.get());
                         output.accept(BlockRegistration.CHALCEDONY_PILLAR_DORIC.get());
@@ -309,6 +311,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_BORDER.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_ACANTHUS.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_HELIX.get());
+                        output.accept(BlockRegistration.DEEP_CHALCEDONY_MEANDER.get());
+                        output.accept(BlockRegistration.DEEP_CHALCEDONY_TEXTILES.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_PILLAR_BASE.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_PILLAR.get());
                         output.accept(BlockRegistration.DEEP_CHALCEDONY_PILLAR_DORIC.get());
@@ -346,6 +350,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.MARBLE_BORDER.get());
                         output.accept(BlockRegistration.MARBLE_ACANTHUS.get());
                         output.accept(BlockRegistration.MARBLE_HELIX.get());
+                        output.accept(BlockRegistration.MARBLE_MEANDER.get());
+                        output.accept(BlockRegistration.MARBLE_TEXTILES.get());
                         output.accept(BlockRegistration.MARBLE_PILLAR_BASE.get());
                         output.accept(BlockRegistration.MARBLE_PILLAR.get());
                         output.accept(BlockRegistration.MARBLE_PILLAR_DORIC.get());
@@ -540,6 +546,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.MINT_WALLPAPER_BOTTOM.get());
                         output.accept(BlockRegistration.BROWN_WAINSCOTING.get());
 
+                        output.accept(BlockRegistration.TARTAN_YELLOW_WALLPAPER.get());
                         output.accept(BlockRegistration.CHECKERED_PINK_WALLPAPER.get());
                         output.accept(BlockRegistration.CHECKERED_PINK_STRAWBERRY_WALLPAPER.get());
                         output.accept(BlockRegistration.CHECKERED_GREEN_WALLPAPER.get());
@@ -564,6 +571,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.CHECKERED_FRUIT_WALLPAPER.get());
                         output.accept(BlockRegistration.APPLE_WALLPAPER.get());
                         output.accept(BlockRegistration.FISH_WALLPAPER.get());
+                        output.accept(BlockRegistration.TROPICAL_FISH_WALLPAPER.get());
 
                         output.accept(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER.get());
                         output.accept(BlockRegistration.BLUE_ROSE_STRIPED_WALLPAPER_TOP.get());
@@ -650,6 +658,7 @@ public class CreativeTabRegistration {
 
                         output.accept(BlockRegistration.BLACK_CAT_WINDOW.get());
                         output.accept(BlockRegistration.BLACK_CAT_WINDOW_PANE.get());
+                        output.accept(BlockRegistration.STONE_TEXTILES.get());
                         output.accept(BlockRegistration.BEIGE_PLANTER.get());
                         output.accept(BlockRegistration.WICKER_BLOCK.get());
                         output.accept(BlockRegistration.CHISELED_GOLD_BLOCK.get());
