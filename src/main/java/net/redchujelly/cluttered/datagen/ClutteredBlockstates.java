@@ -421,9 +421,13 @@ public class ClutteredBlockstates extends BlockStateProvider {
         directionalBlock(BlockRegistration.CHALCEDONY_PILLAR_IONIC.get(), models().cubeColumn("block/chalcedony_pillar_ionic", modLoc("block/chalcedony_pillar_ionic"), modLoc("block/chalcedony_pillar_top")));
         blockItem(BlockRegistration.CHALCEDONY_PILLAR_IONIC);
 
-        axisBlock((RotatedPillarBlock) BlockRegistration.STARRY_CHALCEDONY_PILLAR.get(),
-                new ResourceLocation(Cluttered.MODID + ":block/chalcedony_pillar_starry"),
-                new ResourceLocation(Cluttered.MODID + ":block/chalcedony_pillar_starry_top" ));
+        this.getVariantBuilder(BlockRegistration.STARRY_CHALCEDONY_PILLAR.get())
+                .partialState().with(RotatedPillarBlock.AXIS, Direction.Axis.Y).modelForState().modelFile(models().cubeColumn("chalcedony_pillar_starry", modLoc("block/chalcedony_pillar_starry"), modLoc("block/chalcedony_pillar_top"))).nextModel()
+                .modelFile(models().cubeColumn("chalcedony_pillar_starry_2", modLoc("block/chalcedony_starry_pillar_alt"), modLoc("block/chalcedony_pillar_top"))).addModel()
+                .partialState().with(RotatedPillarBlock.AXIS, Direction.Axis.Z).modelForState().modelFile(models().cubeColumn("chalcedony_pillar_starry_3", modLoc("block/chalcedony_pillar_starry"), modLoc("block/chalcedony_pillar_top"))).rotationX(90).nextModel()
+                .modelFile(models().cubeColumn("chalcedony_pillar_starry_4", modLoc("block/chalcedony_starry_pillar_alt"), modLoc("block/chalcedony_pillar_top"))).rotationX(90).addModel()
+                .partialState().with(RotatedPillarBlock.AXIS, Direction.Axis.X).modelForState().modelFile(models().cubeColumn("chalcedony_pillar_starry_5", modLoc("block/chalcedony_pillar_starry"), modLoc("block/chalcedony_pillar_top"))).rotationX(90).rotationY(90).nextModel()
+                .modelFile(models().cubeColumn("chalcedony_pillar_starry_6", modLoc("block/chalcedony_starry_pillar_alt"), modLoc("block/chalcedony_pillar_top"))).rotationX(90).rotationY(90).addModel();
         blockItem(BlockRegistration.STARRY_CHALCEDONY_PILLAR);
 
         directionalBlock(BlockRegistration.STARRY_CHALCEDONY_PILLAR_BASE.get(), models().cubeColumn("block/chalcedony_pillar_starry_base", modLoc("block/chalcedony_pillar_starry_base"), modLoc("block/chalcedony_pillar_starry_top")));
@@ -475,9 +479,14 @@ public class ClutteredBlockstates extends BlockStateProvider {
         directionalBlock(BlockRegistration.DEEP_CHALCEDONY_PILLAR_IONIC.get(), models().cubeColumn("block/deep_chalcedony_pillar_ionic", modLoc("block/deep_chalcedony_pillar_ionic"), modLoc("block/deep_chalcedony_pillar_top")));
         blockItem(BlockRegistration.DEEP_CHALCEDONY_PILLAR_IONIC);
 
-        axisBlock((RotatedPillarBlock) BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR.get(),
-                new ResourceLocation(Cluttered.MODID + ":block/deep_chalcedony_pillar_starry"),
-                new ResourceLocation(Cluttered.MODID + ":block/deep_chalcedony_pillar_starry_top"));
+
+        this.getVariantBuilder(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR.get())
+                .partialState().with(RotatedPillarBlock.AXIS, Direction.Axis.Y).modelForState().modelFile(models().cubeColumn("deep_chalcedony_pillar_starry", modLoc("block/deep_chalcedony_pillar_starry"), modLoc("block/deep_chalcedony_pillar_top"))).nextModel()
+                .modelFile(models().cubeColumn("deep_chalcedony_pillar_starry_2", modLoc("block/deep_chalcedony_starry_pillar_alt"), modLoc("block/deep_chalcedony_pillar_top"))).addModel()
+                .partialState().with(RotatedPillarBlock.AXIS, Direction.Axis.Z).modelForState().modelFile(models().cubeColumn("deep_chalcedony_pillar_starry_3", modLoc("block/deep_chalcedony_pillar_starry"), modLoc("block/deep_chalcedony_pillar_top"))).rotationX(90).nextModel()
+                .modelFile(models().cubeColumn("deep_chalcedony_pillar_starry_4", modLoc("block/deep_chalcedony_starry_pillar_alt"), modLoc("block/deep_chalcedony_pillar_top"))).rotationX(90).addModel()
+                .partialState().with(RotatedPillarBlock.AXIS, Direction.Axis.X).modelForState().modelFile(models().cubeColumn("deep_chalcedony_pillar_starry_5", modLoc("block/deep_chalcedony_pillar_starry"), modLoc("block/deep_chalcedony_pillar_top"))).rotationX(90).rotationY(90).nextModel()
+                .modelFile(models().cubeColumn("deep_chalcedony_pillar_starry_6", modLoc("block/deep_chalcedony_starry_pillar_alt"), modLoc("block/deep_chalcedony_pillar_top"))).rotationX(90).rotationY(90).addModel();
         blockItem(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR);
 
         directionalBlock(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_BASE.get(), models().cubeColumn("block/deep_chalcedony_pillar_starry_base", modLoc("block/deep_chalcedony_pillar_starry_base"), modLoc("block/deep_chalcedony_pillar_starry_top")));
@@ -802,6 +811,13 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.LILIY_HILLS_TILE);
         horizontalBlock(BlockRegistration.HANNISH_TILE.get(), models().getBuilder("block/hannish_tile").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/hannish_tile"));
         blockItem(BlockRegistration.HANNISH_TILE);
+
+        blockWithItem(BlockRegistration.X_TILE_TERRACOTTA);
+        blockWithItem(BlockRegistration.X_TILE_INVERSE_TERRACOTTA);
+        blockWithItem(BlockRegistration.X_TILE_BLUE);
+        blockWithItem(BlockRegistration.X_TILE_INVERSE_BLUE);
+        blockWithItem(BlockRegistration.X_TILE_GRAY);
+        blockWithItem(BlockRegistration.X_TILE_INVERSE_GRAY);
 
         blockWithItem(BlockRegistration.MARBLE_TILE);
         blockWithItem(BlockRegistration.MARBLE_TILE_CHISELED);

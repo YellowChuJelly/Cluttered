@@ -279,9 +279,19 @@ public class HandDrillItem extends Item {
         put(BlockRegistration.VERDANT_TILE_EDGE.get(), BlockRegistration.VERDANT_TILE_CORNER.get());
         put(BlockRegistration.VERDANT_TILE_CORNER.get(), BlockRegistration.VERDANT_TILE.get());
 
+        put(BlockRegistration.X_TILE_TERRACOTTA.get(), BlockRegistration.X_TILE_INVERSE_TERRACOTTA.get());
+        put(BlockRegistration.X_TILE_INVERSE_TERRACOTTA.get(), BlockRegistration.X_TILE_TERRACOTTA.get());
+
+        put(BlockRegistration.X_TILE_BLUE.get(), BlockRegistration.X_TILE_INVERSE_BLUE.get());
+        put(BlockRegistration.X_TILE_INVERSE_BLUE.get(), BlockRegistration.X_TILE_BLUE.get());
+
+        put(BlockRegistration.X_TILE_GRAY.get(), BlockRegistration.X_TILE_INVERSE_GRAY.get());
+        put(BlockRegistration.X_TILE_INVERSE_GRAY.get(), BlockRegistration.X_TILE_GRAY.get());
+
         put(BlockRegistration.VARYING_BRICKS.get(), BlockRegistration.VARYING_BRICKS_BORDER.get());
         put(BlockRegistration.VARYING_BRICKS_BORDER.get(), BlockRegistration.VARYING_BRICKS.get());
 
+        put(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get(), BlockRegistration.GREENHOUSE_WINDOW.get());
         put(BlockRegistration.GREENHOUSE_WINDOW.get(), BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT.get());
         put(BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT.get(), BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT.get());
         put(BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT.get(), BlockRegistration.GREENHOUSE_WINDOW_POINT.get());
@@ -289,7 +299,7 @@ public class HandDrillItem extends Item {
         put(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_LEFT.get(), BlockRegistration.GREENHOUSE_WINDOW_RADIAL_RIGHT.get());
         put(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_RIGHT.get(), BlockRegistration.GREENHOUSE_WINDOW_ROUNDED.get());
         put(BlockRegistration.GREENHOUSE_WINDOW_ROUNDED.get(), BlockRegistration.GREENHOUSE_WINDOW_CIRCLE.get());
-        put(BlockRegistration.GREENHOUSE_WINDOW_CIRCLE.get(), BlockRegistration.GREENHOUSE_WINDOW.get());
+        put(BlockRegistration.GREENHOUSE_WINDOW_CIRCLE.get(), BlockRegistration.ALABASTER_WINDOW_DIVIDED.get());
 
         put(BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF.get(), BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get());
         put(BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get(), BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get());

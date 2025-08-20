@@ -606,6 +606,13 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.KITCHEN_TILES.get());
         dropSelf(BlockRegistration.STONE_TEXTILES.get());
 
+        dropSelf(BlockRegistration.X_TILE_TERRACOTTA.get());
+        dropSelf(BlockRegistration.X_TILE_INVERSE_TERRACOTTA.get());
+        dropSelf(BlockRegistration.X_TILE_BLUE.get());
+        dropSelf(BlockRegistration.X_TILE_INVERSE_BLUE.get());
+        dropSelf(BlockRegistration.X_TILE_GRAY.get());
+        dropSelf(BlockRegistration.X_TILE_INVERSE_GRAY.get());
+
         dropSelf(BlockRegistration.CHISELED_GOLD_BLOCK.get());
         dropSelf(BlockRegistration.VARYING_BRICKS.get());
         dropSelf(BlockRegistration.VARYING_BRICKS_BORDER.get());

@@ -1215,11 +1215,14 @@ public class ClutteredRecipes extends RecipeProvider {
 
         ArrayList<RegistryObject<Block>> calciteResults = new ArrayList<>();
         calciteResults.add(BlockRegistration.ALABASTER_WAINSCOTING);
-        calciteResults.add(BlockRegistration.ALABASTER_WINDOW_DIVIDED);
-        calciteResults.add(BlockRegistration.ALABASTER_PANEL_AUGUSTINE);
-        calciteResults.add(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA);
-        calciteResults.add(BlockRegistration.ALABASTER_PANEL_ATLANTIC);
-        calciteResults.add(BlockRegistration.ALABASTER_PANEL_CANTERBURY);
+        calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW);
+        calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT);
+        calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT);
+        calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_LEFT);
+        calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_RIGHT);
+        calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_CIRCLE);
+        calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_ROUNDED);
+        calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_POINT);
         calciteResults.add(BlockRegistration.ALABASTER_FRENCH_DOOR);
         calciteResults.add(BlockRegistration.ALABASTER_SCREEN_DOOR);
 
@@ -1501,6 +1504,72 @@ public class ClutteredRecipes extends RecipeProvider {
                 .define('f', ItemTags.SMALL_FLOWERS)
                 .unlockedBy("has_terracotta", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(Items.TERRACOTTA).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.X_TILE_TERRACOTTA.get(), 8)
+                .pattern("tqt")
+                .pattern("qtq")
+                .pattern("tqt")
+                .define('t', Blocks.TERRACOTTA)
+                .define('q', Blocks.QUARTZ_BLOCK)
+                .unlockedBy("has_terracotta", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.TERRACOTTA).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.X_TILE_GRAY.get(), 8)
+                .pattern("ttt")
+                .pattern("tdt")
+                .pattern("ttt")
+                .define('d', Items.GRAY_DYE)
+                .define('t', BlockRegistration.X_TILE_TERRACOTTA.get())
+                .unlockedBy("has_terracotta_x_tiles", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.X_TILE_TERRACOTTA.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.X_TILE_BLUE.get(), 8)
+                .pattern("ttt")
+                .pattern("tdt")
+                .pattern("ttt")
+                .define('d', Items.BLUE_DYE)
+                .define('t', BlockRegistration.X_TILE_TERRACOTTA.get())
+                .unlockedBy("has_terracotta_x_tiles", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.X_TILE_TERRACOTTA.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.X_TILE_INVERSE_TERRACOTTA.get(), 8)
+                .pattern("tqt")
+                .pattern("qtq")
+                .pattern("tqt")
+                .define('q', Blocks.TERRACOTTA)
+                .define('t', Blocks.QUARTZ_BLOCK)
+                .unlockedBy("has_terracotta", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.TERRACOTTA).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.X_TILE_INVERSE_GRAY.get(), 8)
+                .pattern("ttt")
+                .pattern("tdt")
+                .pattern("ttt")
+                .define('d', Items.GRAY_DYE)
+                .define('t', BlockRegistration.X_TILE_INVERSE_TERRACOTTA.get())
+                .unlockedBy("has_terracotta_inverse_x_tiles", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.X_TILE_INVERSE_TERRACOTTA.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.X_TILE_INVERSE_BLUE.get(), 8)
+                .pattern("ttt")
+                .pattern("tdt")
+                .pattern("ttt")
+                .define('d', Items.BLUE_DYE)
+                .define('t', BlockRegistration.X_TILE_INVERSE_TERRACOTTA.get())
+                .unlockedBy("has_terracotta_inverse_x_tiles", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.X_TILE_INVERSE_TERRACOTTA.get()).build()))
                 .showNotification(false)
                 .save(consumer);
 

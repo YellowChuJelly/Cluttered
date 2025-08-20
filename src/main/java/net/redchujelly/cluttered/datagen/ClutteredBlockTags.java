@@ -678,6 +678,12 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.CHALCEDONY_TEXTILES.get())
                 .add(BlockRegistration.DEEP_CHALCEDONY_TEXTILES.get())
                 .add(BlockRegistration.STONE_TEXTILES.get())
+                .add(BlockRegistration.X_TILE_TERRACOTTA.get())
+                .add(BlockRegistration.X_TILE_INVERSE_TERRACOTTA.get())
+                .add(BlockRegistration.X_TILE_BLUE.get())
+                .add(BlockRegistration.X_TILE_INVERSE_BLUE.get())
+                .add(BlockRegistration.X_TILE_GRAY.get())
+                .add(BlockRegistration.X_TILE_INVERSE_GRAY.get())
 
                 .add(BlockRegistration.GREENHOUSE_WINDOW.get())
                 .add(BlockRegistration.GREENHOUSE_WINDOW_CIRCLE.get())

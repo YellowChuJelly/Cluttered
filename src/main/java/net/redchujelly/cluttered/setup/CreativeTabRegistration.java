@@ -608,7 +608,13 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.IRIDESCENT_TILES.get());
                         output.accept(BlockRegistration.SMALL_IRIDESCENT_TILES.get());
                         output.accept(BlockRegistration.KITCHEN_TILES.get());
-                        
+                        output.accept(BlockRegistration.X_TILE_TERRACOTTA.get());
+                        output.accept(BlockRegistration.X_TILE_INVERSE_TERRACOTTA.get());
+                        output.accept(BlockRegistration.X_TILE_BLUE.get());
+                        output.accept(BlockRegistration.X_TILE_INVERSE_BLUE.get());
+                        output.accept(BlockRegistration.X_TILE_GRAY.get());
+                        output.accept(BlockRegistration.X_TILE_INVERSE_GRAY.get());
+
                         output.accept(BlockRegistration.GREENHOUSE_WINDOW.get());
                         output.accept(BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT.get());
                         output.accept(BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT.get());
