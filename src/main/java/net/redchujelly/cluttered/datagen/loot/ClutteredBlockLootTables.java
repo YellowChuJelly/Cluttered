@@ -915,18 +915,6 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.RETRO_TOASTER_WHITE.get());
         dropSelf(BlockRegistration.RETRO_TOASTER_YELLOW.get());
 
-        multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_RED.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_BLUE.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_PURPLE.get());
-
-        multiBlockDropOnlyOneItem(BlockRegistration.POTION_SHELF.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.DORADO_CABINET.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.DORADO_CABINET_CLUTTERED.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.HAVANA_CABINET.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.HAVANA_CABINET_CLUTTERED.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.MUREX_CABINET.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.MUREX_CABINET_CLUTTERED.get());
-
         dropSelf(BlockRegistration.MINI_CACTUS_SET.get());
         dropSelf(BlockRegistration.MUSHROOM_JARS.get());
         dropSelf(BlockRegistration.NEWSPAPER_PILE_SHORT.get());
@@ -948,7 +936,6 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.SMALL_SHELF_PINK.get());
         dropSelf(BlockRegistration.TWO_FLOWER_POTS.get());
         dropSelf(BlockRegistration.TRADITIONAL_RADIO.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.SEWING_MANNEQUIN.get());
         dropSelf(BlockRegistration.STARS_PENDANT.get());
         dropSelf(BlockRegistration.MOON_DECORATION.get());
         dropSelf(BlockRegistration.MOON_PENDANT.get());
@@ -959,9 +946,6 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.JAM_JARS.get());
 
         dropSelf(BlockRegistration.SAFE_NOVAKID.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.VIOLET_SCREEN.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.CONFECTIONERY_TABLE_BLUE.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.CONFECTIONERY_TABLE_PINK.get());
 
         dropSelf(BlockRegistration.OSSON_PENDANT_BLACK.get());
         dropSelf(BlockRegistration.OSSON_PENDANT_BROWN.get());
@@ -971,11 +955,19 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.OSSON_PENDANT_RED.get());
         dropSelf(BlockRegistration.OSSON_PENDANT_YELLOW.get());
         dropSelf(BlockRegistration.OSSON_PENDANT_WHITE.get());
-
-        multiBlockDropOnlyOneItem(BlockRegistration.COTTAGE_BOOKCASE.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.COTTAGE_STANDING_LAMP.get());
-        multiBlockDropOnlyOneItem(BlockRegistration.DRYING_HERBS.get());
         dropSelf(BlockRegistration.HANGING_CLOTH.get());
+        
+        dropSelf(BlockRegistration.RED_MUSHROOM_TV.get());
+        dropSelf(BlockRegistration.RED_MUSHROOM_LAMP.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.RED_MUSHROOM_TABLE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.RED_MUSHROOM_WARDROBE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.RED_MUSHROOM_BED.get());
+
+        dropSelf(BlockRegistration.BLUE_MUSHROOM_TV.get());
+        dropSelf(BlockRegistration.BLUE_MUSHROOM_LAMP.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BLUE_MUSHROOM_TABLE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BLUE_MUSHROOM_WARDROBE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.BLUE_MUSHROOM_BED.get());
 
         this.add(BlockRegistration.HEART_CAKE.get(), noDrop());
         this.add(BlockRegistration.BERRY_CAKE.get(), noDrop());
@@ -1060,6 +1052,25 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.RETRO_CAFE_SHELF_WINDOW.get());
         multiBlockDropOnlyOneItem(BlockRegistration.CHINA_CABINET.get());
         multiBlockDropOnlyOneItem(BlockRegistration.CUPID_BENCH.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.COTTAGE_BOOKCASE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.COTTAGE_STANDING_LAMP.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DRYING_HERBS.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.VIOLET_SCREEN.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.CONFECTIONERY_TABLE_BLUE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.CONFECTIONERY_TABLE_PINK.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.SEWING_MANNEQUIN.get());
+
+        multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_RED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_BLUE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.GUMBALL_MACHINE_PURPLE.get());
+
+        multiBlockDropOnlyOneItem(BlockRegistration.POTION_SHELF.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DORADO_CABINET.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.DORADO_CABINET_CLUTTERED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.HAVANA_CABINET.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.HAVANA_CABINET_CLUTTERED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.MUREX_CABINET.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.MUREX_CABINET_CLUTTERED.get());
 
         multiBlockDropOnlyOneItem(BlockRegistration.TABLE_PLAIN.get());
         multiBlockDropOnlyOneItem(BlockRegistration.TABLE_TABLECLOTH.get());

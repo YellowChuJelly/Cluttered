@@ -281,6 +281,20 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.NIGHTSTAND_GREEN);
         blockitemFromModel(BlockRegistration.ENDTABLE_DECOR);
 
+        blockitemFromModel(BlockRegistration.RED_MUSHROOM_TABLE);
+        blockitemFromModel(BlockRegistration.RED_MUSHROOM_LAMP);
+        blockitemFromModel(BlockRegistration.RED_MUSHROOM_WARDROBE);
+        blockitemFromModel(BlockRegistration.RED_MUSHROOM_BED);
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(BlockRegistration.RED_MUSHROOM_TV.get()).getPath(),
+                new ResourceLocation(Cluttered.MODID, "block/red_mushroom_tv_0"));
+
+        blockitemFromModel(BlockRegistration.BLUE_MUSHROOM_TABLE);
+        blockitemFromModel(BlockRegistration.BLUE_MUSHROOM_LAMP);
+        blockitemFromModel(BlockRegistration.BLUE_MUSHROOM_WARDROBE);
+        blockitemFromModel(BlockRegistration.BLUE_MUSHROOM_BED);
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(BlockRegistration.BLUE_MUSHROOM_TV.get()).getPath(),
+                new ResourceLocation(Cluttered.MODID, "block/blue_mushroom_tv_0"));
+
         blockitemFromModel(BlockRegistration.COTTAGE_CHAIR);
         blockitemFromModel(BlockRegistration.COTTAGE_ARMCHAIR);
         blockitemFromModel(BlockRegistration.COTTAGE_CHAIR_CUSHIONED);

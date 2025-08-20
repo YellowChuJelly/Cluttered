@@ -1650,6 +1650,26 @@ public class ClutteredBlockstates extends BlockStateProvider {
         multiblockParts(BlockRegistration.TABLE_PLAIN);
         multiblockParts(BlockRegistration.TABLE_TABLECLOTH);
 
+        hFacingBlockWithCustomModel(BlockRegistration.RED_MUSHROOM_LAMP);
+        multiblockParts(BlockRegistration.RED_MUSHROOM_TABLE);
+        multiblockParts(BlockRegistration.RED_MUSHROOM_WARDROBE);
+        multiblockParts(BlockRegistration.RED_MUSHROOM_BED);
+        this.getVariantBuilder(BlockRegistration.RED_MUSHROOM_TV.get())
+                .forAllStates(state ->
+                        ConfiguredModel.builder().modelFile(models().getExistingFile(modLoc("red_mushroom_tv" + "_" + state.getValue((MushroomTVBlock.CHANNEL)))))
+                                .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot())
+                                .build());
+
+        hFacingBlockWithCustomModel(BlockRegistration.BLUE_MUSHROOM_LAMP);
+        multiblockParts(BlockRegistration.BLUE_MUSHROOM_TABLE);
+        multiblockParts(BlockRegistration.BLUE_MUSHROOM_WARDROBE);
+        multiblockParts(BlockRegistration.BLUE_MUSHROOM_BED);
+        this.getVariantBuilder(BlockRegistration.BLUE_MUSHROOM_TV.get())
+                .forAllStates(state ->
+                        ConfiguredModel.builder().modelFile(models().getExistingFile(modLoc("blue_mushroom_tv" + "_" + state.getValue((MushroomTVBlock.CHANNEL)))))
+                                .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot())
+                                .build());
+
         //ENDTABLES
         hFacingBlockWithCustomModel(BlockRegistration.COTTAGE_SIDE_TABLE);
         hFacingBlockWithCustomModel(BlockRegistration.ENDTABLE_AMETHYST);

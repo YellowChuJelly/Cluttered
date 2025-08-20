@@ -1008,6 +1008,17 @@ public class CreativeTabRegistration {
 
                         output.accept(BlockRegistration.JAM_JARS.get());
 
+                        output.accept(BlockRegistration.RED_MUSHROOM_TABLE.get());
+                        output.accept(BlockRegistration.RED_MUSHROOM_WARDROBE.get());
+                        output.accept(BlockRegistration.RED_MUSHROOM_BED.get());
+                        output.accept(BlockRegistration.RED_MUSHROOM_TV.get());
+                        output.accept(BlockRegistration.RED_MUSHROOM_LAMP.get());
+                        output.accept(BlockRegistration.BLUE_MUSHROOM_TABLE.get());
+                        output.accept(BlockRegistration.BLUE_MUSHROOM_WARDROBE.get());
+                        output.accept(BlockRegistration.BLUE_MUSHROOM_BED.get());
+                        output.accept(BlockRegistration.BLUE_MUSHROOM_TV.get());
+                        output.accept(BlockRegistration.BLUE_MUSHROOM_LAMP.get());
+
                         output.accept(BlockRegistration.BOOK_OPEN.get());
                         output.accept(BlockRegistration.BRASS_KEY.get());
                         output.accept(BlockRegistration.CARD_INDEX.get());

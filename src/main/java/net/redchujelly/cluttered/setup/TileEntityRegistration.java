@@ -112,6 +112,8 @@ public class TileEntityRegistration {
             BlockRegistration.CARD_INDEX,
             BlockRegistration.GENERAL_STORE_CABINET,
             BlockRegistration.DARKWOOD_CABINET,
+            BlockRegistration.RED_MUSHROOM_WARDROBE,
+            BlockRegistration.BLUE_MUSHROOM_WARDROBE,
     };
 
     static RegistryObject<?>[] fridges = new RegistryObject[]{
@@ -134,9 +136,7 @@ public class TileEntityRegistration {
     };
 
 
-
-
-
+    //IntelliJ keeps telling me not to do it this way basically but...
     public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> ONE_ROW_BE = registerWithStorage(
             () -> TileEntityRegistration.ONE_ROW_BE, 1,  (RegistryObject<Block>[]) oneRow, "one_row_be");
     public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> TWO_ROWS_BE = registerWithStorage(

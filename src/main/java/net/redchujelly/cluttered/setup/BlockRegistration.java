@@ -1380,6 +1380,28 @@ public class BlockRegistration {
     public static final RegistryObject<Block> POLAROID_CAMERA = registerBlock("polaroid_camera",
             () -> new PolaroidCameraBlock(BlockBehaviour.Properties.copy(Blocks.GRAY_WOOL).sound(SoundType.SCAFFOLDING)));
 
+    public static final RegistryObject<Block> RED_MUSHROOM_TV = registerBlock("red_mushroom_tv",
+            () -> new MushroomTVBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.RED)));
+    public static final RegistryObject<Block> RED_MUSHROOM_LAMP = registerBlock("red_mushroom_lamp",
+            () -> new MushroomLampBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE)));
+    public static final RegistryObject<Block> RED_MUSHROOM_TABLE = registerBlock("red_mushroom_table",
+            () -> new MushroomTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.RED)));
+    public static final RegistryObject<Block> RED_MUSHROOM_WARDROBE = registerBlock("red_mushroom_wardrobe",
+            () -> new MushroomWardrobeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.RED).noOcclusion()));
+    public static final RegistryObject<Block> RED_MUSHROOM_BED = registerBlock("red_mushroom_bed",
+            () -> new MushroomBedBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.RED)));
+
+    public static final RegistryObject<Block> BLUE_MUSHROOM_TV = registerBlock("blue_mushroom_tv",
+            () -> new MushroomTVBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE)));
+    public static final RegistryObject<Block> BLUE_MUSHROOM_LAMP = registerBlock("blue_mushroom_lamp",
+            () -> new MushroomLampBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE)));
+    public static final RegistryObject<Block> BLUE_MUSHROOM_TABLE = registerBlock("blue_mushroom_table",
+            () -> new MushroomTableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE)));
+    public static final RegistryObject<Block> BLUE_MUSHROOM_WARDROBE = registerBlock("blue_mushroom_wardrobe",
+            () -> new MushroomWardrobeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE).noOcclusion()));
+    public static final RegistryObject<Block> BLUE_MUSHROOM_BED = registerBlock("blue_mushroom_bed",
+            () -> new MushroomBedBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE)));
+
     //TODO idr if i ahve another to do somewhere else sorry
     public static final RegistryObject<Block> BOOK_OPEN = registerBlock("book_open",
             () -> new ShortMediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.SPORE_BLOSSOM).strength(0.2f)));
