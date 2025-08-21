@@ -637,6 +637,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.GREENHOUSE_WINDOW_CIRCLE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.GREENHOUSE_WINDOW_CIRCLE.get()));
         add(BlockRegistration.GREENHOUSE_WINDOW_POINT.get(), block -> createSilkTouchOnlyTable(BlockRegistration.GREENHOUSE_WINDOW_POINT.get()));
         add(BlockRegistration.GREENHOUSE_WINDOW_ROUNDED.get(), block -> createSilkTouchOnlyTable(BlockRegistration.GREENHOUSE_WINDOW_ROUNDED.get()));
+        add(BlockRegistration.GREENHOUSE_WINDOW_STAIRS.get(), block -> createSilkTouchOnlyTable(BlockRegistration.GREENHOUSE_WINDOW_STAIRS.get()));
 
 
         add(BlockRegistration.WOOD_WINDOW_DIVIDED.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_WINDOW_DIVIDED.get()));

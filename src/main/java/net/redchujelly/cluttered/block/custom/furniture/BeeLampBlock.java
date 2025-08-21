@@ -38,8 +38,8 @@ public class BeeLampBlock extends SmallLampBlock{
 
     private void updateNeighbors(BlockState pState, Level pLevel, BlockPos pPos){
         pLevel.updateNeighborsAt(pPos, this);
-
     }
+
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pLevel.isClientSide){

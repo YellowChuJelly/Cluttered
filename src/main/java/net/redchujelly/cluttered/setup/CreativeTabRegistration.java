@@ -616,6 +616,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.X_TILE_INVERSE_GRAY.get());
 
                         output.accept(BlockRegistration.GREENHOUSE_WINDOW.get());
+                        output.accept(BlockRegistration.GREENHOUSE_WINDOW_STAIRS.get());
                         output.accept(BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT.get());
                         output.accept(BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT.get());
                         output.accept(BlockRegistration.GREENHOUSE_WINDOW_POINT.get());

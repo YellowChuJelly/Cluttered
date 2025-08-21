@@ -530,6 +530,17 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.HANGING_SHELVES_PLANTS.get())
                 .add(BlockRegistration.HANGING_SHELVES_POTTERY.get())
                 .add(BlockRegistration.SMALL_BUSH.get())
+
+                .add(BlockRegistration.RED_MUSHROOM_TV.get())
+                .add(BlockRegistration.RED_MUSHROOM_WARDROBE.get())
+                .add(BlockRegistration.RED_MUSHROOM_TABLE.get())
+                .add(BlockRegistration.RED_MUSHROOM_BED.get())
+                .add(BlockRegistration.RED_MUSHROOM_LAMP.get())
+                .add(BlockRegistration.BLUE_MUSHROOM_TV.get())
+                .add(BlockRegistration.BLUE_MUSHROOM_WARDROBE.get())
+                .add(BlockRegistration.BLUE_MUSHROOM_TABLE.get())
+                .add(BlockRegistration.BLUE_MUSHROOM_BED.get())
+                .add(BlockRegistration.BLUE_MUSHROOM_LAMP.get())
                 ;
 
         tag(BlockTags.WOODEN_DOORS)
@@ -693,6 +704,7 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT.get())
                 .add(BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT.get())
                 .add(BlockRegistration.GREENHOUSE_WINDOW_POINT.get())
+                .add(BlockRegistration.GREENHOUSE_WINDOW_STAIRS.get())
 
                 .add(BlockRegistration.VERDANT_TILE.get())
                 .add(BlockRegistration.VERDANT_TILE_EDGE.get())

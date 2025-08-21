@@ -68,6 +68,53 @@ public class ClutteredItemTags extends ItemTagsProvider {
                 .add(BlockRegistration.POLAROIDS_C.get().asItem());
         tag(ItemTags.LEAVES)
                 .add(BlockRegistration.MAPLE_LEAVES_FLOWERING.get().asItem());
+        
+        tag(TagRegistration.Items.WILLOW_LOG)
+                .add(BlockRegistration.WILLOW_LOG.get().asItem())
+                .add(BlockRegistration.WILLOW_WOOD.get().asItem())
+                .add(BlockRegistration.STRIPPED_WILLOW_LOG.get().asItem())
+                .add(BlockRegistration.STRIPPED_WILLOW_WOOD.get().asItem());
+        tag(TagRegistration.Items.FLOWERING_WILLOW_LOG)
+                .add(BlockRegistration.FLOWERING_WILLOW_LOG.get().asItem())
+                .add(BlockRegistration.FLOWERING_WILLOW_WOOD.get().asItem())
+                .add(BlockRegistration.STRIPPED_FLOWERING_WILLOW_LOG.get().asItem())
+                .add(BlockRegistration.STRIPPED_FLOWERING_WILLOW_WOOD.get().asItem());
+        tag(TagRegistration.Items.POPLAR_LOG)
+                .add(BlockRegistration.POPLAR_LOG.get().asItem())
+                .add(BlockRegistration.POPLAR_WOOD.get().asItem())
+                .add(BlockRegistration.STRIPPED_POPLAR_LOG.get().asItem())
+                .add(BlockRegistration.STRIPPED_POPLAR_WOOD.get().asItem());
+        tag(TagRegistration.Items.FLOWERING_POPLAR_LOG)
+                .add(BlockRegistration.FLOWERING_POPLAR_LOG.get().asItem())
+                .add(BlockRegistration.FLOWERING_POPLAR_WOOD.get().asItem())
+                .add(BlockRegistration.STRIPPED_FLOWERING_POPLAR_LOG.get().asItem())
+                .add(BlockRegistration.STRIPPED_FLOWERING_POPLAR_WOOD.get().asItem());
+        tag(TagRegistration.Items.CRABAPPLE_LOG)
+                .add(BlockRegistration.CRABAPPLE_LOG.get().asItem())
+                .add(BlockRegistration.CRABAPPLE_WOOD.get().asItem())
+                .add(BlockRegistration.STRIPPED_CRABAPPLE_LOG.get().asItem())
+                .add(BlockRegistration.STRIPPED_CRABAPPLE_WOOD.get().asItem());
+        tag(TagRegistration.Items.FLOWERING_CRABAPPLE_LOG)
+                .add(BlockRegistration.FLOWERING_CRABAPPLE_LOG.get().asItem())
+                .add(BlockRegistration.FLOWERING_CRABAPPLE_WOOD.get().asItem())
+                .add(BlockRegistration.STRIPPED_FLOWERING_CRABAPPLE_LOG.get().asItem())
+                .add(BlockRegistration.STRIPPED_FLOWERING_CRABAPPLE_WOOD.get().asItem());
+        tag(TagRegistration.Items.SYCAMORE_LOG)
+                .add(BlockRegistration.SYCAMORE_LOG.get().asItem())
+                .add(BlockRegistration.SYCAMORE_WOOD.get().asItem())
+                .add(BlockRegistration.STRIPPED_SYCAMORE_LOG.get().asItem())
+                .add(BlockRegistration.STRIPPED_SYCAMORE_WOOD.get().asItem());
+        tag(TagRegistration.Items.MAPLE_LOG)
+                .add(BlockRegistration.MAPLE_LOG.get().asItem())
+                .add(BlockRegistration.MAPLE_WOOD.get().asItem())
+                .add(BlockRegistration.STRIPPED_MAPLE_LOG.get().asItem())
+                .add(BlockRegistration.STRIPPED_MAPLE_WOOD.get().asItem());
+        tag(TagRegistration.Items.BLUE_MUSHROOM_LOG)
+                .add(BlockRegistration.BLUE_MUSHROOM_LOG.get().asItem())
+                .add(BlockRegistration.BLUE_MUSHROOM_WOOD.get().asItem());
+        tag(TagRegistration.Items.RED_MUSHROOM_LOG)
+                .add(BlockRegistration.RED_MUSHROOM_LOG.get().asItem())
+                .add(BlockRegistration.RED_MUSHROOM_WOOD.get().asItem());
     }
 
     public void tagNewWoodset(String woodType){

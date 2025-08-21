@@ -6,6 +6,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
@@ -1223,6 +1224,7 @@ public class ClutteredRecipes extends RecipeProvider {
         calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_CIRCLE);
         calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_ROUNDED);
         calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_POINT);
+        calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_STAIRS);
         calciteResults.add(BlockRegistration.ALABASTER_FRENCH_DOOR);
         calciteResults.add(BlockRegistration.ALABASTER_SCREEN_DOOR);
 
@@ -1234,6 +1236,16 @@ public class ClutteredRecipes extends RecipeProvider {
                 .define('w', BlockRegistration.ALABASTER_WINDOW_DIVIDED.get())
                 .unlockedBy("has_alabaster_window_divided", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.GREENHOUSE_WINDOW_STAIRS.get(), 4)
+                .pattern("w  ")
+                .pattern("ww ")
+                .pattern("www")
+                .define('w', BlockRegistration.GREENHOUSE_WINDOW.get())
+                .unlockedBy("has_greenhouse_window", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.GREENHOUSE_WINDOW.get()).build()))
                 .showNotification(false)
                 .save(consumer);
 
@@ -6011,6 +6023,118 @@ public class ClutteredRecipes extends RecipeProvider {
                     .define('b', Items.CHISELED_STONE_BRICKS)
                     .unlockedBy("has_chiseled_stone_bricks", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHISELED_STONE_BRICKS).build()))
+                    .showNotification(true)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.RED_MUSHROOM_LAMP.get())
+                    .pattern("r")
+                    .pattern("l")
+                    .pattern("s")
+                    .define('s', TagRegistration.Items.RED_MUSHROOM_LOG)
+                    .define('r', BlockRegistration.RED_MUSHROOM_CAP.get())
+                    .define('l', Items.REDSTONE_LAMP)
+                    .unlockedBy("has_redstone_lamp", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.REDSTONE_LAMP).build()))
+                    .showNotification(true)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.BLUE_MUSHROOM_LAMP.get())
+                    .pattern("r")
+                    .pattern("l")
+                    .pattern("s")
+                    .define('s', TagRegistration.Items.BLUE_MUSHROOM_LOG)
+                    .define('r', BlockRegistration.BLUE_MUSHROOM_CAP.get())
+                    .define('l', Items.REDSTONE_LAMP)
+                    .unlockedBy("has_redstone_lamp", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.REDSTONE_LAMP).build()))
+                    .showNotification(true)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.RED_MUSHROOM_BED.get())
+                    .pattern("rbr")
+                    .define('b', ItemTags.BEDS)
+                    .define('r', BlockRegistration.RED_MUSHROOM_CAP.get())
+                    .unlockedBy("has_bed", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(ItemTags.BEDS).build()))
+                    .showNotification(true)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.BLUE_MUSHROOM_BED.get())
+                    .pattern("rbr")
+                    .define('b', ItemTags.BEDS)
+                    .define('r', BlockRegistration.BLUE_MUSHROOM_CAP.get())
+                    .unlockedBy("has_bed", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(ItemTags.BEDS).build()))
+                    .showNotification(true)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.RED_MUSHROOM_WARDROBE.get())
+                    .pattern("rcr")
+                    .pattern("rcr")
+                    .pattern(" p ")
+                    .define('c', Items.CHEST)
+                    .define('r', BlockRegistration.RED_MUSHROOM_CAP.get())
+                    .define('p', TagRegistration.Items.RED_MUSHROOM_LOG)
+                    .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.CHEST).build()))
+                    .showNotification(true)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.BLUE_MUSHROOM_WARDROBE.get())
+                    .pattern("rcr")
+                    .pattern("rcr")
+                    .pattern(" p ")
+                    .define('c', Items.CHEST)
+                    .define('r', BlockRegistration.BLUE_MUSHROOM_CAP.get())
+                    .define('p', TagRegistration.Items.BLUE_MUSHROOM_LOG)
+                    .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.CHEST).build()))
+                    .showNotification(true)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.RED_MUSHROOM_TABLE.get())
+                    .pattern("rrr")
+                    .pattern(" p ")
+                    .define('r', BlockRegistration.RED_MUSHROOM_CAP.get())
+                    .define('p', TagRegistration.Items.RED_MUSHROOM_LOG)
+                    .unlockedBy("has_red_mushroom_cap", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(BlockRegistration.RED_MUSHROOM_CAP.get()).build()))
+                    .showNotification(true)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.BLUE_MUSHROOM_TABLE.get())
+                    .pattern("rrr")
+                    .pattern(" p ")
+                    .define('r', BlockRegistration.BLUE_MUSHROOM_CAP.get())
+                    .define('p', TagRegistration.Items.BLUE_MUSHROOM_LOG)
+                    .unlockedBy("has_blue_mushroom_cap", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(BlockRegistration.BLUE_MUSHROOM_CAP.get()).build()))
+                    .showNotification(true)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.RED_MUSHROOM_TV.get())
+                    .pattern(" l ")
+                    .pattern("rpr")
+                    .pattern("rsr")
+                    .define('r', BlockRegistration.RED_MUSHROOM_CAP.get())
+                    .define('p', Items.TINTED_GLASS)
+                    .define('s', Items.REDSTONE)
+                    .define('l', Items.LIGHTNING_ROD)
+                    .unlockedBy("has_lightning_rod", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.LIGHTNING_ROD).build()))
+                    .showNotification(true)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.BLUE_MUSHROOM_TV.get())
+                    .pattern(" l ")
+                    .pattern("rpr")
+                    .pattern("rsr")
+                    .define('r', BlockRegistration.BLUE_MUSHROOM_CAP.get())
+                    .define('p', Items.TINTED_GLASS)
+                    .define('s', Items.REDSTONE)
+                    .define('l', Items.LIGHTNING_ROD)
+                    .unlockedBy("has_lightning_rod", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.LIGHTNING_ROD).build()))
                     .showNotification(true)
                     .save(consumer);
 

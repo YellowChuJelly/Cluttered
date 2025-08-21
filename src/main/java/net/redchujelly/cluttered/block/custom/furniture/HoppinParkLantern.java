@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -31,6 +32,8 @@ public class HoppinParkLantern extends SmallLampBlock{
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
+        boolean isWaterlogged = pContext.getLevel().getFluidState(pContext.getClickedPos()).getType() == Fluids.WATER;
+
         Direction surface = pContext.getClickedFace();
         Direction facing = pContext.getHorizontalDirection().getOpposite();
         LanternPlaceState shouldPlaceOn;
@@ -45,7 +48,7 @@ public class HoppinParkLantern extends SmallLampBlock{
             shouldPlaceOn = LanternPlaceState.WALL;
             facing = pContext.getClickedFace().getOpposite();
         }
-        return defaultBlockState().setValue(PLACE_STATE, shouldPlaceOn).setValue(FACING, facing);
+        return defaultBlockState().setValue(PLACE_STATE, shouldPlaceOn).setValue(FACING, facing).setValue(WATERLOGGED, isWaterlogged);
 
     }
 
