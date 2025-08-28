@@ -78,6 +78,14 @@ public class ClutteredBlockstates extends BlockStateProvider {
                                 )).renderType("cutout"))).build());
 
 
+
+
+        signBlock(((StandingSignBlock) BlockRegistration.WILLOW_SIGN.get()), ((WallSignBlock) BlockRegistration.WILLOW_WALL_SIGN.get()),
+                blockTexture(BlockRegistration.WILLOW_PLANKS.get()));
+
+        hangingSignBlock(BlockRegistration.WILLOW_HANGING_SIGN.get(), BlockRegistration.WILLOW_WALL_HANGING_SIGN.get(), blockTexture(BlockRegistration.WILLOW_PLANKS.get()));
+
+
         //FLOWERING WILLOW WOODSET
         blockWithItem((BlockRegistration.FLOWERING_WILLOW_PLANKS));
 
@@ -171,6 +179,13 @@ public class ClutteredBlockstates extends BlockStateProvider {
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.FLOWERING_POPLAR_WINDOW_PANE.get(), modLoc("block/flowering_poplar_window"), modLoc("block/poplar_glass_pane_top"), "translucent");
         columnBlockWithItem(BlockRegistration.FLOWERING_POPLAR_BOOKSHELF, BlockRegistration.FLOWERING_POPLAR_PLANKS);
         simpleBlockWithItem(BlockRegistration.FLOWERING_POPLAR_LEAVES.get(), models().cubeAll("flowering_poplar_leaves", modLoc("block/flowering_poplar_leaves")).renderType("cutout"));
+
+
+
+        signBlock(((StandingSignBlock) BlockRegistration.POPLAR_SIGN.get()), ((WallSignBlock) BlockRegistration.POPLAR_WALL_SIGN.get()),
+                blockTexture(BlockRegistration.POPLAR_PLANKS.get()));
+
+        hangingSignBlock(BlockRegistration.POPLAR_HANGING_SIGN.get(), BlockRegistration.POPLAR_WALL_HANGING_SIGN.get(), blockTexture(BlockRegistration.POPLAR_PLANKS.get()));
 
         //CRABAPPLE WOODSET
         blockWithItem((BlockRegistration.CRABAPPLE_PLANKS));
@@ -1780,6 +1795,26 @@ public class ClutteredBlockstates extends BlockStateProvider {
     }
 
     //From the Kaupenjoe 1.20.1 tutorial #34
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
+        ModelFile sign = models().sign(name(signBlock), texture);
+        hangingSignBlock(signBlock, wallSignBlock, sign);
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ModelFile sign) {
+        simpleBlock(signBlock, sign);
+        simpleBlock(wallSignBlock, sign);
+    }
+
+
+    private String name(Block block) {
+        return key(block).getPath();
+    }
+
+    private ResourceLocation key(Block block) {
+        return ForgeRegistries.BLOCKS.getKey(block);
+    }
+
     private void blockItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile(Cluttered.MODID +
                 ":block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));

@@ -9,9 +9,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
-import net.redchujelly.cluttered.block.entity.CardboardBoxBlockEntity;
-import net.redchujelly.cluttered.block.entity.CustomStorageBlockEntity;
-import net.redchujelly.cluttered.block.entity.FridgeBlockEntity;
+import net.redchujelly.cluttered.block.entity.*;
 
 import java.util.Arrays;
 import java.util.function.Supplier;
@@ -147,14 +145,62 @@ public class TileEntityRegistration {
     public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> SIX_ROWS_BE = registerWithStorage(
             () -> TileEntityRegistration.SIX_ROWS_BE, 6,  (RegistryObject<Block>[]) sixRows, "six_rows_be");
 
-
-
     public static final RegistryObject<BlockEntityType<CustomStorageBlockEntity>> SAFE_BE = registerWithStorageAndSounds(
             () -> TileEntityRegistration.SAFE_BE, 4,  (RegistryObject<Block>[]) safe, "safe_be", SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE);
     public static final RegistryObject<BlockEntityType<FridgeBlockEntity>> RETRO_FRIDGE_BE = registerFridge(
             () -> TileEntityRegistration.RETRO_FRIDGE_BE, 6,  (RegistryObject<Block>[]) fridges, "retro_fridge_be");
     public static final RegistryObject<BlockEntityType<CardboardBoxBlockEntity>> CARDBOARD_BOX_BE = registerCardboardBox(
             () -> TileEntityRegistration.CARDBOARD_BOX_BE, 2,  (RegistryObject<Block>[]) cardboardBox, "cardboard_box_be");
+
+    public static final RegistryObject<BlockEntityType<ClutteredSignBlockEntity>> CLUTTERED_SIGN_BE = BLOCK_ENTITIES.register(
+            "cluttered_sign", () -> BlockEntityType.Builder.of(ClutteredSignBlockEntity::new,
+                            BlockRegistration.WILLOW_SIGN.get(),
+                            BlockRegistration.WILLOW_WALL_SIGN.get(),
+                            BlockRegistration.FLOWERING_WILLOW_SIGN.get(),
+                            BlockRegistration.FLOWERING_WILLOW_WALL_SIGN.get(),
+                            BlockRegistration.POPLAR_SIGN.get(),
+                            BlockRegistration.POPLAR_WALL_SIGN.get(),
+                            BlockRegistration.FLOWERING_POPLAR_SIGN.get(),
+                            BlockRegistration.FLOWERING_POPLAR_WALL_SIGN.get(),
+                            BlockRegistration.CRABAPPLE_SIGN.get(),
+                            BlockRegistration.CRABAPPLE_WALL_SIGN.get(),
+                            BlockRegistration.FLOWERING_CRABAPPLE_SIGN.get(),
+                            BlockRegistration.FLOWERING_CRABAPPLE_WALL_SIGN.get(),
+                            BlockRegistration.SYCAMORE_SIGN.get(),
+                            BlockRegistration.SYCAMORE_WALL_SIGN.get(),
+                            BlockRegistration.MAPLE_SIGN.get(),
+                            BlockRegistration.MAPLE_WALL_SIGN.get(),
+                            BlockRegistration.BLUE_MUSHROOM_SIGN.get(),
+                            BlockRegistration.BLUE_MUSHROOM_WALL_SIGN.get(),
+                            BlockRegistration.RED_MUSHROOM_SIGN.get(),
+                            BlockRegistration.RED_MUSHROOM_WALL_SIGN.get()
+                    ).build(null)
+    );
+
+    public static final RegistryObject<BlockEntityType<ClutteredHangingSignBlockEntity>> CLUTTERED_HANGING_SIGN_BE = BLOCK_ENTITIES.register(
+            "cluttered_hanging_sign", () -> BlockEntityType.Builder.of(ClutteredHangingSignBlockEntity::new,
+                            BlockRegistration.WILLOW_HANGING_SIGN.get(),
+                            BlockRegistration.WILLOW_WALL_HANGING_SIGN.get(),
+                            BlockRegistration.FLOWERING_WILLOW_HANGING_SIGN.get(),
+                            BlockRegistration.FLOWERING_WILLOW_WALL_HANGING_SIGN.get(),
+                            BlockRegistration.POPLAR_HANGING_SIGN.get(),
+                            BlockRegistration.POPLAR_WALL_HANGING_SIGN.get(),
+                            BlockRegistration.FLOWERING_POPLAR_HANGING_SIGN.get(),
+                            BlockRegistration.FLOWERING_POPLAR_WALL_HANGING_SIGN.get(),
+                            BlockRegistration.CRABAPPLE_HANGING_SIGN.get(),
+                            BlockRegistration.CRABAPPLE_WALL_HANGING_SIGN.get(),
+                            BlockRegistration.FLOWERING_CRABAPPLE_HANGING_SIGN.get(),
+                            BlockRegistration.FLOWERING_CRABAPPLE_WALL_HANGING_SIGN.get(),
+                            BlockRegistration.SYCAMORE_HANGING_SIGN.get(),
+                            BlockRegistration.SYCAMORE_WALL_HANGING_SIGN.get(),
+                            BlockRegistration.MAPLE_HANGING_SIGN.get(),
+                            BlockRegistration.MAPLE_WALL_HANGING_SIGN.get(),
+                            BlockRegistration.BLUE_MUSHROOM_HANGING_SIGN.get(),
+                            BlockRegistration.BLUE_MUSHROOM_WALL_HANGING_SIGN.get(),
+                            BlockRegistration.RED_MUSHROOM_HANGING_SIGN.get(),
+                            BlockRegistration.RED_MUSHROOM_WALL_HANGING_SIGN.get()
+                    ).build(null)
+    );
 
 
 
@@ -164,7 +210,7 @@ public class TileEntityRegistration {
     }
 
 
-    //Basically from the tanuki-decor code with some changes
+    //Basically from the tanuki-decor code with some changes (i made it worse sorry)
     private static RegistryObject<BlockEntityType<CustomStorageBlockEntity>> registerWithStorage(Supplier<Supplier<BlockEntityType<CustomStorageBlockEntity>>> type, int rows, RegistryObject<Block>[] block, String name){
 
         return BLOCK_ENTITIES.register(name, () -> BlockEntityType.Builder.of((blockPos, blockState) ->

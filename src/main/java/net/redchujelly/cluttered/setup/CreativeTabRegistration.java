@@ -41,6 +41,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.WILLOW_TRAPDOOR.get());
                         output.accept(BlockRegistration.WILLOW_PRESSURE_PLATE.get());
                         output.accept(BlockRegistration.WILLOW_BUTTON.get());
+                        output.accept(ItemRegistration.WILLOW_SIGN.get());
+                        output.accept(ItemRegistration.WILLOW_HANGING_SIGN.get());
                         output.accept(BlockRegistration.WILLOW_BOOKSHELF_BLACK_CAT.get());
                         output.accept(BlockRegistration.WILLOW_BOOKSHELF_CALICO_CAT.get());
                         output.accept(BlockRegistration.WILLOW_BOOKSHELF_COBWEB.get());
@@ -69,6 +71,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.FLOWERING_WILLOW_TRAPDOOR.get());
                         output.accept(BlockRegistration.FLOWERING_WILLOW_PRESSURE_PLATE.get());
                         output.accept(BlockRegistration.FLOWERING_WILLOW_BUTTON.get());
+                        output.accept(ItemRegistration.FLOWERING_WILLOW_SIGN.get());
+                        output.accept(ItemRegistration.FLOWERING_WILLOW_HANGING_SIGN.get());
                         //output.accept(ItemRegistration.FLOWERING_WILLOW_BOAT.get());
                         //output.accept(ItemRegistration.FLOWERING_WILLOW_CHEST_BOAT.get());
                         output.accept(BlockRegistration.FLOWERING_WILLOW_WINDOW.get());
@@ -91,6 +95,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.POPLAR_TRAPDOOR.get());
                         output.accept(BlockRegistration.POPLAR_PRESSURE_PLATE.get());
                         output.accept(BlockRegistration.POPLAR_BUTTON.get());
+                        output.accept(ItemRegistration.POPLAR_SIGN.get());
+                        output.accept(ItemRegistration.POPLAR_HANGING_SIGN.get());
                         //output.accept(ItemRegistration.POPLAR_BOAT.get());
                         //output.accept(ItemRegistration.POPLAR_CHEST_BOAT.get());
                         output.accept(BlockRegistration.POPLAR_BOOKSHELF.get());
@@ -113,6 +119,9 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.FLOWERING_POPLAR_DOOR.get());
                         output.accept(BlockRegistration.FLOWERING_POPLAR_TRAPDOOR.get());
                         output.accept(BlockRegistration.FLOWERING_POPLAR_PRESSURE_PLATE.get());
+                        output.accept(BlockRegistration.FLOWERING_POPLAR_BUTTON.get());
+                        output.accept(ItemRegistration.FLOWERING_POPLAR_SIGN.get());
+                        output.accept(ItemRegistration.FLOWERING_POPLAR_HANGING_SIGN.get());
                         output.accept(BlockRegistration.FLOWERING_POPLAR_BUTTON.get());
                         //output.accept(ItemRegistration.FLOWERING_POPLAR_BOAT.get());
                         //output.accept(ItemRegistration.FLOWERING_POPLAR_CHEST_BOAT.get());
@@ -137,6 +146,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.CRABAPPLE_TRAPDOOR.get());
                         output.accept(BlockRegistration.CRABAPPLE_PRESSURE_PLATE.get());
                         output.accept(BlockRegistration.CRABAPPLE_BUTTON.get());
+                        output.accept(ItemRegistration.CRABAPPLE_SIGN.get());
+                        output.accept(ItemRegistration.CRABAPPLE_HANGING_SIGN.get());
                         //output.accept(ItemRegistration.CRABAPPLE_BOAT.get());
                         //output.accept(ItemRegistration.CRABAPPLE_CHEST_BOAT.get());
                         output.accept(BlockRegistration.CRABAPPLE_BOOKSHELF.get());
@@ -160,6 +171,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.FLOWERING_CRABAPPLE_TRAPDOOR.get());
                         output.accept(BlockRegistration.FLOWERING_CRABAPPLE_PRESSURE_PLATE.get());
                         output.accept(BlockRegistration.FLOWERING_CRABAPPLE_BUTTON.get());
+                        output.accept(ItemRegistration.FLOWERING_CRABAPPLE_SIGN.get());
+                        output.accept(ItemRegistration.FLOWERING_CRABAPPLE_HANGING_SIGN.get());
                         //output.accept(ItemRegistration.FLOWERING_CRABAPPLE_BOAT.get());
                         //output.accept(ItemRegistration.FLOWERING_CRABAPPLE_CHEST_BOAT.get());
                         output.accept(BlockRegistration.FLOWERING_CRABAPPLE_BOOKSHELF.get());
@@ -183,6 +196,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.SYCAMORE_TRAPDOOR.get());
                         output.accept(BlockRegistration.SYCAMORE_PRESSURE_PLATE.get());
                         output.accept(BlockRegistration.SYCAMORE_BUTTON.get());
+                        output.accept(ItemRegistration.SYCAMORE_SIGN.get());
+                        output.accept(ItemRegistration.SYCAMORE_HANGING_SIGN.get());
                         //output.accept(ItemRegistration.SYCAMORE_BOAT.get());
                         //output.accept(ItemRegistration.SYCAMORE_CHEST_BOAT.get());
                         output.accept(BlockRegistration.SYCAMORE_BOOKSHELF.get());
@@ -208,6 +223,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.MAPLE_TRAPDOOR.get());
                         output.accept(BlockRegistration.MAPLE_PRESSURE_PLATE.get());
                         output.accept(BlockRegistration.MAPLE_BUTTON.get());
+                        output.accept(ItemRegistration.MAPLE_SIGN.get());
+                        output.accept(ItemRegistration.MAPLE_HANGING_SIGN.get());
                         //output.accept(ItemRegistration.MAPLE_BOAT.get());
                         //output.accept(ItemRegistration.MAPLE_CHEST_BOAT.get());
                         output.accept(BlockRegistration.MAPLE_BOOKSHELF.get());
@@ -230,6 +247,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.BLUE_MUSHROOM_TRAPDOOR.get());
                         output.accept(BlockRegistration.BLUE_MUSHROOM_PRESSURE_PLATE.get());
                         output.accept(BlockRegistration.BLUE_MUSHROOM_BUTTON.get());
+                        output.accept(ItemRegistration.BLUE_MUSHROOM_SIGN.get());
+                        output.accept(ItemRegistration.BLUE_MUSHROOM_HANGING_SIGN.get());
                         //output.accept(ItemRegistration.BLUE_MUSHROOM_BOAT.get());
                         //output.accept(ItemRegistration.BLUE_MUSHROOM_CHEST_BOAT.get());
                         output.accept(BlockRegistration.BLUE_MUSHROOM_BOOKSHELF.get());
@@ -252,6 +271,8 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.RED_MUSHROOM_TRAPDOOR.get());
                         output.accept(BlockRegistration.RED_MUSHROOM_PRESSURE_PLATE.get());
                         output.accept(BlockRegistration.RED_MUSHROOM_BUTTON.get());
+                        output.accept(ItemRegistration.RED_MUSHROOM_SIGN.get());
+                        output.accept(ItemRegistration.RED_MUSHROOM_HANGING_SIGN.get());
                         //output.accept(ItemRegistration.RED_MUSHROOM_BOAT.get());
                         //output.accept(ItemRegistration.RED_MUSHROOM_CHEST_BOAT.get());
                         output.accept(BlockRegistration.RED_MUSHROOM_BOOKSHELF.get());

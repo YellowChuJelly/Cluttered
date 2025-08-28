@@ -2,6 +2,7 @@ package net.redchujelly.cluttered.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -151,6 +152,23 @@ public class ClutteredItemModels extends ItemModelProvider {
         standardCubeItem(BlockRegistration.VARYING_BRICKS, "bricks_varying_1");
         standardCubeItem(BlockRegistration.VARYING_BRICKS_BORDER, "bricks_varying_bordered_1");
 
+        basicItem(ItemRegistration.WILLOW_SIGN.get());
+        basicItem(ItemRegistration.FLOWERING_WILLOW_SIGN.get());
+        basicItem(ItemRegistration.POPLAR_SIGN.get());
+        basicItem(ItemRegistration.FLOWERING_POPLAR_SIGN.get());
+        basicItem(ItemRegistration.CRABAPPLE_SIGN.get());
+        basicItem(ItemRegistration.FLOWERING_CRABAPPLE_SIGN.get());
+        basicItem(ItemRegistration.SYCAMORE_SIGN.get());
+        basicItem(ItemRegistration.MAPLE_SIGN.get());
+
+        basicItem(ItemRegistration.WILLOW_HANGING_SIGN.get());
+        basicItem(ItemRegistration.FLOWERING_WILLOW_HANGING_SIGN.get());
+        basicItem(ItemRegistration.POPLAR_HANGING_SIGN.get());
+        basicItem(ItemRegistration.FLOWERING_POPLAR_HANGING_SIGN.get());
+        basicItem(ItemRegistration.CRABAPPLE_HANGING_SIGN.get());
+        basicItem(ItemRegistration.FLOWERING_CRABAPPLE_HANGING_SIGN.get());
+        basicItem(ItemRegistration.SYCAMORE_HANGING_SIGN.get());
+        basicItem(ItemRegistration.MAPLE_HANGING_SIGN.get());
 
         //FURNITURE
         blockitemFromModel(BlockRegistration.APPLE_CHAIR);

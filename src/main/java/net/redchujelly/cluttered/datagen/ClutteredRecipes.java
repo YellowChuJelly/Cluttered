@@ -21,6 +21,7 @@ import net.redchujelly.cluttered.setup.TagRegistration;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.function.Consumer;
 
 public class ClutteredRecipes extends RecipeProvider {
@@ -981,7 +982,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sas")
                 .pattern("www")
                 .define('a', Items.APPLE)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -994,7 +995,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sbs")
                 .pattern("www")
                 .define('b', Items.BLACK_DYE)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -1007,7 +1008,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sbs")
                 .pattern("www")
                 .define('b', Items.BLUE_DYE)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -1020,7 +1021,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sbs")
                 .pattern("www")
                 .define('b', Items.BONE)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -1033,7 +1034,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sfs")
                 .pattern("www")
                 .define('f', ItemTags.FLOWERS)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -1046,7 +1047,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sms")
                 .pattern("www")
                 .define('m', Items.BROWN_MUSHROOM)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -1059,7 +1060,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sgs")
                 .pattern("www")
                 .define('g', Items.LIME_DYE)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -1072,7 +1073,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sys")
                 .pattern("www")
                 .define('y', Items.YELLOW_DYE)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -1085,7 +1086,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sos")
                 .pattern("www")
                 .define('o', Items.ORANGE_DYE)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -1098,7 +1099,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sgs")
                 .pattern("www")
                 .define('g', Items.GREEN_DYE)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -1111,7 +1112,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sms")
                 .pattern("www")
                 .define('m', Items.MAGENTA_DYE)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -1124,7 +1125,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sms")
                 .pattern("www")
                 .define('m', Items.PURPLE_DYE)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -1137,7 +1138,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sms")
                 .pattern("www")
                 .define('m', Items.RED_MUSHROOM)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -1150,7 +1151,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("srs")
                 .pattern("www")
                 .define('r', Items.RED_DYE)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -1163,7 +1164,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sfs")
                 .pattern("www")
                 .define('f', ItemTags.FISHES)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.PAPER)
                 .define('w', ItemTags.PLANKS)
                 .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -1205,7 +1206,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sys")
                 .pattern("sys")
                 .define('y', Items.STRING)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_string", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(Items.STRING).build()))
                 .showNotification(false)
@@ -1283,7 +1284,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sss")
                 .pattern(" ts")
                 .pattern("  s")
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('t', ItemTags.WOODEN_STAIRS)
                 .unlockedBy("has_wooden_stairs", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(ItemTags.WOODEN_STAIRS).build()))
@@ -1312,7 +1313,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("gsg")
                 .pattern("sss")
                 .define('g', Blocks.GLASS)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_glass", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(Blocks.GLASS).build()))
                 .showNotification(false)
@@ -1723,7 +1724,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("ps")
                 .pattern("sp")
                 .pattern("pp")
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.OAK_PLANKS)
                 .unlockedBy("has_oak_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(Items.OAK_PLANKS).build()))
@@ -1734,7 +1735,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("ps")
                 .pattern("sp")
                 .pattern("pp")
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', Items.SPRUCE_PLANKS)
                 .unlockedBy("has_spruce_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(Items.SPRUCE_PLANKS).build()))
@@ -1747,7 +1748,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("ppp")
                 .pattern("s s")
                 .define('a', Items.APPLE)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', ItemTags.PLANKS)
                 .unlockedBy("has_apple", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(Items.APPLE).build()))
@@ -1759,7 +1760,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("pfp")
                 .pattern("psp")
                 .define('f', Items.FEATHER)
-                .define('s', Items.STICK)
+                .define('s', Tags.Items.RODS_WOODEN)
                 .define('p', ItemTags.PLANKS)
                 .unlockedBy("has_feather", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(Items.FEATHER).build()))
@@ -1837,7 +1838,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("s s")
                         .define('p', ItemTags.PLANKS)
                         .define('b', ItemTags.WOODEN_BUTTONS)
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .unlockedBy("has_wood_button", InventoryChangeTrigger.TriggerInstance.hasItems(
                                 ItemPredicate.Builder.item().of(ItemTags.WOODEN_BUTTONS).build()))
                         .showNotification(true)
@@ -1984,9 +1985,9 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern(" s ")
                         .pattern("s s")
                         .define('p', ItemTags.PLANKS)
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .unlockedBy("has_stick", InventoryChangeTrigger.TriggerInstance.hasItems(
-                                ItemPredicate.Builder.item().of(Items.STICK).build()))
+                                ItemPredicate.Builder.item().of(Tags.Items.RODS_WOODEN).build()))
                         .showNotification(true)
                         .save(consumer);
 
@@ -1995,7 +1996,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern(" s ")
                         .pattern("ppp")
                         .define('p', ItemTags.WOODEN_SLABS)
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .define('l', Items.LECTERN)
                         .unlockedBy("has_lectern", InventoryChangeTrigger.TriggerInstance.hasItems(
                                 ItemPredicate.Builder.item().of(Items.LECTERN).build()))
@@ -2006,7 +2007,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern(" l ")
                         .pattern(" s ")
                         .pattern("s s")
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .define('l', Items.LECTERN)
                         .unlockedBy("has_lectern", InventoryChangeTrigger.TriggerInstance.hasItems(
                                 ItemPredicate.Builder.item().of(Items.LECTERN).build()))
@@ -2207,7 +2208,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("b  ")
                         .pattern("sbb")
                         .pattern("b b")
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .define('b', Items.BIRCH_PLANKS)
                         .unlockedBy("has_birch_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
                                 ItemPredicate.Builder.item().of(Items.BIRCH_PLANKS).build()))
@@ -2627,7 +2628,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("sss")
                         .pattern("gfg")
                         .define('g', Items.GRASS)
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .define('f', Items.FERN)
                         .unlockedBy("has_fern", InventoryChangeTrigger.TriggerInstance.hasItems(
                                 ItemPredicate.Builder.item().of(Items.FERN).build()))
@@ -2638,7 +2639,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("sss")
                         .pattern("ppp")
                         .pattern("rrr")
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .define('p', Items.PINK_CARPET)
                         .define('r', Items.RED_CARPET)
                         .unlockedBy("has_pink_carpet", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -2678,7 +2679,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("ryp")
                         .pattern("ogb")
                         .pattern("s  ")
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .define('g', Items.GREEN_CARPET)
                         .define('r', Items.RED_CARPET)
                         .define('p', Items.PURPLE_CARPET)
@@ -2694,7 +2695,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("owp")
                         .pattern("owp")
                         .pattern("s  ")
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .define('o', Items.ORANGE_CARPET)
                         .define('w', Items.WHITE_CARPET)
                         .define('p', Items.PINK_CARPET)
@@ -2707,7 +2708,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("mpb")
                         .pattern("mpb")
                         .pattern("s  ")
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .define('m', Items.MAGENTA_CARPET)
                         .define('b', Items.BLUE_CARPET)
                         .define('p', Items.PURPLE_CARPET)
@@ -2720,7 +2721,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("myc")
                         .pattern("myc")
                         .pattern("s  ")
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .define('m', Items.MAGENTA_CARPET)
                         .define('y', Items.YELLOW_CARPET)
                         .define('c', Items.CYAN_CARPET)
@@ -2733,7 +2734,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("bwp")
                         .pattern("bwp")
                         .pattern("s  ")
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .define('b', Items.BLACK_CARPET)
                         .define('w', Items.WHITE_CARPET)
                         .define('p', Items.PURPLE_CARPET)
@@ -2746,7 +2747,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("bpb")
                         .pattern("bpb")
                         .pattern("s  ")
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .define('b', Items.LIGHT_BLUE_CARPET)
                         .define('p', Items.PINK_CARPET)
                         .unlockedBy("has_pink_carpet", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -2758,7 +2759,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("ypb")
                         .pattern("ypb")
                         .pattern("s  ")
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .define('y', Items.YELLOW_CARPET)
                         .define('p', Items.PURPLE_CARPET)
                         .define('b', Items.BLACK_CARPET)
@@ -2955,7 +2956,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("s s")
                         .define('p', ItemTags.WOODEN_SLABS)
                         .define('b', ItemTags.WOODEN_BUTTONS)
-                        .define('s', Items.STICK)
+                        .define('s', Tags.Items.RODS_WOODEN)
                         .unlockedBy("has_wooden_fence", InventoryChangeTrigger.TriggerInstance.hasItems(
                                 ItemPredicate.Builder.item().of(ItemTags.WOODEN_FENCES).build()))
                         .showNotification(true)
@@ -3017,7 +3018,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("s s")
                     .define('p', BlockRegistration.SYCAMORE_PLANKS.get())
                     .define('c', Items.PINK_CARPET)
-                    .define('s', Items.STICK)
+                    .define('s', Tags.Items.RODS_WOODEN)
                     .define('f', Items.SUNFLOWER)
                     .unlockedBy("has_sycamore_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(BlockRegistration.SYCAMORE_PLANKS.get()).build()))
@@ -3071,7 +3072,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("s s")
                     .define('r', Items.RED_WOOL)
                     .define('b', Items.BLUE_WOOL)
-                    .define('s', Items.STICK)
+                    .define('s', Tags.Items.RODS_WOODEN)
                     .unlockedBy("has_red_wool", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.RED_WOOL).build()))
                     .showNotification(true)
@@ -3178,7 +3179,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("l")
                     .pattern("s")
                     .define('l', ItemTags.LEAVES)
-                    .define('s', Items.STICK)
+                    .define('s', Tags.Items.RODS_WOODEN)
                     .unlockedBy("has_leaves", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(ItemTags.LEAVES).build()))
                     .showNotification(true)
@@ -3236,7 +3237,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern(" w ")
                     .pattern("tat")
                     .pattern("s s")
-                    .define('s', Items.STICK)
+                    .define('s', Tags.Items.RODS_WOODEN)
                     .define('t', Items.STRING)
                     .define('a', Items.ARMOR_STAND)
                     .define('w', Items.WHITE_WOOL)
@@ -5088,7 +5089,7 @@ public class ClutteredRecipes extends RecipeProvider {
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.SWEETHEART_BAKING_SET_BOWL.get())
                     .requires(Items.BOWL)
-                    .requires(Items.STICK)
+                    .requires(Tags.Items.RODS_WOODEN)
                     .requires(Items.IRON_INGOT)
                     .unlockedBy("has_bowl", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.BOWL).build()))
@@ -5382,7 +5383,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("fmf")
                     .define('f', BlockRegistration.STARS_PENDANT.get())
                     .define('m', BlockRegistration.MOON_PENDANT.get())
-                    .define('s', Items.STICK)
+                    .define('s', Tags.Items.RODS_WOODEN)
                     .unlockedBy("has_moon_pendant", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(BlockRegistration.MOON_PENDANT.get()).build()))
                     .showNotification(true)
@@ -5761,7 +5762,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("gcs")
                     .pattern("ppp")
                     .define('c', ItemTags.COALS)
-                    .define('s', Items.STICK)
+                    .define('s', Tags.Items.RODS_WOODEN)
                     .define('p', Items.PAPER)
                     .define('g', Items.GREEN_DYE)
                     .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -5793,7 +5794,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("s s")
                     .define('m', BlockRegistration.ANTIQUE_MAP.get())
                     .define('c', Items.COPPER_INGOT)
-                    .define('s', Items.STICK)
+                    .define('s', Tags.Items.RODS_WOODEN)
                     .unlockedBy("has_antique_map", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(BlockRegistration.ANTIQUE_MAP.get()).build()))
                     .showNotification(true)
@@ -5823,7 +5824,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("gcs")
                     .pattern("ppp")
                     .define('c', ItemTags.COALS)
-                    .define('s', Items.STICK)
+                    .define('s', Tags.Items.RODS_WOODEN)
                     .define('p', Items.PAPER)
                     .define('g', Items.YELLOW_DYE)
                     .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -5864,7 +5865,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("prp")
                     .pattern("sds")
                     .pattern("s s")
-                    .define('s', Items.STICK)
+                    .define('s', Tags.Items.RODS_WOODEN)
                     .define('d', Items.WHITE_DYE)
                     .define('r', Items.ROSE_BUSH)
                     .define('p', ItemTags.WOODEN_SLABS)
@@ -5877,7 +5878,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("prp")
                     .pattern("sds")
                     .pattern("s s")
-                    .define('s', Items.STICK)
+                    .define('s', Tags.Items.RODS_WOODEN)
                     .define('d', Items.BLACK_DYE)
                     .define('r', Items.ROSE_BUSH)
                     .define('p', ItemTags.WOODEN_SLABS)
@@ -5890,7 +5891,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("ppp")
                     .pattern("jsj")
                     .pattern("ppp")
-                    .define('s', Items.STICK)
+                    .define('s', Tags.Items.RODS_WOODEN)
                     .define('j', Items.POTION)
                     .define('p', ItemTags.WOODEN_SLABS)
                     .unlockedBy("has_potion", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -6150,8 +6151,11 @@ public class ClutteredRecipes extends RecipeProvider {
 
         Block log = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_log"));
         Block wood = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wood"));
-        //Dont need these for now
-        //Block strippedLog = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_log"));
+        Block strippedLog = null;
+        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_log"))) {
+            strippedLog = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_log"));
+        }
+        //Dont need this for now
         //Block strippedWood = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_wood"));
         Block planks = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_planks"));
         Block stairs = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_stairs"));
@@ -6159,6 +6163,8 @@ public class ClutteredRecipes extends RecipeProvider {
         Block fence = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_fence"));
         Block fenceGate = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_fence_gate"));
         Block button = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_button"));
+        Item sign = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_sign"));
+        Item hangingSign = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_hanging_sign"));
         Block pressurePlate = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_pressure_plate"));
         Block door = null;
         if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_door"))) {
@@ -6232,6 +6238,28 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("sps")
                 .define('p', planks)
                 .define('s', Tags.Items.RODS_WOODEN)
+                .unlockedBy("has_" + woodType + "_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(planks).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, sign, 3)
+                .pattern("ppp")
+                .pattern("ppp")
+                .pattern(" s ")
+                .define('p', planks)
+                .define('s', Tags.Items.RODS_WOODEN)
+                .unlockedBy("has_" + woodType + "_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(planks).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, hangingSign, 6)
+                .pattern("c c")
+                .pattern("ppp")
+                .pattern("ppp")
+                .define('p', Objects.requireNonNullElse(strippedLog, log))
+                .define('c', Items.CHAIN)
                 .unlockedBy("has_" + woodType + "_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(planks).build()))
                 .showNotification(false)

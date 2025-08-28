@@ -1,11 +1,13 @@
 package net.redchujelly.cluttered;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,6 +25,7 @@ import net.redchujelly.cluttered.client.ChairEntityRenderer;
 import net.redchujelly.cluttered.datagen.DataGeneration;
 import net.redchujelly.cluttered.setup.*;
 import net.redchujelly.cluttered.util.ClutteredFurnitureUpdater;
+import net.redchujelly.cluttered.util.ClutteredWoodTypes;
 import org.slf4j.Logger;
 
 import java.util.List;
@@ -102,6 +105,7 @@ public class Cluttered {
     public void missingMappingsHandler(MissingMappingsEvent event){
         List<MissingMappingsEvent.Mapping<Block>> missingBlocks = event.getAllMappings(ForgeRegistries.Keys.BLOCKS);
         List<MissingMappingsEvent.Mapping<Item>> missingItems = event.getAllMappings(ForgeRegistries.Keys.ITEMS);
+        List<MissingMappingsEvent.Mapping<BlockEntityType<?>>> missingBEs = event.getAllMappings(ForgeRegistries.Keys.BLOCK_ENTITY_TYPES);
         for (MissingMappingsEvent.Mapping<Block> missing : missingBlocks){
             String missingId = missing.getKey().toString();
             if (missingId.startsWith("luphieclutteredmod:")){
@@ -141,7 +145,16 @@ public class Cluttered {
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            Sheets.addWoodType(ClutteredWoodTypes.WILLOW);
+            Sheets.addWoodType(ClutteredWoodTypes.FLOWERING_WILLOW);
+            Sheets.addWoodType(ClutteredWoodTypes.POPLAR);
+            Sheets.addWoodType(ClutteredWoodTypes.FLOWERING_POPLAR);
+            Sheets.addWoodType(ClutteredWoodTypes.CRABAPPLE);
+            Sheets.addWoodType(ClutteredWoodTypes.FLOWERING_CRABAPPLE);
+            Sheets.addWoodType(ClutteredWoodTypes.SYCAMORE);
+            Sheets.addWoodType(ClutteredWoodTypes.MAPLE);
+            Sheets.addWoodType(ClutteredWoodTypes.RED_MUSHROOM);
+            Sheets.addWoodType(ClutteredWoodTypes.BLUE_MUSHROOM);
         }
 
         @SubscribeEvent

@@ -133,6 +133,8 @@ public class ClutteredItemTags extends ItemTagsProvider {
         Item fence = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_fence")).asItem();
         Item fenceGate = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_fence_gate")).asItem();
         Item button = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_button")).asItem();
+        Item sign = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_sign"));
+        Item hangingSign = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_hanging_sign"));
         Item pressurePlate = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_pressure_plate")).asItem();
         Item door = null;
         if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_door"))) {
@@ -183,6 +185,10 @@ public class ClutteredItemTags extends ItemTagsProvider {
                 .add(stairs);
         tag(ItemTags.SLABS)
                 .add(slab);
+        tag(ItemTags.SIGNS)
+                .add(sign);
+        tag(ItemTags.HANGING_SIGNS)
+                .add(hangingSign);
         tag(ItemTags.WOODEN_SLABS)
                 .add(slab);
         tag(ItemTags.FENCES)

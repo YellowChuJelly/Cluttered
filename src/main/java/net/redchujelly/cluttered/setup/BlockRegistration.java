@@ -20,6 +20,7 @@ import net.redchujelly.cluttered.block.custom.furniture.storage.*;
 import net.redchujelly.cluttered.block.multiblock.*;
 import net.redchujelly.cluttered.block.multiblock.storage.ChinaCabinetBlock;
 import net.redchujelly.cluttered.block.multiblock.storage.*;
+import net.redchujelly.cluttered.util.ClutteredWoodTypes;
 import net.redchujelly.cluttered.worldgen.tree.*;
 import org.jetbrains.annotations.Nullable;
 
@@ -73,6 +74,15 @@ public class BlockRegistration {
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockRegistration.WILLOW_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_BIRCH_SAPLING)));
 
+    public static final RegistryObject<Block> WILLOW_SIGN = BLOCKS.register("willow_sign",
+            () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(DyeColor.PURPLE), ClutteredWoodTypes.WILLOW));
+    public static final RegistryObject<Block> WILLOW_WALL_SIGN = BLOCKS.register("willow_wall_sign",
+            () -> new CustomWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.PURPLE), ClutteredWoodTypes.WILLOW));
+    public static final RegistryObject<Block> WILLOW_HANGING_SIGN = BLOCKS.register("willow_hanging_sign",
+            () -> new CustomHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.PURPLE), ClutteredWoodTypes.WILLOW));
+    public static final RegistryObject<Block> WILLOW_WALL_HANGING_SIGN = BLOCKS.register("willow_wall_hanging_sign",
+            () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.PURPLE), ClutteredWoodTypes.WILLOW));
+
     public static final RegistryObject<Block> WILLOW_BOOKSHELF_BLACK_CAT = registerFuelBlock("willow_bookshelf_black_cat",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.PURPLE)), 300);
     public static final RegistryObject<Block> WILLOW_BOOKSHELF_CALICO_CAT = registerFuelBlock("willow_bookshelf_calico_cat",
@@ -125,6 +135,15 @@ public class BlockRegistration {
     public static final RegistryObject<Block> FLOWERING_WILLOW_WINDOW_PANE = registerBlock("flowering_willow_window_pane",
             () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS_PANE).mapColor(DyeColor.PURPLE).noOcclusion()));
 
+    public static final RegistryObject<Block> FLOWERING_WILLOW_SIGN = BLOCKS.register("flowering_willow_sign",
+            () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(DyeColor.PURPLE), ClutteredWoodTypes.FLOWERING_WILLOW));
+    public static final RegistryObject<Block> FLOWERING_WILLOW_WALL_SIGN = BLOCKS.register("flowering_willow_wall_sign",
+            () -> new CustomWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.PURPLE), ClutteredWoodTypes.FLOWERING_WILLOW));
+    public static final RegistryObject<Block> FLOWERING_WILLOW_HANGING_SIGN = BLOCKS.register("flowering_willow_hanging_sign",
+            () -> new CustomHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.PURPLE), ClutteredWoodTypes.FLOWERING_WILLOW));
+    public static final RegistryObject<Block> FLOWERING_WILLOW_WALL_HANGING_SIGN = BLOCKS.register("flowering_willow_wall_hanging_sign",
+            () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.PURPLE), ClutteredWoodTypes.FLOWERING_WILLOW));
+
     //POPLAR WOODSET
     public static final RegistryObject<Block> POPLAR_LOG = registerFuelBlock("poplar_log",
             () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.YELLOW)), 300);
@@ -168,6 +187,16 @@ public class BlockRegistration {
     public static final RegistryObject<Block> POTTED_POPLAR_SAPLING = BLOCKS.register("potted_poplar_sapling",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockRegistration.POPLAR_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_BIRCH_SAPLING)));
+    
+    public static final RegistryObject<Block> POPLAR_SIGN = BLOCKS.register("poplar_sign",
+            () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(DyeColor.YELLOW), ClutteredWoodTypes.POPLAR));
+    public static final RegistryObject<Block> POPLAR_WALL_SIGN = BLOCKS.register("poplar_wall_sign",
+            () -> new CustomWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.YELLOW), ClutteredWoodTypes.POPLAR));
+    public static final RegistryObject<Block> POPLAR_HANGING_SIGN = BLOCKS.register("poplar_hanging_sign",
+            () -> new CustomHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.YELLOW), ClutteredWoodTypes.POPLAR));
+    public static final RegistryObject<Block> POPLAR_WALL_HANGING_SIGN = BLOCKS.register("poplar_wall_hanging_sign",
+            () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.YELLOW), ClutteredWoodTypes.POPLAR));
+
 
     //FLOWERING POPLAR WOODSET
     public static final RegistryObject<Block> FLOWERING_POPLAR_LOG = registerFuelBlock("flowering_poplar_log",
@@ -207,6 +236,15 @@ public class BlockRegistration {
             () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS_PANE).mapColor(DyeColor.PINK).noOcclusion()));
     public static final RegistryObject<Block> FLOWERING_POPLAR_LEAVES = registerBlock("flowering_poplar_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(DyeColor.PINK)));
+
+    public static final RegistryObject<Block> FLOWERING_POPLAR_SIGN = BLOCKS.register("flowering_poplar_sign",
+            () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(DyeColor.YELLOW), ClutteredWoodTypes.FLOWERING_POPLAR));
+    public static final RegistryObject<Block> FLOWERING_POPLAR_WALL_SIGN = BLOCKS.register("flowering_poplar_wall_sign",
+            () -> new CustomWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.YELLOW), ClutteredWoodTypes.FLOWERING_POPLAR));
+    public static final RegistryObject<Block> FLOWERING_POPLAR_HANGING_SIGN = BLOCKS.register("flowering_poplar_hanging_sign",
+            () -> new CustomHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.YELLOW), ClutteredWoodTypes.FLOWERING_POPLAR));
+    public static final RegistryObject<Block> FLOWERING_POPLAR_WALL_HANGING_SIGN = BLOCKS.register("flowering_poplar_wall_hanging_sign",
+            () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.YELLOW), ClutteredWoodTypes.FLOWERING_POPLAR));
 
     //CRABAPPLE WOODSET
     public static final RegistryObject<Block> CRABAPPLE_LOG = registerFuelBlock("crabapple_log",
@@ -252,6 +290,15 @@ public class BlockRegistration {
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockRegistration.CRABAPPLE_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_BIRCH_SAPLING)));
 
+    public static final RegistryObject<Block> CRABAPPLE_SIGN = BLOCKS.register("crabapple_sign",
+            () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(DyeColor.PINK), ClutteredWoodTypes.CRABAPPLE));
+    public static final RegistryObject<Block> CRABAPPLE_WALL_SIGN = BLOCKS.register("crabapple_wall_sign",
+            () -> new CustomWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.PINK), ClutteredWoodTypes.CRABAPPLE));
+    public static final RegistryObject<Block> CRABAPPLE_HANGING_SIGN = BLOCKS.register("crabapple_hanging_sign",
+            () -> new CustomHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.PINK), ClutteredWoodTypes.CRABAPPLE));
+    public static final RegistryObject<Block> CRABAPPLE_WALL_HANGING_SIGN = BLOCKS.register("crabapple_wall_hanging_sign",
+            () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.PINK), ClutteredWoodTypes.CRABAPPLE));
+
     //FLOWERING CRABAPPLE WOODSET
     public static final RegistryObject<Block> FLOWERING_CRABAPPLE_LOG = registerFuelBlock("flowering_crabapple_log",
             () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.PINK)), 300);
@@ -290,6 +337,16 @@ public class BlockRegistration {
             () -> new CustomGlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.PINK).noOcclusion()));
     public static final RegistryObject<Block> FLOWERING_CRABAPPLE_WINDOW_PANE = registerBlock("flowering_crabapple_window_pane",
             () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS_PANE).mapColor(DyeColor.PINK).noOcclusion()));
+
+    public static final RegistryObject<Block> FLOWERING_CRABAPPLE_SIGN = BLOCKS.register("flowering_crabapple_sign",
+            () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(DyeColor.PINK), ClutteredWoodTypes.FLOWERING_CRABAPPLE));
+    public static final RegistryObject<Block> FLOWERING_CRABAPPLE_WALL_SIGN = BLOCKS.register("flowering_crabapple_wall_sign",
+            () -> new CustomWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.PINK), ClutteredWoodTypes.FLOWERING_CRABAPPLE));
+    public static final RegistryObject<Block> FLOWERING_CRABAPPLE_HANGING_SIGN = BLOCKS.register("flowering_crabapple_hanging_sign",
+            () -> new CustomHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.PINK), ClutteredWoodTypes.FLOWERING_CRABAPPLE));
+    public static final RegistryObject<Block> FLOWERING_CRABAPPLE_WALL_HANGING_SIGN = BLOCKS.register("flowering_crabapple_wall_hanging_sign",
+            () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.PINK), ClutteredWoodTypes.FLOWERING_CRABAPPLE));
+
 
     //SYCAMORE WOODSET
     public static final RegistryObject<Block> SYCAMORE_LOG = registerFuelBlock("sycamore_log",
@@ -334,6 +391,15 @@ public class BlockRegistration {
     public static final RegistryObject<Block> POTTED_SYCAMORE_SAPLING = BLOCKS.register("potted_sycamore_sapling",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockRegistration.SYCAMORE_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_BIRCH_SAPLING)));
+
+    public static final RegistryObject<Block> SYCAMORE_SIGN = BLOCKS.register("sycamore_sign",
+            () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(DyeColor.GREEN), ClutteredWoodTypes.SYCAMORE));
+    public static final RegistryObject<Block> SYCAMORE_WALL_SIGN = BLOCKS.register("sycamore_wall_sign",
+            () -> new CustomWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.GREEN), ClutteredWoodTypes.SYCAMORE));
+    public static final RegistryObject<Block> SYCAMORE_HANGING_SIGN = BLOCKS.register("sycamore_hanging_sign",
+            () -> new CustomHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.GREEN), ClutteredWoodTypes.SYCAMORE));
+    public static final RegistryObject<Block> SYCAMORE_WALL_HANGING_SIGN = BLOCKS.register("sycamore_wall_hanging_sign",
+            () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.GREEN), ClutteredWoodTypes.SYCAMORE));
 
     //FLUORESCENT MAPLE WOODSET
     public static final RegistryObject<Block> MAPLE_LOG = registerFuelBlock("fluorescent_maple_log",
@@ -381,38 +447,48 @@ public class BlockRegistration {
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockRegistration.MAPLE_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_BIRCH_SAPLING).lightLevel(p -> 6)));
 
+    public static final RegistryObject<Block> MAPLE_SIGN = BLOCKS.register("fluorescent_maple_sign",
+            () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(DyeColor.CYAN).lightLevel(p -> 4), ClutteredWoodTypes.MAPLE));
+    public static final RegistryObject<Block> MAPLE_WALL_SIGN = BLOCKS.register("fluorescent_maple_wall_sign",
+            () -> new CustomWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.CYAN).lightLevel(p -> 4), ClutteredWoodTypes.MAPLE));
+    public static final RegistryObject<Block> MAPLE_HANGING_SIGN = BLOCKS.register("fluorescent_maple_hanging_sign",
+            () -> new CustomHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.CYAN).lightLevel(p -> 4), ClutteredWoodTypes.MAPLE));
+    public static final RegistryObject<Block> MAPLE_WALL_HANGING_SIGN = BLOCKS.register("fluorescent_maple_wall_hanging_sign",
+            () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.CYAN).lightLevel(p -> 4), ClutteredWoodTypes.MAPLE));
+
+
     //BLUE MUSHROOM WOODSET
     public static final RegistryObject<Block> BLUE_MUSHROOM_LOG = registerFuelBlock("blue_mushroom_log",
-            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT)), 300);
+            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.BLUE).sound(SoundType.NETHER_WOOD)), 300);
     public static final RegistryObject<Block> BLUE_MUSHROOM_WOOD = registerFuelBlock("blue_mushroom_wood",
-            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT)), 300);
+            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.BLUE).sound(SoundType.NETHER_WOOD)), 300);
     public static final RegistryObject<Block> BLUE_MUSHROOM_PLANKS = registerFuelBlock("blue_mushroom_planks",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT)), 300);
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE).sound(SoundType.NETHER_WOOD)), 300);
     public static final RegistryObject<Block> BLUE_MUSHROOM_CAP = registerBlock("blue_mushroom_cap",
             () -> new BouncyMushroomBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM_BLOCK).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT)));
     public static final RegistryObject<Block> BLUE_MUSHROOM_SAPLING = registerBlock("blue_roundhead",
             () -> new MushroomSaplingBlock(new BlueMushroomTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING).mapColor(DyeColor.BLUE)));
     public static final RegistryObject<Block> BLUE_MUSHROOM_SLAB = registerFuelBlock("blue_mushroom_slab",
-            () -> new CustomWoodSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT)), 150);
+            () -> new CustomWoodSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.BLUE).sound(SoundType.NETHER_WOOD)), 150);
     public static final RegistryObject<Block> BLUE_MUSHROOM_STAIRS = registerFuelBlock("blue_mushroom_stairs",
             () -> new CustomWoodStairs(() -> BlockRegistration.BLUE_MUSHROOM_PLANKS.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT)), 300);
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).mapColor(DyeColor.BLUE).sound(SoundType.NETHER_WOOD)), 300);
     public static final RegistryObject<Block> BLUE_MUSHROOM_FENCE = registerFuelBlock("blue_mushroom_fence",
-            () -> new CustomWoodFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT)), 300);
+            () -> new CustomWoodFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(DyeColor.BLUE).sound(SoundType.NETHER_WOOD)), 300);
     public static final RegistryObject<Block> BLUE_MUSHROOM_FENCE_GATE = registerFuelBlock("blue_mushroom_fence_gate",
-            () -> new CustomWoodFenceGate(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE), 300);
+            () -> new CustomWoodFenceGate(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).mapColor(DyeColor.BLUE).sound(SoundType.NETHER_WOOD), SoundEvents.NETHER_WOOD_FENCE_GATE_OPEN, SoundEvents.NETHER_WOOD_FENCE_GATE_CLOSE), 300);
     public static final RegistryObject<Block> BLUE_MUSHROOM_DOOR = registerFuelBlock("blue_mushroom_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT), BlockSetType.OAK), 300);
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.BLUE).sound(SoundType.NETHER_WOOD), BlockSetType.WARPED), 300);
     public static final RegistryObject<Block> BLUE_MUSHROOM_TRAPDOOR = registerFuelBlock("blue_mushroom_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT), BlockSetType.OAK), 300);
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(DyeColor.BLUE).sound(SoundType.NETHER_WOOD), BlockSetType.WARPED), 300);
     public static final RegistryObject<Block> BLUE_MUSHROOM_BUTTON = registerFuelBlock("blue_mushroom_button",
-            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT),
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.BLUE).sound(SoundType.NETHER_WOOD),
                     BlockSetType.OAK, 30, true), 100);
     public static final RegistryObject<Block> BLUE_MUSHROOM_PRESSURE_PLATE = registerFuelBlock("blue_mushroom_pressure_plate",
-            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT),
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.BLUE).sound(SoundType.NETHER_WOOD),
                     BlockSetType.OAK), 300);
     public static final RegistryObject<Block> BLUE_MUSHROOM_BOOKSHELF = registerFuelBlock("blue_mushroom_bookshelf",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT)), 300);
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.BLUE).sound(SoundType.NETHER_WOOD)), 300);
     public static final RegistryObject<Block> BLUE_MUSHROOM_WINDOW = registerBlock("blue_mushroom_window",
             () -> new CustomGlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.BLUE).noOcclusion()));
     public static final RegistryObject<Block> BLUE_MUSHROOM_WINDOW_PANE = registerBlock("blue_mushroom_window_pane",
@@ -421,38 +497,47 @@ public class BlockRegistration {
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockRegistration.BLUE_MUSHROOM_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_BIRCH_SAPLING)));
 
+    public static final RegistryObject<Block> BLUE_MUSHROOM_SIGN = BLOCKS.register("blue_mushroom_sign",
+            () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_SIGN).mapColor(DyeColor.BLUE), ClutteredWoodTypes.BLUE_MUSHROOM));
+    public static final RegistryObject<Block> BLUE_MUSHROOM_WALL_SIGN = BLOCKS.register("blue_mushroom_wall_sign",
+            () -> new CustomWallSignBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_WALL_SIGN).mapColor(DyeColor.BLUE), ClutteredWoodTypes.BLUE_MUSHROOM));
+    public static final RegistryObject<Block> BLUE_MUSHROOM_HANGING_SIGN = BLOCKS.register("blue_mushroom_hanging_sign",
+            () -> new CustomHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_HANGING_SIGN).mapColor(DyeColor.BLUE), ClutteredWoodTypes.BLUE_MUSHROOM));
+    public static final RegistryObject<Block> BLUE_MUSHROOM_WALL_HANGING_SIGN = BLOCKS.register("blue_mushroom_wall_hanging_sign",
+            () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_WALL_HANGING_SIGN).mapColor(DyeColor.BLUE), ClutteredWoodTypes.BLUE_MUSHROOM));
+
     //RED MUSHROOM WOODSET
     public static final RegistryObject<Block> RED_MUSHROOM_LOG = registerFuelBlock("red_mushroom_log",
-            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT)), 300);
+            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.RED).sound(SoundType.NETHER_WOOD)), 300);
     public static final RegistryObject<Block> RED_MUSHROOM_WOOD = registerFuelBlock("red_mushroom_wood",
-            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT)), 300);
+            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.RED).sound(SoundType.NETHER_WOOD)), 300);
     public static final RegistryObject<Block> RED_MUSHROOM_PLANKS = registerFuelBlock("red_mushroom_planks",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT)), 300);
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.RED).sound(SoundType.NETHER_WOOD)), 300);
     public static final RegistryObject<Block> RED_MUSHROOM_CAP = registerFuelBlock("red_mushroom_cap",
             () -> new BouncyMushroomBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT)), 300);
     public static final RegistryObject<Block> RED_MUSHROOM_SAPLING = registerBlock("fly_agaric",
             () -> new MushroomSaplingBlock(new RedMushroomTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING).mapColor(DyeColor.RED)));
     public static final RegistryObject<Block> RED_MUSHROOM_SLAB = registerFuelBlock("red_mushroom_slab",
-            () -> new CustomWoodSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT)), 150);
+            () -> new CustomWoodSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.RED).sound(SoundType.NETHER_WOOD)), 150);
     public static final RegistryObject<Block> RED_MUSHROOM_STAIRS = registerFuelBlock("red_mushroom_stairs",
             () -> new CustomWoodStairs(() -> BlockRegistration.RED_MUSHROOM_PLANKS.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT)), 300);
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).mapColor(DyeColor.RED).sound(SoundType.NETHER_WOOD)), 300);
     public static final RegistryObject<Block> RED_MUSHROOM_FENCE = registerFuelBlock("red_mushroom_fence",
-            () -> new CustomWoodFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT)), 300);
+            () -> new CustomWoodFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(DyeColor.RED).sound(SoundType.NETHER_WOOD)), 300);
     public static final RegistryObject<Block> RED_MUSHROOM_FENCE_GATE = registerFuelBlock("red_mushroom_fence_gate",
-            () -> new CustomWoodFenceGate(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE), 300);
+            () -> new CustomWoodFenceGate(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).mapColor(DyeColor.RED).sound(SoundType.NETHER_WOOD), SoundEvents.NETHER_WOOD_FENCE_GATE_OPEN, SoundEvents.NETHER_WOOD_FENCE_GATE_CLOSE), 300);
     public static final RegistryObject<Block> RED_MUSHROOM_DOOR = registerFuelBlock("red_mushroom_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT), BlockSetType.OAK), 300);
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.RED).sound(SoundType.NETHER_WOOD), BlockSetType.CRIMSON), 300);
     public static final RegistryObject<Block> RED_MUSHROOM_TRAPDOOR = registerFuelBlock("red_mushroom_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT), BlockSetType.OAK), 300);
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(DyeColor.RED).sound(SoundType.NETHER_WOOD), BlockSetType.CRIMSON), 300);
     public static final RegistryObject<Block> RED_MUSHROOM_BUTTON = registerFuelBlock("red_mushroom_button",
-            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT),
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.RED).sound(SoundType.NETHER_WOOD),
                     BlockSetType.OAK, 30, true), 100);
     public static final RegistryObject<Block> RED_MUSHROOM_PRESSURE_PLATE = registerFuelBlock("red_mushroom_pressure_plate",
-            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT),
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.RED).sound(SoundType.NETHER_WOOD),
                     BlockSetType.OAK), 300);
     public static final RegistryObject<Block> RED_MUSHROOM_BOOKSHELF = registerFuelBlock("red_mushroom_bookshelf",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.RED).sound(SoundType.SHROOMLIGHT)), 300);
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.RED).sound(SoundType.NETHER_WOOD)), 300);
     public static final RegistryObject<Block> RED_MUSHROOM_WINDOW = registerBlock("red_mushroom_window",
             () -> new CustomGlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.RED).noOcclusion()));
     public static final RegistryObject<Block> RED_MUSHROOM_WINDOW_PANE = registerBlock("red_mushroom_window_pane",
@@ -460,6 +545,16 @@ public class BlockRegistration {
     public static final RegistryObject<Block> POTTED_RED_MUSHROOM_SAPLING = BLOCKS.register("potted_fly_agaric",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockRegistration.RED_MUSHROOM_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_BIRCH_SAPLING)));
+
+    public static final RegistryObject<Block> RED_MUSHROOM_SIGN = BLOCKS.register("red_mushroom_sign",
+            () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_SIGN).mapColor(DyeColor.RED), ClutteredWoodTypes.RED_MUSHROOM));
+    public static final RegistryObject<Block> RED_MUSHROOM_WALL_SIGN = BLOCKS.register("red_mushroom_wall_sign",
+            () -> new CustomWallSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_WALL_SIGN).mapColor(DyeColor.RED), ClutteredWoodTypes.RED_MUSHROOM));
+    public static final RegistryObject<Block> RED_MUSHROOM_HANGING_SIGN = BLOCKS.register("red_mushroom_hanging_sign",
+            () -> new CustomHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_HANGING_SIGN).mapColor(DyeColor.RED), ClutteredWoodTypes.RED_MUSHROOM));
+    public static final RegistryObject<Block> RED_MUSHROOM_WALL_HANGING_SIGN = BLOCKS.register("red_mushroom_wall_hanging_sign",
+            () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_WALL_HANGING_SIGN).mapColor(DyeColor.RED), ClutteredWoodTypes.RED_MUSHROOM));
+
 
     //CHALCEDONY SET
     public static final RegistryObject<Block> CHALCEDONY = registerBlock("raw_chalcedony",

@@ -926,6 +926,10 @@ public class ClutteredBlockTags extends BlockTagsProvider {
         Block fenceGate = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_fence_gate"));
         Block button = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_button"));
         Block pressurePlate = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_pressure_plate"));
+        Block floorSign = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_sign"));
+        Block wallSign = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wall_sign"));
+        Block hangingSign = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_hanging_sign"));
+        Block hangingWallSign = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wall_hanging_sign"));
         Block door = null;
         if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_door"))) {
             door = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_door"));
@@ -998,6 +1002,27 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(button);
         tag(BlockTags.PRESSURE_PLATES)
                 .add(pressurePlate);
+
+        tag(BlockTags.STANDING_SIGNS)
+                .add(floorSign);
+        tag(BlockTags.WALL_SIGNS)
+                .add(wallSign);
+        tag(BlockTags.CEILING_HANGING_SIGNS)
+                .add(hangingSign);
+        tag(BlockTags.WALL_HANGING_SIGNS)
+                .add(hangingWallSign);
+        tag(BlockTags.ALL_HANGING_SIGNS)
+                .add(hangingSign)
+                .add(hangingWallSign);
+        tag(BlockTags.SIGNS)
+                .add(floorSign)
+                .add(wallSign);
+        tag(BlockTags.ALL_SIGNS)
+                .add(floorSign)
+                .add(wallSign)
+                .add(hangingSign)
+                .add(hangingWallSign);
+
         tag(BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(pressurePlate);
         tag(BlockTags.MINEABLE_WITH_AXE)
@@ -1007,6 +1032,10 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(stairs)
                 .add(slab)
                 .add(button)
+                .add(floorSign)
+                .add(wallSign)
+                .add(hangingSign)
+                .add(hangingWallSign)
                 .add(pressurePlate)
                 .add(fence)
                 .add(fenceGate);

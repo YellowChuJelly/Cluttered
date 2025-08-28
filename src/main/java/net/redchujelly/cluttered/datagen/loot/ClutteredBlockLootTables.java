@@ -12,6 +12,7 @@ import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
+import net.redchujelly.cluttered.setup.ItemRegistration;
 
 import java.util.Set;
 
@@ -59,6 +60,15 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.WILLOW_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WILLOW_WINDOW.get()));
         add(BlockRegistration.WILLOW_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WILLOW_WINDOW_PANE.get()));
 
+        this.add(BlockRegistration.WILLOW_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.WILLOW_SIGN.get()));
+        this.add(BlockRegistration.WILLOW_WALL_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.WILLOW_SIGN.get()));
+        this.add(BlockRegistration.WILLOW_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.WILLOW_HANGING_SIGN.get()));
+        this.add(BlockRegistration.WILLOW_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.WILLOW_HANGING_SIGN.get()));
+
         //FLOWERING WILLOW WOODSET
         dropSelf(BlockRegistration.FLOWERING_WILLOW_LOG.get());
         dropSelf(BlockRegistration.FLOWERING_WILLOW_WOOD.get());
@@ -78,6 +88,15 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.FLOWERING_WILLOW_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.FLOWERING_WILLOW_WINDOW_PANE.get()));
         add(BlockRegistration.FLOWERING_WILLOW_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.FLOWERING_WILLOW_LEAVES.get(), BlockRegistration.WILLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
+        this.add(BlockRegistration.FLOWERING_WILLOW_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.FLOWERING_WILLOW_SIGN.get()));
+        this.add(BlockRegistration.FLOWERING_WILLOW_WALL_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.FLOWERING_WILLOW_SIGN.get()));
+        this.add(BlockRegistration.FLOWERING_WILLOW_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.FLOWERING_WILLOW_HANGING_SIGN.get()));
+        this.add(BlockRegistration.FLOWERING_WILLOW_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.FLOWERING_WILLOW_HANGING_SIGN.get()));
+        
         //POPLAR WOODSET
         dropSelf(BlockRegistration.POPLAR_LOG.get());
         dropSelf(BlockRegistration.POPLAR_WOOD.get());
@@ -100,7 +119,16 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.POPLAR_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.POPLAR_WINDOW.get()));
         add(BlockRegistration.POPLAR_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.POPLAR_WINDOW_PANE.get()));
         add(BlockRegistration.POPLAR_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.POPLAR_LEAVES.get(), BlockRegistration.POPLAR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-
+        
+        this.add(BlockRegistration.POPLAR_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.POPLAR_SIGN.get()));
+        this.add(BlockRegistration.POPLAR_WALL_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.POPLAR_SIGN.get()));
+        this.add(BlockRegistration.POPLAR_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.POPLAR_HANGING_SIGN.get()));
+        this.add(BlockRegistration.POPLAR_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.POPLAR_HANGING_SIGN.get()));
+        
         //FLOWERING POPLAR WOODSET
         dropSelf(BlockRegistration.FLOWERING_POPLAR_LOG.get());
         dropSelf(BlockRegistration.FLOWERING_POPLAR_WOOD.get());
@@ -121,6 +149,15 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.FLOWERING_POPLAR_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.FLOWERING_POPLAR_WINDOW_PANE.get()));
         add(BlockRegistration.FLOWERING_POPLAR_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.FLOWERING_POPLAR_LEAVES.get(), BlockRegistration.POPLAR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
+        this.add(BlockRegistration.FLOWERING_POPLAR_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.FLOWERING_POPLAR_SIGN.get()));
+        this.add(BlockRegistration.FLOWERING_POPLAR_WALL_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.FLOWERING_POPLAR_SIGN.get()));
+        this.add(BlockRegistration.FLOWERING_POPLAR_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.FLOWERING_POPLAR_HANGING_SIGN.get()));
+        this.add(BlockRegistration.FLOWERING_POPLAR_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.FLOWERING_POPLAR_HANGING_SIGN.get()));
+        
         //CRABAPPLE WOODSET
         dropSelf(BlockRegistration.CRABAPPLE_LOG.get());
         dropSelf(BlockRegistration.CRABAPPLE_WOOD.get());
@@ -143,6 +180,15 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.CRABAPPLE_SAPLING.get());
         add(BlockRegistration.POTTED_CRABAPPLE_SAPLING.get(), createPotFlowerItemTable(BlockRegistration.CRABAPPLE_SAPLING.get()));
 
+        this.add(BlockRegistration.CRABAPPLE_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.CRABAPPLE_SIGN.get()));
+        this.add(BlockRegistration.CRABAPPLE_WALL_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.CRABAPPLE_SIGN.get()));
+        this.add(BlockRegistration.CRABAPPLE_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.CRABAPPLE_HANGING_SIGN.get()));
+        this.add(BlockRegistration.CRABAPPLE_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.CRABAPPLE_HANGING_SIGN.get()));
+
         //FLOWERING CRABAPPLE WOODSET
         dropSelf(BlockRegistration.FLOWERING_CRABAPPLE_LOG.get());
         dropSelf(BlockRegistration.FLOWERING_CRABAPPLE_WOOD.get());
@@ -162,6 +208,15 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.FLOWERING_CRABAPPLE_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.FLOWERING_CRABAPPLE_WINDOW.get()));
         add(BlockRegistration.FLOWERING_CRABAPPLE_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.FLOWERING_CRABAPPLE_WINDOW_PANE.get()));
         add(BlockRegistration.FLOWERING_CRABAPPLE_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.FLOWERING_CRABAPPLE_LEAVES.get(), BlockRegistration.CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        
+        this.add(BlockRegistration.FLOWERING_CRABAPPLE_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.FLOWERING_CRABAPPLE_SIGN.get()));
+        this.add(BlockRegistration.FLOWERING_CRABAPPLE_WALL_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.FLOWERING_CRABAPPLE_SIGN.get()));
+        this.add(BlockRegistration.FLOWERING_CRABAPPLE_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.FLOWERING_CRABAPPLE_HANGING_SIGN.get()));
+        this.add(BlockRegistration.FLOWERING_CRABAPPLE_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.FLOWERING_CRABAPPLE_HANGING_SIGN.get()));
 
         //SYCAMORE WOODSET
         dropSelf(BlockRegistration.SYCAMORE_LOG.get());
@@ -184,6 +239,16 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.SYCAMORE_LEAVES.get(), block -> createLeavesDrops(BlockRegistration.SYCAMORE_LEAVES.get(), BlockRegistration.SYCAMORE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         dropSelf(BlockRegistration.SYCAMORE_SAPLING.get());
         add(BlockRegistration.POTTED_SYCAMORE_SAPLING.get(), createPotFlowerItemTable(BlockRegistration.SYCAMORE_SAPLING.get()));
+        
+        this.add(BlockRegistration.SYCAMORE_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.SYCAMORE_SIGN.get()));
+        this.add(BlockRegistration.SYCAMORE_WALL_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.SYCAMORE_SIGN.get()));
+        this.add(BlockRegistration.SYCAMORE_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.SYCAMORE_HANGING_SIGN.get()));
+        this.add(BlockRegistration.SYCAMORE_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.SYCAMORE_HANGING_SIGN.get()));
+        
         //FLUORESCENT MAPLE WOODSET
         dropSelf(BlockRegistration.MAPLE_LOG.get());
         dropSelf(BlockRegistration.MAPLE_WOOD.get());
@@ -207,6 +272,15 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.MAPLE_SAPLING.get());
         add(BlockRegistration.POTTED_MAPLE_SAPLING.get(), createPotFlowerItemTable(BlockRegistration.MAPLE_SAPLING.get()));
 
+        this.add(BlockRegistration.MAPLE_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.MAPLE_SIGN.get()));
+        this.add(BlockRegistration.MAPLE_WALL_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.MAPLE_SIGN.get()));
+        this.add(BlockRegistration.MAPLE_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.MAPLE_HANGING_SIGN.get()));
+        this.add(BlockRegistration.MAPLE_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.MAPLE_HANGING_SIGN.get()));
+
         //BLUE MUSHROOM WOODSET
         dropSelf(BlockRegistration.BLUE_MUSHROOM_LOG.get());
         dropSelf(BlockRegistration.BLUE_MUSHROOM_WOOD.get());
@@ -227,6 +301,15 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.BLUE_MUSHROOM_DOOR.get(), block -> createDoorTable(BlockRegistration.BLUE_MUSHROOM_DOOR.get()));
         add(BlockRegistration.BLUE_MUSHROOM_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.BLUE_MUSHROOM_WINDOW.get()));
         add(BlockRegistration.BLUE_MUSHROOM_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.BLUE_MUSHROOM_WINDOW_PANE.get()));
+
+        this.add(BlockRegistration.BLUE_MUSHROOM_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.BLUE_MUSHROOM_SIGN.get()));
+        this.add(BlockRegistration.BLUE_MUSHROOM_WALL_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.BLUE_MUSHROOM_SIGN.get()));
+        this.add(BlockRegistration.BLUE_MUSHROOM_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.BLUE_MUSHROOM_HANGING_SIGN.get()));
+        this.add(BlockRegistration.BLUE_MUSHROOM_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.BLUE_MUSHROOM_HANGING_SIGN.get()));
        
         //RED MUSHROOM WOODSET
         dropSelf(BlockRegistration.RED_MUSHROOM_LOG.get());
@@ -248,6 +331,15 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         add(BlockRegistration.RED_MUSHROOM_DOOR.get(), block -> createDoorTable(BlockRegistration.RED_MUSHROOM_DOOR.get()));
         add(BlockRegistration.RED_MUSHROOM_WINDOW.get(), block -> createSilkTouchOnlyTable(BlockRegistration.RED_MUSHROOM_WINDOW.get()));
         add(BlockRegistration.RED_MUSHROOM_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.RED_MUSHROOM_WINDOW_PANE.get()));
+
+        this.add(BlockRegistration.RED_MUSHROOM_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.RED_MUSHROOM_SIGN.get()));
+        this.add(BlockRegistration.RED_MUSHROOM_WALL_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.RED_MUSHROOM_SIGN.get()));
+        this.add(BlockRegistration.RED_MUSHROOM_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.RED_MUSHROOM_HANGING_SIGN.get()));
+        this.add(BlockRegistration.RED_MUSHROOM_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ItemRegistration.RED_MUSHROOM_HANGING_SIGN.get()));
 
         //MISC BLOCKS
         //CHALCEDONY SET
