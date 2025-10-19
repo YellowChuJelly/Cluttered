@@ -1,18 +1,17 @@
 package net.redchujelly.cluttered.block.custom.furniture;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class FragileMediumFurnitureBlock extends FragileSmallFurnitureBlock{
-    private static final VoxelShape SHAPE = Block.box(2,0,2,14,12,14);
+public class LunarObservatoryGlobeBlock extends SmallFurnitureBlock{
+    private static final VoxelShape SHAPE = Shapes.or(Block.box(5,0,5,11,8,11), Block.box(2,8,2,14,20,14));
 
-    public FragileMediumFurnitureBlock(Properties pProperties) {
+    public LunarObservatoryGlobeBlock(Properties pProperties) {
         super(pProperties);
     }
 

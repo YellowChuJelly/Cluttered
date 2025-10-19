@@ -1,4 +1,4 @@
-package net.redchujelly.cluttered.block.custom;
+package net.redchujelly.cluttered.block.custom.food;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -17,16 +17,20 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.redchujelly.cluttered.block.custom.furniture.SmallFurnitureBlock;
 
-public class BerryCakeBlock extends SmallFurnitureBlock {
+public class HeartCakeBlock extends SmallFurnitureBlock {
 
-    public static final int MAX_BITES = 3;
+    private static final VoxelShape SHAPE = Shapes.join(Block.box(1, 0, 1, 15, 1, 15), Block.box(3, 0, 3, 13, 7, 13), BooleanOp.OR);
+
+    public static final int MAX_BITES = 2;
     public static final IntegerProperty BITES = IntegerProperty.create("bites", 0, MAX_BITES);
 
-    public BerryCakeBlock(Properties pProperties) {
+    public HeartCakeBlock(Properties pProperties) {
         super(pProperties);
         this.registerDefaultState(this.defaultBlockState().setValue(BITES, 0));
     }
@@ -51,10 +55,10 @@ public class BerryCakeBlock extends SmallFurnitureBlock {
             return InteractionResult.PASS;
         } else {
             pPlayer.awardStat(Stats.EAT_CAKE_SLICE);
-            pPlayer.getFoodData().eat(5, 0.3F);
+            pPlayer.getFoodData().eat(6, 0.5F);
             int bites = pState.getValue(BITES);
             pLevel.gameEvent(pPlayer, GameEvent.EAT, pPos);
-            if (bites < 3) {
+            if (bites < 2) {
                 pLevel.setBlock(pPos, pState.setValue(BITES, bites + 1), 3);
             } else {
                 pLevel.removeBlock(pPos, false);
@@ -66,6 +70,11 @@ public class BerryCakeBlock extends SmallFurnitureBlock {
     }
 
     @Override
+    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+        return SHAPE;
+    }
+
+    @Override
     public BlockState updateShape(BlockState pState, Direction pFacing, BlockState pFacingState, LevelAccessor pLevel, BlockPos pCurrentPos, BlockPos pFacingPos) {
         return pFacing == Direction.DOWN && !pState.canSurvive(pLevel, pCurrentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(pState, pFacing, pFacingState, pLevel, pCurrentPos, pFacingPos);
     }
@@ -74,6 +83,8 @@ public class BerryCakeBlock extends SmallFurnitureBlock {
     public boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
         return pLevel.getBlockState(pPos.below()).isSolid();
     }
+
+
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         super.createBlockStateDefinition(pBuilder);

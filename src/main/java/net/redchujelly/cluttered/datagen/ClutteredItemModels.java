@@ -591,6 +591,33 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.ARMCHAIR_STARRY);
         blockitemFromModel(BlockRegistration.ARMCHAIR_BLACK_CAT);
 
+        blockitemFromModel(BlockRegistration.SEWING_TABLE);
+        blockitemFromModel(BlockRegistration.IMPERIAL_TABLE);
+        blockitemFromModel(BlockRegistration.LUNAR_OBSERVATORY_TABLE);
+        blockitemFromModel(BlockRegistration.SEWING_CLUTTER);
+        blockitemFromModel(BlockRegistration.IMPERIAL_CHAIR);
+        blockitemFromModel(BlockRegistration.PASTRY_DISPLAY_CASE);
+        blockitemFromModel(BlockRegistration.GLASS_FLOWER_VASE);
+        blockitemFromModel(BlockRegistration.LUNAR_OBSERVATORY_PAPER_BASKET);
+        blockitemFromModel(BlockRegistration.LUNAR_OBSERVATORY_BOOKS);
+        blockitemFromModel(BlockRegistration.LUNAR_OBSERVATORY_GLOBE);
+        blockitemFromModel(BlockRegistration.LUNAR_OBSERVATORY_PEDESTAL);
+        blockitemFromModel(BlockRegistration.MERMAID_PEARL);
+        blockitemFromModel(BlockRegistration.PAINT_WATER_JAR);
+        blockitemFromModel(BlockRegistration.PASTRY_PLATE);
+        blockitemFromModel(BlockRegistration.CHOCOLATE_CROISSANT);
+        blockitemFromModel(BlockRegistration.BLUEBERRY_MUFFIN);
+        blockitemFromModel(BlockRegistration.CINNAMON_BUN);
+        blockitemFromModel(BlockRegistration.CROISSANT);
+        blockitemFromModel(BlockRegistration.HAM_SANDWICH);
+        blockitemFromModel(BlockRegistration.PANCAKE_STACK);
+        blockitemFromModel(BlockRegistration.ASSORTED_GLASS_JARS);
+        blockitemFromModel(BlockRegistration.SMALL_GLASS_JARS);
+        blockitemFromModel(BlockRegistration.ASSORTED_SPICE_JARS);
+
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(BlockRegistration.LUNAR_OBSERVATORY_JARS.get()).getPath(),
+                new ResourceLocation(Cluttered.MODID, "block/lunar_observatory_jars_1"));
+
     }
 
     //From the Kaupenjoe Forge 1.20.1 tutorial #13

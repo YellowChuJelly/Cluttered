@@ -15,6 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.block.custom.*;
+import net.redchujelly.cluttered.block.custom.food.HeartCakeBlock;
 import net.redchujelly.cluttered.block.custom.furniture.*;
 import net.redchujelly.cluttered.block.custom.furniture.storage.CardboardBoxBlock;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
@@ -84,6 +85,11 @@ public class ClutteredBlockstates extends BlockStateProvider {
                 blockTexture(BlockRegistration.WILLOW_PLANKS.get()));
 
         hangingSignBlock(BlockRegistration.WILLOW_HANGING_SIGN.get(), BlockRegistration.WILLOW_WALL_HANGING_SIGN.get(), blockTexture(BlockRegistration.WILLOW_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) BlockRegistration.FLOWERING_WILLOW_SIGN.get()), ((WallSignBlock) BlockRegistration.FLOWERING_WILLOW_WALL_SIGN.get()),
+                blockTexture(BlockRegistration.FLOWERING_WILLOW_PLANKS.get()));
+
+        hangingSignBlock(BlockRegistration.FLOWERING_WILLOW_HANGING_SIGN.get(), BlockRegistration.FLOWERING_WILLOW_WALL_HANGING_SIGN.get(), blockTexture(BlockRegistration.FLOWERING_WILLOW_PLANKS.get()));
 
 
         //FLOWERING WILLOW WOODSET
@@ -187,6 +193,11 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         hangingSignBlock(BlockRegistration.POPLAR_HANGING_SIGN.get(), BlockRegistration.POPLAR_WALL_HANGING_SIGN.get(), blockTexture(BlockRegistration.POPLAR_PLANKS.get()));
 
+        signBlock(((StandingSignBlock) BlockRegistration.FLOWERING_POPLAR_SIGN.get()), ((WallSignBlock) BlockRegistration.FLOWERING_POPLAR_WALL_SIGN.get()),
+                blockTexture(BlockRegistration.FLOWERING_POPLAR_PLANKS.get()));
+
+        hangingSignBlock(BlockRegistration.FLOWERING_POPLAR_HANGING_SIGN.get(), BlockRegistration.FLOWERING_POPLAR_WALL_HANGING_SIGN.get(), blockTexture(BlockRegistration.FLOWERING_POPLAR_PLANKS.get()));
+
         //CRABAPPLE WOODSET
         blockWithItem((BlockRegistration.CRABAPPLE_PLANKS));
 
@@ -219,6 +230,16 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.CRABAPPLE_SAPLING.get(), models().cross("crabapple_sapling", modLoc("block/crabapple_sapling")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.POTTED_CRABAPPLE_SAPLING.get(), models().singleTexture("potted_crabapple_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(BlockRegistration.CRABAPPLE_SAPLING.get())).renderType("cutout").ao(false));
+
+        signBlock(((StandingSignBlock) BlockRegistration.CRABAPPLE_SIGN.get()), ((WallSignBlock) BlockRegistration.CRABAPPLE_WALL_SIGN.get()),
+                blockTexture(BlockRegistration.CRABAPPLE_PLANKS.get()));
+
+        hangingSignBlock(BlockRegistration.CRABAPPLE_HANGING_SIGN.get(), BlockRegistration.CRABAPPLE_WALL_HANGING_SIGN.get(), blockTexture(BlockRegistration.CRABAPPLE_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) BlockRegistration.FLOWERING_CRABAPPLE_SIGN.get()), ((WallSignBlock) BlockRegistration.FLOWERING_CRABAPPLE_WALL_SIGN.get()),
+                blockTexture(BlockRegistration.FLOWERING_CRABAPPLE_PLANKS.get()));
+
+        hangingSignBlock(BlockRegistration.FLOWERING_CRABAPPLE_HANGING_SIGN.get(), BlockRegistration.FLOWERING_CRABAPPLE_WALL_HANGING_SIGN.get(), blockTexture(BlockRegistration.FLOWERING_CRABAPPLE_PLANKS.get()));
 
         //FLOWERING CRABAPPLE WOODSET
         blockWithItem((BlockRegistration.FLOWERING_CRABAPPLE_PLANKS));
@@ -1042,6 +1063,16 @@ public class ClutteredBlockstates extends BlockStateProvider {
                 .addModel();
 
         //FURNITURE
+        this.getVariantBuilder(BlockRegistration.LUNAR_OBSERVATORY_JARS.get())
+                .forAllStates(state ->
+                        ConfiguredModel.builder()
+                                .modelFile(models().getExistingFile(modLoc("lunar_observatory_jars_1"))).rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() - 180)
+                                .nextModel().modelFile(models().getExistingFile(modLoc("lunar_observatory_jars_2"))).rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() - 180)
+                                .nextModel().modelFile(models().getExistingFile(modLoc("lunar_observatory_jars_3"))).rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() - 180)
+                                .build());
+
+        hFacingBlockWithCustomModel(BlockRegistration.ASSORTED_GLASS_JARS);
+        hFacingBlockWithCustomModel(BlockRegistration.SMALL_GLASS_JARS);
 
         //KITCHEN SETS
         hFacingBlockWithCustomModel(BlockRegistration.KITCHEN_SET_BROWN_CABINET);
@@ -1347,6 +1378,81 @@ public class ClutteredBlockstates extends BlockStateProvider {
                             .modelFile(models().getBuilder("block/jam_jars_stack_3_orange_w").parent(models().getExistingFile(modLoc("block/jam_jar_pyramid_3"))).texture("0", "block/jam_jar_mini_orange_marmalade")).weight(3).rotationY(270).nextModel()
                             .modelFile(models().getBuilder("block/jam_jars_stack_3_strawberry_w").parent(models().getExistingFile(modLoc("block/jam_jar_pyramid_3"))).texture("0", "block/jam_jar_mini_strawberry")).weight(3).rotationY(270)
                                     .addModel().condition(JamJarsBlock.STACKED, true).condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).end();
+
+        this.getMultipartBuilder(BlockRegistration.ASSORTED_SPICE_JARS.get())
+                .part().modelFile(models().getBuilder("block/spice_jars_first_1_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_1")).weight(1).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_2_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_2")).weight(1).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_3_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_3")).weight(1).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_4_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_4")).weight(1).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_5_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_5")).weight(1).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_6_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_6")).weight(1).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_7_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_7")).weight(1).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_8_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_8")).weight(1)
+                .addModel().condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).end()
+                .part().modelFile(models().getBuilder("block/spice_jars_first_1_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_1")).weight(1).rotationY(90).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_2_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_2")).weight(1).rotationY(90).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_3_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_3")).weight(1).rotationY(90).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_4_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_4")).weight(1).rotationY(90).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_5_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_5")).weight(1).rotationY(90).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_6_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_6")).weight(1).rotationY(90).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_7_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_7")).weight(1).rotationY(90).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_8_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_8")).weight(1).rotationY(90)
+                .addModel().condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).end()
+                .part().modelFile(models().getBuilder("block/spice_jars_first_1_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_1")).weight(1).rotationY(180).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_2_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_2")).weight(1).rotationY(180).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_3_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_3")).weight(1).rotationY(180).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_4_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_4")).weight(1).rotationY(180).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_5_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_5")).weight(1).rotationY(180).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_6_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_6")).weight(1).rotationY(180).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_7_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_7")).weight(1).rotationY(180).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_8_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_8")).weight(1).rotationY(180)
+                .addModel().condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).end()
+                .part().modelFile(models().getBuilder("block/spice_jars_first_1_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_1")).weight(1).rotationY(270).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_2_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_2")).weight(1).rotationY(270).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_3_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_3")).weight(1).rotationY(270).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_4_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_4")).weight(1).rotationY(270).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_5_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_5")).weight(1).rotationY(270).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_6_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_6")).weight(1).rotationY(270).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_7_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_7")).weight(1).rotationY(270).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_first_8_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_1"))).texture("1", "block/small_spice_jar_8")).weight(1).rotationY(270)
+                .addModel().condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).end()
+
+                .part().modelFile(models().getBuilder("block/spice_jars_second_1_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_1")).weight(2).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_2_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_2")).weight(2).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_3_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_3")).weight(2).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_4_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_4")).weight(2).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_5_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_5")).weight(2).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_6_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_6")).weight(2).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_7_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_7")).weight(2).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_8_n").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_8")).weight(2)
+                .addModel().condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).end()
+                .part().modelFile(models().getBuilder("block/spice_jars_second_1_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_1")).weight(2).rotationY(90).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_2_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_2")).weight(2).rotationY(90).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_3_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_3")).weight(2).rotationY(90).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_4_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_4")).weight(2).rotationY(90).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_5_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_5")).weight(2).rotationY(90).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_6_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_6")).weight(2).rotationY(90).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_7_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_7")).weight(2).rotationY(90).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_8_e").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_8")).weight(2).rotationY(90)
+                .addModel().condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).end()
+                .part().modelFile(models().getBuilder("block/spice_jars_second_1_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_1")).weight(2).rotationY(180).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_2_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_2")).weight(2).rotationY(180).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_3_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_3")).weight(2).rotationY(180).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_4_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_4")).weight(2).rotationY(180).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_5_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_5")).weight(2).rotationY(180).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_6_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_6")).weight(2).rotationY(180).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_7_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_7")).weight(2).rotationY(180).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_8_s").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_8")).weight(2).rotationY(180)
+                .addModel().condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).end()
+                .part().modelFile(models().getBuilder("block/spice_jars_second_1_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_1")).weight(2).rotationY(270).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_2_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_2")).weight(2).rotationY(270).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_3_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_3")).weight(2).rotationY(270).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_4_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_4")).weight(2).rotationY(270).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_5_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_5")).weight(2).rotationY(270).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_6_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_6")).weight(2).rotationY(270).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_7_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_7")).weight(2).rotationY(270).nextModel()
+                .modelFile(models().getBuilder("block/spice_jars_second_8_w").parent(models().getExistingFile(modLoc("block/small_spice_jar_2"))).texture("1", "block/small_spice_jar_8")).weight(2).rotationY(270)
+                .addModel().condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).end();
 
 
         hFacingBlockWithCustomModel(BlockRegistration.SAFE_NOVAKID);
@@ -1667,6 +1773,38 @@ public class ClutteredBlockstates extends BlockStateProvider {
         //MISC
         multiblockParts(BlockRegistration.TABLE_PLAIN);
         multiblockParts(BlockRegistration.TABLE_TABLECLOTH);
+        multiblockParts(BlockRegistration.SEWING_TABLE);
+        multiblockParts(BlockRegistration.IMPERIAL_TABLE);
+        multiblockParts(BlockRegistration.LUNAR_OBSERVATORY_TABLE);
+        multiblockParts(BlockRegistration.PASTRY_DISPLAY_CASE);
+        hFacingBlockWithCustomModel(BlockRegistration.IMPERIAL_CHAIR);
+        hFacingBlockWithCustomModel(BlockRegistration.LUNAR_OBSERVATORY_PAPER_BASKET);
+        hFacingBlockWithCustomModel(BlockRegistration.LUNAR_OBSERVATORY_BOOKS);
+        hFacingBlockWithCustomModel(BlockRegistration.LUNAR_OBSERVATORY_GLOBE);
+        hFacingBlockWithCustomModel(BlockRegistration.LUNAR_OBSERVATORY_PEDESTAL);
+        hFacingBlockWithCustomModel(BlockRegistration.MERMAID_PEARL);
+        hFacingBlockWithCustomModel(BlockRegistration.PAINT_WATER_JAR);
+        hFacingBlockWithCustomModel(BlockRegistration.PASTRY_PLATE);
+        hFacingBlockWithCustomModel(BlockRegistration.CHOCOLATE_CROISSANT);
+        hFacingBlockWithCustomModel(BlockRegistration.BLUEBERRY_MUFFIN);
+        hFacingBlockWithCustomModel(BlockRegistration.CINNAMON_BUN);
+        hFacingBlockWithCustomModel(BlockRegistration.CROISSANT);
+        hFacingBlockWithCustomModel(BlockRegistration.HAM_SANDWICH);
+        hFacingBlockWithCustomModel(BlockRegistration.PANCAKE_STACK);
+
+        multiblockParts(BlockRegistration.SEWING_CLUTTER);
+
+        this.getMultipartBuilder(BlockRegistration.GLASS_FLOWER_VASE.get())
+                        .part().modelFile(models().getExistingFile(modLoc("block/glass_vase_of_flowers_plant"))).rotationY(0).addModel()
+                        .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).end()
+                        .part().modelFile(models().getExistingFile(modLoc("block/glass_vase_of_flowers_plant"))).rotationY(90).addModel()
+                        .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).end()
+                        .part().modelFile(models().getExistingFile(modLoc("block/glass_vase_of_flowers_plant"))).rotationY(180).addModel()
+                        .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).end()
+                        .part().modelFile(models().getExistingFile(modLoc("block/glass_vase_of_flowers_plant"))).rotationY(270).addModel()
+                        .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).end()
+                        .part().modelFile(models().getExistingFile(modLoc("block/glass_vase_of_flowers_water"))).addModel()
+                        .end();
 
         hFacingBlockWithCustomModel(BlockRegistration.RED_MUSHROOM_LAMP);
         multiblockParts(BlockRegistration.RED_MUSHROOM_TABLE);

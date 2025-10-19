@@ -1,6 +1,8 @@
 package net.redchujelly.cluttered.block.multiblock;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -56,6 +58,7 @@ public class CottageLampBlock extends MultiblockPlacer{
         if (!pLevel.isClientSide) {
             boolean lit = !pState.getValue(LIT);
             setOnAndOff(pLevel, pPos, pState, lit);
+            pLevel.playSound(null, pPos, SoundEvents.LEVER_CLICK, SoundSource.BLOCKS);
         }
         return InteractionResult.SUCCESS;
     }

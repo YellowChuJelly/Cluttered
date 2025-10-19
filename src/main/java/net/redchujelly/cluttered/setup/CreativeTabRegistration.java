@@ -48,8 +48,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.WILLOW_BOOKSHELF_COBWEB.get());
                         output.accept(BlockRegistration.WILLOW_BOOKSHELF_BOTTLES.get());
                         output.accept(BlockRegistration.WILLOW_BOOKSHELF_VASE.get());
-                        //output.accept(ItemRegistration.WILLOW_BOAT.get());
-                        //output.accept(ItemRegistration.WILLOW_CHEST_BOAT.get());
                         output.accept(BlockRegistration.WILLOW_WINDOW.get());
                         output.accept(BlockRegistration.WILLOW_WINDOW_PANE.get());
                         output.accept(BlockRegistration.WILLOW_WAINSCOTING.get());
@@ -73,8 +71,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.FLOWERING_WILLOW_BUTTON.get());
                         output.accept(ItemRegistration.FLOWERING_WILLOW_SIGN.get());
                         output.accept(ItemRegistration.FLOWERING_WILLOW_HANGING_SIGN.get());
-                        //output.accept(ItemRegistration.FLOWERING_WILLOW_BOAT.get());
-                        //output.accept(ItemRegistration.FLOWERING_WILLOW_CHEST_BOAT.get());
                         output.accept(BlockRegistration.FLOWERING_WILLOW_WINDOW.get());
                         output.accept(BlockRegistration.FLOWERING_WILLOW_WINDOW_PANE.get());
                         output.accept(BlockRegistration.FLOWERING_WILLOW_WAINSCOTING.get());
@@ -97,8 +93,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.POPLAR_BUTTON.get());
                         output.accept(ItemRegistration.POPLAR_SIGN.get());
                         output.accept(ItemRegistration.POPLAR_HANGING_SIGN.get());
-                        //output.accept(ItemRegistration.POPLAR_BOAT.get());
-                        //output.accept(ItemRegistration.POPLAR_CHEST_BOAT.get());
                         output.accept(BlockRegistration.POPLAR_BOOKSHELF.get());
                         output.accept(BlockRegistration.POPLAR_WINDOW.get());
                         output.accept(BlockRegistration.POPLAR_WINDOW_PANE.get());
@@ -123,8 +117,6 @@ public class CreativeTabRegistration {
                         output.accept(ItemRegistration.FLOWERING_POPLAR_SIGN.get());
                         output.accept(ItemRegistration.FLOWERING_POPLAR_HANGING_SIGN.get());
                         output.accept(BlockRegistration.FLOWERING_POPLAR_BUTTON.get());
-                        //output.accept(ItemRegistration.FLOWERING_POPLAR_BOAT.get());
-                        //output.accept(ItemRegistration.FLOWERING_POPLAR_CHEST_BOAT.get());
                         output.accept(BlockRegistration.FLOWERING_POPLAR_BOOKSHELF.get());
                         output.accept(BlockRegistration.FLOWERING_POPLAR_WINDOW.get());
                         output.accept(BlockRegistration.FLOWERING_POPLAR_WINDOW_PANE.get());
@@ -148,8 +140,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.CRABAPPLE_BUTTON.get());
                         output.accept(ItemRegistration.CRABAPPLE_SIGN.get());
                         output.accept(ItemRegistration.CRABAPPLE_HANGING_SIGN.get());
-                        //output.accept(ItemRegistration.CRABAPPLE_BOAT.get());
-                        //output.accept(ItemRegistration.CRABAPPLE_CHEST_BOAT.get());
                         output.accept(BlockRegistration.CRABAPPLE_BOOKSHELF.get());
                         output.accept(BlockRegistration.CRABAPPLE_WINDOW.get());
                         output.accept(BlockRegistration.CRABAPPLE_WINDOW_PANE.get());
@@ -173,8 +163,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.FLOWERING_CRABAPPLE_BUTTON.get());
                         output.accept(ItemRegistration.FLOWERING_CRABAPPLE_SIGN.get());
                         output.accept(ItemRegistration.FLOWERING_CRABAPPLE_HANGING_SIGN.get());
-                        //output.accept(ItemRegistration.FLOWERING_CRABAPPLE_BOAT.get());
-                        //output.accept(ItemRegistration.FLOWERING_CRABAPPLE_CHEST_BOAT.get());
                         output.accept(BlockRegistration.FLOWERING_CRABAPPLE_BOOKSHELF.get());
                         output.accept(BlockRegistration.FLOWERING_CRABAPPLE_WINDOW.get());
                         output.accept(BlockRegistration.FLOWERING_CRABAPPLE_WINDOW_PANE.get());
@@ -198,8 +186,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.SYCAMORE_BUTTON.get());
                         output.accept(ItemRegistration.SYCAMORE_SIGN.get());
                         output.accept(ItemRegistration.SYCAMORE_HANGING_SIGN.get());
-                        //output.accept(ItemRegistration.SYCAMORE_BOAT.get());
-                        //output.accept(ItemRegistration.SYCAMORE_CHEST_BOAT.get());
                         output.accept(BlockRegistration.SYCAMORE_BOOKSHELF.get());
                         output.accept(BlockRegistration.SYCAMORE_WINDOW.get());
                         output.accept(BlockRegistration.SYCAMORE_WINDOW_PANE.get());
@@ -225,8 +211,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.MAPLE_BUTTON.get());
                         output.accept(ItemRegistration.MAPLE_SIGN.get());
                         output.accept(ItemRegistration.MAPLE_HANGING_SIGN.get());
-                        //output.accept(ItemRegistration.MAPLE_BOAT.get());
-                        //output.accept(ItemRegistration.MAPLE_CHEST_BOAT.get());
                         output.accept(BlockRegistration.MAPLE_BOOKSHELF.get());
                         output.accept(BlockRegistration.MAPLE_WINDOW.get());
                         output.accept(BlockRegistration.MAPLE_WINDOW_PANE.get());
@@ -249,8 +233,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.BLUE_MUSHROOM_BUTTON.get());
                         output.accept(ItemRegistration.BLUE_MUSHROOM_SIGN.get());
                         output.accept(ItemRegistration.BLUE_MUSHROOM_HANGING_SIGN.get());
-                        //output.accept(ItemRegistration.BLUE_MUSHROOM_BOAT.get());
-                        //output.accept(ItemRegistration.BLUE_MUSHROOM_CHEST_BOAT.get());
                         output.accept(BlockRegistration.BLUE_MUSHROOM_BOOKSHELF.get());
                         output.accept(BlockRegistration.BLUE_MUSHROOM_WINDOW.get());
                         output.accept(BlockRegistration.BLUE_MUSHROOM_WINDOW_PANE.get());
@@ -273,8 +255,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.RED_MUSHROOM_BUTTON.get());
                         output.accept(ItemRegistration.RED_MUSHROOM_SIGN.get());
                         output.accept(ItemRegistration.RED_MUSHROOM_HANGING_SIGN.get());
-                        //output.accept(ItemRegistration.RED_MUSHROOM_BOAT.get());
-                        //output.accept(ItemRegistration.RED_MUSHROOM_CHEST_BOAT.get());
                         output.accept(BlockRegistration.RED_MUSHROOM_BOOKSHELF.get());
                         output.accept(BlockRegistration.RED_MUSHROOM_WINDOW.get());
                         output.accept(BlockRegistration.RED_MUSHROOM_WINDOW_PANE.get());
@@ -804,6 +784,15 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.DRYING_HERBS.get());
                         output.accept(BlockRegistration.HANGING_CLOTH.get());
 
+
+                        output.accept(BlockRegistration.PASTRY_PLATE.get());
+                        output.accept(BlockRegistration.CHOCOLATE_CROISSANT.get());
+                        output.accept(BlockRegistration.BLUEBERRY_MUFFIN.get());
+                        output.accept(BlockRegistration.CINNAMON_BUN.get());
+                        output.accept(BlockRegistration.CROISSANT.get());
+                        output.accept(BlockRegistration.PANCAKE_STACK.get());
+                        output.accept(BlockRegistration.HAM_SANDWICH.get());
+
                         output.accept(BlockRegistration.HEART_CAKE.get());
                         output.accept(BlockRegistration.BERRY_CAKE.get());
 
@@ -861,11 +850,19 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.SMALL_SHELF.get());
                         output.accept(BlockRegistration.SMALL_SHELF_PINK.get());
                         output.accept(BlockRegistration.TWO_FLOWER_POTS.get());
+
                         output.accept(BlockRegistration.TRADITIONAL_RADIO.get());
                         output.accept(BlockRegistration.SEWING_MANNEQUIN.get());
                         output.accept(BlockRegistration.SEWING_MACHINE_ANTIQUE.get());
+                        output.accept(BlockRegistration.SEWING_TABLE.get());
+                        output.accept(BlockRegistration.SEWING_CLUTTER.get());
+
                         output.accept(BlockRegistration.WATERING_CAN.get());
                         output.accept(BlockRegistration.WATERING_CAN_COPPER.get());
+
+                        output.accept(BlockRegistration.GLASS_FLOWER_VASE.get());
+                        output.accept(BlockRegistration.PAINT_WATER_JAR.get());
+                        output.accept(BlockRegistration.MERMAID_PEARL.get());
 
                         output.accept(BlockRegistration.STARS_PENDANT.get());
                         output.accept(BlockRegistration.MOON_PENDANT.get());
@@ -933,7 +930,21 @@ public class CreativeTabRegistration {
 
                         output.accept(BlockRegistration.TABLE_PLAIN.get());
                         output.accept(BlockRegistration.TABLE_TABLECLOTH.get());
+                        output.accept(BlockRegistration.IMPERIAL_CHAIR.get());
+                        output.accept(BlockRegistration.IMPERIAL_TABLE.get());
 
+                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_TABLE.get());
+                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_PEDESTAL.get());
+                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_BOOKS.get());
+                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_PAPER_BASKET.get());
+                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_GLOBE.get());
+                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_JARS.get());
+
+                        output.accept(BlockRegistration.ASSORTED_GLASS_JARS.get());
+                        output.accept(BlockRegistration.SMALL_GLASS_JARS.get());
+                        output.accept(BlockRegistration.ASSORTED_SPICE_JARS.get());
+
+                        output.accept(BlockRegistration.PASTRY_DISPLAY_CASE.get());
                         output.accept(BlockRegistration.DORADO_CABINET.get());
                         output.accept(BlockRegistration.DORADO_CABINET_CLUTTERED.get());
                         output.accept(BlockRegistration.HAVANA_CABINET.get());

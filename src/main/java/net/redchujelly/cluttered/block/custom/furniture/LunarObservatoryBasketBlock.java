@@ -7,10 +7,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class ShortPaperPileBlock extends SmallFurnitureBlock{
-    private static final VoxelShape SHAPE = Block.box(3, 0, 3, 13, 7, 13);
+public class LunarObservatoryBasketBlock extends SmallFurnitureBlock{
+    private static final VoxelShape SHAPE = Block.box(3,0,3,13,7,13);
 
-    public ShortPaperPileBlock(Properties pProperties) {
+    public LunarObservatoryBasketBlock(Properties pProperties) {
         super(pProperties);
     }
 

@@ -65,6 +65,7 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_GEOMETRIC.get())
                 .add(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_QUILTED.get())
                 .add(BlockRegistration.DARKWOOD_ENDTABLE.get())
+                .add(BlockRegistration.LUNAR_OBSERVATORY_BOOKS.get())
                 ;
 
         tag(BlockTags.MINEABLE_WITH_AXE)
@@ -541,6 +542,15 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.BLUE_MUSHROOM_TABLE.get())
                 .add(BlockRegistration.BLUE_MUSHROOM_BED.get())
                 .add(BlockRegistration.BLUE_MUSHROOM_LAMP.get())
+
+                .add(BlockRegistration.SEWING_TABLE.get())
+                .add(BlockRegistration.IMPERIAL_TABLE.get())
+                .add(BlockRegistration.LUNAR_OBSERVATORY_TABLE.get())
+                .add(BlockRegistration.IMPERIAL_CHAIR.get())
+                .add(BlockRegistration.SEWING_CLUTTER.get())
+                .add(BlockRegistration.LUNAR_OBSERVATORY_PAPER_BASKET.get())
+                .add(BlockRegistration.LUNAR_OBSERVATORY_BOOKS.get())
+                .add(BlockRegistration.LUNAR_OBSERVATORY_PEDESTAL.get())
                 ;
 
         tag(BlockTags.WOODEN_DOORS)
@@ -830,6 +840,15 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.SAFE_NOVAKID.get())
                 .add(BlockRegistration.POK_TA_POK_HOOP.get())
                 .add(BlockRegistration.POK_TA_POK_HOOP_SNAKES.get())
+                .add(BlockRegistration.PASTRY_DISPLAY_CASE.get())
+                .add(BlockRegistration.GLASS_FLOWER_VASE.get())
+                .add(BlockRegistration.LUNAR_OBSERVATORY_GLOBE.get())
+                .add(BlockRegistration.MERMAID_PEARL.get())
+                .add(BlockRegistration.PAINT_WATER_JAR.get())
+                .add(BlockRegistration.LUNAR_OBSERVATORY_JARS.get())
+                .add(BlockRegistration.ASSORTED_GLASS_JARS.get())
+                .add(BlockRegistration.SMALL_GLASS_JARS.get())
+                .add(BlockRegistration.ASSORTED_SPICE_JARS.get())
         ;
         tag(BlockTags.CLIMBABLE)
                 .add(BlockRegistration.WILLOW_VINES.get());

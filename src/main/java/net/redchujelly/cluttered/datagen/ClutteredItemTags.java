@@ -115,6 +115,8 @@ public class ClutteredItemTags extends ItemTagsProvider {
         tag(TagRegistration.Items.RED_MUSHROOM_LOG)
                 .add(BlockRegistration.RED_MUSHROOM_LOG.get().asItem())
                 .add(BlockRegistration.RED_MUSHROOM_WOOD.get().asItem());
+        tag(Tags.Items.STORAGE_BLOCKS_GOLD)
+                .add(BlockRegistration.CHISELED_GOLD_BLOCK.get().asItem());
     }
 
     public void tagNewWoodset(String woodType){

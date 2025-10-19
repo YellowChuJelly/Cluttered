@@ -951,6 +951,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.COTTAGE_CHAIR_CUSHIONED.get());
         dropSelf(BlockRegistration.COTTAGE_OTTOMAN.get());
         dropSelf(BlockRegistration.MADONNA_OTTOMAN.get());
+        dropSelf(BlockRegistration.IMPERIAL_CHAIR.get());
 
         //MISC
         dropSelf(BlockRegistration.BIRDHOUSE_UNPAINTED.get());
@@ -1062,8 +1063,30 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.BLUE_MUSHROOM_WARDROBE.get());
         multiBlockDropOnlyOneItem(BlockRegistration.BLUE_MUSHROOM_BED.get());
 
+
         this.add(BlockRegistration.HEART_CAKE.get(), noDrop());
         this.add(BlockRegistration.BERRY_CAKE.get(), noDrop());
+
+        dropSelf(BlockRegistration.GLASS_FLOWER_VASE.get());
+        dropSelf(BlockRegistration.LUNAR_OBSERVATORY_PAPER_BASKET.get());
+        dropSelf(BlockRegistration.LUNAR_OBSERVATORY_BOOKS.get());
+        dropSelf(BlockRegistration.LUNAR_OBSERVATORY_GLOBE.get());
+        dropSelf(BlockRegistration.LUNAR_OBSERVATORY_PEDESTAL.get());
+        dropSelf(BlockRegistration.MERMAID_PEARL.get());
+        dropSelf(BlockRegistration.PAINT_WATER_JAR.get());
+        dropSelf(BlockRegistration.PASTRY_PLATE.get());
+        dropSelf(BlockRegistration.CHOCOLATE_CROISSANT.get());
+        dropSelf(BlockRegistration.BLUEBERRY_MUFFIN.get());
+        dropSelf(BlockRegistration.CINNAMON_BUN.get());
+        dropSelf(BlockRegistration.CROISSANT.get());
+        dropSelf(BlockRegistration.HAM_SANDWICH.get());
+        dropSelf(BlockRegistration.PANCAKE_STACK.get());
+
+        dropSelf(BlockRegistration.ASSORTED_GLASS_JARS.get());
+        dropSelf(BlockRegistration.SMALL_GLASS_JARS.get());
+        dropSelf(BlockRegistration.ASSORTED_SPICE_JARS.get());
+        dropSelf(BlockRegistration.LUNAR_OBSERVATORY_JARS.get());
+
 
         //GARLANDS
         dropSelf(BlockRegistration.BLACK_CAT_GARLAND.get());
@@ -1167,6 +1190,13 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
 
         multiBlockDropOnlyOneItem(BlockRegistration.TABLE_PLAIN.get());
         multiBlockDropOnlyOneItem(BlockRegistration.TABLE_TABLECLOTH.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.SEWING_TABLE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.IMPERIAL_TABLE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.LUNAR_OBSERVATORY_TABLE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.PASTRY_DISPLAY_CASE.get());
+
+
+        multiBlockDropOnlyOneItem(BlockRegistration.SEWING_CLUTTER.get());
 
         //BIKES
         multiBlockDropOnlyOneItem(BlockRegistration.BIKE_YELLOW.get());
