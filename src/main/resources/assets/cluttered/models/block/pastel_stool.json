@@ -1,7 +1,9 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"2": "pastel_chair"
+		"2": "cluttered:block/pastel_chair",
+		"particle": "cluttered:block/pastel_chair"
 	},
 	"elements": [
 		{

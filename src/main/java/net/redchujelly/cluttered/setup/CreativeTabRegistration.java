@@ -628,20 +628,12 @@ public class CreativeTabRegistration {
 
                         output.accept(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get());
                         output.accept(BlockRegistration.ALABASTER_WINDOW_PANE.get());
-                        output.accept(BlockRegistration.ALABASTER_PANEL_ATLANTIC.get());
-                        output.accept(BlockRegistration.ALABASTER_PANEL_AUGUSTINE.get());
-                        output.accept(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get());
-                        output.accept(BlockRegistration.ALABASTER_PANEL_CANTERBURY.get());
                         output.accept(BlockRegistration.ALABASTER_SCREEN_DOOR.get());
                         output.accept(BlockRegistration.ALABASTER_FRENCH_DOOR.get());
                         output.accept(BlockRegistration.ALABASTER_WAINSCOTING.get());
                         
                         output.accept(BlockRegistration.WOOD_WINDOW_DIVIDED.get());
                         output.accept(BlockRegistration.WOOD_WINDOW_PANE.get());
-                        output.accept(BlockRegistration.WOOD_PANEL_ATLANTIC.get());
-                        output.accept(BlockRegistration.WOOD_PANEL_AUGUSTINE.get());
-                        output.accept(BlockRegistration.WOOD_PANEL_ALEXANDRIA.get());
-                        output.accept(BlockRegistration.WOOD_PANEL_CANTERBURY.get());
                         output.accept(BlockRegistration.WOOD_SCREEN_DOOR.get());
                         output.accept(BlockRegistration.WOOD_FRENCH_DOOR.get());
 
@@ -685,6 +677,7 @@ public class CreativeTabRegistration {
                     .title(Component.translatable("creativetab.cluttered_furniture_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(BlockRegistration.APPLE_CHAIR.get());
+                        output.accept(BlockRegistration.LEMON_TABLE.get());
 
                         output.accept(BlockRegistration.BIRDHOUSE_RED.get());
                         output.accept(BlockRegistration.BIRDHOUSE_BLUE.get());
@@ -698,6 +691,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.BUTTON_STOOL.get());
 
                         output.accept(BlockRegistration.CARDBOARD_BOX.get());
+                        output.accept(BlockRegistration.FILING_BOX.get());
 
                         output.accept(BlockRegistration.CAT_MUGS_CLUTTERED.get());
                         output.accept(BlockRegistration.CAT_PLANT_POT_BLACK.get());
@@ -813,6 +807,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.ANIMATED_FLAG_NONBINARY.get());
 
                         output.accept(BlockRegistration.BAMBOO_BOOKSHELF.get());
+                        output.accept(BlockRegistration.SMALL_BOOKCASE.get());
                         output.accept(BlockRegistration.FWISH_BOOKCASE.get());
                         output.accept(BlockRegistration.RETRO_CAFE_SHELF.get());
                         output.accept(BlockRegistration.RETRO_CAFE_SHELF_WINDOW.get());
@@ -828,6 +823,9 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.ENDTABLE_SUNSHINE.get());
                         output.accept(BlockRegistration.ENDTABLE_WOOD.get());
                         output.accept(BlockRegistration.ENDTABLE_DECOR.get());
+                        output.accept(BlockRegistration.SMALL_CAULDRON.get());
+                        output.accept(BlockRegistration.STEAMPUNK_LAMP.get());
+                        output.accept(BlockRegistration.TARRY_TOWN_STOVE.get());
 
                         output.accept(BlockRegistration.NIGHTSTAND_GREEN.get());
                         output.accept(BlockRegistration.DESK_GREEN.get());
@@ -856,6 +854,14 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.SEWING_MACHINE_ANTIQUE.get());
                         output.accept(BlockRegistration.SEWING_TABLE.get());
                         output.accept(BlockRegistration.SEWING_CLUTTER.get());
+                        output.accept(BlockRegistration.MINI_HANGING_TERRARIUMS.get());
+                        output.accept(BlockRegistration.OFFICE_SUPPLIES_A.get());
+                        output.accept(BlockRegistration.OFFICE_SUPPLIES_B.get());
+                        output.accept(BlockRegistration.RITO_BOOKS.get());
+                        output.accept(BlockRegistration.ROVER_MUG.get());
+                        output.accept(BlockRegistration.SELTZER_CANS.get());
+
+                        output.accept(BlockRegistration.WEDDING_ARCH.get());
 
                         output.accept(BlockRegistration.WATERING_CAN.get());
                         output.accept(BlockRegistration.WATERING_CAN_COPPER.get());
@@ -863,6 +869,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.GLASS_FLOWER_VASE.get());
                         output.accept(BlockRegistration.PAINT_WATER_JAR.get());
                         output.accept(BlockRegistration.MERMAID_PEARL.get());
+                        output.accept(BlockRegistration.MERMAID_DRESSER.get());
 
                         output.accept(BlockRegistration.STARS_PENDANT.get());
                         output.accept(BlockRegistration.MOON_PENDANT.get());
@@ -927,6 +934,14 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.DARKWOOD_BED_GEOMETRIC.get());
                         output.accept(BlockRegistration.DARKWOOD_BED_QUILTED.get());
                         output.accept(BlockRegistration.DARKWOOD_BED_SOUTHERN_FLAIR.get());
+
+                        output.accept(BlockRegistration.PASTEL_CHAIR.get());
+                        output.accept(BlockRegistration.PASTEL_STOOL.get());
+                        output.accept(BlockRegistration.PASTEL_TABLE.get());
+                        output.accept(BlockRegistration.PASTEL_LIGHT.get());
+                        output.accept(BlockRegistration.PASTEL_CABINET.get());
+                        output.accept(BlockRegistration.PASTEL_WARDROBE.get());
+                        output.accept(BlockRegistration.PASTEL_BED.get());
 
                         output.accept(BlockRegistration.TABLE_PLAIN.get());
                         output.accept(BlockRegistration.TABLE_TABLECLOTH.get());

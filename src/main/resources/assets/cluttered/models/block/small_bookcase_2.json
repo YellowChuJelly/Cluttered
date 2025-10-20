@@ -1,7 +1,9 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"2": "small_bookcase"
+		"2": "cluttered:block/small_bookcase",
+		"particle": "cluttered:block/small_bookcase"
 	},
 	"elements": [
 		{

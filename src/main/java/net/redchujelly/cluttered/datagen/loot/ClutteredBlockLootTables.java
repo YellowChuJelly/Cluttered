@@ -714,10 +714,6 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
 
         add(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get(), block -> createSilkTouchOnlyTable(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get()));
         add(BlockRegistration.ALABASTER_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.ALABASTER_WINDOW_PANE.get()));
-        add(BlockRegistration.ALABASTER_PANEL_CANTERBURY.get(), block -> createSilkTouchOnlyTable(BlockRegistration.ALABASTER_PANEL_CANTERBURY.get()));
-        add(BlockRegistration.ALABASTER_PANEL_AUGUSTINE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.ALABASTER_PANEL_AUGUSTINE.get()));
-        add(BlockRegistration.ALABASTER_PANEL_ATLANTIC.get(), block -> createSilkTouchOnlyTable(BlockRegistration.ALABASTER_PANEL_ATLANTIC.get()));
-        add(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get(), block -> createSilkTouchOnlyTable(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get()));
         add(BlockRegistration.ALABASTER_FRENCH_DOOR.get(), block -> createDoorTable(BlockRegistration.ALABASTER_FRENCH_DOOR.get()));
         add(BlockRegistration.ALABASTER_SCREEN_DOOR.get(), block -> createDoorTable(BlockRegistration.ALABASTER_SCREEN_DOOR.get()));
 
@@ -734,10 +730,6 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
 
         add(BlockRegistration.WOOD_WINDOW_DIVIDED.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_WINDOW_DIVIDED.get()));
         add(BlockRegistration.WOOD_WINDOW_PANE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_WINDOW_PANE.get()));
-        add(BlockRegistration.WOOD_PANEL_CANTERBURY.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_PANEL_CANTERBURY.get()));
-        add(BlockRegistration.WOOD_PANEL_AUGUSTINE.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_PANEL_AUGUSTINE.get()));
-        add(BlockRegistration.WOOD_PANEL_ATLANTIC.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_PANEL_ATLANTIC.get()));
-        add(BlockRegistration.WOOD_PANEL_ALEXANDRIA.get(), block -> createSilkTouchOnlyTable(BlockRegistration.WOOD_PANEL_ALEXANDRIA.get()));
         add(BlockRegistration.WOOD_FRENCH_DOOR.get(), block -> createDoorTable(BlockRegistration.WOOD_FRENCH_DOOR.get()));
         add(BlockRegistration.WOOD_SCREEN_DOOR.get(), block -> createDoorTable(BlockRegistration.WOOD_SCREEN_DOOR.get()));
 
@@ -1063,6 +1055,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.BLUE_MUSHROOM_WARDROBE.get());
         multiBlockDropOnlyOneItem(BlockRegistration.BLUE_MUSHROOM_BED.get());
 
+        dropSelf(BlockRegistration.FILING_BOX.get());
 
         this.add(BlockRegistration.HEART_CAKE.get(), noDrop());
         this.add(BlockRegistration.BERRY_CAKE.get(), noDrop());
@@ -1086,6 +1079,19 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.SMALL_GLASS_JARS.get());
         dropSelf(BlockRegistration.ASSORTED_SPICE_JARS.get());
         dropSelf(BlockRegistration.LUNAR_OBSERVATORY_JARS.get());
+
+
+        dropSelf(BlockRegistration.LEMON_TABLE.get());
+
+        dropSelf(BlockRegistration.MINI_HANGING_TERRARIUMS.get());
+        dropSelf(BlockRegistration.OFFICE_SUPPLIES_A.get());
+        dropSelf(BlockRegistration.OFFICE_SUPPLIES_B.get());
+        dropSelf(BlockRegistration.RITO_BOOKS.get());
+        dropSelf(BlockRegistration.ROVER_MUG.get());
+        dropSelf(BlockRegistration.SELTZER_CANS.get());
+        dropSelf(BlockRegistration.SMALL_CAULDRON.get());
+        dropSelf(BlockRegistration.STEAMPUNK_LAMP.get());
+        dropSelf(BlockRegistration.TARRY_TOWN_STOVE.get());
 
 
         //GARLANDS
@@ -1195,8 +1201,20 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.LUNAR_OBSERVATORY_TABLE.get());
         multiBlockDropOnlyOneItem(BlockRegistration.PASTRY_DISPLAY_CASE.get());
 
-
         multiBlockDropOnlyOneItem(BlockRegistration.SEWING_CLUTTER.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.MERMAID_DRESSER.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.SMALL_BOOKCASE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.WEDDING_ARCH.get());
+
+        //PASTEL SET
+        multiBlockDropOnlyOneItem(BlockRegistration.PASTEL_BED.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.PASTEL_TABLE.get());
+        multiBlockDropOnlyOneItem(BlockRegistration.PASTEL_WARDROBE.get());
+        dropSelf(BlockRegistration.PASTEL_LIGHT.get());
+        dropSelf(BlockRegistration.PASTEL_CABINET.get());
+        dropSelf(BlockRegistration.PASTEL_CHAIR.get());
+        dropSelf(BlockRegistration.PASTEL_STOOL.get());
+
 
         //BIKES
         multiBlockDropOnlyOneItem(BlockRegistration.BIKE_YELLOW.get());

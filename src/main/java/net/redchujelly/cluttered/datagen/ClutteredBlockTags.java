@@ -66,7 +66,10 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_QUILTED.get())
                 .add(BlockRegistration.DARKWOOD_ENDTABLE.get())
                 .add(BlockRegistration.LUNAR_OBSERVATORY_BOOKS.get())
-                ;
+                .add(BlockRegistration.RITO_BOOKS.get())
+                .add(BlockRegistration.SMALL_BOOKCASE.get())
+
+        ;
 
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(BlockRegistration.BLUE_MUSHROOM_CAP.get())
@@ -253,10 +256,6 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.DYNASTY_DOOR.get())
                 .add(BlockRegistration.WOOD_WINDOW_DIVIDED.get())
                 .add(BlockRegistration.WOOD_WINDOW_PANE.get())
-                .add(BlockRegistration.WOOD_PANEL_ATLANTIC.get())
-                .add(BlockRegistration.WOOD_PANEL_AUGUSTINE.get())
-                .add(BlockRegistration.WOOD_PANEL_ALEXANDRIA.get())
-                .add(BlockRegistration.WOOD_PANEL_CANTERBURY.get())
                 .add(BlockRegistration.WOOD_SCREEN_DOOR.get())
                 .add(BlockRegistration.WOOD_FRENCH_DOOR.get())
 
@@ -551,7 +550,32 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.LUNAR_OBSERVATORY_PAPER_BASKET.get())
                 .add(BlockRegistration.LUNAR_OBSERVATORY_BOOKS.get())
                 .add(BlockRegistration.LUNAR_OBSERVATORY_PEDESTAL.get())
+                .add(BlockRegistration.FILING_BOX.get())
+
+                .add(BlockRegistration.PASTEL_CABINET.get())
+                .add(BlockRegistration.PASTEL_CHAIR.get())
+                .add(BlockRegistration.PASTEL_STOOL.get())
+                .add(BlockRegistration.PASTEL_LIGHT.get())
+                .add(BlockRegistration.PASTEL_BED.get())
+                .add(BlockRegistration.PASTEL_TABLE.get())
+                .add(BlockRegistration.PASTEL_WARDROBE.get())
+
+                .add(BlockRegistration.MERMAID_DRESSER.get())
+
+                .add(BlockRegistration.MINI_HANGING_TERRARIUMS.get())
+                .add(BlockRegistration.OFFICE_SUPPLIES_A.get())
+                .add(BlockRegistration.OFFICE_SUPPLIES_B.get())
+                .add(BlockRegistration.RITO_BOOKS.get())
+                .add(BlockRegistration.WEDDING_ARCH.get())
                 ;
+        tag(BlockTags.BEDS)
+                .add(BlockRegistration.BLUE_MUSHROOM_BED.get())
+                .add(BlockRegistration.RED_MUSHROOM_BED.get())
+                .add(BlockRegistration.DARKWOOD_BED_GEOMETRIC.get())
+                .add(BlockRegistration.DARKWOOD_BED_QUILTED.get())
+                .add(BlockRegistration.DARKWOOD_BED_SOUTHERN_FLAIR.get())
+                .add(BlockRegistration.PASTEL_BED.get())
+        ;
 
         tag(BlockTags.WOODEN_DOORS)
                 .add(BlockRegistration.WILLOW_LOG_DOOR.get())
@@ -742,10 +766,6 @@ public class ClutteredBlockTags extends BlockTagsProvider {
 
                 .add(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get())
                 .add(BlockRegistration.ALABASTER_WINDOW_PANE.get())
-                .add(BlockRegistration.ALABASTER_PANEL_ATLANTIC.get())
-                .add(BlockRegistration.ALABASTER_PANEL_AUGUSTINE.get())
-                .add(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get())
-                .add(BlockRegistration.ALABASTER_PANEL_CANTERBURY.get())
                 .add(BlockRegistration.ALABASTER_SCREEN_DOOR.get())
                 .add(BlockRegistration.ALABASTER_FRENCH_DOOR.get())
                 .add(BlockRegistration.ALABASTER_WAINSCOTING.get())
@@ -849,6 +869,14 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.ASSORTED_GLASS_JARS.get())
                 .add(BlockRegistration.SMALL_GLASS_JARS.get())
                 .add(BlockRegistration.ASSORTED_SPICE_JARS.get())
+                .add(BlockRegistration.LEMON_TABLE.get())
+
+                .add(BlockRegistration.ROVER_MUG.get())
+                .add(BlockRegistration.SELTZER_CANS.get())
+
+                .add(BlockRegistration.SMALL_CAULDRON.get())
+                .add(BlockRegistration.STEAMPUNK_LAMP.get())
+                .add(BlockRegistration.TARRY_TOWN_STOVE.get())
         ;
         tag(BlockTags.CLIMBABLE)
                 .add(BlockRegistration.WILLOW_VINES.get());
@@ -914,7 +942,11 @@ public class ClutteredBlockTags extends BlockTagsProvider {
         tag(BlockTags.LEAVES)
                 .add(BlockRegistration.WILLOW_LEAVES.get())
                 .add(BlockRegistration.POPLAR_LEAVES.get());
+        tag(BlockTags.WOODEN_FENCES)
+                .add(BlockRegistration.WOODEN_PICKET_FENCE.get())
+                .add(BlockRegistration.WEDDING_ARCH.get());
         tag(BlockTags.FENCES)
+                .add(BlockRegistration.WEDDING_ARCH.get())
                 .add(BlockRegistration.MARBLE_BALUSTRADE.get())
                 .add(BlockRegistration.MARBLE_PICKET_FENCE.get())
                 .add(BlockRegistration.CHALCEDONY_BALUSTRADE.get())

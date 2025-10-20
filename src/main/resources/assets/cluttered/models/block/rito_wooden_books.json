@@ -1,9 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"texture_size": [8, 8],
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"2": "rito_wooden_books",
-		"particle": "rito_wooden_books"
+		"2": "cluttered:block/rito_wooden_books",
+		"particle": "cluttered:block/rito_wooden_books"
 	},
 	"elements": [
 		{

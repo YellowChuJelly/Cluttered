@@ -1,8 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"1": "pastel_cabinet"
+		"1": "cluttered:block/pastel_cabinet",
+		"particle": "cluttered:block/pastel_cabinet"
 	},
 	"elements": [
 		{

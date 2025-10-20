@@ -5947,7 +5947,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .showNotification(false)
                     .save(consumer);
 
-            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.HOPPIN_PARK_LANTERN.get(), 2)
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.HOPPIN_PARK_LANTERN.get())
                     .pattern("f")
                     .pattern("l")
                     .pattern("p")
@@ -6299,7 +6299,7 @@ public class ClutteredRecipes extends RecipeProvider {
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.IMPERIAL_CHAIR.get())
                     .pattern("frr")
-                    .pattern("sss")
+                    .pattern("fss")
                     .pattern("fbf")
                     .define('s', ItemTags.WOODEN_SLABS)
                     .define('f', ItemTags.WOODEN_FENCES)
@@ -6365,6 +6365,28 @@ public class ClutteredRecipes extends RecipeProvider {
                     .define('b', Items.BOOK)
                     .unlockedBy("has_book", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.BOOK).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.RITO_BOOKS.get())
+                    .pattern("ppp")
+                    .pattern("bbb")
+                    .pattern("fff")
+                    .define('f', Items.FEATHER)
+                    .define('b', Items.BOOK)
+                    .define('p', ItemTags.PLANKS)
+                    .unlockedBy("has_book", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.BOOK).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.WEDDING_ARCH.get())
+                    .pattern("fff")
+                    .pattern("f f")
+                    .pattern("f f")
+                    .define('f', BlockRegistration.WOODEN_PICKET_FENCE.get())
+                    .unlockedBy("has_wooden_picket_fence", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(BlockRegistration.WOODEN_PICKET_FENCE.get()).build()))
                     .showNotification(false)
                     .save(consumer);
 

@@ -614,6 +614,29 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.ASSORTED_GLASS_JARS);
         blockitemFromModel(BlockRegistration.SMALL_GLASS_JARS);
         blockitemFromModel(BlockRegistration.ASSORTED_SPICE_JARS);
+        blockitemFromModel(BlockRegistration.FILING_BOX);
+        blockitemFromModel(BlockRegistration.LEMON_TABLE);
+        blockitemFromModel(BlockRegistration.MERMAID_DRESSER);
+
+        blockitemFromModel(BlockRegistration.PASTEL_CABINET);
+        blockitemFromModel(BlockRegistration.PASTEL_CHAIR);
+        blockitemFromModel(BlockRegistration.PASTEL_STOOL);
+        blockitemFromModel(BlockRegistration.PASTEL_LIGHT);
+        blockitemFromModel(BlockRegistration.PASTEL_BED);
+        blockitemFromModel(BlockRegistration.PASTEL_TABLE);
+        blockitemFromModel(BlockRegistration.PASTEL_WARDROBE);
+
+        blockitemFromModel(BlockRegistration.MINI_HANGING_TERRARIUMS);
+        blockitemFromModel(BlockRegistration.OFFICE_SUPPLIES_A);
+        blockitemFromModel(BlockRegistration.OFFICE_SUPPLIES_B);
+        blockitemFromModel(BlockRegistration.RITO_BOOKS);
+        blockitemFromModel(BlockRegistration.ROVER_MUG);
+        blockitemFromModel(BlockRegistration.SELTZER_CANS);
+        blockitemFromModel(BlockRegistration.SMALL_BOOKCASE);
+        blockitemFromModel(BlockRegistration.SMALL_CAULDRON);
+        blockitemFromModel(BlockRegistration.STEAMPUNK_LAMP);
+        blockitemFromModel(BlockRegistration.TARRY_TOWN_STOVE);
+        blockitemFromModel(BlockRegistration.WEDDING_ARCH);
 
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(BlockRegistration.LUNAR_OBSERVATORY_JARS.get()).getPath(),
                 new ResourceLocation(Cluttered.MODID, "block/lunar_observatory_jars_1"));

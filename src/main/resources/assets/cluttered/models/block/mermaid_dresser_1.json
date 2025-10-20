@@ -1,8 +1,11 @@
 {
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
+	"render_type": "minecraft:cutout",
+	"ambientocclusion": false,
 	"textures": {
-		"1": "mermaid_dresser"
+		"1": "cluttered:block/mermaid_dresser",
+		"particle": "cluttered:block/mermaid_dresser"
 	},
 	"elements": [
 		{

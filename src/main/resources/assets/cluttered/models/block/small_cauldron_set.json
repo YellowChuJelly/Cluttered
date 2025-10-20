@@ -1,8 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"3": "small_cauldron_set"
+		"3": "cluttered:block/small_cauldron_set",
+		"particle": "cluttered:block/small_cauldron_set"
 	},
 	"elements": [
 		{

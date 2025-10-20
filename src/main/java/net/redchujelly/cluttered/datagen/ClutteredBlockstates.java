@@ -922,18 +922,10 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         simpleBlockWithItem(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get(), models().cubeAll("alabaster_window_divided", modLoc("block/alabaster_window_divided")).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.ALABASTER_WINDOW_PANE.get(), modLoc("block/alabaster_window_divided"), modLoc("block/alabaster_glass_pane_top"), "cutout");
-        simpleBlockWithItem(BlockRegistration.ALABASTER_PANEL_ALEXANDRIA.get(), models().cubeAll("alabaster_alexandria_panel", modLoc("block/alabaster_alexandria_panel")).renderType("cutout"));
-        simpleBlockWithItem(BlockRegistration.ALABASTER_PANEL_ATLANTIC.get(), models().cubeAll("alabaster_atlantic_panel", modLoc("block/alabaster_atlantic_panel")).renderType("cutout"));
-        simpleBlockWithItem(BlockRegistration.ALABASTER_PANEL_AUGUSTINE.get(), models().cubeAll("alabaster_augustine_panel", modLoc("block/alabaster_augustine_panel")).renderType("cutout"));
-        simpleBlockWithItem(BlockRegistration.ALABASTER_PANEL_CANTERBURY.get(), models().cubeAll("alabaster_canterbury_panel", modLoc("block/alabaster_canterbury_panel")).renderType("cutout"));
         doorBlockWithRenderType((DoorBlock) BlockRegistration.ALABASTER_SCREEN_DOOR.get(), modLoc("block/alabaster_screen_door_bottom"), modLoc("block/alabaster_screen_door_top"), "cutout");
         doorBlockWithRenderType((DoorBlock) BlockRegistration.ALABASTER_FRENCH_DOOR.get(), modLoc("block/alabaster_french_door_bottom"), modLoc("block/alabaster_french_door_top"), "cutout");
         simpleBlockWithItem(BlockRegistration.WOOD_WINDOW_DIVIDED.get(), models().cubeAll("wooden_window_divided", modLoc("block/wooden_window_divided")).renderType("cutout"));
         paneBlockWithRenderType((IronBarsBlock) BlockRegistration.WOOD_WINDOW_PANE.get(), modLoc("block/wooden_window_divided"), modLoc("block/wooden_glass_pane_top"), "cutout");
-        simpleBlockWithItem(BlockRegistration.WOOD_PANEL_ALEXANDRIA.get(), models().cubeAll("wooden_alexandria_panel", modLoc("block/wooden_alexandria_panel")).renderType("cutout"));
-        simpleBlockWithItem(BlockRegistration.WOOD_PANEL_ATLANTIC.get(), models().cubeAll("wooden_atlantic_panel", modLoc("block/wooden_atlantic_panel")).renderType("cutout"));
-        simpleBlockWithItem(BlockRegistration.WOOD_PANEL_AUGUSTINE.get(), models().cubeAll("wooden_augustine_panel", modLoc("block/wooden_augustine_panel")).renderType("cutout"));
-        simpleBlockWithItem(BlockRegistration.WOOD_PANEL_CANTERBURY.get(), models().cubeAll("wooden_canterbury_panel", modLoc("block/wooden_canterbury_panel")).renderType("cutout"));
         doorBlockWithRenderType((DoorBlock) BlockRegistration.WOOD_SCREEN_DOOR.get(), modLoc("block/wooden_screen_door_bottom"), modLoc("block/wooden_screen_door_top"), "cutout");
         doorBlockWithRenderType((DoorBlock) BlockRegistration.WOOD_FRENCH_DOOR.get(), modLoc("block/wooden_french_door_bottom"), modLoc("block/wooden_french_door_top"), "cutout");
 
@@ -1517,6 +1509,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.BASKET_OF_FLOWERS);
         hFacingBlockWithCustomModel(BlockRegistration.BASKET_OF_PRODUCE);
 
+        hFacingBlockWithCustomModel(BlockRegistration.LEMON_TABLE);
+
         //DARKWOOD
         multiblockParts(BlockRegistration.DARKWOOD_BED_GEOMETRIC);
         multiblockParts(BlockRegistration.DARKWOOD_BED_QUILTED);
@@ -1535,6 +1529,16 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.DARKWOOD_CLOCK);
         hFacingBlockWithCustomModel(BlockRegistration.DARKWOOD_STOOL);
         hFacingBlockWithCustomModel(BlockRegistration.DARKWOOD_ENDTABLE);
+
+        //PASTEL
+        multiblockParts(BlockRegistration.PASTEL_BED);
+        multiblockParts(BlockRegistration.PASTEL_TABLE);
+        multiblockParts(BlockRegistration.PASTEL_WARDROBE);
+        hFacingBlockWithCustomModel(BlockRegistration.PASTEL_CHAIR);
+        hFacingBlockWithCustomModel(BlockRegistration.PASTEL_STOOL);
+        hFacingBlockWithCustomModel(BlockRegistration.PASTEL_LIGHT);
+        hFacingBlockWithCustomModel(BlockRegistration.PASTEL_CABINET);
+
 
         hFacingBlockWithCustomModel(BlockRegistration.WATERING_CAN);
         hFacingBlockWithCustomModel(BlockRegistration.WATERING_CAN_COPPER);
@@ -1561,7 +1565,25 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         hFacingBlockWithCustomModel(BlockRegistration.ROW_OF_SMALL_BOOKS_SHELVED);
         hFacingBlockWithCustomModel(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL_SHELVED);
-        hFacingBlockWithCustomModel(BlockRegistration.STAINED_GLASS_LAMP);
+
+        this.getMultipartBuilder(BlockRegistration.STAINED_GLASS_LAMP.get())
+                .part().modelFile(models().getExistingFile(modLoc("block/stained_glass_lamp_cutout"))).rotationY(0).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/stained_glass_lamp_cutout"))).rotationY(90).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/stained_glass_lamp_cutout"))).rotationY(180).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/stained_glass_lamp_cutout"))).rotationY(270).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/stained_glass_lamp_translucent"))).rotationY(0).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/stained_glass_lamp_translucent"))).rotationY(90).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/stained_glass_lamp_translucent"))).rotationY(180).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/stained_glass_lamp_translucent"))).rotationY(270).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).end();
+
         hFacingBlockWithCustomModel(BlockRegistration.SMALL_BUSH);
         hFacingBlockWithCustomModel(BlockRegistration.TEDDY_BEAR);
 
@@ -1598,11 +1620,95 @@ public class ClutteredBlockstates extends BlockStateProvider {
         multiBlockWithOneModel(BlockRegistration.DRYING_HERBS);
         hFacingBlockWithCustomModel(BlockRegistration.HANGING_CLOTH);
 
+        hFacingBlockWithCustomModel(BlockRegistration.MINI_HANGING_TERRARIUMS);
+        hFacingBlockWithCustomModel(BlockRegistration.OFFICE_SUPPLIES_A);
+        hFacingBlockWithCustomModel(BlockRegistration.OFFICE_SUPPLIES_B);
+        hFacingBlockWithCustomModel(BlockRegistration.RITO_BOOKS);
+        hFacingBlockWithCustomModel(BlockRegistration.ROVER_MUG);
+        hFacingBlockWithCustomModel(BlockRegistration.SELTZER_CANS);
+        hFacingBlockWithCustomModel(BlockRegistration.SMALL_CAULDRON);
+        hFacingBlockWithCustomModel(BlockRegistration.STEAMPUNK_LAMP);
+        hFacingBlockWithCustomModel(BlockRegistration.TARRY_TOWN_STOVE);
+
         multiblockParts(BlockRegistration.BAMBOO_BOOKSHELF);
         multiblockParts(BlockRegistration.FWISH_BOOKCASE);
         multiblockParts(BlockRegistration.RETRO_CAFE_SHELF);
         multiblockParts(BlockRegistration.RETRO_CAFE_SHELF_WINDOW);
+        multiblockParts(BlockRegistration.MERMAID_DRESSER);
+        multiblockParts(BlockRegistration.SMALL_BOOKCASE);
+        this.getMultipartBuilder(BlockRegistration.WEDDING_ARCH.get())
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_1"))).rotationY(180).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 1).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_1"))).rotationY(270).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(MultiblockPlacer.MULTIBLOCK_PART, 1).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_1"))).rotationY(0).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 1).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_1"))).rotationY(90).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(MultiblockPlacer.MULTIBLOCK_PART, 1).end()
 
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_2"))).rotationY(180).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 2).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_2"))).rotationY(270).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(MultiblockPlacer.MULTIBLOCK_PART, 2).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_2"))).rotationY(0).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 2).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_2"))).rotationY(90).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(MultiblockPlacer.MULTIBLOCK_PART, 2).end()
+
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_3"))).rotationY(180).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 3).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_3"))).rotationY(270).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(MultiblockPlacer.MULTIBLOCK_PART, 3).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_3"))).rotationY(0).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 3).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_3"))).rotationY(90).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(MultiblockPlacer.MULTIBLOCK_PART, 3).end()
+
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_4"))).rotationY(180).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 4).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_4"))).rotationY(270).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(MultiblockPlacer.MULTIBLOCK_PART, 4).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_4"))).rotationY(0).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 4).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_4"))).rotationY(90).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(MultiblockPlacer.MULTIBLOCK_PART, 4).end()
+
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_5"))).rotationY(180).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 5).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_5"))).rotationY(270).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(MultiblockPlacer.MULTIBLOCK_PART, 5).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_5"))).rotationY(0).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 5).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_5"))).rotationY(90).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(MultiblockPlacer.MULTIBLOCK_PART, 5).end()
+
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_6"))).rotationY(180).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 6).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_6"))).rotationY(270).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(MultiblockPlacer.MULTIBLOCK_PART, 6).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_6"))).rotationY(0).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 6).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_6"))).rotationY(90).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(MultiblockPlacer.MULTIBLOCK_PART, 6).end()
+
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_7"))).rotationY(180).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 7).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_7"))).rotationY(270).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(MultiblockPlacer.MULTIBLOCK_PART, 7).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_7"))).rotationY(0).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 7).end()
+                .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_7"))).rotationY(90).addModel()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(MultiblockPlacer.MULTIBLOCK_PART, 7).end()
+
+                .part().modelFile(models().getBuilder("block/wedding_picket_fence_side_n").parent(models().getExistingFile(modLoc("block/picket_fence_side"))).texture("2", modLoc("block/wooden_picket_fence")).texture("particle", modLoc("block/wooden_picket_fence"))).rotationY(0).addModel()
+                .condition(BlockStateProperties.NORTH, true).end()
+                .part().modelFile(models().getBuilder("block/wedding_picket_fence_side_s").parent(models().getExistingFile(modLoc("block/picket_fence_side"))).texture("2", modLoc("block/wooden_picket_fence")).texture("particle", modLoc("block/wooden_picket_fence"))).rotationY(180).addModel()
+                .condition(BlockStateProperties.SOUTH, true).end()
+                .part().modelFile(models().getBuilder("block/wedding_picket_fence_side_e").parent(models().getExistingFile(modLoc("block/picket_fence_side"))).texture("2", modLoc("block/wooden_picket_fence")).texture("particle", modLoc("block/wooden_picket_fence"))).rotationY(90).addModel()
+                .condition(BlockStateProperties.EAST, true).end()
+                .part().modelFile(models().getBuilder("block/wedding_picket_fence_side_w").parent(models().getExistingFile(modLoc("block/picket_fence_side"))).texture("2", modLoc("block/wooden_picket_fence")).texture("particle", modLoc("block/wooden_picket_fence"))).rotationY(270).addModel()
+                .condition(BlockStateProperties.WEST, true).end()
+        ;
         //TO DO?
         multiblockParts(BlockRegistration.BLACK_CAT_TABLE);
         multiblockParts(BlockRegistration.BLACK_CAT_SINK);
@@ -1791,6 +1897,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.CROISSANT);
         hFacingBlockWithCustomModel(BlockRegistration.HAM_SANDWICH);
         hFacingBlockWithCustomModel(BlockRegistration.PANCAKE_STACK);
+        hFacingBlockWithCustomModel(BlockRegistration.FILING_BOX);
 
         multiblockParts(BlockRegistration.SEWING_CLUTTER);
 

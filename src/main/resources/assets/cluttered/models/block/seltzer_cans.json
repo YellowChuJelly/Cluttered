@@ -1,7 +1,9 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"1": "seltzer_cans"
+		"1": "cluttered:block/seltzer_cans",
+		"particle": "cluttered:block/seltzer_cans"
 	},
 	"elements": [
 		{

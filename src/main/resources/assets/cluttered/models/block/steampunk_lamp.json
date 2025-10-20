@@ -1,8 +1,9 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"2": "steampunk_lamp",
-		"particle": "steampunk_lamp"
+		"2": "cluttered:block/steampunk_lamp",
+		"particle": "cluttered:block/steampunk_lamp"
 	},
 	"elements": [
 		{

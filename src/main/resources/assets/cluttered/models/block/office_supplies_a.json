@@ -1,8 +1,9 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"2": "office_supplies",
-		"particle": "office_supplies"
+		"2": "cluttered:block/office_supplies",
+		"particle": "cluttered:block/office_supplies"
 	},
 	"elements": [
 		{

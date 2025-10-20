@@ -1,64 +1,74 @@
 {
-  "variants": {
-    "facing=east,lit=false,waterlogged=false": {
-      "model": "cluttered:block/stained_glass_lamp",
-      "y": 90
+  "multipart": [
+    {
+      "apply": {
+        "model": "cluttered:block/stained_glass_lamp_cutout"
+      },
+      "when": {
+        "facing": "north"
+      }
     },
-    "facing=east,lit=false,waterlogged=true": {
-      "model": "cluttered:block/stained_glass_lamp",
-      "y": 90
+    {
+      "apply": {
+        "model": "cluttered:block/stained_glass_lamp_cutout",
+        "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
     },
-    "facing=east,lit=true,waterlogged=false": {
-      "model": "cluttered:block/stained_glass_lamp",
-      "y": 90
+    {
+      "apply": {
+        "model": "cluttered:block/stained_glass_lamp_cutout",
+        "y": 180
+      },
+      "when": {
+        "facing": "south"
+      }
     },
-    "facing=east,lit=true,waterlogged=true": {
-      "model": "cluttered:block/stained_glass_lamp",
-      "y": 90
+    {
+      "apply": {
+        "model": "cluttered:block/stained_glass_lamp_cutout",
+        "y": 270
+      },
+      "when": {
+        "facing": "west"
+      }
     },
-    "facing=north,lit=false,waterlogged=false": {
-      "model": "cluttered:block/stained_glass_lamp"
+    {
+      "apply": {
+        "model": "cluttered:block/stained_glass_lamp_translucent"
+      },
+      "when": {
+        "facing": "north"
+      }
     },
-    "facing=north,lit=false,waterlogged=true": {
-      "model": "cluttered:block/stained_glass_lamp"
+    {
+      "apply": {
+        "model": "cluttered:block/stained_glass_lamp_translucent",
+        "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
     },
-    "facing=north,lit=true,waterlogged=false": {
-      "model": "cluttered:block/stained_glass_lamp"
+    {
+      "apply": {
+        "model": "cluttered:block/stained_glass_lamp_translucent",
+        "y": 180
+      },
+      "when": {
+        "facing": "south"
+      }
     },
-    "facing=north,lit=true,waterlogged=true": {
-      "model": "cluttered:block/stained_glass_lamp"
-    },
-    "facing=south,lit=false,waterlogged=false": {
-      "model": "cluttered:block/stained_glass_lamp",
-      "y": -180
-    },
-    "facing=south,lit=false,waterlogged=true": {
-      "model": "cluttered:block/stained_glass_lamp",
-      "y": -180
-    },
-    "facing=south,lit=true,waterlogged=false": {
-      "model": "cluttered:block/stained_glass_lamp",
-      "y": -180
-    },
-    "facing=south,lit=true,waterlogged=true": {
-      "model": "cluttered:block/stained_glass_lamp",
-      "y": -180
-    },
-    "facing=west,lit=false,waterlogged=false": {
-      "model": "cluttered:block/stained_glass_lamp",
-      "y": -90
-    },
-    "facing=west,lit=false,waterlogged=true": {
-      "model": "cluttered:block/stained_glass_lamp",
-      "y": -90
-    },
-    "facing=west,lit=true,waterlogged=false": {
-      "model": "cluttered:block/stained_glass_lamp",
-      "y": -90
-    },
-    "facing=west,lit=true,waterlogged=true": {
-      "model": "cluttered:block/stained_glass_lamp",
-      "y": -90
+    {
+      "apply": {
+        "model": "cluttered:block/stained_glass_lamp_translucent",
+        "y": 270
+      },
+      "when": {
+        "facing": "west"
+      }
     }
-  }
+  ]
 }

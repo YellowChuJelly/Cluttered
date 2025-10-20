@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "mermaid_dresser"
+		"1": "cluttered:block/mermaid_dresser"
 	},
 	"elements": [
 		{

@@ -1,9 +1,10 @@
 {
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"0": "mini_hanging_terrariums",
-		"particle": "mini_hanging_terrariums"
+		"0": "cluttered:block/mini_hanging_terrariums",
+		"particle": "cluttered:block/mini_hanging_terrariums"
 	},
 	"elements": [
 		{

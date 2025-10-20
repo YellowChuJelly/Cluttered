@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "lemon_table",
-		"particle": "lemon_table"
+		"0": "cluttered:block/lemon_table",
+		"particle": "cluttered:block/lemon_table"
 	},
 	"elements": [
 		{

@@ -1,8 +1,9 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"2": "rover_mug",
-		"particle": "rover_mug"
+		"2": "cluttered:block/rover_mug",
+		"particle": "cluttered:block/rover_mug"
 	},
 	"elements": [
 		{

@@ -1,8 +1,9 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"textures": {
-		"0": "pastel_light",
-		"particle": "pastel_light"
+		"0": "cluttered:block/pastel_light",
+		"particle": "cluttered:block/pastel_light"
 	},
 	"elements": [
 		{

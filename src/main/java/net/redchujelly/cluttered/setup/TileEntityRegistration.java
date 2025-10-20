@@ -20,7 +20,7 @@ public class TileEntityRegistration {
 
     /* In all honesty I don't know what this list is good for. The field it ultimately goes in apparently lists blocks that
     the block entity can be tied to? But I tried it without adding some and they worked fine so I dunno.
-    I'm gonna keep adding them though. */
+    I'm gonna keep adding them though. Also, maybe I did it in a sketchy way.*/
 
     static RegistryObject<?>[] oneRow = new RegistryObject[]{
             BlockRegistration.KITCHEN_SET_BROWN_CABINET_MINI,
@@ -71,6 +71,7 @@ public class TileEntityRegistration {
             BlockRegistration.DESK_GREEN_CLUTTERED,
             BlockRegistration.DESK_BROWN,
             BlockRegistration.DESK_BROWN_CLUTTERED,
+            BlockRegistration.FILING_BOX,
     };
 
     static RegistryObject<?>[] threeRows = new RegistryObject[]{
@@ -104,6 +105,8 @@ public class TileEntityRegistration {
             BlockRegistration.BRIEFCASE_ROVER,
 
             BlockRegistration.CHINA_CABINET,
+
+            BlockRegistration.PASTEL_CABINET,
     };
 
     static RegistryObject<?>[] sixRows = new RegistryObject[]{
@@ -112,6 +115,8 @@ public class TileEntityRegistration {
             BlockRegistration.DARKWOOD_CABINET,
             BlockRegistration.RED_MUSHROOM_WARDROBE,
             BlockRegistration.BLUE_MUSHROOM_WARDROBE,
+            BlockRegistration.PASTEL_WARDROBE,
+            BlockRegistration.MERMAID_DRESSER,
     };
 
     static RegistryObject<?>[] fridges = new RegistryObject[]{

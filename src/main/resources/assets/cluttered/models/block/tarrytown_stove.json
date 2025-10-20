@@ -1,8 +1,11 @@
 {
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
+	"render_type": "minecraft:cutout",
+	"ambientocclusion": false,
 	"textures": {
-		"2": "tarrytown_stove"
+		"2": "cluttered:block/tarrytown_stove",
+		"particle": "cluttered:block/tarrytown_stove"
 	},
 	"elements": [
 		{
