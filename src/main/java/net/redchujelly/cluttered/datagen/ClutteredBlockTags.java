@@ -944,6 +944,9 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.POPLAR_LEAVES.get());
         tag(BlockTags.WOODEN_FENCES)
                 .add(BlockRegistration.WOODEN_PICKET_FENCE.get())
+                .add(BlockRegistration.MARBLE_PICKET_FENCE.get())
+                .add(BlockRegistration.CHALCEDONY_PICKET_FENCE.get())
+                .add(BlockRegistration.DEEP_CHALCEDONY_PICKET_FENCE.get())
                 .add(BlockRegistration.WEDDING_ARCH.get());
         tag(BlockTags.FENCES)
                 .add(BlockRegistration.WEDDING_ARCH.get())

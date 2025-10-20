@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"render_type": "minecraft:cutout",
 	"textures": {
@@ -105,7 +106,7 @@
 		},
 		"gui": {
 			"rotation": [25, -150, 0],
-			"translation": [0.25, 1.75, 0]
+			"translation": [0.25, 1.25, 0]
 		},
 		"head": {
 			"translation": [0, 14.5, 0]
