@@ -140,6 +140,45 @@ public class WeddingArchBlock extends MultiblockPlacer{
         return this.defaultBlockState().setValue(FACING, direction).setValue(NORTH, this.connectsTo($$8, $$8.isFaceSturdy($$1, $$4, Direction.SOUTH), Direction.SOUTH)).setValue(EAST, this.connectsTo($$9, $$9.isFaceSturdy($$1, $$5, Direction.WEST), Direction.WEST)).setValue(SOUTH, this.connectsTo($$10, $$10.isFaceSturdy($$1, $$6, Direction.NORTH), Direction.NORTH)).setValue(WEST, this.connectsTo($$11, $$11.isFaceSturdy($$1, $$7, Direction.EAST), Direction.EAST));
     }
 
+    //Computers love doing nested loops, btw. its their favorite activity; they told me that. its good for them.
+    @Override
+    public void onPlace(BlockState pState, Level pLevel, BlockPos pPos, BlockState pOldState, boolean pIsMoving) {
+        if (!pLevel.isClientSide) {
+            Direction direction = pState.getValue(FACING);
+            int[][][] multiblockShape = getMultiblockShape();
+            int OGx = pPos.getX();
+            int OGy = pPos.getY();
+            int OGz = pPos.getZ();
+            //Only the original block placed by the player should place the rest.
+            //Is this a good system? No clue honestly. It works, though!
+            if (pState.getValue(getMultiblockPart()) == 1 && !pOldState.is(this.asBlock())) {
+                for (int y = 0; y < multiblockShape.length; y++) {
+                    for (int x = 0; x < multiblockShape[y].length; x++) {
+                        for (int z = 0; z < multiblockShape[y][x].length; z++) {
+                            if (x + y + z != 0 && multiblockShape[y][x][z] != 0) {
+                                int xOffset = getXOffset(direction, x, z);
+                                int zOffset = getZOffset(direction, x, z);
+
+                                BlockGetter $$1 = pLevel;
+                                BlockPos $$2 = new BlockPos(OGx + xOffset, OGy + y, OGz + zOffset);
+                                BlockPos $$4 = $$2.north();
+                                BlockPos $$5 = $$2.east();
+                                BlockPos $$6 = $$2.south();
+                                BlockPos $$7 = $$2.west();
+                                BlockState $$8 = $$1.getBlockState($$4);
+                                BlockState $$9 = $$1.getBlockState($$5);
+                                BlockState $$10 = $$1.getBlockState($$6);
+                                BlockState $$11 = $$1.getBlockState($$7);
+
+                                pLevel.setBlock($$2, defaultBlockState().setValue(getMultiblockPart(), multiblockShape[y][x][z]).setValue(FACING, direction).setValue(NORTH, this.connectsTo($$8, $$8.isFaceSturdy($$1, $$4, Direction.SOUTH), Direction.SOUTH)).setValue(EAST, this.connectsTo($$9, $$9.isFaceSturdy($$1, $$5, Direction.WEST), Direction.WEST)).setValue(SOUTH, this.connectsTo($$10, $$10.isFaceSturdy($$1, $$6, Direction.NORTH), Direction.NORTH)).setValue(WEST, this.connectsTo($$11, $$11.isFaceSturdy($$1, $$7, Direction.EAST), Direction.EAST)), 2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     @Override
     public BlockState updateShape(BlockState pState, Direction pDirection, BlockState pNeighborState, LevelAccessor pLevel, BlockPos pCurrentPos, BlockPos pNeighborPos) {
         BlockPos state1Pos = null;
@@ -155,8 +194,18 @@ public class WeddingArchBlock extends MultiblockPlacer{
         } else {
             pLevel.scheduleTick(pCurrentPos, this, 0);
         }
-        if (pNeighborState.is(BlockTags.WOODEN_FENCES) || pNeighborState.is(BlockTags.FENCES)){
-
+        boolean neighborFence = pNeighborState.is(BlockTags.WOODEN_FENCES) || pNeighborState.is(BlockTags.FENCES);
+        if (pDirection.equals(Direction.NORTH)){
+            pLevel.setBlock(pCurrentPos, pState.setValue(NORTH, neighborFence), 2);
+        }
+        else if (pDirection.equals(Direction.SOUTH)){
+            pLevel.setBlock(pCurrentPos, pState.setValue(SOUTH, neighborFence), 2);
+        }
+        else if (pDirection.equals(Direction.EAST)){
+            pLevel.setBlock(pCurrentPos, pState.setValue(EAST, neighborFence), 2);
+        }
+        else if (pDirection.equals(Direction.WEST)){
+            pLevel.setBlock(pCurrentPos, pState.setValue(WEST, neighborFence), 2);
         }
 
         return super.updateShape(pState, pDirection, pNeighborState, pLevel, pCurrentPos, pNeighborPos);
