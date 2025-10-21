@@ -13,40 +13,32 @@ import net.minecraft.world.item.FlintAndSteelItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class ShelfCandleBlock extends SmallFurnitureBlock{
-    private static final VoxelShape SHAPE_NORTH = Block.box(6.5,0,10.5,9.5,3,13.5);
-    private static final VoxelShape SHAPE_SOUTH = Block.box(6.5,0,2.5,9.5,3,5.5);
-    private static final VoxelShape SHAPE_EAST = Block.box(2.5,0,6.5,5.5,3,9.5);
-    private static final VoxelShape SHAPE_WEST = Block.box(10.5,0,6.5,13.5,3,9.5);
+public class TarrytownStoveBlock extends SmallFurnitureBlock{
 
-    private static final Vec3 PARTICLE_OFFSET_N = new Vec3(0.5, 0.25, 0.75);
-    private static final Vec3 PARTICLE_OFFSET_S = new Vec3(0.5, 0.25, 0.25);
-    private static final Vec3 PARTICLE_OFFSET_E = new Vec3(0.25, 0.25, 0.5);
-    private static final Vec3 PARTICLE_OFFSET_W = new Vec3(0.75, 0.25, 0.5);
+    private static final VoxelShape SHAPE_NORTH = Block.box(0,0,2,16,13,12);
+    private static final VoxelShape SHAPE_SOUTH = Block.box(0,0,4,16,13,14);
+    private static final VoxelShape SHAPE_EAST = Block.box(4,0,0,14,13,16);
+    private static final VoxelShape SHAPE_WEST = Block.box(2,0,0,12,13,16);
 
     public static final BooleanProperty LIT = BlockStateProperties.LIT;
 
-    public ShelfCandleBlock(Properties pProperties) {
+    public TarrytownStoveBlock(Properties pProperties) {
         super(pProperties);
-        this.registerDefaultState(defaultBlockState().setValue(LIT, false));
+        this.registerDefaultState(this.defaultBlockState().setValue(LIT, false));
     }
 
     @Override
     public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
-        return state.getValue(LIT) ? 10 : 0;
+        return state.getValue(LIT) ? 15 : 0;
     }
 
     @Override
@@ -74,46 +66,6 @@ public class ShelfCandleBlock extends SmallFurnitureBlock{
     }
 
     @Override
-    public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
-        if (pState.getValue(LIT)){
-            Vec3 offset = getOffset(pState);
-            float random = pRandom.nextFloat();
-            if (random < .3f){
-                pLevel.addParticle(ParticleTypes.SMOKE, pPos.getX() + offset.x, pPos.getY() + offset.y, pPos.getZ() + offset.z, 0, 0, 0);
-                if (random < 0.17f){
-                    pLevel.playSound(null, pPos, SoundEvents.CANDLE_AMBIENT, SoundSource.BLOCKS, 1.0F + pRandom.nextFloat(), pRandom.nextFloat() * 0.7F + 0.3F);
-                }
-            }
-            pLevel.addParticle(ParticleTypes.SMALL_FLAME, pPos.getX() + offset.x, pPos.getY() + offset.y, pPos.getZ() + offset.z, 0, 0, 0);
-        }
-    }
-
-    private Vec3 getOffset(BlockState state){
-        return switch (state.getValue(FACING)){
-            case SOUTH -> PARTICLE_OFFSET_S;
-            case EAST -> PARTICLE_OFFSET_E;
-            case WEST -> PARTICLE_OFFSET_W;
-            default -> PARTICLE_OFFSET_N;
-        };
-    }
-
-    public boolean placeLiquid(LevelAccessor pLevel, BlockPos pPos, BlockState pState, FluidState pFluidState) {
-        if (!pState.getValue(WATERLOGGED) && pFluidState.getType() == Fluids.WATER) {
-            BlockState waterState = pState.setValue(WATERLOGGED, true);
-            if (pState.getValue(LIT)) {
-                pLevel.setBlock(pPos, waterState.setValue(LIT, false), 2);
-            } else {
-                pLevel.setBlock(pPos, waterState, 3);
-            }
-
-            pLevel.scheduleTick(pPos, pFluidState.getType(), pFluidState.getType().getTickDelay(pLevel));
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         Direction facing = pState.getValue(FACING);
         return switch (facing) {
@@ -128,5 +80,26 @@ public class ShelfCandleBlock extends SmallFurnitureBlock{
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         super.createBlockStateDefinition(pBuilder);
         pBuilder.add(LIT);
+    }
+
+    public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
+        if ((Boolean)pState.getValue(LIT)) {
+            double $$4 = (double)pPos.getX() + (double)0.5F;
+            double $$5 = (double)pPos.getY();
+            double $$6 = (double)pPos.getZ() + (double)0.5F;
+            if (pRandom.nextDouble() < 0.1) {
+                pLevel.playLocalSound($$4, $$5, $$6, SoundEvents.FURNACE_FIRE_CRACKLE, SoundSource.BLOCKS, 1.0F, 1.0F, false);
+            }
+
+            Direction $$7 = (Direction)pState.getValue(FACING);
+            Direction.Axis $$8 = $$7.getAxis();
+            double $$9 = 0.52;
+            double $$10 = pRandom.nextDouble() * 0.45 - 0.3;
+            double $$11 = $$8 == Direction.Axis.X ? (double)$$7.getStepX() * 0.37 : $$10;
+            double $$12 = pRandom.nextDouble() * (double)8.0F / (double)16.0F;
+            double $$13 = $$8 == Direction.Axis.Z ? (double)$$7.getStepZ() * 0.37 : $$10;
+            pLevel.addParticle(ParticleTypes.SMOKE, $$4 + $$11, $$5 + $$12, $$6 + $$13, (double)0.0F, (double)0.0F, (double)0.0F);
+            pLevel.addParticle(ParticleTypes.FLAME, $$4 + $$11, $$5 + $$12, $$6 + $$13, (double)0.0F, (double)0.0F, (double)0.0F);
+        }
     }
 }

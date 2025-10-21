@@ -361,9 +361,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.MARBLE_PICKET_FENCE.get());
                         output.accept(BlockRegistration.MARBLE_PICKET_FENCE_GATE.get());
 
-                        output.accept(BlockRegistration.VICTORIAN_STREETLIGHT_CROWN_MARBLE.get());
-                        output.accept(BlockRegistration.VICTORIAN_STREETLIGHT_2.get());
-
                         output.accept(BlockRegistration.MARBLE_BRACKET_VICTORIAN.get());
                         output.accept(BlockRegistration.MARBLE_BRACKET_SCROLL.get());
                         output.accept(BlockRegistration.MARBLE_BRACKET_BOW.get());

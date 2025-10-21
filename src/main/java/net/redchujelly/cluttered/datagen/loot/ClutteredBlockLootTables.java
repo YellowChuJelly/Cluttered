@@ -1126,8 +1126,6 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.BEE_LAMP_ANGRY.get());
         dropSelf(BlockRegistration.STAINED_GLASS_LAMP.get());
         dropSelf(BlockRegistration.CAGED_BULB.get());
-        dropSelf(BlockRegistration.VICTORIAN_STREETLIGHT_CROWN_MARBLE.get());
-        dropSelf(BlockRegistration.VICTORIAN_STREETLIGHT_2.get());
         dropSelf(BlockRegistration.COLOSSEO_WALL_LANTERN.get());
 
         //TERRARIUMS

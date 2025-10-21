@@ -1801,7 +1801,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> STEAMPUNK_LAMP = registerBlock("steampunk_lamp",
             () -> new ColosseoLanternBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).sound(SoundType.COPPER)));
     public static final RegistryObject<Block> TARRY_TOWN_STOVE = registerBlock("tarrytown_stove",
-            () -> new FurnaceBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).sound(SoundType.COPPER).noOcclusion()));
+            () -> new TarrytownStoveBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).sound(SoundType.COPPER).noOcclusion()));
 
     //TODO
     public static final RegistryObject<Block> HOPPIN_PARK_LANTERN = registerBlock("hoppin_park_lantern",
@@ -1900,10 +1900,6 @@ public class BlockRegistration {
     public static final RegistryObject<Block> MOON_DECORATION = registerBlock("moon_decoration",
             () -> new FlatDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).lightLevel(p -> 10).sound(SoundType.SMALL_AMETHYST_BUD).mapColor(DyeColor.YELLOW).noOcclusion().noCollission()));
     public static final RegistryObject<Block> CAGED_BULB = registerBlock("caged_bulb",
-            () -> new CagedBulbBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).mapColor(DyeColor.BLACK)));
-    public static final RegistryObject<Block> VICTORIAN_STREETLIGHT_CROWN_MARBLE = registerBlock("victorian_streetlight_crown_marble",
-            () -> new CagedBulbBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).mapColor(DyeColor.BLACK)));
-    public static final RegistryObject<Block> VICTORIAN_STREETLIGHT_2 = registerBlock("victorian_streetlight_2",
             () -> new CagedBulbBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).mapColor(DyeColor.BLACK)));
     public static final RegistryObject<Block> POLAROIDS_A = registerBlock("polaroids_a",
             () -> new FlatDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.SPORE_BLOSSOM)));

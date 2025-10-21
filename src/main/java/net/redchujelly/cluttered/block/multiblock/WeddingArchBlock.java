@@ -17,13 +17,12 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.common.Tags;
+import net.redchujelly.cluttered.block.custom.PicketFenceGateBlock;
 import org.jetbrains.annotations.Nullable;
 
 public class WeddingArchBlock extends MultiblockPlacer{
 
-    private static final VoxelShape INTERACTION_SHAPE = Block.box(0,0,0,16,16,16);
-            //Shapes.or(Block.box(0,0,0,16,16,4), Block.box(0,0,0,4,16,16), Block.box(0,0,12,16,16,16),Block.box(12,0,0,16,16,16));
+    private static final VoxelShape SUPPORT_SHAPE = Shapes.or(Block.box(0,0,0,16,16,4), Block.box(0,0,0,4,16,16), Block.box(0,0,12,16,16,16),Block.box(12,0,0,16,16,16));
 
     private static final VoxelShape SHAPE_1367 = Block.box(6,0,6,10,16,10);
     private static final VoxelShape SHAPE_N_1367 = Block.box(6,0,8,10,16,16);
@@ -68,8 +67,8 @@ public class WeddingArchBlock extends MultiblockPlacer{
     }
 
     @Override
-    public VoxelShape getInteractionShape(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
-        return INTERACTION_SHAPE;
+    public VoxelShape getBlockSupportShape(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
+        return SUPPORT_SHAPE;
     }
 
     @Override
@@ -137,7 +136,7 @@ public class WeddingArchBlock extends MultiblockPlacer{
         BlockState $$10 = $$1.getBlockState($$6);
         BlockState $$11 = $$1.getBlockState($$7);
 
-        return this.defaultBlockState().setValue(FACING, direction).setValue(NORTH, this.connectsTo($$8, $$8.isFaceSturdy($$1, $$4, Direction.SOUTH), Direction.SOUTH)).setValue(EAST, this.connectsTo($$9, $$9.isFaceSturdy($$1, $$5, Direction.WEST), Direction.WEST)).setValue(SOUTH, this.connectsTo($$10, $$10.isFaceSturdy($$1, $$6, Direction.NORTH), Direction.NORTH)).setValue(WEST, this.connectsTo($$11, $$11.isFaceSturdy($$1, $$7, Direction.EAST), Direction.EAST));
+        return this.defaultBlockState().setValue(FACING, direction).setValue(NORTH, this.connectsTo($$8)).setValue(EAST, this.connectsTo($$9)).setValue(SOUTH, this.connectsTo($$10)).setValue(WEST, this.connectsTo($$11));
     }
 
     //Computers love doing nested loops, btw. its their favorite activity; they told me that. its good for them.
@@ -170,7 +169,7 @@ public class WeddingArchBlock extends MultiblockPlacer{
                                 BlockState $$10 = $$1.getBlockState($$6);
                                 BlockState $$11 = $$1.getBlockState($$7);
 
-                                pLevel.setBlock($$2, defaultBlockState().setValue(getMultiblockPart(), multiblockShape[y][x][z]).setValue(FACING, direction).setValue(NORTH, this.connectsTo($$8, $$8.isFaceSturdy($$1, $$4, Direction.SOUTH), Direction.SOUTH)).setValue(EAST, this.connectsTo($$9, $$9.isFaceSturdy($$1, $$5, Direction.WEST), Direction.WEST)).setValue(SOUTH, this.connectsTo($$10, $$10.isFaceSturdy($$1, $$6, Direction.NORTH), Direction.NORTH)).setValue(WEST, this.connectsTo($$11, $$11.isFaceSturdy($$1, $$7, Direction.EAST), Direction.EAST)), 2);
+                                pLevel.setBlock($$2, defaultBlockState().setValue(getMultiblockPart(), multiblockShape[y][x][z]).setValue(FACING, direction).setValue(NORTH, this.connectsTo($$8)).setValue(EAST, this.connectsTo($$9)).setValue(SOUTH, this.connectsTo($$10)).setValue(WEST, this.connectsTo($$11)), 2);
                             }
                         }
                     }
@@ -181,48 +180,46 @@ public class WeddingArchBlock extends MultiblockPlacer{
 
     @Override
     public BlockState updateShape(BlockState pState, Direction pDirection, BlockState pNeighborState, LevelAccessor pLevel, BlockPos pCurrentPos, BlockPos pNeighborPos) {
-        BlockPos state1Pos = null;
-        if (pState.getValue(getMultiblockPart()) != 1) {
-            state1Pos = findBlockState1(pCurrentPos, pLevel);
-        } else {
-            state1Pos = pCurrentPos;
-        }
-        if (state1Pos != null) {
-            if (!canSurvive(pLevel.getBlockState(state1Pos), pLevel, state1Pos)) {
-                pLevel.scheduleTick(pCurrentPos, this, 0);
-            }
-        } else {
-            pLevel.scheduleTick(pCurrentPos, this, 0);
-        }
-        boolean neighborFence = pNeighborState.is(BlockTags.WOODEN_FENCES) || pNeighborState.is(BlockTags.FENCES);
+        //BlockPos state1Pos = null;
+        //if (pState.getValue(getMultiblockPart()) != 1) {
+        //    state1Pos = findBlockState1(pCurrentPos, pLevel);
+        //} else {
+        //    state1Pos = pCurrentPos;
+        //}
+        //if (state1Pos != null) {
+        //    if (!canSurvive(pLevel.getBlockState(state1Pos), pLevel, state1Pos)) {
+        //        pLevel.scheduleTick(pCurrentPos, this, 0);
+        //    }
+        //} else {
+        //    pLevel.scheduleTick(pCurrentPos, this, 0);
+        //}
         if (pDirection.equals(Direction.NORTH)){
-            pLevel.setBlock(pCurrentPos, pState.setValue(NORTH, neighborFence), 2);
+            pLevel.setBlock(pCurrentPos, pState.setValue(NORTH, connectsTo(pNeighborState)), 2);
         }
         else if (pDirection.equals(Direction.SOUTH)){
-            pLevel.setBlock(pCurrentPos, pState.setValue(SOUTH, neighborFence), 2);
+            pLevel.setBlock(pCurrentPos, pState.setValue(SOUTH, connectsTo(pNeighborState)), 2);
         }
         else if (pDirection.equals(Direction.EAST)){
-            pLevel.setBlock(pCurrentPos, pState.setValue(EAST, neighborFence), 2);
+            pLevel.setBlock(pCurrentPos, pState.setValue(EAST, connectsTo(pNeighborState)), 2);
         }
         else if (pDirection.equals(Direction.WEST)){
-            pLevel.setBlock(pCurrentPos, pState.setValue(WEST, neighborFence), 2);
+            pLevel.setBlock(pCurrentPos, pState.setValue(WEST, connectsTo(pNeighborState)), 2);
         }
 
         return super.updateShape(pState, pDirection, pNeighborState, pLevel, pCurrentPos, pNeighborPos);
     }
 
-    public boolean connectsTo(BlockState pState, boolean pIsSideSolid, Direction pDirection) {
-        Block $$3 = pState.getBlock();
-        boolean $$4 = this.isSameFence(pState);
-        boolean $$5 = $$3 instanceof FenceGateBlock && FenceGateBlock.connectsToDirection(pState, pDirection);
-        return !isExceptionForConnection(pState) && pIsSideSolid || $$4 || $$5;
-    }
-
-    private boolean isSameFence(BlockState pState) {
+    private boolean connectsTo(BlockState pState) {
         if (pState.getBlock() instanceof WeddingArchBlock){
             return false;
         }
-        return pState.is(BlockTags.FENCES) && pState.is(BlockTags.WOODEN_FENCES) == this.defaultBlockState().is(BlockTags.WOODEN_FENCES);
+        boolean neighborFence = pState.is(BlockTags.WOODEN_FENCES) || pState.is(BlockTags.FENCES) || pState.is(BlockTags.WALLS);
+        if (!neighborFence){
+            if (pState.getBlock() instanceof FenceGateBlock || pState.getBlock() instanceof PicketFenceGateBlock){
+                neighborFence = pState.getValue(FACING).equals(pState.getValue(FACING)) || pState.getValue(FACING).equals(pState.getValue(FACING).getOpposite());
+            }
+        }
+        return neighborFence;
     }
 
     @Override

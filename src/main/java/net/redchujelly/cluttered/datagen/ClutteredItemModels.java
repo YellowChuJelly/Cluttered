@@ -377,8 +377,6 @@ public class ClutteredItemModels extends ItemModelProvider {
         simplePaneBlockItem(BlockRegistration.MOON_DECORATION);
         blockitemFromModel(BlockRegistration.POLAROIDS_A);
         blockitemFromModel(BlockRegistration.CAGED_BULB);
-        blockitemFromModel(BlockRegistration.VICTORIAN_STREETLIGHT_CROWN_MARBLE);
-        blockitemFromModel(BlockRegistration.VICTORIAN_STREETLIGHT_2);
         blockitemFromModel(BlockRegistration.COLOSSEO_WALL_LANTERN);
         blockitemFromModel(BlockRegistration.MINI_FLAG_BI);
         blockitemFromModel(BlockRegistration.MINI_FLAG_LESBIAN);

@@ -6385,7 +6385,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("f f")
                     .pattern("f f")
                     .define('f', BlockRegistration.WOODEN_PICKET_FENCE.get())
-                    .unlockedBy("has_wooden_picket_fence", InventoryChangeTrigger.TriggerInstance.hasItems(
+                    .unlockedBy("has_wooden_    picket_fence", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(BlockRegistration.WOODEN_PICKET_FENCE.get()).build()))
                     .showNotification(false)
                     .save(consumer);

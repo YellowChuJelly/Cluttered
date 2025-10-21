@@ -22,7 +22,7 @@ public class LemonTableBlock extends SmallFurnitureBlock{
     }
 
     @Override
-    public VoxelShape getInteractionShape(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
+    public VoxelShape getBlockSupportShape(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
         return INTERACTION_SHAPE;
     }
 }

@@ -82,7 +82,7 @@ public class WillowVinesBlock extends Block implements BonemealableBlock {
     public boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
         BlockPos blockpos = pPos.above();
         BlockState blockstate = pLevel.getBlockState(blockpos);
-        return blockstate.getBlock().equals(this.asBlock()) || blockstate.isFaceSturdy(pLevel, blockpos, Direction.DOWN) || blockstate.getBlock() instanceof LeavesBlock;
+        return blockstate.getBlock().equals(this.asBlock()) || blockstate.isFaceSturdy(pLevel, blockpos, Direction.DOWN) || blockstate.getBlock() instanceof LeavesBlock || Block.canSupportCenter(pLevel, blockpos, Direction.DOWN);
     }
 
     @Override

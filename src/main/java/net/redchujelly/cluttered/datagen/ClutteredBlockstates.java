@@ -1598,8 +1598,6 @@ public class ClutteredBlockstates extends BlockStateProvider {
         flatFacingBlock(BlockRegistration.MOON_DECORATION, -90);
 
         facingBlockWithCustomModel(BlockRegistration.CAGED_BULB);
-        facingBlockWithCustomModel(BlockRegistration.VICTORIAN_STREETLIGHT_CROWN_MARBLE);
-        facingBlockWithCustomModel(BlockRegistration.VICTORIAN_STREETLIGHT_2);
         hFacingBlockWithCustomModel(BlockRegistration.COLOSSEO_WALL_LANTERN);
         multiblockParts(BlockRegistration.BULLETIN_BOARD);
         multiblockParts(BlockRegistration.BULLETIN_BOARD_CLUTTERED);
@@ -1628,7 +1626,13 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.SELTZER_CANS);
         hFacingBlockWithCustomModel(BlockRegistration.SMALL_CAULDRON);
         hFacingBlockWithCustomModel(BlockRegistration.STEAMPUNK_LAMP);
-        hFacingBlockWithCustomModel(BlockRegistration.TARRY_TOWN_STOVE);
+
+        getVariantBuilder(BlockRegistration.TARRY_TOWN_STOVE.get())
+                .forAllStates(state ->
+                        ConfiguredModel.builder()
+                                .modelFile(state.getValue(BlockStateProperties.LIT) ? models().getExistingFile(modLoc("tarrytown_stove_lit")) : models().getExistingFile(modLoc("tarrytown_stove")))
+                                .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() - 180)
+                                .build());
 
         multiblockParts(BlockRegistration.BAMBOO_BOOKSHELF);
         multiblockParts(BlockRegistration.FWISH_BOOKCASE);
