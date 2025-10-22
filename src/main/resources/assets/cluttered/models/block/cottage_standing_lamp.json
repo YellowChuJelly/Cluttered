@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [64, 64],
-	"render_type": "minecraft:cutout",
 	"ambientocclusion": false,
+	"render_type": "minecraft:cutout",
+	"texture_size": [64, 64],
 	"textures": {
 		"2": "cluttered:block/cottage_standing_lamp",
 		"particle": "cluttered:block/cottage_standing_lamp"
@@ -133,13 +133,13 @@
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [75, 45, 0],
-			"translation": [0, 0.5, -2],
-			"scale": [0.375, 0.375, 0.375]
+			"translation": [0, 1, 1],
+			"scale": [0.25, 0.25, 0.25]
 		},
 		"thirdperson_lefthand": {
 			"rotation": [75, 45, 0],
-			"translation": [0, 0.5, -2],
-			"scale": [0.375, 0.375, 0.375]
+			"translation": [0, 1, 1],
+			"scale": [0.25, 0.25, 0.25]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, 45, 0],

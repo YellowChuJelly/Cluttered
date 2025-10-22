@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [128, 128],
-	"render_type": "minecraft:cutout",
 	"ambientocclusion": false,
+	"render_type": "minecraft:cutout",
+	"texture_size": [128, 128],
 	"textures": {
 		"1": "cluttered:block/antique_library_books",
 		"particle": "cluttered:block/antique_library_books"
@@ -323,35 +323,37 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"translation": [2.25, 1.75, 1],
-			"scale": [0.22, 0.22, 0.22]
-		},
-		"thirdperson_lefthand": {
-			"translation": [-1.5, 1.75, 1],
-			"scale": [0.22, 0.22, 0.22]
-		},
-		"firstperson_righthand": {
-			"rotation": [0, 149, 0],
-			"translation": [-3, 4, 2.5],
-			"scale": [0.22, 0.22, 0.22]
-		},
-		"firstperson_lefthand": {
-			"rotation": [0, 149, 0],
-			"translation": [2.75, 4, 2.5],
-			"scale": [0.22, 0.22, 0.22]
-		},
-		"ground": {
-			"translation": [1.75, 3, 0],
+			"rotation": [75, 0, 0],
+			"translation": [2, 1.25, 0.75],
 			"scale": [0.25, 0.25, 0.25]
 		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 0, 0],
+			"translation": [2, 1.25, 0.75],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [3, 163, -9],
+			"translation": [-2.75, 3.25, 2.5],
+			"scale": [0.2, 0.2, 0.2]
+		},
+		"firstperson_lefthand": {
+			"rotation": [3, 163, -9],
+			"translation": [0.75, 3.25, 2.5],
+			"scale": [0.2, 0.2, 0.2]
+		},
+		"ground": {
+			"translation": [2, -1.75, 0],
+			"scale": [0.2, 0.2, 0.2]
+		},
 		"gui": {
-			"rotation": [30, 225, 0],
-			"translation": [-1.75, -2.25, 0],
+			"rotation": [30, -135, 0],
+			"translation": [-1.75, -1, 0],
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"head": {
-			"translation": [2.75, 9.25, 0],
-			"scale": [0.35, 0.35, 0.35]
+			"translation": [4, 10.5, 0],
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"fixed": {
 			"rotation": [-90, 0, 0],

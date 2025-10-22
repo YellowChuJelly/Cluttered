@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
 	"render_type": "minecraft:cutout",
+	"texture_size": [32, 32],
 	"textures": {
 		"3": "cluttered:block/cat_mugs_cluttered",
 		"particle": "cluttered:block/cat_mugs_cluttered"
@@ -239,12 +239,14 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"translation": [0, 4.5, 1],
-			"scale": [0.55, 0.55, 0.55]
+			"rotation": [75, 0, 0],
+			"translation": [0, 2.5, 2.25],
+			"scale": [0.375, 0.375, 0.375]
 		},
 		"thirdperson_lefthand": {
-			"translation": [0, 4.5, 1],
-			"scale": [0.55, 0.55, 0.55]
+			"rotation": [75, 0, 0],
+			"translation": [0, 2.5, 2.25],
+			"scale": [0.375, 0.375, 0.375]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, 138, 0],
@@ -258,7 +260,7 @@
 		},
 		"ground": {
 			"translation": [0, 3.75, 0],
-			"scale": [0.7, 0.7, 0.7]
+			"scale": [0.45, 0.45, 0.45]
 		},
 		"gui": {
 			"rotation": [21, -161, 0],

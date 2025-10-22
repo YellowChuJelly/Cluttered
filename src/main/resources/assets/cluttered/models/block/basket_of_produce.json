@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"texture_size": [32, 32],
-	"render_type":"minecraft:cutout",
 	"textures": {
 		"2": "cluttered:block/basket_of_produce",
 		"particle": "cluttered:block/basket_of_produce"
@@ -334,12 +334,12 @@
 		},
 		"gui": {
 			"rotation": [30, 225, 0],
-			"translation": [0, 2, 0],
+			"translation": [-0.25, 1.25, 0],
 			"scale": [0.75, 0.75, 0.75]
 		},
 		"head": {
 			"rotation": [0, 180, 0],
-			"translation": [0, 13, 7]
+			"translation": [0, 14.5, 0]
 		},
 		"fixed": {
 			"rotation": [-90, 0, 0],

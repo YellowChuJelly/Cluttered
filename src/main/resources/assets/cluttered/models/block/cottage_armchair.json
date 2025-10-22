@@ -1,5 +1,4 @@
 {
-	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"render_type": "minecraft:cutout",
 	"texture_size": [64, 64],
@@ -129,11 +128,13 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"translation": [0, -1.5, -2],
-			"scale": [0.25, 0.25, 0.25]
+			"rotation": [75, 45, 0],
+			"translation": [-1, 2.5, 0],
+			"scale": [0.3, 0.3, 0.3]
 		},
 		"thirdperson_lefthand": {
-			"translation": [0, -1.25, -2],
+			"rotation": [75, 45, 0],
+			"translation": [-1, 2.5, 0],
 			"scale": [0.3, 0.3, 0.3]
 		},
 		"firstperson_righthand": {
@@ -147,12 +148,12 @@
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"ground": {
-			"translation": [0.75, -2, 0.5],
+			"translation": [0, 3, 0],
 			"scale": [0.25, 0.25, 0.25]
 		},
 		"gui": {
 			"rotation": [30, -150, 0],
-			"translation": [0.25, -0.25, 0],
+			"translation": [0.5, -0.75, 0],
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"head": {
@@ -178,5 +179,6 @@
 			"color": 0,
 			"children": [4, 5, 6, 7, 8]
 		}
-	]
+	],
+	"format_version": "1.21.6"
 }

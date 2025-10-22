@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [64, 64],
 	"render_type": "minecraft:cutout",
+	"texture_size": [64, 64],
 	"textures": {
 		"1": "cluttered:block/fwish_armchair",
 		"particle": "cluttered:block/fwish_armchair"
@@ -345,8 +345,8 @@
 		},
 		"gui": {
 			"rotation": [30, 225, 0],
-			"translation": [0, -1.75, 0],
-			"scale": [0.58, 0.58, 0.58]
+			"translation": [0.25, -1.75, 0],
+			"scale": [0.6, 0.6, 0.6]
 		},
 		"fixed": {
 			"rotation": [-90, 0, 0],

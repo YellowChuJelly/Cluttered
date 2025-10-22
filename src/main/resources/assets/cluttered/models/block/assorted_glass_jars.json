@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
 	"render_type": "minecraft:cutout",
+	"texture_size": [32, 32],
 	"textures": {
 		"0": "cluttered:block/assorted_glass_jars",
 		"particle": "cluttered:block/assorted_glass_jars"
@@ -346,8 +346,8 @@
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
-			"rotation": [25, -180, 0],
-			"translation": [0.5, 2.75, 0]
+			"rotation": [30, -150, 0],
+			"translation": [2.5, 2.25, 0]
 		},
 		"head": {
 			"translation": [0, 14.5, 0]

@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"texture_size": [32, 32],
-	"render_type":"minecraft:cutout",
 	"textures": {
 		"1": "cluttered:block/lunar_observatory_pedestal_table",
-		"particle":"cluttered:block/lunar_observatory_pedestal_table"
+		"particle": "cluttered:block/lunar_observatory_pedestal_table"
 	},
 	"elements": [
 		{
@@ -114,31 +114,31 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [54, 45, 0],
-			"translation": [0, 1.5, 2],
-			"scale": [0.3, 0.3, 0.3]
+			"rotation": [59, 0, 0],
+			"translation": [0, 1.25, 1.75],
+			"scale": [0.375, 0.375, 0.375]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [54, 45, 0],
-			"translation": [0, 1.5, 2],
-			"scale": [0.3, 0.3, 0.3]
+			"rotation": [59, 0, 0],
+			"translation": [0, 1.25, 1.75],
+			"scale": [0.375, 0.375, 0.375]
 		},
 		"firstperson_righthand": {
-			"rotation": [19, -172, 0],
-			"translation": [3.25, 0.75, -2.75],
-			"scale": [0.5, 0.5, 0.5]
+			"rotation": [0, 120, 0],
+			"translation": [1.75, 1.25, 0],
+			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_lefthand": {
-			"rotation": [16, -172, 0],
-			"translation": [3.25, 0.75, -2.75],
-			"scale": [0.5, 0.5, 0.5]
+			"rotation": [0, 120, 0],
+			"translation": [1.75, 1.25, 0],
+			"scale": [0.4, 0.4, 0.4]
 		},
 		"ground": {
 			"translation": [0, 3, 0],
 			"scale": [0.25, 0.25, 0.25]
 		},
 		"gui": {
-			"rotation": [30, -150, 0],
+			"rotation": [30, 225, 0],
 			"translation": [0, -0.75, 0],
 			"scale": [0.75, 0.75, 0.75]
 		},
