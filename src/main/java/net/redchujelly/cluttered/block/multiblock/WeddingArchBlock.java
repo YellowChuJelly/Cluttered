@@ -74,19 +74,35 @@ public class WeddingArchBlock extends MultiblockPlacer{
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         int part = pState.getValue(MULTIBLOCK_PART);
-        if (part == 1 || part == 2 || part == 6 || part == 7){
-            return SHAPE_1367;
-        }
         Direction facing = pState.getValue(FACING);
-        if (part == 4){
-            return facing.equals(Direction.NORTH) || facing.equals(Direction.SOUTH) ? SHAPE_NS_4 : SHAPE_EW_4;
+        VoxelShape shape1;
+        if (part == 1 || part == 2 || part == 6 || part == 7){
+            shape1 = SHAPE_1367;
         }
-        return switch (facing) {
-            case SOUTH -> part == 3 ? SHAPE_S_35 : SHAPE_N_35;
-            case EAST -> part == 3 ? SHAPE_E_35 : SHAPE_W_35;
-            case WEST -> part == 3 ? SHAPE_W_35 : SHAPE_E_35;
-            default -> part == 3 ? SHAPE_N_35 : SHAPE_S_35;
-        };
+        else if (part == 4){
+            shape1 = facing.equals(Direction.NORTH) || facing.equals(Direction.SOUTH) ? SHAPE_NS_4 : SHAPE_EW_4;
+        }
+        else {
+            shape1 = switch (facing) {
+                case SOUTH -> part == 3 ? SHAPE_S_35 : SHAPE_N_35;
+                case EAST -> part == 3 ? SHAPE_E_35 : SHAPE_W_35;
+                case WEST -> part == 3 ? SHAPE_W_35 : SHAPE_E_35;
+                default -> part == 3 ? SHAPE_N_35 : SHAPE_S_35;
+            };
+        }
+        if (pState.getValue(SOUTH)){
+            shape1 = Shapes.or(shape1, SHAPE_N_1367);
+        }
+        if (pState.getValue(NORTH)){
+            shape1 = Shapes.or(shape1, SHAPE_S_1367);
+        }
+        if (pState.getValue(WEST)){
+            shape1 = Shapes.or(shape1, SHAPE_E_1367);
+        }
+        if (pState.getValue(EAST)){
+            shape1 = Shapes.or(shape1, SHAPE_W_1367);
+        }
+        return shape1;
 
     }
 
@@ -180,19 +196,6 @@ public class WeddingArchBlock extends MultiblockPlacer{
 
     @Override
     public BlockState updateShape(BlockState pState, Direction pDirection, BlockState pNeighborState, LevelAccessor pLevel, BlockPos pCurrentPos, BlockPos pNeighborPos) {
-        //BlockPos state1Pos = null;
-        //if (pState.getValue(getMultiblockPart()) != 1) {
-        //    state1Pos = findBlockState1(pCurrentPos, pLevel);
-        //} else {
-        //    state1Pos = pCurrentPos;
-        //}
-        //if (state1Pos != null) {
-        //    if (!canSurvive(pLevel.getBlockState(state1Pos), pLevel, state1Pos)) {
-        //        pLevel.scheduleTick(pCurrentPos, this, 0);
-        //    }
-        //} else {
-        //    pLevel.scheduleTick(pCurrentPos, this, 0);
-        //}
         if (pDirection.equals(Direction.NORTH)){
             pLevel.setBlock(pCurrentPos, pState.setValue(NORTH, connectsTo(pNeighborState)), 2);
         }

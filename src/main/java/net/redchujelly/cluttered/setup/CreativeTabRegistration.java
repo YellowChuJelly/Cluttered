@@ -670,123 +670,121 @@ public class CreativeTabRegistration {
                     .build());
 
     public static final RegistryObject<CreativeModeTab> CLUTTERED_FURNITURE_TAB = CREATIVE_MODE_TABS.register("cluttered_furniture_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(BlockRegistration.RECORD_PLAYER_YELLOW.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(BlockRegistration.ENDTABLE_DECOR.get()))
                     .title(Component.translatable("creativetab.cluttered_furniture_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(BlockRegistration.APPLE_CHAIR.get());
-                        output.accept(BlockRegistration.LEMON_TABLE.get());
 
-                        output.accept(BlockRegistration.BIRDHOUSE_RED.get());
-                        output.accept(BlockRegistration.BIRDHOUSE_BLUE.get());
-                        output.accept(BlockRegistration.BIRDHOUSE_UNPAINTED.get());
-                        output.accept(BlockRegistration.BIRDHOUSE_PASTEL.get());
+                        //LAMPS
 
-                        output.accept(BlockRegistration.BRIEFCASE_BLANK.get());
-                        output.accept(BlockRegistration.BRIEFCASE_ROVER.get());
-                        output.accept(BlockRegistration.BUNNY_BOOK_ENDS.get());
-                        output.accept(BlockRegistration.BOX_OF_PAINTS.get());
-                        output.accept(BlockRegistration.BUTTON_STOOL.get());
+                        output.accept(BlockRegistration.HOPPIN_PARK_LANTERN.get());
+                        output.accept(BlockRegistration.SEA_GEM_LANTERN.get());
+                        output.accept(BlockRegistration.COLOSSEO_WALL_LANTERN.get());
 
-                        output.accept(BlockRegistration.CARDBOARD_BOX.get());
-                        output.accept(BlockRegistration.FILING_BOX.get());
+                        output.accept(BlockRegistration.STAINED_GLASS_LAMP.get());
+                        output.accept(BlockRegistration.ANTIQUE_STANDING_LAMP.get());
 
-                        output.accept(BlockRegistration.CAT_MUGS_CLUTTERED.get());
-                        output.accept(BlockRegistration.CAT_PLANT_POT_BLACK.get());
-                        output.accept(BlockRegistration.CAT_PLANT_POT_ORANGE.get());
-                        output.accept(BlockRegistration.COFFEE_GRINDER.get());
-                        output.accept(BlockRegistration.CAULDRON_POSTER.get());
-
-                        output.accept(BlockRegistration.THREAD_SPOOL_YELLOW.get());
-                        output.accept(BlockRegistration.THREAD_SPOOL_GREEN.get());
-                        output.accept(BlockRegistration.THREAD_SPOOL_PURPLE.get());
-                        output.accept(BlockRegistration.THREAD_SPOOL_PINK.get());
-
-                        output.accept(BlockRegistration.KITCHEN_SCALE.get());
-                        output.accept(BlockRegistration.ANTIQUE_MAP.get());
-                        output.accept(BlockRegistration.ANTIQUE_MINI_TABLE.get());
-                        output.accept(BlockRegistration.ANCIENT_CODEX.get());
-
-                        output.accept(BlockRegistration.ANTIQUE_BOOK_STAND.get());
-                        output.accept(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get());
-
+                        output.accept(BlockRegistration.HONEYCOMB_LAMP.get());
                         output.accept(BlockRegistration.BEE_LAMP.get());
                         output.accept(BlockRegistration.BEE_LAMP_ANGRY.get());
 
-                        output.accept(BlockRegistration.RECORD_PLAYER_RED.get());
-                        output.accept(BlockRegistration.RECORD_PLAYER_YELLOW.get());
-                        output.accept(BlockRegistration.RECORD_PLAYER_BLUE.get());
-                        output.accept(BlockRegistration.RECORD_PLAYER_PURPLE.get());
-                        output.accept(BlockRegistration.RECORD_PLAYER_PINK.get());
-                        output.accept(BlockRegistration.RECORD_PLAYER_BROWN.get());
-                        output.accept(BlockRegistration.RECORD_PLAYER_WHITE.get());
+                        output.accept(BlockRegistration.CAGED_BULB.get());
 
-                        output.accept(BlockRegistration.BIKE_YELLOW.get());
-                        output.accept(BlockRegistration.BIKE_YELLOW_FLOWERS.get());
-                        output.accept(BlockRegistration.BIKE_BLUE.get());
-                        output.accept(BlockRegistration.BIKE_BLUE_FLOWERS.get());
-                        output.accept(BlockRegistration.BIKE_PURPLE.get());
-                        output.accept(BlockRegistration.BIKE_PURPLE_FLOWERS.get());
-                        output.accept(BlockRegistration.BIKE_PINK.get());
-                        output.accept(BlockRegistration.BIKE_PINK_FLOWERS.get());
-
-                        output.accept(BlockRegistration.COTTAGE_SIDE_TABLE.get());
-                        output.accept(BlockRegistration.COTTAGE_CHAIR.get());
-                        output.accept(BlockRegistration.COTTAGE_CHAIR_CUSHIONED.get());
-                        output.accept(BlockRegistration.COTTAGE_OTTOMAN.get());
-
-                        output.accept(BlockRegistration.GUMBALL_MACHINE_RED.get());
-                        output.accept(BlockRegistration.GUMBALL_MACHINE_BLUE.get());
-                        output.accept(BlockRegistration.GUMBALL_MACHINE_PURPLE.get());
-
-                        output.accept(BlockRegistration.MINI_CACTUS_SET.get());
-                        output.accept(BlockRegistration.MUSHROOM_JARS.get());
-                        output.accept(BlockRegistration.NEWSPAPER_PILE_SHORT.get());
-                        output.accept(BlockRegistration.NEWSPAPER_PILE_TALL.get());
-                        output.accept(BlockRegistration.PAPER_PILE.get());
-
-                        output.accept(BlockRegistration.MUSHROOM_TERRARIUM_RED.get());
-                        output.accept(BlockRegistration.MUSHROOM_TERRARIUM_BROWN.get());
-                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_YELLOW.get());
-                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_GREEN.get());
-                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_BLUE.get());
-                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_PURPLE.get());
-                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_PINK.get());
-
-                        output.accept(BlockRegistration.FENCE_SHELF.get());
-                        output.accept(BlockRegistration.HANGING_PLANT_POT_FLOWERS.get());
-                        output.accept(BlockRegistration.HANGING_PLANT_POT_GRASS.get());
-                        output.accept(BlockRegistration.PEDESTAL_HK.get());
-                        output.accept(BlockRegistration.PICNIC_BASKET.get());
-                        output.accept(BlockRegistration.PICNIC_BASKET_PREPARED.get());
-                        output.accept(BlockRegistration.BASKET_OF_PRODUCE.get());
-                        output.accept(BlockRegistration.BASKET_OF_FLOWERS.get());
-                        output.accept(BlockRegistration.POLAROIDS_A.get());
+                        output.accept(BlockRegistration.OSSON_PENDANT_WHITE.get());
                         output.accept(BlockRegistration.OSSON_PENDANT_BLACK.get());
                         output.accept(BlockRegistration.OSSON_PENDANT_BROWN.get());
-                        output.accept(BlockRegistration.OSSON_PENDANT_ORANGE.get());
-                        output.accept(BlockRegistration.OSSON_PENDANT_RACING_GREEN.get());
-                        output.accept(BlockRegistration.OSSON_PENDANT_SAGE_GREEN.get());
                         output.accept(BlockRegistration.OSSON_PENDANT_RED.get());
+                        output.accept(BlockRegistration.OSSON_PENDANT_ORANGE.get());
                         output.accept(BlockRegistration.OSSON_PENDANT_YELLOW.get());
-                        output.accept(BlockRegistration.OSSON_PENDANT_WHITE.get());
+                        output.accept(BlockRegistration.OSSON_PENDANT_SAGE_GREEN.get());
+                        output.accept(BlockRegistration.OSSON_PENDANT_RACING_GREEN.get());
 
-                        output.accept(BlockRegistration.COTTAGE_BOOKCASE.get());
+                        //FRUIT SET
+                        output.accept(BlockRegistration.APPLE_CHAIR.get());
+                        output.accept(BlockRegistration.LEMON_TABLE.get());
+
+                        //FWISH SET
+                        output.accept(BlockRegistration.FWISH_ARMCHAIR.get());
+                        output.accept(BlockRegistration.FWISH_OTTOMAN.get());
+                        output.accept(BlockRegistration.FWISH_BOOKCASE.get());
+
+                        //MERMAID SET
+                        output.accept(BlockRegistration.MERMAID_PEARL.get());
+                        output.accept(BlockRegistration.MERMAID_DRESSER.get());
+
+                        //ROVER SET
+                        output.accept(BlockRegistration.ROVER_MUG.get());
+                        output.accept(BlockRegistration.ROVER_STOOL.get());
+                        output.accept(BlockRegistration.BRIEFCASE_BLANK.get());
+                        output.accept(BlockRegistration.BRIEFCASE_ROVER.get());
+
+                        //IMPERIAL SET
+                        output.accept(BlockRegistration.IMPERIAL_CHAIR.get());
+                        output.accept(BlockRegistration.IMPERIAL_TABLE.get());
+
+                        //LUNAR OBSERVATORY SET
+                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_TABLE.get());
+                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_PEDESTAL.get());
+                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_BOOKS.get());
+                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_PAPER_BASKET.get());
+                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_GLOBE.get());
+                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_JARS.get());
+
+                        //COTTAGE SET
+                        output.accept(BlockRegistration.COTTAGE_CHAIR.get());
+                        output.accept(BlockRegistration.COTTAGE_CHAIR_CUSHIONED.get());
+                        output.accept(BlockRegistration.COTTAGE_ARMCHAIR.get());
+                        output.accept(BlockRegistration.COTTAGE_OTTOMAN.get());
+                        output.accept(BlockRegistration.COTTAGE_SIDE_TABLE.get());
                         output.accept(BlockRegistration.COTTAGE_STANDING_LAMP.get());
-                        output.accept(BlockRegistration.DRYING_HERBS.get());
-                        output.accept(BlockRegistration.HANGING_CLOTH.get());
+                        output.accept(BlockRegistration.COTTAGE_BOOKCASE.get());
+
+                        //DARKWOOD SET
+                        output.accept(BlockRegistration.DARKWOOD_CHAIR_GEOMETRIC.get());
+                        output.accept(BlockRegistration.DARKWOOD_CHAIR_QUILTED.get());
+                        output.accept(BlockRegistration.DARKWOOD_CHAIR_SOUTHERN_FLAIR.get());
+                        output.accept(BlockRegistration.DARKWOOD_SOFA_GEOMETRIC.get());
+                        output.accept(BlockRegistration.DARKWOOD_SOFA_QUILTED.get());
+                        output.accept(BlockRegistration.DARKWOOD_SOFA_SOUTHERN_FLAIR.get());
+                        output.accept(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_GEOMETRIC.get());
+                        output.accept(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_QUILTED.get());
+                        output.accept(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_SOUTHERN_FLAIR.get());
+                        output.accept(BlockRegistration.DARKWOOD_ENDTABLE.get());
+                        output.accept(BlockRegistration.DARKWOOD_TABLE.get());
+                        output.accept(BlockRegistration.DARKWOOD_STOOL.get());
+                        output.accept(BlockRegistration.DARKWOOD_CABINET.get());
+                        output.accept(BlockRegistration.DARKWOOD_CLOCK.get());
+                        output.accept(BlockRegistration.DARKWOOD_BED_GEOMETRIC.get());
+                        output.accept(BlockRegistration.DARKWOOD_BED_QUILTED.get());
+                        output.accept(BlockRegistration.DARKWOOD_BED_SOUTHERN_FLAIR.get());
+
+                        //PASTEL SET
+                        output.accept(BlockRegistration.PASTEL_CHAIR.get());
+                        output.accept(BlockRegistration.PASTEL_STOOL.get());
+                        output.accept(BlockRegistration.PASTEL_TABLE.get());
+                        output.accept(BlockRegistration.PASTEL_LIGHT.get());
+                        output.accept(BlockRegistration.PASTEL_CABINET.get());
+                        output.accept(BlockRegistration.PASTEL_WARDROBE.get());
+                        output.accept(BlockRegistration.PASTEL_BED.get());
 
 
-                        output.accept(BlockRegistration.PASTRY_PLATE.get());
-                        output.accept(BlockRegistration.CHOCOLATE_CROISSANT.get());
-                        output.accept(BlockRegistration.BLUEBERRY_MUFFIN.get());
-                        output.accept(BlockRegistration.CINNAMON_BUN.get());
-                        output.accept(BlockRegistration.CROISSANT.get());
-                        output.accept(BlockRegistration.PANCAKE_STACK.get());
-                        output.accept(BlockRegistration.HAM_SANDWICH.get());
+                        //STEAMPUNK SET
+                        output.accept(BlockRegistration.BRASS_KEY.get());
+                        output.accept(BlockRegistration.STEAMPUNK_LAMP.get());
+                        output.accept(BlockRegistration.STEAMPUNK_GLOBE.get());
 
-                        output.accept(BlockRegistration.HEART_CAKE.get());
-                        output.accept(BlockRegistration.BERRY_CAKE.get());
+                        //MUSHROOM SETS
+                        output.accept(BlockRegistration.BLUE_MUSHROOM_TABLE.get());
+                        output.accept(BlockRegistration.BLUE_MUSHROOM_WARDROBE.get());
+                        output.accept(BlockRegistration.BLUE_MUSHROOM_BED.get());
+                        output.accept(BlockRegistration.BLUE_MUSHROOM_TV.get());
+                        output.accept(BlockRegistration.BLUE_MUSHROOM_LAMP.get());
+                        output.accept(BlockRegistration.RED_MUSHROOM_TABLE.get());
+                        output.accept(BlockRegistration.RED_MUSHROOM_WARDROBE.get());
+                        output.accept(BlockRegistration.RED_MUSHROOM_BED.get());
+                        output.accept(BlockRegistration.RED_MUSHROOM_TV.get());
+                        output.accept(BlockRegistration.RED_MUSHROOM_LAMP.get());
 
+                        //FLAGS
                         output.accept(BlockRegistration.MINI_FLAG_RAINBOW.get());
                         output.accept(BlockRegistration.MINI_FLAG_LESBIAN.get());
                         output.accept(BlockRegistration.MINI_FLAG_BI.get());
@@ -803,90 +801,96 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.ANIMATED_FLAG_TRANSGENDER.get());
                         output.accept(BlockRegistration.ANIMATED_FLAG_NONBINARY.get());
 
-                        output.accept(BlockRegistration.BAMBOO_BOOKSHELF.get());
-                        output.accept(BlockRegistration.SMALL_BOOKCASE.get());
-                        output.accept(BlockRegistration.FWISH_BOOKCASE.get());
-                        output.accept(BlockRegistration.RETRO_CAFE_SHELF.get());
-                        output.accept(BlockRegistration.RETRO_CAFE_SHELF_WINDOW.get());
-                        output.accept(BlockRegistration.POTION_SHELF.get());
-                        output.accept(BlockRegistration.CHINA_CABINET.get());
+                        //OUTDOORS
+                        output.accept(BlockRegistration.PICNIC_BASKET.get());
+                        output.accept(BlockRegistration.PICNIC_BASKET_PREPARED.get());
+                        output.accept(BlockRegistration.BASKET_OF_PRODUCE.get());
+                        output.accept(BlockRegistration.BASKET_OF_FLOWERS.get());
+
+                        output.accept(BlockRegistration.BIRDHOUSE_UNPAINTED.get());
+                        output.accept(BlockRegistration.BIRDHOUSE_RED.get());
+                        output.accept(BlockRegistration.BIRDHOUSE_BLUE.get());
+                        output.accept(BlockRegistration.BIRDHOUSE_PASTEL.get());
+
                         output.accept(BlockRegistration.CUPID_BENCH.get());
 
-                        output.accept(BlockRegistration.ENDTABLE_AMETHYST.get());
-                        output.accept(BlockRegistration.ENDTABLE_BUBBLEGUM.get());
-                        output.accept(BlockRegistration.ENDTABLE_CHARCOAL.get());
-                        output.accept(BlockRegistration.ENDTABLE_MEADOW.get());
-                        output.accept(BlockRegistration.ENDTABLE_PERIWINKLE.get());
-                        output.accept(BlockRegistration.ENDTABLE_SUNSHINE.get());
-                        output.accept(BlockRegistration.ENDTABLE_WOOD.get());
-                        output.accept(BlockRegistration.ENDTABLE_DECOR.get());
-                        output.accept(BlockRegistration.SMALL_CAULDRON.get());
-                        output.accept(BlockRegistration.STEAMPUNK_LAMP.get());
-                        output.accept(BlockRegistration.TARRY_TOWN_STOVE.get());
+                        output.accept(BlockRegistration.BIKE_YELLOW.get());
+                        output.accept(BlockRegistration.BIKE_YELLOW_FLOWERS.get());
+                        output.accept(BlockRegistration.BIKE_BLUE.get());
+                        output.accept(BlockRegistration.BIKE_BLUE_FLOWERS.get());
+                        output.accept(BlockRegistration.BIKE_PURPLE.get());
+                        output.accept(BlockRegistration.BIKE_PURPLE_FLOWERS.get());
+                        output.accept(BlockRegistration.BIKE_PINK.get());
+                        output.accept(BlockRegistration.BIKE_PINK_FLOWERS.get());
 
-                        output.accept(BlockRegistration.NIGHTSTAND_GREEN.get());
-                        output.accept(BlockRegistration.DESK_GREEN.get());
-                        output.accept(BlockRegistration.DESK_BROWN.get());
-                        output.accept(BlockRegistration.DESK_GREEN_CLUTTERED.get());
-                        output.accept(BlockRegistration.DESK_BROWN_CLUTTERED.get());
-
-                        output.accept(BlockRegistration.ROVER_STOOL.get());
-                        output.accept(BlockRegistration.MADONNA_OTTOMAN.get());
-                        output.accept(BlockRegistration.RUBIKS_CUBE.get());
-                        output.accept(BlockRegistration.RUBIKS_CUBE_PASTEL.get());
-                        output.accept(BlockRegistration.ROW_OF_SMALL_BOOKS.get());
-                        output.accept(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL.get());
-                        output.accept(BlockRegistration.SCATTERED_PAPERS.get());
-                        output.accept(BlockRegistration.ROW_OF_SMALL_BOOKS_SHELVED.get());
-                        output.accept(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL_SHELVED.get());
-                        output.accept(BlockRegistration.STAINED_GLASS_LAMP.get());
-                        output.accept(BlockRegistration.SMALL_BUSH.get());
-                        output.accept(BlockRegistration.TEDDY_BEAR.get());
-                        output.accept(BlockRegistration.SMALL_SHELF.get());
-                        output.accept(BlockRegistration.SMALL_SHELF_PINK.get());
-                        output.accept(BlockRegistration.TWO_FLOWER_POTS.get());
-
-                        output.accept(BlockRegistration.TRADITIONAL_RADIO.get());
-                        output.accept(BlockRegistration.SEWING_MANNEQUIN.get());
-                        output.accept(BlockRegistration.SEWING_MACHINE_ANTIQUE.get());
-                        output.accept(BlockRegistration.SEWING_TABLE.get());
-                        output.accept(BlockRegistration.SEWING_CLUTTER.get());
-                        output.accept(BlockRegistration.MINI_HANGING_TERRARIUMS.get());
-                        output.accept(BlockRegistration.OFFICE_SUPPLIES_A.get());
-                        output.accept(BlockRegistration.OFFICE_SUPPLIES_B.get());
-                        output.accept(BlockRegistration.RITO_BOOKS.get());
-                        output.accept(BlockRegistration.ROVER_MUG.get());
-                        output.accept(BlockRegistration.SELTZER_CANS.get());
-
+                        output.accept(BlockRegistration.POK_TA_POK_HOOP.get());
+                        output.accept(BlockRegistration.POK_TA_POK_HOOP_SNAKES.get());
                         output.accept(BlockRegistration.WEDDING_ARCH.get());
-
                         output.accept(BlockRegistration.WATERING_CAN.get());
                         output.accept(BlockRegistration.WATERING_CAN_COPPER.get());
+                        output.accept(BlockRegistration.SMALL_BUSH.get());
 
+                        //PLANTS
+                        output.accept(BlockRegistration.TWO_FLOWER_POTS.get());
+                        output.accept(BlockRegistration.MINI_CACTUS_SET.get());
                         output.accept(BlockRegistration.GLASS_FLOWER_VASE.get());
-                        output.accept(BlockRegistration.PAINT_WATER_JAR.get());
-                        output.accept(BlockRegistration.MERMAID_PEARL.get());
-                        output.accept(BlockRegistration.MERMAID_DRESSER.get());
+                        output.accept(BlockRegistration.CAT_PLANT_POT_BLACK.get());
+                        output.accept(BlockRegistration.CAT_PLANT_POT_ORANGE.get());
+                        output.accept(BlockRegistration.HANGING_PLANT_POT_FLOWERS.get());
+                        output.accept(BlockRegistration.HANGING_PLANT_POT_GRASS.get());
 
-                        output.accept(BlockRegistration.STARS_PENDANT.get());
-                        output.accept(BlockRegistration.MOON_PENDANT.get());
-                        output.accept(BlockRegistration.MOON_DECORATION.get());
-                        output.accept(BlockRegistration.CAGED_BULB.get());
-                        output.accept(BlockRegistration.COLOSSEO_WALL_LANTERN.get());
-                        output.accept(BlockRegistration.ANTIQUE_STANDING_LAMP.get());
-                        output.accept(BlockRegistration.BULLETIN_BOARD.get());
-                        output.accept(BlockRegistration.BULLETIN_BOARD_CLUTTERED.get());
+                        output.accept(BlockRegistration.PLANT_LADDER.get());
+                        output.accept(BlockRegistration.FENCE_SHELF.get());
+                        output.accept(BlockRegistration.MINI_HANGING_TERRARIUMS.get());
+                        output.accept(BlockRegistration.MUSHROOM_JARS.get());
+
+                        output.accept(BlockRegistration.MUSHROOM_TERRARIUM_RED.get());
+                        output.accept(BlockRegistration.MUSHROOM_TERRARIUM_BROWN.get());
+                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_YELLOW.get());
+                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_GREEN.get());
+                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_BLUE.get());
+                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_PURPLE.get());
+                        output.accept(BlockRegistration.GLOWSHROOM_TERRARIUM_PINK.get());
+
+
+
+                        //LIVING ROOM
+                        //SHELVES (LIVING ROOM SUB)
+                        output.accept(BlockRegistration.HANGING_SHELVES_PLANTS.get());
+                        output.accept(BlockRegistration.HANGING_SHELVES_POTTERY.get());
+
+                        output.accept(BlockRegistration.FLOWER_SHELF_PLANT.get());
+                        output.accept(BlockRegistration.FLOWER_SHELF_BLUE.get());
+                        output.accept(BlockRegistration.FLOWER_SHELF_GREEN.get());
+                        output.accept(BlockRegistration.FLOWER_SHELF_PASTEL_YELLOW.get());
+                        output.accept(BlockRegistration.FLOWER_SHELF_PINK.get());
+                        output.accept(BlockRegistration.FLOWER_SHELF_PURPLE.get());
+                        output.accept(BlockRegistration.FLOWER_SHELF_YELLOW.get());
+                        output.accept(BlockRegistration.FLOWER_SHELF_CANDLE_BLUE.get());
+                        output.accept(BlockRegistration.FLOWER_SHELF_CANDLE_GREEN.get());
+                        output.accept(BlockRegistration.FLOWER_SHELF_CANDLE_PASTEL_YELLOW.get());
+                        output.accept(BlockRegistration.FLOWER_SHELF_CANDLE_PINK.get());
+                        output.accept(BlockRegistration.FLOWER_SHELF_CANDLE_PURPLE.get());
+                        output.accept(BlockRegistration.FLOWER_SHELF_CANDLE_YELLOW.get());
+
+                        output.accept(BlockRegistration.SMALL_SHELF.get());
+                        output.accept(BlockRegistration.SMALL_SHELF_PINK.get());
+
+                        output.accept(BlockRegistration.RECORD_PLAYER_RED.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_YELLOW.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_BLUE.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_PURPLE.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_PINK.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_BROWN.get());
+                        output.accept(BlockRegistration.RECORD_PLAYER_WHITE.get());
+                        output.accept(BlockRegistration.TRADITIONAL_RADIO.get());
+
+                        output.accept(BlockRegistration.UNLIVING_CHAIR.get());
+                        //LOVESEATS
                         output.accept(BlockRegistration.LOVELY_LOVE_SEAT.get());
                         output.accept(BlockRegistration.LOVELY_LOVE_SEAT_BLACK.get());
 
-                        output.accept(BlockRegistration.BLACK_CAT_GARLAND.get());
-                        output.accept(BlockRegistration.BLOSSOM_GARLAND.get());
-                        output.accept(BlockRegistration.BUNNY_GARLAND.get());
-                        output.accept(BlockRegistration.POLAROID_A_GARLAND.get());
-                        output.accept(BlockRegistration.POLAROID_B_GARLAND.get());
-                        output.accept(BlockRegistration.SUNFLOWER_GARLAND.get());
-                        output.accept(BlockRegistration.STARRY_GARLAND.get());
-
+                        //ARMCHAIRS
                         output.accept(BlockRegistration.ARMCHAIR_WHITE.get());
                         output.accept(BlockRegistration.ARMCHAIR_LIGHT_GRAY.get());
                         output.accept(BlockRegistration.ARMCHAIR_GRAY.get());
@@ -912,58 +916,137 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.ARMCHAIR_LEMON.get());
                         output.accept(BlockRegistration.ARMCHAIR_STARRY.get());
                         output.accept(BlockRegistration.ARMCHAIR_BLACK_CAT.get());
-                        output.accept(BlockRegistration.COTTAGE_ARMCHAIR.get());
 
-                        output.accept(BlockRegistration.DARKWOOD_CHAIR_GEOMETRIC.get());
-                        output.accept(BlockRegistration.DARKWOOD_CHAIR_QUILTED.get());
-                        output.accept(BlockRegistration.DARKWOOD_CHAIR_SOUTHERN_FLAIR.get());
-                        output.accept(BlockRegistration.DARKWOOD_SOFA_GEOMETRIC.get());
-                        output.accept(BlockRegistration.DARKWOOD_SOFA_QUILTED.get());
-                        output.accept(BlockRegistration.DARKWOOD_SOFA_SOUTHERN_FLAIR.get());
-                        output.accept(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_GEOMETRIC.get());
-                        output.accept(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_QUILTED.get());
-                        output.accept(BlockRegistration.DARKWOOD_DECORATIVE_SHELVES_SOUTHERN_FLAIR.get());
-                        output.accept(BlockRegistration.DARKWOOD_ENDTABLE.get());
-                        output.accept(BlockRegistration.DARKWOOD_TABLE.get());
-                        output.accept(BlockRegistration.DARKWOOD_STOOL.get());
-                        output.accept(BlockRegistration.DARKWOOD_CABINET.get());
-                        output.accept(BlockRegistration.DARKWOOD_CLOCK.get());
-                        output.accept(BlockRegistration.DARKWOOD_BED_GEOMETRIC.get());
-                        output.accept(BlockRegistration.DARKWOOD_BED_QUILTED.get());
-                        output.accept(BlockRegistration.DARKWOOD_BED_SOUTHERN_FLAIR.get());
+                        output.accept(BlockRegistration.MADONNA_OTTOMAN.get());
 
-                        output.accept(BlockRegistration.PASTEL_CHAIR.get());
-                        output.accept(BlockRegistration.PASTEL_STOOL.get());
-                        output.accept(BlockRegistration.PASTEL_TABLE.get());
-                        output.accept(BlockRegistration.PASTEL_LIGHT.get());
-                        output.accept(BlockRegistration.PASTEL_CABINET.get());
-                        output.accept(BlockRegistration.PASTEL_WARDROBE.get());
-                        output.accept(BlockRegistration.PASTEL_BED.get());
+                        //TABLES (LIVING ROOM SUB)
+                        output.accept(BlockRegistration.ANTIQUE_MINI_TABLE.get());
+                        output.accept(BlockRegistration.PEDESTAL_HK.get());
 
-                        output.accept(BlockRegistration.TABLE_PLAIN.get());
-                        output.accept(BlockRegistration.TABLE_TABLECLOTH.get());
-                        output.accept(BlockRegistration.IMPERIAL_CHAIR.get());
-                        output.accept(BlockRegistration.IMPERIAL_TABLE.get());
+                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_BLUE.get());
+                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_GREEN.get());
+                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_RED.get());
+                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_YELLOW.get());
+                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_PASTEL_BLUE.get());
+                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_PASTEL_PINK.get());
+                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_PASTEL_PURPLE.get());
+                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_PASTEL_YELLOW.get());
 
-                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_TABLE.get());
-                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_PEDESTAL.get());
-                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_BOOKS.get());
-                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_PAPER_BASKET.get());
-                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_GLOBE.get());
-                        output.accept(BlockRegistration.LUNAR_OBSERVATORY_JARS.get());
+                        //BEDROOM
+                        output.accept(BlockRegistration.ROSE_END_TABLE.get());
+                        output.accept(BlockRegistration.ROSE_END_TABLE_BLACK.get());
 
-                        output.accept(BlockRegistration.ASSORTED_GLASS_JARS.get());
-                        output.accept(BlockRegistration.SMALL_GLASS_JARS.get());
-                        output.accept(BlockRegistration.ASSORTED_SPICE_JARS.get());
+                        output.accept(BlockRegistration.ENDTABLE_AMETHYST.get());
+                        output.accept(BlockRegistration.ENDTABLE_BUBBLEGUM.get());
+                        output.accept(BlockRegistration.ENDTABLE_CHARCOAL.get());
+                        output.accept(BlockRegistration.ENDTABLE_MEADOW.get());
+                        output.accept(BlockRegistration.ENDTABLE_PERIWINKLE.get());
+                        output.accept(BlockRegistration.ENDTABLE_SUNSHINE.get());
+                        output.accept(BlockRegistration.ENDTABLE_WOOD.get());
+                        output.accept(BlockRegistration.NIGHTSTAND_GREEN.get());
 
-                        output.accept(BlockRegistration.PASTRY_DISPLAY_CASE.get());
-                        output.accept(BlockRegistration.DORADO_CABINET.get());
-                        output.accept(BlockRegistration.DORADO_CABINET_CLUTTERED.get());
-                        output.accept(BlockRegistration.HAVANA_CABINET.get());
-                        output.accept(BlockRegistration.HAVANA_CABINET_CLUTTERED.get());
-                        output.accept(BlockRegistration.MUREX_CABINET.get());
-                        output.accept(BlockRegistration.MUREX_CABINET_CLUTTERED.get());
+                        output.accept(BlockRegistration.ENDTABLE_DECOR.get());
+                        output.accept(BlockRegistration.VIOLET_SCREEN.get());
+                        output.accept(BlockRegistration.SAFE_NOVAKID.get());
 
+                        //TOYS
+                        output.accept(BlockRegistration.RUBIKS_CUBE.get());
+                        output.accept(BlockRegistration.RUBIKS_CUBE_PASTEL.get());
+                        output.accept(BlockRegistration.TEDDY_BEAR.get());
+                        output.accept(BlockRegistration.SAND_SEAL_PLUSH_BLUE.get());
+                        output.accept(BlockRegistration.SAND_SEAL_PLUSH_GREEN.get());
+                        output.accept(BlockRegistration.SAND_SEAL_PLUSH_RED.get());
+
+                        //STARS?
+                        output.accept(BlockRegistration.HEAVENLY_ORNAMENTAL_ARRAY.get());
+                        output.accept(BlockRegistration.STARS_PENDANT.get());
+                        output.accept(BlockRegistration.MOON_PENDANT.get());
+                        output.accept(BlockRegistration.MOON_DECORATION.get());
+
+                        //GARLANDS
+                        output.accept(BlockRegistration.BLACK_CAT_GARLAND.get());
+                        output.accept(BlockRegistration.BLOSSOM_GARLAND.get());
+                        output.accept(BlockRegistration.BUNNY_GARLAND.get());
+                        output.accept(BlockRegistration.POLAROID_A_GARLAND.get());
+                        output.accept(BlockRegistration.POLAROID_B_GARLAND.get());
+                        output.accept(BlockRegistration.SUNFLOWER_GARLAND.get());
+                        output.accept(BlockRegistration.STARRY_GARLAND.get());
+
+                        //LIBRARY
+                        output.accept(BlockRegistration.BAMBOO_BOOKSHELF.get());
+                        output.accept(BlockRegistration.SMALL_BOOKCASE.get());
+
+                        output.accept(BlockRegistration.ANCIENT_CODEX.get());
+                        output.accept(BlockRegistration.ANTIQUE_BOOK_STAND.get());
+
+                        output.accept(BlockRegistration.BUNNY_BOOK_ENDS.get());
+                        output.accept(BlockRegistration.ROW_OF_SMALL_BOOKS.get());
+                        output.accept(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL.get());
+                        output.accept(BlockRegistration.ROW_OF_SMALL_BOOKS_SHELVED.get());
+                        output.accept(BlockRegistration.ROW_OF_SMALL_BOOKS_PASTEL_SHELVED.get());
+                        output.accept(BlockRegistration.BOOK_OPEN.get());
+                        output.accept(BlockRegistration.STACK_OF_BOOKS.get());
+                        output.accept(BlockRegistration.STACK_OF_BOOKS_TALL.get());
+                        output.accept(BlockRegistration.ANTIQUE_LIBRARY_BOOKS.get());
+                        output.accept(BlockRegistration.RITO_BOOKS.get());
+
+                        output.accept(BlockRegistration.ANTIQUE_MAP.get());
+                        output.accept(BlockRegistration.NEWSPAPER_PILE_SHORT.get());
+                        output.accept(BlockRegistration.NEWSPAPER_PILE_TALL.get());
+
+                        //OFFICE
+                        output.accept(BlockRegistration.SCATTERED_PAPERS.get());
+                        output.accept(BlockRegistration.PAPER_PILE.get());
+
+                        output.accept(BlockRegistration.OFFICE_SUPPLIES_A.get());
+                        output.accept(BlockRegistration.OFFICE_SUPPLIES_B.get());
+                        output.accept(BlockRegistration.ENVELOPE_STACK.get());
+                        output.accept(BlockRegistration.YELLOW_NOTEPAD.get());
+                        output.accept(BlockRegistration.SKETCHBOOK_SINGLE.get());
+
+                        output.accept(BlockRegistration.CARDBOARD_BOX.get());
+                        output.accept(BlockRegistration.FILING_BOX.get());
+                        output.accept(BlockRegistration.BULLETIN_BOARD.get());
+                        output.accept(BlockRegistration.BULLETIN_BOARD_CLUTTERED.get());
+                        output.accept(BlockRegistration.CARD_INDEX.get());
+                        output.accept(BlockRegistration.DESK_GREEN.get());
+                        output.accept(BlockRegistration.DESK_BROWN.get());
+                        output.accept(BlockRegistration.DESK_GREEN_CLUTTERED.get());
+                        output.accept(BlockRegistration.DESK_BROWN_CLUTTERED.get());
+                        output.accept(BlockRegistration.FLOWER_DESK_LAMP.get());
+
+                        //POLAROIDS
+                        output.accept(BlockRegistration.POLAROID_CAMERA.get());
+                        output.accept(BlockRegistration.POLAROIDS_A.get());
+                        output.accept(BlockRegistration.POLAROIDS_B.get());
+                        output.accept(BlockRegistration.POLAROIDS_C.get());
+
+                        //PAINTING
+                        output.accept(BlockRegistration.BOX_OF_PAINTS.get());
+                        output.accept(BlockRegistration.PAINT_WATER_JAR.get());
+
+                        //SEWING
+                        output.accept(BlockRegistration.SEWING_MANNEQUIN.get());
+                        output.accept(BlockRegistration.SEWING_MACHINE_ANTIQUE.get());
+                        output.accept(BlockRegistration.SEWING_TABLE.get());
+                        output.accept(BlockRegistration.SEWING_CLUTTER.get());
+                        output.accept(BlockRegistration.SCISSORS_AND_THREAD.get());
+                        output.accept(BlockRegistration.FABRIC_BOLTS.get());
+                        output.accept(BlockRegistration.THREAD_SPOOL_YELLOW.get());
+                        output.accept(BlockRegistration.THREAD_SPOOL_GREEN.get());
+                        output.accept(BlockRegistration.THREAD_SPOOL_PURPLE.get());
+                        output.accept(BlockRegistration.THREAD_SPOOL_PINK.get());
+                        output.accept(BlockRegistration.BUTTON_STOOL.get());
+
+                        //POTIONS
+                        output.accept(BlockRegistration.CAULDRON_POSTER.get());
+                        output.accept(BlockRegistration.SMALL_CAULDRON.get());
+                        output.accept(BlockRegistration.VIAL_STAND.get());
+                        output.accept(BlockRegistration.POTION_SHELF.get());
+                        output.accept(BlockRegistration.RETRO_CAFE_SHELF.get());
+                        output.accept(BlockRegistration.RETRO_CAFE_SHELF_WINDOW.get());
+
+                        //KITCHEN
                         output.accept(BlockRegistration.KITCHEN_SET_BROWN_COUNTER.get());
                         output.accept(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_INNER_CORNER.get());
                         output.accept(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_RIGHT.get());
@@ -1046,61 +1129,22 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.SWEETHEART_COUNTER_RIGHT_DOOR.get());
                         output.accept(BlockRegistration.SWEETHEART_SINK.get());
                         output.accept(BlockRegistration.SWEETHEART_TABLE.get());
-                        output.accept(BlockRegistration.SWEETHEART_BAKING_SET_BOWL.get());
-                        output.accept(BlockRegistration.SWEETHEART_BAKING_SET_INGREDIENTS.get());
+
+                        output.accept(BlockRegistration.TABLE_PLAIN.get());
+                        output.accept(BlockRegistration.TABLE_TABLECLOTH.get());
                         output.accept(BlockRegistration.CONFECTIONERY_TABLE_BLUE.get());
                         output.accept(BlockRegistration.CONFECTIONERY_TABLE_PINK.get());
 
-                        output.accept(BlockRegistration.JAM_JARS.get());
-
-                        output.accept(BlockRegistration.RED_MUSHROOM_TABLE.get());
-                        output.accept(BlockRegistration.RED_MUSHROOM_WARDROBE.get());
-                        output.accept(BlockRegistration.RED_MUSHROOM_BED.get());
-                        output.accept(BlockRegistration.RED_MUSHROOM_TV.get());
-                        output.accept(BlockRegistration.RED_MUSHROOM_LAMP.get());
-                        output.accept(BlockRegistration.BLUE_MUSHROOM_TABLE.get());
-                        output.accept(BlockRegistration.BLUE_MUSHROOM_WARDROBE.get());
-                        output.accept(BlockRegistration.BLUE_MUSHROOM_BED.get());
-                        output.accept(BlockRegistration.BLUE_MUSHROOM_TV.get());
-                        output.accept(BlockRegistration.BLUE_MUSHROOM_LAMP.get());
-
-                        output.accept(BlockRegistration.BOOK_OPEN.get());
-                        output.accept(BlockRegistration.BRASS_KEY.get());
-                        output.accept(BlockRegistration.CARD_INDEX.get());
+                        output.accept(BlockRegistration.DORADO_CABINET.get());
+                        output.accept(BlockRegistration.DORADO_CABINET_CLUTTERED.get());
+                        output.accept(BlockRegistration.HAVANA_CABINET.get());
+                        output.accept(BlockRegistration.HAVANA_CABINET_CLUTTERED.get());
+                        output.accept(BlockRegistration.MUREX_CABINET.get());
+                        output.accept(BlockRegistration.MUREX_CABINET_CLUTTERED.get());
                         output.accept(BlockRegistration.CHINA_CABINET.get());
-                        output.accept(BlockRegistration.CUPID_BENCH.get());
-                        output.accept(BlockRegistration.ENVELOPE_STACK.get());
-                        output.accept(BlockRegistration.FLOWER_DESK_LAMP.get());
-                        output.accept(BlockRegistration.FLOWER_SHELF_BLUE.get());
-                        output.accept(BlockRegistration.FLOWER_SHELF_GREEN.get());
-                        output.accept(BlockRegistration.FLOWER_SHELF_PASTEL_YELLOW.get());
-                        output.accept(BlockRegistration.FLOWER_SHELF_PINK.get());
-                        output.accept(BlockRegistration.FLOWER_SHELF_PURPLE.get());
-                        output.accept(BlockRegistration.FLOWER_SHELF_YELLOW.get());
-                        output.accept(BlockRegistration.FLOWER_SHELF_CANDLE_BLUE.get());
-                        output.accept(BlockRegistration.FLOWER_SHELF_CANDLE_GREEN.get());
-                        output.accept(BlockRegistration.FLOWER_SHELF_CANDLE_PASTEL_YELLOW.get());
-                        output.accept(BlockRegistration.FLOWER_SHELF_CANDLE_PINK.get());
-                        output.accept(BlockRegistration.FLOWER_SHELF_CANDLE_PURPLE.get());
-                        output.accept(BlockRegistration.FLOWER_SHELF_CANDLE_YELLOW.get());
-                        output.accept(BlockRegistration.FLOWER_SHELF_PLANT.get());
-                        output.accept(BlockRegistration.FLOWER_TEA_KETTLE.get());
-                        output.accept(BlockRegistration.FWISH_ARMCHAIR.get());
-                        output.accept(BlockRegistration.FWISH_OTTOMAN.get());
                         output.accept(BlockRegistration.GENERAL_STORE_CABINET.get());
-                        output.accept(BlockRegistration.HEAVENLY_ORNAMENTAL_ARRAY.get());
-                        output.accept(BlockRegistration.PLANT_LADDER.get());
-                        output.accept(BlockRegistration.POLAROID_CAMERA.get());
-                        output.accept(BlockRegistration.POLAROIDS_B.get());
-                        output.accept(BlockRegistration.POLAROIDS_C.get());
-                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_BLUE.get());
-                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_GREEN.get());
-                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_RED.get());
-                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_YELLOW.get());
-                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_PASTEL_BLUE.get());
-                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_PASTEL_PINK.get());
-                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_PASTEL_PURPLE.get());
-                        output.accept(BlockRegistration.PUZZLE_PIECE_TABLE_PASTEL_YELLOW.get());
+
+
                         output.accept(BlockRegistration.RETRO_FRIDGE_BLACK.get());
                         output.accept(BlockRegistration.RETRO_FRIDGE_BLUE.get());
                         output.accept(BlockRegistration.RETRO_FRIDGE_PINK.get());
@@ -1117,35 +1161,42 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.RETRO_TOASTER_TURQUOISE.get());
                         output.accept(BlockRegistration.RETRO_TOASTER_WHITE.get());
                         output.accept(BlockRegistration.RETRO_TOASTER_YELLOW.get());
+
+                        output.accept(BlockRegistration.TARRY_TOWN_STOVE.get());
+                        output.accept(BlockRegistration.FLOWER_TEA_KETTLE.get());
+                        output.accept(BlockRegistration.COFFEE_GRINDER.get());
+                        output.accept(BlockRegistration.KITCHEN_SCALE.get());
+                        output.accept(BlockRegistration.HANGING_CLOTH.get());
+                        output.accept(BlockRegistration.SWEETHEART_BAKING_SET_BOWL.get());
+                        output.accept(BlockRegistration.SWEETHEART_BAKING_SET_INGREDIENTS.get());
+
+                        output.accept(BlockRegistration.DRYING_HERBS.get());
                         output.accept(BlockRegistration.SALT_PEPPER_SHAKERS.get());
-                        output.accept(BlockRegistration.SAND_SEAL_PLUSH_BLUE.get());
-                        output.accept(BlockRegistration.SAND_SEAL_PLUSH_GREEN.get());
-                        output.accept(BlockRegistration.SAND_SEAL_PLUSH_RED.get());
-                        output.accept(BlockRegistration.SKETCHBOOK_SINGLE.get());
-                        output.accept(BlockRegistration.STACK_OF_BOOKS.get());
-                        output.accept(BlockRegistration.STACK_OF_BOOKS_TALL.get());
-                        output.accept(BlockRegistration.STEAMPUNK_GLOBE.get());
-                        output.accept(BlockRegistration.WINE_BOTTLE_RACK.get());
+                        output.accept(BlockRegistration.ASSORTED_SPICE_JARS.get());
+                        output.accept(BlockRegistration.JAM_JARS.get());
+                        output.accept(BlockRegistration.ASSORTED_GLASS_JARS.get());
+                        output.accept(BlockRegistration.SMALL_GLASS_JARS.get());
                         output.accept(BlockRegistration.WINE_BOTTLES.get());
-                        output.accept(BlockRegistration.YELLOW_NOTEPAD.get());
-                        output.accept(BlockRegistration.FABRIC_BOLTS.get());
-                        output.accept(BlockRegistration.SCISSORS_AND_THREAD.get());
+                        output.accept(BlockRegistration.WINE_BOTTLE_RACK.get());
+                        output.accept(BlockRegistration.SELTZER_CANS.get());
+                        output.accept(BlockRegistration.CAT_MUGS_CLUTTERED.get());
                         output.accept(BlockRegistration.SLICED_BREAD.get());
-                        output.accept(BlockRegistration.ROSE_END_TABLE.get());
-                        output.accept(BlockRegistration.ROSE_END_TABLE_BLACK.get());
-                        output.accept(BlockRegistration.VIAL_STAND.get());
                         output.accept(BlockRegistration.PINEAPPLE.get());
-                        output.accept(BlockRegistration.HONEYCOMB_LAMP.get());
-                        output.accept(BlockRegistration.UNLIVING_CHAIR.get());
-                        output.accept(BlockRegistration.SAFE_NOVAKID.get());
-                        output.accept(BlockRegistration.HOPPIN_PARK_LANTERN.get());
-                        output.accept(BlockRegistration.SEA_GEM_LANTERN.get());
-                        output.accept(BlockRegistration.SEA_GEM_LANTERN_CEILING.get());
-                        output.accept(BlockRegistration.VIOLET_SCREEN.get());
-                        output.accept(BlockRegistration.HANGING_SHELVES_POTTERY.get());
-                        output.accept(BlockRegistration.HANGING_SHELVES_PLANTS.get());
-                        output.accept(BlockRegistration.POK_TA_POK_HOOP.get());
-                        output.accept(BlockRegistration.POK_TA_POK_HOOP_SNAKES.get());
+
+                        output.accept(BlockRegistration.PASTRY_PLATE.get());
+                        output.accept(BlockRegistration.CHOCOLATE_CROISSANT.get());
+                        output.accept(BlockRegistration.BLUEBERRY_MUFFIN.get());
+                        output.accept(BlockRegistration.CINNAMON_BUN.get());
+                        output.accept(BlockRegistration.CROISSANT.get());
+                        output.accept(BlockRegistration.PANCAKE_STACK.get());
+                        output.accept(BlockRegistration.HAM_SANDWICH.get());
+                        output.accept(BlockRegistration.HEART_CAKE.get());
+                        output.accept(BlockRegistration.BERRY_CAKE.get());
+                        output.accept(BlockRegistration.PASTRY_DISPLAY_CASE.get());
+
+                        output.accept(BlockRegistration.GUMBALL_MACHINE_RED.get());
+                        output.accept(BlockRegistration.GUMBALL_MACHINE_BLUE.get());
+                        output.accept(BlockRegistration.GUMBALL_MACHINE_PURPLE.get());
 
                     })
                     .build());

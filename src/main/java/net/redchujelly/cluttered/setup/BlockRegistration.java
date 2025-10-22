@@ -1799,7 +1799,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> SMALL_CAULDRON = registerBlock("small_cauldron_set",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).strength(1.0f).sound(SoundType.COPPER)));
     public static final RegistryObject<Block> STEAMPUNK_LAMP = registerBlock("steampunk_lamp",
-            () -> new ColosseoLanternBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).sound(SoundType.COPPER)));
+            () -> new SteampunkLampBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).sound(SoundType.COPPER)));
     public static final RegistryObject<Block> TARRY_TOWN_STOVE = registerBlock("tarrytown_stove",
             () -> new TarrytownStoveBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).sound(SoundType.COPPER).noOcclusion()));
 
@@ -2153,7 +2153,7 @@ public class BlockRegistration {
             () -> new BullitenBoardBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
 
     public static final RegistryObject<Block> SMALL_BOOKCASE = registerBlock("small_bookcase",
-            () -> new GumballMachineBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
+            () -> new SmallBookcaseBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BROWN).noOcclusion()));
 
     //CABINETS AND SHELVES
     public static final RegistryObject<Block> CARD_INDEX = registerBlock("card_index",

@@ -6,17 +6,23 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class PastelLampBlock extends SmallFurnitureBlock{
+public class SteampunkLampBlock extends SmallFurnitureBlock{
 
-    private static final VoxelShape SHAPE_NORTH = Block.box(5.5,2,9.5,10.5,14.5,16);
-    private static final VoxelShape SHAPE_SOUTH = Block.box(5.5,2,0,10.5,14.5,6.5);
-    private static final VoxelShape SHAPE_EAST = Block.box(0,2,5.5,6.5,14.5,10.5);
-    private static final VoxelShape SHAPE_WEST = Block.box(6.5,2,5.5,16,14.5,10.5);
+    private static final VoxelShape SHAPE_NORTH = Shapes.or(Block.box(8.5,1,8,9.5,7,16), Block.box(4,7,5.5,12,19,13.5));
+    private static final VoxelShape SHAPE_SOUTH = Shapes.or(Block.box(8.5,1,0,9.5,7,8), Block.box(4,7,2.5,12,19,10.5));
+    private static final VoxelShape SHAPE_EAST = Shapes.or(Block.box(0,1,7.5,8,7,8.5), Block.box(2.5,7,4,10.5,19,12));
+    private static final VoxelShape SHAPE_WEST = Shapes.or(Block.box(8,1,7.5,16,7,8.5), Block.box(5.5,7,4,13.5,19,12));
 
-    public PastelLampBlock(Properties pProperties) {
+    public SteampunkLampBlock(Properties pProperties) {
         super(pProperties);
+    }
+
+    @Override
+    public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
+        return 15;
     }
 
     @Override
@@ -28,10 +34,5 @@ public class PastelLampBlock extends SmallFurnitureBlock{
             case WEST -> SHAPE_WEST;
             default -> SHAPE_NORTH;
         };
-    }
-
-    @Override
-    public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
-        return 15;
     }
 }

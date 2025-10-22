@@ -641,12 +641,13 @@ public class ClutteredRecipes extends RecipeProvider {
                 .save(consumer);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.BEIGE_PLANTER.get())
-                .pattern("wdw")
-                .pattern("wbw")
+                .pattern("pdp")
+                .pattern("pbp")
                 .pattern("wbw")
                 .define('b', Blocks.BONE_BLOCK)
                 .define('d', Blocks.DIRT)
-                .define('w', ItemTags.PLANKS)
+                .define('w', ItemTags.LOGS)
+                .define('p', ItemTags.PLANKS)
                 .unlockedBy("has_bone_block", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(Blocks.BONE_BLOCK).build()))
                 .showNotification(false)
@@ -6385,8 +6386,179 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("f f")
                     .pattern("f f")
                     .define('f', BlockRegistration.WOODEN_PICKET_FENCE.get())
-                    .unlockedBy("has_wooden_    picket_fence", InventoryChangeTrigger.TriggerInstance.hasItems(
+                    .unlockedBy("has_wooden_picket_fence", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(BlockRegistration.WOODEN_PICKET_FENCE.get()).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.LEMON_TABLE.get())
+                    .pattern("yyy")
+                    .pattern("yyy")
+                    .pattern(" l ")
+                    .define('y', Items.YELLOW_CONCRETE)
+                    .define('l', Items.LIME_CONCRETE)
+                    .unlockedBy("has_yellow_concrete", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.YELLOW_CONCRETE).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.MERMAID_DRESSER.get())
+                    .pattern("pnp")
+                    .pattern("pcp")
+                    .pattern("ppp")
+                    .define('p', Items.PRISMARINE_SHARD)
+                    .define('n', Items.NAUTILUS_SHELL)
+                    .define('c', Items.CHEST)
+                    .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.CHEST).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.ROVER_MUG.get())
+                    .pattern("p p")
+                    .pattern("pcp")
+                    .define('p', Items.BLUE_DYE)
+                    .define('c', Items.FLOWER_POT)
+                    .unlockedBy("has_flower_pot", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.FLOWER_POT).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.PASTEL_CHAIR.get())
+                    .pattern(" c ")
+                    .pattern("s s")
+                    .pattern(" p ")
+                    .define('p', BlockRegistration.PASTEL_STOOL.get())
+                    .define('c', Items.CYAN_WOOL)
+                    .define('s', Items.STICK)
+                    .unlockedBy("has_cyan_wool", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.CYAN_WOOL).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.PASTEL_STOOL.get())
+                    .pattern("ccc")
+                    .pattern("p p")
+                    .define('c', Items.CYAN_WOOL)
+                    .define('p', Items.PURPLE_WOOL)
+                    .unlockedBy("has_cyan_wool", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.CYAN_WOOL).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.PASTEL_TABLE.get())
+                    .pattern("wow")
+                    .pattern("ppp")
+                    .pattern("c c")
+                    .define('c', Items.CRIMSON_FENCE)
+                    .define('p', Items.WARPED_SLAB)
+                    .define('w', Items.WHITE_CARPET)
+                    .define('o', Items.PINK_CARPET)
+                    .unlockedBy("has_warped_slab", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.WARPED_SLAB).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.PASTEL_LIGHT.get())
+                    .pattern("p")
+                    .pattern("l")
+                    .pattern("s")
+                    .define('l', Items.LANTERN)
+                    .define('p', Items.PINK_DYE)
+                    .define('s', Items.STICK)
+                    .unlockedBy("has_lantern", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.LANTERN).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.PASTEL_CABINET.get())
+                    .pattern(" p ")
+                    .pattern("wcw")
+                    .pattern(" p ")
+                    .define('w', Items.WARPED_PLANKS)
+                    .define('p', Items.PINK_DYE)
+                    .define('c', Items.CHEST)
+                    .unlockedBy("has_warped_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.WARPED_PLANKS).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.PASTEL_WARDROBE.get())
+                    .pattern("wpw")
+                    .pattern("cwc")
+                    .pattern("wpw")
+                    .define('w', Items.WARPED_PLANKS)
+                    .define('p', Items.PINK_DYE)
+                    .define('c', Items.CHEST)
+                    .unlockedBy("has_warped_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.WARPED_PLANKS).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.PASTEL_BED.get())
+                    .pattern("ppw")
+                    .pattern("wbw")
+                    .define('b', ItemTags.BEDS)
+                    .define('p', Items.PURPLE_DYE)
+                    .define('w', Items.WARPED_PLANKS)
+                    .unlockedBy("has_warped_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.WARPED_PLANKS).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.STEAMPUNK_LAMP.get())
+                    .pattern("c")
+                    .pattern("s")
+                    .pattern("c")
+                    .define('c', Items.COPPER_INGOT)
+                    .define('s', Items.SOUL_LANTERN)
+                    .unlockedBy("has_copper_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.COPPER_INGOT).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.MINI_HANGING_TERRARIUMS.get())
+                    .pattern("ppp")
+                    .pattern("s s")
+                    .pattern("m f")
+                    .define('p', ItemTags.WOODEN_SLABS)
+                    .define('f', ItemTags.FLOWERS)
+                    .define('m', Items.RED_MUSHROOM)
+                    .define('s', Items.STRING)
+                    .unlockedBy("has_string", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.STRING).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.SMALL_BOOKCASE.get())
+                    .pattern("dbd")
+                    .pattern("dbd")
+                    .define('b', Items.BOOKSHELF)
+                    .define('d', Items.DARK_OAK_PLANKS)
+                    .unlockedBy("has_bookshelf", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.BOOKSHELF).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.FILING_BOX.get())
+                    .pattern("pcp")
+                    .pattern("p p")
+                    .pattern("ppp")
+                    .define('c', Items.COPPER_INGOT)
+                    .define('p', Items.PAPER)
+                    .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.TARRY_TOWN_STOVE.get())
+                    .pattern(" i ")
+                    .pattern("iii")
+                    .pattern("ici")
+                    .define('c', Items.CAMPFIRE)
+                    .define('i', Items.IRON_INGOT)
+                    .unlockedBy("has_campfire", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.CAMPFIRE).build()))
                     .showNotification(false)
                     .save(consumer);
 
@@ -6395,6 +6567,39 @@ public class ClutteredRecipes extends RecipeProvider {
                     .requires(Items.BRUSH)
                     .unlockedBy("has_small_glass_jars", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(BlockRegistration.SMALL_GLASS_JARS.get()).build()))
+                    .save(consumer);
+
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.SMALL_CAULDRON.get())
+                    .requires(Items.CAULDRON)
+                    .requires(Items.GLASS_BOTTLE)
+                    .requires(Items.RED_CARPET)
+                    .unlockedBy("has_cauldron", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.CAULDRON).build()))
+                    .save(consumer);
+
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.OFFICE_SUPPLIES_A.get())
+                    .requires(Items.REDSTONE)
+                    .requires(Items.IRON_INGOT)
+                    .requires(Items.SLIME_BALL)
+                    .requires(Items.STRING)
+                    .unlockedBy("has_redstone", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.REDSTONE).build()))
+                    .save(consumer);
+
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.OFFICE_SUPPLIES_B.get())
+                    .requires(ItemTags.COALS)
+                    .requires(Items.STICK)
+                    .requires(Items.PAPER)
+                    .requires(Items.IRON_INGOT)
+                    .unlockedBy("has_paper", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.PAPER).build()))
+                    .save(consumer);
+
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.SELTZER_CANS.get())
+                    .requires(Items.IRON_NUGGET, 3)
+                    .requires(Items.GLASS_BOTTLE)
+                    .unlockedBy("has_glass_bottle", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.GLASS_BOTTLE).build()))
                     .save(consumer);
     }
 

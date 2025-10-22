@@ -63,7 +63,7 @@ public class ShelfCandleBlock extends SmallFurnitureBlock{
                 }
                 return InteractionResult.SUCCESS;
             }
-        } else if (item.isEmpty()) {
+        } else if (item.isEmpty() && pState.getValue(LIT)) {
             if (!pLevel.isClientSide){
                 pLevel.setBlock(pPos, pState.setValue(LIT, false), 2);
                 pLevel.playSound(null, pPos, SoundEvents.CANDLE_EXTINGUISH, SoundSource.BLOCKS);

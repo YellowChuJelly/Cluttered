@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "cluttered:block/retro_fridge_blue",
@@ -19,9 +20,9 @@
 			}
 		},
 		{
-			"from": [-2, 0, -12],
-			"to": [0, 16, 4],
-			"rotation": {"angle": 22.5, "axis": "y", "origin": [0, -14, 4]},
+			"from": [-1.99, 0, -12],
+			"to": [0.01, 16, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -14, 4]},
 			"faces": {
 				"north": {"uv": [12, 0, 12.5, 4], "texture": "#0"},
 				"east": {"uv": [8, 0, 12, 4], "texture": "#0"},

@@ -567,6 +567,7 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.OFFICE_SUPPLIES_B.get())
                 .add(BlockRegistration.RITO_BOOKS.get())
                 .add(BlockRegistration.WEDDING_ARCH.get())
+                .add(BlockRegistration.SMALL_BOOKCASE.get())
                 ;
         tag(BlockTags.BEDS)
                 .add(BlockRegistration.BLUE_MUSHROOM_BED.get())
