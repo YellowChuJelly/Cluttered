@@ -33,30 +33,33 @@ public class BeeLampBlock extends SmallLampBlock{
 
     @Override
     public int getSignal(BlockState pState, BlockGetter pLevel, BlockPos pPos, Direction pDirection) {
-        return redstone ? (pState.getValue(LIT) ? 15 : 0) : 0;
+        return redstone ? 15 : 0;
+    }
+
+    @Override
+    public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
+        return redstone ? 7 : 15;
     }
 
     private void updateNeighbors(BlockState pState, Level pLevel, BlockPos pPos){
         pLevel.updateNeighborsAt(pPos, this);
     }
 
-    @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        if (!pLevel.isClientSide){
-            boolean lit = pState.getValue(LIT);
-            pLevel.setBlock(pPos, pState.setValue(LIT, !lit), 2);
-            this.updateNeighbors(pState, pLevel, pPos);
-            pLevel.playSound(null, pPos, SoundEvents.LEVER_CLICK, SoundSource.BLOCKS);
-        }
-        return InteractionResult.SUCCESS;
-    }
+    //@Override
+    //public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    //    if (!pLevel.isClientSide){
+    //        boolean lit = pState.getValue(LIT);
+    //        pLevel.setBlock(pPos, pState.setValue(LIT, !lit), 2);
+    //        this.updateNeighbors(pState, pLevel, pPos);
+    //        pLevel.playSound(null, pPos, SoundEvents.LEVER_CLICK, SoundSource.BLOCKS);
+    //    }
+    //    return InteractionResult.SUCCESS;
+    //}
 
     @Override
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
         if (!pIsMoving && !pState.is(pNewState.getBlock())) {
-            if (pState.getValue(LIT)) {
-                this.updateNeighbors(pState, pLevel, pPos);
-            }
+            this.updateNeighbors(pState, pLevel, pPos);
 
             super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
         }

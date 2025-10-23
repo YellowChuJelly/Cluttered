@@ -25,7 +25,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class SmallLampBlock extends HorizontalDirectionalBlock implements SimpleWaterloggedBlock {
-    public static final BooleanProperty LIT = BlockStateProperties.LIT;
+    //public static final BooleanProperty LIT = BlockStateProperties.LIT;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     private static final VoxelShape SHAPE = Block.box(4, 0, 4, 12, 8, 12);
@@ -37,13 +37,14 @@ public class SmallLampBlock extends HorizontalDirectionalBlock implements Simple
 
     public SmallLampBlock(Properties pProperties) {
         super(pProperties);
-        this.registerDefaultState(this.getStateDefinition().any().setValue(LIT, true).setValue(WATERLOGGED, false));
+        this.registerDefaultState(this.getStateDefinition().any().setValue(WATERLOGGED, false));
         pProperties.noOcclusion();
     }
 
     @Override
     public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
-        return state.getValue(LIT) ? 15 : 0;
+        //return state.getValue(LIT) ? 15 : 0;
+        return 15;
     }
 
     @Override
@@ -66,16 +67,16 @@ public class SmallLampBlock extends HorizontalDirectionalBlock implements Simple
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-        pBuilder.add(LIT).add(FACING).add(WATERLOGGED);
+        pBuilder.add(FACING).add(WATERLOGGED);
     }
 
-    @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        if (!pLevel.isClientSide){
-            boolean lit = pState.getValue(LIT);
-            pLevel.setBlock(pPos, pState.setValue(LIT, !lit), 2);
-            pLevel.playSound(null, pPos, SoundEvents.LEVER_CLICK, SoundSource.BLOCKS);
-        }
-        return InteractionResult.SUCCESS;
-    }
+    //@Override
+    //public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    //    if (!pLevel.isClientSide){
+    //        boolean lit = pState.getValue(LIT);
+    //        pLevel.setBlock(pPos, pState.setValue(LIT, !lit), 2);
+    //        pLevel.playSound(null, pPos, SoundEvents.LEVER_CLICK, SoundSource.BLOCKS);
+    //    }
+    //    return InteractionResult.SUCCESS;
+    //}
 }

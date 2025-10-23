@@ -1218,6 +1218,7 @@ public class ClutteredRecipes extends RecipeProvider {
 
         ArrayList<RegistryObject<Block>> calciteResults = new ArrayList<>();
         calciteResults.add(BlockRegistration.ALABASTER_WAINSCOTING);
+        calciteResults.add(BlockRegistration.ALABASTER_WINDOW_DIVIDED);
         calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW);
         calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT);
         calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT);
@@ -1226,7 +1227,6 @@ public class ClutteredRecipes extends RecipeProvider {
         calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_CIRCLE);
         calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_ROUNDED);
         calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_POINT);
-        calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW_STAIRS);
         calciteResults.add(BlockRegistration.ALABASTER_FRENCH_DOOR);
         calciteResults.add(BlockRegistration.ALABASTER_SCREEN_DOOR);
 
@@ -1238,16 +1238,6 @@ public class ClutteredRecipes extends RecipeProvider {
                 .define('w', BlockRegistration.ALABASTER_WINDOW_DIVIDED.get())
                 .unlockedBy("has_alabaster_window_divided", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get()).build()))
-                .showNotification(false)
-                .save(consumer);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.GREENHOUSE_WINDOW_STAIRS.get(), 4)
-                .pattern("w  ")
-                .pattern("ww ")
-                .pattern("www")
-                .define('w', BlockRegistration.GREENHOUSE_WINDOW.get())
-                .unlockedBy("has_greenhouse_window", InventoryChangeTrigger.TriggerInstance.hasItems(
-                        ItemPredicate.Builder.item().of(BlockRegistration.GREENHOUSE_WINDOW.get()).build()))
                 .showNotification(false)
                 .save(consumer);
 
@@ -2436,7 +2426,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("s")
                         .pattern("f")
                         .pattern("p")
-                        .define('p', ItemTags.PLANKS)
+                        .define('p', Items.FLOWER_POT)
                         .define('f', ItemTags.FLOWERS)
                         .define('s', Items.STRING)
                         .unlockedBy("has_flower_pot", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -2448,7 +2438,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("s")
                         .pattern("f")
                         .pattern("p")
-                        .define('p', ItemTags.PLANKS)
+                        .define('p', Items.FLOWER_POT)
                         .define('f', Items.GRASS)
                         .define('s', Items.TRIPWIRE_HOOK)
                         .unlockedBy("has_flower_pot", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -5287,7 +5277,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("d")
                     .pattern("h")
                     .pattern("w")
-                    .define('d', Items.LIME_DYE)
+                    .define('d', Items.YELLOW_DYE)
                     .define('h', Items.WHITE_DYE)
                     .define('w', Items.HONEYCOMB)
                     .unlockedBy("has_honeycomb", InventoryChangeTrigger.TriggerInstance.hasItems(

@@ -160,6 +160,8 @@ public class ClutteredItemModels extends ItemModelProvider {
         basicItem(ItemRegistration.FLOWERING_CRABAPPLE_SIGN.get());
         basicItem(ItemRegistration.SYCAMORE_SIGN.get());
         basicItem(ItemRegistration.MAPLE_SIGN.get());
+        basicItem(ItemRegistration.BLUE_MUSHROOM_SIGN.get());
+        basicItem(ItemRegistration.RED_MUSHROOM_SIGN.get());
 
         basicItem(ItemRegistration.WILLOW_HANGING_SIGN.get());
         basicItem(ItemRegistration.FLOWERING_WILLOW_HANGING_SIGN.get());
@@ -169,6 +171,8 @@ public class ClutteredItemModels extends ItemModelProvider {
         basicItem(ItemRegistration.FLOWERING_CRABAPPLE_HANGING_SIGN.get());
         basicItem(ItemRegistration.SYCAMORE_HANGING_SIGN.get());
         basicItem(ItemRegistration.MAPLE_HANGING_SIGN.get());
+        basicItem(ItemRegistration.BLUE_MUSHROOM_HANGING_SIGN.get());
+        basicItem(ItemRegistration.RED_MUSHROOM_HANGING_SIGN.get());
 
         //FURNITURE
         blockitemFromModel(BlockRegistration.APPLE_CHAIR);

@@ -380,6 +380,12 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.POTTED_BLUE_MUSHROOM_SAPLING.get(), models().singleTexture("potted_blue_roundhead", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(BlockRegistration.BLUE_MUSHROOM_SAPLING.get())).renderType("cutout").ao(false));
 
+        signBlock(((StandingSignBlock) BlockRegistration.BLUE_MUSHROOM_SIGN.get()), ((WallSignBlock) BlockRegistration.BLUE_MUSHROOM_WALL_SIGN.get()),
+                blockTexture(BlockRegistration.BLUE_MUSHROOM_PLANKS.get()));
+
+        hangingSignBlock(BlockRegistration.BLUE_MUSHROOM_HANGING_SIGN.get(), BlockRegistration.BLUE_MUSHROOM_WALL_HANGING_SIGN.get(), blockTexture(BlockRegistration.BLUE_MUSHROOM_PLANKS.get()));
+
+
         //RED MUSHROOM WOODSET
         blockWithItem((BlockRegistration.RED_MUSHROOM_PLANKS));
         this.getVariantBuilder(BlockRegistration.RED_MUSHROOM_CAP.get())
@@ -419,6 +425,12 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.RED_MUSHROOM_SAPLING.get(), models().cross("fly_agaric", modLoc("block/fly_agaric")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.POTTED_RED_MUSHROOM_SAPLING.get(), models().singleTexture("potted_fly_agaric", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(BlockRegistration.RED_MUSHROOM_SAPLING.get())).renderType("cutout").ao(false));
+
+        signBlock(((StandingSignBlock) BlockRegistration.RED_MUSHROOM_SIGN.get()), ((WallSignBlock) BlockRegistration.RED_MUSHROOM_WALL_SIGN.get()),
+                blockTexture(BlockRegistration.RED_MUSHROOM_PLANKS.get()));
+
+        hangingSignBlock(BlockRegistration.RED_MUSHROOM_HANGING_SIGN.get(), BlockRegistration.RED_MUSHROOM_WALL_HANGING_SIGN.get(), blockTexture(BlockRegistration.RED_MUSHROOM_PLANKS.get()));
+
 
         //MISC BLOCKS
         //CHALCEDONY
@@ -916,8 +928,6 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockItem(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_LEFT);
         horizontalBlock(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_RIGHT.get(), models().cube("block/greenhouse_window_radial_right", modLoc("block/greenhouse_window_radial_right"), modLoc("block/greenhouse_window_radial_right"), modLoc("block/greenhouse_window_radial_right"), modLoc("block/greenhouse_window_radial_left"), modLoc("block/greenhouse_window_radial_right"), modLoc("block/greenhouse_window_radial_left")).texture("particle", modLoc("block/greenhouse_window_arch_right")).renderType("cutout"));
         blockItem(BlockRegistration.GREENHOUSE_WINDOW_RADIAL_RIGHT);
-        stairsBlockWithRenderType((StairBlock) BlockRegistration.GREENHOUSE_WINDOW_STAIRS.get(), blockTexture(BlockRegistration.GREENHOUSE_WINDOW.get()), "minecraft:cutout");
-        blockItem(BlockRegistration.GREENHOUSE_WINDOW_STAIRS);
 
 
         simpleBlockWithItem(BlockRegistration.ALABASTER_WINDOW_DIVIDED.get(), models().cubeAll("alabaster_window_divided", modLoc("block/alabaster_window_divided")).renderType("cutout"));

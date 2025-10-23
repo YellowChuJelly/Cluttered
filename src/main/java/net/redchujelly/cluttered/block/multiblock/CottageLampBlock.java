@@ -20,7 +20,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class CottageLampBlock extends MultiblockPlacer{
-    public static final BooleanProperty LIT = BlockStateProperties.LIT;
+    //public static final BooleanProperty LIT = BlockStateProperties.LIT;
 
     private static final VoxelShape SHAPE_1 = Shapes.or(Block.box(3,0,3,13,2,13), Block.box(5,2,5,11,4,11), Block.box(6.5,4,6.5,9.5,16,9.5));
     private static final VoxelShape SHAPE_2 = Shapes.or(Block.box(3,4,3,13,15,13), Block.box(6.5,0,6.5,9.5,8,9.5));
@@ -37,7 +37,7 @@ public class CottageLampBlock extends MultiblockPlacer{
 
     public CottageLampBlock(Properties pProperties) {
         super(pProperties);
-        this.registerDefaultState(this.defaultBlockState().setValue(LIT, true));
+        this.registerDefaultState(this.defaultBlockState());
     }
 
     @Override
@@ -47,40 +47,41 @@ public class CottageLampBlock extends MultiblockPlacer{
 
     @Override
     public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
-        if (state.getValue(LIT)){
-            return 15;
-        }
-        else return 0;
+        //if (state.getValue(LIT)){
+        //    return 15;
+        //}
+        //else return 0;
+        return 15;
     }
 
-    @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        if (!pLevel.isClientSide) {
-            boolean lit = !pState.getValue(LIT);
-            setOnAndOff(pLevel, pPos, pState, lit);
-            pLevel.playSound(null, pPos, SoundEvents.LEVER_CLICK, SoundSource.BLOCKS);
-        }
-        return InteractionResult.SUCCESS;
-    }
+    //@Override
+    //public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    //    if (!pLevel.isClientSide) {
+    //        boolean lit = !pState.getValue(LIT);
+    //        setOnAndOff(pLevel, pPos, pState, lit);
+    //        pLevel.playSound(null, pPos, SoundEvents.LEVER_CLICK, SoundSource.BLOCKS);
+    //    }
+    //    return InteractionResult.SUCCESS;
+    //}
 
-    public static void setOnAndOff(Level level, BlockPos pos, BlockState state, boolean lit){
-        int part = state.getValue(MULTIBLOCK_PART);
-        BlockPos otherHalfPos = part == 1 ? pos.above() : pos.below();
-        BlockState otherHalfBlock = level.getBlockState(otherHalfPos);
-
-        if (state.hasProperty(LIT)) {
-            level.setBlock(pos, state.setValue(LIT, lit),2);
-            if (level.getBlockState(otherHalfPos).getBlock().equals(state.getBlock()) && otherHalfBlock.getValue(MULTIBLOCK_PART) != part){
-                level.setBlock(otherHalfPos, state.setValue(LIT, lit).setValue(MULTIBLOCK_PART, part == 1 ? 2 : 1),2);
-            }
-        }
-
-    }
+    //public static void setOnAndOff(Level level, BlockPos pos, BlockState state, boolean lit){
+    //    int part = state.getValue(MULTIBLOCK_PART);
+    //    BlockPos otherHalfPos = part == 1 ? pos.above() : pos.below();
+    //    BlockState otherHalfBlock = level.getBlockState(otherHalfPos);
+//
+    //    if (state.hasProperty(LIT)) {
+    //        level.setBlock(pos, state.setValue(LIT, lit),2);
+    //        if (level.getBlockState(otherHalfPos).getBlock().equals(state.getBlock()) && otherHalfBlock.getValue(MULTIBLOCK_PART) != part){
+    //            level.setBlock(otherHalfPos, state.setValue(LIT, lit).setValue(MULTIBLOCK_PART, part == 1 ? 2 : 1),2);
+    //        }
+    //    }
+//
+    //}
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         super.createBlockStateDefinition(pBuilder);
-        pBuilder.add(LIT);
+        //pBuilder.add(LIT);
     }
 
     @Override

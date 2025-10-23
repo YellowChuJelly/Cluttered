@@ -739,7 +739,6 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT.get())
                 .add(BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT.get())
                 .add(BlockRegistration.GREENHOUSE_WINDOW_POINT.get())
-                .add(BlockRegistration.GREENHOUSE_WINDOW_STAIRS.get())
 
                 .add(BlockRegistration.VERDANT_TILE.get())
                 .add(BlockRegistration.VERDANT_TILE_EDGE.get())

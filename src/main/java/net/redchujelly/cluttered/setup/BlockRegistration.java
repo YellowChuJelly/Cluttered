@@ -1289,9 +1289,6 @@ public class BlockRegistration {
             () -> new CustomHorizontalGlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistryObject<Block> GREENHOUSE_WINDOW_ROUNDED = registerBlock("greenhouse_window_rounded",
             () -> new CustomHorizontalGlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
-    public static final RegistryObject<Block> GREENHOUSE_WINDOW_STAIRS = registerBlock("greenhouse_window_stairs",
-            () -> new StairBlock(() -> BlockRegistration.GREENHOUSE_WINDOW.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.GLASS)));
     
     public static final RegistryObject<Block> WOOD_WINDOW_DIVIDED = registerBlock("wooden_window_divided",
             () -> new CustomGlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.BROWN)));

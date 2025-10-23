@@ -614,7 +614,6 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.X_TILE_INVERSE_GRAY.get());
 
                         output.accept(BlockRegistration.GREENHOUSE_WINDOW.get());
-                        output.accept(BlockRegistration.GREENHOUSE_WINDOW_STAIRS.get());
                         output.accept(BlockRegistration.GREENHOUSE_WINDOW_ARCH_LEFT.get());
                         output.accept(BlockRegistration.GREENHOUSE_WINDOW_ARCH_RIGHT.get());
                         output.accept(BlockRegistration.GREENHOUSE_WINDOW_POINT.get());
@@ -675,6 +674,9 @@ public class CreativeTabRegistration {
                     .displayItems((itemDisplayParameters, output) -> {
 
                         //LAMPS
+                        output.accept(BlockRegistration.HONEYCOMB_LAMP.get());
+                        output.accept(BlockRegistration.BEE_LAMP.get());
+                        output.accept(BlockRegistration.BEE_LAMP_ANGRY.get());
 
                         output.accept(BlockRegistration.HOPPIN_PARK_LANTERN.get());
                         output.accept(BlockRegistration.SEA_GEM_LANTERN.get());
@@ -682,10 +684,6 @@ public class CreativeTabRegistration {
 
                         output.accept(BlockRegistration.STAINED_GLASS_LAMP.get());
                         output.accept(BlockRegistration.ANTIQUE_STANDING_LAMP.get());
-
-                        output.accept(BlockRegistration.HONEYCOMB_LAMP.get());
-                        output.accept(BlockRegistration.BEE_LAMP.get());
-                        output.accept(BlockRegistration.BEE_LAMP_ANGRY.get());
 
                         output.accept(BlockRegistration.CAGED_BULB.get());
 
