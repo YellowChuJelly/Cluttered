@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"render_type": "minecraft:cutout",
 	"ambientocclusion": false,
+	"render_type": "minecraft:cutout",
 	"textures": {
 		"1": "cluttered:block/drying_herbs",
 		"particle": "cluttered:block/drying_herbs"
@@ -255,7 +255,7 @@
 		},
 		"firstperson_righthand": {
 			"rotation": [-6, -31, 0],
-			"translation": [2.75, 3.25, 1],
+			"translation": [2.75, 2.5, 1.75],
 			"scale": [0.375, 0.375, 0.375]
 		},
 		"firstperson_lefthand": {

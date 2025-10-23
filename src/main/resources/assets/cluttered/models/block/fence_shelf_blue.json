@@ -304,26 +304,28 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"translation": [0, 4.5, 1],
-			"scale": [0.55, 0.55, 0.55]
+			"rotation": [75, 0, 0],
+			"translation": [0.5, 3.25, 1.75],
+			"scale": [0.375, 0.375, 0.375]
 		},
 		"thirdperson_lefthand": {
-			"translation": [0, 4.5, 1],
-			"scale": [0.55, 0.55, 0.55]
+			"rotation": [75, 0, 0],
+			"translation": [0.5, 3.25, 1.75],
+			"scale": [0.375, 0.375, 0.375]
 		},
 		"firstperson_righthand": {
-			"rotation": [24, 157, -11],
-			"translation": [0.5, 4.75, 1.75],
-			"scale": [0.55, 0.55, 0.55]
+			"rotation": [0, 135, 0],
+			"translation": [1.5, 4, 0],
+			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_lefthand": {
-			"rotation": [24, 157, -11],
-			"translation": [0.5, 4.75, 1.75],
-			"scale": [0.55, 0.55, 0.55]
+			"rotation": [0, 135, 0],
+			"translation": [1.5, 4, 0],
+			"scale": [0.4, 0.4, 0.4]
 		},
 		"ground": {
 			"translation": [0, 2, -1.25],
-			"scale": [0.5, 0.5, 0.5]
+			"scale": [0.35, 0.35, 0.35]
 		},
 		"gui": {
 			"rotation": [30, 225, 0],

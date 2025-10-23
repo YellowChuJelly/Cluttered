@@ -73,7 +73,7 @@
 		"gui": {
 			"rotation": [30, 225, 0],
 			"translation": [6, -4, 0],
-			"scale": [1.2, 1.2, 1.2]
+			"scale": [1.25, 1.25, 1.25]
 		},
 		"head": {
 			"translation": [0, 14.5, 0]

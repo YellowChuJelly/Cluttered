@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [64, 64],
 	"render_type": "minecraft:cutout",
+	"texture_size": [64, 64],
 	"textures": {
 		"0": "cluttered:block/general_store_cabinet",
 		"particle": "cluttered:block/general_store_cabinet"
@@ -1320,13 +1320,13 @@
 			"scale": [0.15, 0.15, 0.15]
 		},
 		"firstperson_righthand": {
-			"rotation": [-16, -178, 0],
-			"translation": [1.75, 2.5, 0],
+			"rotation": [0, 135, 0],
+			"translation": [0.5, 3, 0],
 			"scale": [0.25, 0.25, 0.25]
 		},
 		"firstperson_lefthand": {
-			"rotation": [-16, -178, 0],
-			"translation": [1.75, 2.5, 0],
+			"rotation": [0, 135, 0],
+			"translation": [0.5, 3, 0],
 			"scale": [0.25, 0.25, 0.25]
 		},
 		"ground": {
@@ -1334,7 +1334,7 @@
 			"scale": [0.2, 0.2, 0.2]
 		},
 		"gui": {
-			"rotation": [27, -154, 0],
+			"rotation": [30, 225, 0],
 			"translation": [0, -2.5, 0],
 			"scale": [0.35, 0.35, 0.35]
 		},

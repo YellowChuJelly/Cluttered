@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [64, 64],
 	"render_type": "minecraft:cutout",
+	"texture_size": [64, 64],
 	"textures": {
 		"3": "cluttered:block/china_cabinet",
 		"particle": "cluttered:block/china_cabinet"
@@ -163,23 +163,23 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [75, 0, 0],
-			"translation": [0, 0.75, -0.75],
-			"scale": [0.15, 0.15, 0.15]
+			"rotation": [75, 45, 0],
+			"translation": [0, 1.75, 0.5],
+			"scale": [0.2, 0.2, 0.2]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [75, 0, 0],
-			"translation": [0, 0.75, -0.75],
-			"scale": [0.15, 0.15, 0.15]
+			"rotation": [75, 45, 0],
+			"translation": [0, 1.75, 0.5],
+			"scale": [0.2, 0.2, 0.2]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, 138, 0],
-			"translation": [3.75, 1.75, 0],
+			"translation": [3, 1.75, 0],
 			"scale": [0.25, 0.25, 0.25]
 		},
 		"firstperson_lefthand": {
 			"rotation": [0, 138, 0],
-			"translation": [3.75, 1.75, 0],
+			"translation": [3, 1.75, 0],
 			"scale": [0.25, 0.25, 0.25]
 		},
 		"ground": {
@@ -187,9 +187,9 @@
 			"scale": [0.25, 0.25, 0.25]
 		},
 		"gui": {
-			"rotation": [30, -150, 0],
-			"translation": [0.25, -2.75, 0],
-			"scale": [0.4, 0.4, 0.4]
+			"rotation": [30, 225, 0],
+			"translation": [0, -3, 0],
+			"scale": [0.41, 0.41, 0.41]
 		},
 		"head": {
 			"translation": [0, 10.25, 0],

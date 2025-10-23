@@ -1,5 +1,4 @@
 {
-	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"render_type": "minecraft:cutout",
 	"texture_size": [64, 64],
@@ -178,5 +177,6 @@
 				7
 			]
 		}
-	]
+	],
+	"format_version": "1.9.0"
 }

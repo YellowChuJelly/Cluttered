@@ -1,5 +1,4 @@
 {
-	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"render_type": "minecraft:cutout",
 	"textures": {
@@ -142,35 +141,36 @@
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [75, 0, 0],
-			"translation": [0, 0.75, 0.75],
-			"scale": [0.15, 0.15, 0.15]
+			"translation": [0, 1.25, 0.75],
+			"scale": [0.25, 0.25, 0.25]
 		},
 		"thirdperson_lefthand": {
 			"rotation": [75, 0, 0],
-			"translation": [0, 0.75, 0.75],
-			"scale": [0.15, 0.15, 0.15]
+			"translation": [0, 1.25, 0.75],
+			"scale": [0.25, 0.25, 0.25]
 		},
 		"firstperson_righthand": {
-			"rotation": [0, 146, 0],
-			"translation": [1, 0.75, 0],
-			"scale": [0.25, 0.25, 0.25]
+			"rotation": [3, 163, -9],
+			"translation": [-0.25, 3.25, 2.5],
+			"scale": [0.2, 0.2, 0.2]
 		},
 		"firstperson_lefthand": {
-			"rotation": [0, 146, 0],
-			"translation": [1, 0.75, 0],
-			"scale": [0.25, 0.25, 0.25]
+			"rotation": [3, 163, -9],
+			"translation": [-0.25, 3.25, 2.5],
+			"scale": [0.2, 0.2, 0.2]
 		},
 		"ground": {
-			"translation": [0, 3, 0],
+			"translation": [0, -1.75, 0],
 			"scale": [0.2, 0.2, 0.2]
 		},
 		"gui": {
 			"rotation": [30, -135, 0],
-			"translation": [0.15, -0.25, 0],
-			"scale": [0.515, 0.515, 0.515]
+			"translation": [0, -0.25, 0],
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"head": {
-			"translation": [0, 14.5, 0]
+			"translation": [0, 10.5, 0],
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"fixed": {
 			"rotation": [-90, 0, 0],
@@ -197,5 +197,6 @@
 				}
 			]
 		}
-	]
+	],
+	"format_version": "1.21.6"
 }
