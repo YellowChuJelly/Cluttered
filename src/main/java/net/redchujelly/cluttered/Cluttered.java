@@ -13,15 +13,19 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.MissingMappingsEvent;
 import net.redchujelly.cluttered.client.ChairEntityRenderer;
+import net.redchujelly.cluttered.config.ClutteredCommonConfigs;
 import net.redchujelly.cluttered.datagen.DataGeneration;
 import net.redchujelly.cluttered.setup.*;
 import net.redchujelly.cluttered.util.ClutteredFurnitureUpdater;
@@ -54,8 +58,11 @@ public class Cluttered {
 
         ClutteredLootModifiers.register(modEventBus);
 
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ClutteredCommonConfigs.SPEC, "cluttered-common.toml");
+
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(DataGeneration::generate);
+
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
@@ -101,17 +108,18 @@ public class Cluttered {
     }
 
     //Replaces blocks and items from the outdated version of the mod
-    @SubscribeEvent
+    @SubscribeEvent(priority = EventPriority.LOW)
     public void missingMappingsHandler(MissingMappingsEvent event){
+        if (!ClutteredCommonConfigs.REPLACE_OLD_CLUTTERED_FURNITURE.get()){
+            return;
+        }
         List<MissingMappingsEvent.Mapping<Block>> missingBlocks = event.getAllMappings(ForgeRegistries.Keys.BLOCKS);
         List<MissingMappingsEvent.Mapping<Item>> missingItems = event.getAllMappings(ForgeRegistries.Keys.ITEMS);
-        List<MissingMappingsEvent.Mapping<BlockEntityType<?>>> missingBEs = event.getAllMappings(ForgeRegistries.Keys.BLOCK_ENTITY_TYPES);
         for (MissingMappingsEvent.Mapping<Block> missing : missingBlocks){
             String missingId = missing.getKey().toString();
             if (missingId.startsWith("luphieclutteredmod:")){
                 String name = missingId.replace("luphieclutteredmod:", "");
                 Block replacement = ClutteredFurnitureUpdater.getUpdatedName(name);
-
                 if (replacement == null){
                     missing.ignore();
                 }
@@ -127,7 +135,6 @@ public class Cluttered {
             if (missingId.startsWith("luphieclutteredmod:")){
                 String name = missingId.replace("luphieclutteredmod:", "");
                 Block replacement = ClutteredFurnitureUpdater.getUpdatedName(name);
-
                 if (replacement == null){
                     missing.ignore();
                 }
