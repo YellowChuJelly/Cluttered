@@ -559,6 +559,7 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.PASTEL_BED.get())
                 .add(BlockRegistration.PASTEL_TABLE.get())
                 .add(BlockRegistration.PASTEL_WARDROBE.get())
+                .add(BlockRegistration.PASTEL_PLUSH.get())
 
                 .add(BlockRegistration.MERMAID_DRESSER.get())
 

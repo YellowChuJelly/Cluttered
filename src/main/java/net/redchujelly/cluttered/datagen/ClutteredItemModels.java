@@ -627,6 +627,7 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.PASTEL_BED);
         blockitemFromModel(BlockRegistration.PASTEL_TABLE);
         blockitemFromModel(BlockRegistration.PASTEL_WARDROBE);
+        blockitemFromModel(BlockRegistration.PASTEL_PLUSH);
 
         blockitemFromModel(BlockRegistration.MINI_HANGING_TERRARIUMS);
         blockitemFromModel(BlockRegistration.OFFICE_SUPPLIES_A);

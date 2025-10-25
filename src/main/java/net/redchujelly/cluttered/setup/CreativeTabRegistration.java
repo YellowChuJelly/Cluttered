@@ -763,6 +763,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.PASTEL_CABINET.get());
                         output.accept(BlockRegistration.PASTEL_WARDROBE.get());
                         output.accept(BlockRegistration.PASTEL_BED.get());
+                        output.accept(BlockRegistration.PASTEL_PLUSH.get());
 
 
                         //STEAMPUNK SET

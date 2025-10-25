@@ -1211,6 +1211,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.PASTEL_CABINET.get());
         dropSelf(BlockRegistration.PASTEL_CHAIR.get());
         dropSelf(BlockRegistration.PASTEL_STOOL.get());
+        dropSelf(BlockRegistration.PASTEL_PLUSH.get());
 
 
         //BIKES

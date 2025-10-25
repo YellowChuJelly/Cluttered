@@ -6496,6 +6496,17 @@ public class ClutteredRecipes extends RecipeProvider {
                     .showNotification(false)
                     .save(consumer);
 
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.PASTEL_PLUSH.get())
+                    .pattern("p p")
+                    .pattern("pbp")
+                    .pattern("ppp")
+                    .define('b', Items.CYAN_WOOL)
+                    .define('p', Items.PINK_WOOL)
+                    .unlockedBy("has_pink_wool", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.PINK_WOOL).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.STEAMPUNK_LAMP.get())
                     .pattern("c")
                     .pattern("s")

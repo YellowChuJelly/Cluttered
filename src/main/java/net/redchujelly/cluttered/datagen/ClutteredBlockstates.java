@@ -1548,6 +1548,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.PASTEL_STOOL);
         hFacingBlockWithCustomModel(BlockRegistration.PASTEL_LIGHT);
         hFacingBlockWithCustomModel(BlockRegistration.PASTEL_CABINET);
+        hFacingBlockWithCustomModel(BlockRegistration.PASTEL_PLUSH);
 
 
         hFacingBlockWithCustomModel(BlockRegistration.WATERING_CAN);
