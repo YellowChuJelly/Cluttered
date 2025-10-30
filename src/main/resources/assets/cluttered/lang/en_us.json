@@ -31,6 +31,7 @@
   "block.cluttered.willow_window_pane": "Willow Window Pane",
 
   "block.cluttered.flowering_willow_leaves": "Flowering Willow Leaves",
+  "block.cluttered.flower_carpet_willow": "Willow Flower Carpet",
   "block.cluttered.flowering_willow_planks": "Flowering Willow Planks",
   "block.cluttered.flowering_willow_log": "Flowering Willow Log",
   "block.cluttered.flowering_willow_wood": "Flowering Willow Wood",
@@ -71,6 +72,7 @@
   "block.cluttered.poplar_bookshelf": "Poplar Bookshelf",
 
   "block.cluttered.flowering_poplar_leaves": "Flowering Poplar Leaves",
+  "block.cluttered.flower_carpet_poplar": "Poplar Flower Carpet",
   "block.cluttered.flowering_poplar_planks": "Flowering Poplar Planks",
   "block.cluttered.flowering_poplar_log": "Flowering Poplar Log",
   "block.cluttered.flowering_poplar_wood": "Flowering Poplar Wood",
@@ -112,6 +114,7 @@
   "block.cluttered.crabapple_bookshelf": "Crabapple Bookshelf",
 
   "block.cluttered.flowering_crabapple_leaves": "Flowering Crabapple Leaves",
+  "block.cluttered.flower_carpet_crabapple": "Crabapple Flower Carpet",
   "block.cluttered.flowering_crabapple_planks": "Flowering Crabapple Planks",
   "block.cluttered.flowering_crabapple_log": "Flowering Crabapple Log",
   "block.cluttered.flowering_crabapple_wood": "Flowering Crabapple Wood",
@@ -328,6 +331,8 @@
   "block.cluttered.colosseo_pillar": "Colosseo Pillar",
   "block.cluttered.colosseo_pillar_top": "Colosseo Pillar Top",
   "block.cluttered.colosseo_pillar_base": "Colosseo Pillar Base",
+
+  "block.cluttered.pumpkin_bookshelf": "Jack o'Lantern Bookshelf",
 
   "block.cluttered.black_cat_window": "Black Cat Window",
   "block.cluttered.black_cat_window_pane": "Black Cat Window Pane",
@@ -1045,6 +1050,8 @@
   "block.cluttered.tarrytown_stove": "Tarrytown Stove",
   "block.cluttered.seltzer_cans": "Seltzer Cans",
   "block.cluttered.pastry_display_case": "Pastry Display Case",
+  "block.cluttered.wooden_block_bookshelf_pastel": "Pastel Wooden Block Bookshelf",
+  "block.cluttered.seaweed_planter": "Seaweed Planter",
 
 
   "painting.cluttered.mimikyu.title": "Mimikyu",

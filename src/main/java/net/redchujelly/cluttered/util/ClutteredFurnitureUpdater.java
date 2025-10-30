@@ -313,6 +313,7 @@ public class ClutteredFurnitureUpdater {
         UPDATED_BLOCK_MAP.put("luphie_open_book", BlockRegistration.BOOK_OPEN.get());
         UPDATED_BLOCK_MAP.put("luphie_paper_stack", BlockRegistration.NEWSPAPER_PILE_SHORT.get());
         UPDATED_BLOCK_MAP.put("luphie_pastel_chair", BlockRegistration.PASTEL_CHAIR.get());
+        UPDATED_BLOCK_MAP.put("luphiebunny_plushie", BlockRegistration.PASTEL_PLUSH.get());
         UPDATED_BLOCK_MAP.put("luphie_filled_picnic_basket", BlockRegistration.PICNIC_BASKET_PREPARED.get());
         UPDATED_BLOCK_MAP.put("luphie_picnic_basket", BlockRegistration.PICNIC_BASKET.get());
         UPDATED_BLOCK_MAP.put("luphie_pink_and_gold_moon_decor", BlockRegistration.MOON_PENDANT.get());

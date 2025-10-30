@@ -1,9 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
+	"render_type": "minecraft:cutout",
 	"textures": {
 		"1": "cluttered:block/sea_gem_lantern",
-		"2": "sea_gem_lantern_wall",
+		"2": "cluttered:block/sea_gem_lantern_wall",
 		"particle": "cluttered:block/sea_gem_lantern"
 	},
 	"elements": [

@@ -704,11 +704,16 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.X_TILE_INVERSE_BLUE.get());
         dropSelf(BlockRegistration.X_TILE_GRAY.get());
         dropSelf(BlockRegistration.X_TILE_INVERSE_GRAY.get());
+        this.add(BlockRegistration.FLOWERING_CARPET_CRABAPPLE.get(), (state) -> this.createMultifaceBlockDrops(state, HAS_SHEARS));
+        this.add(BlockRegistration.FLOWERING_CARPET_WILLOW.get(), (state) -> this.createMultifaceBlockDrops(state, HAS_SHEARS));
+        this.add(BlockRegistration.FLOWERING_CARPET_POPLAR.get(), (state) -> this.createMultifaceBlockDrops(state, HAS_SHEARS));
 
         dropSelf(BlockRegistration.CHISELED_GOLD_BLOCK.get());
+        dropSelf(BlockRegistration.PUMPKIN_BOOKSHELF.get());
         dropSelf(BlockRegistration.VARYING_BRICKS.get());
         dropSelf(BlockRegistration.VARYING_BRICKS_BORDER.get());
         dropSelf(BlockRegistration.WICKER_BLOCK.get());
+        dropSelf(BlockRegistration.FLOWERING_CARPET_CRABAPPLE.get());
         dropSelf(BlockRegistration.EYE_BLOCK.get());
         add(BlockRegistration.DYNASTY_DOOR.get(), block -> createDoorTable(BlockRegistration.DYNASTY_DOOR.get()));
 
@@ -985,7 +990,6 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.BASKET_OF_PRODUCE.get());
         dropSelf(BlockRegistration.HOPPIN_PARK_LANTERN.get());
         dropSelf(BlockRegistration.SEA_GEM_LANTERN.get());
-        dropSelf(BlockRegistration.SEA_GEM_LANTERN_CEILING.get());
         dropSelf(BlockRegistration.HANGING_SHELVES_POTTERY.get());
         dropSelf(BlockRegistration.HANGING_SHELVES_PLANTS.get());
         dropSelf(BlockRegistration.POK_TA_POK_HOOP.get());
@@ -1091,6 +1095,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.SMALL_CAULDRON.get());
         dropSelf(BlockRegistration.STEAMPUNK_LAMP.get());
         dropSelf(BlockRegistration.TARRY_TOWN_STOVE.get());
+        dropSelf(BlockRegistration.SEAWEED_PLANTER.get());
 
 
         //GARLANDS
@@ -1204,6 +1209,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.WEDDING_ARCH.get());
 
         //PASTEL SET
+        multiBlockDropOnlyOneItem(BlockRegistration.WOODEN_BLOCK_BOOKSHELF_PASTEL.get());
         multiBlockDropOnlyOneItem(BlockRegistration.PASTEL_BED.get());
         multiBlockDropOnlyOneItem(BlockRegistration.PASTEL_TABLE.get());
         multiBlockDropOnlyOneItem(BlockRegistration.PASTEL_WARDROBE.get());

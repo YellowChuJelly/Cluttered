@@ -14,20 +14,20 @@ import net.redchujelly.cluttered.setup.TileEntityRegistration;
 import org.jetbrains.annotations.Nullable;
 
 public class GreenDeskBlock extends MultiblockStorage {
-    private  static final VoxelShape SHAPE_N_1 = Shapes.or(Block.box(1,6,0,16,11,15), Block.box(0,0,0,3,11,3), Block.box(0,0,12,3,11,15), Block.box(0,11,0,16,13,16), Block.box(0,13,0,16,16,7));
-    private  static final VoxelShape SHAPE_S_1 = Shapes.or(Block.box(0,6,1,15,11,16), Block.box(13,0,13,16,11,16), Block.box(13,0,1,16,11,4), Block.box(0,11,0,16,13,16), Block.box(0,13,9,16,16,16));
-    private  static final VoxelShape SHAPE_E_1 = Shapes.or(Block.box(1,6,1,16,11,16), Block.box(13,0,0,16,11,3), Block.box(1,0,0,4,11,3), Block.box(0,11,0,16,13,16), Block.box(9,13,0,16,16,16));
-    private  static final VoxelShape SHAPE_W_1 = Shapes.or(Block.box(0,6,0,15,11,15), Block.box(0,0,13,3,11,16), Block.box(12,0,13,15,11,16), Block.box(0,11,0,16,13,16), Block.box(0,13,0,7,16,16));
+    private  static final VoxelShape SHAPE_N_1 = Shapes.or(Block.box(1,9,0,16,14,15), Block.box(0,0,0,3,16,3), Block.box(0,0,12,3,16,15), Block.box(0,14,0,16,16,16) );
+    private  static final VoxelShape SHAPE_S_1 = Shapes.or(Block.box(0,9,1,15,14,16), Block.box(13,0,13,16,16,16), Block.box(13,0,1,16,16,4), Block.box(0,14,0,16,16,16));
+    private  static final VoxelShape SHAPE_E_1 = Shapes.or(Block.box(1,9,1,16,14,16), Block.box(13,0,0,16,16,3), Block.box(1,0,0,4,16,3), Block.box(0,14,0,16,16,16));
+    private  static final VoxelShape SHAPE_W_1 = Shapes.or(Block.box(0,9,0,15,14,15), Block.box(0,0,13,3,16,16), Block.box(12,0,13,15,16,16), Block.box(0,14,0,16,16,16));
 
-    private  static final VoxelShape SHAPE_N_2 = Shapes.or(Block.box(0,6,0,15,11,15), Block.box(13,0,12,16,11,15), Block.box(13,0,0,16,11,3), Block.box(0,11,0,16,13,16),  Block.box(0,13,0,16,16,7));
-    private  static final VoxelShape SHAPE_S_2 = Shapes.or(Block.box(1,6,1,16,11,16), Block.box(0,0,1,3,11,4), Block.box(0,0,13,3,11,16), Block.box(0,11,0,16,13,16), Block.box(0,13,16,9,16,16));
-    private  static final VoxelShape SHAPE_E_2 = Shapes.or(Block.box(1,6,0,16,11,15), Block.box(1,0,13,4,11,16), Block.box(13,0,13,16,11,16), Block.box(0,11,0,16,13,16), Block.box(9,13,0,16,16,16));
-    private  static final VoxelShape SHAPE_W_2 = Shapes.or(Block.box(0,6,1,15,11,16), Block.box(12,0,0,15,11,3), Block.box(0,0,0,3,11,3), Block.box(0,11,0,16,13,16), Block.box(0,13,0,7,16,16));
+    private  static final VoxelShape SHAPE_N_2 = Shapes.or(Block.box(0,9,0,15,14,15), Block.box(13,0,12,16,16,15), Block.box(13,0,0,16,16,3), Block.box(0,14,0,16,16,16));
+    private  static final VoxelShape SHAPE_S_2 = Shapes.or(Block.box(1,9,1,16,14,16), Block.box(0,0,1,3,16,4), Block.box(0,0,13,3,16,16), Block.box(0,14,0,16,16,16));
+    private  static final VoxelShape SHAPE_E_2 = Shapes.or(Block.box(1,9,0,16,14,15), Block.box(1,0,13,4,16,16), Block.box(13,0,13,16,16,16), Block.box(0,14,0,16,16,16));
+    private  static final VoxelShape SHAPE_W_2 = Shapes.or(Block.box(0,9,1,15,14,16), Block.box(12,0,0,15,16,3), Block.box(0,0,0,3,16,3), Block.box(0,14,0,16,16,16));
 
-    private  static final VoxelShape SHAPE_N_34 = Block.box(0,0,0, 16,6,7);
-    private  static final VoxelShape SHAPE_S_34 = Block.box(0,0,9,16,6,16);
-    private  static final VoxelShape SHAPE_E_34 = Block.box(9,0,0,16,6,16);
-    private  static final VoxelShape SHAPE_W_34 = Block.box(0,0,0,7,6,16);
+    private  static final VoxelShape SHAPE_N_34 = Block.box(0,0,0, 16,9,7);
+    private  static final VoxelShape SHAPE_S_34 = Block.box(0,0,9,16,9,16);
+    private  static final VoxelShape SHAPE_E_34 = Block.box(9,0,0,16,9,16);
+    private  static final VoxelShape SHAPE_W_34 = Block.box(0,0,0,7,9,16);
 
 
     public static final IntegerProperty MULTIBLOCK_PART = IntegerProperty.create("part", 1, 4);

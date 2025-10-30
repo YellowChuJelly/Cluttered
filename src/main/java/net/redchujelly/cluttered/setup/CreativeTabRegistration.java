@@ -56,6 +56,7 @@ public class CreativeTabRegistration {
 
                         //FLOWERING WILLOW WOODSET
                         output.accept(BlockRegistration.FLOWERING_WILLOW_LEAVES.get());
+                        output.accept(BlockRegistration.FLOWERING_CARPET_WILLOW.get());
                         output.accept(BlockRegistration.FLOWERING_WILLOW_LOG.get());
                         output.accept(BlockRegistration.FLOWERING_WILLOW_WOOD.get());
                         output.accept(BlockRegistration.STRIPPED_FLOWERING_WILLOW_LOG.get());
@@ -101,6 +102,7 @@ public class CreativeTabRegistration {
 
                         //FLOWERING POPLAR WOODSET
                         output.accept(BlockRegistration.FLOWERING_POPLAR_LEAVES.get());
+                        output.accept(BlockRegistration.FLOWERING_CARPET_POPLAR.get());
                         output.accept(BlockRegistration.FLOWERING_POPLAR_LOG.get());
                         output.accept(BlockRegistration.FLOWERING_POPLAR_WOOD.get());
                         output.accept(BlockRegistration.STRIPPED_FLOWERING_POPLAR_LOG.get());
@@ -148,6 +150,7 @@ public class CreativeTabRegistration {
 
                         //FLOWERING CRABAPPLE WOODSET
                         output.accept(BlockRegistration.FLOWERING_CRABAPPLE_LEAVES.get());
+                        output.accept(BlockRegistration.FLOWERING_CARPET_CRABAPPLE.get());
                         output.accept(BlockRegistration.FLOWERING_CRABAPPLE_LOG.get());
                         output.accept(BlockRegistration.FLOWERING_CRABAPPLE_WOOD.get());
                         output.accept(BlockRegistration.STRIPPED_FLOWERING_CRABAPPLE_LOG.get());
@@ -655,6 +658,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.BLACK_CAT_WINDOW.get());
                         output.accept(BlockRegistration.BLACK_CAT_WINDOW_PANE.get());
                         output.accept(BlockRegistration.STONE_TEXTILES.get());
+                        output.accept(BlockRegistration.PUMPKIN_BOOKSHELF.get());
                         output.accept(BlockRegistration.BEIGE_PLANTER.get());
                         output.accept(BlockRegistration.WICKER_BLOCK.get());
                         output.accept(BlockRegistration.CHISELED_GOLD_BLOCK.get());
@@ -755,7 +759,10 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.DARKWOOD_BED_QUILTED.get());
                         output.accept(BlockRegistration.DARKWOOD_BED_SOUTHERN_FLAIR.get());
 
-                        //PASTEL SET
+                        //PASTEL SET (ACNH)
+                        output.accept(BlockRegistration.WOODEN_BLOCK_BOOKSHELF_PASTEL.get());
+
+                        //PASTEL SET (STARBOUND)
                         output.accept(BlockRegistration.PASTEL_CHAIR.get());
                         output.accept(BlockRegistration.PASTEL_STOOL.get());
                         output.accept(BlockRegistration.PASTEL_TABLE.get());
@@ -833,6 +840,7 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.TWO_FLOWER_POTS.get());
                         output.accept(BlockRegistration.MINI_CACTUS_SET.get());
                         output.accept(BlockRegistration.GLASS_FLOWER_VASE.get());
+                        output.accept(BlockRegistration.SEAWEED_PLANTER.get());
                         output.accept(BlockRegistration.CAT_PLANT_POT_BLACK.get());
                         output.accept(BlockRegistration.CAT_PLANT_POT_ORANGE.get());
                         output.accept(BlockRegistration.HANGING_PLANT_POT_FLOWERS.get());
@@ -1182,15 +1190,15 @@ public class CreativeTabRegistration {
                         output.accept(BlockRegistration.SLICED_BREAD.get());
                         output.accept(BlockRegistration.PINEAPPLE.get());
 
-                        output.accept(BlockRegistration.PASTRY_PLATE.get());
+                        output.accept(BlockRegistration.HEART_CAKE.get());
+                        output.accept(BlockRegistration.BERRY_CAKE.get());
                         output.accept(BlockRegistration.CHOCOLATE_CROISSANT.get());
                         output.accept(BlockRegistration.BLUEBERRY_MUFFIN.get());
                         output.accept(BlockRegistration.CINNAMON_BUN.get());
                         output.accept(BlockRegistration.CROISSANT.get());
                         output.accept(BlockRegistration.PANCAKE_STACK.get());
                         output.accept(BlockRegistration.HAM_SANDWICH.get());
-                        output.accept(BlockRegistration.HEART_CAKE.get());
-                        output.accept(BlockRegistration.BERRY_CAKE.get());
+                        output.accept(BlockRegistration.PASTRY_PLATE.get());
                         output.accept(BlockRegistration.PASTRY_DISPLAY_CASE.get());
 
                         output.accept(BlockRegistration.GUMBALL_MACHINE_RED.get());

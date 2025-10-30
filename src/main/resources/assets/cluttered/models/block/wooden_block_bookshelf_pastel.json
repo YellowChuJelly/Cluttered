@@ -1,7 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "wooden_block_bookshelf_pastel"
+		"1": "cluttered:block/wooden_block_bookshelf_pastel",
+		"particle": "cluttered:block/wooden_block_bookshelf_pastel"
 	},
 	"elements": [
 		{

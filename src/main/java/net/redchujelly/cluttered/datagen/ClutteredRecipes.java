@@ -42,6 +42,30 @@ public class ClutteredRecipes extends RecipeProvider {
         buildWoodsetRecipes("blue_mushroom", consumer);
         buildWoodsetRecipes("red_mushroom", consumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.FLOWERING_CARPET_WILLOW.get(), 8)
+                .pattern("pp")
+                .define('p', BlockRegistration.FLOWERING_WILLOW_LEAVES.get())
+                .unlockedBy("has_flowering_willow_leaves", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.FLOWERING_WILLOW_LEAVES.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.FLOWERING_CARPET_CRABAPPLE.get(), 8)
+                .pattern("pp")
+                .define('p', BlockRegistration.FLOWERING_CRABAPPLE_LEAVES.get())
+                .unlockedBy("has_flowering_crabapple_leaves", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.FLOWERING_CRABAPPLE_LEAVES.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.FLOWERING_CARPET_POPLAR.get(), 8)
+                .pattern("pp")
+                .define('p', BlockRegistration.FLOWERING_POPLAR_LEAVES.get())
+                .unlockedBy("has_flowering_poplar_leaves", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(BlockRegistration.FLOWERING_POPLAR_LEAVES.get()).build()))
+                .showNotification(false)
+                .save(consumer);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.WILLOW_BOOKSHELF_VASE.get())
                 .pattern("pfp")
                 .pattern("bbb")
@@ -1210,6 +1234,17 @@ public class ClutteredRecipes extends RecipeProvider {
                 .define('s', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_string", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(Items.STRING).build()))
+                .showNotification(false)
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.PUMPKIN_BOOKSHELF.get())
+                .pattern("ppp")
+                .pattern("bbb")
+                .pattern("ppp")
+                .define('p', Items.PUMPKIN)
+                .define('b', Items.BOOK)
+                .unlockedBy("has_book", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.BOOK).build()))
                 .showNotification(false)
                 .save(consumer);
 
@@ -6560,6 +6595,29 @@ public class ClutteredRecipes extends RecipeProvider {
                     .define('i', Items.IRON_INGOT)
                     .unlockedBy("has_campfire", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CAMPFIRE).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.SEAWEED_PLANTER.get())
+                    .pattern("i")
+                    .pattern("c")
+                    .define('c', Items.DECORATED_POT)
+                    .define('i', Items.SEAGRASS)
+                    .unlockedBy("has_seagrass", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.SEAGRASS).build()))
+                    .showNotification(false)
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.WOODEN_BLOCK_BOOKSHELF_PASTEL.get())
+                    .pattern("sps")
+                    .pattern("bbb")
+                    .pattern("sys")
+                    .define('s', ItemTags.WOODEN_SLABS)
+                    .define('b', Items.BOOK)
+                    .define('p', Items.PINK_DYE)
+                    .define('y', Items.YELLOW_DYE)
+                    .unlockedBy("has_book", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(Items.BOOK).build()))
                     .showNotification(false)
                     .save(consumer);
 

@@ -15,6 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.block.custom.*;
+import net.redchujelly.cluttered.block.custom.food.BerryCakeBlock;
 import net.redchujelly.cluttered.block.custom.food.HeartCakeBlock;
 import net.redchujelly.cluttered.block.custom.furniture.*;
 import net.redchujelly.cluttered.block.custom.furniture.storage.CardboardBoxBlock;
@@ -883,7 +884,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockWithItem(BlockRegistration.VERDANT_TILE);
         horizontalBlock(BlockRegistration.VERDANT_TILE_CORNER.get(), models().getBuilder("block/verdant_tile_corner").parent(models().getExistingFile(mcLoc("observer"))).texture("top", "block/verdant_tile_corner").texture("bottom", "block/verdant_tile").texture("side", "block/verdant_tile").texture("front", "block/verdant_tile").texture("particle", "block/verdant_tile"));
         blockItem(BlockRegistration.VERDANT_TILE_CORNER);
-        horizontalBlock(BlockRegistration.VERDANT_TILE_EDGE.get(), models().cubeColumn("verdant_tile_edge", modLoc("block/verdant_tile"), modLoc("block/verdant_tile_edge")));
+        horizontalBlock(BlockRegistration.VERDANT_TILE_EDGE.get(), models().getBuilder("block/verdant_tile_edge").parent(models().getExistingFile(mcLoc("observer"))).texture("top", "block/verdant_tile_edge").texture("bottom", "block/verdant_tile").texture("side", "block/verdant_tile").texture("front", "block/verdant_tile").texture("particle", "block/verdant_tile"));
+
         blockItem(BlockRegistration.VERDANT_TILE_EDGE);
 
         horizontalBlock(BlockRegistration.AURA_TILES.get(), models().getBuilder("block/aura_tiles").parent(models().getExistingFile(mcLoc("template_glazed_terracotta"))).texture("pattern", "block/aura_tiles"));
@@ -908,6 +910,10 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockWithItem(BlockRegistration.PURPLE_TILES);
         blockWithItem(BlockRegistration.SMALL_PURPLE_TILES);
         blockWithItem(BlockRegistration.KITCHEN_TILES);
+
+        horizontalBlock(BlockRegistration.PUMPKIN_BOOKSHELF.get(), models().cube("pumpkin_bookshelf", modLoc("block/jack-o-lantern_bookshelf_top"),modLoc("block/jack-o-lantern_bookshelf_top"), modLoc("block/jack-o-lantern_bookshelf"), modLoc("block/jack-o-lantern_bookshelf_side"), modLoc("block/jack-o-lantern_bookshelf_side"), modLoc("block/jack-o-lantern_bookshelf_side")).texture("particle", modLoc("block/jack-o-lantern_bookshelf_side")));
+        blockItem(BlockRegistration.PUMPKIN_BOOKSHELF);
+
 
         blockWithItem(BlockRegistration.CHISELED_GOLD_BLOCK);
         blockWithItem(BlockRegistration.WICKER_BLOCK);
@@ -1459,8 +1465,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         hFacingBlockWithCustomModel(BlockRegistration.SAFE_NOVAKID);
         lanternBlock(BlockRegistration.HOPPIN_PARK_LANTERN);
-        hFacingBlockWithCustomModel(BlockRegistration.SEA_GEM_LANTERN);
-        hFacingBlockWithCustomModel(BlockRegistration.SEA_GEM_LANTERN_CEILING);
+        lanternBlock(BlockRegistration.SEA_GEM_LANTERN);
         multiblockParts(BlockRegistration.VIOLET_SCREEN);
         hFacingBlockWithCustomModel(BlockRegistration.HANGING_SHELVES_PLANTS);
         hFacingBlockWithCustomModel(BlockRegistration.HANGING_SHELVES_POTTERY);
@@ -1540,13 +1545,15 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.DARKWOOD_STOOL);
         hFacingBlockWithCustomModel(BlockRegistration.DARKWOOD_ENDTABLE);
 
+        hFacingBlockWithCustomModel(BlockRegistration.WOODEN_BLOCK_BOOKSHELF_PASTEL);
+
         //PASTEL
         multiblockParts(BlockRegistration.PASTEL_BED);
         multiblockParts(BlockRegistration.PASTEL_TABLE);
         multiblockParts(BlockRegistration.PASTEL_WARDROBE);
         hFacingBlockWithCustomModel(BlockRegistration.PASTEL_CHAIR);
         hFacingBlockWithCustomModel(BlockRegistration.PASTEL_STOOL);
-        hFacingBlockWithCustomModel(BlockRegistration.PASTEL_LIGHT);
+        lanternBlock(BlockRegistration.PASTEL_LIGHT);
         hFacingBlockWithCustomModel(BlockRegistration.PASTEL_CABINET);
         hFacingBlockWithCustomModel(BlockRegistration.PASTEL_PLUSH);
 
@@ -1839,7 +1846,86 @@ public class ClutteredBlockstates extends BlockStateProvider {
                     .modelForState().modelFile(models().getExistingFile(modLoc("block/heart_cake_2"))).rotationY(180).addModel()
                 .partialState().with(HeartCakeBlock.BITES, 2).with(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST)
                     .modelForState().modelFile(models().getExistingFile(modLoc("block/heart_cake_2"))).rotationY(270).addModel();
-        hFacingBlockWithCustomModel(BlockRegistration.BERRY_CAKE);
+
+        this.getVariantBuilder(BlockRegistration.BERRY_CAKE.get())
+                .partialState().with(BerryCakeBlock.BITES, 0).with(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake"))).rotationY(0).addModel()
+                .partialState().with(BerryCakeBlock.BITES, 0).with(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake"))).rotationY(90).addModel()
+                .partialState().with(BerryCakeBlock.BITES, 0).with(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake"))).rotationY(180).addModel()
+                .partialState().with(BerryCakeBlock.BITES, 0).with(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake"))).rotationY(270).addModel()
+
+                .partialState().with(BerryCakeBlock.BITES, 1).with(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake_1"))).rotationY(0).addModel()
+                .partialState().with(BerryCakeBlock.BITES, 1).with(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake_1"))).rotationY(90).addModel()
+                .partialState().with(BerryCakeBlock.BITES, 1).with(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake_1"))).rotationY(180).addModel()
+                .partialState().with(BerryCakeBlock.BITES, 1).with(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake_1"))).rotationY(270).addModel()
+
+                .partialState().with(BerryCakeBlock.BITES, 2).with(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake_2"))).rotationY(0).addModel()
+                .partialState().with(BerryCakeBlock.BITES, 2).with(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake_2"))).rotationY(90).addModel()
+                .partialState().with(BerryCakeBlock.BITES, 2).with(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake_2"))).rotationY(180).addModel()
+                .partialState().with(BerryCakeBlock.BITES, 2).with(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake_2"))).rotationY(270).addModel()
+
+                .partialState().with(BerryCakeBlock.BITES, 3).with(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake_3"))).rotationY(0).addModel()
+                .partialState().with(BerryCakeBlock.BITES, 3).with(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake_3"))).rotationY(90).addModel()
+                .partialState().with(BerryCakeBlock.BITES, 3).with(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake_3"))).rotationY(180).addModel()
+                .partialState().with(BerryCakeBlock.BITES, 3).with(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST)
+                    .modelForState().modelFile(models().getExistingFile(modLoc("block/berry_cake_3"))).rotationY(270).addModel();
+
+
+        //FLOWER CARPETS
+        this.getMultipartBuilder(BlockRegistration.FLOWERING_CARPET_CRABAPPLE.get())
+                .part().modelFile(models().getBuilder("block/flowering_carpet_red").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_crabapple").renderType("cutout")).rotationY(0).rotationX(0).addModel()
+                .condition(BlockStateProperties.NORTH, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_red").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_crabapple").renderType("cutout")).rotationY(90).rotationX(0).addModel()
+                .condition(BlockStateProperties.EAST, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_red").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_crabapple").renderType("cutout")).rotationY(-90).rotationX(0).addModel()
+                .condition(BlockStateProperties.WEST, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_red").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_crabapple").renderType("cutout")).rotationY(180).rotationX(0).addModel()
+                .condition(BlockStateProperties.SOUTH, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_red").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_crabapple").renderType("cutout")).rotationY(0).rotationX(-90).addModel()
+                .condition(BlockStateProperties.UP, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_red").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_crabapple").renderType("cutout")).rotationY(0).rotationX(90).addModel()
+                .condition(BlockStateProperties.DOWN, true).end();
+        this.getMultipartBuilder(BlockRegistration.FLOWERING_CARPET_WILLOW.get())
+                .part().modelFile(models().getBuilder("block/flowering_carpet_purple").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_willow").renderType("cutout")).rotationY(0).rotationX(0).addModel()
+                .condition(BlockStateProperties.NORTH, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_purple").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_willow").renderType("cutout")).rotationY(90).rotationX(0).addModel()
+                .condition(BlockStateProperties.EAST, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_purple").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_willow").renderType("cutout")).rotationY(-90).rotationX(0).addModel()
+                .condition(BlockStateProperties.WEST, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_purple").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_willow").renderType("cutout")).rotationY(180).rotationX(0).addModel()
+                .condition(BlockStateProperties.SOUTH, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_purple").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_willow").renderType("cutout")).rotationY(0).rotationX(-90).addModel()
+                .condition(BlockStateProperties.UP, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_purple").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_willow").renderType("cutout")).rotationY(0).rotationX(90).addModel()
+                .condition(BlockStateProperties.DOWN, true).end();
+        this.getMultipartBuilder(BlockRegistration.FLOWERING_CARPET_POPLAR.get())
+                .part().modelFile(models().getBuilder("block/flowering_carpet_yellow").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_poplar").renderType("cutout")).rotationY(0).rotationX(0).addModel()
+                .condition(BlockStateProperties.NORTH, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_yellow").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_poplar").renderType("cutout")).rotationY(90).rotationX(0).addModel()
+                .condition(BlockStateProperties.EAST, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_yellow").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_poplar").renderType("cutout")).rotationY(-90).rotationX(0).addModel()
+                .condition(BlockStateProperties.WEST, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_yellow").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_poplar").renderType("cutout")).rotationY(180).rotationX(0).addModel()
+                .condition(BlockStateProperties.SOUTH, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_yellow").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_poplar").renderType("cutout")).rotationY(0).rotationX(-90).addModel()
+                .condition(BlockStateProperties.UP, true).end()
+                .part().modelFile(models().getBuilder("block/flowering_carpet_yellow").parent(models().getExistingFile(mcLoc("block/glow_lichen"))).texture("glow_lichen", "block/flower_carpet_poplar").renderType("cutout")).rotationY(0).rotationX(90).addModel()
+                .condition(BlockStateProperties.DOWN, true).end();
+
 
         //FLAGS
         flatFacingBlock(BlockRegistration.MINI_FLAG_BI, 0);
@@ -1913,6 +1999,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         hFacingBlockWithCustomModel(BlockRegistration.HAM_SANDWICH);
         hFacingBlockWithCustomModel(BlockRegistration.PANCAKE_STACK);
         hFacingBlockWithCustomModel(BlockRegistration.FILING_BOX);
+        hFacingBlockWithCustomModel(BlockRegistration.SEAWEED_PLANTER);
 
         multiblockParts(BlockRegistration.SEWING_CLUTTER);
 

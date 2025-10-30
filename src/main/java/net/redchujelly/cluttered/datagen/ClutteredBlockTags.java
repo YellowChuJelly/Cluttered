@@ -44,6 +44,7 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.WILLOW_BOOKSHELF_COBWEB.get())
                 .add(BlockRegistration.WILLOW_BOOKSHELF_BOTTLES.get())
                 .add(BlockRegistration.WILLOW_BOOKSHELF_VASE.get())
+                .add(BlockRegistration.PUMPKIN_BOOKSHELF.get())
 
                 .add(BlockRegistration.ANTIQUE_BOOK_STAND.get())
                 .add(BlockRegistration.ANCIENT_CODEX.get())
@@ -68,6 +69,7 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.LUNAR_OBSERVATORY_BOOKS.get())
                 .add(BlockRegistration.RITO_BOOKS.get())
                 .add(BlockRegistration.SMALL_BOOKCASE.get())
+                .add(BlockRegistration.WOODEN_BLOCK_BOOKSHELF_PASTEL.get())
 
         ;
 
@@ -253,6 +255,7 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.DIAMOND_WALLPAPER_ANCHOR_BOTTOM_WHITE.get())
 
                 .add(BlockRegistration.WICKER_BLOCK.get())
+                .add(BlockRegistration.PUMPKIN_BOOKSHELF.get())
                 .add(BlockRegistration.DYNASTY_DOOR.get())
                 .add(BlockRegistration.WOOD_WINDOW_DIVIDED.get())
                 .add(BlockRegistration.WOOD_WINDOW_PANE.get())
@@ -569,6 +572,7 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.RITO_BOOKS.get())
                 .add(BlockRegistration.WEDDING_ARCH.get())
                 .add(BlockRegistration.SMALL_BOOKCASE.get())
+                .add(BlockRegistration.WOODEN_BLOCK_BOOKSHELF_PASTEL.get())
                 ;
         tag(BlockTags.BEDS)
                 .add(BlockRegistration.BLUE_MUSHROOM_BED.get())
@@ -878,6 +882,7 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.SMALL_CAULDRON.get())
                 .add(BlockRegistration.STEAMPUNK_LAMP.get())
                 .add(BlockRegistration.TARRY_TOWN_STOVE.get())
+                .add(BlockRegistration.SEAWEED_PLANTER.get())
         ;
         tag(BlockTags.CLIMBABLE)
                 .add(BlockRegistration.WILLOW_VINES.get());

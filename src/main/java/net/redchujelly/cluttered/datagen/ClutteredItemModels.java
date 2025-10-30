@@ -2,7 +2,6 @@ package net.redchujelly.cluttered.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -491,7 +490,6 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.VIOLET_SCREEN);
         blockitemFromModel(BlockRegistration.HOPPIN_PARK_LANTERN);
         blockitemFromModel(BlockRegistration.SEA_GEM_LANTERN);
-        blockitemFromModel(BlockRegistration.SEA_GEM_LANTERN_CEILING);
         blockitemFromModel(BlockRegistration.HANGING_SHELVES_PLANTS);
         blockitemFromModel(BlockRegistration.HANGING_SHELVES_POTTERY);
         blockitemFromModel(BlockRegistration.POK_TA_POK_HOOP);
@@ -621,9 +619,11 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.MERMAID_DRESSER);
 
         blockitemFromModel(BlockRegistration.PASTEL_CABINET);
+        blockitemFromModel(BlockRegistration.WOODEN_BLOCK_BOOKSHELF_PASTEL);
         blockitemFromModel(BlockRegistration.PASTEL_CHAIR);
         blockitemFromModel(BlockRegistration.PASTEL_STOOL);
-        blockitemFromModel(BlockRegistration.PASTEL_LIGHT);
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(BlockRegistration.PASTEL_LIGHT.get()).getPath(),
+                new ResourceLocation(Cluttered.MODID, "block/pastel_light_wall"));
         blockitemFromModel(BlockRegistration.PASTEL_BED);
         blockitemFromModel(BlockRegistration.PASTEL_TABLE);
         blockitemFromModel(BlockRegistration.PASTEL_WARDROBE);
@@ -640,6 +640,10 @@ public class ClutteredItemModels extends ItemModelProvider {
         blockitemFromModel(BlockRegistration.STEAMPUNK_LAMP);
         blockitemFromModel(BlockRegistration.TARRY_TOWN_STOVE);
         blockitemFromModel(BlockRegistration.WEDDING_ARCH);
+        blockitemFromModel(BlockRegistration.SEAWEED_PLANTER);
+        simplePaneBlockItem(BlockRegistration.FLOWERING_CARPET_WILLOW);
+        simplePaneBlockItem(BlockRegistration.FLOWERING_CARPET_CRABAPPLE);
+        simplePaneBlockItem(BlockRegistration.FLOWERING_CARPET_POPLAR);
 
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(BlockRegistration.LUNAR_OBSERVATORY_JARS.get()).getPath(),
                 new ResourceLocation(Cluttered.MODID, "block/lunar_observatory_jars_1"));

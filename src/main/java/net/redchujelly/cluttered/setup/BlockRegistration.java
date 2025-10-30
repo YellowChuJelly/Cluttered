@@ -1265,8 +1265,17 @@ public class BlockRegistration {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> EYE_BLOCK = registerBlock("eye_block",
             () -> new EyeBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.FROGSPAWN)));
+    public static final RegistryObject<Block> PUMPKIN_BOOKSHELF = registerBlock("pumpkin_bookshelf",
+            () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.ORANGE)));
     public static final RegistryObject<Block> DYNASTY_DOOR = registerFuelBlock("dynasty_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.CYAN), BlockSetType.OAK), 300);
+
+    public static final RegistryObject<Block> FLOWERING_CARPET_CRABAPPLE = registerBlock("flower_carpet_crabapple",
+            () -> new FlowerCarpetBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN).mapColor(DyeColor.GREEN)));
+    public static final RegistryObject<Block> FLOWERING_CARPET_WILLOW = registerBlock("flower_carpet_willow",
+            () -> new FlowerCarpetBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN).mapColor(DyeColor.GREEN)));
+    public static final RegistryObject<Block> FLOWERING_CARPET_POPLAR = registerBlock("flower_carpet_poplar",
+            () -> new FlowerCarpetBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN).mapColor(DyeColor.GREEN)));
 
     public static final RegistryObject<Block> ALABASTER_WINDOW_DIVIDED = registerBlock("alabaster_window_divided",
             () -> new CustomGlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
@@ -1557,6 +1566,8 @@ public class BlockRegistration {
             () -> new PineappleBlock(BlockBehaviour.Properties.copy(Blocks.MELON).strength(0.3f)));
     public static final RegistryObject<Block> HONEYCOMB_LAMP = registerBlock("honeycomb_lamp",
             () -> new HoneycombLampBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.HONEY_BLOCK)));
+    public static final RegistryObject<Block> SEAWEED_PLANTER = registerBlock("seaweed_planter",
+            () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).sound(SoundType.DECORATED_POT).mapColor(DyeColor.GREEN)));
     //TODO remove maybe?
     public static final RegistryObject<Block> MUSHROOM_FLAT = registerBlock("mushroom_flat",
             () -> new MediumFurnitureBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
@@ -1804,9 +1815,7 @@ public class BlockRegistration {
     public static final RegistryObject<Block> HOPPIN_PARK_LANTERN = registerBlock("hoppin_park_lantern",
             () -> new HoppinParkLantern(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
     public static final RegistryObject<Block> SEA_GEM_LANTERN = registerBlock("sea_gem_lantern",
-            () -> new SmallLampBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final RegistryObject<Block> SEA_GEM_LANTERN_CEILING = registerBlock("sea_gem_lantern_ceiling",
-            () -> new SmallLampBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+            () -> new SeaGemLanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN)));
     public static final RegistryObject<Block> HANGING_SHELVES_PLANTS = registerBlock("hanging_shelves_plants",
             () -> new HangingShelvesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(0.4f)));
     public static final RegistryObject<Block> HANGING_SHELVES_POTTERY = registerBlock("hanging_shelves_pottery",
@@ -1971,6 +1980,10 @@ public class BlockRegistration {
             () -> new DarkwoodBedBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> DARKWOOD_BED_SOUTHERN_FLAIR = registerBlock("darkwood_bed_southern_flair",
             () -> new DarkwoodBedBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(DyeColor.BROWN).noOcclusion()));
+
+    //WOODEN BLOCK BOOKSHELF
+    public static final RegistryObject<Block> WOODEN_BLOCK_BOOKSHELF_PASTEL = registerBlock("wooden_block_bookshelf_pastel",
+            () -> new WoodenBlockBookshelfBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(DyeColor.PINK).noOcclusion()));
 
     //PASTEL SET
     public static final RegistryObject<Block> PASTEL_BED = registerBlock("pastel_bed",
