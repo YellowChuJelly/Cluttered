@@ -190,6 +190,8 @@ public class ClutteredFurnitureUpdater {
         UPDATED_BLOCK_MAP.put("luphie_green_checkered_block", BlockRegistration.CHECKERED_GREEN_WALLPAPER.get());
         UPDATED_BLOCK_MAP.put("luphie_blue_checkered_block", BlockRegistration.CHECKERED_GREEN_WALLPAPER.get());
         UPDATED_BLOCK_MAP.put("luphie_purple_checkered_block", BlockRegistration.CHECKERED_PINK_WALLPAPER.get());
+        UPDATED_BLOCK_MAP.put("luphie_jack_o_lantern_bookshelf", BlockRegistration.PUMPKIN_BOOKSHELF.get());
+        UPDATED_BLOCK_MAP.put("luphie_flowering_carpet", BlockRegistration.FLOWERING_CARPET_POPLAR.get());
 
         //KITCHEN STUFF
         UPDATED_BLOCK_MAP.put("luphie_white_counter", BlockRegistration.KITCHEN_SET_WHITE_COUNTER.get());
@@ -457,6 +459,8 @@ public class ClutteredFurnitureUpdater {
         UPDATED_BLOCK_MAP.put("green_sand_seal_plush", BlockRegistration.SAND_SEAL_PLUSH_GREEN.get());
         UPDATED_BLOCK_MAP.put("tarrey_town_stove", BlockRegistration.TARRY_TOWN_STOVE.get());
         UPDATED_BLOCK_MAP.put("cluttered_tarrey_town_wood_stove", BlockRegistration.TARRY_TOWN_STOVE.get());
+        UPDATED_BLOCK_MAP.put("seaweed_plantern", BlockRegistration.SEAWEED_PLANTER.get());
+        UPDATED_BLOCK_MAP.put("luphie_pastel_block_bookshelf", BlockRegistration.WOODEN_BLOCK_BOOKSHELF_PASTEL.get());
 
         //MULTIBLOCK? MAY OR MAY NOT WORK...
         UPDATED_BLOCK_MAP.put("luphie_card_index", BlockRegistration.CARD_INDEX.get());
