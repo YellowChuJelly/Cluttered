@@ -1,6 +1,7 @@
 package net.redchujelly.cluttered.datagen.loot;
 
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
@@ -9,7 +10,7 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
 import net.redchujelly.cluttered.setup.ItemRegistration;
@@ -18,8 +19,8 @@ import java.util.Set;
 
 //All of this code is from the Kaupenjoe 1.20.1 datagen tutorial.
 public class ClutteredBlockLootTables extends BlockLootSubProvider {
-    public ClutteredBlockLootTables() {
-        super(Set.of(), FeatureFlags.REGISTRY.allFlags());
+    public ClutteredBlockLootTables(HolderLookup.Provider registries) {
+        super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
     }
 
     @Override
@@ -1276,6 +1277,6 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return BlockRegistration.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+        return BlockRegistration.BLOCKS.getEntries().stream().map(DeferredHolder::get).map(block -> (Block) block)::iterator;
     }
 }

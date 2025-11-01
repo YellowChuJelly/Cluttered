@@ -2,7 +2,6 @@ package net.redchujelly.cluttered.block.custom.furniture;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockGetter;
@@ -34,15 +33,12 @@ public class JamJarsBlock extends SmallFurnitureBlock{
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        if (pPlayer.getItemInHand(pHand).isEmpty()){
-            if (!pLevel.isClientSide){
-                boolean stacked = pState.getValue(STACKED);
-                pLevel.setBlock(pPos, pState.setValue(STACKED, !stacked), 2);
-            }
-            return InteractionResult.SUCCESS;
-        }
-        return InteractionResult.PASS;
+    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
+		if (!pLevel.isClientSide){
+			boolean stacked = pState.getValue(STACKED);
+			pLevel.setBlock(pPos, pState.setValue(STACKED, !stacked), 2);
+		}
+		return InteractionResult.SUCCESS;
     }
 
     @Override

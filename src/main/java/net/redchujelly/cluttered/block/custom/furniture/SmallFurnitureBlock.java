@@ -56,8 +56,8 @@ public class SmallFurnitureBlock extends CustomHorizontalBlock implements Simple
         pBuilder.add(FACING).add(WATERLOGGED);
     }
 
-    @Override
-    public boolean isPathfindable(BlockState pState, BlockGetter pLevel, BlockPos pPos, PathComputationType pType) {
-        return false;
-    }
+	@Override
+	protected boolean isPathfindable(BlockState state, PathComputationType pathComputationType) {
+		return false;
+	}
 }

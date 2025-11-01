@@ -1,13 +1,13 @@
 package net.redchujelly.cluttered.datagen;
 
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.common.data.BlockTagsProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.ForgeRegistries;
+import net.neoforged.neoforge.common.data.BlockTagsProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.setup.BlockRegistration;
 import org.jetbrains.annotations.Nullable;
@@ -971,54 +971,54 @@ public class ClutteredBlockTags extends BlockTagsProvider {
 
     public void tagNewWoodset(String woodType){
 
-        Block log = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_log"));
-        Block wood = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wood"));
+        Block log = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_log"));
+        Block wood = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_wood"));
         Block strippedLog = null;
         Block strippedWood = null;
-        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_log"))) {
-            strippedLog = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_log"));
-            strippedWood = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_wood"));
+        if (BuiltInRegistries.BLOCK.containsKey(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "stripped_" + woodType + "_log"))) {
+            strippedLog = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "stripped_" + woodType + "_log"));
+            strippedWood = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "stripped_" + woodType + "_wood"));
         }
-        Block planks = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_planks"));
-        Block stairs = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_stairs"));
-        Block slab = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_slab"));
-        Block fence = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_fence"));
-        Block fenceGate = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_fence_gate"));
-        Block button = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_button"));
-        Block pressurePlate = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_pressure_plate"));
-        Block floorSign = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_sign"));
-        Block wallSign = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wall_sign"));
-        Block hangingSign = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_hanging_sign"));
-        Block hangingWallSign = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wall_hanging_sign"));
+        Block planks = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_planks"));
+        Block stairs = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_stairs"));
+        Block slab = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_slab"));
+        Block fence = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_fence"));
+        Block fenceGate = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_fence_gate"));
+        Block button = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_button"));
+        Block pressurePlate = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_pressure_plate"));
+        Block floorSign = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_sign"));
+        Block wallSign = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_wall_sign"));
+        Block hangingSign = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_hanging_sign"));
+        Block hangingWallSign = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_wall_hanging_sign"));
         Block door = null;
-        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_door"))) {
-            door = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_door"));
+        if (BuiltInRegistries.BLOCK.containsKey(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_door"))) {
+            door = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_door"));
         }
         Block trapdoor = null;
-        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_trapdoor"))) {
-            trapdoor = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_trapdoor"));
+        if (BuiltInRegistries.BLOCK.containsKey(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_trapdoor"))) {
+            trapdoor = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_trapdoor"));
         }
         Block window = null;
         Block pane = null;
-        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_window"))) {
-            window = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_window"));
-            pane = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_window_pane"));
+        if (BuiltInRegistries.BLOCK.containsKey(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_window"))) {
+            window = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_window"));
+            pane = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_window_pane"));
         }
         Block bookshelf = null;
-        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_bookshelf"))) {
-            bookshelf = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_bookshelf"));
+        if (BuiltInRegistries.BLOCK.containsKey(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_bookshelf"))) {
+            bookshelf = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_bookshelf"));
         }
         Block wainscoting = null;
-        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wainscoting"))) {
-            wainscoting = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wainscoting"));
+        if (BuiltInRegistries.BLOCK.containsKey(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_wainscoting"))) {
+            wainscoting = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_wainscoting"));
         }
         Block leaves = null;
-        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_leaves"))) {
-            leaves = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_leaves"));
+        if (BuiltInRegistries.BLOCK.containsKey(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_leaves"))) {
+            leaves = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_leaves"));
         }
         Block sapling = null;
-        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_sapling"))) {
-            sapling = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_sapling"));
+        if (BuiltInRegistries.BLOCK.containsKey(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_sapling"))) {
+            sapling = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_sapling"));
         }
 
         tag(BlockTags.LOGS)

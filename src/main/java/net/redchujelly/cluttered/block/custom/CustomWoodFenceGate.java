@@ -14,8 +14,8 @@ public class CustomWoodFenceGate extends FenceGateBlock {
         super(props, openSound, closeSound);
     }
 
-    public CustomWoodFenceGate(BlockBehaviour.Properties pProperties, WoodType pType){
-        super(pProperties, pType);
+    public CustomWoodFenceGate(WoodType pType, BlockBehaviour.Properties pProperties){
+        super(pType, pProperties);
     }
 
     @Override

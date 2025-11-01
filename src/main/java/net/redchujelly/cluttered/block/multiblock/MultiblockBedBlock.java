@@ -44,10 +44,10 @@ public class MultiblockBedBlock extends MultiblockPlacer{
         this.registerDefaultState(this.defaultBlockState().setValue(OCCUPIED, false));
     }
 
-    @Override
-    public boolean isBed(BlockState state, BlockGetter level, BlockPos pos, @Nullable Entity player) {
-        return true;
-    }
+	@Override
+	public boolean isBed(BlockState state, BlockGetter level, BlockPos pos, LivingEntity sleeper) {
+		return true;
+	}
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
@@ -87,7 +87,7 @@ public class MultiblockBedBlock extends MultiblockPlacer{
         level.setBlock(pos, state.setValue(OCCUPIED, occupied), 2);
     }
 
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         if (pLevel.isClientSide) {
             return InteractionResult.CONSUME;
         } else {

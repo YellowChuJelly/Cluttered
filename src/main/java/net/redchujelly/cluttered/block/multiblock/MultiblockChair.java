@@ -37,8 +37,8 @@ public class MultiblockChair extends MultiblockPlacer{
         this.registerDefaultState(this.defaultBlockState().setValue(OCCUPIED, false));
     }
 
-    @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+	@Override
+    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         if (!pState.getValue(OCCUPIED) && !pPlayer.isShiftKeyDown()){
             if (!pLevel.isClientSide) {
                 pLevel.setBlock(pPos, pState.setValue(OCCUPIED, true), 2);

@@ -38,7 +38,7 @@ public class ArmchairBlock extends MultiblockChair{
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         if (!pState.getValue(OCCUPIED) && !pPlayer.isShiftKeyDown()){
             if (!pLevel.isClientSide) {
                 BlockPos otherHalf = getOtherHalfPos(pState, pPos);

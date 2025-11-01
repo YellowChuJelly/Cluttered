@@ -91,10 +91,10 @@ public class WillowVinesBlock extends Block implements BonemealableBlock {
         pBuilder.add(GRADIENT).add(BOTTOM);
     }
 
-    @Override
-    public boolean isValidBonemealTarget(LevelReader pLevel, BlockPos pPos, BlockState pState, boolean pIsClient) {
-        return true;
-    }
+	@Override
+	public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state) {
+		return true;
+	}
 
     @Override
     public boolean isBonemealSuccess(Level pLevel, RandomSource pRandom, BlockPos pPos, BlockState pState) {

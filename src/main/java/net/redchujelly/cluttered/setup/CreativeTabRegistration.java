@@ -4,9 +4,9 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
 import net.redchujelly.cluttered.Cluttered;
 
 public class CreativeTabRegistration {
@@ -15,7 +15,7 @@ public class CreativeTabRegistration {
 
     //FURNITURE
 
-    public static final RegistryObject<CreativeModeTab> CLUTTERED_TAB = CREATIVE_MODE_TABS.register("cluttered_block_tab",
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CLUTTERED_TAB = CREATIVE_MODE_TABS.register("cluttered_block_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(BlockRegistration.WILLOW_BOOKSHELF_BLACK_CAT.get()))
                     .title(Component.translatable("creativetab.cluttered_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
@@ -672,7 +672,7 @@ public class CreativeTabRegistration {
                     })
                     .build());
 
-    public static final RegistryObject<CreativeModeTab> CLUTTERED_FURNITURE_TAB = CREATIVE_MODE_TABS.register("cluttered_furniture_tab",
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CLUTTERED_FURNITURE_TAB = CREATIVE_MODE_TABS.register("cluttered_furniture_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(BlockRegistration.ENDTABLE_DECOR.get()))
                     .title(Component.translatable("creativetab.cluttered_furniture_tab"))
                     .displayItems((itemDisplayParameters, output) -> {

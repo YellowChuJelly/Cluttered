@@ -1,6 +1,6 @@
 package net.redchujelly.cluttered.worldgen.tree.custom;
 
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.function.BiConsumer;
 
 public class RedMushroomTrunkPlacer extends TrunkPlacer {
-    public static final Codec<RedMushroomTrunkPlacer> CODEC = RecordCodecBuilder.create(redMushroomTrunkPlacerInstance ->
+    public static final MapCodec<RedMushroomTrunkPlacer> CODEC = RecordCodecBuilder.mapCodec(redMushroomTrunkPlacerInstance ->
             trunkPlacerParts(redMushroomTrunkPlacerInstance).apply(redMushroomTrunkPlacerInstance, RedMushroomTrunkPlacer::new));
 
     public RedMushroomTrunkPlacer(int pBaseHeight, int pHeightRandA, int pHeightRandB) {

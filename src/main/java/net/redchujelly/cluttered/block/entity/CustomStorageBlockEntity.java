@@ -1,6 +1,7 @@
 package net.redchujelly.cluttered.block.entity;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -19,7 +20,6 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.entity.ContainerOpenersCounter;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.redchujelly.cluttered.block.custom.furniture.storage.CardboardBoxBlock;
 
 public class CustomStorageBlockEntity extends RandomizableContainerBlockEntity {
     private NonNullList<ItemStack> items;
@@ -90,22 +90,22 @@ public class CustomStorageBlockEntity extends RandomizableContainerBlockEntity {
         this.items = pItems;
     }
 
-    protected void saveAdditional(CompoundTag pTag) {
-        super.saveAdditional(pTag);
-        if (!this.trySaveLootTable(pTag)) {
-            ContainerHelper.saveAllItems(pTag, this.items);
-        }
+	@Override
+	protected void saveAdditional(CompoundTag tag, HolderLookup.Provider registries) {
+		super.saveAdditional(tag, registries);
+		if (!this.trySaveLootTable(tag)) {
+			ContainerHelper.saveAllItems(tag, this.items, registries);
+		}
+	}
 
-    }
-
-    public void load(CompoundTag pTag) {
-        super.load(pTag);
-        this.items = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
-        if (!this.tryLoadLootTable(pTag)) {
-            ContainerHelper.loadAllItems(pTag, this.items);
-        }
-
-    }
+	@Override
+	protected void loadAdditional(CompoundTag tag, HolderLookup.Provider registries) {
+		super.loadAdditional(tag, registries);
+		this.items = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
+		if (!this.tryLoadLootTable(tag)) {
+			ContainerHelper.loadAllItems(tag, this.items, registries);
+		}
+	}
 
     public void startOpen(Player pPlayer) {
         if (!this.remove && !pPlayer.isSpectator()) {

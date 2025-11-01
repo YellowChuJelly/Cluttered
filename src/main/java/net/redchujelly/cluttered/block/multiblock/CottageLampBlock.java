@@ -55,7 +55,7 @@ public class CottageLampBlock extends MultiblockPlacer{
     }
 
     //@Override
-    //public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    //protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
     //    if (!pLevel.isClientSide) {
     //        boolean lit = !pState.getValue(LIT);
     //        setOnAndOff(pLevel, pPos, pState, lit);

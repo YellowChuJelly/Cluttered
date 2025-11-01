@@ -71,7 +71,7 @@ public class SmallLampBlock extends HorizontalDirectionalBlock implements Simple
     }
 
     //@Override
-    //public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    //protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
     //    if (!pLevel.isClientSide){
     //        boolean lit = pState.getValue(LIT);
     //        pLevel.setBlock(pPos, pState.setValue(LIT, !lit), 2);

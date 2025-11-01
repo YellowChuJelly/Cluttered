@@ -2,37 +2,28 @@ package net.redchujelly.cluttered;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.Sheets;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
+import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
-import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
-import net.minecraftforge.eventbus.api.EventPriority;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModLoadingContext;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.MissingMappingsEvent;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.common.NeoForge;
 import net.redchujelly.cluttered.client.ChairEntityRenderer;
 import net.redchujelly.cluttered.config.ClutteredCommonConfigs;
 import net.redchujelly.cluttered.datagen.DataGeneration;
 import net.redchujelly.cluttered.setup.*;
-import net.redchujelly.cluttered.util.ClutteredFurnitureUpdater;
 import net.redchujelly.cluttered.util.ClutteredWoodTypes;
 import org.slf4j.Logger;
-
-import java.util.List;
 
 @Mod(Cluttered.MODID)
 public class Cluttered {
@@ -41,9 +32,7 @@ public class Cluttered {
 
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public Cluttered() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
+    public Cluttered(IEventBus modEventBus, ModContainer modContainer) {
         SoundRegistration.register(modEventBus);
         CreativeTabRegistration.register(modEventBus);
         ItemRegistration.register(modEventBus);
@@ -58,14 +47,12 @@ public class Cluttered {
 
         ClutteredLootModifiers.register(modEventBus);
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ClutteredCommonConfigs.SPEC, "cluttered-common.toml");
+        modContainer.registerConfig(ModConfig.Type.COMMON, ClutteredCommonConfigs.SPEC, "cluttered-common.toml");
 
-        modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(DataGeneration::generate);
 
 
-        MinecraftForge.EVENT_BUS.register(this);
-        modEventBus.addListener(this::addCreative);
+        NeoForge.EVENT_BUS.addListener(this::commonSetup);
 
     }
 
@@ -101,76 +88,74 @@ public class Cluttered {
         });
     }
 
-
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
-    }
-
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
-
-    }
-
     //Replaces blocks and items from the outdated version of the mod
-    @SubscribeEvent(priority = EventPriority.LOW)
-    public void missingMappingsHandler(MissingMappingsEvent event){
-        if (!ClutteredCommonConfigs.REPLACE_OLD_CLUTTERED_FURNITURE.get()){
-            return;
-        }
-        List<MissingMappingsEvent.Mapping<Block>> missingBlocks = event.getAllMappings(ForgeRegistries.Keys.BLOCKS);
-        List<MissingMappingsEvent.Mapping<Item>> missingItems = event.getAllMappings(ForgeRegistries.Keys.ITEMS);
-        for (MissingMappingsEvent.Mapping<Block> missing : missingBlocks){
-            String missingId = missing.getKey().toString();
-            if (missingId.startsWith("luphieclutteredmod:")){
-                String name = missingId.replace("luphieclutteredmod:", "");
-                Block replacement = ClutteredFurnitureUpdater.getUpdatedName(name);
-                if (replacement == null){
-                    missing.ignore();
-                }
-                else {
-                    missing.remap(replacement);
-                    String newId = replacement.getDescriptionId().replace("block.cluttered.", "cluttered:");
-                    LOGGER.debug("remapped {} to {}", missingId, newId);
-                }
-            }
-        }
-        for (MissingMappingsEvent.Mapping<Item> missing : missingItems){
-            String missingId = missing.getKey().toString();
-            if (missingId.startsWith("luphieclutteredmod:")){
-                String name = missingId.replace("luphieclutteredmod:", "");
-                Block replacement = ClutteredFurnitureUpdater.getUpdatedName(name);
-                if (replacement == null){
-                    missing.ignore();
-                }
-                else {
-                    String newId = replacement.getDescriptionId().replace("block.cluttered.", "cluttered:");
-                    LOGGER.debug("remapped {} to {}", missingId, newId);
-                }
-            }
-        }
-    }
+//    @SubscribeEvent(priority = EventPriority.LOW)
+//    public void missingMappingsHandler(MissingMappingsEvent event){
+//        if (!ClutteredCommonConfigs.REPLACE_OLD_CLUTTERED_FURNITURE.get()){
+//            return;
+//        }
+//        List<MissingMappingsEvent.Mapping<Block>> missingBlocks = event.getAllMappings(ForgeRegistries.Keys.BLOCKS);
+//        List<MissingMappingsEvent.Mapping<Item>> missingItems = event.getAllMappings(ForgeRegistries.Keys.ITEMS);
+//        for (MissingMappingsEvent.Mapping<Block> missing : missingBlocks){
+//            String missingId = missing.getKey().toString();
+//            if (missingId.startsWith("luphieclutteredmod:")){
+//                String name = missingId.replace("luphieclutteredmod:", "");
+//                Block replacement = ClutteredFurnitureUpdater.getUpdatedName(name);
+//                if (replacement == null){
+//                    missing.ignore();
+//                }
+//                else {
+//                    missing.remap(replacement);
+//                    String newId = replacement.getDescriptionId().replace("block.cluttered.", "cluttered:");
+//                    LOGGER.debug("remapped {} to {}", missingId, newId);
+//                }
+//            }
+//        }
+//        for (MissingMappingsEvent.Mapping<Item> missing : missingItems){
+//            String missingId = missing.getKey().toString();
+//            if (missingId.startsWith("luphieclutteredmod:")){
+//                String name = missingId.replace("luphieclutteredmod:", "");
+//                Block replacement = ClutteredFurnitureUpdater.getUpdatedName(name);
+//                if (replacement == null){
+//                    missing.ignore();
+//                }
+//                else {
+//                    String newId = replacement.getDescriptionId().replace("block.cluttered.", "cluttered:");
+//                    LOGGER.debug("remapped {} to {}", missingId, newId);
+//                }
+//            }
+//        }
+//    }
 
+	@EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.GAME, value = Dist.CLIENT)
+	public static class ClientGameEvents {
 
-    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+		@SubscribeEvent
+		public static void onClientSetup(FMLClientSetupEvent event) {
+			event.enqueueWork(() -> {
+				Sheets.addWoodType(ClutteredWoodTypes.WILLOW);
+				Sheets.addWoodType(ClutteredWoodTypes.FLOWERING_WILLOW);
+				Sheets.addWoodType(ClutteredWoodTypes.POPLAR);
+				Sheets.addWoodType(ClutteredWoodTypes.FLOWERING_POPLAR);
+				Sheets.addWoodType(ClutteredWoodTypes.CRABAPPLE);
+				Sheets.addWoodType(ClutteredWoodTypes.FLOWERING_CRABAPPLE);
+				Sheets.addWoodType(ClutteredWoodTypes.SYCAMORE);
+				Sheets.addWoodType(ClutteredWoodTypes.MAPLE);
+				Sheets.addWoodType(ClutteredWoodTypes.RED_MUSHROOM);
+				Sheets.addWoodType(ClutteredWoodTypes.BLUE_MUSHROOM);
+			});
+		}
+	}
+
+    @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
-
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-            Sheets.addWoodType(ClutteredWoodTypes.WILLOW);
-            Sheets.addWoodType(ClutteredWoodTypes.FLOWERING_WILLOW);
-            Sheets.addWoodType(ClutteredWoodTypes.POPLAR);
-            Sheets.addWoodType(ClutteredWoodTypes.FLOWERING_POPLAR);
-            Sheets.addWoodType(ClutteredWoodTypes.CRABAPPLE);
-            Sheets.addWoodType(ClutteredWoodTypes.FLOWERING_CRABAPPLE);
-            Sheets.addWoodType(ClutteredWoodTypes.SYCAMORE);
-            Sheets.addWoodType(ClutteredWoodTypes.MAPLE);
-            Sheets.addWoodType(ClutteredWoodTypes.RED_MUSHROOM);
-            Sheets.addWoodType(ClutteredWoodTypes.BLUE_MUSHROOM);
-        }
 
         @SubscribeEvent
         public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event){
             event.registerEntityRenderer(EntityTypeRegistration.CHAIR_ENTITY.get(), ChairEntityRenderer::new);
-        }
+
+			event.registerBlockEntityRenderer(TileEntityRegistration.CLUTTERED_SIGN_BE.get(), SignRenderer::new);
+			event.registerBlockEntityRenderer(TileEntityRegistration.CLUTTERED_HANGING_SIGN_BE.get(), HangingSignRenderer::new);
+		}
     }
 }

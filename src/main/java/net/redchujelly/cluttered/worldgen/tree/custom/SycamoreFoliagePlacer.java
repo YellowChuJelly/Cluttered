@@ -1,6 +1,7 @@
 package net.redchujelly.cluttered.worldgen.tree.custom;
 
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
@@ -12,7 +13,7 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacerTy
 import net.redchujelly.cluttered.setup.FoliagePlacerTypeRegistration;
 
 public class SycamoreFoliagePlacer extends FoliagePlacer {
-    public static final Codec<SycamoreFoliagePlacer> CODEC = RecordCodecBuilder.create(sycamoreFoliagePlacerInstance
+    public static final MapCodec<SycamoreFoliagePlacer> CODEC = RecordCodecBuilder.mapCodec(sycamoreFoliagePlacerInstance
             -> foliagePlacerParts(sycamoreFoliagePlacerInstance).and(Codec.intRange(0, 16).fieldOf("height").forGetter(fp -> fp.height))
             .apply(sycamoreFoliagePlacerInstance, SycamoreFoliagePlacer::new));
 

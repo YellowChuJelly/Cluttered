@@ -1,6 +1,6 @@
 package net.redchujelly.cluttered.worldgen.tree.custom;
 
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -20,7 +20,7 @@ import java.util.function.BiConsumer;
 import java.util.function.Function;
 
 public class SycamoreTrunkPlacer extends TrunkPlacer {
-    public static final Codec<SycamoreTrunkPlacer> CODEC = RecordCodecBuilder.create(crabappleTrunkPlacerInstance ->
+    public static final MapCodec<SycamoreTrunkPlacer> CODEC = RecordCodecBuilder.mapCodec(crabappleTrunkPlacerInstance ->
             trunkPlacerParts(crabappleTrunkPlacerInstance).apply(crabappleTrunkPlacerInstance, SycamoreTrunkPlacer::new));
 
     public SycamoreTrunkPlacer(int pBaseHeight, int pHeightRandA, int pHeightRandB) {

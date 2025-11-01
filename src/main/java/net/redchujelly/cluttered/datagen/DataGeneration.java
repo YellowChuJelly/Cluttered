@@ -3,7 +3,7 @@ package net.redchujelly.cluttered.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
-import net.minecraftforge.data.event.GatherDataEvent;
+import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.redchujelly.cluttered.datagen.loot.ClutteredGlobalLootModifiers;
 
 import java.util.concurrent.CompletableFuture;
@@ -21,10 +21,10 @@ public class DataGeneration {
         ClutteredBlockTags blockTags = new ClutteredBlockTags(packOutput, lookupProvider, event.getExistingFileHelper());
         generator.addProvider(event.includeServer(), blockTags);
         generator.addProvider(event.includeServer(), new ClutteredItemTags(packOutput, lookupProvider, blockTags, event.getExistingFileHelper()));
-        generator.addProvider(event.includeServer(), new ClutteredRecipes(packOutput));
-        generator.addProvider(event.includeServer(), ClutteredLootTableProvider.create(packOutput));
+        generator.addProvider(event.includeServer(), new ClutteredRecipes(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), ClutteredLootTableProvider.create(packOutput, lookupProvider));
 
         generator.addProvider(event.includeServer(), new ClutteredWorldgen(packOutput, lookupProvider));
-        generator.addProvider(event.includeServer(), new ClutteredGlobalLootModifiers(packOutput));
+        generator.addProvider(event.includeServer(), new ClutteredGlobalLootModifiers(packOutput, lookupProvider));
     }
 }

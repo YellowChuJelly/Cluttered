@@ -444,9 +444,9 @@ public class HandDrillItem extends Item {
         return nextState;
     }
 
-    @Override
-    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("cluttered.hand_drill.tooltip"));
-        super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
-    }
+	@Override
+	public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+		tooltipComponents.add(Component.translatable("cluttered.hand_drill.tooltip"));
+		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+	}
 }

@@ -8,8 +8,8 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.redchujelly.cluttered.block.entity.ClutteredHangingSignBlockEntity;
 
 public class CustomHangingSignBlock extends CeilingHangingSignBlock {
-    public CustomHangingSignBlock(Properties pProperties, WoodType pType) {
-        super(pProperties, pType);
+    public CustomHangingSignBlock(WoodType pType, Properties pProperties) {
+        super(pType, pProperties);
     }
 
     @Override

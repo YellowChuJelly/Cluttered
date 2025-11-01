@@ -8,8 +8,8 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.redchujelly.cluttered.block.entity.ClutteredSignBlockEntity;
 
 public class CustomWallSignBlock extends WallSignBlock {
-    public CustomWallSignBlock(Properties pProperties, WoodType pType) {
-        super(pProperties, pType);
+    public CustomWallSignBlock(WoodType pType, Properties pProperties) {
+        super(pType, pProperties);
     }
 
     @Override

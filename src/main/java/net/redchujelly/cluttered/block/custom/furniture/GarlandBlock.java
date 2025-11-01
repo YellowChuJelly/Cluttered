@@ -6,8 +6,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -23,7 +24,6 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.redchujelly.cluttered.setup.ItemRegistration;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Map;
@@ -50,20 +50,20 @@ public class GarlandBlock extends SmallFurnitureBlock{
         return this.defaultBlockState().setValue(BlockStateProperties.WATERLOGGED, isWaterlogged).setValue(FACING, pContext.getHorizontalDirection());
     }
 
-    @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        if (pPlayer.getItemInHand(pHand).is(ItemRegistration.HAND_DRILL.get()) && !pPlayer.isCrouching()){
-            if (!pLevel.isClientSide){
-                GarlandOffset oldOffset = pState.getValue(GarlandBlock.OFFSET);
-                GarlandOffset newOffset = OFFSET_MAP.get(oldOffset);
+	@Override
+	protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+		if (stack.is(ItemRegistration.HAND_DRILL.get()) && !player.isCrouching()){
+			if (!level.isClientSide){
+				GarlandOffset oldOffset = state.getValue(GarlandBlock.OFFSET);
+				GarlandOffset newOffset = OFFSET_MAP.get(oldOffset);
 
-                pLevel.setBlock(pPos, pState.setValue(OFFSET, newOffset), 2);
-                pLevel.playSound(null, pPos, SoundEvents.SHEEP_SHEAR, SoundSource.BLOCKS);
-            }
-            return InteractionResult.SUCCESS;
-        }
-        return InteractionResult.PASS;
-    }
+				level.setBlock(pos, state.setValue(OFFSET, newOffset), 2);
+				level.playSound(null, pos, SoundEvents.SHEEP_SHEAR, SoundSource.BLOCKS);
+			}
+			return ItemInteractionResult.SUCCESS;
+		}
+		return super.useItemOn(stack, state, level, pos, player, hand, hitResult);
+	}
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
@@ -88,9 +88,9 @@ public class GarlandBlock extends SmallFurnitureBlock{
             GarlandOffset.LEFT, GarlandOffset.NONE);
     }
 
-    @Override
-    public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-        pTooltip.add(Component.translatable("cluttered.garland.tooltip"));
-        super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
-    }
+	@Override
+	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+		tooltipComponents.add(Component.translatable("cluttered.garland.tooltip"));
+		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+	}
 }

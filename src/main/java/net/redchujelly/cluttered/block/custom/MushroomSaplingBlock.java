@@ -8,7 +8,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SaplingBlock;
-import net.minecraft.world.level.block.grower.AbstractTreeGrower;
+import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -17,7 +17,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class MushroomSaplingBlock extends SaplingBlock {
     protected static final VoxelShape SHAPE = Block.box(5.0D, 0.0D, 5.0D, 11.0D, 6.0D, 11.0D);
 
-    public MushroomSaplingBlock(AbstractTreeGrower pTreeGrower, Properties pProperties) {
+    public MushroomSaplingBlock(TreeGrower pTreeGrower, Properties pProperties) {
         super(pTreeGrower, pProperties);
     }
 
@@ -71,7 +71,7 @@ public class MushroomSaplingBlock extends SaplingBlock {
         if (blockstate.is(BlockTags.MUSHROOM_GROW_BLOCK)) {
             return true;
         } else {
-            return pLevel.getRawBrightness(pPos, 0) < 13 && blockstate.canSustainPlant(pLevel, blockpos, net.minecraft.core.Direction.UP, this);
+            return pLevel.getRawBrightness(pPos, 0) < 13 && blockstate.canSustainPlant(pLevel, blockpos, net.minecraft.core.Direction.UP, pLevel.getBlockState(pPos)).isTrue();
         }
     }
 }

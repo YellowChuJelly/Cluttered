@@ -1,18 +1,19 @@
 package net.redchujelly.cluttered.datagen;
 
 import net.minecraft.core.Direction;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraftforge.client.model.generators.BlockModelBuilder;
-import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.client.model.generators.ConfiguredModel;
-import net.minecraftforge.client.model.generators.ModelFile;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
+import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
+import net.neoforged.neoforge.client.model.generators.ModelFile;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.block.custom.*;
 import net.redchujelly.cluttered.block.custom.food.BerryCakeBlock;
@@ -69,7 +70,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         simpleBlockWithItem(BlockRegistration.WILLOW_LEAVES.get(), models().cubeAll("willow_leaves", modLoc("block/willow_leaves")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.WILLOW_SAPLING.get(), models().cross("willow_sapling", modLoc("block/willow_sapling")).renderType("cutout"));
-        simpleBlockWithItem(BlockRegistration.POTTED_WILLOW_SAPLING.get(), models().singleTexture("potted_willow_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+        simpleBlockWithItem(BlockRegistration.POTTED_WILLOW_SAPLING.get(), models().singleTexture("potted_willow_sapling", ResourceLocation.withDefaultNamespace("flower_pot_cross"), "plant",
                 blockTexture(BlockRegistration.WILLOW_SAPLING.get())).renderType("cutout").ao(false));
 
         this.getVariantBuilder(BlockRegistration.WILLOW_VINES.get())
@@ -153,7 +154,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
         simpleBlockWithItem(BlockRegistration.POPLAR_LEAVES.get(), models().cubeAll("poplar_leaves", modLoc("block/poplar_leaves")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.POPLAR_SAPLING.get(), models().cross("poplar_sapling", modLoc("block/poplar_sapling")).renderType("cutout"));
-        simpleBlockWithItem(BlockRegistration.POTTED_POPLAR_SAPLING.get(), models().singleTexture("potted_poplar_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+        simpleBlockWithItem(BlockRegistration.POTTED_POPLAR_SAPLING.get(), models().singleTexture("potted_poplar_sapling", ResourceLocation.withDefaultNamespace("flower_pot_cross"), "plant",
                 blockTexture(BlockRegistration.POPLAR_SAPLING.get())).renderType("cutout").ao(false));
 
 
@@ -229,7 +230,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         columnBlockWithItem(BlockRegistration.CRABAPPLE_BOOKSHELF, BlockRegistration.CRABAPPLE_PLANKS);
         simpleBlockWithItem(BlockRegistration.CRABAPPLE_LEAVES.get(), models().cubeAll("crabapple_leaves", modLoc("block/crabapple_leaves")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.CRABAPPLE_SAPLING.get(), models().cross("crabapple_sapling", modLoc("block/crabapple_sapling")).renderType("cutout"));
-        simpleBlockWithItem(BlockRegistration.POTTED_CRABAPPLE_SAPLING.get(), models().singleTexture("potted_crabapple_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+        simpleBlockWithItem(BlockRegistration.POTTED_CRABAPPLE_SAPLING.get(), models().singleTexture("potted_crabapple_sapling", ResourceLocation.withDefaultNamespace("flower_pot_cross"), "plant",
                 blockTexture(BlockRegistration.CRABAPPLE_SAPLING.get())).renderType("cutout").ao(false));
 
         signBlock(((StandingSignBlock) BlockRegistration.CRABAPPLE_SIGN.get()), ((WallSignBlock) BlockRegistration.CRABAPPLE_WALL_SIGN.get()),
@@ -307,7 +308,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         columnBlockWithItem(BlockRegistration.SYCAMORE_BOOKSHELF, BlockRegistration.SYCAMORE_PLANKS);
         simpleBlockWithItem(BlockRegistration.SYCAMORE_LEAVES.get(), models().cubeAll("sycamore_leaves", modLoc("block/sycamore_leaves")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.SYCAMORE_SAPLING.get(), models().cross("sycamore_sapling", modLoc("block/sycamore_sapling")).renderType("cutout"));
-        simpleBlockWithItem(BlockRegistration.POTTED_SYCAMORE_SAPLING.get(), models().singleTexture("potted_sycamore_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+        simpleBlockWithItem(BlockRegistration.POTTED_SYCAMORE_SAPLING.get(), models().singleTexture("potted_sycamore_sapling", ResourceLocation.withDefaultNamespace("flower_pot_cross"), "plant",
                 blockTexture(BlockRegistration.SYCAMORE_SAPLING.get())).renderType("cutout").ao(false));
 
         //FLUORESCENT MAPLE WOODSET
@@ -341,7 +342,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         simpleBlockWithItem(BlockRegistration.MAPLE_LEAVES.get(), models().cubeAll("fluorescent_maple_leaves", modLoc("block/fluorescent_maple_leaves")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.MAPLE_LEAVES_FLOWERING.get(), models().cubeAll("flowering_fluorescent_maple_leaves", modLoc("block/flowering_fluorescent_maple_leaves")).renderType("cutout"));
         simpleBlockWithItem(BlockRegistration.MAPLE_SAPLING.get(), models().cross("fluorescent_maple_sapling", modLoc("block/fluorescent_maple_sapling")).renderType("cutout"));
-        simpleBlockWithItem(BlockRegistration.POTTED_MAPLE_SAPLING.get(), models().singleTexture("potted_fluorescent_maple_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+        simpleBlockWithItem(BlockRegistration.POTTED_MAPLE_SAPLING.get(), models().singleTexture("potted_fluorescent_maple_sapling", ResourceLocation.withDefaultNamespace("flower_pot_cross"), "plant",
                 blockTexture(BlockRegistration.MAPLE_SAPLING.get())).renderType("cutout").ao(false));
 
         //BLUE MUSHROOM WOODSET
@@ -378,7 +379,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
         columnBlockWithItem(BlockRegistration.BLUE_MUSHROOM_BOOKSHELF, BlockRegistration.BLUE_MUSHROOM_PLANKS);
 
         simpleBlockWithItem(BlockRegistration.BLUE_MUSHROOM_SAPLING.get(), models().cross("blue_roundhead", modLoc("block/blue_roundhead")).renderType("cutout"));
-        simpleBlockWithItem(BlockRegistration.POTTED_BLUE_MUSHROOM_SAPLING.get(), models().singleTexture("potted_blue_roundhead", new ResourceLocation("flower_pot_cross"), "plant",
+        simpleBlockWithItem(BlockRegistration.POTTED_BLUE_MUSHROOM_SAPLING.get(), models().singleTexture("potted_blue_roundhead", ResourceLocation.withDefaultNamespace("flower_pot_cross"), "plant",
                 blockTexture(BlockRegistration.BLUE_MUSHROOM_SAPLING.get())).renderType("cutout").ao(false));
 
         signBlock(((StandingSignBlock) BlockRegistration.BLUE_MUSHROOM_SIGN.get()), ((WallSignBlock) BlockRegistration.BLUE_MUSHROOM_WALL_SIGN.get()),
@@ -424,7 +425,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
 
 
         simpleBlockWithItem(BlockRegistration.RED_MUSHROOM_SAPLING.get(), models().cross("fly_agaric", modLoc("block/fly_agaric")).renderType("cutout"));
-        simpleBlockWithItem(BlockRegistration.POTTED_RED_MUSHROOM_SAPLING.get(), models().singleTexture("potted_fly_agaric", new ResourceLocation("flower_pot_cross"), "plant",
+        simpleBlockWithItem(BlockRegistration.POTTED_RED_MUSHROOM_SAPLING.get(), models().singleTexture("potted_fly_agaric", ResourceLocation.withDefaultNamespace("flower_pot_cross"), "plant",
                 blockTexture(BlockRegistration.RED_MUSHROOM_SAPLING.get())).renderType("cutout").ao(false));
 
         signBlock(((StandingSignBlock) BlockRegistration.RED_MUSHROOM_SIGN.get()), ((WallSignBlock) BlockRegistration.RED_MUSHROOM_WALL_SIGN.get()),
@@ -459,8 +460,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockWithItem((BlockRegistration.CHALCEDONY_SMALL_TILES));
         blockWithItem((BlockRegistration.STARRY_CHISELED_CHALCEDONY));
         axisBlock((RotatedPillarBlock) BlockRegistration.CHALCEDONY_PILLAR.get(),
-                new ResourceLocation(Cluttered.MODID + ":block/chalcedony_pillar"),
-                new ResourceLocation(Cluttered.MODID + ":block/chalcedony_pillar_top" ));
+                ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "block/chalcedony_pillar"),
+                ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "block/chalcedony_pillar_top" ));
         blockItem(BlockRegistration.CHALCEDONY_PILLAR);
 
         directionalBlock(BlockRegistration.CHALCEDONY_PILLAR_BASE.get(), models().cubeColumn("block/chalcedony_pillar_base", modLoc("block/chalcedony_pillar_base"), modLoc("block/chalcedony_pillar_top")));
@@ -517,8 +518,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockWithItem((BlockRegistration.DEEP_CHALCEDONY_SMALL_TILES));
         blockWithItem((BlockRegistration.DEEP_STARRY_CHISELED_CHALCEDONY));
         axisBlock((RotatedPillarBlock) BlockRegistration.DEEP_CHALCEDONY_PILLAR.get(),
-                new ResourceLocation(Cluttered.MODID + ":block/deep_chalcedony_pillar"),
-                new ResourceLocation(Cluttered.MODID + ":block/deep_chalcedony_pillar_top"));
+                ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "block/deep_chalcedony_pillar"),
+                ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "block/deep_chalcedony_pillar_top"));
         blockItem(BlockRegistration.DEEP_CHALCEDONY_PILLAR);
 
         directionalBlock(BlockRegistration.DEEP_CHALCEDONY_PILLAR_BASE.get(), models().cubeColumn("block/deep_chalcedony_pillar_base", modLoc("block/deep_chalcedony_pillar_base"), modLoc("block/deep_chalcedony_pillar_top")));
@@ -576,8 +577,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         blockWithItem((BlockRegistration.MARBLE_SMALL_TILES));
         blockWithItem((BlockRegistration.STARRY_CHISELED_MARBLE));
         axisBlock((RotatedPillarBlock) BlockRegistration.MARBLE_PILLAR.get(),
-                new ResourceLocation(Cluttered.MODID + ":block/marble_pillar"),
-                new ResourceLocation(Cluttered.MODID + ":block/marble_pillar_top"));
+                ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "block/marble_pillar"),
+                ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "block/marble_pillar_top"));
         blockItem(BlockRegistration.MARBLE_PILLAR);
 
         directionalBlock(BlockRegistration.MARBLE_PILLAR_BASE.get(), models().cubeColumn("block/marble_pillar_base", modLoc("block/marble_pillar_base"), modLoc("block/marble_pillar_top")));
@@ -2066,7 +2067,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
                         .build());
     }
 
-    private void retroFridge(RegistryObject<Block> block) {
+    private void retroFridge(DeferredHolder<Block, ? extends Block> block) {
         String name = block.getId().toString().replace("cluttered:", "");
 
         this.getVariantBuilder(block.get())
@@ -2079,7 +2080,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
     }
 
 
-    private void multiblockParts(RegistryObject<Block> block) {
+    private void multiblockParts(DeferredHolder<Block, ? extends Block> block) {
         String name = block.getId().toString().replace("cluttered:", "");
 
         getVariantBuilder(block.get())
@@ -2089,7 +2090,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
                                 .build());
     }
 
-    private void multiBlockWithOneModel(RegistryObject<Block> block){
+    private void multiBlockWithOneModel(DeferredHolder<Block, ? extends Block> block){
         String name = "block/" + block.getId().toString().replace("cluttered:", "");
         this.getVariantBuilder(block.get())
                 .partialState().with(((MultiblockPlacer) block.get()).getMultiblockPart(), 1).with(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH)
@@ -2113,30 +2114,30 @@ public class ClutteredBlockstates extends BlockStateProvider {
                 .addModel();
     }
 
-    private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
+    private void blockWithItem(DeferredHolder<Block, ? extends Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
-    private void columnBlockWithItem(RegistryObject<Block> blockRegistryObject, RegistryObject<Block> topBlock) {
+    private void columnBlockWithItem(DeferredHolder<Block, ? extends Block> blockRegistryObject, DeferredHolder<Block, ? extends Block> topBlock) {
         ResourceLocation sideTexture = modLoc("block/" + blockRegistryObject.getId().toString().replace("cluttered:", ""));
         ResourceLocation endTexture = modLoc("block/" + topBlock.getId().toString().replace("cluttered:", ""));
 
         simpleBlockWithItem(blockRegistryObject.get(), models().cubeColumn(blockRegistryObject.getId().toString(), sideTexture, endTexture));
     }
 
-    private void logBlockMaker(RegistryObject<Block> log, boolean isWood){
+    private void logBlockMaker(DeferredHolder<Block, ? extends Block> log, boolean isWood){
         String woodType;
         if (!isWood) {
             woodType = log.getId().toString().replace("cluttered:", "").replace("_log", "");
             axisBlock((RotatedPillarBlock) log.get(),
-                    new ResourceLocation(Cluttered.MODID + ":block/" + woodType + "_log"),
-                    new ResourceLocation(Cluttered.MODID + ":block/" + woodType + "_log_top" ));
+                    ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "block/" + woodType + "_log"),
+                    ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "block/" + woodType + "_log_top" ));
         }
         else {
             woodType = log.getId().toString().replace("cluttered:", "").replace("_wood", "");
             axisBlock((RotatedPillarBlock) log.get(),
-                    new ResourceLocation(Cluttered.MODID + ":block/" + woodType + "_log"),
-                    new ResourceLocation(Cluttered.MODID + ":block/" + woodType + "_log"));
+                    ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "block/" + woodType + "_log"),
+                    ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "block/" + woodType + "_log"));
         }
         blockItem(log);
     }
@@ -2159,20 +2160,20 @@ public class ClutteredBlockstates extends BlockStateProvider {
     }
 
     private ResourceLocation key(Block block) {
-        return ForgeRegistries.BLOCKS.getKey(block);
+        return BuiltInRegistries.BLOCK.getKey(block);
     }
 
-    private void blockItem(RegistryObject<Block> blockRegistryObject) {
+    private void blockItem(DeferredHolder<Block, ? extends Block> blockRegistryObject) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile(Cluttered.MODID +
-                ":block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
+                ":block/" + key(blockRegistryObject.get()).getPath()));
     }
 
-    private void trapdoorBlockItem(RegistryObject<Block> blockRegistryObject) {
+    private void trapdoorBlockItem(DeferredHolder<Block, ? extends Block> blockRegistryObject) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile(Cluttered.MODID +
-                ":block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath() + "_bottom"));
+                ":block/" + key(blockRegistryObject.get()).getPath() + "_bottom"));
     }
 
-    private void hFacingBlockWithCustomModel(RegistryObject<Block> block){
+    private void hFacingBlockWithCustomModel(DeferredHolder<Block, ? extends Block> block){
         String id = block.getId().toString().replace("cluttered:", "");
         this.getVariantBuilder(block.get())
                 .forAllStates(state ->
@@ -2181,7 +2182,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
                                 .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() - 180)
                                 .build());
     }
-    private void facingBlockWithCustomModel(RegistryObject<Block> block){
+    private void facingBlockWithCustomModel(DeferredHolder<Block, ? extends Block> block){
         String id = block.getId().toString().replace("cluttered:", "");
         this.getVariantBuilder(block.get())
                 .forAllStates(state ->
@@ -2192,7 +2193,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
                                 .build());
     }
 
-    private void flatFacingBlock(RegistryObject<Block> block, int offsetX){
+    private void flatFacingBlock(DeferredHolder<Block, ? extends Block> block, int offsetX){
         String id = block.getId().toString().replace("cluttered:", "");
         this.getVariantBuilder(block.get())
                 .forAllStates(state ->
@@ -2203,7 +2204,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
                                 .build());
     }
 
-    private void recordPlayerBlock(RegistryObject<Block> block){
+    private void recordPlayerBlock(DeferredHolder<Block, ? extends Block> block){
         String id = block.getId().toString().replace("cluttered:", "");
 
         this.getMultipartBuilder(block.get())
@@ -2224,7 +2225,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
                 .part().modelFile(models().getExistingFile(modLoc("block/record"))).rotationY(270).addModel()
                     .condition(CustomJukeboxBlock.HAS_RECORD, true).condition(CustomJukeboxBlock.FACING, Direction.WEST).end();
     }
-    private void garlandBlock(RegistryObject<Block> block){
+    private void garlandBlock(DeferredHolder<Block, ? extends Block> block){
         String id = block.getId().toString().replace("cluttered:", "");
 
         this.getVariantBuilder(block.get()).forAllStates(state ->
@@ -2232,7 +2233,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
                         .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot()).build());
     }
 
-    private void lanternBlock(RegistryObject<Block> block){
+    private void lanternBlock(DeferredHolder<Block, ? extends Block> block){
         String id = block.getId().toString().replace("cluttered:", "");
 
         this.getVariantBuilder(block.get())
@@ -2246,7 +2247,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
                         .build());
     }
 
-    private void balustradeBlock(RegistryObject<Block> block){
+    private void balustradeBlock(DeferredHolder<Block, ? extends Block> block){
         String id = block.getId().toString().replace("cluttered:", "");
 
         BlockModelBuilder post = models().getBuilder("block/" + id + "_post").parent(models().getExistingFile(modLoc("block/balustrade_post"))).texture("2", modLoc("block/" + id)).texture("particle", modLoc("block/" + id));
@@ -2291,7 +2292,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
                 .condition(FenceBlock.WEST, true).end();
     }
 
-    private void bracketBlock(RegistryObject<Block> block){
+    private void bracketBlock(DeferredHolder<Block, ? extends Block> block){
         String id = block.getId().toString().replace("cluttered:", "");
 
         this.getVariantBuilder(block.get())
@@ -2306,7 +2307,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
                         .rotationY(state.getValue(BracketBlock.IS_UP) ? (int)state.getValue(BlockStateProperties.HORIZONTAL_FACING).getOpposite().toYRot() : (int)state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot()).rotationX(state.getValue(BracketBlock.IS_UP) ? 0 : 180).build());
     }
 
-    private void picketFenceBlock(RegistryObject<Block> block){
+    private void picketFenceBlock(DeferredHolder<Block, ? extends Block> block){
         String id = block.getId().toString().replace("cluttered:", "");
 
         BlockModelBuilder post = models().getBuilder("block/" + id + "_post").parent(models().getExistingFile(modLoc("block/picket_fence_post"))).texture("2", modLoc("block/" + id)).texture("particle", modLoc("block/" + id));
@@ -2323,7 +2324,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
                 .condition(FenceBlock.WEST, true).end();
     }
 
-    private void picketFencegateBlock(RegistryObject<Block> block){
+    private void picketFencegateBlock(DeferredHolder<Block, ? extends Block> block){
         String id = block.getId().toString().replace("cluttered:", "");
 
         this.getVariantBuilder(block.get())
@@ -2345,7 +2346,7 @@ public class ClutteredBlockstates extends BlockStateProvider {
                 );
     }
 
-    //private void flatFacingBlock(RegistryObject<Block> block){
+    //private void flatFacingBlock(DeferredHolder<Block, ? extends Block> block){
     //    String id = block.getId().toString().replace("cluttered:", "");
 //
     //    this.getVariantBuilder(block.get())

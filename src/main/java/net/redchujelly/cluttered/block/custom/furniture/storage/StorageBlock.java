@@ -1,9 +1,9 @@
 package net.redchujelly.cluttered.block.custom.furniture.storage;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.Container;
 import net.minecraft.world.Containers;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -26,7 +26,7 @@ public class StorageBlock extends SmallFurnitureBlock implements EntityBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         if (pLevel.isClientSide){
             return InteractionResult.SUCCESS;
         } else {
@@ -53,7 +53,7 @@ public class StorageBlock extends SmallFurnitureBlock implements EntityBlock {
 
 
     public void setPlacedBy(Level pLevel, BlockPos pPos, BlockState pState, @javax.annotation.Nullable LivingEntity pPlacer, ItemStack pStack) {
-        if (pStack.hasCustomHoverName()) {
+        if (pStack.has(DataComponents.CUSTOM_NAME)) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
             if (blockEntity instanceof CustomStorageBlockEntity) {
                 ((CustomStorageBlockEntity) blockEntity).setCustomName(pStack.getHoverName());

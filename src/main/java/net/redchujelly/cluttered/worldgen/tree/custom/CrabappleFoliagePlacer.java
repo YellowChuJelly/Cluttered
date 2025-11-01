@@ -1,6 +1,7 @@
 package net.redchujelly.cluttered.worldgen.tree.custom;
 
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.valueproviders.IntProvider;
@@ -11,7 +12,7 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacerTy
 import net.redchujelly.cluttered.setup.FoliagePlacerTypeRegistration;
 
 public class CrabappleFoliagePlacer extends FoliagePlacer {
-    public static final Codec<CrabappleFoliagePlacer> CODEC = RecordCodecBuilder.create(crabappleFoliagePlacerInstance
+    public static final MapCodec<CrabappleFoliagePlacer> CODEC = RecordCodecBuilder.mapCodec(crabappleFoliagePlacerInstance
             -> foliagePlacerParts(crabappleFoliagePlacerInstance).and(Codec.intRange(0, 16).fieldOf("height").forGetter(fp -> fp.height))
             .apply(crabappleFoliagePlacerInstance, CrabappleFoliagePlacer::new));
 

@@ -2,6 +2,8 @@ package net.redchujelly.cluttered.datagen;
 
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.advancements.critereon.ItemPredicate;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
@@ -11,9 +13,8 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.common.Tags;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.common.Tags;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.setup.BlockRegistration;
 import net.redchujelly.cluttered.setup.ItemRegistration;
@@ -22,15 +23,15 @@ import net.redchujelly.cluttered.setup.TagRegistration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.function.Consumer;
+import java.util.concurrent.CompletableFuture;
 
 public class ClutteredRecipes extends RecipeProvider {
-    public ClutteredRecipes(PackOutput pOutput) {
-        super(pOutput);
+    public ClutteredRecipes(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> registries) {
+        super(pOutput, registries);
     }
 
-    @Override
-    protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
+	@Override
+	protected void buildRecipes(RecipeOutput consumer) {
         buildWoodsetRecipes("willow", consumer);
         buildWoodsetRecipes("flowering_willow", consumer);
         buildWoodsetRecipes("poplar", consumer);
@@ -141,7 +142,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .pattern("pb")
                 .pattern("pp")
                 .pattern("pb")
-                .define('b', ForgeRegistries.ITEMS.tags().getTag(ItemTags.create(new ResourceLocation( "willow_log"))).getKey())
+                .define('b', ItemTags.create(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "willow_logs")))
                 .define('p', BlockRegistration.WILLOW_PLANKS.get())
                 .unlockedBy("has_willow_planks", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(BlockRegistration.WILLOW_PLANKS.get()).build()))
@@ -231,7 +232,7 @@ public class ClutteredRecipes extends RecipeProvider {
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.POLISHED_CHALCEDONY.get().asItem(), 2);
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.CHALCEDONY_BRICKS.get().asItem(), 2);
 
-        ArrayList<RegistryObject<Block>> chalcedonyResults = new ArrayList<>();
+        ArrayList<DeferredBlock<Block>> chalcedonyResults = new ArrayList<>();
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_STAIRS);
         chalcedonyResults.add(BlockRegistration.POLISHED_CHALCEDONY);
         chalcedonyResults.add(BlockRegistration.CHISELED_CHALCEDONY);
@@ -280,7 +281,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .showNotification(false)
                 .save(consumer);
 
-        ArrayList<RegistryObject<Block>> starryChalcedonyResults = new ArrayList<>();
+        ArrayList<DeferredBlock<Block>> starryChalcedonyResults = new ArrayList<>();
         starryChalcedonyResults.add(BlockRegistration.STARRY_CHALCEDONY_PILLAR);
         starryChalcedonyResults.add(BlockRegistration.STARRY_CHALCEDONY_PILLAR_BASE);
         starryChalcedonyResults.add(BlockRegistration.STARRY_CHALCEDONY_PILLAR_DORIC);
@@ -370,7 +371,7 @@ public class ClutteredRecipes extends RecipeProvider {
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.DEEP_POLISHED_CHALCEDONY.get().asItem(), 2);
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.DEEP_CHALCEDONY_BRICKS.get().asItem(), 2);
 
-        ArrayList<RegistryObject<Block>> deepChalcedonyresults = new ArrayList<>();
+        ArrayList<DeferredBlock<Block>> deepChalcedonyresults = new ArrayList<>();
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_STAIRS);
         deepChalcedonyresults.add(BlockRegistration.DEEP_POLISHED_CHALCEDONY);
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHISELED_CHALCEDONY);
@@ -420,7 +421,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 .showNotification(false)
                 .save(consumer);
 
-        ArrayList<RegistryObject<Block>> starryDeepChalcedonyResults = new ArrayList<>();
+        ArrayList<DeferredBlock<Block>> starryDeepChalcedonyResults = new ArrayList<>();
         starryDeepChalcedonyResults.add(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR);
         starryDeepChalcedonyResults.add(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_BASE);
         starryDeepChalcedonyResults.add(BlockRegistration.DEEP_STARRY_CHALCEDONY_PILLAR_DORIC);
@@ -501,7 +502,7 @@ public class ClutteredRecipes extends RecipeProvider {
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRICK_SLAB.get().asItem(),BlockRegistration.POLISHED_MARBLE.get().asItem(), 2);
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRICK_SLAB.get().asItem(),BlockRegistration.MARBLE_BRICKS.get().asItem(), 2);
 
-        ArrayList<RegistryObject<Block>> marbleresults = new ArrayList<>();
+        ArrayList<DeferredBlock<Block>> marbleresults = new ArrayList<>();
         marbleresults.add(BlockRegistration.MARBLE_STAIRS);
         marbleresults.add(BlockRegistration.POLISHED_MARBLE);
         marbleresults.add(BlockRegistration.CHISELED_MARBLE);
@@ -1251,7 +1252,7 @@ public class ClutteredRecipes extends RecipeProvider {
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, Blocks.GOLD_BLOCK, BlockRegistration.CHISELED_GOLD_BLOCK.get());
         stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHISELED_GOLD_BLOCK.get(), Blocks.GOLD_BLOCK);
 
-        ArrayList<RegistryObject<Block>> calciteResults = new ArrayList<>();
+        ArrayList<DeferredBlock<Block>> calciteResults = new ArrayList<>();
         calciteResults.add(BlockRegistration.ALABASTER_WAINSCOTING);
         calciteResults.add(BlockRegistration.ALABASTER_WINDOW_DIVIDED);
         calciteResults.add(BlockRegistration.GREENHOUSE_WINDOW);
@@ -2474,7 +2475,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .pattern("f")
                         .pattern("p")
                         .define('p', Items.FLOWER_POT)
-                        .define('f', Items.GRASS)
+                        .define('f', Items.SHORT_GRASS)
                         .define('s', Items.TRIPWIRE_HOOK)
                         .unlockedBy("has_flower_pot", InventoryChangeTrigger.TriggerInstance.hasItems(
                                 ItemPredicate.Builder.item().of(Items.FLOWER_POT).build()))
@@ -2653,7 +2654,7 @@ public class ClutteredRecipes extends RecipeProvider {
                 ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.DRYING_HERBS.get())
                         .pattern("sss")
                         .pattern("gfg")
-                        .define('g', Items.GRASS)
+                        .define('g', Items.SHORT_GRASS)
                         .define('s', Tags.Items.RODS_WOODEN)
                         .define('f', Items.FERN)
                         .unlockedBy("has_fern", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -5929,7 +5930,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern("g")
                     .pattern("c")
                     .pattern("d")
-                    .define('g', Items.GRASS)
+                    .define('g', Items.SHORT_GRASS)
                     .define('c', Items.CACTUS)
                     .define('d', Items.YELLOW_DYE)
                     .unlockedBy("has_cactus", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -6203,7 +6204,7 @@ public class ClutteredRecipes extends RecipeProvider {
                     .pattern(" f ")
                     .pattern("gbg")
                     .pattern(" g ")
-                    .define('g', Tags.Items.GLASS)
+                    .define('g', Tags.Items.GLASS_BLOCKS)
                     .define('b', Items.WATER_BUCKET)
                     .define('f', ItemTags.FLOWERS)
                     .unlockedBy("has_water_bucket", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -6662,57 +6663,57 @@ public class ClutteredRecipes extends RecipeProvider {
                     .save(consumer);
     }
 
-    private void buildStoneCutterRecipesForBase(Consumer<FinishedRecipe> consumer, Block base, List<RegistryObject<Block>> results) {
-        for (RegistryObject<Block> result : results) {
+    private void buildStoneCutterRecipesForBase(RecipeOutput consumer, Block base, List<DeferredBlock<Block>> results) {
+        for (DeferredBlock<Block> result : results) {
             stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, result.get().asItem(), base.asItem());
         }
     }
 
-    private void buildWoodsetRecipes(String woodType, Consumer<FinishedRecipe> consumer) {
+    private void buildWoodsetRecipes(String woodType, RecipeOutput consumer) {
 
-        Block log = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_log"));
-        Block wood = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wood"));
+        Block log = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_log"));
+        Block wood = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_wood"));
         Block strippedLog = null;
-        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_log"))) {
-            strippedLog = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_log"));
+        if (BuiltInRegistries.BLOCK.containsKey(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "stripped_" + woodType + "_log"))) {
+            strippedLog = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "stripped_" + woodType + "_log"));
         }
         //Dont need this for now
-        //Block strippedWood = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + "stripped_" + woodType + "_wood"));
-        Block planks = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_planks"));
-        Block stairs = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_stairs"));
-        Block slab = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_slab"));
-        Block fence = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_fence"));
-        Block fenceGate = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_fence_gate"));
-        Block button = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_button"));
-        Item sign = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_sign"));
-        Item hangingSign = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_hanging_sign"));
-        Block pressurePlate = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_pressure_plate"));
+        //Block strippedWood = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, "stripped_" + woodType + "_wood"));
+        Block planks = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_planks"));
+        Block stairs = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_stairs"));
+        Block slab = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_slab"));
+        Block fence = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_fence"));
+        Block fenceGate = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_fence_gate"));
+        Block button = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_button"));
+        Item sign = BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_sign"));
+        Item hangingSign = BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_hanging_sign"));
+        Block pressurePlate = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_pressure_plate"));
         Block door = null;
-        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_door"))) {
-            door = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_door"));
+        if (BuiltInRegistries.BLOCK.containsKey(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_door"))) {
+            door = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_door"));
         }
         Block trapdoor = null;
-        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_trapdoor"))) {
-            trapdoor = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_trapdoor"));
+        if (BuiltInRegistries.BLOCK.containsKey(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_trapdoor"))) {
+            trapdoor = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_trapdoor"));
         }
         Block window = null;
         Block pane = null;
-        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_window"))) {
-            window = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_window"));
-            pane = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_window_pane"));
+        if (BuiltInRegistries.BLOCK.containsKey(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_window"))) {
+            window = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_window"));
+            pane = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_window_pane"));
         }
         Block bookshelf = null;
-        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_bookshelf"))) {
-            bookshelf = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_bookshelf"));
+        if (BuiltInRegistries.BLOCK.containsKey(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_bookshelf"))) {
+            bookshelf = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_bookshelf"));
         }
         Block wainscoting = null;
-        if (ForgeRegistries.BLOCKS.containsKey(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wainscoting"))) {
-            wainscoting = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(Cluttered.MODID + ":" + woodType + "_wainscoting"));
+        if (BuiltInRegistries.BLOCK.containsKey(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_wainscoting"))) {
+            wainscoting = BuiltInRegistries.BLOCK.get(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_wainscoting"));
         }
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, planks, 4)
-                .requires(ForgeRegistries.ITEMS.tags().getTag(ItemTags.create(new ResourceLocation( woodType + "_log"))).getKey())
+                .requires(ItemTags.create(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, woodType + "_log")))
                 .unlockedBy("has_" + woodType + "_log", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(log).build()))
                 .save(consumer);

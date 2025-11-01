@@ -6,6 +6,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
@@ -52,9 +53,9 @@ public class BouncyMushroomBlock extends CustomWoodBlock {
         }
     }
 
-    @Override
-    public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-        pTooltip.add(Component.translatable("cluttered.bouncymushroom.tooltip"));
-        super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
-    }
+	@Override
+	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+		tooltipComponents.add(Component.translatable("cluttered.bouncymushroom.tooltip"));
+		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+	}
 }

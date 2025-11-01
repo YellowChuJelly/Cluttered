@@ -10,7 +10,7 @@ import java.util.function.Supplier;
 
 public class CustomWoodStairs extends StairBlock {
     public CustomWoodStairs(Supplier<BlockState> state, Properties properties) {
-        super(state, properties);
+        super(state.get(), properties);
     }
 
     @Override

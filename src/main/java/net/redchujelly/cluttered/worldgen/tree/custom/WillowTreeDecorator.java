@@ -1,6 +1,7 @@
 package net.redchujelly.cluttered.worldgen.tree.custom;
 
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
@@ -13,8 +14,8 @@ public class WillowTreeDecorator extends TreeDecorator {
     //public static final Codec<PoplarTreeDecorator> CODEC = RecordCodecBuilder.create(poplarTreeDecoratorInstance ->
     //        poplarTreeDecoratorInstance.group(Codec.floatRange(0.0f,1.0f).fieldOf("probability").forGetter(poplarTreeDecorator -> poplarTreeDecorator.probability)).apply(poplarTreeDecoratorInstance, PoplarTreeDecorator::new));
 
-    public static final Codec<WillowTreeDecorator> CODEC = Codec.floatRange(0.0F, 1.0F).fieldOf("probability").xmap(WillowTreeDecorator::new,
-            (willowTreeDecoratorInstance) -> willowTreeDecoratorInstance.probability).codec();
+    public static final MapCodec<WillowTreeDecorator> CODEC = Codec.floatRange(0.0F, 1.0F).fieldOf("probability").xmap(WillowTreeDecorator::new,
+            (willowTreeDecoratorInstance) -> willowTreeDecoratorInstance.probability);
 
     private final float probability;
 
