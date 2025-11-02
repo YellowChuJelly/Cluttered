@@ -55,9 +55,10 @@ public class StorageBlock extends SmallFurnitureBlock implements EntityBlock {
     public void setPlacedBy(Level pLevel, BlockPos pPos, BlockState pState, @javax.annotation.Nullable LivingEntity pPlacer, ItemStack pStack) {
         if (pStack.has(DataComponents.CUSTOM_NAME)) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof CustomStorageBlockEntity) {
-                ((CustomStorageBlockEntity) blockEntity).setCustomName(pStack.getHoverName());
-            }
+			// TODO
+//            if (blockEntity instanceof CustomStorageBlockEntity) {
+//                ((CustomStorageBlockEntity) blockEntity).setCustomName(pStack.getHoverName());
+//            }
         }
     }
 

@@ -51,8 +51,7 @@ public class Cluttered {
 
         modEventBus.addListener(DataGeneration::generate);
 
-
-        NeoForge.EVENT_BUS.addListener(this::commonSetup);
+        modEventBus.addListener(this::commonSetup);
 
     }
 
@@ -127,8 +126,8 @@ public class Cluttered {
 //        }
 //    }
 
-	@EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.GAME, value = Dist.CLIENT)
-	public static class ClientGameEvents {
+    @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    public static class ClientModEvents {
 
 		@SubscribeEvent
 		public static void onClientSetup(FMLClientSetupEvent event) {
@@ -145,10 +144,6 @@ public class Cluttered {
 				Sheets.addWoodType(ClutteredWoodTypes.BLUE_MUSHROOM);
 			});
 		}
-	}
-
-    @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
 
         @SubscribeEvent
         public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event){

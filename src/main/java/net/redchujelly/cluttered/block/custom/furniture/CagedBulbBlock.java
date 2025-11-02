@@ -1,11 +1,13 @@
 package net.redchujelly.cluttered.block.custom.furniture;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DirectionalBlock;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -20,7 +22,9 @@ import net.redchujelly.cluttered.block.custom.DirectionalPillarBlock;
 
 
 public class CagedBulbBlock extends DirectionalPillarBlock implements SimpleWaterloggedBlock {
-    private static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+    private static final MapCodec<CagedBulbBlock> CODEC = simpleCodec(CagedBulbBlock::new);
+
+	private static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     private static final VoxelShape SHAPE_UP = Block.box(3.5, 0, 3.5, 12.5, 13, 12.5);
     private static final VoxelShape SHAPE_DOWN = Block.box(3.5, 3, 3.5, 12.5, 16, 12.5);
@@ -33,7 +37,12 @@ public class CagedBulbBlock extends DirectionalPillarBlock implements SimpleWate
         this.registerDefaultState(this.defaultBlockState().setValue(WATERLOGGED, false));
     }
 
-    @Override
+	@Override
+	protected MapCodec<? extends DirectionalBlock> codec() {
+		return CODEC;
+	}
+
+	@Override
     public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
         return 15;
     }

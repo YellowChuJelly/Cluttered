@@ -1,5 +1,6 @@
 package net.redchujelly.cluttered.block.multiblock;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -18,7 +19,8 @@ import net.minecraft.world.level.material.PushReaction;
 import org.jetbrains.annotations.Nullable;
 
 public class MultiblockPlacer extends Block {
-
+	private static final MapCodec<MultiblockPlacer> CODEC = simpleCodec(MultiblockPlacer::new);
+	
     public static final IntegerProperty MULTIBLOCK_PART = IntegerProperty.create("part", 1, 2);
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
@@ -238,4 +240,9 @@ public class MultiblockPlacer extends Block {
             }
         }
     }
+
+	@Override
+	protected MapCodec<? extends Block> codec() {
+		return CODEC;
+	}
 }

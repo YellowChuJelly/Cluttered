@@ -42,9 +42,7 @@ public class HeartCakeBlock extends SmallFurnitureBlock {
                 return InteractionResult.SUCCESS;
             }
 
-            if (pPlayer.getItemInHand(pHand).isEmpty()) {
-                return InteractionResult.CONSUME;
-            }
+			return InteractionResult.CONSUME;
         }
 
         return eat(pLevel, pPos, pState, pPlayer);

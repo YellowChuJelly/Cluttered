@@ -1,5 +1,6 @@
 package net.redchujelly.cluttered.block.custom.furniture;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
@@ -30,7 +31,7 @@ public class SmallLampBlock extends HorizontalDirectionalBlock implements Simple
 
     private static final VoxelShape SHAPE = Block.box(4, 0, 4, 12, 8, 12);
 
-    @Override
+	@Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         return SHAPE;
     }
@@ -40,6 +41,11 @@ public class SmallLampBlock extends HorizontalDirectionalBlock implements Simple
         this.registerDefaultState(this.getStateDefinition().any().setValue(WATERLOGGED, false));
         pProperties.noOcclusion();
     }
+
+	@Override
+	protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+		return null; // TODO
+	}
 
     @Override
     public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
