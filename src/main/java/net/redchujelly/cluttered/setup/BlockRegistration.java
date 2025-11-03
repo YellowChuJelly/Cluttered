@@ -1755,7 +1755,7 @@ public class BlockRegistration {
             () -> new GhostChairBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE).noOcclusion()));
 
     public static final RegistryObject<Block> TRADITIONAL_RADIO = registerBlock("traditional_radio",
-            () -> new TraditionalRadioBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+            () -> new TraditionalRadioBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryObject<Block> TWO_FLOWER_POTS = registerBlock("two_flower_pots",
             () -> new MushroomJarsBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.DECORATED_POT)));
     public static final RegistryObject<Block> SEWING_MANNEQUIN = registerBlock("sewing_mannequin",
@@ -2032,19 +2032,19 @@ public class BlockRegistration {
 
     //RECORD PLAYERS
     public static final RegistryObject<Block> RECORD_PLAYER_BLUE = registerBlock("record_player_blue",
-            () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.JUKEBOX).mapColor(DyeColor.BLUE)));
+            () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.JUKEBOX).mapColor(DyeColor.BLUE).noOcclusion()));
     public static final RegistryObject<Block> RECORD_PLAYER_BROWN = registerBlock("record_player_brown",
-            () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.JUKEBOX).mapColor(DyeColor.BROWN)));
+            () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.JUKEBOX).mapColor(DyeColor.BROWN).noOcclusion()));
     public static final RegistryObject<Block> RECORD_PLAYER_PINK = registerBlock("record_player_pink",
-            () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.JUKEBOX).mapColor(DyeColor.PINK)));
+            () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.JUKEBOX).mapColor(DyeColor.PINK).noOcclusion()));
     public static final RegistryObject<Block> RECORD_PLAYER_PURPLE = registerBlock("record_player_purple",
-            () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.JUKEBOX).mapColor(DyeColor.PURPLE)));
+            () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.JUKEBOX).mapColor(DyeColor.PURPLE).noOcclusion()));
     public static final RegistryObject<Block> RECORD_PLAYER_RED = registerBlock("record_player_red",
-            () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.JUKEBOX).mapColor(DyeColor.RED)));
+            () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.JUKEBOX).mapColor(DyeColor.RED).noOcclusion()));
     public static final RegistryObject<Block> RECORD_PLAYER_WHITE = registerBlock("record_player_white",
-            () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.JUKEBOX).mapColor(DyeColor.WHITE)));
+            () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.JUKEBOX).mapColor(DyeColor.WHITE).noOcclusion()));
     public static final RegistryObject<Block> RECORD_PLAYER_YELLOW = registerBlock("record_player_yellow",
-            () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.JUKEBOX).mapColor(DyeColor.YELLOW)));
+            () -> new CustomJukeboxBlock(BlockBehaviour.Properties.copy(Blocks.JUKEBOX).mapColor(DyeColor.YELLOW).noOcclusion()));
 
     //CAKES
     public static final RegistryObject<Block> HEART_CAKE = registerBlock("heart_cake",
