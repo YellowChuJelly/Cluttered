@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "cluttered:card_index",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "part": "1"
+              }
+            }
+          ],
+          "name": "cluttered:card_index"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "cluttered:blocks/card_index"
+}

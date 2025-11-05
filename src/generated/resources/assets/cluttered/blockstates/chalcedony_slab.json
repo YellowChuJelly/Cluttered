@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cluttered:block/chalcedony_slab"
+    },
+    "type=double": {
+      "model": "cluttered:block/raw_chalcedony"
+    },
+    "type=top": {
+      "model": "cluttered:block/chalcedony_slab_top"
+    }
+  }
+}

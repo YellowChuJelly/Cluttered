@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "r": {
+      "item": "minecraft:red_dye"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    },
+    "w": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "psp",
+    "srs",
+    "www"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:diamond_wallpaper_strawberry"
+  },
+  "show_notification": false
+}

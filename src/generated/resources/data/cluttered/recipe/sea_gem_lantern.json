@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:gold_nugget"
+    },
+    "p": {
+      "item": "minecraft:prismarine_crystals"
+    }
+  },
+  "pattern": [
+    "ggg",
+    "gpg",
+    "ggg"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:sea_gem_lantern"
+  },
+  "show_notification": false
+}

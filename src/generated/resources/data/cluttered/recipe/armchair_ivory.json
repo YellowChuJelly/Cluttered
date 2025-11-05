@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:lily_of_the_valley"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "w": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "www",
+    "gwg",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:armchair_ivory"
+  },
+  "show_notification": false
+}

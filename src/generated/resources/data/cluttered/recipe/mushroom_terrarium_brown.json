@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:glass_pane"
+    },
+    "m": {
+      "item": "minecraft:brown_mushroom"
+    },
+    "p": {
+      "item": "minecraft:podzol"
+    }
+  },
+  "pattern": [
+    "ggg",
+    "gmg",
+    "gpg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:mushroom_terrarium_brown"
+  },
+  "show_notification": false
+}

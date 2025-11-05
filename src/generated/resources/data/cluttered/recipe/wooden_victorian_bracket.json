@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "s": {
+      "tag": "c:rods/wooden"
+    },
+    "t": {
+      "tag": "minecraft:wooden_stairs"
+    }
+  },
+  "pattern": [
+    "sss",
+    " ts",
+    "  s"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:wooden_victorian_bracket"
+  },
+  "show_notification": false
+}

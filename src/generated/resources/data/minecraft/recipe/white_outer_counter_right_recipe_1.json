@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "d": {
+      "item": "minecraft:white_dye"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "tag": "minecraft:stone_crafting_materials"
+    }
+  },
+  "pattern": [
+    "ssp",
+    "pdp",
+    "pcp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:kitchen_set_white_counter_outer_corner_right"
+  },
+  "show_notification": false
+}

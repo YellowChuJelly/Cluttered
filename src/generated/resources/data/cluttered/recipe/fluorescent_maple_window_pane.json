@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": {
+      "item": "cluttered:fluorescent_maple_window"
+    }
+  },
+  "pattern": [
+    "ggg",
+    "ggg"
+  ],
+  "result": {
+    "count": 16,
+    "id": "cluttered:fluorescent_maple_window_pane"
+  },
+  "show_notification": false
+}

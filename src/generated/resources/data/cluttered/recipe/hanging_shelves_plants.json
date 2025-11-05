@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:flower_pot"
+    },
+    "p": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "s": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "sps",
+    "scs",
+    "sps"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:hanging_shelves_plants"
+  },
+  "show_notification": false
+}

@@ -21,6 +21,7 @@ import net.redchujelly.cluttered.block.custom.food.HeartCakeBlock;
 import net.redchujelly.cluttered.block.custom.furniture.*;
 import net.redchujelly.cluttered.block.custom.furniture.storage.CardboardBoxBlock;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
+import net.redchujelly.cluttered.block.multiblock.WeddingArchBlock;
 import net.redchujelly.cluttered.setup.BlockRegistration;
 import net.redchujelly.cluttered.block.custom.furniture.CardboardBoxState;
 import net.redchujelly.cluttered.block.custom.furniture.LanternPlaceState;
@@ -1661,67 +1662,67 @@ public class ClutteredBlockstates extends BlockStateProvider {
         multiblockParts(BlockRegistration.SMALL_BOOKCASE);
         this.getMultipartBuilder(BlockRegistration.WEDDING_ARCH.get())
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_1"))).rotationY(180).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 1).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(WeddingArchBlock.MULTIBLOCK_PART, 1).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_1"))).rotationY(270).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(MultiblockPlacer.MULTIBLOCK_PART, 1).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(WeddingArchBlock.MULTIBLOCK_PART, 1).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_1"))).rotationY(0).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 1).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(WeddingArchBlock.MULTIBLOCK_PART, 1).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_1"))).rotationY(90).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(MultiblockPlacer.MULTIBLOCK_PART, 1).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(WeddingArchBlock.MULTIBLOCK_PART, 1).end()
 
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_2"))).rotationY(180).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 2).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(WeddingArchBlock.MULTIBLOCK_PART, 2).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_2"))).rotationY(270).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(MultiblockPlacer.MULTIBLOCK_PART, 2).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(WeddingArchBlock.MULTIBLOCK_PART, 2).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_2"))).rotationY(0).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 2).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(WeddingArchBlock.MULTIBLOCK_PART, 2).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_2"))).rotationY(90).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(MultiblockPlacer.MULTIBLOCK_PART, 2).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(WeddingArchBlock.MULTIBLOCK_PART, 2).end()
 
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_3"))).rotationY(180).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 3).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(WeddingArchBlock.MULTIBLOCK_PART, 3).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_3"))).rotationY(270).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(MultiblockPlacer.MULTIBLOCK_PART, 3).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(WeddingArchBlock.MULTIBLOCK_PART, 3).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_3"))).rotationY(0).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 3).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(WeddingArchBlock.MULTIBLOCK_PART, 3).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_3"))).rotationY(90).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(MultiblockPlacer.MULTIBLOCK_PART, 3).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(WeddingArchBlock.MULTIBLOCK_PART, 3).end()
 
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_4"))).rotationY(180).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 4).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(WeddingArchBlock.MULTIBLOCK_PART, 4).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_4"))).rotationY(270).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(MultiblockPlacer.MULTIBLOCK_PART, 4).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(WeddingArchBlock.MULTIBLOCK_PART, 4).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_4"))).rotationY(0).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 4).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(WeddingArchBlock.MULTIBLOCK_PART, 4).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_4"))).rotationY(90).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(MultiblockPlacer.MULTIBLOCK_PART, 4).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(WeddingArchBlock.MULTIBLOCK_PART, 4).end()
 
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_5"))).rotationY(180).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 5).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(WeddingArchBlock.MULTIBLOCK_PART, 5).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_5"))).rotationY(270).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(MultiblockPlacer.MULTIBLOCK_PART, 5).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(WeddingArchBlock.MULTIBLOCK_PART, 5).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_5"))).rotationY(0).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 5).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(WeddingArchBlock.MULTIBLOCK_PART, 5).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_5"))).rotationY(90).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(MultiblockPlacer.MULTIBLOCK_PART, 5).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(WeddingArchBlock.MULTIBLOCK_PART, 5).end()
 
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_6"))).rotationY(180).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 6).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(WeddingArchBlock.MULTIBLOCK_PART, 6).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_6"))).rotationY(270).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(MultiblockPlacer.MULTIBLOCK_PART, 6).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(WeddingArchBlock.MULTIBLOCK_PART, 6).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_6"))).rotationY(0).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 6).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(WeddingArchBlock.MULTIBLOCK_PART, 6).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_6"))).rotationY(90).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(MultiblockPlacer.MULTIBLOCK_PART, 6).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(WeddingArchBlock.MULTIBLOCK_PART, 6).end()
 
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_7"))).rotationY(180).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 7).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).condition(WeddingArchBlock.MULTIBLOCK_PART, 7).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_7"))).rotationY(270).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(MultiblockPlacer.MULTIBLOCK_PART, 7).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).condition(WeddingArchBlock.MULTIBLOCK_PART, 7).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_7"))).rotationY(0).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(MultiblockPlacer.MULTIBLOCK_PART, 7).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).condition(WeddingArchBlock.MULTIBLOCK_PART, 7).end()
                 .part().modelFile(models().getExistingFile(modLoc("block/wedding_arch_7"))).rotationY(90).addModel()
-                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(MultiblockPlacer.MULTIBLOCK_PART, 7).end()
+                .condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).condition(WeddingArchBlock.MULTIBLOCK_PART, 7).end()
 
                 .part().modelFile(models().getBuilder("block/wedding_picket_fence_side_n").parent(models().getExistingFile(modLoc("block/picket_fence_side"))).texture("2", modLoc("block/wooden_picket_fence")).texture("particle", modLoc("block/wooden_picket_fence"))).rotationY(0).addModel()
                 .condition(BlockStateProperties.NORTH, true).end()
@@ -2073,8 +2074,8 @@ public class ClutteredBlockstates extends BlockStateProvider {
         this.getVariantBuilder(block.get())
                 .forAllStates(state -> ConfiguredModel.builder().modelFile(
                                 state.getValue(BlockStateProperties.OPEN) ?
-                                        models().getExistingFile(modLoc("block/" + name  + "_open_" + state.getValue(MultiblockPlacer.MULTIBLOCK_PART))):
-                                        models().getExistingFile(modLoc("block/" + name + "_"  + state.getValue(MultiblockPlacer.MULTIBLOCK_PART))))
+                                        models().getExistingFile(modLoc("block/" + name  + "_open_" + state.getValue(((MultiblockPlacer) state.getBlock()).getMultiblockPart()))):
+                                        models().getExistingFile(modLoc("block/" + name + "_"  + state.getValue(((MultiblockPlacer) state.getBlock()).getMultiblockPart()))))
                         .rotationY((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot())
                         .build());
     }

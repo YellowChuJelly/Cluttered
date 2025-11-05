@@ -41,6 +41,7 @@ public class NonRotationalFurnitureBlock extends Block implements SimpleWaterlog
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+		super.createBlockStateDefinition(pBuilder);
         pBuilder.add(WATERLOGGED);
     }
 }

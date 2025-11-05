@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "cluttered:chalcedony_polished"
+    }
+  },
+  "pattern": [
+    "pp",
+    "pp"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:chalcedony_bricks"
+  },
+  "show_notification": false
+}

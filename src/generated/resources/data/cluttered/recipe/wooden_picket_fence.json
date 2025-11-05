@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "t": {
+      "tag": "minecraft:wooden_fences"
+    }
+  },
+  "pattern": [
+    "ttt"
+  ],
+  "result": {
+    "count": 3,
+    "id": "cluttered:wooden_picket_fence"
+  },
+  "show_notification": false
+}

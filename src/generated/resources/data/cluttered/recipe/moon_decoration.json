@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "pattern": [
+    " gg",
+    "g  ",
+    " gg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:moon_decoration"
+  },
+  "show_notification": false
+}

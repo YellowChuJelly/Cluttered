@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:cauldron"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "minecraft:red_carpet"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:small_cauldron_set"
+  }
+}

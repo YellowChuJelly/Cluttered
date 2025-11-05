@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:red_dye"
+    },
+    "g": {
+      "item": "minecraft:glass_pane"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "s": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    "did",
+    "gsg",
+    " i "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:gumball_machine_red"
+  },
+  "show_notification": false
+}

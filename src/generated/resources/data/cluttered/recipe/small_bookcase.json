@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:bookshelf"
+    },
+    "d": {
+      "item": "minecraft:dark_oak_planks"
+    }
+  },
+  "pattern": [
+    "dbd",
+    "dbd"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:small_bookcase"
+  },
+  "show_notification": false
+}

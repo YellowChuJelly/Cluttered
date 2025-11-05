@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "l": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "n": {
+      "item": "minecraft:iron_nugget"
+    },
+    "y": {
+      "item": "minecraft:yellow_stained_glass_pane"
+    }
+  },
+  "pattern": [
+    "nyn",
+    "yly",
+    " i "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:stained_glass_lamp"
+  },
+  "show_notification": false
+}

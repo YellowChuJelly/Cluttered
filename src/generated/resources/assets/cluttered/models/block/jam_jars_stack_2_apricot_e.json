@@ -1,0 +1,6 @@
+{
+  "parent": "cluttered:block/jam_jar_pyramid_2",
+  "textures": {
+    "0": "cluttered:block/jam_jar_mini_apricot"
+  }
+}

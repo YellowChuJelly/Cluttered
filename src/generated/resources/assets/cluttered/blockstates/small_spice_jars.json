@@ -1,0 +1,332 @@
+{
+  "multipart": [
+    {
+      "apply": [
+        {
+          "model": "cluttered:block/spice_jars_first_1_n"
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_2_n"
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_3_n"
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_4_n"
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_5_n"
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_6_n"
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_7_n"
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_8_n"
+        }
+      ],
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "cluttered:block/spice_jars_first_1_e",
+          "y": 90
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_2_e",
+          "y": 90
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_3_e",
+          "y": 90
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_4_e",
+          "y": 90
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_5_e",
+          "y": 90
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_6_e",
+          "y": 90
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_7_e",
+          "y": 90
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_8_e",
+          "y": 90
+        }
+      ],
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "cluttered:block/spice_jars_first_1_s",
+          "y": 180
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_2_s",
+          "y": 180
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_3_s",
+          "y": 180
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_4_s",
+          "y": 180
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_5_s",
+          "y": 180
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_6_s",
+          "y": 180
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_7_s",
+          "y": 180
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_8_s",
+          "y": 180
+        }
+      ],
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "cluttered:block/spice_jars_first_1_w",
+          "y": 270
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_2_w",
+          "y": 270
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_3_w",
+          "y": 270
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_4_w",
+          "y": 270
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_5_w",
+          "y": 270
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_6_w",
+          "y": 270
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_7_w",
+          "y": 270
+        },
+        {
+          "model": "cluttered:block/spice_jars_first_8_w",
+          "y": 270
+        }
+      ],
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "cluttered:block/spice_jars_second_1_n",
+          "weight": 2
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_2_n",
+          "weight": 2
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_3_n",
+          "weight": 2
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_4_n",
+          "weight": 2
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_5_n",
+          "weight": 2
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_6_n",
+          "weight": 2
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_7_n",
+          "weight": 2
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_8_n",
+          "weight": 2
+        }
+      ],
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "cluttered:block/spice_jars_second_1_e",
+          "weight": 2,
+          "y": 90
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_2_e",
+          "weight": 2,
+          "y": 90
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_3_e",
+          "weight": 2,
+          "y": 90
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_4_e",
+          "weight": 2,
+          "y": 90
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_5_e",
+          "weight": 2,
+          "y": 90
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_6_e",
+          "weight": 2,
+          "y": 90
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_7_e",
+          "weight": 2,
+          "y": 90
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_8_e",
+          "weight": 2,
+          "y": 90
+        }
+      ],
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "cluttered:block/spice_jars_second_1_s",
+          "weight": 2,
+          "y": 180
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_2_s",
+          "weight": 2,
+          "y": 180
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_3_s",
+          "weight": 2,
+          "y": 180
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_4_s",
+          "weight": 2,
+          "y": 180
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_5_s",
+          "weight": 2,
+          "y": 180
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_6_s",
+          "weight": 2,
+          "y": 180
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_7_s",
+          "weight": 2,
+          "y": 180
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_8_s",
+          "weight": 2,
+          "y": 180
+        }
+      ],
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "cluttered:block/spice_jars_second_1_w",
+          "weight": 2,
+          "y": 270
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_2_w",
+          "weight": 2,
+          "y": 270
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_3_w",
+          "weight": 2,
+          "y": 270
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_4_w",
+          "weight": 2,
+          "y": 270
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_5_w",
+          "weight": 2,
+          "y": 270
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_6_w",
+          "weight": 2,
+          "y": 270
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_7_w",
+          "weight": 2,
+          "y": 270
+        },
+        {
+          "model": "cluttered:block/spice_jars_second_8_w",
+          "weight": 2,
+          "y": 270
+        }
+      ],
+      "when": {
+        "facing": "west"
+      }
+    }
+  ]
+}

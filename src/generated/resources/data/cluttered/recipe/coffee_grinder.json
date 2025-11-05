@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "l": {
+      "item": "minecraft:lever"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    " il",
+    "ibi",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:coffee_grinder"
+  },
+  "show_notification": false
+}

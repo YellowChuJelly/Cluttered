@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:gold_nugget"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "w": {
+      "item": "minecraft:light_gray_wool"
+    }
+  },
+  "pattern": [
+    "www",
+    "gwg",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:armchair_light_gray"
+  },
+  "show_notification": false
+}

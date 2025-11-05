@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "item": "minecraft:spruce_fence"
+    },
+    "r": {
+      "item": "minecraft:red_carpet"
+    },
+    "s": {
+      "item": "minecraft:spruce_slab"
+    }
+  },
+  "pattern": [
+    "rrr",
+    "sss",
+    " f "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:lunar_observatory_pedestal_table"
+  },
+  "show_notification": false
+}

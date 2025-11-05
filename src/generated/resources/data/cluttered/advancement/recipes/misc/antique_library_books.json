@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_row_of_small_books": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:row_of_small_books"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:antique_library_books"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_row_of_small_books"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:antique_library_books"
+    ]
+  }
+}

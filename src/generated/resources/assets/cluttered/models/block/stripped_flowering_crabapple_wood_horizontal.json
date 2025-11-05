@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "cluttered:block/stripped_flowering_crabapple_log",
+    "side": "cluttered:block/stripped_flowering_crabapple_log"
+  }
+}

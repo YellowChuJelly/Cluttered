@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:compass"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "p": {
+      "tag": "minecraft:wooden_pressure_plates"
+    }
+  },
+  "pattern": [
+    " p ",
+    " c ",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:analog_kitchen_scale"
+  },
+  "show_notification": false
+}

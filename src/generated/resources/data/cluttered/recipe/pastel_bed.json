@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "tag": "minecraft:beds"
+    },
+    "p": {
+      "item": "minecraft:purple_dye"
+    },
+    "w": {
+      "item": "minecraft:warped_planks"
+    }
+  },
+  "pattern": [
+    "ppw",
+    "wbw"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:pastel_bed"
+  },
+  "show_notification": false
+}

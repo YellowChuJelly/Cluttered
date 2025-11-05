@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "item": "cluttered:sycamore_fence"
+    },
+    "p": {
+      "item": "cluttered:sycamore_planks"
+    },
+    "s": {
+      "item": "cluttered:sycamore_slab"
+    }
+  },
+  "pattern": [
+    "sss",
+    "ppp",
+    "f f"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:desk_green"
+  },
+  "show_notification": false
+}

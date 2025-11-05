@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_confectionary_wallpaper": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:confectionary_wallpaper"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:blue_wainscoting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_confectionary_wallpaper"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:blue_wainscoting"
+    ]
+  }
+}

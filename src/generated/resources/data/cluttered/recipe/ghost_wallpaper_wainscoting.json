@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:bone"
+    },
+    "s": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "w": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "sbs",
+    "www"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:ghost_wallpaper_wainscoting"
+  },
+  "show_notification": false
+}

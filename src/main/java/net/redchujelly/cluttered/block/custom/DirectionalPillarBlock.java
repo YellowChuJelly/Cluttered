@@ -28,6 +28,7 @@ public class DirectionalPillarBlock extends DirectionalBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+		super.createBlockStateDefinition(pBuilder);
         pBuilder.add(FACING);
     }
 }

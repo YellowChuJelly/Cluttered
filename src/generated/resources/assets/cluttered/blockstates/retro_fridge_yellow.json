@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=east,open=false,part=1": {
+      "model": "cluttered:block/retro_fridge_yellow_1",
+      "y": 270
+    },
+    "facing=east,open=false,part=2": {
+      "model": "cluttered:block/retro_fridge_yellow_2",
+      "y": 270
+    },
+    "facing=east,open=true,part=1": {
+      "model": "cluttered:block/retro_fridge_yellow_open_1",
+      "y": 270
+    },
+    "facing=east,open=true,part=2": {
+      "model": "cluttered:block/retro_fridge_yellow_open_2",
+      "y": 270
+    },
+    "facing=north,open=false,part=1": {
+      "model": "cluttered:block/retro_fridge_yellow_1",
+      "y": 180
+    },
+    "facing=north,open=false,part=2": {
+      "model": "cluttered:block/retro_fridge_yellow_2",
+      "y": 180
+    },
+    "facing=north,open=true,part=1": {
+      "model": "cluttered:block/retro_fridge_yellow_open_1",
+      "y": 180
+    },
+    "facing=north,open=true,part=2": {
+      "model": "cluttered:block/retro_fridge_yellow_open_2",
+      "y": 180
+    },
+    "facing=south,open=false,part=1": {
+      "model": "cluttered:block/retro_fridge_yellow_1"
+    },
+    "facing=south,open=false,part=2": {
+      "model": "cluttered:block/retro_fridge_yellow_2"
+    },
+    "facing=south,open=true,part=1": {
+      "model": "cluttered:block/retro_fridge_yellow_open_1"
+    },
+    "facing=south,open=true,part=2": {
+      "model": "cluttered:block/retro_fridge_yellow_open_2"
+    },
+    "facing=west,open=false,part=1": {
+      "model": "cluttered:block/retro_fridge_yellow_1",
+      "y": 90
+    },
+    "facing=west,open=false,part=2": {
+      "model": "cluttered:block/retro_fridge_yellow_2",
+      "y": 90
+    },
+    "facing=west,open=true,part=1": {
+      "model": "cluttered:block/retro_fridge_yellow_open_1",
+      "y": 90
+    },
+    "facing=west,open=true,part=2": {
+      "model": "cluttered:block/retro_fridge_yellow_open_2",
+      "y": 90
+    }
+  }
+}

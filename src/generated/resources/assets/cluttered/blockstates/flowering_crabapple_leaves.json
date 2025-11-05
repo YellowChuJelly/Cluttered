@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "cluttered:block/flowering_crabapple_leaves_1"
+      },
+      {
+        "model": "cluttered:block/flowering_crabapple_leaves_2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "r": {
+      "item": "minecraft:red_wool"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "rpr",
+    "rrr"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:lunar_observatory_basket_of_papers"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chalcedony_polished": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:chalcedony_polished"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:chalcedony_chiseled_block_from_chalcedony_polished_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chalcedony_polished"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:chalcedony_chiseled_block_from_chalcedony_polished_stonecutting"
+    ]
+  }
+}

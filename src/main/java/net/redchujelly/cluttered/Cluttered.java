@@ -33,19 +33,21 @@ public class Cluttered {
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public Cluttered(IEventBus modEventBus, ModContainer modContainer) {
-        SoundRegistration.register(modEventBus);
-        CreativeTabRegistration.register(modEventBus);
-        ItemRegistration.register(modEventBus);
-        TileEntityRegistration.register(modEventBus);
+		ClutteredLootModifiers.register(modEventBus);
+		EntityTypeRegistration.register(modEventBus);
+		PaintingRegistration.register(modEventBus);
+		SoundRegistration.register(modEventBus);
 
-        BlockRegistration.register(modEventBus);
-        EntityTypeRegistration.register(modEventBus);
-        PaintingRegistration.register(modEventBus);
+		BlockRegistration.register(modEventBus);
+
+		ItemRegistration.register(modEventBus);
+		TileEntityRegistration.register(modEventBus);
+
+        CreativeTabRegistration.register(modEventBus);
+
         TrunkPlacerTypeRegistration.register(modEventBus);
         FoliagePlacerTypeRegistration.register(modEventBus);
         TreeDecoratorTypeRegistration.register(modEventBus);
-
-        ClutteredLootModifiers.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, ClutteredCommonConfigs.SPEC, "cluttered-common.toml");
 

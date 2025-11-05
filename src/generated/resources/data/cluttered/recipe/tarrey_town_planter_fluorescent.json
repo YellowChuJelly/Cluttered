@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:bone_block"
+    },
+    "d": {
+      "item": "minecraft:dirt"
+    },
+    "w": {
+      "item": "cluttered:fluorescent_maple_planks"
+    }
+  },
+  "pattern": [
+    "wdw",
+    "wbw",
+    "wbw"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:tarrey_town_planter_fluorescent"
+  },
+  "show_notification": false
+}

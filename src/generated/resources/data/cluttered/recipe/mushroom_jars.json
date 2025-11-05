@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:brown_mushroom"
+    },
+    "g": {
+      "item": "minecraft:glass_bottle"
+    },
+    "m": {
+      "item": "minecraft:red_mushroom"
+    }
+  },
+  "pattern": [
+    "mb",
+    "gg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:mushroom_jars"
+  },
+  "show_notification": false
+}

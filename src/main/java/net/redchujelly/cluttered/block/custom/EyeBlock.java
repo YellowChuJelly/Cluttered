@@ -63,6 +63,7 @@ public class EyeBlock extends Block {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+		super.createBlockStateDefinition(pBuilder);
         pBuilder.add(LOOKING_LEFT).add(BLINK_FRAME);
     }
 

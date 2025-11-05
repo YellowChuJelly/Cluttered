@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "p": {
+      "item": "minecraft:heavy_weighted_pressure_plate"
+    },
+    "t": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "iii",
+    "i t",
+    "iip"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:sewing_machine_antique"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:book"
+    },
+    "r": {
+      "item": "minecraft:rabbit_hide"
+    }
+  },
+  "pattern": [
+    " r ",
+    "bbb",
+    " r "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:bunny_book_ends"
+  },
+  "show_notification": false
+}

@@ -11,7 +11,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.redchujelly.cluttered.Cluttered;
@@ -72,17 +71,17 @@ public class BlockRegistration {
             () -> new WillowVinesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.VINE).mapColor(DyeColor.PURPLE)));
     public static final DeferredBlock<Block> WILLOW_SAPLING = registerFuelBlock("willow_sapling",
             () -> new SaplingBlock(ClutteredTreeGrowers.WILLOW, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING).mapColor(DyeColor.PURPLE)), 100);
-    public static final DeferredHolder<Block, Block> POTTED_WILLOW_SAPLING = BLOCKS.register("potted_willow_sapling",
+    public static final DeferredBlock<Block> POTTED_WILLOW_SAPLING = BLOCKS.register("potted_willow_sapling",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockRegistration.WILLOW_SAPLING,
                     BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_BIRCH_SAPLING)));
 
-    public static final DeferredHolder<Block, Block> WILLOW_SIGN = BLOCKS.register("willow_sign",
+    public static final DeferredBlock<Block> WILLOW_SIGN = BLOCKS.register("willow_sign",
             () -> new CustomStandingSignBlock(ClutteredWoodTypes.WILLOW, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DyeColor.PURPLE)));
-    public static final DeferredHolder<Block, Block> WILLOW_WALL_SIGN = BLOCKS.register("willow_wall_sign",
+    public static final DeferredBlock<Block> WILLOW_WALL_SIGN = BLOCKS.register("willow_wall_sign",
             () -> new CustomWallSignBlock(ClutteredWoodTypes.WILLOW, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.PURPLE)));
-    public static final DeferredHolder<Block, Block> WILLOW_HANGING_SIGN = BLOCKS.register("willow_hanging_sign",
+    public static final DeferredBlock<Block> WILLOW_HANGING_SIGN = BLOCKS.register("willow_hanging_sign",
             () -> new CustomHangingSignBlock(ClutteredWoodTypes.WILLOW, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.PURPLE)));
-    public static final DeferredHolder<Block, Block> WILLOW_WALL_HANGING_SIGN = BLOCKS.register("willow_wall_hanging_sign",
+    public static final DeferredBlock<Block> WILLOW_WALL_HANGING_SIGN = BLOCKS.register("willow_wall_hanging_sign",
             () -> new CustomWallHangingSignBlock(ClutteredWoodTypes.WILLOW, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.PURPLE)));
 
     public static final DeferredBlock<Block> WILLOW_BOOKSHELF_BLACK_CAT = registerFuelBlock("willow_bookshelf_black_cat",
@@ -135,13 +134,13 @@ public class BlockRegistration {
     public static final DeferredBlock<Block> FLOWERING_WILLOW_WINDOW_PANE = registerBlock("flowering_willow_window_pane",
             () -> new IronBarsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS_PANE).mapColor(DyeColor.PURPLE).noOcclusion()));
 
-    public static final DeferredHolder<Block, Block> FLOWERING_WILLOW_SIGN = BLOCKS.register("flowering_willow_sign",
+    public static final DeferredBlock<Block> FLOWERING_WILLOW_SIGN = BLOCKS.register("flowering_willow_sign",
             () -> new CustomStandingSignBlock(ClutteredWoodTypes.FLOWERING_WILLOW, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DyeColor.PURPLE)));
-    public static final DeferredHolder<Block, Block> FLOWERING_WILLOW_WALL_SIGN = BLOCKS.register("flowering_willow_wall_sign",
+    public static final DeferredBlock<Block> FLOWERING_WILLOW_WALL_SIGN = BLOCKS.register("flowering_willow_wall_sign",
             () -> new CustomWallSignBlock(ClutteredWoodTypes.FLOWERING_WILLOW, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.PURPLE)));
-    public static final DeferredHolder<Block, Block> FLOWERING_WILLOW_HANGING_SIGN = BLOCKS.register("flowering_willow_hanging_sign",
+    public static final DeferredBlock<Block> FLOWERING_WILLOW_HANGING_SIGN = BLOCKS.register("flowering_willow_hanging_sign",
             () -> new CustomHangingSignBlock(ClutteredWoodTypes.FLOWERING_WILLOW, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.PURPLE)));
-    public static final DeferredHolder<Block, Block> FLOWERING_WILLOW_WALL_HANGING_SIGN = BLOCKS.register("flowering_willow_wall_hanging_sign",
+    public static final DeferredBlock<Block> FLOWERING_WILLOW_WALL_HANGING_SIGN = BLOCKS.register("flowering_willow_wall_hanging_sign",
             () -> new CustomWallHangingSignBlock(ClutteredWoodTypes.FLOWERING_WILLOW, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.PURPLE)));
 
     //POPLAR WOODSET
@@ -182,17 +181,17 @@ public class BlockRegistration {
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES).mapColor(DyeColor.YELLOW)));
     public static final DeferredBlock<Block> POPLAR_SAPLING = registerFuelBlock("poplar_sapling",
             () -> new SaplingBlock(ClutteredTreeGrowers.POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING).mapColor(DyeColor.YELLOW)), 100);
-    public static final DeferredHolder<Block, Block> POTTED_POPLAR_SAPLING = BLOCKS.register("potted_poplar_sapling",
+    public static final DeferredBlock<Block> POTTED_POPLAR_SAPLING = BLOCKS.register("potted_poplar_sapling",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockRegistration.POPLAR_SAPLING,
                     BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_BIRCH_SAPLING)));
     
-    public static final DeferredHolder<Block, Block> POPLAR_SIGN = BLOCKS.register("poplar_sign",
+    public static final DeferredBlock<Block> POPLAR_SIGN = BLOCKS.register("poplar_sign",
             () -> new CustomStandingSignBlock(ClutteredWoodTypes.POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DyeColor.YELLOW)));
-    public static final DeferredHolder<Block, Block> POPLAR_WALL_SIGN = BLOCKS.register("poplar_wall_sign",
+    public static final DeferredBlock<Block> POPLAR_WALL_SIGN = BLOCKS.register("poplar_wall_sign",
             () -> new CustomWallSignBlock(ClutteredWoodTypes.POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.YELLOW)));
-    public static final DeferredHolder<Block, Block> POPLAR_HANGING_SIGN = BLOCKS.register("poplar_hanging_sign",
+    public static final DeferredBlock<Block> POPLAR_HANGING_SIGN = BLOCKS.register("poplar_hanging_sign",
             () -> new CustomHangingSignBlock(ClutteredWoodTypes.POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.YELLOW)));
-    public static final DeferredHolder<Block, Block> POPLAR_WALL_HANGING_SIGN = BLOCKS.register("poplar_wall_hanging_sign",
+    public static final DeferredBlock<Block> POPLAR_WALL_HANGING_SIGN = BLOCKS.register("poplar_wall_hanging_sign",
             () -> new CustomWallHangingSignBlock(ClutteredWoodTypes.POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.YELLOW)));
 
 
@@ -233,13 +232,13 @@ public class BlockRegistration {
     public static final DeferredBlock<Block> FLOWERING_POPLAR_LEAVES = registerBlock("flowering_poplar_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES).mapColor(DyeColor.PINK)));
 
-    public static final DeferredHolder<Block, Block> FLOWERING_POPLAR_SIGN = BLOCKS.register("flowering_poplar_sign",
+    public static final DeferredBlock<Block> FLOWERING_POPLAR_SIGN = BLOCKS.register("flowering_poplar_sign",
             () -> new CustomStandingSignBlock(ClutteredWoodTypes.FLOWERING_POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DyeColor.YELLOW)));
-    public static final DeferredHolder<Block, Block> FLOWERING_POPLAR_WALL_SIGN = BLOCKS.register("flowering_poplar_wall_sign",
+    public static final DeferredBlock<Block> FLOWERING_POPLAR_WALL_SIGN = BLOCKS.register("flowering_poplar_wall_sign",
             () -> new CustomWallSignBlock(ClutteredWoodTypes.FLOWERING_POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.YELLOW)));
-    public static final DeferredHolder<Block, Block> FLOWERING_POPLAR_HANGING_SIGN = BLOCKS.register("flowering_poplar_hanging_sign",
+    public static final DeferredBlock<Block> FLOWERING_POPLAR_HANGING_SIGN = BLOCKS.register("flowering_poplar_hanging_sign",
             () -> new CustomHangingSignBlock(ClutteredWoodTypes.FLOWERING_POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.YELLOW)));
-    public static final DeferredHolder<Block, Block> FLOWERING_POPLAR_WALL_HANGING_SIGN = BLOCKS.register("flowering_poplar_wall_hanging_sign",
+    public static final DeferredBlock<Block> FLOWERING_POPLAR_WALL_HANGING_SIGN = BLOCKS.register("flowering_poplar_wall_hanging_sign",
             () -> new CustomWallHangingSignBlock(ClutteredWoodTypes.FLOWERING_POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.YELLOW)));
 
     //CRABAPPLE WOODSET
@@ -280,17 +279,17 @@ public class BlockRegistration {
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES).mapColor(DyeColor.PINK)));
     public static final DeferredBlock<Block> CRABAPPLE_SAPLING = registerFuelBlock("crabapple_sapling",
             () -> new SaplingBlock(ClutteredTreeGrowers.CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING).mapColor(DyeColor.PINK)), 100);
-    public static final DeferredHolder<Block, Block> POTTED_CRABAPPLE_SAPLING = BLOCKS.register("potted_crabapple_sapling",
+    public static final DeferredBlock<Block> POTTED_CRABAPPLE_SAPLING = BLOCKS.register("potted_crabapple_sapling",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockRegistration.CRABAPPLE_SAPLING,
                     BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_BIRCH_SAPLING)));
 
-    public static final DeferredHolder<Block, Block> CRABAPPLE_SIGN = BLOCKS.register("crabapple_sign",
+    public static final DeferredBlock<Block> CRABAPPLE_SIGN = BLOCKS.register("crabapple_sign",
             () -> new CustomStandingSignBlock(ClutteredWoodTypes.CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DyeColor.PINK)));
-    public static final DeferredHolder<Block, Block> CRABAPPLE_WALL_SIGN = BLOCKS.register("crabapple_wall_sign",
+    public static final DeferredBlock<Block> CRABAPPLE_WALL_SIGN = BLOCKS.register("crabapple_wall_sign",
             () -> new CustomWallSignBlock(ClutteredWoodTypes.CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.PINK)));
-    public static final DeferredHolder<Block, Block> CRABAPPLE_HANGING_SIGN = BLOCKS.register("crabapple_hanging_sign",
+    public static final DeferredBlock<Block> CRABAPPLE_HANGING_SIGN = BLOCKS.register("crabapple_hanging_sign",
             () -> new CustomHangingSignBlock(ClutteredWoodTypes.CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.PINK)));
-    public static final DeferredHolder<Block, Block> CRABAPPLE_WALL_HANGING_SIGN = BLOCKS.register("crabapple_wall_hanging_sign",
+    public static final DeferredBlock<Block> CRABAPPLE_WALL_HANGING_SIGN = BLOCKS.register("crabapple_wall_hanging_sign",
             () -> new CustomWallHangingSignBlock(ClutteredWoodTypes.CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.PINK)));
 
     //FLOWERING CRABAPPLE WOODSET
@@ -330,13 +329,13 @@ public class BlockRegistration {
     public static final DeferredBlock<Block> FLOWERING_CRABAPPLE_WINDOW_PANE = registerBlock("flowering_crabapple_window_pane",
             () -> new IronBarsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS_PANE).mapColor(DyeColor.PINK).noOcclusion()));
 
-    public static final DeferredHolder<Block, Block> FLOWERING_CRABAPPLE_SIGN = BLOCKS.register("flowering_crabapple_sign",
+    public static final DeferredBlock<Block> FLOWERING_CRABAPPLE_SIGN = BLOCKS.register("flowering_crabapple_sign",
             () -> new CustomStandingSignBlock(ClutteredWoodTypes.FLOWERING_CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DyeColor.PINK)));
-    public static final DeferredHolder<Block, Block> FLOWERING_CRABAPPLE_WALL_SIGN = BLOCKS.register("flowering_crabapple_wall_sign",
+    public static final DeferredBlock<Block> FLOWERING_CRABAPPLE_WALL_SIGN = BLOCKS.register("flowering_crabapple_wall_sign",
             () -> new CustomWallSignBlock(ClutteredWoodTypes.FLOWERING_CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.PINK)));
-    public static final DeferredHolder<Block, Block> FLOWERING_CRABAPPLE_HANGING_SIGN = BLOCKS.register("flowering_crabapple_hanging_sign",
+    public static final DeferredBlock<Block> FLOWERING_CRABAPPLE_HANGING_SIGN = BLOCKS.register("flowering_crabapple_hanging_sign",
             () -> new CustomHangingSignBlock(ClutteredWoodTypes.FLOWERING_CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.PINK)));
-    public static final DeferredHolder<Block, Block> FLOWERING_CRABAPPLE_WALL_HANGING_SIGN = BLOCKS.register("flowering_crabapple_wall_hanging_sign",
+    public static final DeferredBlock<Block> FLOWERING_CRABAPPLE_WALL_HANGING_SIGN = BLOCKS.register("flowering_crabapple_wall_hanging_sign",
             () -> new CustomWallHangingSignBlock(ClutteredWoodTypes.FLOWERING_CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.PINK)));
 
 
@@ -378,17 +377,17 @@ public class BlockRegistration {
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES).mapColor(DyeColor.GREEN)));
     public static final DeferredBlock<Block> SYCAMORE_SAPLING = registerFuelBlock("sycamore_sapling",
             () -> new SaplingBlock(ClutteredTreeGrowers.SYCAMORE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING).mapColor(DyeColor.GREEN)), 100);
-    public static final DeferredHolder<Block, Block> POTTED_SYCAMORE_SAPLING = BLOCKS.register("potted_sycamore_sapling",
+    public static final DeferredBlock<Block> POTTED_SYCAMORE_SAPLING = BLOCKS.register("potted_sycamore_sapling",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockRegistration.SYCAMORE_SAPLING,
                     BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_BIRCH_SAPLING)));
 
-    public static final DeferredHolder<Block, Block> SYCAMORE_SIGN = BLOCKS.register("sycamore_sign",
+    public static final DeferredBlock<Block> SYCAMORE_SIGN = BLOCKS.register("sycamore_sign",
             () -> new CustomStandingSignBlock(ClutteredWoodTypes.SYCAMORE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DyeColor.GREEN)));
-    public static final DeferredHolder<Block, Block> SYCAMORE_WALL_SIGN = BLOCKS.register("sycamore_wall_sign",
+    public static final DeferredBlock<Block> SYCAMORE_WALL_SIGN = BLOCKS.register("sycamore_wall_sign",
             () -> new CustomWallSignBlock(ClutteredWoodTypes.SYCAMORE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.GREEN)));
-    public static final DeferredHolder<Block, Block> SYCAMORE_HANGING_SIGN = BLOCKS.register("sycamore_hanging_sign",
+    public static final DeferredBlock<Block> SYCAMORE_HANGING_SIGN = BLOCKS.register("sycamore_hanging_sign",
             () -> new CustomHangingSignBlock(ClutteredWoodTypes.SYCAMORE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.GREEN)));
-    public static final DeferredHolder<Block, Block> SYCAMORE_WALL_HANGING_SIGN = BLOCKS.register("sycamore_wall_hanging_sign",
+    public static final DeferredBlock<Block> SYCAMORE_WALL_HANGING_SIGN = BLOCKS.register("sycamore_wall_hanging_sign",
             () -> new CustomWallHangingSignBlock(ClutteredWoodTypes.SYCAMORE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.GREEN)));
 
     //FLUORESCENT MAPLE WOODSET
@@ -431,17 +430,17 @@ public class BlockRegistration {
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES).mapColor(DyeColor.CYAN).lightLevel(p -> 12)));
     public static final DeferredBlock<Block> MAPLE_SAPLING = registerFuelBlock("fluorescent_maple_sapling",
             () -> new SaplingBlock(ClutteredTreeGrowers.MAPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING).lightLevel(p -> 6).mapColor(DyeColor.CYAN)), 100);
-    public static final DeferredHolder<Block, Block> POTTED_MAPLE_SAPLING = BLOCKS.register("potted_fluorescent_maple_sapling",
+    public static final DeferredBlock<Block> POTTED_MAPLE_SAPLING = BLOCKS.register("potted_fluorescent_maple_sapling",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockRegistration.MAPLE_SAPLING,
                     BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_BIRCH_SAPLING).lightLevel(p -> 6)));
 
-    public static final DeferredHolder<Block, Block> MAPLE_SIGN = BLOCKS.register("fluorescent_maple_sign",
+    public static final DeferredBlock<Block> MAPLE_SIGN = BLOCKS.register("fluorescent_maple_sign",
             () -> new CustomStandingSignBlock(ClutteredWoodTypes.MAPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DyeColor.CYAN).lightLevel(p -> 4)));
-    public static final DeferredHolder<Block, Block> MAPLE_WALL_SIGN = BLOCKS.register("fluorescent_maple_wall_sign",
+    public static final DeferredBlock<Block> MAPLE_WALL_SIGN = BLOCKS.register("fluorescent_maple_wall_sign",
             () -> new CustomWallSignBlock(ClutteredWoodTypes.MAPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(DyeColor.CYAN).lightLevel(p -> 4)));
-    public static final DeferredHolder<Block, Block> MAPLE_HANGING_SIGN = BLOCKS.register("fluorescent_maple_hanging_sign",
+    public static final DeferredBlock<Block> MAPLE_HANGING_SIGN = BLOCKS.register("fluorescent_maple_hanging_sign",
             () -> new CustomHangingSignBlock(ClutteredWoodTypes.MAPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(DyeColor.CYAN).lightLevel(p -> 4)));
-    public static final DeferredHolder<Block, Block> MAPLE_WALL_HANGING_SIGN = BLOCKS.register("fluorescent_maple_wall_hanging_sign",
+    public static final DeferredBlock<Block> MAPLE_WALL_HANGING_SIGN = BLOCKS.register("fluorescent_maple_wall_hanging_sign",
             () -> new CustomWallHangingSignBlock(ClutteredWoodTypes.MAPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DyeColor.CYAN).lightLevel(p -> 4)));
 
 
@@ -479,17 +478,17 @@ public class BlockRegistration {
             () -> new CustomGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.BLUE).noOcclusion()));
     public static final DeferredBlock<Block> BLUE_MUSHROOM_WINDOW_PANE = registerBlock("blue_mushroom_window_pane",
             () -> new IronBarsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS_PANE).mapColor(DyeColor.BLUE).noOcclusion()));
-    public static final DeferredHolder<Block, Block> POTTED_BLUE_MUSHROOM_SAPLING = BLOCKS.register("potted_blue_roundhead",
+    public static final DeferredBlock<Block> POTTED_BLUE_MUSHROOM_SAPLING = BLOCKS.register("potted_blue_roundhead",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockRegistration.BLUE_MUSHROOM_SAPLING,
                     BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_BIRCH_SAPLING)));
 
-    public static final DeferredHolder<Block, Block> BLUE_MUSHROOM_SIGN = BLOCKS.register("blue_mushroom_sign",
+    public static final DeferredBlock<Block> BLUE_MUSHROOM_SIGN = BLOCKS.register("blue_mushroom_sign",
             () -> new CustomStandingSignBlock(ClutteredWoodTypes.BLUE_MUSHROOM, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_SIGN).mapColor(DyeColor.BLUE)));
-    public static final DeferredHolder<Block, Block> BLUE_MUSHROOM_WALL_SIGN = BLOCKS.register("blue_mushroom_wall_sign",
+    public static final DeferredBlock<Block> BLUE_MUSHROOM_WALL_SIGN = BLOCKS.register("blue_mushroom_wall_sign",
             () -> new CustomWallSignBlock(ClutteredWoodTypes.BLUE_MUSHROOM, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_WALL_SIGN).mapColor(DyeColor.BLUE)));
-    public static final DeferredHolder<Block, Block> BLUE_MUSHROOM_HANGING_SIGN = BLOCKS.register("blue_mushroom_hanging_sign",
+    public static final DeferredBlock<Block> BLUE_MUSHROOM_HANGING_SIGN = BLOCKS.register("blue_mushroom_hanging_sign",
             () -> new CustomHangingSignBlock(ClutteredWoodTypes.BLUE_MUSHROOM, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_HANGING_SIGN).mapColor(DyeColor.BLUE)));
-    public static final DeferredHolder<Block, Block> BLUE_MUSHROOM_WALL_HANGING_SIGN = BLOCKS.register("blue_mushroom_wall_hanging_sign",
+    public static final DeferredBlock<Block> BLUE_MUSHROOM_WALL_HANGING_SIGN = BLOCKS.register("blue_mushroom_wall_hanging_sign",
             () -> new CustomWallHangingSignBlock(ClutteredWoodTypes.BLUE_MUSHROOM, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_WALL_HANGING_SIGN).mapColor(DyeColor.BLUE)));
 
     //RED MUSHROOM WOODSET
@@ -526,17 +525,17 @@ public class BlockRegistration {
             () -> new CustomGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.RED).noOcclusion()));
     public static final DeferredBlock<Block> RED_MUSHROOM_WINDOW_PANE = registerBlock("red_mushroom_window_pane",
             () -> new IronBarsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS_PANE).mapColor(DyeColor.RED).noOcclusion()));
-    public static final DeferredHolder<Block, Block> POTTED_RED_MUSHROOM_SAPLING = BLOCKS.register("potted_fly_agaric",
+    public static final DeferredBlock<Block> POTTED_RED_MUSHROOM_SAPLING = BLOCKS.register("potted_fly_agaric",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockRegistration.RED_MUSHROOM_SAPLING,
                     BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_BIRCH_SAPLING)));
 
-    public static final DeferredHolder<Block, Block> RED_MUSHROOM_SIGN = BLOCKS.register("red_mushroom_sign",
+    public static final DeferredBlock<Block> RED_MUSHROOM_SIGN = BLOCKS.register("red_mushroom_sign",
             () -> new CustomStandingSignBlock(ClutteredWoodTypes.RED_MUSHROOM, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_SIGN).mapColor(DyeColor.RED)));
-    public static final DeferredHolder<Block, Block> RED_MUSHROOM_WALL_SIGN = BLOCKS.register("red_mushroom_wall_sign",
+    public static final DeferredBlock<Block> RED_MUSHROOM_WALL_SIGN = BLOCKS.register("red_mushroom_wall_sign",
             () -> new CustomWallSignBlock(ClutteredWoodTypes.RED_MUSHROOM, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_WALL_SIGN).mapColor(DyeColor.RED)));
-    public static final DeferredHolder<Block, Block> RED_MUSHROOM_HANGING_SIGN = BLOCKS.register("red_mushroom_hanging_sign",
+    public static final DeferredBlock<Block> RED_MUSHROOM_HANGING_SIGN = BLOCKS.register("red_mushroom_hanging_sign",
             () -> new CustomHangingSignBlock(ClutteredWoodTypes.RED_MUSHROOM, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_HANGING_SIGN).mapColor(DyeColor.RED)));
-    public static final DeferredHolder<Block, Block> RED_MUSHROOM_WALL_HANGING_SIGN = BLOCKS.register("red_mushroom_wall_hanging_sign",
+    public static final DeferredBlock<Block> RED_MUSHROOM_WALL_HANGING_SIGN = BLOCKS.register("red_mushroom_wall_hanging_sign",
             () -> new CustomWallHangingSignBlock(ClutteredWoodTypes.RED_MUSHROOM, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_WALL_HANGING_SIGN).mapColor(DyeColor.RED)));
 
 

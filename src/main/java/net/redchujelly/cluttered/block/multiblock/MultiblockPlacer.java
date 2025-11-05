@@ -21,7 +21,7 @@ import org.jetbrains.annotations.Nullable;
 public class MultiblockPlacer extends Block {
 	private static final MapCodec<MultiblockPlacer> CODEC = simpleCodec(MultiblockPlacer::new);
 	
-    public static final IntegerProperty MULTIBLOCK_PART = IntegerProperty.create("part", 1, 2);
+    private static final IntegerProperty MULTIBLOCK_PART = IntegerProperty.create("part", 1, 2);
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
     //3D Array of the shape of the multiblock.
@@ -56,7 +56,8 @@ public class MultiblockPlacer extends Block {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-        pBuilder.add(FACING).add(getMultiblockPart());
+        super.createBlockStateDefinition(pBuilder);
+		pBuilder.add(FACING).add(getMultiblockPart());
     }
 
     @Nullable

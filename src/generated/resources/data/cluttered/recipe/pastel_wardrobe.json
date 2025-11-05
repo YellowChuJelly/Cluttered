@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "p": {
+      "item": "minecraft:pink_dye"
+    },
+    "w": {
+      "item": "minecraft:warped_planks"
+    }
+  },
+  "pattern": [
+    "wpw",
+    "cwc",
+    "wpw"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:pastel_wardrobe"
+  },
+  "show_notification": false
+}

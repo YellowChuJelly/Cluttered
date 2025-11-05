@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "l": {
+      "item": "cluttered:flowering_poplar_log"
+    }
+  },
+  "pattern": [
+    "ll",
+    "ll"
+  ],
+  "result": {
+    "count": 3,
+    "id": "cluttered:flowering_poplar_wood"
+  },
+  "show_notification": false
+}

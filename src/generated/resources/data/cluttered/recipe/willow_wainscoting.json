@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "cluttered:willow_slab"
+    },
+    "p": {
+      "item": "cluttered:willow_planks"
+    }
+  },
+  "pattern": [
+    "bbb",
+    "ppp"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:willow_wainscoting"
+  },
+  "show_notification": false
+}

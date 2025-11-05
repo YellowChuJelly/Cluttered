@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:yellow_dye"
+    },
+    "t": {
+      "item": "minecraft:purple_terracotta"
+    }
+  },
+  "pattern": [
+    "tt",
+    "tb"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:hannish_tile"
+  },
+  "show_notification": false
+}

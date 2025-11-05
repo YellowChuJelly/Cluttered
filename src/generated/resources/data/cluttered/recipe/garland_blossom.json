@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "tag": "minecraft:small_flowers"
+    },
+    "s": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "sss",
+    "f f",
+    " f "
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:garland_blossom"
+  },
+  "show_notification": false
+}

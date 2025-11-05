@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_black_cat_window": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:black_cat_window"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:black_cat_window_pane"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_black_cat_window"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:black_cat_window_pane"
+    ]
+  }
+}

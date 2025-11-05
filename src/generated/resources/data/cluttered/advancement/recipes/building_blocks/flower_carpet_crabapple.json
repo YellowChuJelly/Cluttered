@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_flowering_crabapple_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:flowering_crabapple_leaves"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:flower_carpet_crabapple"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_flowering_crabapple_leaves"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:flower_carpet_crabapple"
+    ]
+  }
+}

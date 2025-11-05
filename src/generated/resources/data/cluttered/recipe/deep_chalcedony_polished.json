@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "r": {
+      "item": "cluttered:deep_raw_chalcedony"
+    }
+  },
+  "pattern": [
+    "rr",
+    "rr"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:deep_chalcedony_polished"
+  },
+  "show_notification": false
+}

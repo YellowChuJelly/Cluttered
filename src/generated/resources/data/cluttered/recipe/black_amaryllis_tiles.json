@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "tag": "minecraft:coals"
+    },
+    "t": {
+      "item": "minecraft:terracotta"
+    }
+  },
+  "pattern": [
+    "ttt",
+    "tbt",
+    "ttt"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:black_amaryllis_tiles"
+  },
+  "show_notification": false
+}

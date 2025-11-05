@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "p": {
+      "item": "cluttered:willow_planks"
+    },
+    "t": {
+      "item": "cluttered:subway_tiles_purple"
+    }
+  },
+  "pattern": [
+    "ttt",
+    "pcp",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:black_cat_counter_drawers"
+  },
+  "show_notification": false
+}

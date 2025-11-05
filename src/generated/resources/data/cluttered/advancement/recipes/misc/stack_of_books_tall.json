@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stack_of_books": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:stack_of_books"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:stack_of_books_tall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stack_of_books"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:stack_of_books_tall"
+    ]
+  }
+}

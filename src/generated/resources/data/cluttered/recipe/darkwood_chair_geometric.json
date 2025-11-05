@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:cyan_carpet"
+    },
+    "f": {
+      "item": "minecraft:spruce_fence"
+    },
+    "o": {
+      "item": "minecraft:orange_wool"
+    }
+  },
+  "pattern": [
+    "fcf",
+    "fof",
+    "fff"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:darkwood_chair_geometric"
+  },
+  "show_notification": false
+}

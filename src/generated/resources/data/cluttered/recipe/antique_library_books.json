@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "cluttered:row_of_small_books"
+    }
+  },
+  "pattern": [
+    "bb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:antique_library_books"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "q": {
+      "item": "minecraft:terracotta"
+    },
+    "t": {
+      "item": "minecraft:quartz_block"
+    }
+  },
+  "pattern": [
+    "tqt",
+    "qtq",
+    "tqt"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:x_tile_terracotta_inverse"
+  },
+  "show_notification": false
+}

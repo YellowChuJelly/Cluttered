@@ -1,0 +1,184 @@
+{
+  "variants": {
+    "facing=east,occupied=false,part=1": {
+      "model": "cluttered:block/darkwood_bed_quilted_1",
+      "y": 270
+    },
+    "facing=east,occupied=false,part=2": {
+      "model": "cluttered:block/darkwood_bed_quilted_2",
+      "y": 270
+    },
+    "facing=east,occupied=false,part=3": {
+      "model": "cluttered:block/darkwood_bed_quilted_3",
+      "y": 270
+    },
+    "facing=east,occupied=false,part=4": {
+      "model": "cluttered:block/darkwood_bed_quilted_4",
+      "y": 270
+    },
+    "facing=east,occupied=false,part=5": {
+      "model": "cluttered:block/darkwood_bed_quilted_5",
+      "y": 270
+    },
+    "facing=east,occupied=false,part=6": {
+      "model": "cluttered:block/darkwood_bed_quilted_6",
+      "y": 270
+    },
+    "facing=east,occupied=true,part=1": {
+      "model": "cluttered:block/darkwood_bed_quilted_1",
+      "y": 270
+    },
+    "facing=east,occupied=true,part=2": {
+      "model": "cluttered:block/darkwood_bed_quilted_2",
+      "y": 270
+    },
+    "facing=east,occupied=true,part=3": {
+      "model": "cluttered:block/darkwood_bed_quilted_3",
+      "y": 270
+    },
+    "facing=east,occupied=true,part=4": {
+      "model": "cluttered:block/darkwood_bed_quilted_4",
+      "y": 270
+    },
+    "facing=east,occupied=true,part=5": {
+      "model": "cluttered:block/darkwood_bed_quilted_5",
+      "y": 270
+    },
+    "facing=east,occupied=true,part=6": {
+      "model": "cluttered:block/darkwood_bed_quilted_6",
+      "y": 270
+    },
+    "facing=north,occupied=false,part=1": {
+      "model": "cluttered:block/darkwood_bed_quilted_1",
+      "y": 180
+    },
+    "facing=north,occupied=false,part=2": {
+      "model": "cluttered:block/darkwood_bed_quilted_2",
+      "y": 180
+    },
+    "facing=north,occupied=false,part=3": {
+      "model": "cluttered:block/darkwood_bed_quilted_3",
+      "y": 180
+    },
+    "facing=north,occupied=false,part=4": {
+      "model": "cluttered:block/darkwood_bed_quilted_4",
+      "y": 180
+    },
+    "facing=north,occupied=false,part=5": {
+      "model": "cluttered:block/darkwood_bed_quilted_5",
+      "y": 180
+    },
+    "facing=north,occupied=false,part=6": {
+      "model": "cluttered:block/darkwood_bed_quilted_6",
+      "y": 180
+    },
+    "facing=north,occupied=true,part=1": {
+      "model": "cluttered:block/darkwood_bed_quilted_1",
+      "y": 180
+    },
+    "facing=north,occupied=true,part=2": {
+      "model": "cluttered:block/darkwood_bed_quilted_2",
+      "y": 180
+    },
+    "facing=north,occupied=true,part=3": {
+      "model": "cluttered:block/darkwood_bed_quilted_3",
+      "y": 180
+    },
+    "facing=north,occupied=true,part=4": {
+      "model": "cluttered:block/darkwood_bed_quilted_4",
+      "y": 180
+    },
+    "facing=north,occupied=true,part=5": {
+      "model": "cluttered:block/darkwood_bed_quilted_5",
+      "y": 180
+    },
+    "facing=north,occupied=true,part=6": {
+      "model": "cluttered:block/darkwood_bed_quilted_6",
+      "y": 180
+    },
+    "facing=south,occupied=false,part=1": {
+      "model": "cluttered:block/darkwood_bed_quilted_1"
+    },
+    "facing=south,occupied=false,part=2": {
+      "model": "cluttered:block/darkwood_bed_quilted_2"
+    },
+    "facing=south,occupied=false,part=3": {
+      "model": "cluttered:block/darkwood_bed_quilted_3"
+    },
+    "facing=south,occupied=false,part=4": {
+      "model": "cluttered:block/darkwood_bed_quilted_4"
+    },
+    "facing=south,occupied=false,part=5": {
+      "model": "cluttered:block/darkwood_bed_quilted_5"
+    },
+    "facing=south,occupied=false,part=6": {
+      "model": "cluttered:block/darkwood_bed_quilted_6"
+    },
+    "facing=south,occupied=true,part=1": {
+      "model": "cluttered:block/darkwood_bed_quilted_1"
+    },
+    "facing=south,occupied=true,part=2": {
+      "model": "cluttered:block/darkwood_bed_quilted_2"
+    },
+    "facing=south,occupied=true,part=3": {
+      "model": "cluttered:block/darkwood_bed_quilted_3"
+    },
+    "facing=south,occupied=true,part=4": {
+      "model": "cluttered:block/darkwood_bed_quilted_4"
+    },
+    "facing=south,occupied=true,part=5": {
+      "model": "cluttered:block/darkwood_bed_quilted_5"
+    },
+    "facing=south,occupied=true,part=6": {
+      "model": "cluttered:block/darkwood_bed_quilted_6"
+    },
+    "facing=west,occupied=false,part=1": {
+      "model": "cluttered:block/darkwood_bed_quilted_1",
+      "y": 90
+    },
+    "facing=west,occupied=false,part=2": {
+      "model": "cluttered:block/darkwood_bed_quilted_2",
+      "y": 90
+    },
+    "facing=west,occupied=false,part=3": {
+      "model": "cluttered:block/darkwood_bed_quilted_3",
+      "y": 90
+    },
+    "facing=west,occupied=false,part=4": {
+      "model": "cluttered:block/darkwood_bed_quilted_4",
+      "y": 90
+    },
+    "facing=west,occupied=false,part=5": {
+      "model": "cluttered:block/darkwood_bed_quilted_5",
+      "y": 90
+    },
+    "facing=west,occupied=false,part=6": {
+      "model": "cluttered:block/darkwood_bed_quilted_6",
+      "y": 90
+    },
+    "facing=west,occupied=true,part=1": {
+      "model": "cluttered:block/darkwood_bed_quilted_1",
+      "y": 90
+    },
+    "facing=west,occupied=true,part=2": {
+      "model": "cluttered:block/darkwood_bed_quilted_2",
+      "y": 90
+    },
+    "facing=west,occupied=true,part=3": {
+      "model": "cluttered:block/darkwood_bed_quilted_3",
+      "y": 90
+    },
+    "facing=west,occupied=true,part=4": {
+      "model": "cluttered:block/darkwood_bed_quilted_4",
+      "y": 90
+    },
+    "facing=west,occupied=true,part=5": {
+      "model": "cluttered:block/darkwood_bed_quilted_5",
+      "y": 90
+    },
+    "facing=west,occupied=true,part=6": {
+      "model": "cluttered:block/darkwood_bed_quilted_6",
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:flower_pot"
+    },
+    {
+      "tag": "minecraft:candles"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "cluttered:desk_brown"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:desk_brown_cluttered"
+  }
+}

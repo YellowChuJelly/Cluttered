@@ -88,6 +88,7 @@ public class CagedBulbBlock extends DirectionalPillarBlock implements SimpleWate
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-        pBuilder.add(WATERLOGGED).add(FACING);
+		super.createBlockStateDefinition(pBuilder);
+        pBuilder.add(WATERLOGGED);
     }
 }

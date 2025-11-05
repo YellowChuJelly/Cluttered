@@ -1,0 +1,7 @@
+{
+  "parent": "cluttered:block/picket_fence_post",
+  "textures": {
+    "2": "cluttered:block/wooden_picket_fence",
+    "particle": "cluttered:block/wooden_picket_fence"
+  }
+}

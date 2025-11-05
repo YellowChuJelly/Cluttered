@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cluttered:black_cat_counter_left_door"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:black_cat_counter_right_door"
+  }
+}

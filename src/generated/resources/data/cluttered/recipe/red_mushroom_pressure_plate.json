@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "cluttered:red_mushroom_planks"
+    }
+  },
+  "pattern": [
+    "pp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:red_mushroom_pressure_plate"
+  },
+  "show_notification": false
+}

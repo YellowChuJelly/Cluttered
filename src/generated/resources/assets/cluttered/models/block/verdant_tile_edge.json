@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/observer",
+  "textures": {
+    "bottom": "cluttered:block/verdant_tile",
+    "front": "cluttered:block/verdant_tile",
+    "particle": "cluttered:block/verdant_tile",
+    "side": "cluttered:block/verdant_tile",
+    "top": "cluttered:block/verdant_tile_edge"
+  }
+}

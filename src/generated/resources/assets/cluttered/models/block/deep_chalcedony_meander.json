@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "cluttered:block/meander_deep_chalcedony",
+    "side": "cluttered:block/meander_deep_chalcedony",
+    "top": "cluttered:block/meander_deep_chalcedony"
+  }
+}

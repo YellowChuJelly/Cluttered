@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pastry_plate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:pastry_plate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:pastry_display_case"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pastry_plate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:pastry_display_case"
+    ]
+  }
+}

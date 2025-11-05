@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cluttered:pastry_plate"
+    },
+    {
+      "tag": "c:crops/wheat"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:croissant"
+  }
+}

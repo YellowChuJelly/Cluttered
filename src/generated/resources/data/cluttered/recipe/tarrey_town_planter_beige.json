@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:bone_block"
+    },
+    "d": {
+      "item": "minecraft:dirt"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "w": {
+      "tag": "minecraft:logs"
+    }
+  },
+  "pattern": [
+    "pdp",
+    "pbp",
+    "wbw"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:tarrey_town_planter_beige"
+  },
+  "show_notification": false
+}

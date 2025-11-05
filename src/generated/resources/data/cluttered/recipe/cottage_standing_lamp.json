@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "d": {
+      "item": "minecraft:dark_oak_planks"
+    },
+    "w": {
+      "item": "minecraft:white_carpet"
+    }
+  },
+  "pattern": [
+    "wbw",
+    " d ",
+    " d "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:cottage_standing_lamp"
+  },
+  "show_notification": false
+}

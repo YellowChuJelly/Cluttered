@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:bowl"
+    },
+    "i": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    "  i",
+    "ibi",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:watering_can_copper"
+  },
+  "show_notification": false
+}

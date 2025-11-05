@@ -63,6 +63,7 @@ public class FlatDirectionalBlock extends FaceAttachedHorizontalDirectionalBlock
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+		super.createBlockStateDefinition(pBuilder);
         pBuilder.add(BlockStateProperties.HORIZONTAL_FACING).add(BlockStateProperties.ATTACH_FACE);
     }
 }

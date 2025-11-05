@@ -26,6 +26,7 @@ public class CustomHorizontalBlock extends HorizontalDirectionalBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-        pBuilder.add(FACING);
+        super.createBlockStateDefinition(pBuilder);
+		pBuilder.add(FACING);
     }
 }

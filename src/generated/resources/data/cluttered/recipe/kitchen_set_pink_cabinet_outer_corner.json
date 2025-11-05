@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "d": {
+      "item": "minecraft:pink_dye"
+    },
+    "g": {
+      "item": "minecraft:glass_pane"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "pg",
+    "dc",
+    "pg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:kitchen_set_pink_cabinet_outer_corner"
+  },
+  "show_notification": false
+}

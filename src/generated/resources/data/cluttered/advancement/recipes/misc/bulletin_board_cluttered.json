@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bulletin_board": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:bulletin_board"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:bulletin_board_cluttered"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bulletin_board"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:bulletin_board_cluttered"
+    ]
+  }
+}

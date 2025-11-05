@@ -73,6 +73,7 @@ public class SmallLampBlock extends HorizontalDirectionalBlock implements Simple
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+		super.createBlockStateDefinition(pBuilder);
         pBuilder.add(FACING).add(WATERLOGGED);
     }
 

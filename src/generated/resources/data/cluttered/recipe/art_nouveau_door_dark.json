@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "minecraft:spruce_planks"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "ps",
+    "sp",
+    "pp"
+  ],
+  "result": {
+    "count": 3,
+    "id": "cluttered:art_nouveau_door_dark"
+  },
+  "show_notification": false
+}

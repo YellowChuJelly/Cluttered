@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chalcedony_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:chalcedony_polished"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:chalcedony_sun_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chalcedony_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:chalcedony_sun_block"
+    ]
+  }
+}

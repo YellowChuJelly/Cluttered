@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:clock"
+    },
+    {
+      "item": "minecraft:spruce_log"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:darkwood_clock"
+  }
+}

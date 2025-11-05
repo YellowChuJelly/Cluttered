@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "p": {
+      "item": "cluttered:crabapple_planks"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "ggg",
+    "ppp"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:crabapple_window"
+  },
+  "show_notification": false
+}

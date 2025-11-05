@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "d": {
+      "item": "minecraft:white_dye"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "pdp",
+    " c ",
+    "pdp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:kitchen_set_white_cabinet_open"
+  },
+  "show_notification": false
+}

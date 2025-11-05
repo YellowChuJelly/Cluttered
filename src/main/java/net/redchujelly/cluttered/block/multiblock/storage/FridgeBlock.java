@@ -105,7 +105,7 @@ public class FridgeBlock extends MultiblockStorage{
 
     @Override
     public IntegerProperty getMultiblockPart() {
-        return super.getMultiblockPart();
+        return MULTIBLOCK_PART;
     }
 
     @Override

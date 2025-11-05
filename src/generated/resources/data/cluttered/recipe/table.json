@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "item": "minecraft:dark_oak_fence"
+    },
+    "s": {
+      "item": "minecraft:dark_oak_slab"
+    }
+  },
+  "pattern": [
+    "sss",
+    "f f"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:table"
+  },
+  "show_notification": false
+}

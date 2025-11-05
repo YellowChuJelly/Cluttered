@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:black_dye"
+    },
+    "f": {
+      "tag": "minecraft:flowers"
+    },
+    "p": {
+      "item": "minecraft:flower_pot"
+    }
+  },
+  "pattern": [
+    " f ",
+    "bpb",
+    " b "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:cat_plant_pot_black"
+  },
+  "show_notification": false
+}

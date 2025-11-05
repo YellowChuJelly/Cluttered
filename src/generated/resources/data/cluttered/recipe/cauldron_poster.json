@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:cauldron"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "pcp",
+    "ppp"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:cauldron_poster"
+  },
+  "show_notification": false
+}

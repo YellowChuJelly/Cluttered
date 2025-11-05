@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "tag": "minecraft:wooden_fences"
+    },
+    "g": {
+      "item": "minecraft:green_dye"
+    },
+    "s": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "pattern": [
+    "gsg",
+    " f ",
+    " f "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:puzzle_piece_table_green"
+  },
+  "show_notification": false
+}

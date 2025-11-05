@@ -57,7 +57,7 @@ public class TableBlock extends MultiblockPlacer{
 
     @Override
     public IntegerProperty getMultiblockPart() {
-        return super.getMultiblockPart();
+        return MULTIBLOCK_PART;
     }
 
     @Override

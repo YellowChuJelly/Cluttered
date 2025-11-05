@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "item": "cluttered:wooden_picket_fence"
+    }
+  },
+  "pattern": [
+    "fff",
+    "f f",
+    "f f"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:wedding_arch"
+  },
+  "show_notification": false
+}

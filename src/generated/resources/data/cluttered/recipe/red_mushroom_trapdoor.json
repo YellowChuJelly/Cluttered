@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "cluttered:red_mushroom_planks"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "ppp"
+  ],
+  "result": {
+    "count": 2,
+    "id": "cluttered:red_mushroom_trapdoor"
+  },
+  "show_notification": false
+}

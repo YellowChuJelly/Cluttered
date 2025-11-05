@@ -62,7 +62,7 @@ public class MultiblockStorage extends MultiblockPlacer implements EntityBlock {
 
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        if (blockState.getValue(MULTIBLOCK_PART) != 1){
+        if (blockState.getValue(getMultiblockPart()) != 1){
             return null;
         }
         return TileEntityRegistration.TWO_ROWS_BE.get().create(blockPos, blockState);

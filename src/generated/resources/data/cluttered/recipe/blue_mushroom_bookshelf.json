@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:book"
+    },
+    "p": {
+      "item": "cluttered:blue_mushroom_planks"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "bbb",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:blue_mushroom_bookshelf"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:wedding_arch"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wooden_picket_fence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:wooden_picket_fence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_wooden_picket_fence"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:wedding_arch"
+    ]
+  }
+}

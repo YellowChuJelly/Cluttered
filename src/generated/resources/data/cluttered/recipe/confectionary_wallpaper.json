@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "d": {
+      "item": "minecraft:pink_dye"
+    },
+    "k": {
+      "item": "minecraft:white_dye"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "w": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "dbk",
+    "www"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:confectionary_wallpaper"
+  },
+  "show_notification": false
+}

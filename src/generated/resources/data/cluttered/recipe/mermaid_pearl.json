@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "tag": "c:ingots/copper"
+    },
+    "p": {
+      "item": "minecraft:heart_of_the_sea"
+    }
+  },
+  "pattern": [
+    " p ",
+    "c c"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:mermaid_pearl"
+  },
+  "show_notification": false
+}

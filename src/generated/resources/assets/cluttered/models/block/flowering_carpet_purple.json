@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/glow_lichen",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "glow_lichen": "cluttered:block/flower_carpet_willow"
+  }
+}

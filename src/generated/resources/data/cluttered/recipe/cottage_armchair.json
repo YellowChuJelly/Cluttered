@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "p": {
+      "item": "minecraft:pink_wool"
+    },
+    "w": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "p p",
+    "pwp",
+    "pwp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:cottage_armchair"
+  },
+  "show_notification": false
+}

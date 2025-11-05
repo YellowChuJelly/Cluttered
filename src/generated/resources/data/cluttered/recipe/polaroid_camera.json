@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "l": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "s": {
+      "item": "minecraft:spyglass"
+    },
+    "t": {
+      "item": "minecraft:tinted_glass"
+    }
+  },
+  "pattern": [
+    "il ",
+    "its",
+    "ii "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:polaroid_camera"
+  },
+  "show_notification": false
+}

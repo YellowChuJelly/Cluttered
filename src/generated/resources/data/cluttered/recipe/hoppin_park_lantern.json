@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "tag": "minecraft:flowers"
+    },
+    "l": {
+      "item": "minecraft:lantern"
+    },
+    "p": {
+      "item": "minecraft:pink_dye"
+    }
+  },
+  "pattern": [
+    "f",
+    "l",
+    "p"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:hoppin_park_lantern"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "p": {
+      "tag": "cluttered:red_mushroom_log"
+    },
+    "r": {
+      "item": "cluttered:red_mushroom_cap"
+    }
+  },
+  "pattern": [
+    "rrr",
+    " p "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:red_mushroom_table"
+  },
+  "show_notification": false
+}

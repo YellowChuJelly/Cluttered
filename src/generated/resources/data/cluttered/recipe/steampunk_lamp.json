@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:copper_ingot"
+    },
+    "s": {
+      "item": "minecraft:soul_lantern"
+    }
+  },
+  "pattern": [
+    "c",
+    "s",
+    "c"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:steampunk_lamp"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "tag": "minecraft:wooden_fences"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "q": {
+      "item": "minecraft:flower_pot"
+    }
+  },
+  "pattern": [
+    "fff",
+    "fqf",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:fence_shelf_blue"
+  },
+  "show_notification": false
+}

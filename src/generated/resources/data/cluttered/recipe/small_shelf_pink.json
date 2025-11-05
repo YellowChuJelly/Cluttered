@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "s": {
+      "item": "cluttered:crabapple_slab"
+    }
+  },
+  "pattern": [
+    "sss"
+  ],
+  "result": {
+    "count": 2,
+    "id": "cluttered:small_shelf_pink"
+  },
+  "show_notification": false
+}

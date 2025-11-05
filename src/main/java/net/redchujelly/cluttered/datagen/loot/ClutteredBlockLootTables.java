@@ -1210,7 +1210,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         multiBlockDropOnlyOneItem(BlockRegistration.WEDDING_ARCH.get());
 
         //PASTEL SET
-        multiBlockDropOnlyOneItem(BlockRegistration.WOODEN_BLOCK_BOOKSHELF_PASTEL.get());
+        dropSelf(BlockRegistration.WOODEN_BLOCK_BOOKSHELF_PASTEL.get());
         multiBlockDropOnlyOneItem(BlockRegistration.PASTEL_BED.get());
         multiBlockDropOnlyOneItem(BlockRegistration.PASTEL_TABLE.get());
         multiBlockDropOnlyOneItem(BlockRegistration.PASTEL_WARDROBE.get());
@@ -1272,7 +1272,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
                 (block) -> LootTable.lootTable().withPool(this.applyExplosionCondition(block, LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F)).add(LootItem.lootTableItem(block)
                                 .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-                                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(MultiblockPlacer.MULTIBLOCK_PART, 1)))))));
+                                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(((MultiblockPlacer) block).getMultiblockPart(), 1)))))));
     }
 
     @Override

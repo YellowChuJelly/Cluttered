@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "p": {
+      "tag": "cluttered:polaroid_picture"
+    },
+    "s": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "sss",
+    "p p",
+    " p "
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:garland_polaroid_a"
+  },
+  "show_notification": false
+}

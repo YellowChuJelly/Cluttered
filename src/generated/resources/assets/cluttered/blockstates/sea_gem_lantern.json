@@ -1,0 +1,94 @@
+{
+  "variants": {
+    "facing=east,place_state=ceiling,waterlogged=false": {
+      "model": "cluttered:block/sea_gem_lantern_ceiling",
+      "y": 270
+    },
+    "facing=east,place_state=ceiling,waterlogged=true": {
+      "model": "cluttered:block/sea_gem_lantern_ceiling",
+      "y": 270
+    },
+    "facing=east,place_state=floor,waterlogged=false": {
+      "model": "cluttered:block/sea_gem_lantern",
+      "y": 270
+    },
+    "facing=east,place_state=floor,waterlogged=true": {
+      "model": "cluttered:block/sea_gem_lantern",
+      "y": 270
+    },
+    "facing=east,place_state=wall,waterlogged=false": {
+      "model": "cluttered:block/sea_gem_lantern_wall",
+      "y": 270
+    },
+    "facing=east,place_state=wall,waterlogged=true": {
+      "model": "cluttered:block/sea_gem_lantern_wall",
+      "y": 270
+    },
+    "facing=north,place_state=ceiling,waterlogged=false": {
+      "model": "cluttered:block/sea_gem_lantern_ceiling",
+      "y": 180
+    },
+    "facing=north,place_state=ceiling,waterlogged=true": {
+      "model": "cluttered:block/sea_gem_lantern_ceiling",
+      "y": 180
+    },
+    "facing=north,place_state=floor,waterlogged=false": {
+      "model": "cluttered:block/sea_gem_lantern",
+      "y": 180
+    },
+    "facing=north,place_state=floor,waterlogged=true": {
+      "model": "cluttered:block/sea_gem_lantern",
+      "y": 180
+    },
+    "facing=north,place_state=wall,waterlogged=false": {
+      "model": "cluttered:block/sea_gem_lantern_wall",
+      "y": 180
+    },
+    "facing=north,place_state=wall,waterlogged=true": {
+      "model": "cluttered:block/sea_gem_lantern_wall",
+      "y": 180
+    },
+    "facing=south,place_state=ceiling,waterlogged=false": {
+      "model": "cluttered:block/sea_gem_lantern_ceiling"
+    },
+    "facing=south,place_state=ceiling,waterlogged=true": {
+      "model": "cluttered:block/sea_gem_lantern_ceiling"
+    },
+    "facing=south,place_state=floor,waterlogged=false": {
+      "model": "cluttered:block/sea_gem_lantern"
+    },
+    "facing=south,place_state=floor,waterlogged=true": {
+      "model": "cluttered:block/sea_gem_lantern"
+    },
+    "facing=south,place_state=wall,waterlogged=false": {
+      "model": "cluttered:block/sea_gem_lantern_wall"
+    },
+    "facing=south,place_state=wall,waterlogged=true": {
+      "model": "cluttered:block/sea_gem_lantern_wall"
+    },
+    "facing=west,place_state=ceiling,waterlogged=false": {
+      "model": "cluttered:block/sea_gem_lantern_ceiling",
+      "y": 90
+    },
+    "facing=west,place_state=ceiling,waterlogged=true": {
+      "model": "cluttered:block/sea_gem_lantern_ceiling",
+      "y": 90
+    },
+    "facing=west,place_state=floor,waterlogged=false": {
+      "model": "cluttered:block/sea_gem_lantern",
+      "y": 90
+    },
+    "facing=west,place_state=floor,waterlogged=true": {
+      "model": "cluttered:block/sea_gem_lantern",
+      "y": 90
+    },
+    "facing=west,place_state=wall,waterlogged=false": {
+      "model": "cluttered:block/sea_gem_lantern_wall",
+      "y": 90
+    },
+    "facing=west,place_state=wall,waterlogged=true": {
+      "model": "cluttered:block/sea_gem_lantern_wall",
+      "y": 90
+    }
+  }
+}

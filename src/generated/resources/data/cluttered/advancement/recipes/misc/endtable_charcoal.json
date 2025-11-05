@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:endtable_charcoal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wood_endtable": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:endtable_wood"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_wood_endtable"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:endtable_charcoal"
+    ]
+  }
+}

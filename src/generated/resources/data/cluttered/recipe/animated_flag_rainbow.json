@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:blue_wool"
+    },
+    "g": {
+      "item": "minecraft:green_wool"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "n": {
+      "item": "minecraft:iron_nugget"
+    },
+    "o": {
+      "item": "minecraft:orange_wool"
+    },
+    "p": {
+      "item": "minecraft:purple_wool"
+    },
+    "r": {
+      "item": "minecraft:red_wool"
+    },
+    "y": {
+      "item": "minecraft:yellow_wool"
+    }
+  },
+  "pattern": [
+    "nin",
+    "ryp",
+    "ogb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:animated_flag_rainbow"
+  },
+  "show_notification": false
+}

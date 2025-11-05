@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "k": {
+      "item": "minecraft:dried_kelp"
+    },
+    "m": {
+      "item": "minecraft:map"
+    }
+  },
+  "pattern": [
+    " k ",
+    "kmk",
+    " k "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:antique_map"
+  },
+  "show_notification": false
+}

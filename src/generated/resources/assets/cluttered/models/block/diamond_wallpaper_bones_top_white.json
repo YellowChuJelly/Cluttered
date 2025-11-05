@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cluttered:block/diamond_wallpaper_bones",
+    "side": "cluttered:block/diamond_wallpaper_bones_top_white"
+  }
+}

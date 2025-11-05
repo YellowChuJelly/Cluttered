@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_iridescent_tiles": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:tiles_iridescent"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:tiles_iridescent_small"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_iridescent_tiles"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:tiles_iridescent_small"
+    ]
+  }
+}

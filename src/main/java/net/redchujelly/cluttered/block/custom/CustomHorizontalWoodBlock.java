@@ -46,6 +46,7 @@ public class CustomHorizontalWoodBlock extends HorizontalDirectionalBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+		super.createBlockStateDefinition(pBuilder);
         pBuilder.add(FACING);
     }
 }

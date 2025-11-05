@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "item": "minecraft:spruce_fence"
+    },
+    "g": {
+      "item": "minecraft:green_carpet"
+    },
+    "r": {
+      "item": "minecraft:red_wool"
+    }
+  },
+  "pattern": [
+    "fgf",
+    "frf",
+    "fff"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:darkwood_chair_southern_flair"
+  },
+  "show_notification": false
+}

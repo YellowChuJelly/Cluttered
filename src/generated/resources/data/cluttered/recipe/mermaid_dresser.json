@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "n": {
+      "item": "minecraft:nautilus_shell"
+    },
+    "p": {
+      "item": "minecraft:prismarine_shard"
+    }
+  },
+  "pattern": [
+    "pnp",
+    "pcp",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:mermaid_dresser"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:pink_dye"
+    },
+    "f": {
+      "tag": "minecraft:wooden_fences"
+    },
+    "s": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "pattern": [
+    "ddd",
+    "sss",
+    "f f"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:confectionery_table_pink"
+  },
+  "show_notification": false
+}

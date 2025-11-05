@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "minecraft:flowers"
+    },
+    {
+      "item": "cluttered:bicycle_purple"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:bicycle_with_flowers_purple"
+  }
+}

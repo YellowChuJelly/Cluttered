@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "cluttered:deep_chalcedony_polished"
+    },
+    "g": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "pattern": [
+    "bbb",
+    "bgb",
+    "bbb"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:deep_chalcedony_sun_block"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_scissors_and_thread": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:scissors_and_thread"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:sewing_clutter"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_scissors_and_thread"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:sewing_clutter"
+    ]
+  }
+}

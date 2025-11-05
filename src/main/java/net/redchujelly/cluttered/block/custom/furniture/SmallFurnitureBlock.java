@@ -53,7 +53,8 @@ public class SmallFurnitureBlock extends CustomHorizontalBlock implements Simple
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-        pBuilder.add(FACING).add(WATERLOGGED);
+		super.createBlockStateDefinition(pBuilder);
+        pBuilder.add(WATERLOGGED);
     }
 
 	@Override

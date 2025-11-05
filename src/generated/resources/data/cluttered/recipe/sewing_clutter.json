@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:lime_carpet"
+    },
+    "l": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "s": {
+      "item": "cluttered:scissors_and_thread"
+    }
+  },
+  "pattern": [
+    "scl"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:sewing_clutter"
+  },
+  "show_notification": false
+}

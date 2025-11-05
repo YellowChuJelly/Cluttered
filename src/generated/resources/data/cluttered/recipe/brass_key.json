@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:copper_ingot"
+    },
+    "n": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "cc",
+    "c ",
+    "cn"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:brass_key"
+  },
+  "show_notification": false
+}

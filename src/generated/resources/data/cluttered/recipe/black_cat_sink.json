@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:bucket"
+    },
+    "p": {
+      "item": "cluttered:willow_planks"
+    },
+    "t": {
+      "item": "cluttered:subway_tiles_purple"
+    }
+  },
+  "pattern": [
+    "tbt",
+    "ppp",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:black_cat_sink"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:bucket"
+    },
+    "d": {
+      "item": "minecraft:white_dye"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "tag": "minecraft:stone_crafting_materials"
+    }
+  },
+  "pattern": [
+    "sbs",
+    "pdp",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:kitchen_set_white_counter_sink"
+  },
+  "show_notification": false
+}

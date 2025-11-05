@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "d": {
+      "item": "minecraft:blue_dye"
+    },
+    "t": {
+      "item": "cluttered:x_tile_terracotta_inverse"
+    }
+  },
+  "pattern": [
+    "ttt",
+    "tdt",
+    "ttt"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:x_tile_blue_inverse"
+  },
+  "show_notification": false
+}

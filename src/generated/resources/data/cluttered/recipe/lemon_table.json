@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "l": {
+      "item": "minecraft:lime_concrete"
+    },
+    "y": {
+      "item": "minecraft:yellow_concrete"
+    }
+  },
+  "pattern": [
+    "yyy",
+    "yyy",
+    " l "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:lemon_table"
+  },
+  "show_notification": false
+}

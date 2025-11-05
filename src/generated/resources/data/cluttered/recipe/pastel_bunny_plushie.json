@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:cyan_wool"
+    },
+    "p": {
+      "item": "minecraft:pink_wool"
+    }
+  },
+  "pattern": [
+    "p p",
+    "pbp",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:pastel_bunny_plushie"
+  },
+  "show_notification": false
+}

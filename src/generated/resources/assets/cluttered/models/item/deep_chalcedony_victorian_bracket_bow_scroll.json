@@ -1,0 +1,6 @@
+{
+  "parent": "cluttered:block/bracket_base",
+  "textures": {
+    "missing": "cluttered:block/deep_chalcedony_victorian_bracket_bow_scroll"
+  }
+}

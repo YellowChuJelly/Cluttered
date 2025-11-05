@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "cluttered:flowering_willow_leaves"
+    }
+  },
+  "pattern": [
+    "pp"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:flower_carpet_willow"
+  },
+  "show_notification": false
+}

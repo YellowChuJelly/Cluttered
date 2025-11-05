@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "cluttered:crabapple_planks"
+    }
+  },
+  "pattern": [
+    "p  ",
+    "pp ",
+    "ppp"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:crabapple_stairs"
+  },
+  "show_notification": false
+}

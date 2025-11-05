@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "l": {
+      "item": "minecraft:lectern"
+    },
+    "p": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    " l ",
+    " s ",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:ancient_codex"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cluttered:kitchen_set_white_counter_outer_corner_left"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:kitchen_set_white_counter_outer_corner_left"
+  }
+}
