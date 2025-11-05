@@ -35,7 +35,6 @@ public class Cluttered {
     public Cluttered(IEventBus modEventBus, ModContainer modContainer) {
 		ClutteredLootModifiers.register(modEventBus);
 		EntityTypeRegistration.register(modEventBus);
-		PaintingRegistration.register(modEventBus);
 		SoundRegistration.register(modEventBus);
 
 		BlockRegistration.register(modEventBus);
