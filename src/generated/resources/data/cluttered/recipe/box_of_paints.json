@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:blue_dye"
+    },
+    "c": {
+      "item": "minecraft:bowl"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "r": {
+      "item": "minecraft:red_dye"
+    },
+    "y": {
+      "item": "minecraft:yellow_dye"
+    }
+  },
+  "pattern": [
+    "rby",
+    "pcp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:box_of_paints"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:brown_dye"
+    },
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "h": {
+      "item": "minecraft:sweet_berries"
+    },
+    "s": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    "gdg",
+    "ghg",
+    "gsg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:jam_jar_apricot"
+  },
+  "show_notification": false
+}

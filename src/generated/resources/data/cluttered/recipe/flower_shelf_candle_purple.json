@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:purple_dye"
+    },
+    "w": {
+      "item": "minecraft:honeycomb"
+    }
+  },
+  "pattern": [
+    "d",
+    "w"
+  ],
+  "result": {
+    "count": 3,
+    "id": "cluttered:flower_shelf_candle_purple"
+  },
+  "show_notification": false
+}

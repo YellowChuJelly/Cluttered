@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "cluttered:stack_of_books"
+    }
+  },
+  "pattern": [
+    "b",
+    "b"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:stack_of_books_tall"
+  },
+  "show_notification": false
+}

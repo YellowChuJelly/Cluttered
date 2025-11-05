@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "d": {
+      "item": "minecraft:purple_dye"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "pdp",
+    "pcp",
+    "pdp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:kitchen_set_purple_cabinet"
+  },
+  "show_notification": false
+}

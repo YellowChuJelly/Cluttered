@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:book"
+    },
+    "f": {
+      "item": "minecraft:string"
+    },
+    "p": {
+      "item": "cluttered:willow_planks"
+    }
+  },
+  "pattern": [
+    "pfp",
+    "bbb",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:willow_bookshelf_cobweb"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "tag": "minecraft:wooden_buttons"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    " b ",
+    "ppp",
+    "s s"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:button_stool"
+  },
+  "show_notification": false
+}

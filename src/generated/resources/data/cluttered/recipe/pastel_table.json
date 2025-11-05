@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:crimson_fence"
+    },
+    "o": {
+      "item": "minecraft:pink_carpet"
+    },
+    "p": {
+      "item": "minecraft:warped_slab"
+    },
+    "w": {
+      "item": "minecraft:white_carpet"
+    }
+  },
+  "pattern": [
+    "wow",
+    "ppp",
+    "c c"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:pastel_table"
+  },
+  "show_notification": false
+}

@@ -1,6 +1,6 @@
 package net.redchujelly.cluttered.worldgen.tree.custom;
 
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -12,7 +12,6 @@ import net.minecraft.world.level.levelgen.feature.configurations.TreeConfigurati
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType;
-import net.redchujelly.cluttered.setup.BlockRegistration;
 import net.redchujelly.cluttered.setup.TrunkPlacerTypeRegistration;
 
 import java.util.ArrayList;
@@ -21,7 +20,7 @@ import java.util.function.BiConsumer;
 import java.util.function.Function;
 
 public class WillowTrunkPlacer extends TrunkPlacer {
-    public static final Codec<WillowTrunkPlacer> CODEC = RecordCodecBuilder.create(willowTrunkPlacerInstance ->
+    public static final MapCodec<WillowTrunkPlacer> CODEC = RecordCodecBuilder.mapCodec(willowTrunkPlacerInstance ->
             trunkPlacerParts(willowTrunkPlacerInstance).apply(willowTrunkPlacerInstance, WillowTrunkPlacer::new));
 
     public WillowTrunkPlacer(int pBaseHeight, int pHeightRandA, int pHeightRandB) {

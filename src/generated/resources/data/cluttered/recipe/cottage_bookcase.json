@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:birch_planks"
+    },
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "s": {
+      "item": "minecraft:bookshelf"
+    }
+  },
+  "pattern": [
+    "bsb",
+    "bbb",
+    "bcb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:cottage_bookcase"
+  },
+  "show_notification": false
+}

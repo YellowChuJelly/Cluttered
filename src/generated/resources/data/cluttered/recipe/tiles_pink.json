@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "t": {
+      "item": "minecraft:pink_concrete"
+    }
+  },
+  "pattern": [
+    "tt",
+    "tt"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:tiles_pink"
+  },
+  "show_notification": false
+}

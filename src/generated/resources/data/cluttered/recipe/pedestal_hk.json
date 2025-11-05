@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "w": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "sss",
+    " w ",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:pedestal_hk"
+  },
+  "show_notification": false
+}

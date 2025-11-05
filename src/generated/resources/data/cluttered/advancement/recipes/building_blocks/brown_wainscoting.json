@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mint_wallpaper": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:mint_wallpaper"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:brown_wainscoting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mint_wallpaper"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:brown_wainscoting"
+    ]
+  }
+}

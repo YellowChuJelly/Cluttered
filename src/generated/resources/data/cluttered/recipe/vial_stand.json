@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "j": {
+      "item": "minecraft:potion"
+    },
+    "p": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "jsj",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:vial_stand"
+  },
+  "show_notification": false
+}

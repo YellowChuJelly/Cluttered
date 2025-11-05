@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": {
+      "item": "minecraft:lime_dye"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    },
+    "w": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "psp",
+    "sgs",
+    "www"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:diamond_wallpaper_green_grapes"
+  },
+  "show_notification": false
+}

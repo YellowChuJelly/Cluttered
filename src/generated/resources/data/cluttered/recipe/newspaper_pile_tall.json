@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "p": {
+      "item": "cluttered:newspaper_pile_short"
+    }
+  },
+  "pattern": [
+    "p",
+    "p"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:newspaper_pile_tall"
+  },
+  "show_notification": false
+}

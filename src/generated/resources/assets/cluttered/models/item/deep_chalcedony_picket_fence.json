@@ -1,0 +1,6 @@
+{
+  "parent": "cluttered:block/picket_fence",
+  "textures": {
+    "2": "cluttered:block/deep_chalcedony_picket_fence"
+  }
+}

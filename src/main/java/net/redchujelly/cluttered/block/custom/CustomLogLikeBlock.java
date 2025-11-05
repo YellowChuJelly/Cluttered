@@ -8,7 +8,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.common.ToolAction;
+import net.neoforged.neoforge.common.ItemAbility;
 import net.redchujelly.cluttered.setup.BlockRegistration;
 import org.jetbrains.annotations.Nullable;
 
@@ -55,18 +55,18 @@ public class CustomLogLikeBlock extends RotatedPillarBlock {
         return 5;
     }
 
-    @Override
+	@Override
     public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return 5;
     }
 
-    @Override
-    public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
-        if(context.getItemInHand().getItem() instanceof AxeItem) {
-            if(getStrippedCounterpart(state.getBlock()) != null) {
-                return getStrippedCounterpart(state.getBlock()).defaultBlockState().setValue(AXIS, state.getValue(AXIS));
-            }
-        }
-        return super.getToolModifiedState(state, context, toolAction, simulate);
-    }
+	@Override
+	public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ItemAbility itemAbility, boolean simulate) {
+		if(context.getItemInHand().getItem() instanceof AxeItem) {
+			if(getStrippedCounterpart(state.getBlock()) != null) {
+				return getStrippedCounterpart(state.getBlock()).defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+			}
+		}
+		return super.getToolModifiedState(state, context, itemAbility, simulate);
+	}
 }

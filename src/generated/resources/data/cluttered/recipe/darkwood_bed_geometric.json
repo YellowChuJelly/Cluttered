@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:cyan_bed"
+    },
+    "o": {
+      "item": "minecraft:orange_bed"
+    },
+    "s": {
+      "item": "minecraft:spruce_log"
+    }
+  },
+  "pattern": [
+    "ss",
+    "go",
+    "ss"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:darkwood_bed_geometric"
+  },
+  "show_notification": false
+}

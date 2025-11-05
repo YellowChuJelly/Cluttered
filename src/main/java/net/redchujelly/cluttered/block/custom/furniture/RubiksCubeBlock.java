@@ -32,7 +32,7 @@ public class RubiksCubeBlock extends SmallFurnitureBlock{
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         if (!pLevel.isClientSide && pState.hasProperty(SOLVED)) {
             pLevel.setBlock(pPos, pState.setValue(SOLVED, !pState.getValue(SOLVED)), 2);
             pLevel.playSound(null, pPos, SoundEvents.ARMOR_STAND_BREAK, SoundSource.BLOCKS);

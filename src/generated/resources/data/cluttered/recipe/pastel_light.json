@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "l": {
+      "item": "minecraft:lantern"
+    },
+    "p": {
+      "item": "minecraft:pink_dye"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "p",
+    "l",
+    "s"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:pastel_light"
+  },
+  "show_notification": false
+}

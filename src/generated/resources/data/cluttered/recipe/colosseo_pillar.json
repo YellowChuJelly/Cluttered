@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": {
+      "item": "minecraft:green_terracotta"
+    },
+    "r": {
+      "item": "minecraft:red_terracotta"
+    },
+    "y": {
+      "item": "minecraft:yellow_terracotta"
+    }
+  },
+  "pattern": [
+    "rr",
+    "yy",
+    "gg"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:colosseo_pillar"
+  },
+  "show_notification": false
+}

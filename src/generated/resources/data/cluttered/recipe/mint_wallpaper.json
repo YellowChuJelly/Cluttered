@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:brown_dye"
+    },
+    "k": {
+      "item": "minecraft:white_dye"
+    },
+    "l": {
+      "item": "minecraft:lime_dye"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "w": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "lbk",
+    "www"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:mint_wallpaper"
+  },
+  "show_notification": false
+}

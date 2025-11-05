@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "cluttered:croissant"
+    },
+    "g": {
+      "item": "minecraft:glass_pane"
+    },
+    "m": {
+      "item": "cluttered:blueberry_muffin"
+    },
+    "p": {
+      "item": "cluttered:chocolate_croissant"
+    },
+    "r": {
+      "item": "cluttered:cinnamon_bun"
+    }
+  },
+  "pattern": [
+    "ggg",
+    "mgp",
+    "cgr"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:pastry_display_case"
+  },
+  "show_notification": false
+}

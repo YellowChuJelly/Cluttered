@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "cluttered:bee_lamp"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:bee_lamp_angry"
+  }
+}

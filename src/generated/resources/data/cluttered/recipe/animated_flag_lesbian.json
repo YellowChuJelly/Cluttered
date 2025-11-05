@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "n": {
+      "item": "minecraft:iron_nugget"
+    },
+    "o": {
+      "item": "minecraft:orange_wool"
+    },
+    "p": {
+      "item": "minecraft:pink_wool"
+    },
+    "w": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "nin",
+    "owp",
+    "owp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:animated_flag_lesbian"
+  },
+  "show_notification": false
+}

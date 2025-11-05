@@ -1,0 +1,14 @@
+{
+  "entries": [
+    "cluttered:sapling_loot_to_dungeon_chest",
+    "cluttered:sapling_loot_to_bonus_chest",
+    "cluttered:sapling_loot_to_village_plains_chest",
+    "cluttered:sapling_loot_to_village_taiga_chest",
+    "cluttered:sapling_loot_to_village_savanna_chest",
+    "cluttered:sapling_loot_to_village_desert_chest",
+    "cluttered:sapling_loot_to_village_snowy_chest",
+    "cluttered:sapling_loot_to_abandoned_mineshaft",
+    "cluttered:sapling_loot_to_shipwreck_supply"
+  ],
+  "replace": false
+}

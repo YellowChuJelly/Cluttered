@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "item": "minecraft:feather"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    " p ",
+    "pfp",
+    "psp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:birdhouse_unpainted"
+  },
+  "show_notification": false
+}

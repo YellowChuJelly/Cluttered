@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lectern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:lectern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:antique_book_stand"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lectern"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:antique_book_stand"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "cluttered:fluorescent_maple_slab"
+    },
+    "p": {
+      "item": "cluttered:fluorescent_maple_planks"
+    }
+  },
+  "pattern": [
+    "bbb",
+    "ppp"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:fluorescent_maple_wainscoting"
+  },
+  "show_notification": false
+}

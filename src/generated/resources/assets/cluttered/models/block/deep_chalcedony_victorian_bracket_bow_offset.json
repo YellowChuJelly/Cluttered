@@ -1,0 +1,7 @@
+{
+  "parent": "cluttered:block/bracket_offset",
+  "textures": {
+    "missing": "cluttered:block/deep_chalcedony_victorian_bracket_bow",
+    "particle": "cluttered:block/deep_chalcedony_victorian_bracket_bow"
+  }
+}

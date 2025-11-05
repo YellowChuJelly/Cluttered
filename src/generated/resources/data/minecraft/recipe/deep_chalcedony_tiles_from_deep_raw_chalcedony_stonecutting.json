@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cluttered:deep_raw_chalcedony"
+  },
+  "result": {
+    "count": 1,
+    "id": "cluttered:deep_chalcedony_tiles"
+  }
+}

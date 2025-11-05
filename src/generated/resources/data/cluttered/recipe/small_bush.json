@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "l": {
+      "tag": "minecraft:leaves"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "l",
+    "s"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:small_bush"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "c": {
+      "item": "minecraft:chain"
+    },
+    "p": {
+      "item": "cluttered:stripped_poplar_log"
+    }
+  },
+  "pattern": [
+    "c c",
+    "ppp",
+    "ppp"
+  ],
+  "result": {
+    "count": 6,
+    "id": "cluttered:poplar_hanging_sign"
+  },
+  "show_notification": false
+}

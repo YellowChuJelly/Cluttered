@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "w": {
+      "item": "cluttered:alabaster_window_divided"
+    }
+  },
+  "pattern": [
+    "www",
+    "www"
+  ],
+  "result": {
+    "count": 16,
+    "id": "cluttered:alabaster_window_pane"
+  },
+  "show_notification": false
+}

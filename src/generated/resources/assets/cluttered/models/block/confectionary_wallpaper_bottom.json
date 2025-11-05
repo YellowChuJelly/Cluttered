@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cluttered:block/confectionary_wallpaper",
+    "side": "cluttered:block/confectionary_wallpaper_bottom"
+  }
+}

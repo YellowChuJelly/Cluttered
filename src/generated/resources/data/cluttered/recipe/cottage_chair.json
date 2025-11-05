@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:birch_planks"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "b  ",
+    "sbb",
+    "b b"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:cottage_chair"
+  },
+  "show_notification": false
+}

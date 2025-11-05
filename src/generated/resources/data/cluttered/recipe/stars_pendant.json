@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "s": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "s",
+    "g",
+    "s"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:stars_pendant"
+  },
+  "show_notification": false
+}

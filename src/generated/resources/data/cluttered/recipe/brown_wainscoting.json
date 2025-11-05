@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "d": {
+      "item": "minecraft:brown_dye"
+    },
+    "s": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "w": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "sds",
+    "www"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:brown_wainscoting"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:gunpowder"
+    },
+    "t": {
+      "item": "minecraft:terracotta"
+    }
+  },
+  "pattern": [
+    "ttt",
+    "tbt",
+    "ttt"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:seismic_tiles"
+  },
+  "show_notification": false
+}

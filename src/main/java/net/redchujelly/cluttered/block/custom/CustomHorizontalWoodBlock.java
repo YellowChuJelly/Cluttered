@@ -1,5 +1,6 @@
 package net.redchujelly.cluttered.block.custom;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -11,11 +12,18 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import org.jetbrains.annotations.Nullable;
 
 public class CustomHorizontalWoodBlock extends HorizontalDirectionalBlock {
-    protected CustomHorizontalWoodBlock(Properties pProperties) {
+    private static final MapCodec<CustomHorizontalWoodBlock> CODEC = simpleCodec(CustomHorizontalWoodBlock::new);
+	
+	protected CustomHorizontalWoodBlock(Properties pProperties) {
         super(pProperties);
     }
 
-    @Override
+	@Override
+	protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+		return CODEC;
+	}
+
+	@Override
     public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return true;
     }
@@ -38,6 +46,7 @@ public class CustomHorizontalWoodBlock extends HorizontalDirectionalBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+		super.createBlockStateDefinition(pBuilder);
         pBuilder.add(FACING);
     }
 }

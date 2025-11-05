@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "p": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    "p p",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:cardboard_box_open"
+  },
+  "show_notification": false
+}

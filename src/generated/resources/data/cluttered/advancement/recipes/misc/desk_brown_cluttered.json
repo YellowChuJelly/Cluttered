@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_desk_brown": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:desk_brown"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:desk_brown_cluttered"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_desk_brown"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:desk_brown_cluttered"
+    ]
+  }
+}

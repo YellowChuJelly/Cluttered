@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_moon_pendant": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:moon_pendant"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:heavenly_ornamental_array"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_moon_pendant"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:heavenly_ornamental_array"
+    ]
+  }
+}

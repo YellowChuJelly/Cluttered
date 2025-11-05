@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_desk_green": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:desk_green"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:desk_green_cluttered"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_desk_green"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:desk_green_cluttered"
+    ]
+  }
+}

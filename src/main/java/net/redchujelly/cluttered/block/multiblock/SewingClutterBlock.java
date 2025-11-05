@@ -36,12 +36,12 @@ public class SewingClutterBlock extends MultiblockPlacer{
 
     @Override
     public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
-        return state.getValue(MULTIBLOCK_PART).equals(2) ? 10 : 0;
+        return state.getValue(getMultiblockPart()).equals(2) ? 10 : 0;
     }
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        int part = pState.getValue(MULTIBLOCK_PART);
+        int part = pState.getValue(getMultiblockPart());
         Direction facing = pState.getValue(FACING);
         return switch (facing) {
             case SOUTH -> part == 1 ? SHAPE_S_1 : SHAPE_S_2;

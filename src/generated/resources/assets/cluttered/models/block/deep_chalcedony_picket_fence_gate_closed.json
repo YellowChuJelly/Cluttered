@@ -1,0 +1,7 @@
+{
+  "parent": "cluttered:block/picket_fence_gate_closed",
+  "textures": {
+    "1": "cluttered:block/deep_chalcedony_picket_fence_gate",
+    "particle": "cluttered:block/deep_chalcedony_picket_fence_gate"
+  }
+}

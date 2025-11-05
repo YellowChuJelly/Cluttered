@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:brown_dye"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "l": {
+      "item": "minecraft:lantern"
+    }
+  },
+  "pattern": [
+    "did",
+    "ili"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:osson_pendant_brown"
+  },
+  "show_notification": false
+}

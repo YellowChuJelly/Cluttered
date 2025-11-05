@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:bone"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    },
+    "w": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "psp",
+    "sbs",
+    "www"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:diamond_wallpaper_bones"
+  },
+  "show_notification": false
+}

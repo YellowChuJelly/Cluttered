@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:bone"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "w": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "bbb",
+    "www"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:ghost_wallpaper"
+  },
+  "show_notification": false
+}

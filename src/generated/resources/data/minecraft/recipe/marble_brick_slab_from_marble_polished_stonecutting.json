@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cluttered:marble_polished"
+  },
+  "result": {
+    "count": 2,
+    "id": "cluttered:marble_brick_slab"
+  }
+}

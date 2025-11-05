@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cluttered:small_shelf_pink"
+    },
+    {
+      "item": "cluttered:row_of_small_books_pastel"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:row_of_small_books_pastel_shelved"
+  }
+}

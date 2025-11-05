@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "cluttered:bulletin_board"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:bulletin_board_cluttered"
+  }
+}

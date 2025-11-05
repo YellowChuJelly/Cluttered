@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:blue_dye"
+    },
+    "g": {
+      "item": "minecraft:grindstone"
+    },
+    "i": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "pattern": [
+    "i  ",
+    "idi",
+    "g g"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:bicycle_blue"
+  },
+  "show_notification": false
+}

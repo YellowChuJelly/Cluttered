@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "a": {
+      "item": "minecraft:calcite"
+    },
+    "q": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "pattern": [
+    "qaq",
+    "aqa",
+    "qaq"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:raw_marble"
+  },
+  "show_notification": false
+}

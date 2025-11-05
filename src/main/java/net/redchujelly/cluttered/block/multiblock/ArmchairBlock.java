@@ -38,7 +38,7 @@ public class ArmchairBlock extends MultiblockChair{
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         if (!pState.getValue(OCCUPIED) && !pPlayer.isShiftKeyDown()){
             if (!pLevel.isClientSide) {
                 BlockPos otherHalf = getOtherHalfPos(pState, pPos);
@@ -73,7 +73,7 @@ public class ArmchairBlock extends MultiblockChair{
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        int part = pState.getValue(MULTIBLOCK_PART);
+        int part = pState.getValue(getMultiblockPart());
         Direction facing = pState.getValue(FACING);
         return switch (facing) {
             case SOUTH -> part == 1 ? SHAPE_SOUTH_1 : SHAPE_SOUTH_2;
@@ -84,7 +84,7 @@ public class ArmchairBlock extends MultiblockChair{
     }
 
     private BlockPos getOtherHalfPos(BlockState state1, BlockPos pos1){
-        int part = state1.getValue(MULTIBLOCK_PART);
+        int part = state1.getValue(getMultiblockPart());
         Direction facing = state1.getValue(FACING);
 
         if (facing.equals(Direction.NORTH)){return part == 1 ? pos1.east() : pos1.west();}
@@ -99,7 +99,7 @@ public class ArmchairBlock extends MultiblockChair{
     }
 
     private float[] getSeatXZOffset(BlockState state1, BlockPos pos1){
-        int part = state1.getValue(MULTIBLOCK_PART);
+        int part = state1.getValue(getMultiblockPart());
         Direction facing = state1.getValue(FACING);
 
         if (facing.equals(Direction.NORTH)){return part == 1 ? new float[]{0.5f, 0f} : new float[]{-0.5f, 0f};}

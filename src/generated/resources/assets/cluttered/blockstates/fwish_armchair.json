@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=east,occupied=false,waterlogged=false": {
+      "model": "cluttered:block/fwish_armchair",
+      "y": 90
+    },
+    "facing=east,occupied=false,waterlogged=true": {
+      "model": "cluttered:block/fwish_armchair",
+      "y": 90
+    },
+    "facing=east,occupied=true,waterlogged=false": {
+      "model": "cluttered:block/fwish_armchair",
+      "y": 90
+    },
+    "facing=east,occupied=true,waterlogged=true": {
+      "model": "cluttered:block/fwish_armchair",
+      "y": 90
+    },
+    "facing=north,occupied=false,waterlogged=false": {
+      "model": "cluttered:block/fwish_armchair"
+    },
+    "facing=north,occupied=false,waterlogged=true": {
+      "model": "cluttered:block/fwish_armchair"
+    },
+    "facing=north,occupied=true,waterlogged=false": {
+      "model": "cluttered:block/fwish_armchair"
+    },
+    "facing=north,occupied=true,waterlogged=true": {
+      "model": "cluttered:block/fwish_armchair"
+    },
+    "facing=south,occupied=false,waterlogged=false": {
+      "model": "cluttered:block/fwish_armchair",
+      "y": -180
+    },
+    "facing=south,occupied=false,waterlogged=true": {
+      "model": "cluttered:block/fwish_armchair",
+      "y": -180
+    },
+    "facing=south,occupied=true,waterlogged=false": {
+      "model": "cluttered:block/fwish_armchair",
+      "y": -180
+    },
+    "facing=south,occupied=true,waterlogged=true": {
+      "model": "cluttered:block/fwish_armchair",
+      "y": -180
+    },
+    "facing=west,occupied=false,waterlogged=false": {
+      "model": "cluttered:block/fwish_armchair",
+      "y": -90
+    },
+    "facing=west,occupied=false,waterlogged=true": {
+      "model": "cluttered:block/fwish_armchair",
+      "y": -90
+    },
+    "facing=west,occupied=true,waterlogged=false": {
+      "model": "cluttered:block/fwish_armchair",
+      "y": -90
+    },
+    "facing=west,occupied=true,waterlogged=true": {
+      "model": "cluttered:block/fwish_armchair",
+      "y": -90
+    }
+  }
+}

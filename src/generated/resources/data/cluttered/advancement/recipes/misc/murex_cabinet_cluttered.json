@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_murex_cabinet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:murex_cabinet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:murex_cabinet_cluttered"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_murex_cabinet"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:murex_cabinet_cluttered"
+    ]
+  }
+}

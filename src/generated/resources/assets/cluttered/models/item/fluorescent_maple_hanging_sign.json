@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cluttered:item/fluorescent_maple_hanging_sign"
+  }
+}

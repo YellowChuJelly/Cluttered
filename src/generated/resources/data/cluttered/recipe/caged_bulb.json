@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": {
+      "item": "minecraft:iron_bars"
+    },
+    "l": {
+      "item": "minecraft:lantern"
+    }
+  },
+  "pattern": [
+    " i ",
+    "ili",
+    " i "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:caged_bulb"
+  },
+  "show_notification": false
+}

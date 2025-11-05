@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:iron_block"
+    },
+    "d": {
+      "item": "minecraft:blue_dye"
+    },
+    "f": {
+      "item": "minecraft:packed_ice"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "idi",
+    "ifi",
+    "ibi"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:retro_fridge_blue"
+  },
+  "show_notification": false
+}

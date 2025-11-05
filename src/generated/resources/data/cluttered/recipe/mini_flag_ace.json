@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:black_carpet"
+    },
+    "p": {
+      "item": "minecraft:purple_carpet"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    },
+    "w": {
+      "item": "minecraft:white_carpet"
+    }
+  },
+  "pattern": [
+    "bwp",
+    "bwp",
+    "s  "
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:mini_flag_ace"
+  },
+  "show_notification": false
+}

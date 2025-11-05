@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "p": {
+      "item": "cluttered:sycamore_planks"
+    },
+    "s": {
+      "tag": "minecraft:saplings"
+    }
+  },
+  "pattern": [
+    "pcp",
+    "psp",
+    "pcp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:general_store_cabinet"
+  },
+  "show_notification": false
+}

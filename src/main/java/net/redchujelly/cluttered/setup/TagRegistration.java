@@ -12,7 +12,7 @@ public class TagRegistration {
     public static class Blocks {
 
         private static TagKey<Block> tag(String name) {
-            return BlockTags.create(new ResourceLocation(Cluttered.MODID, name));
+            return BlockTags.create(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, name));
         }
     }
 
@@ -31,7 +31,7 @@ public class TagRegistration {
         public static final TagKey<Item> POLAROID_PICTURE = tag("polaroid_picture");
 
         private static TagKey<Item> tag(String name) {
-            return ItemTags.create(new ResourceLocation(Cluttered.MODID, name));
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, name));
         }
     }
 }

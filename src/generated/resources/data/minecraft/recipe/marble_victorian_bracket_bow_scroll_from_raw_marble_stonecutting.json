@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cluttered:raw_marble"
+  },
+  "result": {
+    "count": 4,
+    "id": "cluttered:marble_victorian_bracket_bow_scroll"
+  }
+}

@@ -1,9 +1,9 @@
 package net.redchujelly.cluttered.block.multiblock.storage;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.Container;
 import net.minecraft.world.Containers;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -37,16 +37,17 @@ public class MultiblockStorage extends MultiblockPlacer implements EntityBlock {
     }
 
     public void setPlacedBy(Level pLevel, BlockPos pPos, BlockState pState, @javax.annotation.Nullable LivingEntity pPlacer, ItemStack pStack) {
-        if (pStack.hasCustomHoverName()) {
+        if (pStack.has(DataComponents.CUSTOM_NAME)) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof CustomStorageBlockEntity) {
-                ((CustomStorageBlockEntity) blockEntity).setCustomName(pStack.getHoverName());
-            }
+			// TODO
+//            if (blockEntity instanceof CustomStorageBlockEntity) {
+//                ((CustomStorageBlockEntity) blockEntity).setCustomName(pStack.getHoverName());
+//            }
         }
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         if (pLevel.isClientSide){
             return InteractionResult.SUCCESS;
         } else {
@@ -61,7 +62,7 @@ public class MultiblockStorage extends MultiblockPlacer implements EntityBlock {
 
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        if (blockState.getValue(MULTIBLOCK_PART) != 1){
+        if (blockState.getValue(getMultiblockPart()) != 1){
             return null;
         }
         return TileEntityRegistration.TWO_ROWS_BE.get().create(blockPos, blockState);

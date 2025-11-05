@@ -53,11 +53,12 @@ public class SmallFurnitureBlock extends CustomHorizontalBlock implements Simple
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-        pBuilder.add(FACING).add(WATERLOGGED);
+		super.createBlockStateDefinition(pBuilder);
+        pBuilder.add(WATERLOGGED);
     }
 
-    @Override
-    public boolean isPathfindable(BlockState pState, BlockGetter pLevel, BlockPos pPos, PathComputationType pType) {
-        return false;
-    }
+	@Override
+	protected boolean isPathfindable(BlockState state, PathComputationType pathComputationType) {
+		return false;
+	}
 }

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:gold_nugget"
+    },
+    "l": {
+      "item": "minecraft:glass_pane"
+    },
+    "p": {
+      "item": "minecraft:potion"
+    },
+    "w": {
+      "item": "cluttered:willow_planks"
+    }
+  },
+  "pattern": [
+    "gwg",
+    "wpw",
+    "lwl"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:potion_shelf"
+  },
+  "show_notification": false
+}

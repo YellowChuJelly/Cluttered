@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:stone_bricks"
+    },
+    "s": {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern": [
+    "sbs",
+    "b b",
+    "sbs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:pok_ta_pok_hoop"
+  },
+  "show_notification": false
+}

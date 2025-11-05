@@ -45,7 +45,7 @@ public class MushroomBedBlock extends MultiblockBedBlock{
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         Direction facing = pState.getValue(FACING);
-        if (pState.getValue(MULTIBLOCK_PART) == 1){
+        if (pState.getValue(getMultiblockPart()) == 1){
             return switch (facing){
                 case SOUTH -> SHAPE_S_1;
                 case EAST -> SHAPE_E_1;
@@ -61,11 +61,11 @@ public class MushroomBedBlock extends MultiblockBedBlock{
             };
     }
 
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         if (pLevel.isClientSide) {
             return InteractionResult.CONSUME;
         } else {
-            int part = pState.getValue(MULTIBLOCK_PART);
+            int part = pState.getValue(getMultiblockPart());
             if (part == 1){
                 pPos = pPos.relative(pState.getValue(FACING));
                 pState = pLevel.getBlockState(pPos);

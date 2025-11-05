@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:book"
+    },
+    "f": {
+      "item": "minecraft:feather"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "bbb",
+    "fff"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:rito_wooden_books"
+  },
+  "show_notification": false
+}

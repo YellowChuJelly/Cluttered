@@ -45,7 +45,7 @@ public class AncientCodexBlock extends MultiblockPlacer{
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        if (pState.getValue(MULTIBLOCK_PART) == 1){
+        if (pState.getValue(getMultiblockPart()) == 1){
             return SHAPE_1;
         } else {
             Direction facing = pState.getValue(FACING);

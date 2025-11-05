@@ -2,14 +2,12 @@ package net.redchujelly.cluttered.entity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.phys.Vec3;
-import org.jetbrains.annotations.NotNull;
 
 public class ChairEntity extends Entity {
 
@@ -27,11 +25,11 @@ public class ChairEntity extends Entity {
         CHAIR_LEVEL = pLevel;
     }
 
-    @Override
-    protected void defineSynchedData() {
-    }
+	@Override
+	protected void defineSynchedData(SynchedEntityData.Builder builder) {
+	}
 
-    @Override
+	@Override
     protected void readAdditionalSaveData(CompoundTag compoundTag) {
     }
 

@@ -8,6 +8,8 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.FlintAndSteelItem;
 import net.minecraft.world.item.ItemStack;
@@ -49,29 +51,34 @@ public class ShelfCandleBlock extends SmallFurnitureBlock{
         return state.getValue(LIT) ? 10 : 0;
     }
 
-    @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        ItemStack item = pPlayer.getItemInHand(pHand);
-        if (!pState.getValue(LIT) && !pState.getValue(SmallFurnitureBlock.WATERLOGGED)){
-            if (item.getItem() instanceof FlintAndSteelItem) {
-                if (!pLevel.isClientSide) {
-                    pLevel.setBlock(pPos, pState.setValue(LIT, true), 2);
-                    pLevel.playSound(null, pPos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS);
-                    if (item.isDamageableItem()) {
-                        item.hurtAndBreak(1, pPlayer, (player) -> player.broadcastBreakEvent(pHand));
-                    }
-                }
-                return InteractionResult.SUCCESS;
-            }
-        } else if (item.isEmpty() && pState.getValue(LIT)) {
-            if (!pLevel.isClientSide){
-                pLevel.setBlock(pPos, pState.setValue(LIT, false), 2);
-                pLevel.playSound(null, pPos, SoundEvents.CANDLE_EXTINGUISH, SoundSource.BLOCKS);
-            }
-            return InteractionResult.SUCCESS;
-        }
-        return InteractionResult.PASS;
-    }
+	@Override
+	protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+		if (!state.getValue(LIT) && !state.getValue(BlockStateProperties.WATERLOGGED)){
+			if (stack.getItem() instanceof FlintAndSteelItem) {
+				if (!level.isClientSide) {
+					level.setBlock(pos, state.setValue(LIT, true), 2);
+					level.playSound(null, pos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS);
+					if (stack.isDamageableItem()) {
+						stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(hand));
+					}
+				}
+				return ItemInteractionResult.SUCCESS;
+			}
+		}
+		return super.useItemOn(stack, state, level, pos, player, hand, hitResult);
+	}
+
+	@Override
+	protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
+		if (state.getValue(LIT)) {
+			if (!level.isClientSide){
+				level.setBlock(pos, state.setValue(LIT, false), 2);
+				level.playSound(null, pos, SoundEvents.CANDLE_EXTINGUISH, SoundSource.BLOCKS);
+			}
+			return InteractionResult.SUCCESS;
+		}
+		return super.useWithoutItem(state, level, pos, player, hitResult);
+	}
 
     @Override
     public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {

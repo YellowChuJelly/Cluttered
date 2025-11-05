@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:blue_carpet"
+    },
+    "g": {
+      "item": "minecraft:green_carpet"
+    },
+    "o": {
+      "item": "minecraft:orange_carpet"
+    },
+    "p": {
+      "item": "minecraft:purple_carpet"
+    },
+    "r": {
+      "item": "minecraft:red_carpet"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    },
+    "y": {
+      "item": "minecraft:yellow_carpet"
+    }
+  },
+  "pattern": [
+    "ryp",
+    "ogb",
+    "s  "
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:mini_flag_rainbow"
+  },
+  "show_notification": false
+}

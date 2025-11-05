@@ -1,9 +1,7 @@
 package net.redchujelly.cluttered.block.custom;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -15,7 +13,12 @@ public class CustomHorizontalBlock extends HorizontalDirectionalBlock {
         super(pProperties);
     }
 
-    @Nullable
+	@Override
+	protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+		return null; // TODO
+	}
+
+	@Nullable
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
         return this.defaultBlockState().setValue(FACING, pContext.getHorizontalDirection().getOpposite());
@@ -23,6 +26,7 @@ public class CustomHorizontalBlock extends HorizontalDirectionalBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-        pBuilder.add(FACING);
+        super.createBlockStateDefinition(pBuilder);
+		pBuilder.add(FACING);
     }
 }

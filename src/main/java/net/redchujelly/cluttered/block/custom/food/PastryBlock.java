@@ -41,15 +41,13 @@ public class PastryBlock extends SmallFurnitureBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         if (pLevel.isClientSide) {
             if (eat(pLevel, pPos, pState, pPlayer).consumesAction()) {
                 return InteractionResult.SUCCESS;
             }
 
-            if (pPlayer.getItemInHand(pHand).isEmpty()) {
-                return InteractionResult.CONSUME;
-            }
+			return InteractionResult.CONSUME;
         }
 
         return eat(pLevel, pPos, pState, pPlayer);

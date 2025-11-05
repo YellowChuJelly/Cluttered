@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:black_dye"
+    },
+    "f": {
+      "tag": "minecraft:wooden_fences"
+    },
+    "r": {
+      "item": "minecraft:red_dye"
+    },
+    "s": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "pattern": [
+    "frr",
+    "fss",
+    "fbf"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:imperial_chair"
+  },
+  "show_notification": false
+}

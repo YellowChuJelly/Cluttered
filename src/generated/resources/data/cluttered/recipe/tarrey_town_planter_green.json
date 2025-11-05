@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:bone_block"
+    },
+    "d": {
+      "item": "minecraft:dirt"
+    },
+    "w": {
+      "item": "cluttered:sycamore_planks"
+    }
+  },
+  "pattern": [
+    "wdw",
+    "wbw",
+    "wbw"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:tarrey_town_planter_green"
+  },
+  "show_notification": false
+}

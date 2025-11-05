@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:white_dye"
+    },
+    "p": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "r": {
+      "item": "minecraft:rose_bush"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "prp",
+    "sds",
+    "s s"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:rose_end_table"
+  },
+  "show_notification": false
+}

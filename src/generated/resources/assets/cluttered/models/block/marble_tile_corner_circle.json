@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/observer",
+  "textures": {
+    "bottom": "cluttered:block/marble_tile_border",
+    "front": "cluttered:block/marble_tile_border",
+    "particle": "cluttered:block/marble_tile_border",
+    "side": "cluttered:block/marble_tile_border",
+    "top": "cluttered:block/marble_tile_corner_circle"
+  }
+}

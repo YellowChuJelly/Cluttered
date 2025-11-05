@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "f": {
+      "tag": "minecraft:small_flowers"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "t": {
+      "tag": "minecraft:tall_flowers"
+    },
+    "w": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "ftf",
+    "www"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:floral_border_wallpaper"
+  },
+  "show_notification": false
+}

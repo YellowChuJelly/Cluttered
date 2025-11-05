@@ -44,10 +44,10 @@ public class MultiblockBedBlock extends MultiblockPlacer{
         this.registerDefaultState(this.defaultBlockState().setValue(OCCUPIED, false));
     }
 
-    @Override
-    public boolean isBed(BlockState state, BlockGetter level, BlockPos pos, @Nullable Entity player) {
-        return true;
-    }
+	@Override
+	public boolean isBed(BlockState state, BlockGetter level, BlockPos pos, LivingEntity sleeper) {
+		return true;
+	}
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
@@ -63,7 +63,7 @@ public class MultiblockBedBlock extends MultiblockPlacer{
     //public void setBedOccupied(BlockState state, Level level, BlockPos pos, LivingEntity sleeper, boolean occupied) {
     //    BlockPos pos1 = findBlockState1(pos, level);
     //    Direction facing = state.getValue(FACING);
-    //    if(state.getValue(MULTIBLOCK_PART) % 2 != 0){
+    //    if(state.getValue(getMultiblockPart()) % 2 != 0){
     //        BlockPos[] posList = new BlockPos[]{pos1, pos1.relative(facing), pos1.relative(facing, 2)};
     //        for (BlockPos block : posList){
     //            if (level.getBlockState(block).is(this.asBlock())){
@@ -87,11 +87,11 @@ public class MultiblockBedBlock extends MultiblockPlacer{
         level.setBlock(pos, state.setValue(OCCUPIED, occupied), 2);
     }
 
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         if (pLevel.isClientSide) {
             return InteractionResult.CONSUME;
         } else {
-            int part = pState.getValue(MULTIBLOCK_PART);
+            int part = pState.getValue(getMultiblockPart());
             if(part == 3 || part == 4){
                 pPos = pPos.relative(pState.getValue(FACING));
                 pState = pLevel.getBlockState(pPos);

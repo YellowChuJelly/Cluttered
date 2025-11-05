@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dorado_cabinet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:dorado_cabinet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:dorado_cabinet_cluttered"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dorado_cabinet"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:dorado_cabinet_cluttered"
+    ]
+  }
+}

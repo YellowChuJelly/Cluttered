@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "d": {
+      "item": "minecraft:pink_dye"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "tag": "minecraft:stone_crafting_materials"
+    }
+  },
+  "pattern": [
+    "sss",
+    "pdp",
+    "pcp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:kitchen_set_pink_counter"
+  },
+  "show_notification": false
+}

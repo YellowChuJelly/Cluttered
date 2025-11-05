@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "f": {
+      "item": "minecraft:tropical_fish"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "w": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "pfp",
+    "pfp",
+    "www"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:fish_wallpaper_tropical"
+  },
+  "show_notification": false
+}

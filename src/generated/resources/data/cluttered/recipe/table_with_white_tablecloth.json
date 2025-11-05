@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:blue_carpet"
+    },
+    "c": {
+      "item": "minecraft:white_carpet"
+    },
+    "f": {
+      "item": "minecraft:dark_oak_fence"
+    },
+    "s": {
+      "item": "minecraft:dark_oak_slab"
+    }
+  },
+  "pattern": [
+    "cbc",
+    "sss",
+    "f f"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:table_with_white_tablecloth"
+  },
+  "show_notification": false
+}

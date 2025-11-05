@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "cluttered:red_mushroom_planks"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "sps",
+    "sps"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:red_mushroom_fence_gate"
+  },
+  "show_notification": false
+}

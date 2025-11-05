@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:campfire"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    " i ",
+    "iii",
+    "ici"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:tarrytown_stove"
+  },
+  "show_notification": false
+}

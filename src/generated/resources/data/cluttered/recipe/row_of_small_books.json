@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:book"
+    },
+    "d": {
+      "item": "minecraft:blue_dye"
+    }
+  },
+  "pattern": [
+    " d ",
+    "bbb",
+    " d "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:row_of_small_books"
+  },
+  "show_notification": false
+}

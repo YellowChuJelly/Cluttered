@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:black_dye"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "s": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "sss",
+    "bpb",
+    " b "
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:garland_black_cat"
+  },
+  "show_notification": false
+}

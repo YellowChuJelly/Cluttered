@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_storage_block_gold": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:storage_blocks/gold"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:lunar_observatory_globe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_storage_block_gold"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:lunar_observatory_globe"
+    ]
+  }
+}

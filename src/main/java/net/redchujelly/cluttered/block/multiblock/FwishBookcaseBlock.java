@@ -31,7 +31,7 @@ public class FwishBookcaseBlock extends MultiblockPlacer{
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        if (pState.getValue(MULTIBLOCK_PART) == 5 || pState.getValue(MULTIBLOCK_PART) == 6){
+        if (pState.getValue(getMultiblockPart()) == 5 || pState.getValue(getMultiblockPart()) == 6){
             return SHAPE_TOP;
         }
         return SHAPE;

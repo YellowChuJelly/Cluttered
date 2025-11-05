@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:blue_bed"
+    },
+    "l": {
+      "item": "minecraft:light_blue_bed"
+    },
+    "s": {
+      "item": "minecraft:spruce_log"
+    }
+  },
+  "pattern": [
+    "ss",
+    "bl",
+    "ss"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:darkwood_bed_quilted"
+  },
+  "show_notification": false
+}

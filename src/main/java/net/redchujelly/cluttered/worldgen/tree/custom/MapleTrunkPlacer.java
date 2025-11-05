@@ -1,6 +1,6 @@
 package net.redchujelly.cluttered.worldgen.tree.custom;
 
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -13,8 +13,6 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType;
 import net.redchujelly.cluttered.setup.TrunkPlacerTypeRegistration;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,9 +20,8 @@ import java.util.function.BiConsumer;
 import java.util.function.Function;
 
 public class MapleTrunkPlacer extends TrunkPlacer {
-    public static final Codec<MapleTrunkPlacer> CODEC = RecordCodecBuilder.create(mapleTrunkPlacerInstance ->
+    public static final MapCodec<MapleTrunkPlacer> CODEC = RecordCodecBuilder.mapCodec(mapleTrunkPlacerInstance ->
             trunkPlacerParts(mapleTrunkPlacerInstance).apply(mapleTrunkPlacerInstance, MapleTrunkPlacer::new));
-    private static final Logger log = LoggerFactory.getLogger(MapleTrunkPlacer.class);
 
     public MapleTrunkPlacer(int pBaseHeight, int pHeightRandA, int pHeightRandB) {
         super(pBaseHeight, pHeightRandA, pHeightRandB);

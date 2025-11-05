@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "cluttered:block/marble_helix",
+    "side": "cluttered:block/marble_helix",
+    "top": "cluttered:block/marble_helix"
+  }
+}

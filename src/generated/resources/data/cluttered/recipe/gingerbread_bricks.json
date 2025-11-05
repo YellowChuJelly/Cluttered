@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:brick"
+    },
+    "s": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    "bsb",
+    "sbs",
+    "bsb"
+  ],
+  "result": {
+    "count": 6,
+    "id": "cluttered:gingerbread_bricks"
+  },
+  "show_notification": false
+}

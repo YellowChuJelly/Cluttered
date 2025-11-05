@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:purple_dye"
+    },
+    "f": {
+      "tag": "minecraft:wooden_fences"
+    },
+    "s": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "pattern": [
+    "dsd",
+    " f ",
+    " f "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:puzzle_piece_table_pastel_purple"
+  },
+  "show_notification": false
+}

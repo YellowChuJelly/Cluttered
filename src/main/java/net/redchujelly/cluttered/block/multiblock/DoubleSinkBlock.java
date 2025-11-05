@@ -3,15 +3,16 @@ package net.redchujelly.cluttered.block.multiblock;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.alchemy.PotionUtils;
+import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -47,36 +48,37 @@ public class DoubleSinkBlock extends MultiblockPlacer implements SimpleWaterlogg
         this.registerDefaultState(this.defaultBlockState().setValue(WATERLOGGED, false));
     }
 
-    @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        ItemStack itemStack = pPlayer.getItemInHand(pHand);
-        if (itemStack.getItem().equals(Items.BUCKET) || itemStack.getItem().equals(Items.GLASS_BOTTLE)) {
-            if (!pLevel.isClientSide){
-                ItemStack filledItem;
-                SoundEvent sound;
-                if (itemStack.getItem().equals(Items.GLASS_BOTTLE)){
-                    filledItem = PotionUtils.setPotion(new ItemStack(Items.POTION), Potions.WATER);
-                    sound = SoundEvents.BOTTLE_FILL;
-                }
-                else {
-                    filledItem = new ItemStack(Items.WATER_BUCKET);
-                    sound = SoundEvents.BUCKET_FILL;
-                }
-                
-                if (itemStack.getCount() == 1){
-                    pPlayer.setItemInHand(pHand, filledItem);
-                } else if (pPlayer.addItem(filledItem)) {
-                    itemStack.shrink(1);
-                } else {
-                    pPlayer.drop(filledItem, true);
-                    itemStack.shrink(1);
-                }
-                pLevel.playSound(null, pPos, sound, SoundSource.BLOCKS);
-            }
-            return InteractionResult.SUCCESS;
-        }
-        return InteractionResult.PASS;
-    }
+	@Override
+	protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+		if (stack.is(Items.BUCKET) || stack.is(Items.GLASS_BOTTLE)) {
+			if (!level.isClientSide){
+				ItemStack filledItem;
+				SoundEvent sound;
+				if (stack.is(Items.GLASS_BOTTLE)){
+					ItemStack i = new ItemStack(Items.POTION);
+					i.set(DataComponents.POTION_CONTENTS, new PotionContents(Potions.WATER));
+					filledItem = i;
+					sound = SoundEvents.BOTTLE_FILL;
+				}
+				else {
+					filledItem = new ItemStack(Items.WATER_BUCKET);
+					sound = SoundEvents.BUCKET_FILL;
+				}
+
+				if (stack.getCount() == 1){
+					player.setItemInHand(hand, filledItem);
+				} else if (player.addItem(filledItem)) {
+					stack.shrink(1);
+				} else {
+					player.drop(filledItem, true);
+					stack.shrink(1);
+				}
+				level.playSound(null, pos, sound, SoundSource.BLOCKS);
+			}
+			return ItemInteractionResult.SUCCESS;
+		}
+		return super.useItemOn(stack, state, level, pos, player, hand, hitResult);
+	}
 
     @Override
     public FluidState getFluidState(BlockState pState) {

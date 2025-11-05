@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:brown_dye"
+    },
+    "j": {
+      "item": "minecraft:jukebox"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "pjp",
+    "pbp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:record_player_brown"
+  },
+  "show_notification": false
+}

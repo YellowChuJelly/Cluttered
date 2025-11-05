@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "pattern": [
+    "dpd",
+    "p p",
+    "dsd"
+  ],
+  "result": {
+    "count": 3,
+    "id": "cluttered:flower_shelf_blue"
+  },
+  "show_notification": false
+}

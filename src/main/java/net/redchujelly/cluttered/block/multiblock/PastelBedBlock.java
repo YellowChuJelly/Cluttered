@@ -24,7 +24,7 @@ public class PastelBedBlock extends MushroomBedBlock{
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         Direction facing = pState.getValue(FACING);
-        if (pState.getValue(MULTIBLOCK_PART) == 1){
+        if (pState.getValue(getMultiblockPart()) == 1){
             return SHAPE;
         }
         return switch (facing) {

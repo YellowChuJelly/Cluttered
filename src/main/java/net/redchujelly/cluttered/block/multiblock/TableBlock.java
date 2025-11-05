@@ -1,5 +1,6 @@
 package net.redchujelly.cluttered.block.multiblock;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
@@ -12,7 +13,8 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class TableBlock extends MultiblockPlacer{
-
+	private static final MapCodec<TableBlock> CODEC = simpleCodec(TableBlock::new);
+	
     private static final VoxelShape TOP = Block.box(0,13,0,16,16,16);
     private static final VoxelShape SHAPE_NORTH = Shapes.join(Block.box(1,0,1,4,14,4), Block.box(1,0,12,4,14,15), BooleanOp.OR);
     private static final VoxelShape SHAPE_SOUTH = Shapes.join(Block.box(12,0,1,15,14,4), Block.box(12,0,12,15,14,15), BooleanOp.OR);
@@ -28,9 +30,14 @@ public class TableBlock extends MultiblockPlacer{
             },
     };
 
-    @Override
+	@Override
+	protected MapCodec<? extends Block> codec() {
+		return CODEC;
+	}
+
+	@Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        int part = pState.getValue(MULTIBLOCK_PART);
+        int part = pState.getValue(getMultiblockPart());
         Direction facing = pState.getValue(FACING);
         VoxelShape legs;
         switch (facing) {
@@ -50,7 +57,7 @@ public class TableBlock extends MultiblockPlacer{
 
     @Override
     public IntegerProperty getMultiblockPart() {
-        return super.getMultiblockPart();
+        return MULTIBLOCK_PART;
     }
 
     @Override

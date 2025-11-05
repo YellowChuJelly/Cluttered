@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "tag": "minecraft:wooden_fences"
+    },
+    "p": {
+      "item": "minecraft:peony"
+    }
+  },
+  "pattern": [
+    "fff",
+    "ppp",
+    "fff"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:violet_screen"
+  },
+  "show_notification": false
+}

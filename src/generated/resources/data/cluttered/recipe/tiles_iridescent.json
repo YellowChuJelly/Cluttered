@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "t": {
+      "item": "minecraft:terracotta"
+    }
+  },
+  "pattern": [
+    "ttt",
+    "tpt",
+    "ttt"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cluttered:tiles_iridescent"
+  },
+  "show_notification": false
+}

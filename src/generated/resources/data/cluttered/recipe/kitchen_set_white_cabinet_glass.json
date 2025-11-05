@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "d": {
+      "item": "minecraft:white_dye"
+    },
+    "g": {
+      "item": "minecraft:glass_pane"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "pdp",
+    "gcg",
+    "pdp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:kitchen_set_white_cabinet_glass"
+  },
+  "show_notification": false
+}

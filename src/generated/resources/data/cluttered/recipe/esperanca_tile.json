@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "t": {
+      "item": "minecraft:white_terracotta"
+    }
+  },
+  "pattern": [
+    "tt",
+    "tb"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cluttered:esperanca_tile"
+  },
+  "show_notification": false
+}

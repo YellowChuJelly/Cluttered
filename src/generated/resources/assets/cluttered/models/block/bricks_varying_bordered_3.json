@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cluttered:block/bricks_varying_3",
+    "side": "cluttered:block/bricks_varying_bordered_3"
+  }
+}

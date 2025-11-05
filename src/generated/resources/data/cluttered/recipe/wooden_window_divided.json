@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "sss",
+    "gsg",
+    "sss"
+  ],
+  "result": {
+    "count": 2,
+    "id": "cluttered:wooden_window_divided"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:cyan_wool"
+    },
+    "p": {
+      "item": "cluttered:pastel_stool"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " c ",
+    "s s",
+    " p "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:pastel_chair"
+  },
+  "show_notification": false
+}

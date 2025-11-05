@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sunflower": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:sunflower"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:armchair_starry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sunflower"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:armchair_starry"
+    ]
+  }
+}

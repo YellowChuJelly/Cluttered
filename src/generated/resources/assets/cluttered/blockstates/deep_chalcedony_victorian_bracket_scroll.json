@@ -1,0 +1,140 @@
+{
+  "variants": {
+    "facing=east,is_up=false,offset=false,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base",
+      "x": 180,
+      "y": 270
+    },
+    "facing=east,is_up=false,offset=false,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base",
+      "x": 180,
+      "y": 270
+    },
+    "facing=east,is_up=false,offset=true,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset",
+      "x": 180,
+      "y": 270
+    },
+    "facing=east,is_up=false,offset=true,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset",
+      "x": 180,
+      "y": 270
+    },
+    "facing=east,is_up=true,offset=false,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base",
+      "y": 90
+    },
+    "facing=east,is_up=true,offset=false,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base",
+      "y": 90
+    },
+    "facing=east,is_up=true,offset=true,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset",
+      "y": 90
+    },
+    "facing=east,is_up=true,offset=true,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset",
+      "y": 90
+    },
+    "facing=north,is_up=false,offset=false,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base",
+      "x": 180,
+      "y": 180
+    },
+    "facing=north,is_up=false,offset=false,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base",
+      "x": 180,
+      "y": 180
+    },
+    "facing=north,is_up=false,offset=true,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset",
+      "x": 180,
+      "y": 180
+    },
+    "facing=north,is_up=false,offset=true,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset",
+      "x": 180,
+      "y": 180
+    },
+    "facing=north,is_up=true,offset=false,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base"
+    },
+    "facing=north,is_up=true,offset=false,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base"
+    },
+    "facing=north,is_up=true,offset=true,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset"
+    },
+    "facing=north,is_up=true,offset=true,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset"
+    },
+    "facing=south,is_up=false,offset=false,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base",
+      "x": 180
+    },
+    "facing=south,is_up=false,offset=false,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base",
+      "x": 180
+    },
+    "facing=south,is_up=false,offset=true,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset",
+      "x": 180
+    },
+    "facing=south,is_up=false,offset=true,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset",
+      "x": 180
+    },
+    "facing=south,is_up=true,offset=false,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base",
+      "y": 180
+    },
+    "facing=south,is_up=true,offset=false,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base",
+      "y": 180
+    },
+    "facing=south,is_up=true,offset=true,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset",
+      "y": 180
+    },
+    "facing=south,is_up=true,offset=true,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset",
+      "y": 180
+    },
+    "facing=west,is_up=false,offset=false,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base",
+      "x": 180,
+      "y": 90
+    },
+    "facing=west,is_up=false,offset=false,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base",
+      "x": 180,
+      "y": 90
+    },
+    "facing=west,is_up=false,offset=true,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset",
+      "x": 180,
+      "y": 90
+    },
+    "facing=west,is_up=false,offset=true,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset",
+      "x": 180,
+      "y": 90
+    },
+    "facing=west,is_up=true,offset=false,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base",
+      "y": 270
+    },
+    "facing=west,is_up=true,offset=false,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_base",
+      "y": 270
+    },
+    "facing=west,is_up=true,offset=true,waterlogged=false": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset",
+      "y": 270
+    },
+    "facing=west,is_up=true,offset=true,waterlogged=true": {
+      "model": "cluttered:block/deep_chalcedony_victorian_bracket_scroll_offset",
+      "y": 270
+    }
+  }
+}

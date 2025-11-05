@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "cluttered:darkwood_chair_southern_flair"
+    }
+  },
+  "pattern": [
+    "cc"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:darkwood_sofa_southern_flair"
+  },
+  "show_notification": false
+}

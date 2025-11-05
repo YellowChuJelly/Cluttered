@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:bookshelf"
+    },
+    "c": {
+      "item": "minecraft:green_carpet"
+    },
+    "s": {
+      "item": "minecraft:spruce_slab"
+    },
+    "t": {
+      "item": "minecraft:red_carpet"
+    }
+  },
+  "pattern": [
+    " ct",
+    "sss",
+    "bbb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:darkwood_decorative_shelves_southern_flair"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:blue_carpet"
+    },
+    "i": {
+      "item": "cluttered:wicker_block"
+    },
+    "w": {
+      "item": "minecraft:white_carpet"
+    }
+  },
+  "pattern": [
+    "b b",
+    "iwi",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:picnic_basket"
+  },
+  "show_notification": false
+}

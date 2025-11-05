@@ -1,14 +1,17 @@
 package net.redchujelly.cluttered.block.custom.furniture;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.FaceAttachedHorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class MiniFlagBlock extends FlatDirectionalBlock{
+	private static final MapCodec<MiniFlagBlock> CODEC = simpleCodec(MiniFlagBlock::new);
 
     private static final VoxelShape SHAPE_UP = Block.box(3.5, 0, 3.5, 12.5, 13, 12.5);
     private static final VoxelShape SHAPE_DOWN = Block.box(3.5, 3, 3.5, 12.5, 16, 12.5);
@@ -21,7 +24,12 @@ public class MiniFlagBlock extends FlatDirectionalBlock{
         super(pProperties);
     }
 
-    @Override
+	@Override
+	protected MapCodec<? extends FaceAttachedHorizontalDirectionalBlock> codec() {
+		return CODEC;
+	}
+
+	@Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         Direction facing = getConnectedDirection(pState);
         return switch (facing) {

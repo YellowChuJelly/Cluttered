@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "cluttered:block/raw_marble",
+    "side": "cluttered:block/raw_marble",
+    "top": "cluttered:block/raw_marble"
+  }
+}

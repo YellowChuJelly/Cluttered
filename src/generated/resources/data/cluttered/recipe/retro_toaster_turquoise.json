@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:cyan_dye"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "l": {
+      "item": "minecraft:lever"
+    },
+    "m": {
+      "item": "minecraft:magma_block"
+    }
+  },
+  "pattern": [
+    "idl",
+    "imi"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:retro_toaster_turquoise"
+  },
+  "show_notification": false
+}

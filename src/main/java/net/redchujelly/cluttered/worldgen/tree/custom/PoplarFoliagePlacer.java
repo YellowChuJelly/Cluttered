@@ -1,21 +1,19 @@
 package net.redchujelly.cluttered.worldgen.tree.custom;
 
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.world.level.LevelSimulatedReader;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacerType;
-import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.redchujelly.cluttered.setup.BlockRegistration;
 import net.redchujelly.cluttered.setup.FoliagePlacerTypeRegistration;
 
 public class PoplarFoliagePlacer extends FoliagePlacer {
-    public static final Codec<PoplarFoliagePlacer> CODEC = RecordCodecBuilder.create(poplarFoliagePlacerInstance
+    public static final MapCodec<PoplarFoliagePlacer> CODEC = RecordCodecBuilder.mapCodec(poplarFoliagePlacerInstance
             -> foliagePlacerParts(poplarFoliagePlacerInstance).and(Codec.intRange(0, 16).fieldOf("height").forGetter(fp -> fp.height))
             .apply(poplarFoliagePlacerInstance, PoplarFoliagePlacer::new));
 

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cluttered:chalcedony_polished"
+  },
+  "result": {
+    "count": 1,
+    "id": "cluttered:chalcedony_pillar_ionic"
+  }
+}

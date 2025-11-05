@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "p": {
+      "item": "minecraft:pink_carpet"
+    },
+    "r": {
+      "item": "minecraft:red_carpet"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "sss",
+    "ppp",
+    "rrr"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:hanging_cloth"
+  },
+  "show_notification": false
+}

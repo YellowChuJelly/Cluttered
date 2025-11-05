@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:block/cube",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "down": "cluttered:block/greenhouse_window_arch_right",
+    "east": "cluttered:block/greenhouse_window_arch_right",
+    "north": "cluttered:block/greenhouse_window_arch_right",
+    "particle": "cluttered:block/greenhouse_window_arch_right",
+    "south": "cluttered:block/greenhouse_window_arch_left",
+    "up": "cluttered:block/greenhouse_window_arch_right",
+    "west": "cluttered:block/greenhouse_window_arch_left"
+  }
+}

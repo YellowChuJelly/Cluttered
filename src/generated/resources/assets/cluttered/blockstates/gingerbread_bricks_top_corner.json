@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "cluttered:block/gingerbread_bricks_top_corner",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "cluttered:block/gingerbread_bricks_top_corner"
+    },
+    "facing=south": {
+      "model": "cluttered:block/gingerbread_bricks_top_corner",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cluttered:block/gingerbread_bricks_top_corner",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:black_wool"
+    },
+    "g": {
+      "item": "minecraft:gold_nugget"
+    },
+    "l": {
+      "item": "minecraft:lapis_lazuli"
+    }
+  },
+  "pattern": [
+    "glg",
+    "bbb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:madonna_ottoman"
+  },
+  "show_notification": false
+}

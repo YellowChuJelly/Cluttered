@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bike_yellow": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:bicycle_blue"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:bicycle_with_flowers_blue"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bike_yellow"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:bicycle_with_flowers_blue"
+    ]
+  }
+}

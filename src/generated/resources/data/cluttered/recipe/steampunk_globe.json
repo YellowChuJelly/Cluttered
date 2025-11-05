@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:copper_ingot"
+    },
+    "m": {
+      "item": "cluttered:antique_map"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    " c ",
+    "cmc",
+    "s s"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:steampunk_globe"
+  },
+  "show_notification": false
+}

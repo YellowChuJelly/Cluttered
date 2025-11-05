@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:flower_pot"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:painting"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cluttered:endtable_decor"
+  }
+}
