@@ -57,15 +57,15 @@ public class FridgeBlock extends MultiblockStorage{
         };
     }
 
-    public static void setOpenAndClosed(Level level, BlockPos pos, BlockState state, boolean open){
-        int part = state.getValue(MULTIBLOCK_PART);
+    public void setOpenAndClosed(Level level, BlockPos pos, BlockState state, boolean open){
+        int part = state.getValue(getMultiblockPart());
         BlockPos otherHalfPos = part == 1 ? pos.above() : pos.below();
         BlockState otherHalfBlock = level.getBlockState(otherHalfPos);
 
         if (state.hasProperty(OPEN)) {
             level.setBlock(pos, state.setValue(OPEN, open),2);
-            if (level.getBlockState(otherHalfPos).getBlock().equals(state.getBlock()) && otherHalfBlock.getValue(MULTIBLOCK_PART) != part){
-                level.setBlock(otherHalfPos, state.setValue(OPEN, open).setValue(MULTIBLOCK_PART, part == 1 ? 2 : 1),2);
+            if (level.getBlockState(otherHalfPos).getBlock().equals(state.getBlock()) && otherHalfBlock.getValue(getMultiblockPart()) != part){
+                level.setBlock(otherHalfPos, state.setValue(OPEN, open).setValue(getMultiblockPart(), part == 1 ? 2 : 1),2);
             }
         }
 
@@ -110,7 +110,7 @@ public class FridgeBlock extends MultiblockStorage{
 
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        if (blockState.getValue(MULTIBLOCK_PART) != 1){
+        if (blockState.getValue(getMultiblockPart()) != 1){
             return null;
         }
         return TileEntityRegistration.RETRO_FRIDGE_BE.get().create(blockPos, blockState);

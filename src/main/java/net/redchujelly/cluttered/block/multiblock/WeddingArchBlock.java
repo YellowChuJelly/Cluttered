@@ -73,7 +73,7 @@ public class WeddingArchBlock extends MultiblockPlacer{
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        int part = pState.getValue(MULTIBLOCK_PART);
+        int part = pState.getValue(getMultiblockPart());
         Direction facing = pState.getValue(FACING);
         VoxelShape shape1;
         if (part == 1 || part == 2 || part == 6 || part == 7){

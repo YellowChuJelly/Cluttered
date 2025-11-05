@@ -29,7 +29,7 @@ public class AntiqueLibraryBooksBlock extends MultiblockPlacer {
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        int part = pState.getValue(MULTIBLOCK_PART);
+        int part = pState.getValue(getMultiblockPart());
         Direction facing = pState.getValue(FACING);
         return switch (facing) {
             case SOUTH -> SHAPE_SOUTH;

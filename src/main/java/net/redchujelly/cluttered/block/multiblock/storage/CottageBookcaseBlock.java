@@ -43,7 +43,7 @@ public class CottageBookcaseBlock extends MultiblockStorage {
 
     @Override
     protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
-        if (pState.getValue(MULTIBLOCK_PART) != 1){
+        if (pState.getValue(getMultiblockPart()) != 1){
             return InteractionResult.FAIL;
         } else if (pLevel.isClientSide) {
             return InteractionResult.SUCCESS;
@@ -59,7 +59,7 @@ public class CottageBookcaseBlock extends MultiblockStorage {
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        int part = pState.getValue(MULTIBLOCK_PART);
+        int part = pState.getValue(getMultiblockPart());
         Direction facing = pState.getValue(FACING);
         return switch (facing) {
             case SOUTH -> part == 1 ? SHAPE_S_1 : SHAPE_S_2;
@@ -71,7 +71,7 @@ public class CottageBookcaseBlock extends MultiblockStorage {
 
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        if (blockState.getValue(MULTIBLOCK_PART) != 1){
+        if (blockState.getValue(getMultiblockPart()) != 1){
             return null;
         }
         return TileEntityRegistration.THREE_ROWS_BE.get().create(blockPos, blockState);

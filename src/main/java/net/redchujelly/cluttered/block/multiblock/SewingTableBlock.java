@@ -24,7 +24,7 @@ public class SewingTableBlock extends TableBlock{
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        int part = pState.getValue(MULTIBLOCK_PART);
+        int part = pState.getValue(getMultiblockPart());
         Direction facing = pState.getValue(FACING);
         VoxelShape legs;
         switch (facing) {

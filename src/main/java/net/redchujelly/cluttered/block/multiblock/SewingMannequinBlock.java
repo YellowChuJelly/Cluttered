@@ -45,7 +45,7 @@ public class SewingMannequinBlock extends MultiblockPlacer{
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         Direction facing = pState.getValue(FACING);
-        if (pState.getValue(MULTIBLOCK_PART) == 1){
+        if (pState.getValue(getMultiblockPart()) == 1){
             return facing.equals(Direction.NORTH) || facing.equals(Direction.SOUTH) ? SHAPE_NS_1 : SHAPE_EW_1;
         }
         else return facing.equals(Direction.NORTH) || facing.equals(Direction.SOUTH) ? SHAPE_NS_2 : SHAPE_EW_2;

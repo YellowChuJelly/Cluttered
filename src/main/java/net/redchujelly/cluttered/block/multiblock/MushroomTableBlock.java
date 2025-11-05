@@ -23,7 +23,7 @@ public class MushroomTableBlock extends DarkwoodTableBlock{
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         Direction facing = pState.getValue(FACING);
-        int part = pState.getValue(MULTIBLOCK_PART);
+        int part = pState.getValue(getMultiblockPart());
         //Gets the correct rotation based on the table part
         facing = switch (part){
             case 2 -> facing.getCounterClockWise();

@@ -48,7 +48,7 @@ public class VioletScreenBlock extends MultiblockPlacer {
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        int part = pState.getValue(MULTIBLOCK_PART);
+        int part = pState.getValue(getMultiblockPart());
         Direction facing = pState.getValue(FACING);
         return switch (facing) {
             case SOUTH -> part == 1 || part == 4 ? SHAPE_14_S : SHAPE_2356_S;

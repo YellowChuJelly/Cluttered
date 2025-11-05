@@ -42,7 +42,7 @@ public class CottageLampBlock extends MultiblockPlacer{
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return pState.getValue(MULTIBLOCK_PART) == 1 ? SHAPE_1 : SHAPE_2;
+        return pState.getValue(getMultiblockPart()) == 1 ? SHAPE_1 : SHAPE_2;
     }
 
     @Override
@@ -65,14 +65,14 @@ public class CottageLampBlock extends MultiblockPlacer{
     //}
 
     //public static void setOnAndOff(Level level, BlockPos pos, BlockState state, boolean lit){
-    //    int part = state.getValue(MULTIBLOCK_PART);
+    //    int part = state.getValue(getMultiblockPart());
     //    BlockPos otherHalfPos = part == 1 ? pos.above() : pos.below();
     //    BlockState otherHalfBlock = level.getBlockState(otherHalfPos);
 //
     //    if (state.hasProperty(LIT)) {
     //        level.setBlock(pos, state.setValue(LIT, lit),2);
-    //        if (level.getBlockState(otherHalfPos).getBlock().equals(state.getBlock()) && otherHalfBlock.getValue(MULTIBLOCK_PART) != part){
-    //            level.setBlock(otherHalfPos, state.setValue(LIT, lit).setValue(MULTIBLOCK_PART, part == 1 ? 2 : 1),2);
+    //        if (level.getBlockState(otherHalfPos).getBlock().equals(state.getBlock()) && otherHalfBlock.getValue(getMultiblockPart()) != part){
+    //            level.setBlock(otherHalfPos, state.setValue(LIT, lit).setValue(getMultiblockPart(), part == 1 ? 2 : 1),2);
     //        }
     //    }
 //

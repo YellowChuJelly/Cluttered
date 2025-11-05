@@ -29,7 +29,7 @@ public class GumballMachineBlock extends MultiblockPlacer {
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        int part = pState.getValue(MULTIBLOCK_PART);
+        int part = pState.getValue(getMultiblockPart());
         return part == 1 ? SHAPE_1 : SHAPE_2;
     }
 

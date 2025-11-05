@@ -20,13 +20,13 @@ public class FridgeBlockEntity extends CustomStorageBlockEntity{
             @Override
             protected void onOpen(Level level, BlockPos blockPos, BlockState blockState) {
                 level.playSound(null, pPos, SoundEvents.IRON_DOOR_OPEN, SoundSource.BLOCKS);
-                FridgeBlock.setOpenAndClosed(level, pPos, pBlockState, true);
+				((FridgeBlock) pBlockState.getBlock()).setOpenAndClosed(level, pPos, pBlockState, true);
             }
 
             @Override
             protected void onClose(Level level, BlockPos blockPos, BlockState blockState) {
                 level.playSound(null, pPos, SoundEvents.IRON_DOOR_CLOSE, SoundSource.BLOCKS);
-                FridgeBlock.setOpenAndClosed(level, pPos, pBlockState, false);
+				((FridgeBlock) pBlockState.getBlock()).setOpenAndClosed(level, pPos, pBlockState, false);
 
             }
 

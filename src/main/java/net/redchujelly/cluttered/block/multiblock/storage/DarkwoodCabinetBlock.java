@@ -53,7 +53,7 @@ public class DarkwoodCabinetBlock extends MultiblockStorage{
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        int part = pState.getValue(MULTIBLOCK_PART);
+        int part = pState.getValue(getMultiblockPart());
         Direction facing = pState.getValue(FACING);
 
         switch (part){
@@ -136,7 +136,7 @@ public class DarkwoodCabinetBlock extends MultiblockStorage{
 
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        if (blockState.getValue(MULTIBLOCK_PART) != 1){
+        if (blockState.getValue(getMultiblockPart()) != 1){
             return null;
         }
         return TileEntityRegistration.SIX_ROWS_BE.get().create(blockPos, blockState);
