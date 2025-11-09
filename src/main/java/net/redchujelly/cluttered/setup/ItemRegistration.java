@@ -6,7 +6,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SignItem;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -48,7 +47,7 @@ public class ItemRegistration {
 
     private static DeferredItem<SignItem> registerSign(String name, DeferredHolder<Block, ? extends Block> floorSign, DeferredHolder<Block, ? extends Block> wallSign) {
         return ITEMS.register(name + "_sign",
-                () -> new SignItem(new Item.Properties().stacksTo(16), Blocks.OAK_SIGN, Blocks.OAK_WALL_SIGN){
+                () -> new SignItem(new Item.Properties().stacksTo(16), floorSign.get(), wallSign.get()){
                     @Override
                     public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
                         return 200;
@@ -58,7 +57,7 @@ public class ItemRegistration {
 
     private static DeferredItem<SignItem> registerHangingSign(String name, DeferredHolder<Block, ? extends Block> floorSign, DeferredHolder<Block, ? extends Block> wallSign) {
         return ITEMS.register(name + "_hanging_sign",
-                () -> new HangingSignItem(Blocks.OAK_SIGN, Blocks.OAK_WALL_SIGN, new Item.Properties().stacksTo(16)){
+                () -> new HangingSignItem(floorSign.get(), wallSign.get(), new Item.Properties().stacksTo(16)){
                     @Override
                     public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
                         return 200;

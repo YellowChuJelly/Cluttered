@@ -6,6 +6,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.redchujelly.cluttered.Cluttered;
@@ -41,6 +42,7 @@ public class TileEntityRegistration {
             BlockRegistration.ENDTABLE_CHARCOAL,
             BlockRegistration.ENDTABLE_MEADOW,
             BlockRegistration.ENDTABLE_PERIWINKLE,
+			BlockRegistration.ENDTABLE_SUNSHINE,
             BlockRegistration.ENDTABLE_WOOD,
             BlockRegistration.COTTAGE_SIDE_TABLE,
             BlockRegistration.NIGHTSTAND_GREEN,
@@ -72,7 +74,6 @@ public class TileEntityRegistration {
             BlockRegistration.KITCHEN_SET_YELLOW_CABINET_OPEN,
             BlockRegistration.KITCHEN_SET_YELLOW_CABINET_GLASS,
 
-            BlockRegistration.COTTAGE_BOOKCASE,
             BlockRegistration.DESK_GREEN,
             BlockRegistration.DESK_GREEN_CLUTTERED,
             BlockRegistration.DESK_BROWN,
@@ -113,6 +114,8 @@ public class TileEntityRegistration {
             BlockRegistration.CHINA_CABINET,
 
             BlockRegistration.PASTEL_CABINET,
+
+			BlockRegistration.COTTAGE_BOOKCASE,
     };
 
     static DeferredHolder<?, ?>[] sixRows = new DeferredHolder[]{
@@ -123,6 +126,12 @@ public class TileEntityRegistration {
             BlockRegistration.BLUE_MUSHROOM_WARDROBE,
             BlockRegistration.PASTEL_WARDROBE,
             BlockRegistration.MERMAID_DRESSER,
+			BlockRegistration.DORADO_CABINET,
+			BlockRegistration.DORADO_CABINET_CLUTTERED,
+			BlockRegistration.HAVANA_CABINET,
+			BlockRegistration.HAVANA_CABINET_CLUTTERED,
+			BlockRegistration.MUREX_CABINET,
+			BlockRegistration.MUREX_CABINET_CLUTTERED,
     };
 
     static DeferredHolder<?, ?>[] fridges = new DeferredHolder[]{
@@ -143,6 +152,17 @@ public class TileEntityRegistration {
     static DeferredHolder<?, ?>[] safe = new DeferredHolder[]{
             BlockRegistration.SAFE_NOVAKID,
     };
+
+	static DeferredHolder<?, ?>[] jukeboxes = new DeferredHolder[]{
+			BlockRegistration.RECORD_PLAYER_BLUE,
+			BlockRegistration.RECORD_PLAYER_BROWN,
+			BlockRegistration.RECORD_PLAYER_PINK,
+			BlockRegistration.RECORD_PLAYER_PURPLE,
+			BlockRegistration.RECORD_PLAYER_RED,
+			BlockRegistration.RECORD_PLAYER_WHITE,
+			BlockRegistration.RECORD_PLAYER_YELLOW,
+			BlockRegistration.TRADITIONAL_RADIO,
+	};
 
 
     //IntelliJ keeps telling me not to do it this way basically but...
@@ -218,7 +238,12 @@ public class TileEntityRegistration {
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
+		eventBus.addListener(TileEntityRegistration::addBlocks);
     }
+
+	public static void addBlocks(BlockEntityTypeAddBlocksEvent event) {
+		event.modify(BlockEntityType.JUKEBOX, Arrays.stream(jukeboxes).map(DeferredHolder::get).toArray(Block[]::new));
+	}
 
 
     //Basically from the tanuki-decor code with some changes (i made it worse sorry)
