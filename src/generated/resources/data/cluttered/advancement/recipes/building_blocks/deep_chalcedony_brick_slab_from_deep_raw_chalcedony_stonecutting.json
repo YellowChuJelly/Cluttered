@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deep_raw_chalcedony": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:deep_raw_chalcedony"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:deep_chalcedony_brick_slab_from_deep_raw_chalcedony_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deep_raw_chalcedony"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:deep_chalcedony_brick_slab_from_deep_raw_chalcedony_stonecutting"
+    ]
+  }
+}

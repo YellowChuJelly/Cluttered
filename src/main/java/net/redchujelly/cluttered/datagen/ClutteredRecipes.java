@@ -11,6 +11,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
@@ -226,11 +227,11 @@ public class ClutteredRecipes extends RecipeProvider {
                 .showNotification(false)
                 .save(consumer);
 
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_SLAB.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 2);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 2);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_SLAB.get().asItem(),BlockRegistration.POLISHED_CHALCEDONY.get().asItem(), 2);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.POLISHED_CHALCEDONY.get().asItem(), 2);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.CHALCEDONY_BRICKS.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_SLAB.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_SLAB.get().asItem(),BlockRegistration.POLISHED_CHALCEDONY.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.POLISHED_CHALCEDONY.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.CHALCEDONY_BRICKS.get().asItem(), 2);
 
         ArrayList<DeferredBlock<Block>> chalcedonyResults = new ArrayList<>();
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_STAIRS);
@@ -256,19 +257,19 @@ public class ClutteredRecipes extends RecipeProvider {
         chalcedonyResults.add(BlockRegistration.CHALCEDONY_PICKET_FENCE_GATE);
 
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.CHALCEDONY.get(), chalcedonyResults);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_BOW.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_STAR.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_VICTORIAN.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_BOW.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_BOW_SCROLL.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_SCROLL.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_SCROLL_SHELF.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_STAR.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRACKET_STAR_SCROLL.get().asItem(),BlockRegistration.CHALCEDONY.get().asItem(), 4);
 
         chalcedonyResults.remove(BlockRegistration.POLISHED_CHALCEDONY);
 
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.POLISHED_CHALCEDONY.get(), chalcedonyResults);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRICK_STAIRS.get().asItem(),BlockRegistration.CHALCEDONY_BRICKS.get().asItem());
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_SMALL_TILES.get().asItem(),BlockRegistration.CHALCEDONY_TILES.get().asItem());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_BRICK_STAIRS.get().asItem(),BlockRegistration.CHALCEDONY_BRICKS.get().asItem());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHALCEDONY_SMALL_TILES.get().asItem(),BlockRegistration.CHALCEDONY_TILES.get().asItem());
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.STARRY_CHISELED_CHALCEDONY.get(), 8)
                 .pattern("bbb")
@@ -365,11 +366,11 @@ public class ClutteredRecipes extends RecipeProvider {
                 .showNotification(false)
                 .save(consumer);
 
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_SLAB.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 2);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 2);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_SLAB.get().asItem(),BlockRegistration.DEEP_POLISHED_CHALCEDONY.get().asItem(), 2);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.DEEP_POLISHED_CHALCEDONY.get().asItem(), 2);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.DEEP_CHALCEDONY_BRICKS.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_SLAB.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_SLAB.get().asItem(),BlockRegistration.DEEP_POLISHED_CHALCEDONY.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.DEEP_POLISHED_CHALCEDONY.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRICK_SLAB.get().asItem(),BlockRegistration.DEEP_CHALCEDONY_BRICKS.get().asItem(), 2);
 
         ArrayList<DeferredBlock<Block>> deepChalcedonyresults = new ArrayList<>();
         deepChalcedonyresults.add(BlockRegistration.DEEP_CHALCEDONY_STAIRS);
@@ -399,16 +400,16 @@ public class ClutteredRecipes extends RecipeProvider {
         deepChalcedonyresults.remove(BlockRegistration.DEEP_POLISHED_CHALCEDONY);
 
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.DEEP_POLISHED_CHALCEDONY.get(), deepChalcedonyresults);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRICK_STAIRS.get().asItem(),BlockRegistration.DEEP_CHALCEDONY_BRICKS.get().asItem());
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_SMALL_TILES.get().asItem(),BlockRegistration.DEEP_CHALCEDONY_TILES.get().asItem());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRICK_STAIRS.get().asItem(),BlockRegistration.DEEP_CHALCEDONY_BRICKS.get().asItem());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_SMALL_TILES.get().asItem(),BlockRegistration.DEEP_CHALCEDONY_TILES.get().asItem());
 
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL_SHELF.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_VICTORIAN.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_BOW_SCROLL.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_SCROLL_SHELF.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_CHALCEDONY_BRACKET_STAR_SCROLL.get().asItem(),BlockRegistration.DEEP_CHALCEDONY.get().asItem(), 4);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.DEEP_STARRY_CHISELED_CHALCEDONY.get(), 8)
                 .pattern("bbb")
@@ -496,11 +497,11 @@ public class ClutteredRecipes extends RecipeProvider {
                 .showNotification(false)
                 .save(consumer);
 
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_SLAB.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 2);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRICK_SLAB.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 2);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_SLAB.get().asItem(),BlockRegistration.POLISHED_MARBLE.get().asItem(), 2);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRICK_SLAB.get().asItem(),BlockRegistration.POLISHED_MARBLE.get().asItem(), 2);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRICK_SLAB.get().asItem(),BlockRegistration.MARBLE_BRICKS.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_SLAB.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRICK_SLAB.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_SLAB.get().asItem(),BlockRegistration.POLISHED_MARBLE.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRICK_SLAB.get().asItem(),BlockRegistration.POLISHED_MARBLE.get().asItem(), 2);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRICK_SLAB.get().asItem(),BlockRegistration.MARBLE_BRICKS.get().asItem(), 2);
 
         ArrayList<DeferredBlock<Block>> marbleresults = new ArrayList<>();
         marbleresults.add(BlockRegistration.MARBLE_STAIRS);
@@ -535,16 +536,16 @@ public class ClutteredRecipes extends RecipeProvider {
         marbleresults.remove(BlockRegistration.POLISHED_MARBLE);
 
         buildStoneCutterRecipesForBase(consumer, BlockRegistration.POLISHED_MARBLE.get(), marbleresults);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRICK_STAIRS.get().asItem(),BlockRegistration.MARBLE_BRICKS.get().asItem());
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_SMALL_TILES.get().asItem(),BlockRegistration.MARBLE_TILES.get().asItem());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRICK_STAIRS.get().asItem(),BlockRegistration.MARBLE_BRICKS.get().asItem());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_SMALL_TILES.get().asItem(),BlockRegistration.MARBLE_TILES.get().asItem());
 
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_VICTORIAN.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_BOW.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_BOW_SCROLL.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_SCROLL.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_SCROLL_SHELF.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_STAR.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_STAR_SCROLL.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_VICTORIAN.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_BOW.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_BOW_SCROLL.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_SCROLL.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_SCROLL_SHELF.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_STAR.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.MARBLE_BRACKET_STAR_SCROLL.get().asItem(),BlockRegistration.MARBLE.get().asItem(), 4);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.STARRY_CHISELED_MARBLE.get(), 8)
                 .pattern("bbb")
@@ -1249,8 +1250,8 @@ public class ClutteredRecipes extends RecipeProvider {
                 .showNotification(false)
                 .save(consumer);
 
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, Blocks.GOLD_BLOCK, BlockRegistration.CHISELED_GOLD_BLOCK.get());
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHISELED_GOLD_BLOCK.get(), Blocks.GOLD_BLOCK);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, Blocks.GOLD_BLOCK, BlockRegistration.CHISELED_GOLD_BLOCK.get());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.CHISELED_GOLD_BLOCK.get(), Blocks.GOLD_BLOCK);
 
         ArrayList<DeferredBlock<Block>> calciteResults = new ArrayList<>();
         calciteResults.add(BlockRegistration.ALABASTER_WAINSCOTING);
@@ -1378,8 +1379,8 @@ public class ClutteredRecipes extends RecipeProvider {
                         ItemPredicate.Builder.item().of(Items.QUARTZ).build()))
                 .showNotification(false)
                 .save(consumer);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.VERDANT_TILE_EDGE.get(), BlockRegistration.VERDANT_TILE.get());
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.VERDANT_TILE_CORNER.get(), BlockRegistration.VERDANT_TILE.get());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.VERDANT_TILE_EDGE.get(), BlockRegistration.VERDANT_TILE.get());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.VERDANT_TILE_CORNER.get(), BlockRegistration.VERDANT_TILE.get());
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.ESPERANCA_TILE.get(), 4)
                 .pattern("tt")
@@ -1474,9 +1475,9 @@ public class ClutteredRecipes extends RecipeProvider {
                         ItemPredicate.Builder.item().of(Items.PURPLE_CONCRETE).build()))
                 .showNotification(false)
                 .save(consumer);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.PURPLE_TILES.get(), Blocks.PURPLE_CONCRETE);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_PURPLE_TILES.get(), Blocks.PURPLE_CONCRETE);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_PURPLE_TILES.get(), BlockRegistration.PURPLE_TILES.get());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.PURPLE_TILES.get(), Blocks.PURPLE_CONCRETE);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_PURPLE_TILES.get(), Blocks.PURPLE_CONCRETE);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_PURPLE_TILES.get(), BlockRegistration.PURPLE_TILES.get());
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.PINK_TILES.get(), 4)
                 .pattern("tt")
@@ -1486,9 +1487,9 @@ public class ClutteredRecipes extends RecipeProvider {
                         ItemPredicate.Builder.item().of(Items.PINK_CONCRETE).build()))
                 .showNotification(false)
                 .save(consumer);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.PINK_TILES.get(), Blocks.PINK_CONCRETE);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_PINK_TILES.get(), Blocks.PINK_CONCRETE);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_PINK_TILES.get(), BlockRegistration.PINK_TILES.get());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.PINK_TILES.get(), Blocks.PINK_CONCRETE);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_PINK_TILES.get(), Blocks.PINK_CONCRETE);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_PINK_TILES.get(), BlockRegistration.PINK_TILES.get());
         
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.YELLOW_TILES.get(), 4)
                 .pattern("tt")
@@ -1498,9 +1499,9 @@ public class ClutteredRecipes extends RecipeProvider {
                         ItemPredicate.Builder.item().of(Items.YELLOW_CONCRETE).build()))
                 .showNotification(false)
                 .save(consumer);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.YELLOW_TILES.get(), Blocks.YELLOW_CONCRETE);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_YELLOW_TILES.get(), Blocks.YELLOW_CONCRETE);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_YELLOW_TILES.get(), BlockRegistration.YELLOW_TILES.get());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.YELLOW_TILES.get(), Blocks.YELLOW_CONCRETE);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_YELLOW_TILES.get(), Blocks.YELLOW_CONCRETE);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_YELLOW_TILES.get(), BlockRegistration.YELLOW_TILES.get());
         
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.GREEN_TILES.get(), 4)
                 .pattern("tt")
@@ -1510,9 +1511,9 @@ public class ClutteredRecipes extends RecipeProvider {
                         ItemPredicate.Builder.item().of(Items.GREEN_CONCRETE).build()))
                 .showNotification(false)
                 .save(consumer);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.GREEN_TILES.get(), Blocks.GREEN_CONCRETE);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_GREEN_TILES.get(), Blocks.GREEN_CONCRETE);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_GREEN_TILES.get(), BlockRegistration.GREEN_TILES.get());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.GREEN_TILES.get(), Blocks.GREEN_CONCRETE);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_GREEN_TILES.get(), Blocks.GREEN_CONCRETE);
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.SMALL_GREEN_TILES.get(), BlockRegistration.GREEN_TILES.get());
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistration.IRIDESCENT_TILES.get(), 8)
                 .pattern("ttt")
@@ -1624,8 +1625,8 @@ public class ClutteredRecipes extends RecipeProvider {
                         ItemPredicate.Builder.item().of(Items.TERRACOTTA).build()))
                 .showNotification(false)
                 .save(consumer);
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.COLOSSEO_PILLAR_BASE.get(), BlockRegistration.COLOSSEO_PILLAR.get());
-        stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.COLOSSEO_PILLAR_TOP.get(), BlockRegistration.COLOSSEO_PILLAR.get());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.COLOSSEO_PILLAR_BASE.get(), BlockRegistration.COLOSSEO_PILLAR.get());
+        stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, BlockRegistration.COLOSSEO_PILLAR_TOP.get(), BlockRegistration.COLOSSEO_PILLAR.get());
 
         //MISC RECIPES
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.EYE_BLOCK.get(), 2)
@@ -3455,13 +3456,13 @@ public class ClutteredRecipes extends RecipeProvider {
                     .unlockedBy("has_string", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.STRING).build()))
                     .showNotification(false)
-                    .save(consumer, "polaroid_garland_recipe_1");
+                    .save(consumer, "cluttered:polaroid_garland_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.POLAROID_A_GARLAND.get())
                     .requires(BlockRegistration.POLAROID_B_GARLAND.get())
                     .unlockedBy("has_string", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.STRING).build()))
-                    .save(consumer, "polaroid_garland_recipe_2");
+                    .save(consumer, "cluttered:polaroid_garland_recipe_2");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.POLAROID_B_GARLAND.get())
                     .requires(BlockRegistration.POLAROID_A_GARLAND.get())
@@ -4107,13 +4108,13 @@ public class ClutteredRecipes extends RecipeProvider {
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .showNotification(false)
-                    .save(consumer,"brown_outer_counter_right_recipe_1");
+                    .save(consumer, "cluttered:brown_outer_counter_right_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_RIGHT.get())
                     .requires(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_LEFT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "brown_outer_counter_right_recipe_2");
+                    .save(consumer, "cluttered:brown_outer_counter_right_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_LEFT.get())
                         .pattern("pss")
@@ -4126,13 +4127,13 @@ public class ClutteredRecipes extends RecipeProvider {
                         .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                                 ItemPredicate.Builder.item().of(Items.CHEST).build()))
                         .showNotification(false)
-                        .save(consumer, "brown_outer_counter_left_recipe_1");
+                        .save(consumer, "cluttered:brown_outer_counter_left_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_LEFT.get())
                     .requires(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_LEFT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "brown_outer_counter_left_recipe_2");
+                    .save(consumer, "cluttered:brown_outer_counter_left_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_BROWN_COUNTER_SINK.get())
                     .pattern("sbs")
@@ -4257,13 +4258,13 @@ public class ClutteredRecipes extends RecipeProvider {
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .showNotification(false)
-                    .save(consumer,"light_green_outer_counter_right_recipe_1");
+                    .save(consumer, "cluttered:light_green_outer_counter_right_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_RIGHT.get())
                     .requires(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_LEFT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "light_green_outer_counter_right_recipe_2");
+                    .save(consumer, "cluttered:light_green_outer_counter_right_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_LEFT.get())
                         .pattern("pss")
@@ -4276,13 +4277,13 @@ public class ClutteredRecipes extends RecipeProvider {
                         .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                                 ItemPredicate.Builder.item().of(Items.CHEST).build()))
                         .showNotification(false)
-                        .save(consumer, "light_green_outer_counter_left_recipe_1");
+                        .save(consumer, "cluttered:light_green_outer_counter_left_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_LEFT.get())
                     .requires(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_LEFT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "light_green_outer_counter_left_recipe_2");
+                    .save(consumer, "cluttered:light_green_outer_counter_left_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_SINK.get())
                     .pattern("sbs")
@@ -4407,13 +4408,13 @@ public class ClutteredRecipes extends RecipeProvider {
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .showNotification(false)
-                    .save(consumer,"pink_outer_counter_right_recipe_1");
+                    .save(consumer, "cluttered:pink_outer_counter_right_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_PINK_COUNTER_OUTER_CORNER_RIGHT.get())
                     .requires(BlockRegistration.KITCHEN_SET_PINK_COUNTER_OUTER_CORNER_LEFT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "pink_outer_counter_right_recipe_2");
+                    .save(consumer, "cluttered:pink_outer_counter_right_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_PINK_COUNTER_OUTER_CORNER_LEFT.get())
                         .pattern("pss")
@@ -4426,13 +4427,13 @@ public class ClutteredRecipes extends RecipeProvider {
                         .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                                 ItemPredicate.Builder.item().of(Items.CHEST).build()))
                         .showNotification(false)
-                        .save(consumer, "pink_outer_counter_left_recipe_1");
+                        .save(consumer, "cluttered:pink_outer_counter_left_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_PINK_COUNTER_OUTER_CORNER_LEFT.get())
                     .requires(BlockRegistration.KITCHEN_SET_PINK_COUNTER_OUTER_CORNER_LEFT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "pink_outer_counter_left_recipe_2");
+                    .save(consumer, "cluttered:pink_outer_counter_left_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_PINK_COUNTER_SINK.get())
                     .pattern("sbs")
@@ -4557,13 +4558,13 @@ public class ClutteredRecipes extends RecipeProvider {
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .showNotification(false)
-                    .save(consumer,"purple_outer_counter_right_recipe_1");
+                    .save(consumer, "cluttered:purple_outer_counter_right_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_OUTER_CORNER_RIGHT.get())
                     .requires(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_OUTER_CORNER_LEFT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "purple_outer_counter_right_recipe_2");
+                    .save(consumer, "cluttered:purple_outer_counter_right_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_OUTER_CORNER_LEFT.get())
                         .pattern("pss")
@@ -4576,13 +4577,13 @@ public class ClutteredRecipes extends RecipeProvider {
                         .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                                 ItemPredicate.Builder.item().of(Items.CHEST).build()))
                         .showNotification(false)
-                        .save(consumer, "purple_outer_counter_left_recipe_1");
+                        .save(consumer, "cluttered:purple_outer_counter_left_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_OUTER_CORNER_LEFT.get())
                     .requires(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_OUTER_CORNER_LEFT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "purple_outer_counter_left_recipe_2");
+                    .save(consumer, "cluttered:purple_outer_counter_left_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_SINK.get())
                     .pattern("sbs")
@@ -4707,13 +4708,13 @@ public class ClutteredRecipes extends RecipeProvider {
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .showNotification(false)
-                    .save(consumer,"white_outer_counter_right_recipe_1");
+                    .save(consumer, "cluttered:white_outer_counter_right_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_WHITE_COUNTER_OUTER_CORNER_RIGHT.get())
                     .requires(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_OUTER_CORNER_LEFT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "white_outer_counter_right_recipe_2");
+                    .save(consumer, "cluttered:white_outer_counter_right_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_WHITE_COUNTER_OUTER_CORNER_LEFT.get())
                         .pattern("pss")
@@ -4726,13 +4727,13 @@ public class ClutteredRecipes extends RecipeProvider {
                         .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                                 ItemPredicate.Builder.item().of(Items.CHEST).build()))
                         .showNotification(false)
-                        .save(consumer, "white_outer_counter_left_recipe_1");
+                        .save(consumer, "cluttered:white_outer_counter_left_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_WHITE_COUNTER_OUTER_CORNER_LEFT.get())
                     .requires(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_OUTER_CORNER_LEFT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "white_outer_counter_left_recipe_2");
+                    .save(consumer, "cluttered:white_outer_counter_left_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_WHITE_COUNTER_SINK.get())
                     .pattern("sbs")
@@ -4857,13 +4858,13 @@ public class ClutteredRecipes extends RecipeProvider {
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .showNotification(false)
-                    .save(consumer,"yellow_outer_counter_right_recipe_1");
+                    .save(consumer, "cluttered:yellow_outer_counter_right_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_RIGHT.get())
                     .requires(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_LEFT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "yellow_outer_counter_right_recipe_2");
+                    .save(consumer, "cluttered:yellow_outer_counter_right_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_LEFT.get())
                         .pattern("pss")
@@ -4876,13 +4877,13 @@ public class ClutteredRecipes extends RecipeProvider {
                         .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                                 ItemPredicate.Builder.item().of(Items.CHEST).build()))
                         .showNotification(false)
-                        .save(consumer, "yellow_outer_counter_left_recipe_1");
+                        .save(consumer, "cluttered:yellow_outer_counter_left_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_LEFT.get())
                     .requires(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_LEFT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "yellow_outer_counter_left_recipe_2");
+                    .save(consumer, "cluttered:yellow_outer_counter_left_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_SINK.get())
                     .pattern("sbs")
@@ -4993,13 +4994,13 @@ public class ClutteredRecipes extends RecipeProvider {
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .showNotification(false)
-                    .save(consumer, "black_cat_counter_left_recipe_1");
+                    .save(consumer, "cluttered:black_cat_counter_left_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.BLACK_CAT_COUNTER_LEFT_DOOR.get())
                     .requires(BlockRegistration.BLACK_CAT_COUNTER_RIGHT_DOOR.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "black_cat_counter_left_recipe_2");
+                    .save(consumer, "cluttered:black_cat_counter_left_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.BLACK_CAT_COUNTER_RIGHT_DOOR.get())
                     .pattern("ttt")
@@ -5011,13 +5012,13 @@ public class ClutteredRecipes extends RecipeProvider {
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .showNotification(false)
-                    .save(consumer, "black_cat_counter_right_recipe_1");
+                    .save(consumer, "cluttered:black_cat_counter_right_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.BLACK_CAT_COUNTER_RIGHT_DOOR.get())
                     .requires(BlockRegistration.BLACK_CAT_COUNTER_LEFT_DOOR.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "black_cat_counter_right_recipe_2");
+                    .save(consumer, "cluttered:black_cat_counter_right_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.BLACK_CAT_SINK.get())
                     .pattern("tbt")
@@ -5065,13 +5066,13 @@ public class ClutteredRecipes extends RecipeProvider {
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .showNotification(false)
-                    .save(consumer,"sweetheart_counter_left_recipe_1");
+                    .save(consumer, "cluttered:sweetheart_counter_left_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.SWEETHEART_COUNTER_LEFT_DOOR.get())
                     .requires(BlockRegistration.SWEETHEART_COUNTER_RIGHT_DOOR.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "sweetheart_counter_left_recipe_2");
+                    .save(consumer, "cluttered:sweetheart_counter_left_recipe_2");
 
                 ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.SWEETHEART_COUNTER_RIGHT_DOOR.get())
                     .pattern("ttt")
@@ -5083,13 +5084,13 @@ public class ClutteredRecipes extends RecipeProvider {
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .showNotification(false)
-                    .save(consumer, "sweetheart_counter_right_recipe_1");
+                    .save(consumer, "cluttered:sweetheart_counter_right_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.SWEETHEART_COUNTER_RIGHT_DOOR.get())
                     .requires(BlockRegistration.SWEETHEART_COUNTER_LEFT_DOOR.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
-                    .save(consumer, "sweetheart_counter_right_recipe_2");
+                    .save(consumer, "cluttered:sweetheart_counter_right_recipe_2");
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegistration.SWEETHEART_SINK.get())
                     .pattern("tbt")
@@ -6665,7 +6666,7 @@ public class ClutteredRecipes extends RecipeProvider {
 
     private void buildStoneCutterRecipesForBase(RecipeOutput consumer, Block base, List<DeferredBlock<Block>> results) {
         for (DeferredBlock<Block> result : results) {
-            stonecutterResultFromBase(consumer, RecipeCategory.BUILDING_BLOCKS, result.get().asItem(), base.asItem());
+            stonecutterResultFromBaseCluttered(consumer, RecipeCategory.BUILDING_BLOCKS, result.get().asItem(), base.asItem());
         }
     }
 
@@ -6869,4 +6870,14 @@ public class ClutteredRecipes extends RecipeProvider {
                     .save(consumer);
         }
     }
+
+	private static void stonecutterResultFromBaseCluttered(RecipeOutput recipeOutput, RecipeCategory category, ItemLike result, ItemLike material) {
+		stonecutterResultFromBaseCluttered(recipeOutput, category, result, material, 1);
+	}
+
+	private static void stonecutterResultFromBaseCluttered(RecipeOutput recipeOutput, RecipeCategory category, ItemLike result, ItemLike material, int resultCount) {
+		SingleItemRecipeBuilder.stonecutting(Ingredient.of(material), category, result, resultCount)
+				.unlockedBy(getHasName(material), has(material))
+				.save(recipeOutput, "cluttered:" + getConversionRecipeName(result, material) + "_stonecutting");
+	}
 }
