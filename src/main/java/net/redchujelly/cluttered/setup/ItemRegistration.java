@@ -7,7 +7,7 @@ import net.minecraft.world.item.SignItem;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.redchujelly.cluttered.Cluttered;
@@ -45,7 +45,7 @@ public class ItemRegistration {
         ITEMS.register(eventBus);
     }
 
-    private static DeferredItem<SignItem> registerSign(String name, DeferredHolder<Block, ? extends Block> floorSign, DeferredHolder<Block, ? extends Block> wallSign) {
+    private static DeferredItem<SignItem> registerSign(String name, DeferredBlock<Block> floorSign, DeferredBlock<Block> wallSign) {
         return ITEMS.register(name + "_sign",
                 () -> new SignItem(new Item.Properties().stacksTo(16), floorSign.get(), wallSign.get()){
                     @Override
@@ -55,7 +55,7 @@ public class ItemRegistration {
                 });
     }
 
-    private static DeferredItem<SignItem> registerHangingSign(String name, DeferredHolder<Block, ? extends Block> floorSign, DeferredHolder<Block, ? extends Block> wallSign) {
+    private static DeferredItem<SignItem> registerHangingSign(String name, DeferredBlock<Block> floorSign, DeferredBlock<Block> wallSign) {
         return ITEMS.register(name + "_hanging_sign",
                 () -> new HangingSignItem(floorSign.get(), wallSign.get(), new Item.Properties().stacksTo(16)){
                     @Override
