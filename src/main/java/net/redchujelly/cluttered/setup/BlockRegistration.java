@@ -31,6 +31,7 @@ import java.util.function.Supplier;
 
 public class BlockRegistration {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Cluttered.MODID);
+	public static final DeferredRegister.Items BLOCK_ITEMS = DeferredRegister.createItems(Cluttered.MODID);
 
 
     //WILLOW WOODSET
@@ -2313,10 +2314,10 @@ public class BlockRegistration {
     }
 
     private static <T extends Block> DeferredItem<BlockItem> registerBlockItem(String name, DeferredBlock<T> block) {
-        return ItemRegistration.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        return BLOCK_ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
     private static <T extends Block> DeferredItem<BlockItem> registerFuelBlockItem(String name, DeferredBlock<T> block, int burnTime) {
-        return ItemRegistration.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()) {
+        return BLOCK_ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()) {
             @Override
             public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
                 return burnTime;
@@ -2326,6 +2327,7 @@ public class BlockRegistration {
 
     public static void register (IEventBus eventBus) {
         BLOCKS.register(eventBus);
+		BLOCK_ITEMS.register(eventBus);
     }
 
 }

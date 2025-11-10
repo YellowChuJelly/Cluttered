@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:verdant_tile_corner_from_verdant_tile_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verdant_tile": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cluttered:verdant_tile"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_verdant_tile"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:verdant_tile_corner_from_verdant_tile_stonecutting"
+    ]
+  }
+}
