@@ -2,14 +2,24 @@ package net.redchujelly.cluttered.datagen.loot;
 
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
+import net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.redchujelly.cluttered.block.multiblock.MultiblockPlacer;
 import net.redchujelly.cluttered.setup.BlockRegistration;
@@ -25,6 +35,8 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+
         //WILLOW WOODSET
         dropSelf(BlockRegistration.WILLOW_LOG.get());
         dropSelf(BlockRegistration.WILLOW_WOOD.get());
@@ -286,7 +298,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.BLUE_MUSHROOM_LOG.get());
         dropSelf(BlockRegistration.BLUE_MUSHROOM_WOOD.get());
         dropSelf(BlockRegistration.BLUE_MUSHROOM_PLANKS.get());
-        dropSelf(BlockRegistration.BLUE_MUSHROOM_CAP.get());
+        this.add(BlockRegistration.BLUE_MUSHROOM_CAP.get(), (p_344243_) -> this.createSilkTouchDispatchTable(p_344243_, this.applyExplosionCondition(p_344243_, (LootItem.lootTableItem(BlockRegistration.BLUE_MUSHROOM_SAPLING.get()).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F))).when(BonusLevelTableCondition.bonusLevelFlatChance(registrylookup.getOrThrow(Enchantments.FORTUNE), new float[]{0.1F, 0.14285715F, 0.25F, 1.0F}))).otherwise(LootItem.lootTableItem(p_344243_)))));
         dropSelf(BlockRegistration.BLUE_MUSHROOM_STAIRS.get());
         dropSelf(BlockRegistration.BLUE_MUSHROOM_FENCE.get());
         dropSelf(BlockRegistration.BLUE_MUSHROOM_FENCE_GATE.get());
@@ -316,7 +328,7 @@ public class ClutteredBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockRegistration.RED_MUSHROOM_LOG.get());
         dropSelf(BlockRegistration.RED_MUSHROOM_WOOD.get());
         dropSelf(BlockRegistration.RED_MUSHROOM_PLANKS.get());
-        dropSelf(BlockRegistration.RED_MUSHROOM_CAP.get());
+        this.add(BlockRegistration.RED_MUSHROOM_CAP.get(), (p_344243_) -> this.createSilkTouchDispatchTable(p_344243_, this.applyExplosionCondition(p_344243_, (LootItem.lootTableItem(BlockRegistration.RED_MUSHROOM_SAPLING.get()).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F))).when(BonusLevelTableCondition.bonusLevelFlatChance(registrylookup.getOrThrow(Enchantments.FORTUNE), new float[]{0.1F, 0.14285715F, 0.25F, 1.0F}))).otherwise(LootItem.lootTableItem(p_344243_)))));
         dropSelf(BlockRegistration.RED_MUSHROOM_STAIRS.get());
         dropSelf(BlockRegistration.RED_MUSHROOM_FENCE.get());
         dropSelf(BlockRegistration.RED_MUSHROOM_FENCE_GATE.get());

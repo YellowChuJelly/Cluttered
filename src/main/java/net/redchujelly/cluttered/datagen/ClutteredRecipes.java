@@ -4130,7 +4130,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .save(consumer, "cluttered:brown_outer_counter_left_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_LEFT.get())
-                    .requires(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_LEFT.get())
+                    .requires(BlockRegistration.KITCHEN_SET_BROWN_COUNTER_OUTER_CORNER_RIGHT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .save(consumer, "cluttered:brown_outer_counter_left_recipe_2");
@@ -4280,7 +4280,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .save(consumer, "cluttered:light_green_outer_counter_left_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_LEFT.get())
-                    .requires(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_LEFT.get())
+                    .requires(BlockRegistration.KITCHEN_SET_LIGHT_GREEN_COUNTER_OUTER_CORNER_RIGHT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .save(consumer, "cluttered:light_green_outer_counter_left_recipe_2");
@@ -4430,7 +4430,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .save(consumer, "cluttered:pink_outer_counter_left_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_PINK_COUNTER_OUTER_CORNER_LEFT.get())
-                    .requires(BlockRegistration.KITCHEN_SET_PINK_COUNTER_OUTER_CORNER_LEFT.get())
+                    .requires(BlockRegistration.KITCHEN_SET_PINK_COUNTER_OUTER_CORNER_RIGHT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .save(consumer, "cluttered:pink_outer_counter_left_recipe_2");
@@ -4580,7 +4580,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .save(consumer, "cluttered:purple_outer_counter_left_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_OUTER_CORNER_LEFT.get())
-                    .requires(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_OUTER_CORNER_LEFT.get())
+                    .requires(BlockRegistration.KITCHEN_SET_PURPLE_COUNTER_OUTER_CORNER_RIGHT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .save(consumer, "cluttered:purple_outer_counter_left_recipe_2");
@@ -4730,7 +4730,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .save(consumer, "cluttered:white_outer_counter_left_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_WHITE_COUNTER_OUTER_CORNER_LEFT.get())
-                    .requires(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_OUTER_CORNER_LEFT.get())
+                    .requires(BlockRegistration.KITCHEN_SET_WHITE_COUNTER_OUTER_CORNER_RIGHT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .save(consumer, "cluttered:white_outer_counter_left_recipe_2");
@@ -4880,7 +4880,7 @@ public class ClutteredRecipes extends RecipeProvider {
                         .save(consumer, "cluttered:yellow_outer_counter_left_recipe_1");
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_LEFT.get())
-                    .requires(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_LEFT.get())
+                    .requires(BlockRegistration.KITCHEN_SET_YELLOW_COUNTER_OUTER_CORNER_RIGHT.get())
                     .unlockedBy("has_chest", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(Items.CHEST).build()))
                     .save(consumer, "cluttered:yellow_outer_counter_left_recipe_2");
