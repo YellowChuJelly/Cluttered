@@ -10,6 +10,7 @@ import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.setup.BlockRegistration;
+import net.redchujelly.cluttered.setup.TagRegistration;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -574,13 +575,16 @@ public class ClutteredBlockTags extends BlockTagsProvider {
                 .add(BlockRegistration.SMALL_BOOKCASE.get())
                 .add(BlockRegistration.WOODEN_BLOCK_BOOKSHELF_PASTEL.get())
                 ;
-        tag(BlockTags.BEDS)
+
+        tag(TagRegistration.Blocks.BEDS)
                 .add(BlockRegistration.BLUE_MUSHROOM_BED.get())
                 .add(BlockRegistration.RED_MUSHROOM_BED.get())
                 .add(BlockRegistration.DARKWOOD_BED_GEOMETRIC.get())
                 .add(BlockRegistration.DARKWOOD_BED_QUILTED.get())
                 .add(BlockRegistration.DARKWOOD_BED_SOUTHERN_FLAIR.get())
-                .add(BlockRegistration.PASTEL_BED.get())
+                .add(BlockRegistration.PASTEL_BED.get());
+		tag(BlockTags.BEDS)
+				.addTag(TagRegistration.Blocks.BEDS)
         ;
 
         tag(BlockTags.WOODEN_DOORS)
