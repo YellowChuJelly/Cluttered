@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "cluttered",
+  "version": "${version}",
+  "name": "Cluttered",
+  "description": "Cluttered adds various furniture and blocks from different games.",
+  "authors": [
+    "Blake, YellowChuJelly"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/cluttered/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.redchujelly.cluttered.ClutteredFabric"
+    ],
+    "client": [
+      "net.redchujelly.cluttered.client.ClutteredFabricClient"
+    ]
+  },
+  "mixins": [
+    "cluttered.fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "architectury": ">=9.2.14",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

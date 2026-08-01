@@ -1,0 +1,87 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-02-04 18:42:53 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-02-04 18:42:54 -0500"
+    },
+    "done": false
+  },
+  "cluttered:recipes/building_blocks/chalcedony_window_pane": {
+    "criteria": {
+      "has_chalcedony_window": "2026-07-30 22:25:01 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_axe": "2026-07-30 22:20:03 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/white_dye": {
+    "criteria": {
+      "has_bone_meal": "2026-07-30 22:22:45 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-07-30 22:20:08 -0400"
+    },
+    "done": true
+  },
+  "cluttered:recipes/building_blocks/flowering_willow_planks": {
+    "criteria": {
+      "has_flowering_willow_log": "2026-07-30 22:20:03 -0400"
+    },
+    "done": true
+  },
+  "cluttered:recipes/building_blocks/willow_planks": {
+    "criteria": {
+      "has_willow_log": "2026-07-30 22:20:03 -0400"
+    },
+    "done": true
+  },
+  "cluttered:recipes/building_blocks/willow_wood": {
+    "criteria": {
+      "has_willow_log": "2026-07-30 22:20:03 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2026-07-30 22:20:03 -0400"
+    },
+    "done": true
+  },
+  "cluttered:recipes/building_blocks/black_cat_window_pane": {
+    "criteria": {
+      "has_black_cat_window": "2026-07-30 22:25:02 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_axe": "2026-07-30 22:20:03 -0400"
+    },
+    "done": true
+  },
+  "cluttered:recipes/building_blocks/flowering_willow_wood": {
+    "criteria": {
+      "has_flowering_willow_log": "2026-07-30 22:20:03 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bone_block": {
+    "criteria": {
+      "has_bone_meal": "2026-07-30 22:22:45 -0400"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}
