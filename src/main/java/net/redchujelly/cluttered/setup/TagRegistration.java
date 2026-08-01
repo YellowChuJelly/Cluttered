@@ -10,6 +10,7 @@ import net.redchujelly.cluttered.Cluttered;
 
 public class TagRegistration {
     public static class Blocks {
+		public static final TagKey<Block> BEDS = tag("beds");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(Cluttered.MODID, name));

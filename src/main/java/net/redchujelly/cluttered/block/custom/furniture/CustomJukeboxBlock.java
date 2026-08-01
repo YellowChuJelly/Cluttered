@@ -41,7 +41,7 @@ public class CustomJukeboxBlock extends JukeboxBlock {
 
     @Override
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
-        if ((Boolean)state.getValue(HAS_RECORD)) {
+        if (state.getValue(HAS_RECORD)) {
             return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
         } else {
             ItemStack itemstack = player.getItemInHand(hand);
@@ -63,18 +63,16 @@ public class CustomJukeboxBlock extends JukeboxBlock {
     }
 
     public static ItemInteractionResult tryInsertIntoJukebox(Level level, BlockPos pos, ItemStack stack, Player player) {
-        JukeboxPlayable jukeboxplayable = (JukeboxPlayable)stack.get(DataComponents.JUKEBOX_PLAYABLE);
+        JukeboxPlayable jukeboxplayable = stack.get(DataComponents.JUKEBOX_PLAYABLE);
         if (jukeboxplayable == null) {
             return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
         } else {
             BlockState blockstate = level.getBlockState(pos);
-            if (blockstate.getBlock() instanceof JukeboxBlock && !(Boolean)blockstate.getValue(JukeboxBlock.HAS_RECORD)) {
+            if (blockstate.getBlock() instanceof JukeboxBlock && !blockstate.getValue(JukeboxBlock.HAS_RECORD)) {
                 if (!level.isClientSide) {
                     ItemStack itemstack = stack.consumeAndReturn(1, player);
-                    BlockEntity var8 = level.getBlockEntity(pos);
-                    if (var8 instanceof JukeboxBlockEntity) {
-                        JukeboxBlockEntity jukeboxblockentity = (JukeboxBlockEntity)var8;
-                        jukeboxblockentity.setTheItem(itemstack);
+                    if (level.getBlockEntity(pos) instanceof JukeboxBlockEntity jukebox) {
+						jukebox.setTheItem(itemstack);
                         level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(player, blockstate));
                     }
 
