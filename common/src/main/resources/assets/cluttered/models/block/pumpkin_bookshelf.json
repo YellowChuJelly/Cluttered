@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "cluttered:block/jack-o-lantern_bookshelf_top",
+    "east": "cluttered:block/jack-o-lantern_bookshelf_side",
+    "north": "cluttered:block/jack-o-lantern_bookshelf",
+    "particle": "cluttered:block/jack-o-lantern_bookshelf_side",
+    "south": "cluttered:block/jack-o-lantern_bookshelf_side",
+    "up": "cluttered:block/jack-o-lantern_bookshelf_top",
+    "west": "cluttered:block/jack-o-lantern_bookshelf_side"
+  }
+}

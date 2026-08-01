@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "cluttered:block/chalcedony_acanthus",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "cluttered:block/chalcedony_acanthus"
+    },
+    "facing=south": {
+      "model": "cluttered:block/chalcedony_acanthus",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cluttered:block/chalcedony_acanthus",
+      "y": 270
+    }
+  }
+}

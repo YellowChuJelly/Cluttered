@@ -1,0 +1,94 @@
+{
+  "variants": {
+    "facing=east,open_state=backward,powered=false": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_backward",
+      "y": 90
+    },
+    "facing=east,open_state=backward,powered=true": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_backward",
+      "y": 90
+    },
+    "facing=east,open_state=closed,powered=false": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_closed",
+      "y": 90
+    },
+    "facing=east,open_state=closed,powered=true": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_closed",
+      "y": 90
+    },
+    "facing=east,open_state=forward,powered=false": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_forward",
+      "y": 90
+    },
+    "facing=east,open_state=forward,powered=true": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_forward",
+      "y": 90
+    },
+    "facing=north,open_state=backward,powered=false": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_backward"
+    },
+    "facing=north,open_state=backward,powered=true": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_backward"
+    },
+    "facing=north,open_state=closed,powered=false": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_closed"
+    },
+    "facing=north,open_state=closed,powered=true": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_closed"
+    },
+    "facing=north,open_state=forward,powered=false": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_forward"
+    },
+    "facing=north,open_state=forward,powered=true": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_forward"
+    },
+    "facing=south,open_state=backward,powered=false": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_backward",
+      "y": 180
+    },
+    "facing=south,open_state=backward,powered=true": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_backward",
+      "y": 180
+    },
+    "facing=south,open_state=closed,powered=false": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_closed",
+      "y": 180
+    },
+    "facing=south,open_state=closed,powered=true": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_closed",
+      "y": 180
+    },
+    "facing=south,open_state=forward,powered=false": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_forward",
+      "y": 180
+    },
+    "facing=south,open_state=forward,powered=true": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_forward",
+      "y": 180
+    },
+    "facing=west,open_state=backward,powered=false": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_backward",
+      "y": 270
+    },
+    "facing=west,open_state=backward,powered=true": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_backward",
+      "y": 270
+    },
+    "facing=west,open_state=closed,powered=false": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_closed",
+      "y": 270
+    },
+    "facing=west,open_state=closed,powered=true": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_closed",
+      "y": 270
+    },
+    "facing=west,open_state=forward,powered=false": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_forward",
+      "y": 270
+    },
+    "facing=west,open_state=forward,powered=true": {
+      "model": "cluttered:block/chalcedony_picket_fence_gate_forward",
+      "y": 270
+    }
+  }
+}

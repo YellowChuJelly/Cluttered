@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "edge": "cluttered:block/chalcedony_glass_pane_top",
+    "pane": "cluttered:block/chalcedony_window"
+  }
+}

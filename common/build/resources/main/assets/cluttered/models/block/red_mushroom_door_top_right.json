@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "cluttered:block/red_mushroom_door_bottom",
+    "top": "cluttered:block/red_mushroom_door_top"
+  }
+}

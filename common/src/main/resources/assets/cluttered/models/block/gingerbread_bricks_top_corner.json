@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "cluttered:block/gingerbread_bricks",
+    "east": "cluttered:block/gingerbread_bricks_top_corner",
+    "north": "cluttered:block/gingerbread_bricks_top_corner_alt",
+    "particle": "cluttered:block/gingerbread_bricks",
+    "south": "cluttered:block/gingerbread_bricks_top_corner_alt",
+    "up": "cluttered:block/gingerbread_bricks",
+    "west": "cluttered:block/gingerbread_bricks_top_corner"
+  }
+}

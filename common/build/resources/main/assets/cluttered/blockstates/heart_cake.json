@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "bites=0,facing=east": {
+      "model": "cluttered:block/heart_cake",
+      "y": 90
+    },
+    "bites=0,facing=north": {
+      "model": "cluttered:block/heart_cake"
+    },
+    "bites=0,facing=south": {
+      "model": "cluttered:block/heart_cake",
+      "y": 180
+    },
+    "bites=0,facing=west": {
+      "model": "cluttered:block/heart_cake",
+      "y": 270
+    },
+    "bites=1,facing=east": {
+      "model": "cluttered:block/heart_cake_1",
+      "y": 90
+    },
+    "bites=1,facing=north": {
+      "model": "cluttered:block/heart_cake_1"
+    },
+    "bites=1,facing=south": {
+      "model": "cluttered:block/heart_cake_1",
+      "y": 180
+    },
+    "bites=1,facing=west": {
+      "model": "cluttered:block/heart_cake_1",
+      "y": 270
+    },
+    "bites=2,facing=east": {
+      "model": "cluttered:block/heart_cake_2",
+      "y": 90
+    },
+    "bites=2,facing=north": {
+      "model": "cluttered:block/heart_cake_2"
+    },
+    "bites=2,facing=south": {
+      "model": "cluttered:block/heart_cake_2",
+      "y": 180
+    },
+    "bites=2,facing=west": {
+      "model": "cluttered:block/heart_cake_2",
+      "y": 270
+    }
+  }
+}

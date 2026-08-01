@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "cluttered:block/tarrey_town_planter_pink",
+    "top": "cluttered:block/tarrey_town_planter_top"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "values": [
+    "cluttered:willow_sign",
+    "cluttered:willow_wall_sign",
+    "cluttered:flowering_willow_sign",
+    "cluttered:flowering_willow_wall_sign",
+    "cluttered:poplar_sign",
+    "cluttered:poplar_wall_sign",
+    "cluttered:flowering_poplar_sign",
+    "cluttered:flowering_poplar_wall_sign",
+    "cluttered:crabapple_sign",
+    "cluttered:crabapple_wall_sign",
+    "cluttered:flowering_crabapple_sign",
+    "cluttered:flowering_crabapple_wall_sign",
+    "cluttered:sycamore_sign",
+    "cluttered:sycamore_wall_sign",
+    "cluttered:fluorescent_maple_sign",
+    "cluttered:fluorescent_maple_wall_sign",
+    "cluttered:blue_mushroom_sign",
+    "cluttered:blue_mushroom_wall_sign",
+    "cluttered:red_mushroom_sign",
+    "cluttered:red_mushroom_wall_sign"
+  ]
+}

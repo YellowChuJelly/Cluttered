@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "cluttered:block/bricks_varying_1"
+      },
+      {
+        "model": "cluttered:block/bricks_varying_2"
+      },
+      {
+        "model": "cluttered:block/bricks_varying_3"
+      },
+      {
+        "model": "cluttered:block/bricks_varying_4"
+      }
+    ]
+  }
+}

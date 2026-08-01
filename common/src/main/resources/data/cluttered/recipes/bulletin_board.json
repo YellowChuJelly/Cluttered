@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": {
+      "item": "minecraft:item_frame"
+    },
+    "l": {
+      "tag": "minecraft:logs"
+    }
+  },
+  "pattern": [
+    "lil"
+  ],
+  "result": {
+    "item": "cluttered:bulletin_board"
+  },
+  "show_notification": false
+}

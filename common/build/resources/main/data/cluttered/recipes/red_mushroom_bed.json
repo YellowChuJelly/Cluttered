@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "tag": "minecraft:beds"
+    },
+    "r": {
+      "item": "cluttered:red_mushroom_cap"
+    }
+  },
+  "pattern": [
+    "rbr"
+  ],
+  "result": {
+    "item": "cluttered:red_mushroom_bed"
+  },
+  "show_notification": false
+}

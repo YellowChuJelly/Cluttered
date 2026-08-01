@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:blue_dye"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "r": {
+      "item": "minecraft:red_dye"
+    },
+    "w": {
+      "tag": "minecraft:planks"
+    },
+    "y": {
+      "item": "minecraft:yellow_dye"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "rby",
+    "www"
+  ],
+  "result": {
+    "count": 8,
+    "item": "cluttered:retro_rainbow_wallpaper"
+  },
+  "show_notification": false
+}

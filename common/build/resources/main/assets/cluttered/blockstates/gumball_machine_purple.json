@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=east,part=1": {
+      "model": "cluttered:block/gumball_machine_purple",
+      "y": 270
+    },
+    "facing=north,part=1": {
+      "model": "cluttered:block/gumball_machine_purple",
+      "y": 180
+    },
+    "facing=south,part=1": {
+      "model": "cluttered:block/gumball_machine_purple"
+    },
+    "facing=west,part=1": {
+      "model": "cluttered:block/gumball_machine_purple",
+      "y": 90
+    },
+    "part=2": {
+      "model": "cluttered:block/gumball_machine_purple2"
+    }
+  }
+}

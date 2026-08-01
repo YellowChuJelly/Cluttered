@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "p": {
+      "item": "cluttered:willow_planks"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "ggg",
+    "ppp"
+  ],
+  "result": {
+    "count": 4,
+    "item": "cluttered:willow_window"
+  },
+  "show_notification": false
+}

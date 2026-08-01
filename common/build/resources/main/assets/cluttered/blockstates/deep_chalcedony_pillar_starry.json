@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "axis=x": [
+      {
+        "model": "cluttered:block/deep_chalcedony_pillar_starry_5",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "cluttered:block/deep_chalcedony_pillar_starry_6",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "axis=y": [
+      {
+        "model": "cluttered:block/deep_chalcedony_pillar_starry"
+      },
+      {
+        "model": "cluttered:block/deep_chalcedony_pillar_starry_2"
+      }
+    ],
+    "axis=z": [
+      {
+        "model": "cluttered:block/deep_chalcedony_pillar_starry_3",
+        "x": 90
+      },
+      {
+        "model": "cluttered:block/deep_chalcedony_pillar_starry_4",
+        "x": 90
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "cluttered:block/small_spice_jar_2",
+  "textures": {
+    "1": "cluttered:block/small_spice_jar_8"
+  }
+}

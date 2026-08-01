@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:armor_stand"
+    },
+    "s": {
+      "tag": "forge:rods/wooden"
+    },
+    "t": {
+      "item": "minecraft:string"
+    },
+    "w": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    " w ",
+    "tat",
+    "s s"
+  ],
+  "result": {
+    "item": "cluttered:sewing_mannequin"
+  },
+  "show_notification": false
+}

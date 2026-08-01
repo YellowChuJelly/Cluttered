@@ -1,0 +1,58 @@
+{
+  "variants": {
+    "face=ceiling,facing=east": {
+      "model": "cluttered:block/animated_flag_transgender",
+      "x": 180,
+      "y": 270
+    },
+    "face=ceiling,facing=north": {
+      "model": "cluttered:block/animated_flag_transgender",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=south": {
+      "model": "cluttered:block/animated_flag_transgender",
+      "x": 180
+    },
+    "face=ceiling,facing=west": {
+      "model": "cluttered:block/animated_flag_transgender",
+      "x": 180,
+      "y": 90
+    },
+    "face=floor,facing=east": {
+      "model": "cluttered:block/animated_flag_transgender",
+      "y": 270
+    },
+    "face=floor,facing=north": {
+      "model": "cluttered:block/animated_flag_transgender",
+      "y": 180
+    },
+    "face=floor,facing=south": {
+      "model": "cluttered:block/animated_flag_transgender"
+    },
+    "face=floor,facing=west": {
+      "model": "cluttered:block/animated_flag_transgender",
+      "y": 90
+    },
+    "face=wall,facing=east": {
+      "model": "cluttered:block/animated_flag_transgender",
+      "x": 90,
+      "y": 450
+    },
+    "face=wall,facing=north": {
+      "model": "cluttered:block/animated_flag_transgender",
+      "x": 90,
+      "y": 360
+    },
+    "face=wall,facing=south": {
+      "model": "cluttered:block/animated_flag_transgender",
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west": {
+      "model": "cluttered:block/animated_flag_transgender",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "tag": "minecraft:coals"
+    },
+    "g": {
+      "item": "minecraft:green_dye"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "s": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "pattern": [
+    "gcs",
+    "ppp"
+  ],
+  "result": {
+    "item": "cluttered:sketchbook_single"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:purple_dye"
+    },
+    "g": {
+      "item": "minecraft:grindstone"
+    },
+    "i": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "pattern": [
+    "i  ",
+    "idi",
+    "g g"
+  ],
+  "result": {
+    "item": "cluttered:bicycle_purple"
+  },
+  "show_notification": false
+}

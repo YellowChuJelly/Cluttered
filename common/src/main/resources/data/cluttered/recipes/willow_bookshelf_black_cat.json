@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:book"
+    },
+    "f": {
+      "item": "minecraft:black_dye"
+    },
+    "p": {
+      "item": "cluttered:willow_planks"
+    }
+  },
+  "pattern": [
+    "pfp",
+    "bbb",
+    "ppp"
+  ],
+  "result": {
+    "item": "cluttered:willow_bookshelf_black_cat"
+  },
+  "show_notification": false
+}
