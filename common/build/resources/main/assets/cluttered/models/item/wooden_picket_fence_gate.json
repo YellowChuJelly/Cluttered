@@ -1,0 +1,6 @@
+{
+  "parent": "cluttered:block/picket_fence_gate_closed",
+  "textures": {
+    "1": "cluttered:block/wooden_picket_fence_gate"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "cluttered:block/art_nouveau_door_dark_bottom",
+    "top": "cluttered:block/art_nouveau_door_dark_top"
+  }
+}

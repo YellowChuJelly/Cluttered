@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:subway_tiles_purple_from_tiles_purple_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tiles_purple": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cluttered:tiles_purple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_tiles_purple",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:subway_tiles_purple_from_tiles_purple_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

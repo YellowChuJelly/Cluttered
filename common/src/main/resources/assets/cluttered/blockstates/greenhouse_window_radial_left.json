@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "cluttered:block/greenhouse_window_radial_left",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "cluttered:block/greenhouse_window_radial_left"
+    },
+    "facing=south": {
+      "model": "cluttered:block/greenhouse_window_radial_left",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cluttered:block/greenhouse_window_radial_left",
+      "y": 270
+    }
+  }
+}

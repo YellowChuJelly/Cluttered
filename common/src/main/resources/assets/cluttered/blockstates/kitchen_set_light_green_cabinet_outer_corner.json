@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,waterlogged=false": {
+      "model": "cluttered:block/kitchen_set_light_green_cabinet_outer_corner",
+      "y": 90
+    },
+    "facing=east,waterlogged=true": {
+      "model": "cluttered:block/kitchen_set_light_green_cabinet_outer_corner",
+      "y": 90
+    },
+    "facing=north,waterlogged=false": {
+      "model": "cluttered:block/kitchen_set_light_green_cabinet_outer_corner"
+    },
+    "facing=north,waterlogged=true": {
+      "model": "cluttered:block/kitchen_set_light_green_cabinet_outer_corner"
+    },
+    "facing=south,waterlogged=false": {
+      "model": "cluttered:block/kitchen_set_light_green_cabinet_outer_corner",
+      "y": -180
+    },
+    "facing=south,waterlogged=true": {
+      "model": "cluttered:block/kitchen_set_light_green_cabinet_outer_corner",
+      "y": -180
+    },
+    "facing=west,waterlogged=false": {
+      "model": "cluttered:block/kitchen_set_light_green_cabinet_outer_corner",
+      "y": -90
+    },
+    "facing=west,waterlogged=true": {
+      "model": "cluttered:block/kitchen_set_light_green_cabinet_outer_corner",
+      "y": -90
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side_alt",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "edge": "cluttered:block/crabapple_glass_pane_top",
+    "pane": "cluttered:block/crabapple_window"
+  }
+}

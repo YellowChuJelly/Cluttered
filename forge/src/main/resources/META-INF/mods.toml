@@ -11,7 +11,7 @@ authors = "Blake, YellowChuJelly"
 description = '''
 Cluttered adds various furniture and blocks from different games.
 '''
-#logoFile = ""
+logoFile = "assets/cluttered/textures/block/willow_bookshelf_black_cat.png"
 
 [[dependencies.cluttered]]
 modId = "forge"

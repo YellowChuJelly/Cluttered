@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "cluttered:cottage_chair"
+    },
+    "p": {
+      "item": "minecraft:pink_carpet"
+    }
+  },
+  "pattern": [
+    "p",
+    "c"
+  ],
+  "result": {
+    "item": "cluttered:cottage_chair_cushioned"
+  },
+  "show_notification": false
+}

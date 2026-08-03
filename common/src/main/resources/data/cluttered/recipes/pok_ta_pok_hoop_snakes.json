@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:chiseled_stone_bricks"
+    },
+    "s": {
+      "item": "minecraft:andesite"
+    }
+  },
+  "pattern": [
+    "sbs",
+    "b b",
+    "sbs"
+  ],
+  "result": {
+    "item": "cluttered:pok_ta_pok_hoop_snakes"
+  },
+  "show_notification": false
+}

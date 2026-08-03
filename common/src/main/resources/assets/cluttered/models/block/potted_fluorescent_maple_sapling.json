@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "ambientocclusion": false,
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "plant": "cluttered:block/fluorescent_maple_sapling"
+  }
+}

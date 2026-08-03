@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cluttered:cat_mugs_cluttered"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "cluttered:blocks/cat_mugs_cluttered"
+}

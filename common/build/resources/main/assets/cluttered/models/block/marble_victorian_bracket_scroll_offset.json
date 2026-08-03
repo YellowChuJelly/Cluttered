@@ -1,0 +1,7 @@
+{
+  "parent": "cluttered:block/bracket_offset",
+  "textures": {
+    "missing": "cluttered:block/marble_victorian_bracket_scroll",
+    "particle": "cluttered:block/marble_victorian_bracket_scroll"
+  }
+}

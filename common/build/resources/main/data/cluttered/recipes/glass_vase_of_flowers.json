@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:water_bucket"
+    },
+    "f": {
+      "tag": "minecraft:flowers"
+    },
+    "g": {
+      "tag": "forge:glass"
+    }
+  },
+  "pattern": [
+    " f ",
+    "gbg",
+    " g "
+  ],
+  "result": {
+    "item": "cluttered:glass_vase_of_flowers"
+  },
+  "show_notification": false
+}

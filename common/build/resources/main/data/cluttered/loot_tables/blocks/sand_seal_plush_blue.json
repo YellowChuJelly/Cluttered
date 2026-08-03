@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cluttered:sand_seal_plush_blue"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "cluttered:blocks/sand_seal_plush_blue"
+}

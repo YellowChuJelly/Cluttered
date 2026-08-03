@@ -33,7 +33,6 @@ public class ClutteredLootTableModifiers {
      new ResourceLocation("chests/village/village_savanna_house"),
      new ResourceLocation("chests/village/village_desert_house"),
      new ResourceLocation("chests/village/village_snowy_house"),
-     new ResourceLocation("chests/abandoned_mineshaft"),
      new ResourceLocation("chests/shipwreck_supply")
     );
 

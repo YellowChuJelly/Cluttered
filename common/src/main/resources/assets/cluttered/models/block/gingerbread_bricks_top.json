@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cluttered:block/gingerbread_bricks",
+    "side": "cluttered:block/gingerbread_bricks_top"
+  }
+}

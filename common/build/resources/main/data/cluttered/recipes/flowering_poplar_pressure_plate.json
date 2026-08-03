@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "cluttered:flowering_poplar_planks"
+    }
+  },
+  "pattern": [
+    "pp"
+  ],
+  "result": {
+    "item": "cluttered:flowering_poplar_pressure_plate"
+  },
+  "show_notification": false
+}

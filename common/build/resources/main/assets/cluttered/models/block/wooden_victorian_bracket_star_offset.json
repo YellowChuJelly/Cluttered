@@ -1,0 +1,7 @@
+{
+  "parent": "cluttered:block/bracket_offset",
+  "textures": {
+    "missing": "cluttered:block/wooden_victorian_bracket_star",
+    "particle": "cluttered:block/wooden_victorian_bracket_star"
+  }
+}

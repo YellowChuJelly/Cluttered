@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:brown_wool"
+    }
+  },
+  "pattern": [
+    " b ",
+    "bbb",
+    "b b"
+  ],
+  "result": {
+    "item": "cluttered:teddy_bear"
+  },
+  "show_notification": false
+}

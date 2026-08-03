@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "cluttered:bicycle_with_flowers_blue",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "part": "1"
+              }
+            }
+          ],
+          "name": "cluttered:bicycle_with_flowers_blue"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "cluttered:blocks/bicycle_with_flowers_blue"
+}

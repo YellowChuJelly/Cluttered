@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "d": {
+      "item": "minecraft:purple_dye"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "tag": "minecraft:stone_crafting_materials"
+    }
+  },
+  "pattern": [
+    "sss",
+    "pdp",
+    "pcp"
+  ],
+  "result": {
+    "item": "cluttered:kitchen_set_purple_counter"
+  },
+  "show_notification": false
+}

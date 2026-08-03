@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "cluttered:marble_polished"
+  },
+  "result": "cluttered:marble_tile_border_circle"
+}

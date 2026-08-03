@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:dark_oak_button"
+    },
+    "d": {
+      "item": "minecraft:dark_oak_planks"
+    },
+    "s": {
+      "item": "minecraft:stripped_birch_log"
+    }
+  },
+  "pattern": [
+    "ddd",
+    "sbs",
+    "s s"
+  ],
+  "result": {
+    "item": "cluttered:cottage_side_table"
+  },
+  "show_notification": false
+}

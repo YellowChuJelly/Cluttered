@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cluttered:block/flowering_poplar_wainscoting",
+    "side": "cluttered:block/flowering_poplar_wainscoting"
+  }
+}

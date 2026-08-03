@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:apple"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "pattern": [
+    "a  ",
+    "ppp",
+    "s s"
+  ],
+  "result": {
+    "item": "cluttered:apple_chair"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:purple_stained_glass_pane"
+    },
+    "p": {
+      "item": "minecraft:mangrove_slab"
+    }
+  },
+  "pattern": [
+    "pgp",
+    "ggg"
+  ],
+  "result": {
+    "item": "cluttered:retro_cafe_shelf_window"
+  },
+  "show_notification": false
+}

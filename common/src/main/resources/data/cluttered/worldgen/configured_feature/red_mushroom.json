@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "decorators": [],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dirt"
+      }
+    },
+    "foliage_placer": {
+      "type": "cluttered:red_mushroom_foliage_placer",
+      "height": 5,
+      "offset": 4,
+      "radius": 3
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "cluttered:red_mushroom_cap"
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": false,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 4,
+      "lower_size": 1,
+      "upper_size": 3
+    },
+    "trunk_placer": {
+      "type": "cluttered:red_mushroom_trunk_placer",
+      "base_height": 6,
+      "height_rand_a": 0,
+      "height_rand_b": 2
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "cluttered:red_mushroom_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    }
+  }
+}

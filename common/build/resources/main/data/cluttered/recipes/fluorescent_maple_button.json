@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cluttered:fluorescent_maple_planks"
+    }
+  ],
+  "result": {
+    "item": "cluttered:fluorescent_maple_button"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "variants": {
+    "facing=east,place_state=ceiling,waterlogged=false": {
+      "model": "cluttered:block/pastel_light_ceiling",
+      "y": 270
+    },
+    "facing=east,place_state=ceiling,waterlogged=true": {
+      "model": "cluttered:block/pastel_light_ceiling",
+      "y": 270
+    },
+    "facing=east,place_state=floor,waterlogged=false": {
+      "model": "cluttered:block/pastel_light",
+      "y": 270
+    },
+    "facing=east,place_state=floor,waterlogged=true": {
+      "model": "cluttered:block/pastel_light",
+      "y": 270
+    },
+    "facing=east,place_state=wall,waterlogged=false": {
+      "model": "cluttered:block/pastel_light_wall",
+      "y": 270
+    },
+    "facing=east,place_state=wall,waterlogged=true": {
+      "model": "cluttered:block/pastel_light_wall",
+      "y": 270
+    },
+    "facing=north,place_state=ceiling,waterlogged=false": {
+      "model": "cluttered:block/pastel_light_ceiling",
+      "y": 180
+    },
+    "facing=north,place_state=ceiling,waterlogged=true": {
+      "model": "cluttered:block/pastel_light_ceiling",
+      "y": 180
+    },
+    "facing=north,place_state=floor,waterlogged=false": {
+      "model": "cluttered:block/pastel_light",
+      "y": 180
+    },
+    "facing=north,place_state=floor,waterlogged=true": {
+      "model": "cluttered:block/pastel_light",
+      "y": 180
+    },
+    "facing=north,place_state=wall,waterlogged=false": {
+      "model": "cluttered:block/pastel_light_wall",
+      "y": 180
+    },
+    "facing=north,place_state=wall,waterlogged=true": {
+      "model": "cluttered:block/pastel_light_wall",
+      "y": 180
+    },
+    "facing=south,place_state=ceiling,waterlogged=false": {
+      "model": "cluttered:block/pastel_light_ceiling"
+    },
+    "facing=south,place_state=ceiling,waterlogged=true": {
+      "model": "cluttered:block/pastel_light_ceiling"
+    },
+    "facing=south,place_state=floor,waterlogged=false": {
+      "model": "cluttered:block/pastel_light"
+    },
+    "facing=south,place_state=floor,waterlogged=true": {
+      "model": "cluttered:block/pastel_light"
+    },
+    "facing=south,place_state=wall,waterlogged=false": {
+      "model": "cluttered:block/pastel_light_wall"
+    },
+    "facing=south,place_state=wall,waterlogged=true": {
+      "model": "cluttered:block/pastel_light_wall"
+    },
+    "facing=west,place_state=ceiling,waterlogged=false": {
+      "model": "cluttered:block/pastel_light_ceiling",
+      "y": 90
+    },
+    "facing=west,place_state=ceiling,waterlogged=true": {
+      "model": "cluttered:block/pastel_light_ceiling",
+      "y": 90
+    },
+    "facing=west,place_state=floor,waterlogged=false": {
+      "model": "cluttered:block/pastel_light",
+      "y": 90
+    },
+    "facing=west,place_state=floor,waterlogged=true": {
+      "model": "cluttered:block/pastel_light",
+      "y": 90
+    },
+    "facing=west,place_state=wall,waterlogged=false": {
+      "model": "cluttered:block/pastel_light_wall",
+      "y": 90
+    },
+    "facing=west,place_state=wall,waterlogged=true": {
+      "model": "cluttered:block/pastel_light_wall",
+      "y": 90
+    }
+  }
+}

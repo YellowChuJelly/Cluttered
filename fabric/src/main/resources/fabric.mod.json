@@ -12,7 +12,7 @@
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
   "license": "CC0-1.0",
-  "icon": "assets/cluttered/icon.png",
+  "icon": "assets/cluttered/textures/block/willow_bookshelf_black_cat.png",
   "environment": "*",
   "entrypoints": {
     "main": [

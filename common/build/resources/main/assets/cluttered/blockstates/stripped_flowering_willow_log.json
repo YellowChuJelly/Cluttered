@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "cluttered:block/stripped_flowering_willow_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "cluttered:block/stripped_flowering_willow_log"
+    },
+    "axis=z": {
+      "model": "cluttered:block/stripped_flowering_willow_log_horizontal",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "t": {
+      "item": "cluttered:tiles_iridescent"
+    }
+  },
+  "pattern": [
+    "tt",
+    "tt"
+  ],
+  "result": {
+    "count": 4,
+    "item": "cluttered:tiles_iridescent_small"
+  },
+  "show_notification": false
+}

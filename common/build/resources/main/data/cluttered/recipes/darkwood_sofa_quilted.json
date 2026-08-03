@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "cluttered:darkwood_chair_quilted"
+    }
+  },
+  "pattern": [
+    "cc"
+  ],
+  "result": {
+    "item": "cluttered:darkwood_sofa_quilted"
+  },
+  "show_notification": false
+}

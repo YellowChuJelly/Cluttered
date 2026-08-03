@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "bottom=false,gradient=1": {
+      "model": "cluttered:block/willow_vines_state_1_bottom_false"
+    },
+    "bottom=false,gradient=2": {
+      "model": "cluttered:block/willow_vines_state_2_bottom_false"
+    },
+    "bottom=false,gradient=3": {
+      "model": "cluttered:block/willow_vines_state_3_bottom_false"
+    },
+    "bottom=false,gradient=4": {
+      "model": "cluttered:block/willow_vines_state_4_bottom_false"
+    },
+    "bottom=false,gradient=5": {
+      "model": "cluttered:block/willow_vines_state_5_bottom_false"
+    },
+    "bottom=false,gradient=6": {
+      "model": "cluttered:block/willow_vines_state_6_bottom_false"
+    },
+    "bottom=true,gradient=1": {
+      "model": "cluttered:block/willow_vines_state_1_bottom_true"
+    },
+    "bottom=true,gradient=2": {
+      "model": "cluttered:block/willow_vines_state_2_bottom_true"
+    },
+    "bottom=true,gradient=3": {
+      "model": "cluttered:block/willow_vines_state_3_bottom_true"
+    },
+    "bottom=true,gradient=4": {
+      "model": "cluttered:block/willow_vines_state_4_bottom_true"
+    },
+    "bottom=true,gradient=5": {
+      "model": "cluttered:block/willow_vines_state_5_bottom_true"
+    },
+    "bottom=true,gradient=6": {
+      "model": "cluttered:block/willow_vines_state_6_bottom_true"
+    }
+  }
+}

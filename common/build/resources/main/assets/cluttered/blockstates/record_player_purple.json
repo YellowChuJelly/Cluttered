@@ -1,0 +1,78 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "cluttered:block/record_player_purple"
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/record_player_purple",
+        "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/record_player_purple",
+        "y": 180
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/record_player_purple",
+        "y": 270
+      },
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/record"
+      },
+      "when": {
+        "facing": "north",
+        "has_record": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/record",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "has_record": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/record",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "has_record": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/record",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "has_record": "true"
+      }
+    }
+  ]
+}

@@ -2,6 +2,7 @@ package net.redchujelly.cluttered;
 
 import net.fabricmc.api.ModInitializer;
 import net.redchujelly.cluttered.util.ClutteredCustomTrades;
+import net.redchujelly.cluttered.util.ClutteredFlammableBlocks;
 import net.redchujelly.cluttered.util.ClutteredLootTableModifiers;
 
 public final class ClutteredFabric implements ModInitializer {
@@ -11,6 +12,7 @@ public final class ClutteredFabric implements ModInitializer {
 
         ClutteredCustomTrades.addTrades();
         ClutteredLootTableModifiers.modifyLootTables();
+        ClutteredFlammableBlocks.addFlammables();
         Cluttered.afterInit();
 
     }

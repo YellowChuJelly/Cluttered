@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": {
+      "item": "cluttered:flowering_poplar_window"
+    }
+  },
+  "pattern": [
+    "ggg",
+    "ggg"
+  ],
+  "result": {
+    "count": 16,
+    "item": "cluttered:flowering_poplar_window_pane"
+  },
+  "show_notification": false
+}

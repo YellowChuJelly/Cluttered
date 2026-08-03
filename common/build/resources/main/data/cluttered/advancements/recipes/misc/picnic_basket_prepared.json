@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_picnic_basket": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cluttered:picnic_basket"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cluttered:picnic_basket_prepared"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_picnic_basket",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cluttered:picnic_basket_prepared"
+    ]
+  },
+  "sends_telemetry_event": false
+}

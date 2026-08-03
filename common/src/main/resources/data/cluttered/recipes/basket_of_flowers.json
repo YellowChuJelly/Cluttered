@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "tag": "minecraft:small_flowers"
+    },
+    "t": {
+      "tag": "minecraft:tall_flowers"
+    },
+    "w": {
+      "item": "cluttered:wicker_block"
+    }
+  },
+  "pattern": [
+    "ftf",
+    "w w",
+    "www"
+  ],
+  "result": {
+    "item": "cluttered:basket_of_flowers"
+  },
+  "show_notification": false
+}

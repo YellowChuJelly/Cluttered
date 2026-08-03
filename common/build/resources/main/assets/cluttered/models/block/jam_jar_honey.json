@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "cluttered:block/jam_jar_honey_bottom",
+    "east": "cluttered:block/jam_jar_honey_side",
+    "north": "cluttered:block/jam_jar_honey",
+    "particle": "cluttered:block/jam_jar_honey_side",
+    "south": "cluttered:block/jam_jar_honey_side",
+    "up": "cluttered:block/jam_jar_blue_top",
+    "west": "cluttered:block/jam_jar_honey_side"
+  }
+}

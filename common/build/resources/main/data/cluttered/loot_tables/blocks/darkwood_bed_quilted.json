@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "cluttered:darkwood_bed_quilted",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "part": "1"
+              }
+            }
+          ],
+          "name": "cluttered:darkwood_bed_quilted"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "cluttered:blocks/darkwood_bed_quilted"
+}

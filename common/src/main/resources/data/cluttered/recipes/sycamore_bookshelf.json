@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:book"
+    },
+    "p": {
+      "item": "cluttered:sycamore_planks"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "bbb",
+    "ppp"
+  ],
+  "result": {
+    "item": "cluttered:sycamore_bookshelf"
+  },
+  "show_notification": false
+}

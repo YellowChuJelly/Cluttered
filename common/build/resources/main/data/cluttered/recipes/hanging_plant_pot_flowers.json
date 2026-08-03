@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "tag": "minecraft:flowers"
+    },
+    "p": {
+      "item": "minecraft:flower_pot"
+    },
+    "s": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "s",
+    "f",
+    "p"
+  ],
+  "result": {
+    "item": "cluttered:hanging_plant_pot_flowers"
+  },
+  "show_notification": false
+}

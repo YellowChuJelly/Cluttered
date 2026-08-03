@@ -1,0 +1,44 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "cluttered:block/glass_vase_of_flowers_plant"
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/glass_vase_of_flowers_plant",
+        "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/glass_vase_of_flowers_plant",
+        "y": 180
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/glass_vase_of_flowers_plant",
+        "y": 270
+      },
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/glass_vase_of_flowers_water"
+      }
+    }
+  ]
+}

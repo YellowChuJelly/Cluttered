@@ -11,7 +11,6 @@ import net.redchujelly.cluttered.items.ItemRegistration;
 import net.redchujelly.cluttered.paintings.PaintingRegistration;
 import net.redchujelly.cluttered.sounds.SoundEventRegistration;
 import net.redchujelly.cluttered.util.ClutteredCompostables;
-import net.redchujelly.cluttered.util.ClutteredFlammableBlocks;
 import net.redchujelly.cluttered.util.ClutteredFuelItems;
 import net.redchujelly.cluttered.util.ClutteredWoodConversions;
 import net.redchujelly.cluttered.world.ClutteredConfiguredFeatures;
@@ -50,7 +49,6 @@ public final class Cluttered {
     public static void afterInit(){
         ClutteredCompostables.addCompost();
         ClutteredFuelItems.addFuelItems();
-        ClutteredFlammableBlocks.addFlammables();
         ClutteredWoodConversions.addConversions();
     }
 

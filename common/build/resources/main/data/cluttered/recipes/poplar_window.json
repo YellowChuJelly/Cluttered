@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "p": {
+      "item": "cluttered:poplar_planks"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "ggg",
+    "ppp"
+  ],
+  "result": {
+    "count": 4,
+    "item": "cluttered:poplar_window"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,76 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "cluttered:block/marble_balustrade_post"
+      },
+      "when": {
+        "OR": [
+          {
+            "north": "true",
+            "south": "false"
+          },
+          {
+            "north": "false",
+            "south": "true"
+          },
+          {
+            "east": "true",
+            "west": "false"
+          },
+          {
+            "east": "false",
+            "west": "true"
+          },
+          {
+            "east": "true",
+            "north": "true",
+            "south": "true",
+            "west": "true"
+          },
+          {
+            "east": "false",
+            "north": "false",
+            "south": "false",
+            "west": "false"
+          }
+        ]
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/marble_balustrade_side"
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/marble_balustrade_side",
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/marble_balustrade_side",
+        "y": 180
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "cluttered:block/marble_balustrade_side",
+        "y": 270
+      },
+      "when": {
+        "west": "true"
+      }
+    }
+  ]
+}

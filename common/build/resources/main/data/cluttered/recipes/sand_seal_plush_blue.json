@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "tag": "minecraft:buttons"
+    },
+    "s": {
+      "tag": "minecraft:sand"
+    },
+    "w": {
+      "item": "minecraft:blue_wool"
+    }
+  },
+  "pattern": [
+    "bwb",
+    "wsw"
+  ],
+  "result": {
+    "item": "cluttered:sand_seal_plush_blue"
+  },
+  "show_notification": false
+}

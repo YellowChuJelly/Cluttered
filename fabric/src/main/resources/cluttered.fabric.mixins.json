@@ -9,11 +9,11 @@
     "minVersion": "0.5.0"
   },
   "mixins": [
-    "FireBlockInvoker",
     "FoliagePlacerTypeInvoker",
+    "FireBlockInvoker",
     "LivingEntityMixin",
-    "PlayerMixin",
     "BedBlockMixin",
+    "PlayerMixin",
     "TreeDecoratorTypeInvoker",
     "TrunkPlacerTypeInvoker",
     "WoodTypeInvoker"

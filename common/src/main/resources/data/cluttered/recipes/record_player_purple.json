@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:purple_dye"
+    },
+    "j": {
+      "item": "minecraft:jukebox"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "pjp",
+    "pbp"
+  ],
+  "result": {
+    "item": "cluttered:record_player_purple"
+  },
+  "show_notification": false
+}

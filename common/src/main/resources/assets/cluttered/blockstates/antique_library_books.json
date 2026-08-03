@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=east,part=1": {
+      "model": "cluttered:block/antique_library_books",
+      "y": 270
+    },
+    "facing=north,part=1": {
+      "model": "cluttered:block/antique_library_books",
+      "y": 180
+    },
+    "facing=south,part=1": {
+      "model": "cluttered:block/antique_library_books"
+    },
+    "facing=west,part=1": {
+      "model": "cluttered:block/antique_library_books",
+      "y": 90
+    },
+    "part=2": {
+      "model": "cluttered:block/antique_library_books2"
+    }
+  }
+}

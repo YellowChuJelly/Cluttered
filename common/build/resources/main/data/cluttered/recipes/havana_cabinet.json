@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "p": {
+      "item": "cluttered:sycamore_planks"
+    },
+    "s": {
+      "item": "minecraft:oak_slab"
+    }
+  },
+  "pattern": [
+    "pcp",
+    "sss",
+    "pcp"
+  ],
+  "result": {
+    "item": "cluttered:havana_cabinet"
+  },
+  "show_notification": false
+}

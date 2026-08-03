@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "cluttered:deep_raw_chalcedony"
+  },
+  "result": "cluttered:deep_chalcedony_pillar_doric"
+}

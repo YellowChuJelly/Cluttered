@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "cluttered:antique_standing_lamp",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "part": "1"
+              }
+            }
+          ],
+          "name": "cluttered:antique_standing_lamp"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "cluttered:blocks/antique_standing_lamp"
+}

@@ -1,0 +1,94 @@
+{
+  "variants": {
+    "facing=east,offset=center,waterlogged=false": {
+      "model": "cluttered:block/garland_polaroid_a_center",
+      "y": 270
+    },
+    "facing=east,offset=center,waterlogged=true": {
+      "model": "cluttered:block/garland_polaroid_a_center",
+      "y": 270
+    },
+    "facing=east,offset=left,waterlogged=false": {
+      "model": "cluttered:block/garland_polaroid_a_left",
+      "y": 270
+    },
+    "facing=east,offset=left,waterlogged=true": {
+      "model": "cluttered:block/garland_polaroid_a_left",
+      "y": 270
+    },
+    "facing=east,offset=right,waterlogged=false": {
+      "model": "cluttered:block/garland_polaroid_a_right",
+      "y": 270
+    },
+    "facing=east,offset=right,waterlogged=true": {
+      "model": "cluttered:block/garland_polaroid_a_right",
+      "y": 270
+    },
+    "facing=north,offset=center,waterlogged=false": {
+      "model": "cluttered:block/garland_polaroid_a_center",
+      "y": 180
+    },
+    "facing=north,offset=center,waterlogged=true": {
+      "model": "cluttered:block/garland_polaroid_a_center",
+      "y": 180
+    },
+    "facing=north,offset=left,waterlogged=false": {
+      "model": "cluttered:block/garland_polaroid_a_left",
+      "y": 180
+    },
+    "facing=north,offset=left,waterlogged=true": {
+      "model": "cluttered:block/garland_polaroid_a_left",
+      "y": 180
+    },
+    "facing=north,offset=right,waterlogged=false": {
+      "model": "cluttered:block/garland_polaroid_a_right",
+      "y": 180
+    },
+    "facing=north,offset=right,waterlogged=true": {
+      "model": "cluttered:block/garland_polaroid_a_right",
+      "y": 180
+    },
+    "facing=south,offset=center,waterlogged=false": {
+      "model": "cluttered:block/garland_polaroid_a_center"
+    },
+    "facing=south,offset=center,waterlogged=true": {
+      "model": "cluttered:block/garland_polaroid_a_center"
+    },
+    "facing=south,offset=left,waterlogged=false": {
+      "model": "cluttered:block/garland_polaroid_a_left"
+    },
+    "facing=south,offset=left,waterlogged=true": {
+      "model": "cluttered:block/garland_polaroid_a_left"
+    },
+    "facing=south,offset=right,waterlogged=false": {
+      "model": "cluttered:block/garland_polaroid_a_right"
+    },
+    "facing=south,offset=right,waterlogged=true": {
+      "model": "cluttered:block/garland_polaroid_a_right"
+    },
+    "facing=west,offset=center,waterlogged=false": {
+      "model": "cluttered:block/garland_polaroid_a_center",
+      "y": 90
+    },
+    "facing=west,offset=center,waterlogged=true": {
+      "model": "cluttered:block/garland_polaroid_a_center",
+      "y": 90
+    },
+    "facing=west,offset=left,waterlogged=false": {
+      "model": "cluttered:block/garland_polaroid_a_left",
+      "y": 90
+    },
+    "facing=west,offset=left,waterlogged=true": {
+      "model": "cluttered:block/garland_polaroid_a_left",
+      "y": 90
+    },
+    "facing=west,offset=right,waterlogged=false": {
+      "model": "cluttered:block/garland_polaroid_a_right",
+      "y": 90
+    },
+    "facing=west,offset=right,waterlogged=true": {
+      "model": "cluttered:block/garland_polaroid_a_right",
+      "y": 90
+    }
+  }
+}

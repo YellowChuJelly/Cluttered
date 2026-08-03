@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "p": {
+      "item": "minecraft:calcite"
+    }
+  },
+  "pattern": [
+    "pg",
+    "pg",
+    "pg"
+  ],
+  "result": {
+    "count": 3,
+    "item": "cluttered:alabaster_french_door"
+  },
+  "show_notification": false
+}

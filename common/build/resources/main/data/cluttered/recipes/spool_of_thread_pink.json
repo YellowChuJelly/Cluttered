@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:pink_dye"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "sps",
+    "sgs",
+    "sps"
+  ],
+  "result": {
+    "item": "cluttered:spool_of_thread_pink"
+  },
+  "show_notification": false
+}

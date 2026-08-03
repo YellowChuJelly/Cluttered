@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,waterlogged=false": {
+      "model": "cluttered:block/kitchen_set_white_cabinet_open",
+      "y": 90
+    },
+    "facing=east,waterlogged=true": {
+      "model": "cluttered:block/kitchen_set_white_cabinet_open",
+      "y": 90
+    },
+    "facing=north,waterlogged=false": {
+      "model": "cluttered:block/kitchen_set_white_cabinet_open"
+    },
+    "facing=north,waterlogged=true": {
+      "model": "cluttered:block/kitchen_set_white_cabinet_open"
+    },
+    "facing=south,waterlogged=false": {
+      "model": "cluttered:block/kitchen_set_white_cabinet_open",
+      "y": -180
+    },
+    "facing=south,waterlogged=true": {
+      "model": "cluttered:block/kitchen_set_white_cabinet_open",
+      "y": -180
+    },
+    "facing=west,waterlogged=false": {
+      "model": "cluttered:block/kitchen_set_white_cabinet_open",
+      "y": -90
+    },
+    "facing=west,waterlogged=true": {
+      "model": "cluttered:block/kitchen_set_white_cabinet_open",
+      "y": -90
+    }
+  }
+}

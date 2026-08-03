@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "cluttered:block/meander_marble",
+    "side": "cluttered:block/meander_marble",
+    "top": "cluttered:block/meander_marble"
+  }
+}

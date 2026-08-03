@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "item": "minecraft:fern"
+    },
+    "g": {
+      "item": "minecraft:grass"
+    },
+    "s": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "pattern": [
+    "sss",
+    "gfg"
+  ],
+  "result": {
+    "item": "cluttered:drying_herbs"
+  },
+  "show_notification": false
+}

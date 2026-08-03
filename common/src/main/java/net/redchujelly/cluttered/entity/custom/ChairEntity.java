@@ -10,7 +10,8 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 public class ChairEntity extends Entity {
 
-    private final BlockPos CHAIR_POS;
+    //fixes for the pos and tick method from MomokoKoigakubo
+    private BlockPos CHAIR_POS;
     private final Level CHAIR_LEVEL;
 
     public ChairEntity(EntityType<?> pEntityType, Level pLevel) {
@@ -30,10 +31,18 @@ public class ChairEntity extends Entity {
 
     @Override
     protected void readAdditionalSaveData(CompoundTag compoundTag) {
+        CHAIR_POS = new BlockPos(
+                compoundTag.getInt("ChairX"),
+                compoundTag.getInt("ChairY"),
+                compoundTag.getInt("ChairZ")
+        );
     }
 
     @Override
     protected void addAdditionalSaveData(CompoundTag compoundTag) {
+        compoundTag.putInt("ChairX", CHAIR_POS.getX());
+        compoundTag.putInt("ChairY", CHAIR_POS.getY());
+        compoundTag.putInt("ChairZ", CHAIR_POS.getZ());
     }
 
     @Override
@@ -41,6 +50,17 @@ public class ChairEntity extends Entity {
         this.teleportTo(this.getX(), this.getY() + 0.5f, this.getZ());
         super.removePassenger(pPassenger);
         kill();
+    }
+
+    @Override
+    public void tick(){
+        super.tick();
+        if(!level().isClientSide){
+            BlockState state = level().getBlockState(CHAIR_POS);
+            if(getPassengers().isEmpty() || !state.hasProperty(BlockStateProperties.OCCUPIED)) {
+                kill();
+            }
+        }
     }
 
     @Override

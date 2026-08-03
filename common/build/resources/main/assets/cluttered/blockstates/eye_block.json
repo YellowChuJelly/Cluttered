@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "frame=0,looking_left=false": {
+      "model": "cluttered:block/eye_block_right_0"
+    },
+    "frame=0,looking_left=true": {
+      "model": "cluttered:block/eye_block_left_0"
+    },
+    "frame=1,looking_left=false": {
+      "model": "cluttered:block/eye_block_right_1"
+    },
+    "frame=1,looking_left=true": {
+      "model": "cluttered:block/eye_block_left_1"
+    },
+    "frame=2,looking_left=false": {
+      "model": "cluttered:block/eye_block_right_2"
+    },
+    "frame=2,looking_left=true": {
+      "model": "cluttered:block/eye_block_left_2"
+    },
+    "frame=3,looking_left=false": {
+      "model": "cluttered:block/eye_block_right_3"
+    },
+    "frame=3,looking_left=true": {
+      "model": "cluttered:block/eye_block_left_3"
+    },
+    "frame=4,looking_left=false": {
+      "model": "cluttered:block/eye_block_right_4"
+    },
+    "frame=4,looking_left=true": {
+      "model": "cluttered:block/eye_block_left_4"
+    },
+    "frame=5,looking_left=false": {
+      "model": "cluttered:block/eye_block_right_5"
+    },
+    "frame=5,looking_left=true": {
+      "model": "cluttered:block/eye_block_left_5"
+    }
+  }
+}

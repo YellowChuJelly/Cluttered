@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "p": {
+      "item": "minecraft:flower_pot"
+    }
+  },
+  "pattern": [
+    "ppp"
+  ],
+  "result": {
+    "item": "cluttered:cat_mugs_cluttered"
+  },
+  "show_notification": false
+}

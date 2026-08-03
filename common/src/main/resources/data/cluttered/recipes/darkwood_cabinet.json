@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:barrel"
+    },
+    "j": {
+      "item": "minecraft:glass_bottle"
+    },
+    "r": {
+      "item": "minecraft:book"
+    },
+    "s": {
+      "item": "minecraft:spruce_slab"
+    }
+  },
+  "pattern": [
+    "ss",
+    "jr",
+    "bb"
+  ],
+  "result": {
+    "item": "cluttered:darkwood_cabinet"
+  },
+  "show_notification": false
+}

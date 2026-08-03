@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:blue_wool"
+    },
+    "r": {
+      "item": "minecraft:red_wool"
+    },
+    "s": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "pattern": [
+    "rbr",
+    "s s"
+  ],
+  "result": {
+    "item": "cluttered:rover_stool"
+  },
+  "show_notification": false
+}

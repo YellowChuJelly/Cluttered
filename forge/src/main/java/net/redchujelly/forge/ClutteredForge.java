@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.redchujelly.cluttered.Cluttered;
+import net.redchujelly.cluttered.util.ClutteredFlammableBlocks;
 
 @Mod(Cluttered.MOD_ID)
 public final class ClutteredForge {
@@ -22,6 +23,7 @@ public final class ClutteredForge {
     private void commonSetup(final FMLCommonSetupEvent event){
         event.enqueueWork(() -> {
             Cluttered.afterInit();
+            ClutteredFlammableBlocks.addFlammables();
         });
     }
 }

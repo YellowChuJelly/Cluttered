@@ -1,0 +1,6 @@
+{
+  "parent": "cluttered:block/bracket_base",
+  "textures": {
+    "missing": "cluttered:block/marble_victorian_bracket_star"
+  }
+}

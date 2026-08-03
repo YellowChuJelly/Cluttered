@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "w": {
+      "item": "minecraft:honeycomb"
+    }
+  },
+  "pattern": [
+    " w ",
+    "ppp"
+  ],
+  "result": {
+    "item": "cluttered:envelope_stack"
+  },
+  "show_notification": false
+}

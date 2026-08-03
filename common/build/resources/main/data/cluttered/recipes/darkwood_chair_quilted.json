@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:blue_carpet"
+    },
+    "f": {
+      "item": "minecraft:spruce_fence"
+    },
+    "l": {
+      "item": "minecraft:light_blue_wool"
+    }
+  },
+  "pattern": [
+    "fbf",
+    "flf",
+    "fff"
+  ],
+  "result": {
+    "item": "cluttered:darkwood_chair_quilted"
+  },
+  "show_notification": false
+}

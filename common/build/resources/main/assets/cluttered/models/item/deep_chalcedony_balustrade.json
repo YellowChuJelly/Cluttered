@@ -1,0 +1,6 @@
+{
+  "parent": "cluttered:block/balustrade",
+  "textures": {
+    "2": "cluttered:block/deep_chalcedony_balustrade"
+  }
+}

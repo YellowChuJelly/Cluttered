@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "p": {
+      "item": "minecraft:jungle_planks"
+    },
+    "t": {
+      "item": "cluttered:marble_subway_tiles"
+    }
+  },
+  "pattern": [
+    "ttt",
+    "p p",
+    "p p"
+  ],
+  "result": {
+    "item": "cluttered:sweetheart_table"
+  },
+  "show_notification": false
+}

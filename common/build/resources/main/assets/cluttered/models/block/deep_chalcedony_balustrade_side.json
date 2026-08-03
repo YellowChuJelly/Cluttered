@@ -1,0 +1,7 @@
+{
+  "parent": "cluttered:block/balustrade_side",
+  "textures": {
+    "2": "cluttered:block/deep_chalcedony_balustrade",
+    "particle": "cluttered:block/deep_chalcedony_balustrade"
+  }
+}
