@@ -1,10 +1,12 @@
 {
 	"credit": "Made with Blockbench",
 	"render_type": "minecraft:cutout",
+	"ambientocclusion": false,
 	"textures": {
 		"4": "cluttered:block/endtable_amethyst",
 		"particle": "cluttered:block/endtable_amethyst"
 	},
+
 	"elements": [
 		{
 			"from": [13, 0, 1],

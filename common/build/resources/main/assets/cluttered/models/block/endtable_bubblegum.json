@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"render_type": "minecraft:cutout",
+	"ambientocclusion": false,
 	"textures": {
 		"4": "cluttered:block/endtable_bubblegum",
 		"particle": "cluttered:block/endtable_bubblegum"

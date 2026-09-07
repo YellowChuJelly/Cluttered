@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"render_type": "minecraft:cutout",
+	"ambientocclusion": false,
 	"texture_size": [64, 64],
 	"textures": {
 		"4": "cluttered:block/endtable_periwinkle",

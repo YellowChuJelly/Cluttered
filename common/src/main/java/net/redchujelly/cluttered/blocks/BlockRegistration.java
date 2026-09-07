@@ -407,36 +407,36 @@ public class BlockRegistration {
 
     //FLUORESCENT MAPLE WOODSET
     public static final RegistrySupplier<Block> MAPLE_LOG = registerFuelBlock("fluorescent_maple_log",
-            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion()), 300);
+            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.CYAN).lightLevel(p -> 4)), 300);
     public static final RegistrySupplier<Block> STRIPPED_MAPLE_LOG = registerFuelBlock("stripped_fluorescent_maple_log",
-            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion()), 300);
+            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.CYAN).lightLevel(p -> 4)), 300);
     public static final RegistrySupplier<Block> MAPLE_WOOD = registerFuelBlock("fluorescent_maple_wood",
-            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion()), 300);
+            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.CYAN).lightLevel(p -> 4)), 300);
     public static final RegistrySupplier<Block> STRIPPED_MAPLE_WOOD = registerFuelBlock("stripped_fluorescent_maple_wood",
-            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion()), 300);
+            () -> new CustomLogLikeBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.CYAN).lightLevel(p -> 4)), 300);
     public static final RegistrySupplier<Block> MAPLE_PLANKS = registerFuelBlock("fluorescent_maple_planks",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion()), 300);
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.CYAN).lightLevel(p -> 4)), 300);
     public static final RegistrySupplier<Block> MAPLE_SLAB = registerFuelBlock("fluorescent_maple_slab",
-            () -> new CustomWoodSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion()), 150);
+            () -> new CustomWoodSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.CYAN).lightLevel(p -> 4)), 150);
     public static final RegistrySupplier<Block> MAPLE_STAIRS = registerFuelBlock("fluorescent_maple_stairs",
             () -> new CustomWoodStairs(BlockRegistration.MAPLE_PLANKS.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion()), 300);
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).mapColor(DyeColor.CYAN).lightLevel(p -> 4)), 300);
     public static final RegistrySupplier<Block> MAPLE_FENCE = registerFuelBlock("fluorescent_maple_fence",
             () -> new CustomWoodFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion()), 300);
     public static final RegistrySupplier<Block> MAPLE_FENCE_GATE = registerFuelBlock("fluorescent_maple_fence_gate",
             () -> new CustomWoodFenceGate(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion(), WoodType.OAK), 300);
     public static final RegistrySupplier<Block> MAPLE_DOOR = registerFuelBlock("fluorescent_maple_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion(), BlockSetType.OAK), 300);
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.CYAN).lightLevel(p -> 4), BlockSetType.OAK), 300);
     public static final RegistrySupplier<Block> MAPLE_TRAPDOOR = registerFuelBlock("fluorescent_maple_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion(), BlockSetType.OAK), 300);
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(DyeColor.CYAN).lightLevel(p -> 4), BlockSetType.OAK), 300);
     public static final RegistrySupplier<Block> MAPLE_BUTTON = registerFuelBlock("fluorescent_maple_button",
-            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion(),
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.CYAN).lightLevel(p -> 4),
                     BlockSetType.OAK, 30, true), 100);
     public static final RegistrySupplier<Block> MAPLE_PRESSURE_PLATE = registerFuelBlock("fluorescent_maple_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion(),
                     BlockSetType.OAK), 300);
     public static final RegistrySupplier<Block> MAPLE_BOOKSHELF = registerFuelBlock("fluorescent_maple_bookshelf",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion()), 300);
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BOOKSHELF).mapColor(DyeColor.CYAN).lightLevel(p -> 4)), 300);
     public static final RegistrySupplier<Block> MAPLE_WINDOW = registerBlock("fluorescent_maple_window",
             () -> new CustomGlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).mapColor(DyeColor.CYAN).lightLevel(p -> 4).noOcclusion()));
     public static final RegistrySupplier<Block> MAPLE_WINDOW_PANE = registerBlock("fluorescent_maple_window_pane",
@@ -589,7 +589,7 @@ public class BlockRegistration {
     public static final RegistrySupplier<Block> CHALCEDONY_MEANDER = registerBlock("chalcedony_meander",
             () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE)));
     public static final RegistrySupplier<Block> STARRY_CHISELED_CHALCEDONY = registerBlock("chalcedony_sun_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE).lightLevel(p -> 15).noOcclusion()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE).lightLevel(p -> 15)));
     public static final RegistrySupplier<Block> CHALCEDONY_PILLAR = registerBlock("chalcedony_pillar",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)));
     public static final RegistrySupplier<Block> CHALCEDONY_PILLAR_BASE = registerBlock("chalcedony_pillar_base",
@@ -599,13 +599,13 @@ public class BlockRegistration {
     public static final RegistrySupplier<Block> CHALCEDONY_PILLAR_IONIC = registerBlock("chalcedony_pillar_ionic",
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)));
     public static final RegistrySupplier<Block> STARRY_CHALCEDONY_PILLAR = registerBlock("chalcedony_pillar_starry",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().mapColor(DyeColor.WHITE).lightLevel(p -> 5)));
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE).lightLevel(p -> 5)));
     public static final RegistrySupplier<Block> STARRY_CHALCEDONY_PILLAR_BASE = registerBlock("chalcedony_pillar_starry_base",
-            () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().mapColor(DyeColor.WHITE).lightLevel(p -> 5)));
+            () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE).lightLevel(p -> 5)));
     public static final RegistrySupplier<Block> STARRY_CHALCEDONY_PILLAR_DORIC = registerBlock("chalcedony_pillar_starry_doric",
-            () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().mapColor(DyeColor.WHITE).lightLevel(p -> 5)));
+            () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE).lightLevel(p -> 5)));
     public static final RegistrySupplier<Block> STARRY_CHALCEDONY_PILLAR_IONIC = registerBlock("chalcedony_pillar_starry_ionic",
-            () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().mapColor(DyeColor.WHITE).lightLevel(p -> 5)));
+            () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE).lightLevel(p -> 5)));
     public static final RegistrySupplier<Block> CHALCEDONY_TEXTILES = registerBlock("textile_block_chalcedony",
             () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE)));
 
@@ -661,7 +661,7 @@ public class BlockRegistration {
     public static final RegistrySupplier<Block> DEEP_CHALCEDONY_MEANDER = registerBlock("deep_chalcedony_meander",
             () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.LIGHT_BLUE)));
     public static final RegistrySupplier<Block> DEEP_STARRY_CHISELED_CHALCEDONY = registerBlock("deep_chalcedony_sun_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.LIGHT_BLUE).lightLevel(p -> 15).noOcclusion()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.LIGHT_BLUE).lightLevel(p -> 15)));
     public static final RegistrySupplier<Block> DEEP_CHALCEDONY_PILLAR = registerBlock("deep_chalcedony_pillar",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE)));
     public static final RegistrySupplier<Block> DEEP_CHALCEDONY_PILLAR_BASE = registerBlock("deep_chalcedony_pillar_base",
@@ -671,13 +671,13 @@ public class BlockRegistration {
     public static final RegistrySupplier<Block> DEEP_CHALCEDONY_PILLAR_IONIC = registerBlock("deep_chalcedony_pillar_ionic",
             () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE)));
     public static final RegistrySupplier<Block> DEEP_STARRY_CHALCEDONY_PILLAR = registerBlock("deep_chalcedony_pillar_starry",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().mapColor(DyeColor.LIGHT_BLUE).lightLevel(p -> 5)));
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE).lightLevel(p -> 5)));
     public static final RegistrySupplier<Block> DEEP_STARRY_CHALCEDONY_PILLAR_BASE = registerBlock("deep_chalcedony_pillar_starry_base",
-            () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().mapColor(DyeColor.LIGHT_BLUE).lightLevel(p -> 5)));
+            () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE).lightLevel(p -> 5)));
     public static final RegistrySupplier<Block> DEEP_STARRY_CHALCEDONY_PILLAR_DORIC = registerBlock("deep_chalcedony_pillar_starry_doric",
-            () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().mapColor(DyeColor.LIGHT_BLUE).lightLevel(p -> 5)));
+            () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE).lightLevel(p -> 5)));
     public static final RegistrySupplier<Block> DEEP_STARRY_CHALCEDONY_PILLAR_IONIC = registerBlock("deep_chalcedony_pillar_starry_ionic",
-            () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().mapColor(DyeColor.LIGHT_BLUE).lightLevel(p -> 5)));
+            () -> new DirectionalPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE).lightLevel(p -> 5)));
     public static final RegistrySupplier<Block> DEEP_CHALCEDONY_TEXTILES = registerBlock("textile_block_deep_chalcedony",
             () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.LIGHT_BLUE)));
 
@@ -733,7 +733,7 @@ public class BlockRegistration {
     public static final RegistrySupplier<Block> MARBLE_MEANDER = registerBlock("marble_meander",
             () -> new CustomHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE)));
     public static final RegistrySupplier<Block> STARRY_CHISELED_MARBLE = registerBlock("marble_sun_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE).lightLevel(p -> 15).noOcclusion()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS).mapColor(DyeColor.WHITE).lightLevel(p -> 15)));
     public static final RegistrySupplier<Block> MARBLE_PILLAR = registerBlock("marble_pillar",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)));
     public static final RegistrySupplier<Block> MARBLE_PILLAR_BASE = registerBlock("marble_pillar_base",
@@ -777,11 +777,11 @@ public class BlockRegistration {
 
     //WALLPAPERS
     public static final RegistrySupplier<Block> STARRY_WALLPAPER = registerBlock("starry_wallpaper",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM).lightLevel(p -> 4).noOcclusion()));
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM).lightLevel(p -> 4)));
     public static final RegistrySupplier<Block> STARRY_WALLPAPER_TOP = registerBlock("starry_wallpaper_upper_trim",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM).lightLevel(p -> 4).noOcclusion()));
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM).lightLevel(p -> 4)));
     public static final RegistrySupplier<Block> STARRY_WALLPAPER_BOTTOM = registerBlock("starry_wallpaper_lower_trim",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM).lightLevel(p -> 4).noOcclusion()));
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM).lightLevel(p -> 4)));
     public static final RegistrySupplier<Block> DARK_STARRY_WALLPAPER = registerBlock("dark_starry_wallpaper",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL).sound(SoundType.SPORE_BLOSSOM)));
     public static final RegistrySupplier<Block> DARK_STARRY_WALLPAPER_TOP = registerBlock("dark_starry_wallpaper_upper_trim",
@@ -1126,7 +1126,7 @@ public class BlockRegistration {
     public static final RegistrySupplier<Block> SYCAMORE_WAINSCOTING = registerFuelBlock("sycamore_wainscoting",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.GREEN)), 300);
     public static final RegistrySupplier<Block> MAPLE_WAINSCOTING = registerFuelBlock("fluorescent_maple_wainscoting",
-            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.LIGHT_BLUE).lightLevel(p -> 4).noOcclusion()), 300);
+            () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.LIGHT_BLUE).lightLevel(p -> 4)), 300);
     public static final RegistrySupplier<Block> BLUE_MUSHROOM_WAINSCOTING = registerFuelBlock("blue_mushroom_wainscoting",
             () -> new CustomWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.BLUE).sound(SoundType.SHROOMLIGHT)), 300);
     public static final RegistrySupplier<Block> RED_MUSHROOM_WAINSCOTING = registerFuelBlock("red_mushroom_wainscoting",
@@ -1354,7 +1354,7 @@ public class BlockRegistration {
     public static final RegistrySupplier<Block> PURPLE_PLANTER = registerBlock("tarrey_town_planter_purple",
             () -> new PlanterBoxBlock(BlockBehaviour.Properties.copy(Blocks.FARMLAND).mapColor(DyeColor.PURPLE).sound(SoundType.WOOD)));
     public static final RegistrySupplier<Block> FLUORESCENT_PLANTER = registerBlock("tarrey_town_planter_fluorescent",
-            () -> new PlanterBoxBlock(BlockBehaviour.Properties.copy(Blocks.FARMLAND).mapColor(DyeColor.LIGHT_BLUE).sound(SoundType.WOOD).noOcclusion().lightLevel(p -> 4)));
+            () -> new PlanterBoxBlock(BlockBehaviour.Properties.copy(Blocks.FARMLAND).mapColor(DyeColor.LIGHT_BLUE).sound(SoundType.WOOD).lightLevel(p -> 4)));
     public static final RegistrySupplier<Block> BEIGE_PLANTER = registerBlock("tarrey_town_planter_beige",
             () -> new PlanterBoxBlock(BlockBehaviour.Properties.copy(Blocks.FARMLAND).mapColor(DyeColor.LIGHT_GRAY).sound(SoundType.WOOD)));
     public static final RegistrySupplier<Block> BLUE_PLANTER = registerBlock("tarrey_town_planter_blue",

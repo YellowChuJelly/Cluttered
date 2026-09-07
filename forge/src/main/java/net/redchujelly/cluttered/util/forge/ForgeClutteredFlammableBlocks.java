@@ -1,4 +1,4 @@
-package net.redchujelly.cluttered.util;
+package net.redchujelly.cluttered.util.forge;
 
 import net.minecraft.util.Tuple;
 import net.minecraft.world.level.block.Block;
@@ -10,7 +10,7 @@ import net.redchujelly.cluttered.mixin.ForgeFireBlockInvoker;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ClutteredFlammableBlocks {
+public class ForgeClutteredFlammableBlocks {
 
     private static final Map<Block, Tuple<Integer, Integer>> FLAMMABLES = new HashMap<>(){
         {
