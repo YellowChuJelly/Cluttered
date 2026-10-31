@@ -11,8 +11,11 @@ public final class ClutteredFabricClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         FabricBlockRenderTypeMapper.setup();
+        ClutteredClient.init();
 
         BlockEntityRenderers.register(BlockEntityRegistration.CLUTTERED_SIGN_BE.get(), SignRenderer::new);
         BlockEntityRenderers.register(BlockEntityRegistration.CLUTTERED_HANGING_SIGN_BE.get(), HangingSignRenderer::new);
+
+
     }
 }

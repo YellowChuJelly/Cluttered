@@ -8,12 +8,15 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.redchujelly.cluttered.Cluttered;
 import net.redchujelly.cluttered.blocks.entity.BlockEntityRegistration;
+import net.redchujelly.cluttered.client.ClutteredClient;
 
 @Mod.EventBusSubscriber(modid = Cluttered.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD,value = Dist.CLIENT)
 public class ModEventBusClientEvents {
 
     @SubscribeEvent
     public static void registerBER(EntityRenderersEvent.RegisterRenderers event){
+        ClutteredClient.init();
+
         event.registerBlockEntityRenderer(BlockEntityRegistration.CLUTTERED_SIGN_BE.get(), SignRenderer::new);
         event.registerBlockEntityRenderer(BlockEntityRegistration.CLUTTERED_HANGING_SIGN_BE.get(), HangingSignRenderer::new);
     }

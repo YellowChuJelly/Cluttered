@@ -40,10 +40,6 @@ public final class Cluttered {
         ClutteredConfiguredFeatures.init();
         SoundEventRegistration.init();
 
-        ClientLifecycleEvent.CLIENT_STARTED.register(listener -> {
-            ClutteredEntityRendererRegistration.init();
-            ClutteredSheetsSignMaterials.addWoodTypes();
-        });
     }
 
     public static void afterInit(){
